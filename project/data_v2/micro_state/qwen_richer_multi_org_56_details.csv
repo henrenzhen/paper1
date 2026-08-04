@@ -1,0 +1,337 @@
+﻿annotation_id,source_org,true_label,json_parse_ok,raw_output,gold__current_access_context,pred__current_access_context,schema_ok__current_access_context,field_hit__current_access_context,gold__exhausted_action_constraint,pred__exhausted_action_constraint,schema_ok__exhausted_action_constraint,field_hit__exhausted_action_constraint,gold__next_target_artifact,pred__next_target_artifact,schema_ok__next_target_artifact,field_hit__next_target_artifact,gold__next_micro_verb,pred__next_micro_verb,schema_ok__next_micro_verb,field_hit__next_micro_verb,exact_match,any_schema_violation
+ms_001,apt29,T1016,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""environment_not_enumerated"",
+  ""next_target_artifact"": ""network_configuration"",
+  ""next_micro_verb"": ""enumerate""
+}",execution_on_host,post_compromise_discovery,1,0,environment_not_enumerated,environment_not_enumerated,1,1,network_configuration,network_configuration,1,1,enumerate,enumerate,1,1,0,0
+ms_002,apt29,T1119,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""collection_target_not_identified"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""collect""
+}",execution_on_host,post_compromise_discovery,1,0,collection_target_not_identified,collection_target_not_identified,1,1,local_file_data,local_file_data,1,1,collect,collect,1,1,0,0
+ms_003,apt29,T1069,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_not_enumerated"",
+  ""next_target_artifact"": ""permission_group_context"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,privilege_structure_not_enumerated,privilege_context_not_enumerated,1,0,permission_group_context,permission_group_context,1,1,enumerate,enumerate,1,1,0,0
+ms_004,apt29,T1059,1,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""user_execution_path_not_established"",
+  ""next_target_artifact"": ""command_execution_channel"",
+  ""next_micro_verb"": ""execute""
+}",initial_foothold,execution_on_host,1,0,execution_capability_not_established,user_execution_path_not_established,1,0,command_execution_channel,command_execution_channel,1,1,execute,execute,1,1,0,0
+ms_005,apt29,T1082,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""environment_not_enumerated"",
+  ""next_target_artifact"": ""system_information"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,environment_not_enumerated,environment_not_enumerated,1,1,system_information,system_information,1,1,enumerate,enumerate,1,1,1,0
+ms_006,apt29,T1134,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""access_token_context"",
+  ""next_micro_verb"": ""impersonate""
+}",valid_user_context,post_compromise_discovery,1,0,privilege_context_insufficient,privilege_context_insufficient,1,1,access_token_context,access_token_context,1,1,impersonate,impersonate,1,1,0,0
+ms_007,apt29,T1134,1,"{
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""access_token_context"",
+  ""next_micro_verb"": ""impersonate""
+}",valid_user_context,valid_user_context,1,1,privilege_context_insufficient,privilege_context_insufficient,1,1,access_token_context,access_token_context,1,1,impersonate,impersonate,1,1,1,0
+ms_008,apt29,T1134,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""access_token_context"",
+  ""next_micro_verb"": ""impersonate""
+}",internal_host_access,post_compromise_discovery,1,0,privilege_context_insufficient,privilege_context_insufficient,1,1,access_token_context,access_token_context,1,1,impersonate,impersonate,1,1,0,0
+ms_009,apt29,T1547,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""persistence_mechanism"",
+  ""next_micro_verb"": ""modify""
+}",internal_host_access,post_compromise_discovery,1,0,persistence_path_not_established,persistence_path_not_established,1,1,persistence_mechanism,persistence_mechanism,1,1,modify,modify,1,1,0,0
+ms_010,apt29,T1552,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""stored_credentials"",
+  ""next_micro_verb"": ""collect""
+}",internal_host_access,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,private_keys,stored_credentials,1,0,collect,collect,1,1,0,0
+ms_011,apt29,T1204,1,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""user_execution_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""execute""
+}",internal_host_access,execution_on_host,1,0,user_execution_path_not_established,user_execution_path_not_established,1,1,user_execution_channel,local_file_data,1,0,trigger,execute,1,0,0,0
+ms_012,apt29,T1561,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""impact_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""disrupt""
+}",internal_host_access,post_compromise_discovery,1,0,impact_path_not_established,impact_path_not_established,1,1,host_availability,local_file_data,1,0,disrupt,disrupt,1,1,0,0
+ms_013,apt29,T1114,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""collection_target_not_identified"",
+  ""next_target_artifact"": ""mailbox_data"",
+  ""next_micro_verb"": ""collect""
+}",internal_host_access,post_compromise_discovery,1,0,collection_target_not_identified,collection_target_not_identified,1,1,mailbox_data,mailbox_data,1,1,collect,collect,1,1,0,0
+ms_014,apt29,T1134,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""access_token_context"",
+  ""next_micro_verb"": ""elevate""
+}",valid_user_context,post_compromise_discovery,1,0,privilege_context_insufficient,privilege_context_insufficient,1,1,access_token_context,access_token_context,1,1,impersonate,elevate,1,0,0,0
+ms_015,apt29,T1134,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""access_token_context"",
+  ""next_micro_verb"": ""impersonate""
+}",valid_user_context,post_compromise_discovery,1,0,privilege_context_insufficient,privilege_context_insufficient,1,1,access_token_context,access_token_context,1,1,impersonate,impersonate,1,1,0,0
+ms_016,apt29,T1005,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""collection_target_not_identified"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""collect""
+}",internal_host_access,post_compromise_discovery,1,0,collection_target_not_identified,collection_target_not_identified,1,1,local_file_data,local_file_data,1,1,collect,collect,1,1,0,0
+ms_017,apt29,T1012,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""configuration_modification_path_not_established"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""query""
+}",post_compromise_discovery,post_compromise_discovery,1,1,environment_not_enumerated,configuration_modification_path_not_established,1,0,system_configuration_store,system_configuration_store,1,1,query,query,1,1,0,0
+ms_018,apt29,T1016,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""environment_not_enumerated"",
+  ""next_target_artifact"": ""network_configuration"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,environment_not_enumerated,environment_not_enumerated,1,1,network_configuration,network_configuration,1,1,enumerate,enumerate,1,1,1,0
+ms_019,apt29,T1018,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""remote_targets_not_identified"",
+  ""next_target_artifact"": ""remote_host_list"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,remote_targets_not_identified,remote_targets_not_identified,1,1,remote_host_list,remote_host_list,1,1,enumerate,enumerate,1,1,1,0
+ms_020,apt29,T1036,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""masquerade""
+}",execution_on_host,post_compromise_discovery,1,0,defense_evasion_path_not_established,defense_evasion_path_not_established,1,1,process_or_file_identity,local_file_data,1,0,masquerade,masquerade,1,1,0,0
+ms_030,apt29,T1033,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""current_user_context_not_confirmed"",
+  ""next_target_artifact"": ""system_information"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,current_user_context_not_confirmed,current_user_context_not_confirmed,1,1,user_account_context,system_information,1,0,query,enumerate,1,0,0,0
+ms_031,apt29,T1041,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""data_not_staged"",
+  ""next_target_artifact"": ""exfiltration_channel"",
+  ""next_micro_verb"": ""exfiltrate""
+}",internal_host_access,post_compromise_discovery,1,0,exfiltration_path_not_established,data_not_staged,1,0,exfiltration_channel,exfiltration_channel,1,1,exfiltrate,exfiltrate,1,1,0,0
+ms_032,apt29,T1007,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""host_service_inventory_not_enumerated"",
+  ""next_target_artifact"": ""service_inventory"",
+  ""next_micro_verb"": ""query""
+}",post_compromise_discovery,post_compromise_discovery,1,1,host_service_inventory_not_enumerated,host_service_inventory_not_enumerated,1,1,service_inventory,service_inventory,1,1,enumerate,query,1,0,0,0
+ms_033,apt29,T1087,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""collection_target_not_identified"",
+  ""next_target_artifact"": ""user_account_context"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,account_landscape_not_enumerated,collection_target_not_identified,1,0,account_inventory,user_account_context,1,0,enumerate,enumerate,1,1,0,0
+ms_034,apt29,T1548,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""modify""
+}",valid_user_context,post_compromise_discovery,1,0,privilege_context_insufficient,privilege_context_insufficient,1,1,privilege_boundary,system_configuration_store,1,0,elevate,modify,1,0,0,0
+ms_035,apt29,T1112,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""modify""
+}",internal_host_access,post_compromise_discovery,1,0,configuration_modification_path_not_established,defense_evasion_path_not_established,1,0,system_configuration_store,system_configuration_store,1,1,modify,modify,1,1,0,0
+ms_036,apt29,T1057,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""running_processes_not_enumerated"",
+  ""next_target_artifact"": ""process_inventory"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,running_processes_not_enumerated,running_processes_not_enumerated,1,1,process_inventory,process_inventory,1,1,enumerate,enumerate,1,1,1,0
+ms_041,oilrig,T1003,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""stored_credentials"",
+  ""next_micro_verb"": ""dump""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,credential_material,stored_credentials,1,0,dump,dump,1,1,0,0
+ms_042,oilrig,T1070,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""disrupt""
+}",execution_on_host,post_compromise_discovery,1,0,defense_evasion_path_not_established,defense_evasion_path_not_established,1,1,process_or_file_identity,local_file_data,1,0,modify,disrupt,1,0,0,0
+ms_043,oilrig,T1555,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""stored_credentials"",
+  ""next_micro_verb"": ""collect""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,stored_credentials,stored_credentials,1,1,collect,collect,1,1,0,0
+ms_044,oilrig,T1505,1,"{
+  ""current_access_context"": ""internal_host_access"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""persistence_mechanism"",
+  ""next_micro_verb"": ""modify""
+}",execution_on_host,internal_host_access,1,0,persistence_path_not_established,persistence_path_not_established,1,1,persistence_mechanism,persistence_mechanism,1,1,modify,modify,1,1,0,0
+ms_045,oilrig,T1082,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""environment_not_enumerated"",
+  ""next_target_artifact"": ""system_information"",
+  ""next_micro_verb"": ""query""
+}",post_compromise_discovery,post_compromise_discovery,1,1,environment_not_enumerated,environment_not_enumerated,1,1,system_information,system_information,1,1,enumerate,query,1,0,0,0
+ms_046,oilrig,T1018,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""remote_targets_not_identified"",
+  ""next_target_artifact"": ""remote_host_list"",
+  ""next_micro_verb"": ""query""
+}",post_compromise_discovery,post_compromise_discovery,1,1,remote_targets_not_identified,remote_targets_not_identified,1,1,remote_host_list,remote_host_list,1,1,enumerate,query,1,0,0,0
+ms_047,oilrig,T1041,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""data_not_staged"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""exfiltrate""
+}",execution_on_host,post_compromise_discovery,1,0,exfiltration_path_not_established,data_not_staged,1,0,exfiltration_channel,local_file_data,1,0,exfiltrate,exfiltrate,1,1,0,0
+ms_048,oilrig,T1007,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""host_service_inventory_not_enumerated"",
+  ""next_target_artifact"": ""service_inventory"",
+  ""next_micro_verb"": ""query""
+}",post_compromise_discovery,post_compromise_discovery,1,1,host_service_inventory_not_enumerated,host_service_inventory_not_enumerated,1,1,service_inventory,service_inventory,1,1,enumerate,query,1,0,0,0
+ms_049,oilrig,T1033,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""current_user_context_not_confirmed"",
+  ""next_target_artifact"": ""system_information"",
+  ""next_micro_verb"": ""collect""
+}",post_compromise_discovery,post_compromise_discovery,1,1,current_user_context_not_confirmed,current_user_context_not_confirmed,1,1,user_account_context,system_information,1,0,query,collect,1,0,0,0
+ms_050,oilrig,T1572,1,"{
+  ""current_access_context"": ""internal_host_access"",
+  ""exhausted_action_constraint"": ""remote_execution_path_not_established"",
+  ""next_target_artifact"": ""command_execution_channel"",
+  ""next_micro_verb"": ""execute""
+}",execution_on_host,internal_host_access,1,0,remote_execution_path_not_established,remote_execution_path_not_established,1,1,command_execution_channel,command_execution_channel,1,1,execute,execute,1,1,0,0
+ms_051,sandworm,T1555,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""stored_credentials"",
+  ""next_micro_verb"": ""dump""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,stored_credentials,stored_credentials,1,1,collect,dump,1,0,0,0
+ms_052,sandworm,T1056,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""running_processes_not_enumerated"",
+  ""next_target_artifact"": ""process_or_file_identity"",
+  ""next_micro_verb"": ""disrupt""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,running_processes_not_enumerated,1,0,credential_material,process_or_file_identity,1,0,collect,disrupt,1,0,0,0
+ms_053,sandworm,T1056,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""collect""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,credential_material,credential_material,1,1,collect,collect,1,1,0,0
+ms_054,sandworm,T1548,1,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""privilege_context_insufficient"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""modify""
+}",execution_on_host,execution_on_host,1,1,privilege_context_insufficient,privilege_context_insufficient,1,1,access_token_context,local_file_data,1,0,elevate,modify,1,0,0,0
+ms_055,sandworm,T1070,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""disrupt""
+}",execution_on_host,post_compromise_discovery,1,0,defense_evasion_path_not_established,defense_evasion_path_not_established,1,1,process_or_file_identity,local_file_data,1,0,modify,disrupt,1,0,0,0
+ms_056,sandworm,T1018,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""remote_targets_not_identified"",
+  ""next_target_artifact"": ""remote_host_list"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,remote_targets_not_identified,remote_targets_not_identified,1,1,remote_host_list,remote_host_list,1,1,enumerate,enumerate,1,1,1,0
+ms_057,sandworm,T1049,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""remote_targets_not_identified"",
+  ""next_target_artifact"": ""network_configuration"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,environment_not_enumerated,remote_targets_not_identified,1,0,network_configuration,network_configuration,1,1,enumerate,enumerate,1,1,0,0
+ms_058,sandworm,T1083,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""host_service_inventory_not_enumerated"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,collection_target_not_identified,host_service_inventory_not_enumerated,1,0,local_file_data,local_file_data,1,1,enumerate,enumerate,1,1,0,0
+ms_059,sandworm,T1021,1,"{
+  ""current_access_context"": ""internal_host_access"",
+  ""exhausted_action_constraint"": ""running_processes_not_enumerated"",
+  ""next_target_artifact"": ""process_inventory"",
+  ""next_micro_verb"": ""disrupt""
+}",internal_host_access,internal_host_access,1,1,remote_execution_path_not_established,running_processes_not_enumerated,1,0,service_execution_channel,process_inventory,1,0,execute,disrupt,1,0,0,0
+ms_060,sandworm,T1552,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""collect""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,stored_credentials,local_file_data,1,0,collect,collect,1,1,0,0
+ms_071,turla_carbon,T1069,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""collection_target_not_identified"",
+  ""next_target_artifact"": ""permission_group_context"",
+  ""next_micro_verb"": ""enumerate""
+}",post_compromise_discovery,post_compromise_discovery,1,1,privilege_context_not_enumerated,collection_target_not_identified,1,0,permission_group_context,permission_group_context,1,1,enumerate,enumerate,1,1,0,0
+ms_072,turla_carbon,T1189,1,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""configuration_modification_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""modify""
+}",execution_on_host,execution_on_host,1,1,user_execution_path_not_established,configuration_modification_path_not_established,1,0,user_execution_channel,local_file_data,1,0,trigger,modify,1,0,0,0
+ms_073,turla_carbon,T1069,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""privilege_context_not_enumerated"",
+  ""next_target_artifact"": ""permission_group_context"",
+  ""next_micro_verb"": ""enumerate""
+}",execution_on_host,post_compromise_discovery,1,0,user_execution_path_not_established,privilege_context_not_enumerated,1,0,user_execution_channel,permission_group_context,1,0,trigger,enumerate,1,0,0,0
+ms_074,turla_carbon,T1205,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""remote_targets_not_identified"",
+  ""next_target_artifact"": ""command_execution_channel"",
+  ""next_micro_verb"": ""execute""
+}",execution_on_host,post_compromise_discovery,1,0,xecution_capability_not_established,remote_targets_not_identified,1,0,command_execution_channel,command_execution_channel,1,1,trigger,execute,1,0,0,0
+ms_075,turla_carbon,T1070,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""disrupt""
+}",execution_on_host,post_compromise_discovery,1,0,defense_evasion_path_not_established,defense_evasion_path_not_established,1,1,process_or_file_identity,local_file_data,1,0,modify,disrupt,1,0,0,0
+ms_076,turla_carbon,T1070,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""disrupt""
+}",execution_on_host,post_compromise_discovery,1,0,defense_evasion_path_not_established,defense_evasion_path_not_established,1,1,process_or_file_identity,local_file_data,1,0,modif,disrupt,1,0,0,0
+ms_077,turla_carbon,T1003,1,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""stored_credentials"",
+  ""next_micro_verb"": ""dump""
+}",execution_on_host,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,credential_material,stored_credentials,1,0,dump,dump,1,1,0,0
+ms_078,turla_carbon,T1021,1,"{
+  ""current_access_context"": ""internal_host_access"",
+  ""exhausted_action_constraint"": ""remote_execution_path_not_established"",
+  ""next_target_artifact"": ""command_execution_channel"",
+  ""next_micro_verb"": ""execute""
+}",internal_host_access,internal_host_access,1,1,remote_execution_path_not_established,remote_execution_path_not_established,1,1,command_execution_channel,command_execution_channel,1,1,execute,execute,1,1,1,0
+ms_080,turla_carbon,T1105,1,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""data_not_staged"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""modify""
+}",execution_on_host,execution_on_host,1,1,execution_capability_not_established,data_not_staged,1,0,local_file_data,local_file_data,1,1,collect,modify,1,0,0,0

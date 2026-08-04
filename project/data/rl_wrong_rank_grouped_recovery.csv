@@ -1,0 +1,6 @@
+﻿RL Error Severity,Samples,Fusion Top1 (%),Fusion Top5 (%),Avg Rank Gain,Median Rank Gain,Improved (%)
+Rank 2,323,14.9%,100.0%,0.03,0.00,14.9%
+Rank 3-5,362,1.1%,95.6%,0.15,0.00,31.8%
+Rank 6-10,127,0.8%,24.4%,0.72,1.00,52.8%
+Rank 11-20,81,0.0%,2.5%,2.07,2.00,67.9%
+Rank > 20,67,0.0%,0.0%,7.49,8.00,76.1%

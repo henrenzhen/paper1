@@ -41,6 +41,11 @@ tmp/
 *.parquet
 *.feather
 
+# Versioned research datasets and CoT caches
+!project/data/*.csv
+!project/data_v2/core/*.csv
+!project/data_v2/micro_state/*.csv
+
 # Large upstream datasets and vendored repositories
 project/data/enterprise-attack-18.1.json
 project/data_v2/external_*/
@@ -54,4 +59,3 @@ project/**/outputs/
 # Binary reports are local deliverables; Markdown sources remain versioned
 *.docx
 *.pdf
-

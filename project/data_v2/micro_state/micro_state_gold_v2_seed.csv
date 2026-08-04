@@ -1,0 +1,12 @@
+﻿annotation_id,sample_id,source_org,plan_id,scenario_id,prefix_len,state,true_label,top1_pred,true_rank,current_access_context,exhausted_action_constraint,next_target_artifact,next_micro_verb,label_confidence,annotation_notes
+ms_030,apt29::unknown::4,apt29,apt29,unknown,4,T1036 T1059 T1119 T1016,T1033,T1033,1,,,,,,
+ms_031,apt29::unknown::5,apt29,apt29,unknown,5,T1036 T1059 T1119 T1016 T1033,T1041,T1570,45,,,,,,
+ms_032,apt29::unknown::7,apt29,apt29,unknown,7,T1036 T1059 T1119 T1016 T1033 T1041 T1057,T1007,T1518,14,,,,,,
+ms_033,apt29::unknown::10,apt29,apt29,unknown,10,T1036 T1059 T1119 T1016 T1033 T1041 T1057 T1007 T1082 T1069,T1087,T1124,25,,,,,,
+ms_034,apt29::unknown::14,apt29,apt29,unknown,14,T1036 T1059 T1119 T1016 T1033 T1041 T1057 T1007 T1082 T1069 T1087 T1012 T1036 T1134,T1548,T1049,87,,,,,,
+ms_035,apt29::unknown::15,apt29,apt29,unknown,15,T1036 T1059 T1119 T1016 T1033 T1041 T1057 T1007 T1082 T1069 T1087 T1012 T1036 T1134 T1548,T1112,T1140,3,,,,,,
+ms_036,apt29::unknown::20,apt29,apt29,unknown,20,T1036 T1059 T1119 T1016 T1033 T1041 T1057 T1007 T1082 T1069 T1087 T1012 T1036 T1134 T1548 T1112 T1055 T1036 T1018 T1016,T1057,T1021,42,,,,,,
+ms_037,fin6::unknown::3,fin6,fin6,unknown,3,T1087 T1018 T1482,T1016,T1560,6,,,,,,
+ms_038,fin6::unknown::4,fin6,fin6,unknown,4,T1087 T1018 T1482 T1016,T1069,T1049,59,,,,,,
+ms_039,fin6::unknown::8,fin6,fin6,unknown,8,T1087 T1018 T1482 T1016 T1069 T1134 T1003 T1560,T1567,T1560,105,,,,,,
+ms_040,fin6::unknown::12,fin6,fin6,unknown,12,T1087 T1018 T1482 T1016 T1069 T1134 T1003 T1560 T1567 T1569 T1047 T1547,T1053,T1543,9,,,,,,

@@ -1,0 +1,901 @@
+﻿sequence_id,true_label,pred__current_access_context,pred__exhausted_action_constraint,pred__next_target_artifact,pred__next_micro_verb,json_parse_ok,raw_output,pred_top1,top5_labels,true_rank
+SIM_004_part004,T1586,valid_user_context,credential_material_not_collected,local_file_data,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1016"",
+    ""T1082""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1016 || T1082,-1
+SIM_004_part004,T1140,valid_user_context,credential_material_not_collected,local_file_data,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1041"",
+    ""T1048"",
+    ""T1021"",
+    ""T1018""
+  ]
+}",T1005,T1005 || T1041 || T1048 || T1021 || T1018,-1
+SIM_004_part004,T1036,post_compromise_discovery,domain_trust_not_enumerated,domain_trust_relationship,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1018"",
+    ""T1016"",
+    ""T1087"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1018,T1018 || T1016 || T1087 || T1012 || T1007,-1
+SIM_004_part004,T1036,post_compromise_discovery,defense_evasion_path_not_established,credential_material,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1005"",
+    ""T1012"",
+    ""T1016""
+  ]
+}",T1555,T1555 || T1003 || T1005 || T1012 || T1016,-1
+SIM_004_part004,T1036,post_compromise_discovery,impact_path_not_established,system_configuration_store,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1547"",
+    ""T1548"",
+    ""T1555"",
+    ""T1560"",
+    ""T1561""
+  ]
+}",T1547,T1547 || T1548 || T1555 || T1560 || T1561,-1
+SIM_004_part004,T1027,post_compromise_discovery,remote_execution_path_not_established,system_configuration_store,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1547"",
+    ""T1548"",
+    ""T1560"",
+    ""T1561"",
+    ""T1569""
+  ]
+}",T1547,T1547 || T1548 || T1560 || T1561 || T1569,-1
+SIM_004_part004,T1078,post_compromise_discovery,impact_path_not_established,service_execution_channel,masquerade,1,"{
+  ""top5_next_ttp"": [
+    ""T1053"",
+    ""T1547"",
+    ""T1047"",
+    ""T1021"",
+    ""T1059""
+  ]
+}",T1053,T1053 || T1547 || T1047 || T1021 || T1059,-1
+SIM_004_part004,T1586,post_compromise_discovery,execution_capability_not_established,process_inventory,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1082,T1082 || T1083 || T1016 || T1012 || T1007,-1
+SIM_004_part004,T1056,post_compromise_discovery,execution_capability_not_established,system_configuration_store,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1012"",
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1018""
+  ]
+}",T1012,T1012 || T1082 || T1083 || T1016 || T1018,-1
+SIM_004_part004,T1056,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,3
+SIM_004_part004,T1003,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,2
+SIM_004_part004,T1003,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,2
+SIM_004_part004,T1003,post_compromise_discovery,credential_material_not_collected,system_configuration_store,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1007"",
+    ""T1012"",
+    ""T1087"",
+    ""T1555""
+  ]
+}",T1003,T1003 || T1007 || T1012 || T1087 || T1555,1
+SIM_004_part004,T1003,post_compromise_discovery,credential_material_not_collected,credential_material,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1552"",
+    ""T1056"",
+    ""T1005""
+  ]
+}",T1555,T1555 || T1003 || T1552 || T1056 || T1005,2
+SIM_004_part004,T1003,post_compromise_discovery,credential_material_not_collected,system_configuration_store,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1007"",
+    ""T1012"",
+    ""T1087"",
+    ""T1555""
+  ]
+}",T1003,T1003 || T1007 || T1012 || T1087 || T1555,1
+SIM_004_part004,T1558,post_compromise_discovery,credential_material_not_collected,system_configuration_store,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1007"",
+    ""T1012"",
+    ""T1087"",
+    ""T1555""
+  ]
+}",T1003,T1003 || T1007 || T1012 || T1087 || T1555,-1
+SIM_004_part004,T1558,post_compromise_discovery,credential_material_not_collected,system_configuration_store,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1012"",
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1087""
+  ]
+}",T1012,T1012 || T1082 || T1083 || T1016 || T1087,-1
+SIM_004_part004,T1087,post_compromise_discovery,credential_material_not_collected,service_execution_channel,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1012"",
+    ""T1018""
+  ]
+}",T1082,T1082 || T1083 || T1016 || T1012 || T1018,-1
+SIM_004_part004,T1087,post_compromise_discovery,credential_material_not_collected,service_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1059"",
+    ""T1012"",
+    ""T1047"",
+    ""T1053""
+  ]
+}",T1003,T1003 || T1059 || T1012 || T1047 || T1053,-1
+SIM_007_part011,T1218,execution_on_host,user_execution_path_not_established,system_configuration_store,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1547"",
+    ""T1548"",
+    ""T1053"",
+    ""T1059"",
+    ""T1012""
+  ]
+}",T1547,T1547 || T1548 || T1053 || T1059 || T1012,-1
+SIM_007_part011,T1221,execution_on_host,execution_capability_not_established,system_configuration_store,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1547"",
+    ""T1548"",
+    ""T1053"",
+    ""T1012"",
+    ""T1021""
+  ]
+}",T1547,T1547 || T1548 || T1053 || T1012 || T1021,-1
+SIM_007_part011,T1550,execution_on_host,execution_capability_not_established,system_configuration_store,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1547"",
+    ""T1548"",
+    ""T1053"",
+    ""T1012"",
+    ""T1021""
+  ]
+}",T1547,T1547 || T1548 || T1053 || T1012 || T1021,-1
+SIM_007_part011,T1075,execution_on_host,execution_capability_not_established,system_configuration_store,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1547"",
+    ""T1548"",
+    ""T1053"",
+    ""T1012"",
+    ""T1021""
+  ]
+}",T1547,T1547 || T1548 || T1053 || T1012 || T1021,-1
+SIM_007_part011,T1078,post_compromise_discovery,credential_material_not_collected,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1012"",
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1018""
+  ]
+}",T1012,T1012 || T1082 || T1083 || T1016 || T1018,-1
+SIM_007_part011,T1586,valid_user_context,credential_material_not_collected,local_file_data,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1041"",
+    ""T1048"",
+    ""T1021"",
+    ""T1018""
+  ]
+}",T1005,T1005 || T1041 || T1048 || T1021 || T1018,-1
+SIM_007_part011,T1557,post_compromise_discovery,credential_material_not_collected,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1087"",
+    ""T1016""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1087 || T1016,-1
+SIM_007_part011,T1557,valid_user_context,credential_material_not_collected,local_file_data,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1041"",
+    ""T1048"",
+    ""T1021"",
+    ""T1018""
+  ]
+}",T1005,T1005 || T1041 || T1048 || T1021 || T1018,-1
+SIM_007_part011,T1110,post_compromise_discovery,remote_execution_path_not_established,network_configuration,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1018""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1018,-1
+SIM_007_part011,T1110,post_compromise_discovery,credential_material_not_collected,network_configuration,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part011,T1110,post_compromise_discovery,credential_material_not_collected,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part011,T1056,post_compromise_discovery,credential_material_not_collected,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part011,T1056,post_compromise_discovery,credential_material_not_collected,user_account_context,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1087"",
+    ""T1016"",
+    ""T1012"",
+    ""T1033"",
+    ""T1018""
+  ]
+}",T1087,T1087 || T1016 || T1012 || T1033 || T1018,-1
+SIM_007_part011,T1040,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,-1
+SIM_007_part011,T1003,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,2
+SIM_007_part011,T1003,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,2
+SIM_007_part011,T1003,post_compromise_discovery,credential_material_not_collected,system_configuration_store,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1007"",
+    ""T1012"",
+    ""T1087"",
+    ""T1555""
+  ]
+}",T1003,T1003 || T1007 || T1012 || T1087 || T1555,1
+SIM_007_part011,T1003,post_compromise_discovery,credential_material_not_collected,system_configuration_store,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1007"",
+    ""T1012"",
+    ""T1087"",
+    ""T1555""
+  ]
+}",T1003,T1003 || T1007 || T1012 || T1087 || T1555,1
+SIM_007_part011,T1528,post_compromise_discovery,credential_material_not_collected,system_configuration_store,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1007"",
+    ""T1012"",
+    ""T1087"",
+    ""T1555""
+  ]
+}",T1003,T1003 || T1007 || T1012 || T1087 || T1555,-1
+SIM_007_part013,T1003,post_compromise_discovery,credential_material_not_collected,local_file_data,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1087"",
+    ""T1007""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1087 || T1007,2
+SIM_007_part013,T1003,post_compromise_discovery,credential_material_not_collected,credential_material,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1552"",
+    ""T1056"",
+    ""T1005""
+  ]
+}",T1555,T1555 || T1003 || T1552 || T1056 || T1005,2
+SIM_007_part013,T1528,post_compromise_discovery,credential_material_not_collected,local_file_data,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1087"",
+    ""T1007""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1087 || T1007,-1
+SIM_007_part013,T1083,post_compromise_discovery,credential_material_not_collected,local_file_data,dump,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1087"",
+    ""T1007""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1087 || T1007,-1
+SIM_007_part013,T1040,post_compromise_discovery,credential_material_not_collected,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1012"",
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1018""
+  ]
+}",T1012,T1012 || T1082 || T1083 || T1016 || T1018,-1
+SIM_007_part013,T1120,post_compromise_discovery,credential_material_not_collected,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1012"",
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1018""
+  ]
+}",T1012,T1012 || T1082 || T1083 || T1016 || T1018,-1
+SIM_007_part013,T1057,post_compromise_discovery,remote_execution_path_not_established,credential_material,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1005"",
+    ""T1048"",
+    ""T1041"",
+    ""T1567""
+  ]
+}",T1003,T1003 || T1005 || T1048 || T1041 || T1567,-1
+SIM_007_part013,T1016,post_compromise_discovery,remote_execution_path_not_established,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,1
+SIM_007_part013,T1016,post_compromise_discovery,remote_execution_path_not_established,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,1
+SIM_007_part013,T1210,post_compromise_discovery,remote_execution_path_not_established,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part013,T1021,post_compromise_discovery,remote_execution_path_not_established,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part013,T1021,post_compromise_discovery,remote_execution_path_not_established,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,-1
+SIM_007_part013,T1091,post_compromise_discovery,remote_execution_path_not_established,remote_host_list,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,-1
+SIM_007_part013,T1550,post_compromise_discovery,remote_execution_path_not_established,remote_host_list,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,-1
+SIM_007_part013,T1557,post_compromise_discovery,remote_execution_path_not_established,remote_host_list,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,-1
+SIM_007_part013,T1557,post_compromise_discovery,credential_material_not_collected,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part013,T1560,post_compromise_discovery,credential_material_not_collected,network_configuration,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part013,T1560,post_compromise_discovery,credential_material_not_collected,network_configuration,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_007_part013,T1119,execution_on_host,data_not_staged,local_file_data,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1059"",
+    ""T1048"",
+    ""T1053""
+  ]
+}",T1005,T1005 || T1003 || T1059 || T1048 || T1053,-1
+SIM_007_part016,T1074,execution_on_host,data_not_staged,remote_host_list,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1087""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1087,-1
+SIM_007_part016,T1074,post_compromise_discovery,data_not_staged,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1082 || T1083,-1
+SIM_007_part016,T1074,post_compromise_discovery,data_not_staged,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1082 || T1083,-1
+SIM_007_part016,T1114,post_compromise_discovery,data_not_staged,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1082 || T1083,-1
+SIM_007_part016,T1114,post_compromise_discovery,data_not_staged,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1082 || T1083,-1
+SIM_007_part016,T1056,post_compromise_discovery,data_not_staged,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1082 || T1083,-1
+SIM_007_part016,T1056,post_compromise_discovery,data_not_staged,local_file_data,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1005"",
+    ""T1003"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083""
+  ]
+}",T1005,T1005 || T1003 || T1012 || T1082 || T1083,-1
+SIM_007_part016,T1113,post_compromise_discovery,credential_material_not_collected,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1555"",
+    ""T1003"",
+    ""T1056"",
+    ""T1005"",
+    ""T1012""
+  ]
+}",T1555,T1555 || T1003 || T1056 || T1005 || T1012,-1
+SIM_007_part016,T1071,post_compromise_discovery,data_not_staged,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1012"",
+    ""T1087"",
+    ""T1069"",
+    ""T1016""
+  ]
+}",T1003,T1003 || T1012 || T1087 || T1069 || T1016,-1
+SIM_007_part016,T1071,post_compromise_discovery,collection_target_not_identified,user_account_context,collect,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1012"",
+    ""T1087"",
+    ""T1069"",
+    ""T1016""
+  ]
+}",T1003,T1003 || T1012 || T1087 || T1069 || T1016,-1
+SIM_007_part016,T1071,post_compromise_discovery,current_user_context_not_confirmed,network_configuration,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1012"",
+    ""T1083"",
+    ""T1018""
+  ]
+}",T1016,T1016 || T1082 || T1012 || T1083 || T1018,-1
+SIM_007_part016,T1001,execution_on_host,user_execution_path_not_established,network_configuration,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1012"",
+    ""T1082"",
+    ""T1083"",
+    ""T1049""
+  ]
+}",T1016,T1016 || T1012 || T1082 || T1083 || T1049,-1
+SIM_007_part016,T1001,post_compromise_discovery,current_user_context_not_confirmed,network_configuration,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1012"",
+    ""T1083"",
+    ""T1018""
+  ]
+}",T1016,T1016 || T1082 || T1012 || T1083 || T1018,-1
+SIM_007_part016,T1573,execution_on_host,data_not_staged,network_configuration,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1041"",
+    ""T1048"",
+    ""T1016"",
+    ""T1018"",
+    ""T1021""
+  ]
+}",T1041,T1041 || T1048 || T1016 || T1018 || T1021,-1
+SIM_007_part016,T1573,post_compromise_discovery,data_not_staged,network_configuration,modify,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1087""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1087,-1
+SIM_007_part016,T1105,post_compromise_discovery,current_user_context_not_confirmed,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1012"",
+    ""T1007"",
+    ""T1016"",
+    ""T1082""
+  ]
+}",T1059,T1059 || T1012 || T1007 || T1016 || T1082,-1
+SIM_007_part016,T1090,post_compromise_discovery,current_user_context_not_confirmed,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1012"",
+    ""T1007"",
+    ""T1016"",
+    ""T1082""
+  ]
+}",T1059,T1059 || T1012 || T1007 || T1016 || T1082,-1
+SIM_007_part016,T1090,post_compromise_discovery,current_user_context_not_confirmed,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1018""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1018,-1
+SIM_007_part018,T1105,execution_on_host,credential_material_not_collected,command_execution_channel,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1048"",
+    ""T1041"",
+    ""T1049"",
+    ""T1070"",
+    ""T1021""
+  ]
+}",T1048,T1048 || T1041 || T1049 || T1070 || T1021,-1
+SIM_007_part018,T1090,post_compromise_discovery,credential_material_not_collected,credential_material,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1552"",
+    ""T1003"",
+    ""T1056"",
+    ""T1059"",
+    ""T1012""
+  ]
+}",T1552,T1552 || T1003 || T1056 || T1059 || T1012,-1
+SIM_007_part018,T1090,post_compromise_discovery,current_user_context_not_confirmed,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1012"",
+    ""T1007"",
+    ""T1016"",
+    ""T1082""
+  ]
+}",T1059,T1059 || T1012 || T1007 || T1016 || T1082,-1
+SIM_007_part018,T1090,post_compromise_discovery,current_user_context_not_confirmed,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1012"",
+    ""T1007"",
+    ""T1016"",
+    ""T1082""
+  ]
+}",T1059,T1059 || T1012 || T1007 || T1016 || T1082,-1
+SIM_007_part018,T1102,post_compromise_discovery,remote_execution_path_not_established,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1047"",
+    ""T1021"",
+    ""T1053"",
+    ""T1105""
+  ]
+}",T1059,T1059 || T1047 || T1021 || T1053 || T1105,-1
+SIM_007_part018,T1102,post_compromise_discovery,current_user_context_not_confirmed,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1012"",
+    ""T1007"",
+    ""T1016"",
+    ""T1082""
+  ]
+}",T1059,T1059 || T1012 || T1007 || T1016 || T1082,-1
+SIM_007_part018,T1030,execution_on_host,current_user_context_not_confirmed,credential_material,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1003"",
+    ""T1005"",
+    ""T1059"",
+    ""T1053"",
+    ""T1048""
+  ]
+}",T1003,T1003 || T1005 || T1059 || T1053 || T1048,-1
+SIM_007_part018,T1048,execution_on_host,data_not_staged,command_execution_channel,execute,1,"{
+  ""top5_next_ttp"": [
+    ""T1059"",
+    ""T1047"",
+    ""T1053"",
+    ""T1021"",
+    ""T1048""
+  ]
+}",T1059,T1059 || T1047 || T1053 || T1021 || T1048,5
+SIM_007_part018,T1048,execution_on_host,data_not_staged,exfiltration_channel,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1041"",
+    ""T1048"",
+    ""T1049"",
+    ""T1016"",
+    ""T1021""
+  ]
+}",T1041,T1041 || T1048 || T1049 || T1016 || T1021,2
+SIM_007_part018,T1567,execution_on_host,exfiltration_path_not_established,exfiltration_channel,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1048"",
+    ""T1041"",
+    ""T1049"",
+    ""T1021"",
+    ""T1018""
+  ]
+}",T1048,T1048 || T1041 || T1049 || T1021 || T1018,-1
+SIM_007_part018,T1561,execution_on_host,exfiltration_path_not_established,exfiltration_channel,exfiltrate,1,"{
+  ""top5_next_ttp"": [
+    ""T1048"",
+    ""T1041"",
+    ""T1049"",
+    ""T1021"",
+    ""T1018""
+  ]
+}",T1048,T1048 || T1041 || T1049 || T1021 || T1018,-1
+SIM_010_part010,T1057,post_compromise_discovery,domain_trust_not_enumerated,domain_trust_relationship,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1018"",
+    ""T1016"",
+    ""T1087"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1018,T1018 || T1016 || T1087 || T1012 || T1007,-1
+SIM_010_part010,T1012,post_compromise_discovery,remote_execution_path_not_established,process_inventory,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1082,T1082 || T1083 || T1016 || T1012 || T1007,4
+SIM_010_part010,T1018,post_compromise_discovery,environment_not_enumerated,system_configuration_store,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1016"",
+    ""T1007""
+  ]
+}",T1082,T1082 || T1083 || T1012 || T1016 || T1007,-1
+SIM_010_part010,T1518,post_compromise_discovery,environment_not_enumerated,system_configuration_store,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1016"",
+    ""T1007""
+  ]
+}",T1082,T1082 || T1083 || T1012 || T1016 || T1007,-1
+SIM_010_part010,T1082,post_compromise_discovery,environment_not_enumerated,system_information,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1012"",
+    ""T1018""
+  ]
+}",T1082,T1082 || T1083 || T1016 || T1012 || T1018,1
+SIM_010_part010,T1016,post_compromise_discovery,remote_execution_path_not_established,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,1
+SIM_010_part010,T1016,post_compromise_discovery,remote_execution_path_not_established,system_configuration_store,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,1
+SIM_010_part010,T1049,post_compromise_discovery,remote_execution_path_not_established,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_010_part010,T1007,post_compromise_discovery,remote_execution_path_not_established,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_010_part010,T1124,post_compromise_discovery,remote_execution_path_not_established,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_010_part010,T1570,post_compromise_discovery,remote_execution_path_not_established,network_configuration,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1018"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012""
+  ]
+}",T1016,T1016 || T1018 || T1082 || T1083 || T1012,-1
+SIM_010_part010,T1021,post_compromise_discovery,remote_execution_path_not_established,system_information,query,1,"{
+  ""top5_next_ttp"": [
+    ""T1082"",
+    ""T1083"",
+    ""T1016"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1082,T1082 || T1083 || T1016 || T1012 || T1007,-1
+SIM_010_part010,T1021,post_compromise_discovery,remote_execution_path_not_established,remote_host_list,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,-1
+SIM_010_part010,T1560,post_compromise_discovery,remote_execution_path_not_established,remote_host_list,enumerate,1,"{
+  ""top5_next_ttp"": [
+    ""T1016"",
+    ""T1082"",
+    ""T1083"",
+    ""T1012"",
+    ""T1007""
+  ]
+}",T1016,T1016 || T1082 || T1083 || T1012 || T1007,-1

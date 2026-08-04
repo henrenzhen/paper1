@@ -1,0 +1,219 @@
+﻿sequence_id,state,true_label,json_parse_ok,llm_thinking_process,raw_output,pred__current_access_context,schema_ok__current_access_context,pred__exhausted_action_constraint,schema_ok__exhausted_action_constraint,pred__next_target_artifact,schema_ok__next_target_artifact,pred__next_micro_verb,schema_ok__next_micro_verb
+SIM_004_part004,T1078,T1586,1,"[战术阶段评估]：Prefix 序列仅包含 T1078 (Valid Accounts)。在 ATT&CK 框架中，T1078 是初始访问（Initial Access）和持久化（Persistence）阶段的核心技术，用于建立对目标的立足点。序列以 T1078 结尾，表明攻击者刚刚完成或正在执行利用凭证进行身份验证的过程，尚未进入执行（Execution）或防御规避（Defense Evasion）等后续战术阶段。
+
+[已获资产推演]：基于 KG Context 中提到的 Turla、SolarWinds 和 FIN7 案例，T1078 的变体（如 T1078.002 域账户或 T1078.003 本地账户）意味着攻击者目前手中掌握的是“已验证的凭证”或“受控的会话”。这属于粗粒度的访问权限，即攻击者已经成功“登录”到系统或网络，但尚未明确展示其已获取特定文件、已执行恶意代码或已提升权限（尽管凭证本身可能包含高权限，但当前状态是“拥有凭证”而非“已利用凭证执行操作”）。
+
+[意图图谱映射]：结合 KG Context 中关于攻击者利用相同密码跨网络移动（Turla）或使用域管理员账户（SolarWinds）的描述，当前处于 T1078 阶段最可能的逻辑意图是：利用已获取的凭证作为跳板，为后续的横向移动（Lateral Movement）或权限提升（Privilege Escalation）做准备。攻击者正在利用这些账户建立信任关系，以便在知识图谱的后续路径中探索网络拓扑或访问敏感资源。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列仅包含 T1078 (Valid Accounts)。在 ATT&CK 框架中，T1078 是初始访问（Initial Access）和持久化（Persistence）阶段的核心技术，用于建立对目标的立足点。序列以 T1078 结尾，表明攻击者刚刚完成或正在执行利用凭证进行身份验证的过程，尚未进入执行（Execution）或防御规避（Defense Evasion）等后续战术阶段。\n\n[已获资产推演]：基于 KG Context 中提到的 Turla、SolarWinds 和 FIN7 案例，T1078 的变体（如 T1078.002 域账户或 T1078.003 本地账户）意味着攻击者目前手中掌握的是“已验证的凭证”或“受控的会话”。这属于粗粒度的访问权限，即攻击者已经成功“登录”到系统或网络，但尚未明确展示其已获取特定文件、已执行恶意代码或已提升权限（尽管凭证本身可能包含高权限，但当前状态是“拥有凭证”而非“已利用凭证执行操作”）。\n\n[意图图谱映射]：结合 KG Context 中关于攻击者利用相同密码跨网络移动（Turla）或使用域管理员账户（SolarWinds）的描述，当前处于 T1078 阶段最可能的逻辑意图是：利用已获取的凭证作为跳板，为后续的横向移动（Lateral Movement）或权限提升（Privilege Escalation）做准备。攻击者正在利用这些账户建立信任关系，以便在知识图谱的后续路径中探索网络拓扑或访问敏感资源。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""network_configuration"",
+  ""next_micro_verb"": ""enumerate""
+}",valid_user_context,1,credential_material_not_collected,1,network_configuration,1,enumerate,1
+SIM_004_part004,T1078 || T1586,T1140,1,"[战术阶段评估]：Prefix 序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Component Firmware)。T1078 代表攻击者已经成功获取了某种形式的凭证并建立了初始访问。T1586 代表攻击者正在尝试修改或植入固件组件。在 ATT&CK 战术映射中，T1586 通常属于 'Initial Access' (初始访问) 或 'Persistence' (持久化) 的范畴，但在宏观序列中，紧随 T1078 之后，它暗示攻击者利用已获得的凭证（T1078）去执行对底层硬件或固件的修改（T1586）。
+
+[已获资产推演]：基于 T1078 的存在，攻击者目前手中掌握了有效的用户凭证（可能是本地账户或域账户，具体取决于上下文，但 KG 提示了 Turla 和 FIN7 使用本地账户，SolarWinds 使用域账户）。攻击者已经突破了身份验证防线，能够以特定身份在目标系统上执行操作。然而，T1586 是一个相对罕见且高权限的操作，通常意味着攻击者已经获得了足以修改固件的权限（如 SYSTEM 或 BIOS/UEFI 访问权限），或者正在尝试通过固件层建立持久化。
+
+[意图图谱映射]：结合 KG Context，Turla 和 FIN7 等组织利用 T1078 进行横向移动或初始立足，而 T1586 的出现表明攻击意图从单纯的“访问”转向了“深度持久化”或“供应链攻击”。攻击者利用已获取的凭证（T1078）作为跳板，试图通过固件（T1586）建立难以被常规操作系统清除的持久化机制，或者为后续更隐蔽的横向移动（如利用固件漏洞）开启逻辑攻击面。当前的宏观状态是攻击者已建立立足点，并正在尝试通过修改底层组件来巩固其存在或扩大攻击面。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Component Firmware)。T1078 代表攻击者已经成功获取了某种形式的凭证并建立了初始访问。T1586 代表攻击者正在尝试修改或植入固件组件。在 ATT&CK 战术映射中，T1586 通常属于 'Initial Access' (初始访问) 或 'Persistence' (持久化) 的范畴，但在宏观序列中，紧随 T1078 之后，它暗示攻击者利用已获得的凭证（T1078）去执行对底层硬件或固件的修改（T1586）。\n\n[已获资产推演]：基于 T1078 的存在，攻击者目前手中掌握了有效的用户凭证（可能是本地账户或域账户，具体取决于上下文，但 KG 提示了 Turla 和 FIN7 使用本地账户，SolarWinds 使用域账户）。攻击者已经突破了身份验证防线，能够以特定身份在目标系统上执行操作。然而，T1586 是一个相对罕见且高权限的操作，通常意味着攻击者已经获得了足以修改固件的权限（如 SYSTEM 或 BIOS/UEFI 访问权限），或者正在尝试通过固件层建立持久化。\n\n[意图图谱映射]：结合 KG Context，Turla 和 FIN7 等组织利用 T1078 进行横向移动或初始立足，而 T1586 的出现表明攻击意图从单纯的“访问”转向了“深度持久化”或“供应链攻击”。攻击者利用已获取的凭证（T1078）作为跳板，试图通过固件（T1586）建立难以被常规操作系统清除的持久化机制，或者为后续更隐蔽的横向移动（如利用固件漏洞）开启逻辑攻击面。当前的宏观状态是攻击者已建立立足点，并正在尝试通过修改底层组件来巩固其存在或扩大攻击面。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""modify""
+}",initial_foothold,1,persistence_path_not_established,1,system_configuration_store,1,modify,1
+SIM_004_part004,T1078 || T1586 || T1140,T1036,1,"[战术阶段评估]：前缀序列 T1078 (Valid Accounts) -> T1586 (Compromise Infrastructure) -> T1140 (Deobfuscate/Decode Files) 显示攻击者已完成初始入侵和基础设施建立。最后一步 T1140 表明攻击者正在处理加密或混淆的数据，这通常是 C2 通信配置、载荷解密或日志清理的前置步骤。结合 KG Context 中提到的 KEYPLUG 和 Sibot 利用 T1140 来解析 C2 协议或解密数据，可以推断当前处于 C2 通信建立或载荷执行前的准备阶段。
+
+[已获资产推演]：基于 T1078，攻击者已获取有效的域账户或本地账户权限。结合 T1586，攻击者已控制或配置了用于通信的基础设施（如 C2 服务器）。此时，攻击者手中掌握的是经过验证的凭据（Domain Accounts）以及初步建立的控制通道，但尚未明确展示对特定敏感文件的直接访问或横向移动，主要资产是“身份”和“通信链路”。
+
+[意图图谱映射]：结合 KG Context，T1140 在此处最可能的逻辑意图是解密 C2 配置文件（如 KEYPLUG 案例）或解密接收到的指令/载荷（如 Sibot 案例）。这一步操作为后续的 C2 通信建立、命令执行或恶意载荷释放打开了逻辑攻击面。攻击者正在从“获取权限”阶段过渡到“利用权限进行通信/执行”阶段，核心意图是激活或配置 C2 通道。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列 T1078 (Valid Accounts) -> T1586 (Compromise Infrastructure) -> T1140 (Deobfuscate/Decode Files) 显示攻击者已完成初始入侵和基础设施建立。最后一步 T1140 表明攻击者正在处理加密或混淆的数据，这通常是 C2 通信配置、载荷解密或日志清理的前置步骤。结合 KG Context 中提到的 KEYPLUG 和 Sibot 利用 T1140 来解析 C2 协议或解密数据，可以推断当前处于 C2 通信建立或载荷执行前的准备阶段。\n\n[已获资产推演]：基于 T1078，攻击者已获取有效的域账户或本地账户权限。结合 T1586，攻击者已控制或配置了用于通信的基础设施（如 C2 服务器）。此时，攻击者手中掌握的是经过验证的凭据（Domain Accounts）以及初步建立的控制通道，但尚未明确展示对特定敏感文件的直接访问或横向移动，主要资产是“身份”和“通信链路”。\n\n[意图图谱映射]：结合 KG Context，T1140 在此处最可能的逻辑意图是解密 C2 配置文件（如 KEYPLUG 案例）或解密接收到的指令/载荷（如 Sibot 案例）。这一步操作为后续的 C2 通信建立、命令执行或恶意载荷释放打开了逻辑攻击面。攻击者正在从“获取权限”阶段过渡到“利用权限进行通信/执行”阶段，核心意图是激活或配置 C2 通道。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""current_user_context_not_confirmed"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""collect""
+}",valid_user_context,1,current_user_context_not_confirmed,1,credential_material,1,collect,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036,T1036,1,"[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Component Firmware) 和 T1140 (Deobfuscate/Decode Files)。T1586 通常用于持久化或特定环境下的隐蔽，而紧随其后的 T1140 表明攻击者正在处理加密或混淆的数据（如配置文件或载荷）。最后一步 T1036 (Masquerading) 是典型的伪装行为，旨在让恶意进程看起来像合法系统进程。结合 KG Context，T1140 被明确关联到 KEYPLUG 和 Sibot 等恶意软件用于解密 C2 配置或数据，而 T1036 在 Elise 案例中用于在注册表服务安装失败时伪装成 svchost.exe。这表明攻击者刚刚完成了对恶意载荷或配置的解密/处理，并正在将其伪装成合法系统组件以维持存在。
+
+[已获资产推演]：基于 T1078，攻击者已拥有合法账户权限。T1586 和 T1140 的操作暗示攻击者已获取了特定的固件组件或加密的配置文件/载荷。当前的状态是攻击者手中握有已解密但尚未完全执行或正在伪装执行的恶意代码/配置，且已具备在目标系统上运行该代码的上下文环境。
+
+[意图图谱映射]：结合 KG Context，T1140 后接 T1036 的逻辑路径显示，攻击者正在为后续的 C2 通信（通过解密配置确定协议）或持久化驻留（通过伪装成系统进程）做准备。这种“解密 -> 伪装”的组合通常是为了绕过检测，确保恶意软件能够长期潜伏并建立稳定的控制通道。因此，当前阶段最可能的状态是攻击者正在执行恶意软件的初始化配置加载或伪装驻留，为后续的 C2 通信或横向移动铺平道路。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Component Firmware) 和 T1140 (Deobfuscate/Decode Files)。T1586 通常用于持久化或特定环境下的隐蔽，而紧随其后的 T1140 表明攻击者正在处理加密或混淆的数据（如配置文件或载荷）。最后一步 T1036 (Masquerading) 是典型的伪装行为，旨在让恶意进程看起来像合法系统进程。结合 KG Context，T1140 被明确关联到 KEYPLUG 和 Sibot 等恶意软件用于解密 C2 配置或数据，而 T1036 在 Elise 案例中用于在注册表服务安装失败时伪装成 svchost.exe。这表明攻击者刚刚完成了对恶意载荷或配置的解密/处理，并正在将其伪装成合法系统组件以维持存在。\n\n[已获资产推演]：基于 T1078，攻击者已拥有合法账户权限。T1586 和 T1140 的操作暗示攻击者已获取了特定的固件组件或加密的配置文件/载荷。当前的状态是攻击者手中握有已解密但尚未完全执行或正在伪装执行的恶意代码/配置，且已具备在目标系统上运行该代码的上下文环境。\n\n[意图图谱映射]：结合 KG Context，T1140 后接 T1036 的逻辑路径显示，攻击者正在为后续的 C2 通信（通过解密配置确定协议）或持久化驻留（通过伪装成系统进程）做准备。这种“解密 -> 伪装”的组合通常是为了绕过检测，确保恶意软件能够长期潜伏并建立稳定的控制通道。因此，当前阶段最可能的状态是攻击者正在执行恶意软件的初始化配置加载或伪装驻留，为后续的 C2 通信或横向移动铺平道路。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""masquerade""
+}",initial_foothold,1,persistence_path_not_established,1,credential_material,1,masquerade,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036,T1036,1,"[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Component Firmware) 和 T1140 (Hide Artifacts)。序列末尾连续出现两次 T1036 (Masquerading)。T1140 通常用于清理痕迹，而紧随其后的 T1036 表明攻击者正在主动修改自身或相关组件的伪装属性（如文件名、进程名），以匹配系统合法资源。这种“清理后伪装”的连续操作模式，标志着攻击者已完成初步的隐蔽部署，正在进入“持久化伪装”或“横向移动前的伪装”阶段。
+
+[已获资产推演]：基于 T1078，攻击者已拥有合法凭证。T1586 暗示攻击者可能已接触或尝试修改固件/底层组件（或作为知识图谱中的关联上下文）。T1140 和 T1036 的组合表明攻击者手中已掌握了对目标系统的文件写入权限，并成功将恶意载荷（如 Elise 或 Chaes 类样本）重命名为合法系统文件名（如 svchost.exe 或 hha.dll），从而在逻辑上“拥有”了一个伪装成系统组件的恶意实体。
+
+[意图图谱映射]：结合 KG Context，T1036.005 (Match Legitimate Resource Name or Location) 的重复出现，特别是针对服务安装失败后的文件伪装（如 Elise 案例），强烈暗示攻击者正在构建一个能够绕过文件完整性检查或安全软件检测的“合法化”入口。这种操作通常是为了后续利用该伪装文件进行服务启动、计划任务执行或作为横向移动的工具（如 NotPetya 伪装 PsExec）。当前的逻辑攻击面已打开，允许攻击者以“系统组件”的身份在后台静默运行或等待触发。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Component Firmware) 和 T1140 (Hide Artifacts)。序列末尾连续出现两次 T1036 (Masquerading)。T1140 通常用于清理痕迹，而紧随其后的 T1036 表明攻击者正在主动修改自身或相关组件的伪装属性（如文件名、进程名），以匹配系统合法资源。这种“清理后伪装”的连续操作模式，标志着攻击者已完成初步的隐蔽部署，正在进入“持久化伪装”或“横向移动前的伪装”阶段。\n\n[已获资产推演]：基于 T1078，攻击者已拥有合法凭证。T1586 暗示攻击者可能已接触或尝试修改固件/底层组件（或作为知识图谱中的关联上下文）。T1140 和 T1036 的组合表明攻击者手中已掌握了对目标系统的文件写入权限，并成功将恶意载荷（如 Elise 或 Chaes 类样本）重命名为合法系统文件名（如 svchost.exe 或 hha.dll），从而在逻辑上“拥有”了一个伪装成系统组件的恶意实体。\n\n[意图图谱映射]：结合 KG Context，T1036.005 (Match Legitimate Resource Name or Location) 的重复出现，特别是针对服务安装失败后的文件伪装（如 Elise 案例），强烈暗示攻击者正在构建一个能够绕过文件完整性检查或安全软件检测的“合法化”入口。这种操作通常是为了后续利用该伪装文件进行服务启动、计划任务执行或作为横向移动的工具（如 NotPetya 伪装 PsExec）。当前的逻辑攻击面已打开，允许攻击者以“系统组件”的身份在后台静默运行或等待触发。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""masquerade""
+}",valid_user_context,1,persistence_path_not_established,1,system_configuration_store,1,masquerade,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036,T1027,1,"[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Resource Development) 和 T1140 (Deobfuscate/Decode Data)，最后连续三次出现 T1036 (Masquerading)。T1036 的连续重复通常表示攻击者在尝试多种伪装策略（如修改文件名、伪装成系统进程、伪装成合法服务）以绕过检测或确保持久化。这表明攻击者已经完成了初始入侵和资源准备，当前正处于攻击链的‘执行与持久化’阶段，重点在于隐藏自身存在。
+
+[已获资产推演]：基于 T1078，攻击者已获取了合法账户权限。T1586 和 T1140 表明攻击者已下载并处理了攻击载荷（可能是加密的恶意软件）。连续执行 T1036 意味着攻击者手中已掌握恶意代码，并正在尝试将其伪装成系统组件（如 svchost.exe 或合法 DLL）以驻留在目标系统中。此时，攻击者尚未明确进入横向移动或数据窃取阶段，而是专注于在单点建立隐蔽的立足点。
+
+[意图图谱映射]：结合 KG Context，T1036.005 等子技术常与将恶意文件重命名为系统文件名（如 svchost.exe）或伪装成合法 DLL 相关联。这种操作逻辑上是为了规避 EDR 和人工审计，为后续的持久化（Persistence）或横向移动（Lateral Movement）铺平道路。当前的宏观状态是‘伪装与驻留’，即攻击者正在努力让恶意进程看起来像合法的系统进程，从而在目标主机上获得长期的、隐蔽的控制权。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Resource Development) 和 T1140 (Deobfuscate/Decode Data)，最后连续三次出现 T1036 (Masquerading)。T1036 的连续重复通常表示攻击者在尝试多种伪装策略（如修改文件名、伪装成系统进程、伪装成合法服务）以绕过检测或确保持久化。这表明攻击者已经完成了初始入侵和资源准备，当前正处于攻击链的‘执行与持久化’阶段，重点在于隐藏自身存在。\n\n[已获资产推演]：基于 T1078，攻击者已获取了合法账户权限。T1586 和 T1140 表明攻击者已下载并处理了攻击载荷（可能是加密的恶意软件）。连续执行 T1036 意味着攻击者手中已掌握恶意代码，并正在尝试将其伪装成系统组件（如 svchost.exe 或合法 DLL）以驻留在目标系统中。此时，攻击者尚未明确进入横向移动或数据窃取阶段，而是专注于在单点建立隐蔽的立足点。\n\n[意图图谱映射]：结合 KG Context，T1036.005 等子技术常与将恶意文件重命名为系统文件名（如 svchost.exe）或伪装成合法 DLL 相关联。这种操作逻辑上是为了规避 EDR 和人工审计，为后续的持久化（Persistence）或横向移动（Lateral Movement）铺平道路。当前的宏观状态是‘伪装与驻留’，即攻击者正在努力让恶意进程看起来像合法的系统进程，从而在目标主机上获得长期的、隐蔽的控制权。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""masquerade""
+}",initial_foothold,1,persistence_path_not_established,1,system_configuration_store,1,masquerade,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027,T1078,1,"[战术阶段评估]：Prefix 序列以 T1036 (Masquerading) 连续三次出现，随后紧跟 T1027 (Software Packing/Obfuscation)。T1036 的连续出现表明攻击者正在反复调整或验证其伪装策略，可能是在尝试不同的文件名或进程名以绕过特定的检测规则。T1027 的出现通常意味着攻击者正在对恶意载荷进行加壳或混淆处理，这通常是部署阶段（Initial Access/Execution）的最后一步，或者是为了在持久化阶段隐藏恶意代码。结合上下文，Darkhotel 和 APT1 使用 T1036.005 (Legitimate Resource Name) 伪装成 SSH 工具或 Adobe 阅读器，而 FunnyDream 使用 T1036.004 (Task/Service) 伪装成 WSearch 服务。当前序列显示攻击者正处于高度关注“如何不被发现”的阶段，即通过伪装和加壳来确保恶意代码的存活。
+
+[已获资产推演]：基于 T1078 (Valid Accounts) 和 T1586 (Compromise Infrastructure) 的早期步骤，攻击者已经获得了初始访问权限并控制了部分基础设施。连续的 T1036 操作表明攻击者已经能够修改本地文件系统或注册表，正在尝试将恶意代码伪装成合法系统组件。此时，攻击者手中掌握的资产主要是“已部署但尚未完全稳定”的恶意载荷，以及“经过伪装处理的执行环境”。权限级别可能仍停留在当前用户或已提权的系统账户，但核心资产是“伪装后的恶意文件/服务”。
+
+[意图图谱映射]：结合 KG Context，攻击者利用 T1036.005 和 T1036.004 的变体，旨在利用系统对合法资源（如 SSH 工具、Adobe 阅读器、WSearch 服务）的信任。T1027 的加入进一步增加了静态分析的难度。这一系列操作最可能为后续的“持久化”（Persistence）或“防御规避”（Defense Evasion）阶段开启了逻辑攻击面。攻击者正在构建一个能够长期驻留且难以被特征库识别的入口点，为后续的横向移动或数据窃取做准备。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1036 (Masquerading) 连续三次出现，随后紧跟 T1027 (Software Packing/Obfuscation)。T1036 的连续出现表明攻击者正在反复调整或验证其伪装策略，可能是在尝试不同的文件名或进程名以绕过特定的检测规则。T1027 的出现通常意味着攻击者正在对恶意载荷进行加壳或混淆处理，这通常是部署阶段（Initial Access/Execution）的最后一步，或者是为了在持久化阶段隐藏恶意代码。结合上下文，Darkhotel 和 APT1 使用 T1036.005 (Legitimate Resource Name) 伪装成 SSH 工具或 Adobe 阅读器，而 FunnyDream 使用 T1036.004 (Task/Service) 伪装成 WSearch 服务。当前序列显示攻击者正处于高度关注“如何不被发现”的阶段，即通过伪装和加壳来确保恶意代码的存活。\n\n[已获资产推演]：基于 T1078 (Valid Accounts) 和 T1586 (Compromise Infrastructure) 的早期步骤，攻击者已经获得了初始访问权限并控制了部分基础设施。连续的 T1036 操作表明攻击者已经能够修改本地文件系统或注册表，正在尝试将恶意代码伪装成合法系统组件。此时，攻击者手中掌握的资产主要是“已部署但尚未完全稳定”的恶意载荷，以及“经过伪装处理的执行环境”。权限级别可能仍停留在当前用户或已提权的系统账户，但核心资产是“伪装后的恶意文件/服务”。\n\n[意图图谱映射]：结合 KG Context，攻击者利用 T1036.005 和 T1036.004 的变体，旨在利用系统对合法资源（如 SSH 工具、Adobe 阅读器、WSearch 服务）的信任。T1027 的加入进一步增加了静态分析的难度。这一系列操作最可能为后续的“持久化”（Persistence）或“防御规避”（Defense Evasion）阶段开启了逻辑攻击面。攻击者正在构建一个能够长期驻留且难以被特征库识别的入口点，为后续的横向移动或数据窃取做准备。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""persistence_mechanism"",
+  ""next_micro_verb"": ""masquerade""
+}",initial_foothold,1,defense_evasion_path_not_established,1,persistence_mechanism,1,masquerade,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078,T1586,1,"[战术阶段评估]：序列最后两步为 T1027 (Obfuscated Files or Information) 和 T1078 (Valid Accounts)。T1027 通常紧随在恶意载荷交付或执行之前，用于混淆代码以逃避检测；T1078 表示攻击者正在利用已获取的凭证进行登录或维持访问。结合前缀中的 T1036 (Masquerading) 重复出现，表明攻击者正在构建一个经过伪装且混淆的持久化环境。整体来看，攻击者正处于从‘初始访问/执行’向‘持久化/防御规避’过渡的关键节点，正在尝试将混淆后的载荷与合法凭证结合以建立稳固的立足点。
+
+[已获资产推演]：基于 T1078 的出现，攻击者目前手中至少掌握了一组有效的用户凭证（Valid Accounts），可能是通过之前的 T1586 (Software Discovery) 或 T1140 (Deobfuscate/Decode Files) 阶段获取的。结合 T1036 的多次出现，攻击者已经能够伪装成系统进程或合法用户身份。此时，攻击者尚未明确展示横向移动（T1021）或数据窃取（T1560）的具体动作，但已具备在目标网络中模拟合法用户进行后续操作的基础资产。
+
+[意图图谱映射]：结合 KG Context 中关于 GALLIUM 和 Lumma Stealer 使用 T1027 进行混淆的描述，攻击者当前的意图是利用混淆技术（T1027）来隐藏其利用有效凭证（T1078）进行的后续操作。这种组合通常是为了在建立持久化（Persistence）的同时，规避基于签名的检测。攻击面已开启为‘受控的、伪装后的内部活动’，为后续的横向移动或数据窃取（如 Stealer 行为）铺平了道路，当前状态最符合‘利用混淆技术维持基于凭证的访问’这一逻辑。","{
+  ""_thinking_process"": ""[战术阶段评估]：序列最后两步为 T1027 (Obfuscated Files or Information) 和 T1078 (Valid Accounts)。T1027 通常紧随在恶意载荷交付或执行之前，用于混淆代码以逃避检测；T1078 表示攻击者正在利用已获取的凭证进行登录或维持访问。结合前缀中的 T1036 (Masquerading) 重复出现，表明攻击者正在构建一个经过伪装且混淆的持久化环境。整体来看，攻击者正处于从‘初始访问/执行’向‘持久化/防御规避’过渡的关键节点，正在尝试将混淆后的载荷与合法凭证结合以建立稳固的立足点。\n\n[已获资产推演]：基于 T1078 的出现，攻击者目前手中至少掌握了一组有效的用户凭证（Valid Accounts），可能是通过之前的 T1586 (Software Discovery) 或 T1140 (Deobfuscate/Decode Files) 阶段获取的。结合 T1036 的多次出现，攻击者已经能够伪装成系统进程或合法用户身份。此时，攻击者尚未明确展示横向移动（T1021）或数据窃取（T1560）的具体动作，但已具备在目标网络中模拟合法用户进行后续操作的基础资产。\n\n[意图图谱映射]：结合 KG Context 中关于 GALLIUM 和 Lumma Stealer 使用 T1027 进行混淆的描述，攻击者当前的意图是利用混淆技术（T1027）来隐藏其利用有效凭证（T1078）进行的后续操作。这种组合通常是为了在建立持久化（Persistence）的同时，规避基于签名的检测。攻击面已开启为‘受控的、伪装后的内部活动’，为后续的横向移动或数据窃取（如 Stealer 行为）铺平了道路，当前状态最符合‘利用混淆技术维持基于凭证的访问’这一逻辑。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""persistence_path_not_established"",
+  ""next_target_artifact"": ""staged_collection"",
+  ""next_micro_verb"": ""execute""
+}",valid_user_context,1,persistence_path_not_established,1,staged_collection,1,execute,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586,T1056,1,"[战术阶段评估]：序列以 T1078 (Valid Accounts) 和 T1586 (Compromise Infrastructure) 结尾，中间穿插了 T1027 (Obfuscated Files or Information)。T1078 和 T1586 属于初始访问和持久化阶段，但紧随其后的 T1027 表明攻击者正在对交付物或当前运行的代码进行混淆处理。这种“访问/持久化 -> 混淆”的交替模式，通常意味着攻击者正在准备下一步的横向移动或权限提升，或者正在清理/加固其当前存在的痕迹以规避检测。最后两步 T1078 || T1586 显示攻击者正在重新验证或建立新的基础设施连接，结合中间的 T1027，这暗示攻击者可能正在利用已获取的凭证（T1078）去访问新的基础设施（T1586），并对该路径上的载荷进行混淆（T1027）。
+
+[已获资产推演]：攻击者已经成功获取了有效的账户凭证（T1078），并且已经建立或正在建立对特定基础设施的控制（T1586）。T1036 的多次出现表明攻击者正在尝试隐藏其进程或文件，而 T1027 表明其正在处理可执行文件。综合来看，攻击者目前手中掌握的是“已验证的账户权限”以及“受控的基础设施入口点”，但尚未明确显示已完全控制目标主机的高权限（如 SYSTEM），更多处于利用凭证进行横向移动或部署新载荷的阶段。
+
+[意图图谱映射]：结合 KG Context 中关于 Machete、GALLIUM、XLoader 等使用 T1027.002 (Software Packing) 的案例，攻击者当前的 T1027 操作极有可能是为了对即将通过 T1078 分发的载荷进行打包，或者对已获取的凭证/工具进行混淆以绕过 EDR。T1078 和 T1586 的重复出现暗示攻击者正在构建一个稳定的、经过混淆处理的攻击链，意图是利用这些凭证在受控的基础设施上执行进一步的恶意操作（如下载第二阶段载荷、横向移动）。因此，当前状态最可能是“利用已获取凭证在受控基础设施上准备或执行混淆后的恶意载荷”。","{
+  ""_thinking_process"": ""[战术阶段评估]：序列以 T1078 (Valid Accounts) 和 T1586 (Compromise Infrastructure) 结尾，中间穿插了 T1027 (Obfuscated Files or Information)。T1078 和 T1586 属于初始访问和持久化阶段，但紧随其后的 T1027 表明攻击者正在对交付物或当前运行的代码进行混淆处理。这种“访问/持久化 -> 混淆”的交替模式，通常意味着攻击者正在准备下一步的横向移动或权限提升，或者正在清理/加固其当前存在的痕迹以规避检测。最后两步 T1078 || T1586 显示攻击者正在重新验证或建立新的基础设施连接，结合中间的 T1027，这暗示攻击者可能正在利用已获取的凭证（T1078）去访问新的基础设施（T1586），并对该路径上的载荷进行混淆（T1027）。\n\n[已获资产推演]：攻击者已经成功获取了有效的账户凭证（T1078），并且已经建立或正在建立对特定基础设施的控制（T1586）。T1036 的多次出现表明攻击者正在尝试隐藏其进程或文件，而 T1027 表明其正在处理可执行文件。综合来看，攻击者目前手中掌握的是“已验证的账户权限”以及“受控的基础设施入口点”，但尚未明确显示已完全控制目标主机的高权限（如 SYSTEM），更多处于利用凭证进行横向移动或部署新载荷的阶段。\n\n[意图图谱映射]：结合 KG Context 中关于 Machete、GALLIUM、XLoader 等使用 T1027.002 (Software Packing) 的案例，攻击者当前的 T1027 操作极有可能是为了对即将通过 T1078 分发的载荷进行打包，或者对已获取的凭证/工具进行混淆以绕过 EDR。T1078 和 T1586 的重复出现暗示攻击者正在构建一个稳定的、经过混淆处理的攻击链，意图是利用这些凭证在受控的基础设施上执行进一步的恶意操作（如下载第二阶段载荷、横向移动）。因此，当前状态最可能是“利用已获取凭证在受控基础设施上准备或执行混淆后的恶意载荷”。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""user_execution_path_not_established"",
+  ""next_target_artifact"": ""staged_collection"",
+  ""next_micro_verb"": ""execute""
+}",valid_user_context,1,user_execution_path_not_established,1,staged_collection,1,execute,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056,T1056,1,"[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Compromise Infrastructure) 和 T1140 (Hide Artifacts) 等，中间穿插了多次 T1036 (Masquerading) 和 T1027 (Obfuscated Files)。序列最后两步为 T1078 和 T1586，紧接着是 T1056 (Keylogging)。T1078 表明攻击者正在利用或维持有效账户的访问权限；T1586 暗示攻击者可能正在配置或更新其基础设施以支持后续操作；而 T1056 是本次序列的终点，标志着攻击者正在执行凭证收集。整体来看，攻击者处于从‘建立访问’向‘数据窃取’过渡的阶段，且重点在于通过键盘记录获取敏感信息。
+
+[已获资产推演]：基于 T1078 和 T1586 的连续出现，攻击者目前手中掌握的是‘有效用户账户’级别的访问权限，并且已经具备了‘远程通信基础设施’（C2 或数据中转点）。T1140 和 T1036 的多次出现表明攻击者已经成功在目标系统上隐藏了自身痕迹并伪装了身份，处于一种‘隐蔽驻留’状态。此时，攻击者尚未明确显示已获取最终的控制权（如域控），但已具备在单点或特定主机上执行恶意代码的能力。
+
+[意图图谱映射]：结合 KG Context，T1056 (Keylogging) 通常与 T1078 (Valid Accounts) 形成强关联。攻击者利用已获取的账户权限（T1078）运行键盘记录器（T1056），目的是窃取该账户的登录凭证（如密码、PIN 码）或敏感输入。KG Context 中提到的 PoetRAT、Catchamas 等恶意软件均利用 T1056 进行凭证窃取。因此，当前的逻辑攻击面是‘凭证窃取’，旨在通过记录用户输入来扩大权限或获取新的有效账户，为后续的横向移动或权限提升做准备。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列以 T1078 (Valid Accounts) 开始，随后是 T1586 (Compromise Infrastructure) 和 T1140 (Hide Artifacts) 等，中间穿插了多次 T1036 (Masquerading) 和 T1027 (Obfuscated Files)。序列最后两步为 T1078 和 T1586，紧接着是 T1056 (Keylogging)。T1078 表明攻击者正在利用或维持有效账户的访问权限；T1586 暗示攻击者可能正在配置或更新其基础设施以支持后续操作；而 T1056 是本次序列的终点，标志着攻击者正在执行凭证收集。整体来看，攻击者处于从‘建立访问’向‘数据窃取’过渡的阶段，且重点在于通过键盘记录获取敏感信息。\n\n[已获资产推演]：基于 T1078 和 T1586 的连续出现，攻击者目前手中掌握的是‘有效用户账户’级别的访问权限，并且已经具备了‘远程通信基础设施’（C2 或数据中转点）。T1140 和 T1036 的多次出现表明攻击者已经成功在目标系统上隐藏了自身痕迹并伪装了身份，处于一种‘隐蔽驻留’状态。此时，攻击者尚未明确显示已获取最终的控制权（如域控），但已具备在单点或特定主机上执行恶意代码的能力。\n\n[意图图谱映射]：结合 KG Context，T1056 (Keylogging) 通常与 T1078 (Valid Accounts) 形成强关联。攻击者利用已获取的账户权限（T1078）运行键盘记录器（T1056），目的是窃取该账户的登录凭证（如密码、PIN 码）或敏感输入。KG Context 中提到的 PoetRAT、Catchamas 等恶意软件均利用 T1056 进行凭证窃取。因此，当前的逻辑攻击面是‘凭证窃取’，旨在通过记录用户输入来扩大权限或获取新的有效账户，为后续的横向移动或权限提升做准备。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""collect""
+}",valid_user_context,1,credential_material_not_collected,1,credential_material,1,collect,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056,T1003,1,"[战术阶段评估]：Prefix 序列以 T1056 (Credential Access) 结尾，且连续两次出现。T1056 通常位于攻击链的中后段，紧随在初始访问 (T1078)、持久化 (T1586) 和防御规避 (T1036, T1027) 之后。连续执行 T1056 表明攻击者正在集中资源进行凭证收集，而非单次尝试。结合 KG Context，T1056 常与特定 RAT (如 gh0st, PoetRAT) 或 APT 组织 (如 APT3) 的键盘记录行为关联，暗示攻击者已部署了具备凭证窃取能力的后门。
+
+[已获资产推演]：攻击者已建立持久化连接 (T1586)，并成功规避了部分检测 (T1036, T1027)。当前阶段，攻击者手中掌握的是“受控的受害者主机”以及“正在运行的凭证采集模块”。虽然尚未明确显示已获取具体凭证值，但攻击者已具备获取高价值凭证 (如明文密码、哈希) 的完整执行环境。
+
+[意图图谱映射]：基于 KG Context 中 T1056 与 RAT 的强关联，连续执行 T1056 的逻辑意图是“批量/持续收集凭证以用于横向移动或权限提升”。这为后续的 T1021 (Remote Services) 或 T1078 (Valid Accounts) 的滥用做好了直接准备。攻击者正处于“凭证收割”阶段，旨在为下一步的横向移动积累“弹药”。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1056 (Credential Access) 结尾，且连续两次出现。T1056 通常位于攻击链的中后段，紧随在初始访问 (T1078)、持久化 (T1586) 和防御规避 (T1036, T1027) 之后。连续执行 T1056 表明攻击者正在集中资源进行凭证收集，而非单次尝试。结合 KG Context，T1056 常与特定 RAT (如 gh0st, PoetRAT) 或 APT 组织 (如 APT3) 的键盘记录行为关联，暗示攻击者已部署了具备凭证窃取能力的后门。\n\n[已获资产推演]：攻击者已建立持久化连接 (T1586)，并成功规避了部分检测 (T1036, T1027)。当前阶段，攻击者手中掌握的是“受控的受害者主机”以及“正在运行的凭证采集模块”。虽然尚未明确显示已获取具体凭证值，但攻击者已具备获取高价值凭证 (如明文密码、哈希) 的完整执行环境。\n\n[意图图谱映射]：基于 KG Context 中 T1056 与 RAT 的强关联，连续执行 T1056 的逻辑意图是“批量/持续收集凭证以用于横向移动或权限提升”。这为后续的 T1021 (Remote Services) 或 T1078 (Valid Accounts) 的滥用做好了直接准备。攻击者正处于“凭证收割”阶段，旨在为下一步的横向移动积累“弹药”。"",
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""collect""
+}",post_compromise_discovery,1,credential_material_not_collected,1,credential_material,1,collect,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003,T1003,1,"[战术阶段评估]：Prefix 序列以 T1056 (Keylogging) 重复两次，紧接着是 T1003 (OS Credential Dumping) 结束。T1056 属于收集凭证阶段，而 T1003 属于访问凭证阶段。这种从‘被动记录’到‘主动提取’的序列，表明攻击者已经完成了初步的凭证捕获（或正在持续捕获），并立即转向利用系统级 API 提取内存中的明文密码或哈希值。这标志着攻击重心从‘广撒网’的监控转向了‘高价值’凭证的获取。
+
+[已获资产推演]：基于 T1056 的持续执行，攻击者手中已掌握部分用户输入的明文密码（如登录凭据、应用密码）。结合 T1003 的执行，攻击者现在进一步掌握了系统级的高权限凭证（如 Local System 账户、域管理员账户的哈希或明文）。攻击者目前处于拥有‘有效凭证’但尚未进行横向移动或权限提升（如 T1078 的后续利用）的中间状态，手中握有能够直接登录其他系统或提升本地权限的关键钥匙。
+
+[意图图谱映射]：结合 KG Context 中关于 PoetRAT、Catchamas 等使用 Keylogging 的描述，这些恶意软件通常作为持久化后门存在。T1056 的重复执行暗示攻击者可能在等待特定高价值操作（如管理员登录）或确保捕获了所有必要信息。随后的 T1003 则是为了绕过 Keylogging 可能遗漏的缓存凭证或系统服务账户。这一组合操作最可能为后续的‘横向移动’（T1021）或‘远程服务’（T1078 的再次利用）开启了逻辑攻击面，即利用获取的凭证进行无感知的网络渗透。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1056 (Keylogging) 重复两次，紧接着是 T1003 (OS Credential Dumping) 结束。T1056 属于收集凭证阶段，而 T1003 属于访问凭证阶段。这种从‘被动记录’到‘主动提取’的序列，表明攻击者已经完成了初步的凭证捕获（或正在持续捕获），并立即转向利用系统级 API 提取内存中的明文密码或哈希值。这标志着攻击重心从‘广撒网’的监控转向了‘高价值’凭证的获取。\n\n[已获资产推演]：基于 T1056 的持续执行，攻击者手中已掌握部分用户输入的明文密码（如登录凭据、应用密码）。结合 T1003 的执行，攻击者现在进一步掌握了系统级的高权限凭证（如 Local System 账户、域管理员账户的哈希或明文）。攻击者目前处于拥有‘有效凭证’但尚未进行横向移动或权限提升（如 T1078 的后续利用）的中间状态，手中握有能够直接登录其他系统或提升本地权限的关键钥匙。\n\n[意图图谱映射]：结合 KG Context 中关于 PoetRAT、Catchamas 等使用 Keylogging 的描述，这些恶意软件通常作为持久化后门存在。T1056 的重复执行暗示攻击者可能在等待特定高价值操作（如管理员登录）或确保捕获了所有必要信息。随后的 T1003 则是为了绕过 Keylogging 可能遗漏的缓存凭证或系统服务账户。这一组合操作最可能为后续的‘横向移动’（T1021）或‘远程服务’（T1078 的再次利用）开启了逻辑攻击面，即利用获取的凭证进行无感知的网络渗透。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""collect""
+}",valid_user_context,1,credential_material_not_collected,1,credential_material,1,collect,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003,T1003,1,"[战术阶段评估]：Prefix 序列以 T1056 (Keylogging) 和 T1003 (OS Credential Dumping) 结尾。T1056 通常用于捕获用户输入的明文密码，而 T1003 用于从内存中提取哈希或明文凭证。这两者结合表明攻击者正处于凭证收集阶段，且手段从被动记录（键盘记录）转向主动提取（内存转储），这是典型的凭证获取（Credential Access）战术的高潮部分。
+[已获资产推演]：基于 T1056 和 T1003 的执行，攻击者目前手中掌握的粗粒度资产是‘本地凭证’。这包括通过键盘记录捕获的明文密码，以及通过 LSASS 转储获取的 NTLM 哈希或明文密码。这些凭证是攻击者进行横向移动或权限提升的关键燃料，但尚未明确显示已用于远程登录或提权操作。
+[意图图谱映射]：结合 KG Context 中提到的 Axiom、FIN6、Agrius 等组织均使用 T1003 进行凭证转储，且上下文强调‘转移路径’，攻击者执行 T1056 和 T1003 的逻辑意图是为后续的‘横向移动’（Lateral Movement）或‘远程访问’（Remote Access）做准备。当前状态处于‘凭证收集完成，准备利用’的临界点。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1056 (Keylogging) 和 T1003 (OS Credential Dumping) 结尾。T1056 通常用于捕获用户输入的明文密码，而 T1003 用于从内存中提取哈希或明文凭证。这两者结合表明攻击者正处于凭证收集阶段，且手段从被动记录（键盘记录）转向主动提取（内存转储），这是典型的凭证获取（Credential Access）战术的高潮部分。\n[已获资产推演]：基于 T1056 和 T1003 的执行，攻击者目前手中掌握的粗粒度资产是‘本地凭证’。这包括通过键盘记录捕获的明文密码，以及通过 LSASS 转储获取的 NTLM 哈希或明文密码。这些凭证是攻击者进行横向移动或权限提升的关键燃料，但尚未明确显示已用于远程登录或提权操作。\n[意图图谱映射]：结合 KG Context 中提到的 Axiom、FIN6、Agrius 等组织均使用 T1003 进行凭证转储，且上下文强调‘转移路径’，攻击者执行 T1056 和 T1003 的逻辑意图是为后续的‘横向移动’（Lateral Movement）或‘远程访问’（Remote Access）做准备。当前状态处于‘凭证收集完成，准备利用’的临界点。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""collect""
+}",initial_foothold,1,credential_material_not_collected,1,local_file_data,1,collect,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003 || T1003,T1003,1,"[战术阶段评估]：Prefix 序列以 T1003 (OS Credential Dumping) 连续三次结束。T1003 属于 'Credential Access' 战术阶段。序列中先出现了 T1056 (Input Capture) 和 T1078 (Valid Accounts)，表明攻击者已经建立了初始访问并可能进行了凭证捕获，随后通过 T1003 进行系统级凭证转储。连续三次 T1003 暗示攻击者正在对多个目标或不同进程进行凭证提取，或者在尝试不同的转储方法以确保获取足够的凭证数据。
+
+[已获资产推演]：基于 T1003 的连续执行，攻击者目前手中掌握的粗粒度资产是‘系统级凭证’（如 NTLM 哈希、明文密码或 Kerberos TGT）。这通常意味着攻击者已经突破了单点权限，获得了能够横向移动或提升权限的关键凭证材料，但尚未明确显示已利用这些凭证进行新的登录（即尚未进入 'Lateral Movement' 或 'Privilege Escalation' 的具体执行阶段）。
+
+[意图图谱映射]：结合 KG Context 中提到的 Axiom、POWERTON、MuddyWater 等组织均使用 T1003 进行凭证转储，且上下文强调了‘转移路径’，攻击者当前的操作逻辑是为了构建‘凭证库’。连续执行 T1003 最可能的意图是确保凭证数据的完整性，为后续的‘凭证转储后的横向移动’（Lateral Movement）或‘远程服务访问’（Remote Services）做准备。当前状态处于‘凭证获取完成，准备利用’的临界点。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1003 (OS Credential Dumping) 连续三次结束。T1003 属于 'Credential Access' 战术阶段。序列中先出现了 T1056 (Input Capture) 和 T1078 (Valid Accounts)，表明攻击者已经建立了初始访问并可能进行了凭证捕获，随后通过 T1003 进行系统级凭证转储。连续三次 T1003 暗示攻击者正在对多个目标或不同进程进行凭证提取，或者在尝试不同的转储方法以确保获取足够的凭证数据。\n\n[已获资产推演]：基于 T1003 的连续执行，攻击者目前手中掌握的粗粒度资产是‘系统级凭证’（如 NTLM 哈希、明文密码或 Kerberos TGT）。这通常意味着攻击者已经突破了单点权限，获得了能够横向移动或提升权限的关键凭证材料，但尚未明确显示已利用这些凭证进行新的登录（即尚未进入 'Lateral Movement' 或 'Privilege Escalation' 的具体执行阶段）。\n\n[意图图谱映射]：结合 KG Context 中提到的 Axiom、POWERTON、MuddyWater 等组织均使用 T1003 进行凭证转储，且上下文强调了‘转移路径’，攻击者当前的操作逻辑是为了构建‘凭证库’。连续执行 T1003 最可能的意图是确保凭证数据的完整性，为后续的‘凭证转储后的横向移动’（Lateral Movement）或‘远程服务访问’（Remote Services）做准备。当前状态处于‘凭证获取完成，准备利用’的临界点。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",valid_user_context,1,credential_material_not_collected,1,credential_material,1,dump,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003 || T1003 || T1003,T1003,1,"[战术阶段评估]：Prefix 序列以 T1003 (OS Credential Dumping) 连续三次结束。T1003 属于【凭证访问 (Credential Access)】战术阶段。序列中穿插了 T1056 (Input Capture) 和 T1078 (Valid Accounts)，表明攻击者先通过凭证窃取或输入捕获获取了凭据，随后利用这些凭据进行横向移动或维持访问，最终再次集中执行 T1003 以获取更高级别的凭证（如域管理员哈希）或清理现场。连续三次执行 T1003 暗示攻击者正在系统性地提取本地或域内的所有可用凭证，而非单次偶然操作。
+
+[已获资产推演]：基于 T1078 (Valid Accounts) 和 T1056 (Input Capture) 的前置操作，攻击者目前至少掌握了一个有效的用户会话或凭据。连续执行 T1003 意味着攻击者正在从内存（LSASS）或注册表（SAM）中提取明文密码或哈希值。此时，攻击者手中掌握的资产从单一的“有效会话”升级为“高价值凭证集合（哈希/明文）”，具备了进行横向移动或提升权限的潜在能力，但尚未明确显示已执行提权（T1134）或横向移动（T1021）的具体成功日志，处于“凭证获取完成，准备利用”的临界状态。
+
+[意图图谱映射]：结合 KG Context，Axiom、POWERTON、MuddyWater 等组织均将 T1003 作为核心攻击链的一环。连续执行 T1003 通常是为了构建一个完整的凭证库，以便后续进行 Pass-the-Hash (PtH) 或 Pass-the-Ticket (PtT) 攻击。当前的逻辑攻击面已打开，攻击者正准备利用这些刚获取的凭证进行下一步的横向移动（Lateral Movement）或权限提升（Privilege Escalation）。因此，当前状态最准确的描述是“凭证访问阶段”的收尾，即“凭证转储完成”。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1003 (OS Credential Dumping) 连续三次结束。T1003 属于【凭证访问 (Credential Access)】战术阶段。序列中穿插了 T1056 (Input Capture) 和 T1078 (Valid Accounts)，表明攻击者先通过凭证窃取或输入捕获获取了凭据，随后利用这些凭据进行横向移动或维持访问，最终再次集中执行 T1003 以获取更高级别的凭证（如域管理员哈希）或清理现场。连续三次执行 T1003 暗示攻击者正在系统性地提取本地或域内的所有可用凭证，而非单次偶然操作。\n\n[已获资产推演]：基于 T1078 (Valid Accounts) 和 T1056 (Input Capture) 的前置操作，攻击者目前至少掌握了一个有效的用户会话或凭据。连续执行 T1003 意味着攻击者正在从内存（LSASS）或注册表（SAM）中提取明文密码或哈希值。此时，攻击者手中掌握的资产从单一的“有效会话”升级为“高价值凭证集合（哈希/明文）”，具备了进行横向移动或提升权限的潜在能力，但尚未明确显示已执行提权（T1134）或横向移动（T1021）的具体成功日志，处于“凭证获取完成，准备利用”的临界状态。\n\n[意图图谱映射]：结合 KG Context，Axiom、POWERTON、MuddyWater 等组织均将 T1003 作为核心攻击链的一环。连续执行 T1003 通常是为了构建一个完整的凭证库，以便后续进行 Pass-the-Hash (PtH) 或 Pass-the-Ticket (PtT) 攻击。当前的逻辑攻击面已打开，攻击者正准备利用这些刚获取的凭证进行下一步的横向移动（Lateral Movement）或权限提升（Privilege Escalation）。因此，当前状态最准确的描述是“凭证访问阶段”的收尾，即“凭证转储完成”。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""domain_trust_relationship"",
+  ""next_micro_verb"": ""dump""
+}",valid_user_context,1,credential_material_not_collected,1,domain_trust_relationship,1,dump,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003 || T1003 || T1003 || T1003,T1558,1,"[战术阶段评估]：Prefix 序列以 T1003 (OS Credential Dumping) 连续三次结束。T1003 属于【凭证访问 (Credential Access)】战术阶段。序列中穿插了 T1056 (输入捕获) 和 T1078 (有效账户)，表明攻击者先建立了持久化或初始访问，随后进行了广泛的凭证收集。连续三次 T1003 暗示攻击者正在对多个进程、多个用户或不同存储位置（如 LSASS、SAM）进行重复或分阶段的转储操作，以确保获取完整的凭证集。
+
+[已获资产推演]：基于 T1003 的连续执行，攻击者目前手中已掌握粗粒度的【凭证资产】，具体表现为内存中的明文密码、NTLM 哈希或 Kerberos 票据。这些资产尚未被用于横向移动（T1021）或远程执行（T1059），但已具备极高的利用价值。攻击者处于‘凭证获取完成，等待利用’的临界状态。
+
+[意图图谱映射]：结合 KG Context 中提到的 Axiom、POWERTON、MuddyWater 等组织均利用 T1003 进行后续攻击，且上下文强调了‘转移路径’，推断攻击者当前的逻辑攻击面已开启为【凭证滥用 (Credential Abuse)】。下一步极大概率是利用这些转储的凭证进行横向移动（Lateral Movement）或提升权限（Privilege Escalation），以扩大攻击范围。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1003 (OS Credential Dumping) 连续三次结束。T1003 属于【凭证访问 (Credential Access)】战术阶段。序列中穿插了 T1056 (输入捕获) 和 T1078 (有效账户)，表明攻击者先建立了持久化或初始访问，随后进行了广泛的凭证收集。连续三次 T1003 暗示攻击者正在对多个进程、多个用户或不同存储位置（如 LSASS、SAM）进行重复或分阶段的转储操作，以确保获取完整的凭证集。\n\n[已获资产推演]：基于 T1003 的连续执行，攻击者目前手中已掌握粗粒度的【凭证资产】，具体表现为内存中的明文密码、NTLM 哈希或 Kerberos 票据。这些资产尚未被用于横向移动（T1021）或远程执行（T1059），但已具备极高的利用价值。攻击者处于‘凭证获取完成，等待利用’的临界状态。\n\n[意图图谱映射]：结合 KG Context 中提到的 Axiom、POWERTON、MuddyWater 等组织均利用 T1003 进行后续攻击，且上下文强调了‘转移路径’，推断攻击者当前的逻辑攻击面已开启为【凭证滥用 (Credential Abuse)】。下一步极大概率是利用这些转储的凭证进行横向移动（Lateral Movement）或提升权限（Privilege Escalation），以扩大攻击范围。"",
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",post_compromise_discovery,1,credential_material_not_collected,1,credential_material,1,dump,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003 || T1003 || T1003 || T1003 || T1558,T1558,1,"[战术阶段评估]：前缀序列以 T1003 (Credential Dumping) 连续执行三次，紧接着是 T1558 (Access to Third-Party Credentials)。T1003 属于【凭证访问】(Credential Access) 战术，而 T1558 属于【凭证访问】战术下的子技术（获取 Kerberos 票据/域控制器凭证）。这表明攻击者已经完成了对本地系统凭证的初步获取，并正在深入挖掘更高级别的域凭证或第三方凭证，这是典型的从本地权限向域权限跨越的过渡阶段。
+
+[已获资产推演]：基于 T1078 (Valid Accounts) 和 T1036 (Masquerading) 的早期执行，攻击者已建立初始立足点。随后的 T1056 (Keylogging) 和多次 T1003 表明攻击者已获取了本地管理员或系统级别的凭证，并可能正在利用这些凭证进行横向移动或提升权限。目前手中掌握的资产主要是：本地系统凭证、可能的域用户凭证（通过 T1003 获取）以及正在尝试获取的 Kerberos 票据或域控制器凭证（T1558）。
+
+[意图图谱映射]：结合 KG Context 中提到的 Axiom、FIN6、Agrius 等组织均使用 T1003 进行凭证转储，且 T1558 通常用于获取 Kerberos TGT/TGS 票据。攻击者当前的逻辑意图是：利用已获取的本地凭证（T1003）作为跳板，通过 T1558 获取域内高价值凭证（如 TGT），从而为后续的【域渗透】(Domain Persistence) 或【横向移动】(Lateral Movement) 做准备。T1558 的出现标志着攻击重心从“本地凭证窃取”转向“域凭证劫持/票据获取”，这是实现域管理员权限的关键一步。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列以 T1003 (Credential Dumping) 连续执行三次，紧接着是 T1558 (Access to Third-Party Credentials)。T1003 属于【凭证访问】(Credential Access) 战术，而 T1558 属于【凭证访问】战术下的子技术（获取 Kerberos 票据/域控制器凭证）。这表明攻击者已经完成了对本地系统凭证的初步获取，并正在深入挖掘更高级别的域凭证或第三方凭证，这是典型的从本地权限向域权限跨越的过渡阶段。\n\n[已获资产推演]：基于 T1078 (Valid Accounts) 和 T1036 (Masquerading) 的早期执行，攻击者已建立初始立足点。随后的 T1056 (Keylogging) 和多次 T1003 表明攻击者已获取了本地管理员或系统级别的凭证，并可能正在利用这些凭证进行横向移动或提升权限。目前手中掌握的资产主要是：本地系统凭证、可能的域用户凭证（通过 T1003 获取）以及正在尝试获取的 Kerberos 票据或域控制器凭证（T1558）。\n\n[意图图谱映射]：结合 KG Context 中提到的 Axiom、FIN6、Agrius 等组织均使用 T1003 进行凭证转储，且 T1558 通常用于获取 Kerberos TGT/TGS 票据。攻击者当前的逻辑意图是：利用已获取的本地凭证（T1003）作为跳板，通过 T1558 获取域内高价值凭证（如 TGT），从而为后续的【域渗透】(Domain Persistence) 或【横向移动】(Lateral Movement) 做准备。T1558 的出现标志着攻击重心从“本地凭证窃取”转向“域凭证劫持/票据获取”，这是实现域管理员权限的关键一步。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""domain_trust_relationship"",
+  ""next_micro_verb"": ""collect""
+}",initial_foothold,1,credential_material_not_collected,1,domain_trust_relationship,1,collect,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003 || T1003 || T1003 || T1003 || T1558 || T1558,T1087,1,"[战术阶段评估]：分析 Prefix 序列，攻击者首先通过 T1078 (Valid Accounts) 和 T1586 (Compromise Infrastructure) 建立初始立足点，随后利用 T1140 (Deobfuscate/Decode) 和 T1036 (Masquerading) 进行环境清理与伪装。序列中段 T1027 (Obfuscated Files) 和再次出现的 T1078/T1586 暗示了权限维持或横向移动的尝试。序列末尾连续出现 T1056 (Input Capture) 和 T1003 (Credential Dumping)，表明攻击者正在积极收集凭证。最后两步 T1558 (Kerberos) 的重复出现，结合 KG Context 中关于 Brute Ratel、SILENTTRINITY 和 Empire 等工具支持 Kerberoasting 的描述，明确指向攻击者正在利用已获取的权限对域内服务账户进行 Kerberos 票证请求与提取。这标志着攻击重心已从单纯的凭证窃取转向利用 Kerberos 协议进行特权提升或横向移动准备。
+
+[已获资产推演]：基于 T1003 和 T1056 的连续执行，攻击者目前手中已掌握本地或域内的高权限凭证（如 NTLM 哈希或明文密码），并可能已获取了部分服务账户的 TGT 或 TGS 票证。结合 T1558 的上下文，攻击者已具备对域控或域内关键服务发起 Kerberoasting 攻击的能力，手中握有可被离线破解的加密服务票证（TGS）。
+
+[意图图谱映射]：结合 KG Context，T1558 的重复操作最可能为后续的‘密码破解’（Password Cracking）和‘域内横向移动’（Lateral Movement）开启了逻辑攻击面。攻击者意图通过离线破解 TGS 票证获取服务账户的明文密码，进而利用这些高权限服务账户凭证进行进一步的横向渗透或权限提升。","{
+  ""_thinking_process"": ""[战术阶段评估]：分析 Prefix 序列，攻击者首先通过 T1078 (Valid Accounts) 和 T1586 (Compromise Infrastructure) 建立初始立足点，随后利用 T1140 (Deobfuscate/Decode) 和 T1036 (Masquerading) 进行环境清理与伪装。序列中段 T1027 (Obfuscated Files) 和再次出现的 T1078/T1586 暗示了权限维持或横向移动的尝试。序列末尾连续出现 T1056 (Input Capture) 和 T1003 (Credential Dumping)，表明攻击者正在积极收集凭证。最后两步 T1558 (Kerberos) 的重复出现，结合 KG Context 中关于 Brute Ratel、SILENTTRINITY 和 Empire 等工具支持 Kerberoasting 的描述，明确指向攻击者正在利用已获取的权限对域内服务账户进行 Kerberos 票证请求与提取。这标志着攻击重心已从单纯的凭证窃取转向利用 Kerberos 协议进行特权提升或横向移动准备。\n\n[已获资产推演]：基于 T1003 和 T1056 的连续执行，攻击者目前手中已掌握本地或域内的高权限凭证（如 NTLM 哈希或明文密码），并可能已获取了部分服务账户的 TGT 或 TGS 票证。结合 T1558 的上下文，攻击者已具备对域控或域内关键服务发起 Kerberoasting 攻击的能力，手中握有可被离线破解的加密服务票证（TGS）。\n\n[意图图谱映射]：结合 KG Context，T1558 的重复操作最可能为后续的‘密码破解’（Password Cracking）和‘域内横向移动’（Lateral Movement）开启了逻辑攻击面。攻击者意图通过离线破解 TGS 票证获取服务账户的明文密码，进而利用这些高权限服务账户凭证进行进一步的横向渗透或权限提升。"",
+  ""current_access_context"": ""initial_foothold"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""service_execution_channel"",
+  ""next_micro_verb"": ""exfiltrate""
+}",initial_foothold,1,credential_material_not_collected,1,service_execution_channel,1,exfiltrate,1
+SIM_004_part004,T1078 || T1586 || T1140 || T1036 || T1036 || T1036 || T1027 || T1078 || T1586 || T1056 || T1056 || T1003 || T1003 || T1003 || T1003 || T1003 || T1558 || T1558 || T1087,T1087,1,"[战术阶段评估]：前缀序列以 T1558 (Kerberos Authentication) 重复两次，紧接着是 T1087 (Account Discovery)。T1558 通常涉及 Kerberoasting (T1558.003) 或 Silver Ticket 伪造 (T1558.002)。结合 KG Context 中提到的 'Brute Ratel C4' 和 'SILENTTRINITY' 使用 Kerberoasting 将票据转换为 hashcat 格式，以及 'Mimikatz' 创建 Silver Ticket，可以推断攻击者刚刚完成了对 Kerberos 票据的获取或伪造。随后的 T1087 表明攻击者正在利用这些新获得的凭证或权限来枚举账户信息，以寻找高价值目标。这标志着从‘凭证获取/伪造’阶段向‘横向移动准备/侦察’阶段的过渡。
+
+[已获资产推演]：基于 T1558 的重复执行，攻击者手中目前掌握的是 Kerberos 票据（可能是 TGS 服务票据或伪造的 Silver Ticket）。这些票据赋予了攻击者在域内特定服务上的身份模拟能力。结合 T1087 的后续动作，攻击者已经能够以这些服务账户的身份在域控制器或成员服务器上进行查询操作，但尚未明确显示已完全接管域管理员权限（虽然 T1087 可能指向寻找此类账户）。
+
+[意图图谱映射]：KG Context 明确指出 T1558.003 (Kerberoasting) 是为了后续 cracking (T1110) 做准备，而 T1558.002 (Silver Ticket) 则是为了直接模拟特定服务。当前的 T1087 操作最可能的意图是：1) 验证 T1558 获取的票据是否有效且权限足够；2) 枚举域内服务账户，寻找那些拥有高权限（如域管）但密码未轮换的账户，以便进行下一步的 Kerberoasting 攻击或密码破解。因此，当前的逻辑攻击面是‘利用 Kerberos 票据进行账户枚举以筛选高价值目标’。","{
+  ""_thinking_process"": ""[战术阶段评估]：前缀序列以 T1558 (Kerberos Authentication) 重复两次，紧接着是 T1087 (Account Discovery)。T1558 通常涉及 Kerberoasting (T1558.003) 或 Silver Ticket 伪造 (T1558.002)。结合 KG Context 中提到的 'Brute Ratel C4' 和 'SILENTTRINITY' 使用 Kerberoasting 将票据转换为 hashcat 格式，以及 'Mimikatz' 创建 Silver Ticket，可以推断攻击者刚刚完成了对 Kerberos 票据的获取或伪造。随后的 T1087 表明攻击者正在利用这些新获得的凭证或权限来枚举账户信息，以寻找高价值目标。这标志着从‘凭证获取/伪造’阶段向‘横向移动准备/侦察’阶段的过渡。\n\n[已获资产推演]：基于 T1558 的重复执行，攻击者手中目前掌握的是 Kerberos 票据（可能是 TGS 服务票据或伪造的 Silver Ticket）。这些票据赋予了攻击者在域内特定服务上的身份模拟能力。结合 T1087 的后续动作，攻击者已经能够以这些服务账户的身份在域控制器或成员服务器上进行查询操作，但尚未明确显示已完全接管域管理员权限（虽然 T1087 可能指向寻找此类账户）。\n\n[意图图谱映射]：KG Context 明确指出 T1558.003 (Kerberoasting) 是为了后续 cracking (T1110) 做准备，而 T1558.002 (Silver Ticket) 则是为了直接模拟特定服务。当前的 T1087 操作最可能的意图是：1) 验证 T1558 获取的票据是否有效且权限足够；2) 枚举域内服务账户，寻找那些拥有高权限（如域管）但密码未轮换的账户，以便进行下一步的 Kerberoasting 攻击或密码破解。因此，当前的逻辑攻击面是‘利用 Kerberos 票据进行账户枚举以筛选高价值目标’。"",
+  ""current_access_context"": ""valid_user_context"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""service_inventory"",
+  ""next_micro_verb"": ""enumerate""
+}",valid_user_context,1,credential_material_not_collected,1,service_inventory,1,enumerate,1
+SIM_007_part011,T1218,T1218,1,"[战术阶段评估]：Prefix 序列以 T1218 (System Binary Proxy Execution) 结尾。在 ATT&CK 战术映射中，T1218 通常作为执行层技术，用于在受控主机上运行恶意载荷。结合上下文，攻击者（如 Gamaredon, SDBbot 等）利用 Rundll32 或 Msiexec 等系统合法二进制文件来加载和运行恶意 DLL 或 MSI 文件。这表明攻击者刚刚完成了从初始访问或持久化到实际代码执行的过渡，正处于“执行”阶段的核心环节。
+
+[已获资产推演]：基于 T1218 的上下文，攻击者已经成功获取了目标系统的执行上下文（Execution Context）。他们手中掌握的不再是单纯的访问权限（如凭据或初始 shell），而是能够利用系统信任机制（如 Rundll32 的白名单属性）来运行任意恶意代码的能力。这通常意味着攻击者已经成功将恶意载荷（Payload）部署在本地，并正在或刚刚通过系统二进制文件将其激活。
+
+[意图图谱映射]：结合 KG Context 中提到的“launch additional malicious components”（启动额外的恶意组件）和“download and execute”（下载并执行），T1218 在此处充当了“跳板”或“加载器”的角色。其逻辑攻击面在于：它允许攻击者在不直接调用解释器（如 powershell.exe 或 cmd.exe）的情况下，绕过部分检测机制，进而触发后续的攻击链，如横向移动（Lateral Movement）、数据窃取（Exfiltration）或建立持久化（Persistence）。因此，当前状态是攻击者正在利用系统二进制文件作为代理，为后续更复杂的战术动作（如 C2 通信或第二阶段载荷执行）打开逻辑通道。","{
+  ""_thinking_process"": ""[战术阶段评估]：Prefix 序列以 T1218 (System Binary Proxy Execution) 结尾。在 ATT&CK 战术映射中，T1218 通常作为执行层技术，用于在受控主机上运行恶意载荷。结合上下文，攻击者（如 Gamaredon, SDBbot 等）利用 Rundll32 或 Msiexec 等系统合法二进制文件来加载和运行恶意 DLL 或 MSI 文件。这表明攻击者刚刚完成了从初始访问或持久化到实际代码执行的过渡，正处于“执行”阶段的核心环节。\n\n[已获资产推演]：基于 T1218 的上下文，攻击者已经成功获取了目标系统的执行上下文（Execution Context）。他们手中掌握的不再是单纯的访问权限（如凭据或初始 shell），而是能够利用系统信任机制（如 Rundll32 的白名单属性）来运行任意恶意代码的能力。这通常意味着攻击者已经成功将恶意载荷（Payload）部署在本地，并正在或刚刚通过系统二进制文件将其激活。\n\n[意图图谱映射]：结合 KG Context 中提到的“launch additional malicious components”（启动额外的恶意组件）和“download and execute”（下载并执行），T1218 在此处充当了“跳板”或“加载器”的角色。其逻辑攻击面在于：它允许攻击者在不直接调用解释器（如 powershell.exe 或 cmd.exe）的情况下，绕过部分检测机制，进而触发后续的攻击链，如横向移动（Lateral Movement）、数据窃取（Exfiltration）或建立持久化（Persistence）。因此，当前状态是攻击者正在利用系统二进制文件作为代理，为后续更复杂的战术动作（如 C2 通信或第二阶段载荷执行）打开逻辑通道。"",
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""user_execution_path_not_established"",
+  ""next_target_artifact"": ""system_configuration_store"",
+  ""next_micro_verb"": ""execute""
+}",execution_on_host,1,user_execution_path_not_established,1,system_configuration_store,1,execute,1

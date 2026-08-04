@@ -1,0 +1,61 @@
+﻿annotation_id,raw_output,json_parse_ok,gold__current_access_context,pred__current_access_context,schema_ok__current_access_context,field_hit__current_access_context,gold__exhausted_action_constraint,pred__exhausted_action_constraint,schema_ok__exhausted_action_constraint,field_hit__exhausted_action_constraint,gold__next_target_artifact,pred__next_target_artifact,schema_ok__next_target_artifact,field_hit__next_target_artifact,gold__next_micro_verb,pred__next_micro_verb,schema_ok__next_micro_verb,field_hit__next_micro_verb,exact_match,any_schema_violation
+ms_001,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""process_or_file_identity"",
+  ""next_micro_verb"": ""masquerade""
+}",1,execution_on_host,execution_on_host,1,1,environment_not_enumerated,defense_evasion_path_not_established,1,0,network_configuration,process_or_file_identity,1,0,enumerate,masquerade,1,0,0,0
+ms_002,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""process_or_file_identity"",
+  ""next_micro_verb"": ""masquerade""
+}",1,execution_on_host,execution_on_host,1,1,collection_target_not_identified,defense_evasion_path_not_established,1,0,local_file_data,process_or_file_identity,1,0,collect,masquerade,1,0,0,0
+ms_003,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""running_processes_not_enumerated"",
+  ""next_target_artifact"": ""process_inventory"",
+  ""next_micro_verb"": ""enumerate""
+}",1,post_compromise_discovery,post_compromise_discovery,1,1,privilege_structure_not_enumerated,running_processes_not_enumerated,1,0,permission_group_context,process_inventory,1,0,enumerate,enumerate,1,1,0,0
+ms_004,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""defense_evasion_path_not_established"",
+  ""next_target_artifact"": ""process_or_file_identity"",
+  ""next_micro_verb"": ""masquerade""
+}",1,initial_foothold,execution_on_host,1,0,execution_capability_not_established,defense_evasion_path_not_established,1,0,command_execution_channel,process_or_file_identity,1,0,execute,masquerade,1,0,0,0
+ms_005,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""collect""
+}",1,post_compromise_discovery,post_compromise_discovery,1,1,environment_not_enumerated,credential_material_not_collected,1,0,system_information,credential_material,1,0,enumerate,collect,1,0,0,0
+ms_006,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,valid_user_context,post_compromise_discovery,1,0,privilege_context_insufficient,credential_material_not_collected,1,0,access_token_context,credential_material,1,0,impersonate,dump,1,0,0,0
+ms_007,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,valid_user_context,post_compromise_discovery,1,0,privilege_context_insufficient,credential_material_not_collected,1,0,access_token_context,credential_material,1,0,impersonate,dump,1,0,0,0
+ms_008,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""environment_not_enumerated"",
+  ""next_target_artifact"": ""system_information"",
+  ""next_micro_verb"": ""enumerate""
+}",1,internal_host_access,post_compromise_discovery,1,0,privilege_context_insufficient,environment_not_enumerated,1,0,access_token_context,system_information,1,0,impersonate,enumerate,1,0,0,0
+ms_009,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,internal_host_access,post_compromise_discovery,1,0,persistence_path_not_established,credential_material_not_collected,1,0,persistence_mechanism,credential_material,1,0,modify,dump,1,0,0,0
+ms_010,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""credential_material_not_collected"",
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,internal_host_access,post_compromise_discovery,1,0,credential_material_not_collected,credential_material_not_collected,1,1,private_keys,credential_material,1,0,collect,dump,1,0,0,0

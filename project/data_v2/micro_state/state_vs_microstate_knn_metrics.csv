@@ -1,0 +1,4 @@
+﻿representation,samples,top1_nn_accuracy,mrr_same_label
+state,80,0.0,0.08146664668940759
+micro_state,80,0.5125,0.5689508928571431
+state_plus_micro_state,80,0.15,0.21016067918664066

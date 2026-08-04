@@ -1,0 +1,5 @@
+﻿Method,Setting,Avg Latency / Sample (ms),Relative Cost vs GRU
+GRU Baseline,Online,0.009279140624585125,1.0
+LLM Semantic Stack,Encoding + Probe + Fusion only,13.88073687695453,1495.9075887024985
+Global Fusion,Precomputed reasoning/embedding,0.015842363285401007,1.7073093216656932
+Global Fusion,Online encoding included,15.303600976562848,1649.2476615793373

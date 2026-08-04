@@ -1,0 +1,19 @@
+﻿annotation_id,raw_output,json_parse_ok,gold__current_access_context,pred__current_access_context,schema_ok__current_access_context,field_hit__current_access_context,gold__exhausted_action_constraint,pred__exhausted_action_constraint,schema_ok__exhausted_action_constraint,field_hit__exhausted_action_constraint,gold__next_target_artifact,pred__next_target_artifact,schema_ok__next_target_artifact,field_hit__next_target_artifact,gold__next_micro_verb,pred__next_micro_verb,schema_ok__next_micro_verb,field_hit__next_micro_verb,exact_match,any_schema_violation
+ms_001,"{
+  ""current_access_context"": ""post_compromise_discovery"",
+  ""exhausted_action_constraint"": ""environment_not_enumerated"",
+  ""next_target_artifact"": ""network_configuration"",
+  ""next_micro_verb"": ""enumerate""
+}",1,execution_on_host,post_compromise_discovery,1,0,environment_not_enumerated,environment_not_enumerated,1,1,network_configuration,network_configuration,1,1,enumerate,enumerate,1,1,0,0
+ms_002,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""collection_target_not_identified"",
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""collect""
+}",1,execution_on_host,execution_on_host,1,1,collection_target_not_identified,collection_target_not_identified,1,1,local_file_data,local_file_data,1,1,collect,collect,1,1,1,0
+ms_004,"{
+  ""current_access_context"": ""execution_on_host"",
+  ""exhausted_action_constraint"": ""user_execution_path_not_established"",
+  ""next_target_artifact"": ""command_execution_channel"",
+  ""next_micro_verb"": ""execute""
+}",1,initial_foothold,execution_on_host,1,0,execution_capability_not_established,user_execution_path_not_established,1,0,command_execution_channel,command_execution_channel,1,1,execute,execute,1,1,0,0

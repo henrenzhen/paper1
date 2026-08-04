@@ -1,0 +1,319 @@
+technique_id_parent,technique_name_parent,tactic_ids,tactic_titles,n_rows_grouped,has_parent_row,member_technique_ids,member_technique_names,subtechnique_ids,subtechnique_names
+T1001,Data Obfuscation,command-and-control,Command And Control,4,1,T1001 || T1001.003 || T1001.002 || T1001.001,Data Obfuscation || Protocol or Service Impersonation || Steganography || Junk Data,T1001.003 || T1001.002 || T1001.001,Protocol or Service Impersonation || Steganography || Junk Data
+T1002,Data Compressed,exfiltration,Exfiltration,1,1,T1002,Data Compressed,,
+T1003,OS Credential Dumping,credential-access,Credential Access,9,1,T1003 || T1003.002 || T1003.004 || T1003.007 || T1003.001 || T1003.005 || T1003.008 || T1003.003 || T1003.006,OS Credential Dumping || Security Account Manager || LSA Secrets || Proc Filesystem || LSASS Memory || Cached Domain Credentials || /etc/passwd and /etc/shadow || NTDS || DCSync,T1003.002 || T1003.004 || T1003.007 || T1003.001 || T1003.005 || T1003.008 || T1003.003 || T1003.006,Security Account Manager || LSA Secrets || Proc Filesystem || LSASS Memory || Cached Domain Credentials || /etc/passwd and /etc/shadow || NTDS || DCSync
+T1004,Winlogon Helper DLL,persistence,Persistence,1,1,T1004,Winlogon Helper DLL,,
+T1005,Data from Local System,collection,Collection,1,1,T1005,Data from Local System,,
+T1006,Direct Volume Access,defense-evasion,Defense Evasion,1,1,T1006,Direct Volume Access,,
+T1007,System Service Discovery,discovery,Discovery,1,1,T1007,System Service Discovery,,
+T1008,Fallback Channels,command-and-control,Command And Control,1,1,T1008,Fallback Channels,,
+T1009,Binary Padding,defense-evasion,Defense Evasion,1,1,T1009,Binary Padding,,
+T1010,Application Window Discovery,discovery,Discovery,1,1,T1010,Application Window Discovery,,
+T1011,Exfiltration Over Other Network Medium,exfiltration,Exfiltration,2,1,T1011 || T1011.001,Exfiltration Over Other Network Medium || Exfiltration Over Bluetooth,T1011.001,Exfiltration Over Bluetooth
+T1012,Query Registry,discovery,Discovery,1,1,T1012,Query Registry,,
+T1013,Port Monitors,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1013,Port Monitors,,
+T1014,Rootkit,defense-evasion,Defense Evasion,1,1,T1014,Rootkit,,
+T1016,System Network Configuration Discovery,discovery,Discovery,3,1,T1016.001 || T1016.002 || T1016,Internet Connection Discovery || Wi-Fi Discovery || System Network Configuration Discovery,T1016.001 || T1016.002,Internet Connection Discovery || Wi-Fi Discovery
+T1017,Application Deployment Software,lateral-movement,Lateral Movement,1,1,T1017,Application Deployment Software,,
+T1018,Remote System Discovery,discovery,Discovery,1,1,T1018,Remote System Discovery,,
+T1020,Automated Exfiltration,exfiltration,Exfiltration,2,1,T1020 || T1020.001,Automated Exfiltration || Traffic Duplication,T1020.001,Traffic Duplication
+T1021,Remote Services,lateral-movement,Lateral Movement,8,1,T1021.005 || T1021.004 || T1021.008 || T1021.002 || T1021 || T1021.006 || T1021.003 || T1021.007,VNC || SSH || Direct Cloud VM Connections || SMB/Windows Admin Shares || Remote Services || Windows Remote Management || Distributed Component Object Model || Cloud Services,T1021.005 || T1021.004 || T1021.008 || T1021.002 || T1021.006 || T1021.003 || T1021.007,VNC || SSH || Direct Cloud VM Connections || SMB/Windows Admin Shares || Windows Remote Management || Distributed Component Object Model || Cloud Services
+T1022,Data Encrypted,exfiltration,Exfiltration,1,1,T1022,Data Encrypted,,
+T1024,Custom Cryptographic Protocol,command-and-control,Command And Control,1,1,T1024,Custom Cryptographic Protocol,,
+T1025,Data from Removable Media,collection,Collection,1,1,T1025,Data from Removable Media,,
+T1026,Multiband Communication,command-and-control,Command And Control,1,1,T1026,Multiband Communication,,
+T1027,Obfuscated Files or Information,defense-evasion,Defense Evasion,15,1,T1027.011 || T1027.009 || T1027.013 || T1027.008 || T1027.016 || T1027.017 || T1027.012 || T1027 || T1027.014 || T1027.003 || T1027.004 || T1027.006 || T1027.010 || T1027.007 || T1027.015,Fileless Storage || Embedded Payloads || Encrypted/Encoded File || Stripped Payloads || Junk Code Insertion || SVG Smuggling || LNK Icon Smuggling || Obfuscated Files or Information || Polymorphic Code || Steganography || Compile After Delivery || HTML Smuggling || Command Obfuscation || Dynamic API Resolution || Compression,T1027.011 || T1027.009 || T1027.013 || T1027.008 || T1027.016 || T1027.017 || T1027.012 || T1027.014 || T1027.003 || T1027.004 || T1027.006 || T1027.010 || T1027.007 || T1027.015,Fileless Storage || Embedded Payloads || Encrypted/Encoded File || Stripped Payloads || Junk Code Insertion || SVG Smuggling || LNK Icon Smuggling || Polymorphic Code || Steganography || Compile After Delivery || HTML Smuggling || Command Obfuscation || Dynamic API Resolution || Compression
+T1028,Windows Remote Management,execution,Execution,1,1,T1028,Windows Remote Management,,
+T1029,Scheduled Transfer,exfiltration,Exfiltration,1,1,T1029,Scheduled Transfer,,
+T1030,Data Transfer Size Limits,exfiltration,Exfiltration,1,1,T1030,Data Transfer Size Limits,,
+T1031,Modify Existing Service,persistence,Persistence,1,1,T1031,Modify Existing Service,,
+T1032,Standard Cryptographic Protocol,command-and-control,Command And Control,1,1,T1032,Standard Cryptographic Protocol,,
+T1033,System Owner/User Discovery,discovery,Discovery,1,1,T1033,System Owner/User Discovery,,
+T1034,Path Interception,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1034,Path Interception,,
+T1036,Masquerading,defense-evasion,Defense Evasion,12,1,T1036.007 || T1036.005 || T1036.008 || T1036.009 || T1036 || T1036.011 || T1036.002 || T1036.004 || T1036.012 || T1036.001 || T1036.003 || T1036.010,Double File Extension || Match Legitimate Resource Name or Location || Masquerade File Type || Break Process Trees || Masquerading || Overwrite Process Arguments || Right-to-Left Override || Masquerade Task or Service || Browser Fingerprint || Invalid Code Signature || Rename Legitimate Utilities || Masquerade Account Name,T1036.007 || T1036.005 || T1036.008 || T1036.009 || T1036.011 || T1036.002 || T1036.004 || T1036.012 || T1036.001 || T1036.003 || T1036.010,Double File Extension || Match Legitimate Resource Name or Location || Masquerade File Type || Break Process Trees || Overwrite Process Arguments || Right-to-Left Override || Masquerade Task or Service || Browser Fingerprint || Invalid Code Signature || Rename Legitimate Utilities || Masquerade Account Name
+T1037,Boot or Logon Initialization Scripts,persistence || privilege-escalation,Persistence || Privilege Escalation,10,1,T1037 || T1037.002 || T1037.003 || T1037.004 || T1037.001,Boot or Logon Initialization Scripts || Login Hook || Network Logon Script || RC Scripts || Logon Script (Windows),T1037.002 || T1037.003 || T1037.004 || T1037.001,Login Hook || Network Logon Script || RC Scripts || Logon Script (Windows)
+T1038,DLL Search Order Hijacking,persistence || privilege-escalation || defense-evasion,Persistence || Privilege Escalation || Defense Evasion,3,1,T1038,DLL Search Order Hijacking,,
+T1039,Data from Network Shared Drive,collection,Collection,1,1,T1039,Data from Network Shared Drive,,
+T1040,Network Sniffing,credential-access || discovery,Credential Access || Discovery,2,1,T1040,Network Sniffing,,
+T1041,Exfiltration Over C2 Channel,exfiltration,Exfiltration,1,1,T1041,Exfiltration Over C2 Channel,,
+T1042,Change Default File Association,persistence,Persistence,1,1,T1042,Change Default File Association,,
+T1043,Commonly Used Port,command-and-control,Command And Control,1,1,T1043,Commonly Used Port,,
+T1044,File System Permissions Weakness,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1044,File System Permissions Weakness,,
+T1045,Software Packing,defense-evasion,Defense Evasion,1,1,T1045,Software Packing,,
+T1046,Network Service Discovery,discovery,Discovery,1,1,T1046,Network Service Discovery,,
+T1047,Windows Management Instrumentation,execution,Execution,1,1,T1047,Windows Management Instrumentation,,
+T1048,Exfiltration Over Alternative Protocol,exfiltration,Exfiltration,4,1,T1048.001 || T1048.002 || T1048 || T1048.003,Exfiltration Over Symmetric Encrypted Non-C2 Protocol || Exfiltration Over Asymmetric Encrypted Non-C2 Protocol || Exfiltration Over Alternative Protocol || Exfiltration Over Unencrypted Non-C2 Protocol,T1048.001 || T1048.002 || T1048.003,Exfiltration Over Symmetric Encrypted Non-C2 Protocol || Exfiltration Over Asymmetric Encrypted Non-C2 Protocol || Exfiltration Over Unencrypted Non-C2 Protocol
+T1049,System Network Connections Discovery,discovery,Discovery,1,1,T1049,System Network Connections Discovery,,
+T1050,New Service,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1050,New Service,,
+T1051,Shared Webroot,lateral-movement,Lateral Movement,1,1,T1051,Shared Webroot,,
+T1052,Exfiltration Over Physical Medium,exfiltration,Exfiltration,2,1,T1052.001 || T1052,Exfiltration over USB || Exfiltration Over Physical Medium,T1052.001,Exfiltration over USB
+T1053,Scheduled Task/Job,execution || persistence || privilege-escalation,Execution || Persistence || Privilege Escalation,24,1,T1053.005 || T1053.007 || T1053.003 || T1053 || T1053.001 || T1053.004 || T1053.006 || T1053.002,Scheduled Task || Container Orchestration Job || Cron || Scheduled Task/Job || At (Linux) || Launchd || Systemd Timers || At,T1053.005 || T1053.007 || T1053.003 || T1053.001 || T1053.004 || T1053.006 || T1053.002,Scheduled Task || Container Orchestration Job || Cron || At (Linux) || Launchd || Systemd Timers || At
+T1054,Indicator Blocking,defense-evasion,Defense Evasion,1,1,T1054,Indicator Blocking,,
+T1055,Process Injection,defense-evasion || privilege-escalation,Defense Evasion || Privilege Escalation,25,1,T1055.011 || T1055.003 || T1055 || T1055.013 || T1055.004 || T1055.002 || T1055.014 || T1055.012 || T1055.009 || T1055.005 || T1055.008 || T1055.015 || T1055.001,Extra Window Memory Injection || Thread Execution Hijacking || Process Injection || Process Doppelgänging || Asynchronous Procedure Call || Portable Executable Injection || VDSO Hijacking || Process Hollowing || Proc Memory || Thread Local Storage || Ptrace System Calls || ListPlanting || Dynamic-link Library Injection,T1055.011 || T1055.003 || T1055.013 || T1055.004 || T1055.002 || T1055.014 || T1055.012 || T1055.009 || T1055.005 || T1055.008 || T1055.015 || T1055.001,Extra Window Memory Injection || Thread Execution Hijacking || Process Doppelgänging || Asynchronous Procedure Call || Portable Executable Injection || VDSO Hijacking || Process Hollowing || Proc Memory || Thread Local Storage || Ptrace System Calls || ListPlanting || Dynamic-link Library Injection
+T1056,Input Capture,collection || credential-access,Collection || Credential Access,10,1,T1056.001 || T1056.003 || T1056.002 || T1056 || T1056.004,Keylogging || Web Portal Capture || GUI Input Capture || Input Capture || Credential API Hooking,T1056.001 || T1056.003 || T1056.002 || T1056.004,Keylogging || Web Portal Capture || GUI Input Capture || Credential API Hooking
+T1057,Process Discovery,discovery,Discovery,1,1,T1057,Process Discovery,,
+T1058,Service Registry Permissions Weakness,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1058,Service Registry Permissions Weakness,,
+T1059,Command and Scripting Interpreter,execution,Execution,14,1,T1059.007 || T1059.002 || T1059.010 || T1059.009 || T1059 || T1059.008 || T1059.001 || T1059.004 || T1059.011 || T1059.013 || T1059.006 || T1059.003 || T1059.012 || T1059.005,JavaScript || AppleScript || AutoHotKey & AutoIT || Cloud API || Command and Scripting Interpreter || Network Device CLI || PowerShell || Unix Shell || Lua || Container CLI/API || Python || Windows Command Shell || Hypervisor CLI || Visual Basic,T1059.007 || T1059.002 || T1059.010 || T1059.009 || T1059.008 || T1059.001 || T1059.004 || T1059.011 || T1059.013 || T1059.006 || T1059.003 || T1059.012 || T1059.005,JavaScript || AppleScript || AutoHotKey & AutoIT || Cloud API || Network Device CLI || PowerShell || Unix Shell || Lua || Container CLI/API || Python || Windows Command Shell || Hypervisor CLI || Visual Basic
+T1060,Registry Run Keys / Startup Folder,persistence,Persistence,1,1,T1060,Registry Run Keys / Startup Folder,,
+T1061,Graphical User Interface,execution,Execution,1,1,T1061,Graphical User Interface,,
+T1062,Hypervisor,persistence,Persistence,1,1,T1062,Hypervisor,,
+T1063,Security Software Discovery,discovery,Discovery,1,1,T1063,Security Software Discovery,,
+T1064,Scripting,defense-evasion || execution,Defense Evasion || Execution,2,1,T1064,Scripting,,
+T1065,Uncommonly Used Port,command-and-control,Command And Control,1,1,T1065,Uncommonly Used Port,,
+T1066,Indicator Removal from Tools,defense-evasion,Defense Evasion,1,1,T1066,Indicator Removal from Tools,,
+T1067,Bootkit,persistence,Persistence,1,1,T1067,Bootkit,,
+T1068,Exploitation for Privilege Escalation,privilege-escalation,Privilege Escalation,1,1,T1068,Exploitation for Privilege Escalation,,
+T1069,Permission Groups Discovery,discovery,Discovery,4,1,T1069 || T1069.003 || T1069.002 || T1069.001,Permission Groups Discovery || Cloud Groups || Domain Groups || Local Groups,T1069.003 || T1069.002 || T1069.001,Cloud Groups || Domain Groups || Local Groups
+T1070,Indicator Removal,defense-evasion,Defense Evasion,9,1,T1070.002 || T1070.007 || T1070.003 || T1070.008 || T1070.001 || T1070 || T1070.005 || T1070.010 || T1070.009,Clear Linux or Mac System Logs || Clear Network Connection History and Configurations || Clear Command History || Clear Mailbox Data || Clear Windows Event Logs || Indicator Removal || Network Share Connection Removal || Relocate Malware || Clear Persistence,T1070.002 || T1070.007 || T1070.003 || T1070.008 || T1070.001 || T1070.005 || T1070.010 || T1070.009,Clear Linux or Mac System Logs || Clear Network Connection History and Configurations || Clear Command History || Clear Mailbox Data || Clear Windows Event Logs || Network Share Connection Removal || Relocate Malware || Clear Persistence
+T1071,Application Layer Protocol,command-and-control,Command And Control,6,1,T1071.004 || T1071.005 || T1071 || T1071.003 || T1071.002 || T1071.001,DNS || Publish/Subscribe Protocols || Application Layer Protocol || Mail Protocols || File Transfer Protocols || Web Protocols,T1071.004 || T1071.005 || T1071.003 || T1071.002 || T1071.001,DNS || Publish/Subscribe Protocols || Mail Protocols || File Transfer Protocols || Web Protocols
+T1072,Software Deployment Tools,execution || lateral-movement,Execution || Lateral Movement,2,1,T1072,Software Deployment Tools,,
+T1073,DLL Side-Loading,defense-evasion,Defense Evasion,1,1,T1073,DLL Side-Loading,,
+T1074,Data Staged,collection,Collection,3,1,T1074.001 || T1074.002 || T1074,Local Data Staging || Remote Data Staging || Data Staged,T1074.001 || T1074.002,Local Data Staging || Remote Data Staging
+T1075,Pass the Hash,lateral-movement,Lateral Movement,1,1,T1075,Pass the Hash,,
+T1076,Remote Desktop Protocol,lateral-movement,Lateral Movement,1,1,T1076,Remote Desktop Protocol,,
+T1077,Windows Admin Shares,lateral-movement,Lateral Movement,1,1,T1077,Windows Admin Shares,,
+T1078,Valid Accounts,defense-evasion || persistence || privilege-escalation || initial-access,Defense Evasion || Persistence || Privilege Escalation || Initial Access,20,1,T1078.001 || T1078 || T1078.002 || T1078.004 || T1078.003,Default Accounts || Valid Accounts || Domain Accounts || Cloud Accounts || Local Accounts,T1078.001 || T1078.002 || T1078.004 || T1078.003,Default Accounts || Domain Accounts || Cloud Accounts || Local Accounts
+T1079,Multilayer Encryption,command-and-control,Command And Control,1,1,T1079,Multilayer Encryption,,
+T1080,Taint Shared Content,lateral-movement,Lateral Movement,1,1,T1080,Taint Shared Content,,
+T1081,Credentials in Files,credential-access,Credential Access,1,1,T1081,Credentials in Files,,
+T1082,System Information Discovery,discovery,Discovery,1,1,T1082,System Information Discovery,,
+T1083,File and Directory Discovery,discovery,Discovery,1,1,T1083,File and Directory Discovery,,
+T1085,Rundll32,execution,Execution,1,1,T1085,Rundll32,,
+T1087,Account Discovery,discovery,Discovery,5,1,T1087.002 || T1087.001 || T1087.003 || T1087 || T1087.004,Domain Account || Local Account || Email Account || Account Discovery || Cloud Account,T1087.002 || T1087.001 || T1087.003 || T1087.004,Domain Account || Local Account || Email Account || Cloud Account
+T1089,Disabling Security Tools,defense-evasion,Defense Evasion,1,1,T1089,Disabling Security Tools,,
+T1090,Proxy,command-and-control,Command And Control,3,1,T1090.002 || T1090 || T1090.001,External Proxy || Proxy || Internal Proxy,T1090.002 || T1090.001,External Proxy || Internal Proxy
+T1091,Replication Through Removable Media,lateral-movement || initial-access,Lateral Movement || Initial Access,2,1,T1091,Replication Through Removable Media,,
+T1092,Communication Through Removable Media,command-and-control,Command And Control,1,1,T1092,Communication Through Removable Media,,
+T1093,Process Hollowing,defense-evasion,Defense Evasion,1,1,T1093,Process Hollowing,,
+T1094,Custom Command and Control Protocol,command-and-control,Command And Control,1,1,T1094,Custom Command and Control Protocol,,
+T1095,Non-Application Layer Protocol,command-and-control,Command And Control,1,1,T1095,Non-Application Layer Protocol,,
+T1098,Account Manipulation,persistence || privilege-escalation,Persistence || Privilege Escalation,16,1,T1098.003 || T1098.006 || T1098.007 || T1098.004 || T1098.005 || T1098.001 || T1098 || T1098.002,Additional Cloud Roles || Additional Container Cluster Roles || Additional Local or Domain Groups || SSH Authorized Keys || Device Registration || Additional Cloud Credentials || Account Manipulation || Additional Email Delegate Permissions,T1098.003 || T1098.006 || T1098.007 || T1098.004 || T1098.005 || T1098.001 || T1098.002,Additional Cloud Roles || Additional Container Cluster Roles || Additional Local or Domain Groups || SSH Authorized Keys || Device Registration || Additional Cloud Credentials || Additional Email Delegate Permissions
+T1099,Timestomp,defense-evasion,Defense Evasion,1,1,T1099,Timestomp,,
+T1100,Web Shell,privilege-escalation,Privilege Escalation,1,1,T1100,Web Shell,,
+T1102,Web Service,command-and-control,Command And Control,4,1,T1102 || T1102.003 || T1102.002 || T1102.001,Web Service || One-Way Communication || Bidirectional Communication || Dead Drop Resolver,T1102.003 || T1102.002 || T1102.001,One-Way Communication || Bidirectional Communication || Dead Drop Resolver
+T1103,AppInit DLLs,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1103,AppInit DLLs,,
+T1104,Multi-Stage Channels,command-and-control,Command And Control,1,1,T1104,Multi-Stage Channels,,
+T1105,Ingress Tool Transfer,command-and-control,Command And Control,1,1,T1105,Ingress Tool Transfer,,
+T1106,Native API,execution,Execution,1,1,T1106,Native API,,
+T1107,File Deletion,defense-evasion,Defense Evasion,1,1,T1107,File Deletion,,
+T1108,Redundant Access,defense-evasion || persistence,Defense Evasion || Persistence,2,1,T1108,Redundant Access,,
+T1109,Component Firmware,defense-evasion || persistence,Defense Evasion || Persistence,2,1,T1109,Component Firmware,,
+T1110,Brute Force,credential-access,Credential Access,5,1,T1110.001 || T1110.002 || T1110.003 || T1110 || T1110.004,Password Guessing || Password Cracking || Password Spraying || Brute Force || Credential Stuffing,T1110.001 || T1110.002 || T1110.003 || T1110.004,Password Guessing || Password Cracking || Password Spraying || Credential Stuffing
+T1111,Multi-Factor Authentication Interception,credential-access,Credential Access,1,1,T1111,Multi-Factor Authentication Interception,,
+T1112,Modify Registry,defense-evasion || persistence,Defense Evasion || Persistence,2,1,T1112,Modify Registry,,
+T1113,Screen Capture,collection,Collection,1,1,T1113,Screen Capture,,
+T1114,Email Collection,collection,Collection,4,1,T1114 || T1114.001 || T1114.003 || T1114.002,Email Collection || Local Email Collection || Email Forwarding Rule || Remote Email Collection,T1114.001 || T1114.003 || T1114.002,Local Email Collection || Email Forwarding Rule || Remote Email Collection
+T1115,Clipboard Data,collection,Collection,1,1,T1115,Clipboard Data,,
+T1116,Code Signing,defense-evasion,Defense Evasion,1,1,T1116,Code Signing,,
+T1117,Regsvr32,defense-evasion || execution,Defense Evasion || Execution,2,1,T1117,Regsvr32,,
+T1118,InstallUtil,execution,Execution,1,1,T1118,InstallUtil,,
+T1119,Automated Collection,collection,Collection,1,1,T1119,Automated Collection,,
+T1120,Peripheral Device Discovery,discovery,Discovery,1,1,T1120,Peripheral Device Discovery,,
+T1121,Regsvcs/Regasm,defense-evasion || execution,Defense Evasion || Execution,2,1,T1121,Regsvcs/Regasm,,
+T1122,Component Object Model Hijacking,defense-evasion || persistence,Defense Evasion || Persistence,2,1,T1122,Component Object Model Hijacking,,
+T1123,Audio Capture,collection,Collection,1,1,T1123,Audio Capture,,
+T1124,System Time Discovery,discovery,Discovery,1,1,T1124,System Time Discovery,,
+T1125,Video Capture,collection,Collection,1,1,T1125,Video Capture,,
+T1127,Trusted Developer Utilities Proxy Execution,defense-evasion,Defense Evasion,4,1,T1127.003 || T1127.001 || T1127.002 || T1127,JamPlus || MSBuild || ClickOnce || Trusted Developer Utilities Proxy Execution,T1127.003 || T1127.001 || T1127.002,JamPlus || MSBuild || ClickOnce
+T1128,Netsh Helper DLL,persistence,Persistence,1,1,T1128,Netsh Helper DLL,,
+T1129,Shared Modules,execution,Execution,1,1,T1129,Shared Modules,,
+T1131,Authentication Package,persistence,Persistence,1,1,T1131,Authentication Package,,
+T1132,Data Encoding,command-and-control,Command And Control,3,1,T1132.001 || T1132 || T1132.002,Standard Encoding || Data Encoding || Non-Standard Encoding,T1132.001 || T1132.002,Standard Encoding || Non-Standard Encoding
+T1133,External Remote Services,persistence || initial-access,Persistence || Initial Access,2,1,T1133,External Remote Services,,
+T1134,Access Token Manipulation,defense-evasion || privilege-escalation,Defense Evasion || Privilege Escalation,11,1,T1134.002 || T1134.001 || T1134.003 || T1134.004 || T1134.005 || T1134,Create Process with Token || Token Impersonation/Theft || Make and Impersonate Token || Parent PID Spoofing || SID-History Injection || Access Token Manipulation,T1134.002 || T1134.001 || T1134.003 || T1134.004 || T1134.005,Create Process with Token || Token Impersonation/Theft || Make and Impersonate Token || Parent PID Spoofing || SID-History Injection
+T1135,Network Share Discovery,discovery,Discovery,1,1,T1135,Network Share Discovery,,
+T1136,Create Account,persistence,Persistence,4,1,T1136.001 || T1136.002 || T1136.003 || T1136,Local Account || Domain Account || Cloud Account || Create Account,T1136.001 || T1136.002 || T1136.003,Local Account || Domain Account || Cloud Account
+T1137,Office Application Startup,persistence,Persistence,7,1,T1137 || T1137.006 || T1137.005 || T1137.001 || T1137.003 || T1137.004 || T1137.002,Office Application Startup || Add-ins || Outlook Rules || Office Template Macros || Outlook Forms || Outlook Home Page || Office Test,T1137.006 || T1137.005 || T1137.001 || T1137.003 || T1137.004 || T1137.002,Add-ins || Outlook Rules || Office Template Macros || Outlook Forms || Outlook Home Page || Office Test
+T1139,Bash History,credential-access,Credential Access,1,1,T1139,Bash History,,
+T1140,Deobfuscate/Decode Files or Information,defense-evasion,Defense Evasion,1,1,T1140,Deobfuscate/Decode Files or Information,,
+T1141,Input Prompt,credential-access,Credential Access,1,1,T1141,Input Prompt,,
+T1143,Hidden Window,defense-evasion,Defense Evasion,1,1,T1143,Hidden Window,,
+T1145,Private Keys,credential-access,Credential Access,1,1,T1145,Private Keys,,
+T1148,HISTCONTROL,defense-evasion,Defense Evasion,1,1,T1148,HISTCONTROL,,
+T1149,LC_MAIN Hijacking,defense-evasion,Defense Evasion,1,1,T1149,LC_MAIN Hijacking,,
+T1150,Plist Modification,defense-evasion || persistence || privilege-escalation,Defense Evasion || Persistence || Privilege Escalation,3,1,T1150,Plist Modification,,
+T1151,Space after Filename,defense-evasion || execution,Defense Evasion || Execution,2,1,T1151,Space after Filename,,
+T1152,Launchctl,defense-evasion || execution || persistence,Defense Evasion || Execution || Persistence,3,1,T1152,Launchctl,,
+T1153,Source,execution,Execution,1,1,T1153,Source,,
+T1154,Trap,execution,Execution,1,1,T1154,Trap,,
+T1156,Malicious Shell Modification,persistence,Persistence,1,1,T1156,Malicious Shell Modification,,
+T1157,Dylib Hijacking,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1157,Dylib Hijacking,,
+T1158,Hidden Files and Directories,defense-evasion || persistence,Defense Evasion || Persistence,2,1,T1158,Hidden Files and Directories,,
+T1161,LC_LOAD_DYLIB Addition,persistence,Persistence,1,1,T1161,LC_LOAD_DYLIB Addition,,
+T1162,Login Item,persistence,Persistence,1,1,T1162,Login Item,,
+T1163,Rc.common,persistence,Persistence,1,1,T1163,Rc.common,,
+T1164,Re-opened Applications,persistence,Persistence,1,1,T1164,Re-opened Applications,,
+T1165,Startup Items,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1165,Startup Items,,
+T1166,Setuid and Setgid,persistence,Persistence,1,1,T1166,Setuid and Setgid,,
+T1168,Local Job Scheduling,persistence || execution,Persistence || Execution,2,1,T1168,Local Job Scheduling,,
+T1169,Sudo,privilege-escalation,Privilege Escalation,1,1,T1169,Sudo,,
+T1170,Mshta,execution,Execution,1,1,T1170,Mshta,,
+T1171,LLMNR/NBT-NS Poisoning and Relay,credential-access,Credential Access,1,1,T1171,LLMNR/NBT-NS Poisoning and Relay,,
+T1172,Domain Fronting,command-and-control,Command And Control,1,1,T1172,Domain Fronting,,
+T1175,Component Object Model and Distributed COM,lateral-movement || execution,Lateral Movement || Execution,2,1,T1175,Component Object Model and Distributed COM,,
+T1176,Software Extensions,persistence,Persistence,3,1,T1176.001 || T1176 || T1176.002,Browser Extensions || Software Extensions || IDE Extensions,T1176.001 || T1176.002,Browser Extensions || IDE Extensions
+T1177,LSASS Driver,execution || persistence,Execution || Persistence,2,1,T1177,LSASS Driver,,
+T1178,SID-History Injection,privilege-escalation,Privilege Escalation,1,1,T1178,SID-History Injection,,
+T1179,Hooking,persistence || privilege-escalation || credential-access,Persistence || Privilege Escalation || Credential Access,3,1,T1179,Hooking,,
+T1180,Screensaver,persistence,Persistence,1,1,T1180,Screensaver,,
+T1182,AppCert DLLs,persistence || privilege-escalation,Persistence || Privilege Escalation,2,1,T1182,AppCert DLLs,,
+T1183,Image File Execution Options Injection,privilege-escalation || persistence || defense-evasion,Privilege Escalation || Persistence || Defense Evasion,3,1,T1183,Image File Execution Options Injection,,
+T1185,Browser Session Hijacking,collection,Collection,1,1,T1185,Browser Session Hijacking,,
+T1187,Forced Authentication,credential-access,Credential Access,1,1,T1187,Forced Authentication,,
+T1188,Multi-hop Proxy,command-and-control,Command And Control,1,1,T1188,Multi-hop Proxy,,
+T1189,Drive-by Compromise,initial-access,Initial Access,1,1,T1189,Drive-by Compromise,,
+T1190,Exploit Public-Facing Application,initial-access,Initial Access,1,1,T1190,Exploit Public-Facing Application,,
+T1191,CMSTP,execution,Execution,1,1,T1191,CMSTP,,
+T1192,Spearphishing Link,initial-access,Initial Access,1,1,T1192,Spearphishing Link,,
+T1194,Spearphishing via Service,initial-access,Initial Access,1,1,T1194,Spearphishing via Service,,
+T1195,Supply Chain Compromise,initial-access,Initial Access,4,1,T1195.001 || T1195.003 || T1195 || T1195.002,Compromise Software Dependencies and Development Tools || Compromise Hardware Supply Chain || Supply Chain Compromise || Compromise Software Supply Chain,T1195.001 || T1195.003 || T1195.002,Compromise Software Dependencies and Development Tools || Compromise Hardware Supply Chain || Compromise Software Supply Chain
+T1196,Control Panel Items,defense-evasion || execution,Defense Evasion || Execution,2,1,T1196,Control Panel Items,,
+T1197,BITS Jobs,defense-evasion || persistence,Defense Evasion || Persistence,2,1,T1197,BITS Jobs,,
+T1198,SIP and Trust Provider Hijacking,persistence,Persistence,1,1,T1198,SIP and Trust Provider Hijacking,,
+T1199,Trusted Relationship,initial-access,Initial Access,1,1,T1199,Trusted Relationship,,
+T1200,Hardware Additions,initial-access,Initial Access,1,1,T1200,Hardware Additions,,
+T1201,Password Policy Discovery,discovery,Discovery,1,1,T1201,Password Policy Discovery,,
+T1202,Indirect Command Execution,defense-evasion,Defense Evasion,1,1,T1202,Indirect Command Execution,,
+T1203,Exploitation for Client Execution,execution,Execution,1,1,T1203,Exploitation for Client Execution,,
+T1204,User Execution,execution,Execution,6,1,T1204.002 || T1204.005 || T1204 || T1204.003 || T1204.004 || T1204.001,Malicious File || Malicious Library || User Execution || Malicious Image || Malicious Copy and Paste || Malicious Link,T1204.002 || T1204.005 || T1204.003 || T1204.004 || T1204.001,Malicious File || Malicious Library || Malicious Image || Malicious Copy and Paste || Malicious Link
+T1205,Traffic Signaling,defense-evasion || persistence || command-and-control,Defense Evasion || Persistence || Command And Control,9,1,T1205.002 || T1205 || T1205.001,Socket Filters || Traffic Signaling || Port Knocking,T1205.002 || T1205.001,Socket Filters || Port Knocking
+T1206,Sudo Caching,privilege-escalation,Privilege Escalation,1,1,T1206,Sudo Caching,,
+T1207,Rogue Domain Controller,defense-evasion,Defense Evasion,1,1,T1207,Rogue Domain Controller,,
+T1208,Kerberoasting,credential-access,Credential Access,1,1,T1208,Kerberoasting,,
+T1210,Exploitation of Remote Services,lateral-movement,Lateral Movement,1,1,T1210,Exploitation of Remote Services,,
+T1211,Exploitation for Defense Evasion,defense-evasion,Defense Evasion,1,1,T1211,Exploitation for Defense Evasion,,
+T1212,Exploitation for Credential Access,credential-access,Credential Access,1,1,T1212,Exploitation for Credential Access,,
+T1213,Data from Information Repositories,collection,Collection,7,1,T1213.002 || T1213.006 || T1213.001 || T1213.004 || T1213.003 || T1213 || T1213.005,Sharepoint || Databases || Confluence || Customer Relationship Management Software || Code Repositories || Data from Information Repositories || Messaging Applications,T1213.002 || T1213.006 || T1213.001 || T1213.004 || T1213.003 || T1213.005,Sharepoint || Databases || Confluence || Customer Relationship Management Software || Code Repositories || Messaging Applications
+T1214,Credentials in Registry,credential-access,Credential Access,1,1,T1214,Credentials in Registry,,
+T1215,Kernel Modules and Extensions,persistence,Persistence,1,1,T1215,Kernel Modules and Extensions,,
+T1216,System Script Proxy Execution,defense-evasion,Defense Evasion,3,1,T1216.001 || T1216.002 || T1216,PubPrn || SyncAppvPublishingServer || System Script Proxy Execution,T1216.001 || T1216.002,PubPrn || SyncAppvPublishingServer
+T1217,Browser Information Discovery,discovery,Discovery,1,1,T1217,Browser Information Discovery,,
+T1218,System Binary Proxy Execution,defense-evasion,Defense Evasion,13,1,T1218.011 || T1218.013 || T1218.004 || T1218.007 || T1218 || T1218.003 || T1218.002 || T1218.015 || T1218.008 || T1218.012 || T1218.005 || T1218.001 || T1218.014,Rundll32 || Mavinject || InstallUtil || Msiexec || System Binary Proxy Execution || CMSTP || Control Panel || Electron Applications || Odbcconf || Verclsid || Mshta || Compiled HTML File || MMC,T1218.011 || T1218.013 || T1218.004 || T1218.007 || T1218.003 || T1218.002 || T1218.015 || T1218.008 || T1218.012 || T1218.005 || T1218.001 || T1218.014,Rundll32 || Mavinject || InstallUtil || Msiexec || CMSTP || Control Panel || Electron Applications || Odbcconf || Verclsid || Mshta || Compiled HTML File || MMC
+T1219,Remote Access Tools,command-and-control,Command And Control,4,1,T1219 || T1219.001 || T1219.003 || T1219.002,Remote Access Tools || IDE Tunneling || Remote Access Hardware || Remote Desktop Software,T1219.001 || T1219.003 || T1219.002,IDE Tunneling || Remote Access Hardware || Remote Desktop Software
+T1220,XSL Script Processing,defense-evasion,Defense Evasion,1,1,T1220,XSL Script Processing,,
+T1221,Template Injection,defense-evasion,Defense Evasion,1,1,T1221,Template Injection,,
+T1222,File and Directory Permissions Modification,defense-evasion,Defense Evasion,3,1,T1222.002 || T1222.001 || T1222,Linux and Mac File and Directory Permissions Modification || Windows File and Directory Permissions Modification || File and Directory Permissions Modification,T1222.002 || T1222.001,Linux and Mac File and Directory Permissions Modification || Windows File and Directory Permissions Modification
+T1223,Compiled HTML File,execution,Execution,1,1,T1223,Compiled HTML File,,
+T1480,Execution Guardrails,defense-evasion,Defense Evasion,3,1,T1480.002 || T1480 || T1480.001,Mutual Exclusion || Execution Guardrails || Environmental Keying,T1480.002 || T1480.001,Mutual Exclusion || Environmental Keying
+T1482,Domain Trust Discovery,discovery,Discovery,1,1,T1482,Domain Trust Discovery,,
+T1484,Domain or Tenant Policy Modification,defense-evasion || privilege-escalation,Defense Evasion || Privilege Escalation,6,1,T1484.002 || T1484.001 || T1484,Trust Modification || Group Policy Modification || Domain or Tenant Policy Modification,T1484.002 || T1484.001,Trust Modification || Group Policy Modification
+T1485,Data Destruction,impact,Impact,2,1,T1485.001 || T1485,Lifecycle-Triggered Deletion || Data Destruction,T1485.001,Lifecycle-Triggered Deletion
+T1486,Data Encrypted for Impact,impact,Impact,1,1,T1486,Data Encrypted for Impact,,
+T1488,Disk Content Wipe,impact,Impact,1,1,T1488,Disk Content Wipe,,
+T1489,Service Stop,impact,Impact,1,1,T1489,Service Stop,,
+T1490,Inhibit System Recovery,impact,Impact,1,1,T1490,Inhibit System Recovery,,
+T1491,Defacement,impact,Impact,3,1,T1491.002 || T1491 || T1491.001,External Defacement || Defacement || Internal Defacement,T1491.002 || T1491.001,External Defacement || Internal Defacement
+T1492,Stored Data Manipulation,impact,Impact,1,1,T1492,Stored Data Manipulation,,
+T1493,Transmitted Data Manipulation,impact,Impact,1,1,T1493,Transmitted Data Manipulation,,
+T1495,Firmware Corruption,impact,Impact,1,1,T1495,Firmware Corruption,,
+T1496,Resource Hijacking,impact,Impact,5,1,T1496.003 || T1496.002 || T1496.004 || T1496.001 || T1496,SMS Pumping || Bandwidth Hijacking || Cloud Service Hijacking || Compute Hijacking || Resource Hijacking,T1496.003 || T1496.002 || T1496.004 || T1496.001,SMS Pumping || Bandwidth Hijacking || Cloud Service Hijacking || Compute Hijacking
+T1497,Virtualization/Sandbox Evasion,defense-evasion || discovery,Defense Evasion || Discovery,8,1,T1497.001 || T1497.003 || T1497 || T1497.002,System Checks || Time Based Checks || Virtualization/Sandbox Evasion || User Activity Based Checks,T1497.001 || T1497.003 || T1497.002,System Checks || Time Based Checks || User Activity Based Checks
+T1498,Network Denial of Service,impact,Impact,3,1,T1498.001 || T1498.002 || T1498,Direct Network Flood || Reflection Amplification || Network Denial of Service,T1498.001 || T1498.002,Direct Network Flood || Reflection Amplification
+T1499,Endpoint Denial of Service,impact,Impact,5,1,T1499.001 || T1499.003 || T1499.004 || T1499.002 || T1499,OS Exhaustion Flood || Application Exhaustion Flood || Application or System Exploitation || Service Exhaustion Flood || Endpoint Denial of Service,T1499.001 || T1499.003 || T1499.004 || T1499.002,OS Exhaustion Flood || Application Exhaustion Flood || Application or System Exploitation || Service Exhaustion Flood
+T1501,Systemd Service,persistence,Persistence,1,1,T1501,Systemd Service,,
+T1503,Credentials from Web Browsers,credential-access,Credential Access,1,1,T1503,Credentials from Web Browsers,,
+T1505,Server Software Component,persistence,Persistence,7,1,T1505.002 || T1505.005 || T1505.003 || T1505.004 || T1505 || T1505.006 || T1505.001,Transport Agent || Terminal Services DLL || Web Shell || IIS Components || Server Software Component || vSphere Installation Bundles || SQL Stored Procedures,T1505.002 || T1505.005 || T1505.003 || T1505.004 || T1505.006 || T1505.001,Transport Agent || Terminal Services DLL || Web Shell || IIS Components || vSphere Installation Bundles || SQL Stored Procedures
+T1514,Elevated Execution with Prompt,privilege-escalation,Privilege Escalation,1,1,T1514,Elevated Execution with Prompt,,
+T1518,Software Discovery,discovery,Discovery,2,1,T1518.002 || T1518,Backup Software Discovery || Software Discovery,T1518.002,Backup Software Discovery
+T1525,Implant Internal Image,persistence,Persistence,1,1,T1525,Implant Internal Image,,
+T1526,Cloud Service Discovery,discovery,Discovery,1,1,T1526,Cloud Service Discovery,,
+T1527,Application Access Token,defense-evasion || lateral-movement,Defense Evasion || Lateral Movement,2,1,T1527,Application Access Token,,
+T1528,Steal Application Access Token,credential-access,Credential Access,1,1,T1528,Steal Application Access Token,,
+T1529,System Shutdown/Reboot,impact,Impact,1,1,T1529,System Shutdown/Reboot,,
+T1530,Data from Cloud Storage,collection,Collection,1,1,T1530,Data from Cloud Storage,,
+T1531,Account Access Removal,impact,Impact,1,1,T1531,Account Access Removal,,
+T1534,Internal Spearphishing,lateral-movement,Lateral Movement,1,1,T1534,Internal Spearphishing,,
+T1535,Unused/Unsupported Cloud Regions,defense-evasion,Defense Evasion,1,1,T1535,Unused/Unsupported Cloud Regions,,
+T1537,Transfer Data to Cloud Account,exfiltration,Exfiltration,1,1,T1537,Transfer Data to Cloud Account,,
+T1538,Cloud Service Dashboard,discovery,Discovery,1,1,T1538,Cloud Service Dashboard,,
+T1539,Steal Web Session Cookie,credential-access,Credential Access,1,1,T1539,Steal Web Session Cookie,,
+T1542,Pre-OS Boot,persistence || defense-evasion,Persistence || Defense Evasion,9,1,T1542.001 || T1542.003 || T1542.005 || T1542 || T1542.004,System Firmware || Bootkit || TFTP Boot || Pre-OS Boot || ROMMONkit,T1542.001 || T1542.003 || T1542.005 || T1542.004,System Firmware || Bootkit || TFTP Boot || ROMMONkit
+T1543,Create or Modify System Process,persistence || privilege-escalation,Persistence || Privilege Escalation,11,1,T1543 || T1543.003 || T1543.004 || T1543.005 || T1543.001 || T1543.002,Create or Modify System Process || Windows Service || Launch Daemon || Container Service || Launch Agent || Systemd Service,T1543.003 || T1543.004 || T1543.005 || T1543.001 || T1543.002,Windows Service || Launch Daemon || Container Service || Launch Agent || Systemd Service
+T1546,Event Triggered Execution,privilege-escalation || persistence,Privilege Escalation || Persistence,27,1,T1546.013 || T1546.006 || T1546.011 || T1546.005 || T1546.008 || T1546.003 || T1546.001 || T1546.014 || T1546 || T1546.004 || T1546.015 || T1546.018 || T1546.002 || T1546.016 || T1546.017 || T1546.007,PowerShell Profile || LC_LOAD_DYLIB Addition || Application Shimming || Trap || Accessibility Features || Windows Management Instrumentation Event Subscription || Change Default File Association || Emond || Event Triggered Execution || Unix Shell Configuration Modification || Component Object Model Hijacking || Python Startup Hooks || Screensaver || Installer Packages || Udev Rules || Netsh Helper DLL,T1546.013 || T1546.006 || T1546.011 || T1546.005 || T1546.008 || T1546.003 || T1546.001 || T1546.014 || T1546.004 || T1546.015 || T1546.018 || T1546.002 || T1546.016 || T1546.017 || T1546.007,PowerShell Profile || LC_LOAD_DYLIB Addition || Application Shimming || Trap || Accessibility Features || Windows Management Instrumentation Event Subscription || Change Default File Association || Emond || Unix Shell Configuration Modification || Component Object Model Hijacking || Python Startup Hooks || Screensaver || Installer Packages || Udev Rules || Netsh Helper DLL
+T1547,Boot or Logon Autostart Execution,persistence || privilege-escalation,Persistence || Privilege Escalation,22,1,T1547 || T1547.014 || T1547.012 || T1547.009 || T1547.005 || T1547.003 || T1547.004 || T1547.015 || T1547.001 || T1547.006 || T1547.002 || T1547.013 || T1547.007 || T1547.008,Boot or Logon Autostart Execution || Active Setup || Print Processors || Shortcut Modification || Security Support Provider || Time Providers || Winlogon Helper DLL || Login Items || Registry Run Keys / Startup Folder || Kernel Modules and Extensions || Authentication Package || XDG Autostart Entries || Re-opened Applications || LSASS Driver,T1547.014 || T1547.012 || T1547.009 || T1547.005 || T1547.003 || T1547.004 || T1547.015 || T1547.001 || T1547.006 || T1547.002 || T1547.013 || T1547.007 || T1547.008,Active Setup || Print Processors || Shortcut Modification || Security Support Provider || Time Providers || Winlogon Helper DLL || Login Items || Registry Run Keys / Startup Folder || Kernel Modules and Extensions || Authentication Package || XDG Autostart Entries || Re-opened Applications || LSASS Driver
+T1548,Abuse Elevation Control Mechanism,privilege-escalation || defense-evasion,Privilege Escalation || Defense Evasion,13,1,T1548.002 || T1548.003 || T1548 || T1548.001 || T1548.005 || T1548.004 || T1548.006,Bypass User Account Control || Sudo and Sudo Caching || Abuse Elevation Control Mechanism || Setuid and Setgid || Temporary Elevated Cloud Access || Elevated Execution with Prompt || TCC Manipulation,T1548.002 || T1548.003 || T1548.001 || T1548.005 || T1548.004 || T1548.006,Bypass User Account Control || Sudo and Sudo Caching || Setuid and Setgid || Temporary Elevated Cloud Access || Elevated Execution with Prompt || TCC Manipulation
+T1550,Use Alternate Authentication Material,defense-evasion || lateral-movement,Defense Evasion || Lateral Movement,7,1,T1550 || T1550.003 || T1550.004 || T1550.002,Use Alternate Authentication Material || Pass the Ticket || Web Session Cookie || Pass the Hash,T1550.003 || T1550.004 || T1550.002,Pass the Ticket || Web Session Cookie || Pass the Hash
+T1552,Unsecured Credentials,credential-access,Credential Access,7,1,T1552.005 || T1552 || T1552.003 || T1552.001 || T1552.006 || T1552.008 || T1552.007,Cloud Instance Metadata API || Unsecured Credentials || Shell History || Credentials In Files || Group Policy Preferences || Chat Messages || Container API,T1552.005 || T1552.003 || T1552.001 || T1552.006 || T1552.008 || T1552.007,Cloud Instance Metadata API || Shell History || Credentials In Files || Group Policy Preferences || Chat Messages || Container API
+T1553,Subvert Trust Controls,defense-evasion,Defense Evasion,6,1,T1553.001 || T1553.003 || T1553.006 || T1553.005 || T1553 || T1553.004,Gatekeeper Bypass || SIP and Trust Provider Hijacking || Code Signing Policy Modification || Mark-of-the-Web Bypass || Subvert Trust Controls || Install Root Certificate,T1553.001 || T1553.003 || T1553.006 || T1553.005 || T1553.004,Gatekeeper Bypass || SIP and Trust Provider Hijacking || Code Signing Policy Modification || Mark-of-the-Web Bypass || Install Root Certificate
+T1554,Compromise Host Software Binary,persistence,Persistence,1,1,T1554,Compromise Host Software Binary,,
+T1555,Credentials from Password Stores,credential-access,Credential Access,6,1,T1555.002 || T1555.001 || T1555.005 || T1555 || T1555.006 || T1555.004,Securityd Memory || Keychain || Password Managers || Credentials from Password Stores || Cloud Secrets Management Stores || Windows Credential Manager,T1555.002 || T1555.001 || T1555.005 || T1555.006 || T1555.004,Securityd Memory || Keychain || Password Managers || Cloud Secrets Management Stores || Windows Credential Manager
+T1556,Modify Authentication Process,credential-access || defense-evasion || persistence,Credential Access || Defense Evasion || Persistence,30,1,T1556.003 || T1556.002 || T1556.007 || T1556.008 || T1556.006 || T1556.009 || T1556.001 || T1556.005 || T1556 || T1556.004,Pluggable Authentication Modules || Password Filter DLL || Hybrid Identity || Network Provider DLL || Multi-Factor Authentication || Conditional Access Policies || Domain Controller Authentication || Reversible Encryption || Modify Authentication Process || Network Device Authentication,T1556.003 || T1556.002 || T1556.007 || T1556.008 || T1556.006 || T1556.009 || T1556.001 || T1556.005 || T1556.004,Pluggable Authentication Modules || Password Filter DLL || Hybrid Identity || Network Provider DLL || Multi-Factor Authentication || Conditional Access Policies || Domain Controller Authentication || Reversible Encryption || Network Device Authentication
+T1557,Adversary-in-the-Middle,credential-access || collection,Credential Access || Collection,10,1,T1557 || T1557.004 || T1557.003 || T1557.001 || T1557.002,Adversary-in-the-Middle || Evil Twin || DHCP Spoofing || LLMNR/NBT-NS Poisoning and SMB Relay || ARP Cache Poisoning,T1557.004 || T1557.003 || T1557.001 || T1557.002,Evil Twin || DHCP Spoofing || LLMNR/NBT-NS Poisoning and SMB Relay || ARP Cache Poisoning
+T1558,Steal or Forge Kerberos Tickets,credential-access,Credential Access,5,1,T1558.005 || T1558.004 || T1558 || T1558.001 || T1558.002,Ccache Files || AS-REP Roasting || Steal or Forge Kerberos Tickets || Golden Ticket || Silver Ticket,T1558.005 || T1558.004 || T1558.001 || T1558.002,Ccache Files || AS-REP Roasting || Golden Ticket || Silver Ticket
+T1559,Inter-Process Communication,execution,Execution,4,1,T1559.002 || T1559.001 || T1559.003 || T1559,Dynamic Data Exchange || Component Object Model || XPC Services || Inter-Process Communication,T1559.002 || T1559.001 || T1559.003,Dynamic Data Exchange || Component Object Model || XPC Services
+T1560,Archive Collected Data,collection,Collection,4,1,T1560.001 || T1560.003 || T1560.002 || T1560,Archive via Utility || Archive via Custom Method || Archive via Library || Archive Collected Data,T1560.001 || T1560.003 || T1560.002,Archive via Utility || Archive via Custom Method || Archive via Library
+T1561,Disk Wipe,impact,Impact,2,1,T1561.002 || T1561,Disk Structure Wipe || Disk Wipe,T1561.002,Disk Structure Wipe
+T1562,Impair Defenses,defense-evasion,Defense Evasion,12,1,T1562.009 || T1562 || T1562.002 || T1562.004 || T1562.012 || T1562.007 || T1562.010 || T1562.003 || T1562.013 || T1562.001 || T1562.011 || T1562.008,Safe Mode Boot || Impair Defenses || Disable Windows Event Logging || Disable or Modify System Firewall || Disable or Modify Linux Audit System || Disable or Modify Cloud Firewall || Downgrade Attack || Impair Command History Logging || Disable or Modify Network Device Firewall || Disable or Modify Tools || Spoof Security Alerting || Disable or Modify Cloud Logs,T1562.009 || T1562.002 || T1562.004 || T1562.012 || T1562.007 || T1562.010 || T1562.003 || T1562.013 || T1562.001 || T1562.011 || T1562.008,Safe Mode Boot || Disable Windows Event Logging || Disable or Modify System Firewall || Disable or Modify Linux Audit System || Disable or Modify Cloud Firewall || Downgrade Attack || Impair Command History Logging || Disable or Modify Network Device Firewall || Disable or Modify Tools || Spoof Security Alerting || Disable or Modify Cloud Logs
+T1563,Remote Service Session Hijacking,lateral-movement,Lateral Movement,3,1,T1563.001 || T1563 || T1563.002,SSH Hijacking || Remote Service Session Hijacking || RDP Hijacking,T1563.001 || T1563.002,SSH Hijacking || RDP Hijacking
+T1564,Hide Artifacts,defense-evasion,Defense Evasion,13,1,T1564.012 || T1564.008 || T1564 || T1564.011 || T1564.013 || T1564.014 || T1564.002 || T1564.009 || T1564.006 || T1564.007 || T1564.005 || T1564.004 || T1564.010,File/Path Exclusions || Email Hiding Rules || Hide Artifacts || Ignore Process Interrupts || Bind Mounts || Extended Attributes || Hidden Users || Resource Forking || Run Virtual Instance || VBA Stomping || Hidden File System || NTFS File Attributes || Process Argument Spoofing,T1564.012 || T1564.008 || T1564.011 || T1564.013 || T1564.014 || T1564.002 || T1564.009 || T1564.006 || T1564.007 || T1564.005 || T1564.004 || T1564.010,File/Path Exclusions || Email Hiding Rules || Ignore Process Interrupts || Bind Mounts || Extended Attributes || Hidden Users || Resource Forking || Run Virtual Instance || VBA Stomping || Hidden File System || NTFS File Attributes || Process Argument Spoofing
+T1565,Data Manipulation,impact,Impact,2,1,T1565.003 || T1565,Runtime Data Manipulation || Data Manipulation,T1565.003,Runtime Data Manipulation
+T1566,Phishing,initial-access,Initial Access,3,1,T1566.001 || T1566 || T1566.004,Spearphishing Attachment || Phishing || Spearphishing Voice,T1566.001 || T1566.004,Spearphishing Attachment || Spearphishing Voice
+T1567,Exfiltration Over Web Service,exfiltration,Exfiltration,5,1,T1567 || T1567.004 || T1567.001 || T1567.003 || T1567.002,Exfiltration Over Web Service || Exfiltration Over Webhook || Exfiltration to Code Repository || Exfiltration to Text Storage Sites || Exfiltration to Cloud Storage,T1567.004 || T1567.001 || T1567.003 || T1567.002,Exfiltration Over Webhook || Exfiltration to Code Repository || Exfiltration to Text Storage Sites || Exfiltration to Cloud Storage
+T1568,Dynamic Resolution,command-and-control,Command And Control,4,1,T1568.002 || T1568.001 || T1568 || T1568.003,Domain Generation Algorithms || Fast Flux DNS || Dynamic Resolution || DNS Calculation,T1568.002 || T1568.001 || T1568.003,Domain Generation Algorithms || Fast Flux DNS || DNS Calculation
+T1569,System Services,execution,Execution,3,1,T1569.003 || T1569 || T1569.002,Systemctl || System Services || Service Execution,T1569.003 || T1569.002,Systemctl || Service Execution
+T1570,Lateral Tool Transfer,lateral-movement,Lateral Movement,1,1,T1570,Lateral Tool Transfer,,
+T1571,Non-Standard Port,command-and-control,Command And Control,1,1,T1571,Non-Standard Port,,
+T1572,Protocol Tunneling,command-and-control,Command And Control,1,1,T1572,Protocol Tunneling,,
+T1573,Encrypted Channel,command-and-control,Command And Control,3,1,T1573.001 || T1573 || T1573.002,Symmetric Cryptography || Encrypted Channel || Asymmetric Cryptography,T1573.001 || T1573.002,Symmetric Cryptography || Asymmetric Cryptography
+T1574,Hijack Execution Flow,persistence || privilege-escalation || defense-evasion,Persistence || Privilege Escalation || Defense Evasion,39,1,T1574.007 || T1574.011 || T1574.001 || T1574.014 || T1574.008 || T1574.006 || T1574.005 || T1574.010 || T1574.013 || T1574 || T1574.009 || T1574.002 || T1574.004 || T1574.012,Path Interception by PATH Environment Variable || Services Registry Permissions Weakness || DLL || AppDomainManager || Path Interception by Search Order Hijacking || Dynamic Linker Hijacking || Executable Installer File Permissions Weakness || Services File Permissions Weakness || KernelCallbackTable || Hijack Execution Flow || Path Interception by Unquoted Path || DLL Side-Loading || Dylib Hijacking || COR_PROFILER,T1574.007 || T1574.011 || T1574.001 || T1574.014 || T1574.008 || T1574.006 || T1574.005 || T1574.010 || T1574.013 || T1574.009 || T1574.002 || T1574.004 || T1574.012,Path Interception by PATH Environment Variable || Services Registry Permissions Weakness || DLL || AppDomainManager || Path Interception by Search Order Hijacking || Dynamic Linker Hijacking || Executable Installer File Permissions Weakness || Services File Permissions Weakness || KernelCallbackTable || Path Interception by Unquoted Path || DLL Side-Loading || Dylib Hijacking || COR_PROFILER
+T1578,Modify Cloud Compute Infrastructure,defense-evasion,Defense Evasion,6,1,T1578.004 || T1578 || T1578.003 || T1578.005 || T1578.002 || T1578.001,Revert Cloud Instance || Modify Cloud Compute Infrastructure || Delete Cloud Instance || Modify Cloud Compute Configurations || Create Cloud Instance || Create Snapshot,T1578.004 || T1578.003 || T1578.005 || T1578.002 || T1578.001,Revert Cloud Instance || Delete Cloud Instance || Modify Cloud Compute Configurations || Create Cloud Instance || Create Snapshot
+T1580,Cloud Infrastructure Discovery,discovery,Discovery,1,1,T1580,Cloud Infrastructure Discovery,,
+T1583,Acquire Infrastructure,resource-development,Resource Development,8,1,T1583 || T1583.007 || T1583.008 || T1583.002 || T1583.005 || T1583.001 || T1583.004 || T1583.006,Acquire Infrastructure || Serverless || Malvertising || DNS Server || Botnet || Domains || Server || Web Services,T1583.007 || T1583.008 || T1583.002 || T1583.005 || T1583.001 || T1583.004 || T1583.006,Serverless || Malvertising || DNS Server || Botnet || Domains || Server || Web Services
+T1584,Compromise Infrastructure,resource-development,Resource Development,3,1,T1584.008 || T1584.003 || T1584,Network Devices || Virtual Private Server || Compromise Infrastructure,T1584.008 || T1584.003,Network Devices || Virtual Private Server
+T1585,Establish Accounts,resource-development,Resource Development,1,1,T1585,Establish Accounts,,
+T1586,Compromise Accounts,resource-development,Resource Development,4,1,T1586.001 || T1586.003 || T1586.002 || T1586,Social Media Accounts || Cloud Accounts || Email Accounts || Compromise Accounts,T1586.001 || T1586.003 || T1586.002,Social Media Accounts || Cloud Accounts || Email Accounts
+T1587,Develop Capabilities,resource-development,Resource Development,4,1,T1587.001 || T1587.002 || T1587.004 || T1587,Malware || Code Signing Certificates || Exploits || Develop Capabilities,T1587.001 || T1587.002 || T1587.004,Malware || Code Signing Certificates || Exploits
+T1588,Obtain Capabilities,resource-development,Resource Development,5,1,T1588.007 || T1588.004 || T1588.006 || T1588.002 || T1588,Artificial Intelligence || Digital Certificates || Vulnerabilities || Tool || Obtain Capabilities,T1588.007 || T1588.004 || T1588.006 || T1588.002,Artificial Intelligence || Digital Certificates || Vulnerabilities || Tool
+T1589,Gather Victim Identity Information,reconnaissance,Reconnaissance,4,1,T1589 || T1589.002 || T1589.003 || T1589.001,Gather Victim Identity Information || Email Addresses || Employee Names || Credentials,T1589.002 || T1589.003 || T1589.001,Email Addresses || Employee Names || Credentials
+T1590,Gather Victim Network Information,reconnaissance,Reconnaissance,7,1,T1590.005 || T1590.002 || T1590.004 || T1590.003 || T1590.006 || T1590 || T1590.001,IP Addresses || DNS || Network Topology || Network Trust Dependencies || Network Security Appliances || Gather Victim Network Information || Domain Properties,T1590.005 || T1590.002 || T1590.004 || T1590.003 || T1590.006 || T1590.001,IP Addresses || DNS || Network Topology || Network Trust Dependencies || Network Security Appliances || Domain Properties
+T1591,Gather Victim Org Information,reconnaissance,Reconnaissance,5,1,T1591.003 || T1591.002 || T1591 || T1591.004 || T1591.001,Identify Business Tempo || Business Relationships || Gather Victim Org Information || Identify Roles || Determine Physical Locations,T1591.003 || T1591.002 || T1591.004 || T1591.001,Identify Business Tempo || Business Relationships || Identify Roles || Determine Physical Locations
+T1592,Gather Victim Host Information,reconnaissance,Reconnaissance,5,1,T1592 || T1592.001 || T1592.004 || T1592.003 || T1592.002,Gather Victim Host Information || Hardware || Client Configurations || Firmware || Software,T1592.001 || T1592.004 || T1592.003 || T1592.002,Hardware || Client Configurations || Firmware || Software
+T1593,Search Open Websites/Domains,reconnaissance,Reconnaissance,4,1,T1593.002 || T1593.003 || T1593 || T1593.001,Search Engines || Code Repositories || Search Open Websites/Domains || Social Media,T1593.002 || T1593.003 || T1593.001,Search Engines || Code Repositories || Social Media
+T1594,Search Victim-Owned Websites,reconnaissance,Reconnaissance,1,1,T1594,Search Victim-Owned Websites,,
+T1595,Active Scanning,reconnaissance,Reconnaissance,4,1,T1595.002 || T1595 || T1595.003 || T1595.001,Vulnerability Scanning || Active Scanning || Wordlist Scanning || Scanning IP Blocks,T1595.002 || T1595.003 || T1595.001,Vulnerability Scanning || Wordlist Scanning || Scanning IP Blocks
+T1596,Search Open Technical Databases,reconnaissance,Reconnaissance,6,1,T1596.003 || T1596.002 || T1596.001 || T1596 || T1596.004 || T1596.005,Digital Certificates || WHOIS || DNS/Passive DNS || Search Open Technical Databases || CDNs || Scan Databases,T1596.003 || T1596.002 || T1596.001 || T1596.004 || T1596.005,Digital Certificates || WHOIS || DNS/Passive DNS || CDNs || Scan Databases
+T1597,Search Closed Sources,reconnaissance,Reconnaissance,3,1,T1597.002 || T1597.001 || T1597,Purchase Technical Data || Threat Intel Vendors || Search Closed Sources,T1597.002 || T1597.001,Purchase Technical Data || Threat Intel Vendors
+T1598,Phishing for Information,reconnaissance,Reconnaissance,5,1,T1598.003 || T1598.004 || T1598.002 || T1598 || T1598.001,Spearphishing Link || Spearphishing Voice || Spearphishing Attachment || Phishing for Information || Spearphishing Service,T1598.003 || T1598.004 || T1598.002 || T1598.001,Spearphishing Link || Spearphishing Voice || Spearphishing Attachment || Spearphishing Service
+T1599,Network Boundary Bridging,defense-evasion,Defense Evasion,2,1,T1599.001 || T1599,Network Address Translation Traversal || Network Boundary Bridging,T1599.001,Network Address Translation Traversal
+T1600,Weaken Encryption,defense-evasion,Defense Evasion,3,1,T1600 || T1600.001 || T1600.002,Weaken Encryption || Reduce Key Space || Disable Crypto Hardware,T1600.001 || T1600.002,Reduce Key Space || Disable Crypto Hardware
+T1601,Modify System Image,defense-evasion,Defense Evasion,3,1,T1601 || T1601.001 || T1601.002,Modify System Image || Patch System Image || Downgrade System Image,T1601.001 || T1601.002,Patch System Image || Downgrade System Image
+T1602,Data from Configuration Repository,collection,Collection,3,1,T1602 || T1602.002 || T1602.001,Data from Configuration Repository || Network Device Configuration Dump || SNMP (MIB Dump),T1602.002 || T1602.001,Network Device Configuration Dump || SNMP (MIB Dump)
+T1606,Forge Web Credentials,credential-access,Credential Access,3,1,T1606.002 || T1606.001 || T1606,SAML Tokens || Web Cookies || Forge Web Credentials,T1606.002 || T1606.001,SAML Tokens || Web Cookies
+T1608,Stage Capabilities,resource-development,Resource Development,7,1,T1608.004 || T1608.001 || T1608.002 || T1608 || T1608.005 || T1608.003 || T1608.006,Drive-by Target || Upload Malware || Upload Tool || Stage Capabilities || Link Target || Install Digital Certificate || SEO Poisoning,T1608.004 || T1608.001 || T1608.002 || T1608.005 || T1608.003 || T1608.006,Drive-by Target || Upload Malware || Upload Tool || Link Target || Install Digital Certificate || SEO Poisoning
+T1609,Container Administration Command,execution,Execution,1,1,T1609,Container Administration Command,,
+T1610,Deploy Container,defense-evasion || execution,Defense Evasion || Execution,2,1,T1610,Deploy Container,,
+T1611,Escape to Host,privilege-escalation,Privilege Escalation,1,1,T1611,Escape to Host,,
+T1612,Build Image on Host,defense-evasion,Defense Evasion,1,1,T1612,Build Image on Host,,
+T1613,Container and Resource Discovery,discovery,Discovery,1,1,T1613,Container and Resource Discovery,,
+T1614,System Location Discovery,discovery,Discovery,2,1,T1614.001 || T1614,System Language Discovery || System Location Discovery,T1614.001,System Language Discovery
+T1615,Group Policy Discovery,discovery,Discovery,1,1,T1615,Group Policy Discovery,,
+T1619,Cloud Storage Object Discovery,discovery,Discovery,1,1,T1619,Cloud Storage Object Discovery,,
+T1620,Reflective Code Loading,defense-evasion,Defense Evasion,1,1,T1620,Reflective Code Loading,,
+T1621,Multi-Factor Authentication Request Generation,credential-access,Credential Access,1,1,T1621,Multi-Factor Authentication Request Generation,,
+T1622,Debugger Evasion,defense-evasion || discovery,Defense Evasion || Discovery,2,1,T1622,Debugger Evasion,,
+T1647,Plist File Modification,defense-evasion,Defense Evasion,1,1,T1647,Plist File Modification,,
+T1648,Serverless Execution,execution,Execution,1,1,T1648,Serverless Execution,,
+T1649,Steal or Forge Authentication Certificates,credential-access,Credential Access,1,1,T1649,Steal or Forge Authentication Certificates,,
+T1650,Acquire Access,resource-development,Resource Development,1,1,T1650,Acquire Access,,
+T1651,Cloud Administration Command,execution,Execution,1,1,T1651,Cloud Administration Command,,
+T1652,Device Driver Discovery,discovery,Discovery,1,1,T1652,Device Driver Discovery,,
+T1653,Power Settings,persistence,Persistence,1,1,T1653,Power Settings,,
+T1654,Log Enumeration,discovery,Discovery,1,1,T1654,Log Enumeration,,
+T1656,Impersonation,defense-evasion,Defense Evasion,1,1,T1656,Impersonation,,
+T1657,Financial Theft,impact,Impact,1,1,T1657,Financial Theft,,
+T1659,Content Injection,initial-access || command-and-control,Initial Access || Command And Control,2,1,T1659,Content Injection,,
+T1665,Hide Infrastructure,command-and-control,Command And Control,1,1,T1665,Hide Infrastructure,,
+T1666,Modify Cloud Resource Hierarchy,defense-evasion,Defense Evasion,1,1,T1666,Modify Cloud Resource Hierarchy,,
+T1667,Email Bombing,impact,Impact,1,1,T1667,Email Bombing,,
+T1668,Exclusive Control,persistence,Persistence,1,1,T1668,Exclusive Control,,
+T1669,Wi-Fi Networks,initial-access,Initial Access,1,1,T1669,Wi-Fi Networks,,
+T1671,Cloud Application Integration,persistence,Persistence,1,1,T1671,Cloud Application Integration,,
+T1672,Email Spoofing,defense-evasion,Defense Evasion,1,1,T1672,Email Spoofing,,
+T1673,Virtual Machine Discovery,discovery,Discovery,1,1,T1673,Virtual Machine Discovery,,
+T1674,Input Injection,execution,Execution,1,1,T1674,Input Injection,,
+T1675,ESXi Administration Command,execution,Execution,1,1,T1675,ESXi Administration Command,,
+T1677,Poisoned Pipeline Execution,execution,Execution,1,1,T1677,Poisoned Pipeline Execution,,
+T1678,Delay Execution,defense-evasion,Defense Evasion,1,1,T1678,Delay Execution,,
+T1679,Selective Exclusion,defense-evasion,Defense Evasion,1,1,T1679,Selective Exclusion,,
+T1680,Local Storage Discovery,discovery,Discovery,1,1,T1680,Local Storage Discovery,,
+T1681,Search Threat Vendor Data,reconnaissance,Reconnaissance,1,1,T1681,Search Threat Vendor Data,,

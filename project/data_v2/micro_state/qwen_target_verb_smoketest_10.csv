@@ -1,0 +1,41 @@
+﻿annotation_id,raw_output,json_parse_ok,gold__next_target_artifact,pred__next_target_artifact,schema_ok__next_target_artifact,field_hit__next_target_artifact,gold__next_micro_verb,pred__next_micro_verb,schema_ok__next_micro_verb,field_hit__next_micro_verb,exact_match,any_schema_violation
+ms_001,"{
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""execute""
+}",1,network_configuration,local_file_data,1,0,enumerate,execute,1,0,0,0
+ms_002,"{
+  ""next_target_artifact"": ""process_or_file_identity"",
+  ""next_micro_verb"": ""masquerade""
+}",1,local_file_data,process_or_file_identity,1,0,collect,masquerade,1,0,0,0
+ms_003,"{
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""exfiltrate""
+}",1,permission_group_context,local_file_data,1,0,enumerate,exfiltrate,1,0,0,0
+ms_004,"{
+  ""next_target_artifact"": ""process_or_file_identity"",
+  ""next_micro_verb"": ""masquerade""
+}",1,command_execution_channel,process_or_file_identity,1,0,execute,masquerade,1,0,0,0
+ms_005,"{
+  ""next_target_artifact"": ""local_file_data"",
+  ""next_micro_verb"": ""exfiltrate""
+}",1,system_information,local_file_data,1,0,enumerate,exfiltrate,1,0,0,0
+ms_006,"{
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,access_token_context,credential_material,1,0,impersonate,dump,1,0,0,0
+ms_007,"{
+  ""next_target_artifact"": ""persistence_mechanism"",
+  ""next_micro_verb"": ""modify""
+}",1,access_token_context,persistence_mechanism,1,0,impersonate,modify,1,0,0,0
+ms_008,"{
+  ""next_target_artifact"": ""persistence_mechanism"",
+  ""next_micro_verb"": ""modify""
+}",1,access_token_context,persistence_mechanism,1,0,impersonate,modify,1,0,0,0
+ms_009,"{
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,persistence_mechanism,credential_material,1,0,modify,dump,1,0,0,0
+ms_010,"{
+  ""next_target_artifact"": ""credential_material"",
+  ""next_micro_verb"": ""dump""
+}",1,private_keys,credential_material,1,0,collect,dump,1,0,0,0

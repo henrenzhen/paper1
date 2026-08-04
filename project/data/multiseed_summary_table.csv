@@ -1,0 +1,6 @@
+﻿Model / Variant,N Seeds,Top-1,MRR
+GRU Baseline,5,0.545 ± 0.003,0.654 ± 0.003
+Global Logit Fusion (CoT),5,0.562 ± 0.001,0.672 ± 0.002
+Global Logit Fusion (No-CoT),5,0.550 ± 0.002,0.660 ± 0.002
+Transformer Baseline,5,0.531 ± 0.011,0.639 ± 0.009
+Dynamic Gating Fusion,5,0.541 ± 0.003,0.649 ± 0.002

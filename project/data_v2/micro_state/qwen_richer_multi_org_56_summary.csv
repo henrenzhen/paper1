@@ -1,0 +1,2 @@
+﻿scope,samples,json_parse_ok_rate,exact_match_rate,schema_violation_rate,current_access_context_acc,exhausted_action_constraint_acc,next_target_artifact_acc,next_micro_verb_acc
+all,56,1.0,0.125,0.0,0.4107142857142857,0.7142857142857143,0.625,0.625

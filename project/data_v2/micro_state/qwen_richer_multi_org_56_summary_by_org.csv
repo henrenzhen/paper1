@@ -1,0 +1,5 @@
+﻿source_org,samples,json_parse_ok_rate,exact_match_rate,schema_violation_rate,current_access_context_acc,exhausted_action_constraint_acc,next_target_artifact_acc,next_micro_verb_acc
+apt29,27,1.0,0.18518518518518517,0.0,0.37037037037037035,0.7777777777777778,0.7407407407407407,0.8148148148148148
+oilrig,10,1.0,0.0,0.0,0.4,0.9,0.6,0.5
+sandworm,10,1.0,0.1,0.0,0.5,0.6,0.5,0.5
+turla_carbon,9,1.0,0.1111111111111111,0.0,0.4444444444444444,0.4444444444444444,0.4444444444444444,0.3333333333333333
