@@ -1,0 +1,19 @@
+{
+  "status": "NOT_FROZEN",
+  "phase": "T0.3",
+  "note": "Structure placeholder only. It is not a frozen configuration or a valid experimental result.",
+  "data_splits": null,
+  "seeds": null,
+  "models": null,
+  "hyperparameters": null,
+  "alpha_candidates": null,
+  "alpha_selection_split": "validation",
+  "alpha_selection_per_seed": true,
+  "alpha_selection_primary_metric": "MRR",
+  "test_split_mutable": false,
+  "bootstrap_iterations": 10000,
+  "bootstrap_cluster_unit": "campaign_id",
+  "top1_test": "paired McNemar",
+  "ranking_tests": "campaign-clustered paired bootstrap",
+  "multiple_comparison": "Holm-Bonferroni"
+}

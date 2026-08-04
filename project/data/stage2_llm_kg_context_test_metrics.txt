@@ -1,0 +1,7 @@
+=== STAGE2 LLM ON KG-STAGE1 OUTPUTS ===
+samples=100
+candidate_labels=44
+stage2_json_parse_ok_rate=1.0000
+top1=0.0900
+top5=0.2000
+mrr=0.1378

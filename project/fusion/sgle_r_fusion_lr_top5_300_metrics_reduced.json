@@ -1,0 +1,38 @@
+{
+  "num_train_instances": 210,
+  "num_test_instances": 90,
+  "feature_cols": [
+    "rl_rank",
+    "rl_prob",
+    "rl_top1_prob",
+    "rl_margin_top1_top2",
+    "rl_is_top1",
+    "llm_is_top1",
+    "artifact_semantic_match",
+    "artifact_match_rank"
+  ],
+  "fusion_metrics": {
+    "num_instances": 90,
+    "top1": 0.5555555555555556,
+    "top5": 0.8888888888888888,
+    "mrr": 0.6866666666666668
+  },
+  "rl_metrics_same_split": {
+    "num_instances": 90,
+    "top1": 0.5666666666666667,
+    "top5": 0.8888888888888888,
+    "mrr": 0.6937037037037038
+  },
+  "candidate_level_auc": 0.8722972972972973,
+  "coef": {
+    "rl_rank": -0.49556480137466835,
+    "rl_prob": 1.2493043420074736,
+    "rl_top1_prob": -0.2292305503656311,
+    "rl_margin_top1_top2": 0.00836748381149693,
+    "rl_is_top1": -0.3596591348982085,
+    "llm_is_top1": 0.12137181903726445,
+    "artifact_semantic_match": 0.04912376994420555,
+    "artifact_match_rank": -0.1370644019947386
+  },
+  "intercept": -2.0517925221185216
+}

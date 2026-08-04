@@ -1,0 +1,7 @@
+=== LLM PREDICTED MICRO-STATE -> NEXTTTP ===
+samples=56
+num_labels=34
+label_seen_in_train_ratio=0.7321
+top1=0.3571
+top5=0.3750
+mrr=0.3871

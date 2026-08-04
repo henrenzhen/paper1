@@ -1,0 +1,7 @@
+=== LLM SEMANTIC-CONTEXT TEST PIPELINE ===
+samples=2107
+num_labels=158
+stage1_json_parse_ok_rate=1.0000
+top1=0.0361
+top5=0.0978
+mrr=0.0803

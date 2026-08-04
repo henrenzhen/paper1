@@ -1,0 +1,57 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.uv-cache/
+
+# IDE and notebook state
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs and temporary files
+*.log
+tmp/
+~$*
+
+# Model weights and serialized training state
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+
+# Generated datasets and per-sample outputs
+*.csv
+*.jsonl
+*.parquet
+*.feather
+
+# Large upstream datasets and vendored repositories
+project/data/enterprise-attack-18.1.json
+project/data_v2/external_*/
+
+# Generated experiment artifacts
+project/logs/
+project/**/checkpoints/
+project/**/results/
+project/**/outputs/
+
+# Binary reports are local deliverables; Markdown sources remain versioned
+*.docx
+*.pdf
+

@@ -1,0 +1,6 @@
+=== STAGE2 MLP ON KG-STAGE1 OUTPUTS ===
+samples=100
+num_labels=47
+top1=0.0800
+top5=0.1500
+mrr=0.1268

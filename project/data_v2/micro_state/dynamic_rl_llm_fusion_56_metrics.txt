@@ -1,0 +1,4 @@
+=== DYNAMIC RL + LLM FUSION ON 56 ===
+RL-only: top1=0.0357, top5=0.1250, mrr=0.0802
+LLM-only: top1=0.3571, top5=0.3750, mrr=0.3871
+Best dynamic fusion: a=1.50, b=1.50, c=0.20, gamma=0.50, top1=0.0357, top5=0.1250, mrr=0.0646, mean_alpha=0.8440

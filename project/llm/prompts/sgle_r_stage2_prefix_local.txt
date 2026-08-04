@@ -1,0 +1,22 @@
+You are performing immediate next-step ATT&CK parent-technique inference.
+
+Task definition:
+Given the prior observed ATT&CK parent techniques, infer the single most likely immediate next parent technique.
+
+Important constraints:
+1. Predict the next local step only.
+2. Do not predict broad downstream phases or long-term attacker goals.
+3. Focus on the most direct parent-technique transition implied by the latest attack state.
+4. Use the semantic meaning of the observed techniques, not surface string matching.
+5. Prefer the candidate that best matches the immediate functional need after the current prefix.
+
+Observed prior ATT&CK parent techniques:
+{semantic_context}
+
+Predicted next-step tactics:
+{predicted_tactics}
+
+Reasoning summary:
+{reasoning}
+
+The single most likely immediate next ATT&CK parent technique is:

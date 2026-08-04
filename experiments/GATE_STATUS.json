@@ -1,0 +1,44 @@
+{
+  "status": "STOPPED_T0_1_DEAD",
+  "current_stage": "T0.1",
+  "next_stage_authorized": false,
+  "stop_reason": "Reasoning cache is incomplete: 222 of 14128 rows have no usable llm_thinking_process and no predicted_next_ttps. Do not regenerate or enter T0.2 without a human decision.",
+  "execution_order": [
+    "T0.1",
+    "T0.2",
+    "GATE_1",
+    "T0.3",
+    "E1",
+    "GATE_2",
+    "E2",
+    "E3",
+    "GATE_3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "PHASE_4_REPAIR"
+  ],
+  "gates": {
+    "GATE_1": {
+      "after": "T0.2",
+      "before": "T0.3",
+      "state": "WAITING_FOR_HUMAN",
+      "agent_may_approve": false
+    },
+    "GATE_2": {
+      "after": "E1",
+      "before": "E2",
+      "state": "WAITING_FOR_HUMAN",
+      "agent_may_approve": false
+    },
+    "GATE_3": {
+      "after": "E3",
+      "before": "E4",
+      "state": "WAITING_FOR_HUMAN",
+      "agent_may_approve": false
+    }
+  }
+}

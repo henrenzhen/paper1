@@ -1,0 +1,7 @@
+=== LLM KG-CONTEXT TEST PIPELINE (WITH EMBEDDED CoT) ===
+samples=20
+num_labels=10
+stage1_json_parse_ok_rate=1.0000
+top1=0.1500
+top5=0.3000
+mrr=0.2453

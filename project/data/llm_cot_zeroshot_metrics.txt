@@ -1,0 +1,7 @@
+=== LLM ZERO-SHOT CoT PIPELINE (NO EXTERNAL STAGE 2) ===
+samples=20
+num_labels=10
+json_parse_ok_rate=0.9500
+top1=0.0000
+top5=0.1500
+mrr=0.0475

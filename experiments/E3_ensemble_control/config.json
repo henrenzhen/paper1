@@ -1,0 +1,24 @@
+{
+  "experiment": "E3_ensemble_control",
+  "status": "NOT_RUN",
+  "seed": null,
+  "hyperparameters": null,
+  "alpha_candidates": null,
+  "alpha_selection_split": "validation",
+  "alpha_selection_per_seed": true,
+  "alpha_selection_primary_metric": "MRR",
+  "model_name": null,
+  "model_version": null,
+  "data_split_files": null,
+  "data_hashes": null,
+  "test_split_mutable": false,
+  "bootstrap_iterations": 10000,
+  "bootstrap_cluster_unit": "campaign_id",
+  "top1_test": "paired McNemar",
+  "ranking_tests": [
+    "MRR",
+    "Top-5",
+    "Macro-F1"
+  ],
+  "multiple_comparison": "Holm-Bonferroni"
+}

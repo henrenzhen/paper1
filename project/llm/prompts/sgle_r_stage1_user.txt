@@ -1,0 +1,7 @@
+Observed prior ATT&CK parent techniques:
+
+{semantic_context}
+
+Based on the sequence above, infer the most likely next-step tactics.
+
+Return valid JSON only.

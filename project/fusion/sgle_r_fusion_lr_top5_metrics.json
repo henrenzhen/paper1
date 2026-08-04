@@ -1,0 +1,44 @@
+{
+  "num_train_instances": 70,
+  "num_test_instances": 30,
+  "feature_cols": [
+    "rl_rank",
+    "rl_prob",
+    "rl_top1_prob",
+    "rl_margin_top1_top2",
+    "rl_is_top1",
+    "llm_seq_score",
+    "llm_seq_rank",
+    "llm_is_top1",
+    "artifact_keyword_overlap",
+    "artifact_semantic_match",
+    "artifact_match_rank"
+  ],
+  "fusion_metrics": {
+    "num_instances": 30,
+    "top1": 0.6,
+    "top5": 0.9666666666666667,
+    "mrr": 0.7483333333333333
+  },
+  "rl_metrics_same_split": {
+    "num_instances": 30,
+    "top1": 0.5666666666666667,
+    "top5": 0.9666666666666667,
+    "mrr": 0.7388888888888889
+  },
+  "candidate_level_auc": 0.8800227985180963,
+  "coef": {
+    "rl_rank": -0.14831022944609404,
+    "rl_prob": 1.9430997301644597,
+    "rl_top1_prob": -0.28822806023504527,
+    "rl_margin_top1_top2": -0.062469612929329225,
+    "rl_is_top1": -0.7085933666380049,
+    "llm_seq_score": 0.06046070685669554,
+    "llm_seq_rank": 0.30138440656626453,
+    "llm_is_top1": 0.3296346140193456,
+    "artifact_keyword_overlap": 0.1382044956388597,
+    "artifact_semantic_match": -0.13396629980381908,
+    "artifact_match_rank": -0.33050626383227627
+  },
+  "intercept": -2.201414254838428
+}
