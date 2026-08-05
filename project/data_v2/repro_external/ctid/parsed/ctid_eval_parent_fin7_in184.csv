@@ -1,0 +1,10 @@
+﻿sample_id,org_name,plan_id,scenario_id,prefix_len,prefix_technique_ids_parent,next_technique_id_parent,prefix_source_step_ids,target_source_step_id,mapping_quality
+fin7::unknown::1,fin7,fin7,unknown,1,"[""T1113""]",T1059,"[""fin7::1""]",fin7::3,high
+fin7::unknown::2,fin7,fin7,unknown,2,"[""T1113"", ""T1059""]",T1057,"[""fin7::1"", ""fin7::3""]",fin7::5,high
+fin7::unknown::3,fin7,fin7,unknown,3,"[""T1113"", ""T1059"", ""T1057""]",T1003,"[""fin7::1"", ""fin7::3"", ""fin7::5""]",fin7::7,high
+fin7::unknown::4,fin7,fin7,unknown,4,"[""T1113"", ""T1059"", ""T1057"", ""T1003""]",T1570,"[""fin7::1"", ""fin7::3"", ""fin7::5"", ""fin7::7""]",fin7::9,high
+fin7::unknown::5,fin7,fin7,unknown,5,"[""T1113"", ""T1059"", ""T1057"", ""T1003"", ""T1570""]",T1574,"[""fin7::1"", ""fin7::3"", ""fin7::5"", ""fin7::7"", ""fin7::9""]",fin7::11,high
+fin7::unknown::6,fin7,fin7,unknown,6,"[""T1113"", ""T1059"", ""T1057"", ""T1003"", ""T1570"", ""T1574""]",T1027,"[""fin7::1"", ""fin7::3"", ""fin7::5"", ""fin7::7"", ""fin7::9"", ""fin7::11""]",fin7::13,high
+fin7::unknown::7,fin7,fin7,unknown,7,"[""T1113"", ""T1059"", ""T1057"", ""T1003"", ""T1570"", ""T1574"", ""T1027""]",T1546,"[""fin7::1"", ""fin7::3"", ""fin7::5"", ""fin7::7"", ""fin7::9"", ""fin7::11"", ""fin7::13""]",fin7::15,high
+fin7::unknown::8,fin7,fin7,unknown,8,"[""T1113"", ""T1059"", ""T1057"", ""T1003"", ""T1570"", ""T1574"", ""T1027"", ""T1546""]",T1057,"[""fin7::1"", ""fin7::3"", ""fin7::5"", ""fin7::7"", ""fin7::9"", ""fin7::11"", ""fin7::13"", ""fin7::15""]",fin7::17,high
+fin7::unknown::9,fin7,fin7,unknown,9,"[""T1113"", ""T1059"", ""T1057"", ""T1003"", ""T1570"", ""T1574"", ""T1027"", ""T1546"", ""T1057""]",T1560,"[""fin7::1"", ""fin7::3"", ""fin7::5"", ""fin7::7"", ""fin7::9"", ""fin7::11"", ""fin7::13"", ""fin7::15"", ""fin7::17""]",fin7::19,high

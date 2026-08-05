@@ -1,0 +1,390 @@
+{
+  "attack_flow": {
+    "corpus_files": 40,
+    "excluded_overlap_files": 2,
+    "flows_with_rows": 35,
+    "per_file": {
+      "Black Basta Ransomware.afb": {
+        "actions": 38,
+        "collapsed_action_edges": 48,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 73,
+        "kept_edges": 48,
+        "unresolved_lines": 0
+      },
+      "CISA AA22-138B VMWare Workspace (Alt).afb": {
+        "actions": 9,
+        "collapsed_action_edges": 8,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 21,
+        "kept_edges": 8,
+        "unresolved_lines": 0
+      },
+      "CISA AA22-138B VMWare Workspace (TA1).afb": {
+        "actions": 10,
+        "collapsed_action_edges": 10,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 22,
+        "kept_edges": 10,
+        "unresolved_lines": 0
+      },
+      "CISA AA22-138B VMWare Workspace (TA2).afb": {
+        "actions": 11,
+        "collapsed_action_edges": 10,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 30,
+        "kept_edges": 10,
+        "unresolved_lines": 0
+      },
+      "CISA Iranian APT.afb": {
+        "actions": 22,
+        "collapsed_action_edges": 21,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 51,
+        "kept_edges": 21,
+        "unresolved_lines": 0
+      },
+      "Cobalt Kitty Campaign.afb": {
+        "actions": 27,
+        "collapsed_action_edges": 46,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 61,
+        "kept_edges": 46,
+        "unresolved_lines": 0
+      },
+      "Conti CISA Alert.afb": {
+        "actions": 13,
+        "collapsed_action_edges": 25,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 41,
+        "kept_edges": 25,
+        "unresolved_lines": 0
+      },
+      "Conti PWC.afb": {
+        "actions": 5,
+        "collapsed_action_edges": 4,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 16,
+        "kept_edges": 4,
+        "unresolved_lines": 0
+      },
+      "Conti Ransomware.afb": {
+        "actions": 18,
+        "collapsed_action_edges": 19,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 38,
+        "kept_edges": 19,
+        "unresolved_lines": 0
+      },
+      "DFIR - BumbleBee Round 2.afb": {
+        "actions": 19,
+        "collapsed_action_edges": 20,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 41,
+        "kept_edges": 20,
+        "unresolved_lines": 0
+      },
+      "Equifax Breach.afb": {
+        "actions": 12,
+        "collapsed_action_edges": 13,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 24,
+        "kept_edges": 13,
+        "unresolved_lines": 0
+      },
+      "Example Attack Tree.afb": {
+        "actions": 0,
+        "collapsed_action_edges": 0,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 96,
+        "kept_edges": 0,
+        "unresolved_lines": 0
+      },
+      "FIN13 Case 1.afb": {
+        "actions": 36,
+        "collapsed_action_edges": 39,
+        "dropped_target_edges": 1,
+        "dynamic_lines": 111,
+        "kept_edges": 38,
+        "unresolved_lines": 0
+      },
+      "FIN13 Case 2.afb": {
+        "actions": 16,
+        "collapsed_action_edges": 16,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 55,
+        "kept_edges": 16,
+        "unresolved_lines": 0
+      },
+      "Gootloader.afb": {
+        "actions": 36,
+        "collapsed_action_edges": 41,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 90,
+        "kept_edges": 41,
+        "unresolved_lines": 0
+      },
+      "Hancitor DLL.afb": {
+        "actions": 22,
+        "collapsed_action_edges": 23,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 56,
+        "kept_edges": 23,
+        "unresolved_lines": 0
+      },
+      "Ivanti Vulnerabilities.afb": {
+        "actions": 18,
+        "collapsed_action_edges": 18,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 45,
+        "kept_edges": 18,
+        "unresolved_lines": 0
+      },
+      "JP Morgan Breach.afb": {
+        "actions": 11,
+        "collapsed_action_edges": 11,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 29,
+        "kept_edges": 11,
+        "unresolved_lines": 0
+      },
+      "MITRE NERVE.afb": {
+        "actions": 24,
+        "collapsed_action_edges": 24,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 65,
+        "kept_edges": 24,
+        "unresolved_lines": 0
+      },
+      "Maastricht University Ransomware.afb": {
+        "actions": 18,
+        "collapsed_action_edges": 21,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 63,
+        "kept_edges": 21,
+        "unresolved_lines": 0
+      },
+      "Mac Malware Steals Crypto.afb": {
+        "actions": 6,
+        "collapsed_action_edges": 5,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 23,
+        "kept_edges": 5,
+        "unresolved_lines": 0
+      },
+      "Marriott Breach.afb": {
+        "actions": 7,
+        "collapsed_action_edges": 8,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 18,
+        "kept_edges": 8,
+        "unresolved_lines": 0
+      },
+      "Muddy Water.afb": {
+        "actions": 22,
+        "collapsed_action_edges": 23,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 50,
+        "kept_edges": 23,
+        "unresolved_lines": 0
+      },
+      "NotPetya.afb": {
+        "actions": 23,
+        "collapsed_action_edges": 32,
+        "dropped_target_edges": 3,
+        "dynamic_lines": 58,
+        "kept_edges": 29,
+        "unresolved_lines": 0
+      },
+      "OceanLotus.afb": {
+        "actions": 23,
+        "collapsed_action_edges": 24,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 43,
+        "kept_edges": 24,
+        "unresolved_lines": 0
+      },
+      "OpenClaw.afb": {
+        "actions": 0,
+        "collapsed_action_edges": 0,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 34,
+        "kept_edges": 0,
+        "unresolved_lines": 0
+      },
+      "REvil.afb": {
+        "actions": 25,
+        "collapsed_action_edges": 29,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 47,
+        "kept_edges": 29,
+        "unresolved_lines": 0
+      },
+      "Ragnar Locker.afb": {
+        "actions": 16,
+        "collapsed_action_edges": 18,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 41,
+        "kept_edges": 18,
+        "unresolved_lines": 0
+      },
+      "SWIFT Heist.afb": {
+        "actions": 6,
+        "collapsed_action_edges": 5,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 17,
+        "kept_edges": 5,
+        "unresolved_lines": 0
+      },
+      "SearchAwesome Adware.afb": {
+        "actions": 11,
+        "collapsed_action_edges": 10,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 10,
+        "kept_edges": 10,
+        "unresolved_lines": 0
+      },
+      "Shamoon.afb": {
+        "actions": 23,
+        "collapsed_action_edges": 23,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 58,
+        "kept_edges": 23,
+        "unresolved_lines": 0
+      },
+      "SolarWinds.afb": {
+        "actions": 33,
+        "collapsed_action_edges": 53,
+        "dropped_target_edges": 2,
+        "dynamic_lines": 66,
+        "kept_edges": 51,
+        "unresolved_lines": 0
+      },
+      "Sony Malware.afb": {
+        "actions": 14,
+        "collapsed_action_edges": 15,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 45,
+        "kept_edges": 15,
+        "unresolved_lines": 0
+      },
+      "Target Breach.afb": {
+        "actions": 15,
+        "collapsed_action_edges": 16,
+        "dropped_target_edges": 1,
+        "dynamic_lines": 34,
+        "kept_edges": 15,
+        "unresolved_lines": 0
+      },
+      "Tesla Kubernetes Breach.afb": {
+        "actions": 9,
+        "collapsed_action_edges": 9,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 14,
+        "kept_edges": 9,
+        "unresolved_lines": 0
+      },
+      "ToolShell Vulnerability in Sharepoint.afb": {
+        "actions": 0,
+        "collapsed_action_edges": 0,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 32,
+        "kept_edges": 0,
+        "unresolved_lines": 0
+      },
+      "Uber Breach.afb": {
+        "actions": 7,
+        "collapsed_action_edges": 6,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 24,
+        "kept_edges": 6,
+        "unresolved_lines": 0
+      },
+      "WhisperGate.afb": {
+        "actions": 19,
+        "collapsed_action_edges": 19,
+        "dropped_target_edges": 0,
+        "dynamic_lines": 42,
+        "kept_edges": 19,
+        "unresolved_lines": 0
+      }
+    },
+    "raw_subtechnique_source_rate": 0.4794326241134752,
+    "rows": 705,
+    "selected_files": 38
+  },
+  "stockpile": {
+    "ability_yaml_files": 209,
+    "commit": "996ec41cd1c5d1c7cc09e620fc55dabe5aefd9cc",
+    "dropped_target_events": 1,
+    "kept_rows": 65,
+    "mapped_ability_ids": 190,
+    "mapped_steps": 77,
+    "per_profile": {
+      "Advanced Thief via DropBox": {
+        "kept_transitions": 2,
+        "mapped_steps": 3,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 3
+      },
+      "Alice 2.0": {
+        "kept_transitions": 8,
+        "mapped_steps": 9,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 9
+      },
+      "Enumerator": {
+        "kept_transitions": 4,
+        "mapped_steps": 5,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 5
+      },
+      "Nosy Neighbor": {
+        "kept_transitions": 3,
+        "mapped_steps": 6,
+        "mapping_coverage": 0.8571428571428571,
+        "ordered_steps": 7
+      },
+      "Printer Queue": {
+        "kept_transitions": 1,
+        "mapped_steps": 2,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 2
+      },
+      "Ransack": {
+        "kept_transitions": 17,
+        "mapped_steps": 18,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 18
+      },
+      "Service Creation Lateral Movement": {
+        "kept_transitions": 2,
+        "mapped_steps": 3,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 3
+      },
+      "Signed Binary Proxy Execution": {
+        "kept_transitions": 2,
+        "mapped_steps": 3,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 3
+      },
+      "Super Spy": {
+        "kept_transitions": 14,
+        "mapped_steps": 15,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 15
+      },
+      "Worm": {
+        "kept_transitions": 12,
+        "mapped_steps": 13,
+        "mapping_coverage": 1.0,
+        "ordered_steps": 13
+      }
+    },
+    "root_profiles": 18,
+    "selected_profiles": 10,
+    "subtechnique_step_instances": 65,
+    "transition_events_before_vocab_filter": 66
+  }
+}

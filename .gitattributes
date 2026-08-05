@@ -1,0 +1,2 @@
+# Preserve the byte-level hashes recorded for the reproducible external datasets.
+project/data_v2/repro_external/** -text

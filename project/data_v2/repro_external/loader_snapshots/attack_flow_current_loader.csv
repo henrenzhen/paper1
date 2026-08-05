@@ -1,0 +1,706 @@
+sample_id,source,campaign_id,prefix_len,prefix,raw_prefix,true_label,target_raw_id,flow,source_action,target_action
+Black Basta Ransomware::0,attack_flow,Black Basta Ransomware,1,"[""T1219""]","[""T1219""]",T1021,T1021.001,Black Basta Ransomware,10048ae7-77fe-4da0-81fc-5a20ce0ccb63,bfc59d4e-32d1-42ae-94f7-8a1bc4d6dc91
+Black Basta Ransomware::1,attack_flow,Black Basta Ransomware,1,"[""T1484""]","[""T1484.001""]",T1098,T1098,Black Basta Ransomware,1ab99f8c-71a2-4518-a034-9100998b949c,599cf0b7-3d8f-4988-85de-4301a29f86b6
+Black Basta Ransomware::2,attack_flow,Black Basta Ransomware,1,"[""T1491""]","[""T1491.001""]",T1070,T1070.004,Black Basta Ransomware,1b746e0c-0285-4a7a-9619-1e76b2f5e92d,a4051af5-0069-4c5e-9792-c785a0e1259d
+Black Basta Ransomware::3,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1016,T1016,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,021a2d7f-d3f6-4068-8cdb-8115a117d693
+Black Basta Ransomware::4,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1219,T1219,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,10048ae7-77fe-4da0-81fc-5a20ce0ccb63
+Black Basta Ransomware::5,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1087,T1087.002,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,2bc3e3de-34a5-4c6e-bf2a-ae51bd70528d
+Black Basta Ransomware::6,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1555,T1555,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,2d4931da-3298-420c-ace1-582fabc4a558
+Black Basta Ransomware::7,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1112,T1112,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,aa944319-37e0-4642-9c25-1899132e5150
+Black Basta Ransomware::8,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1562,T1562.004,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,c197e5b8-3522-43bb-b10d-55ff3a3ba540
+Black Basta Ransomware::9,attack_flow,Black Basta Ransomware,1,"[""T1105""]","[""T1105""]",T1082,T1082,Black Basta Ransomware,21faed62-d790-40dd-a97c-e20cad02e4ed,ee06934e-65d6-4e98-8edd-e87988064314
+Black Basta Ransomware::10,attack_flow,Black Basta Ransomware,1,"[""T1573""]","[""T1573""]",T1567,T1567,Black Basta Ransomware,28045127-d6be-4d1a-b45b-d52e9185fbf8,44650151-de19-4ebd-a9ae-d8aa4e5015f5
+Black Basta Ransomware::11,attack_flow,Black Basta Ransomware,1,"[""T1555""]","[""T1555""]",T1021,T1021.001,Black Basta Ransomware,2d4931da-3298-420c-ace1-582fabc4a558,bfc59d4e-32d1-42ae-94f7-8a1bc4d6dc91
+Black Basta Ransomware::12,attack_flow,Black Basta Ransomware,1,"[""T1657""]","[""T1657""]",T1562,T1562.009,Black Basta Ransomware,2e169be0-a168-47ac-a428-2b653e401f5a,ab3bbdcf-9899-4fa9-9365-52d416300957
+Black Basta Ransomware::13,attack_flow,Black Basta Ransomware,1,"[""T1657""]","[""T1657""]",T1112,T1112,Black Basta Ransomware,2e169be0-a168-47ac-a428-2b653e401f5a,d09fa5d5-e991-4085-a8be-46d62ee28a7f
+Black Basta Ransomware::14,attack_flow,Black Basta Ransomware,1,"[""T1622""]","[""T1622""]",T1560,T1560.001,Black Basta Ransomware,3a7cc2d4-25fe-4fb5-abee-5f2b6dc0caee,e4784eca-c724-4035-acb4-3fc76cbcb59f
+Black Basta Ransomware::15,attack_flow,Black Basta Ransomware,1,"[""T1567""]","[""T1567""]",T1657,T1657,Black Basta Ransomware,44650151-de19-4ebd-a9ae-d8aa4e5015f5,2e169be0-a168-47ac-a428-2b653e401f5a
+Black Basta Ransomware::16,attack_flow,Black Basta Ransomware,1,"[""T1567""]","[""T1567""]",T1047,T1047,Black Basta Ransomware,44650151-de19-4ebd-a9ae-d8aa4e5015f5,60f72c38-7df7-4c48-b5f6-8b6b7a39f00a
+Black Basta Ransomware::17,attack_flow,Black Basta Ransomware,1,"[""T1567""]","[""T1567""]",T1490,T1490,Black Basta Ransomware,44650151-de19-4ebd-a9ae-d8aa4e5015f5,6ca21018-c0f8-470e-9896-d6993f59e068
+Black Basta Ransomware::18,attack_flow,Black Basta Ransomware,1,"[""T1098""]","[""T1098""]",T1573,T1573,Black Basta Ransomware,599cf0b7-3d8f-4988-85de-4301a29f86b6,8db6f663-3eda-4a6d-b887-3b67ac5d218c
+Black Basta Ransomware::19,attack_flow,Black Basta Ransomware,1,"[""T1047""]","[""T1047""]",T1562,T1562.009,Black Basta Ransomware,60f72c38-7df7-4c48-b5f6-8b6b7a39f00a,ab3bbdcf-9899-4fa9-9365-52d416300957
+Black Basta Ransomware::20,attack_flow,Black Basta Ransomware,1,"[""T1047""]","[""T1047""]",T1112,T1112,Black Basta Ransomware,60f72c38-7df7-4c48-b5f6-8b6b7a39f00a,d09fa5d5-e991-4085-a8be-46d62ee28a7f
+Black Basta Ransomware::21,attack_flow,Black Basta Ransomware,1,"[""T1490""]","[""T1490""]",T1562,T1562.009,Black Basta Ransomware,6ca21018-c0f8-470e-9896-d6993f59e068,ab3bbdcf-9899-4fa9-9365-52d416300957
+Black Basta Ransomware::22,attack_flow,Black Basta Ransomware,1,"[""T1490""]","[""T1490""]",T1112,T1112,Black Basta Ransomware,6ca21018-c0f8-470e-9896-d6993f59e068,d09fa5d5-e991-4085-a8be-46d62ee28a7f
+Black Basta Ransomware::23,attack_flow,Black Basta Ransomware,1,"[""T1573""]","[""T1573""]",T1105,T1105,Black Basta Ransomware,8db6f663-3eda-4a6d-b887-3b67ac5d218c,21faed62-d790-40dd-a97c-e20cad02e4ed
+Black Basta Ransomware::24,attack_flow,Black Basta Ransomware,1,"[""T1562""]","[""T1562.001""]",T1560,T1560.001,Black Basta Ransomware,93a4a781-5805-494a-9d93-6cf72577876a,e4784eca-c724-4035-acb4-3fc76cbcb59f
+Black Basta Ransomware::25,attack_flow,Black Basta Ransomware,1,"[""T1218""]","[""T1218.010""]",T1543,T1543.003,Black Basta Ransomware,9f5746cd-931b-4e2a-815f-b65519baabfc,a33a2a3b-2de7-4f03-855f-3564afdf4db7
+Black Basta Ransomware::26,attack_flow,Black Basta Ransomware,1,"[""T1218""]","[""T1218.010""]",T1136,T1136,Black Basta Ransomware,9f5746cd-931b-4e2a-815f-b65519baabfc,d88229be-c790-4963-92e8-ca0bf0080ad0
+Black Basta Ransomware::27,attack_flow,Black Basta Ransomware,1,"[""T1497""]","[""T1497""]",T1560,T1560.001,Black Basta Ransomware,a22fdaff-b20e-4896-ac6c-81a93ddb36df,e4784eca-c724-4035-acb4-3fc76cbcb59f
+Black Basta Ransomware::28,attack_flow,Black Basta Ransomware,1,"[""T1543""]","[""T1543.003""]",T1573,T1573,Black Basta Ransomware,a33a2a3b-2de7-4f03-855f-3564afdf4db7,8db6f663-3eda-4a6d-b887-3b67ac5d218c
+Black Basta Ransomware::29,attack_flow,Black Basta Ransomware,1,"[""T1566""]","[""T1566.001""]",T1140,T1140,Black Basta Ransomware,a3679838-b02f-4c2b-a0b6-d3450ca2e1dd,b2345e48-33c8-4a67-99cc-7dec00f978cc
+Black Basta Ransomware::30,attack_flow,Black Basta Ransomware,1,"[""T1562""]","[""T1562.009""]",T1083,T1083,Black Basta Ransomware,ab3bbdcf-9899-4fa9-9365-52d416300957,fb48d182-4241-483c-b97d-bdb1440ab5e5
+Black Basta Ransomware::31,attack_flow,Black Basta Ransomware,1,"[""T1140""]","[""T1140""]",T1204,T1204.002,Black Basta Ransomware,b2345e48-33c8-4a67-99cc-7dec00f978cc,e5715d9b-4fd2-4ad3-85f8-75d958bddb5d
+Black Basta Ransomware::32,attack_flow,Black Basta Ransomware,1,"[""T1059""]","[""T1059.005""]",T1059,T1059.001,Black Basta Ransomware,b681891b-bd67-4d54-8cd0-ceb3cce9767c,ec4f8e09-7106-478a-886b-82d0732cf97a
+Black Basta Ransomware::33,attack_flow,Black Basta Ransomware,1,"[""T1021""]","[""T1021.001""]",T1569,T1569.002,Black Basta Ransomware,bfc59d4e-32d1-42ae-94f7-8a1bc4d6dc91,c14c8d17-1a12-439b-aef4-a2f1e66052ea
+Black Basta Ransomware::34,attack_flow,Black Basta Ransomware,1,"[""T1569""]","[""T1569.002""]",T1622,T1622,Black Basta Ransomware,c14c8d17-1a12-439b-aef4-a2f1e66052ea,3a7cc2d4-25fe-4fb5-abee-5f2b6dc0caee
+Black Basta Ransomware::35,attack_flow,Black Basta Ransomware,1,"[""T1569""]","[""T1569.002""]",T1562,T1562.001,Black Basta Ransomware,c14c8d17-1a12-439b-aef4-a2f1e66052ea,93a4a781-5805-494a-9d93-6cf72577876a
+Black Basta Ransomware::36,attack_flow,Black Basta Ransomware,1,"[""T1569""]","[""T1569.002""]",T1497,T1497,Black Basta Ransomware,c14c8d17-1a12-439b-aef4-a2f1e66052ea,a22fdaff-b20e-4896-ac6c-81a93ddb36df
+Black Basta Ransomware::37,attack_flow,Black Basta Ransomware,1,"[""T1569""]","[""T1569.002""]",T1489,T1489,Black Basta Ransomware,c14c8d17-1a12-439b-aef4-a2f1e66052ea,d4998f70-63bb-439c-a279-282cfddc53fe
+Black Basta Ransomware::38,attack_flow,Black Basta Ransomware,1,"[""T1562""]","[""T1562.004""]",T1021,T1021.001,Black Basta Ransomware,c197e5b8-3522-43bb-b10d-55ff3a3ba540,bfc59d4e-32d1-42ae-94f7-8a1bc4d6dc91
+Black Basta Ransomware::39,attack_flow,Black Basta Ransomware,1,"[""T1574""]","[""T1574.001""]",T1218,T1218.010,Black Basta Ransomware,c94bdb43-30a0-47ec-8bd9-b4487fdde268,9f5746cd-931b-4e2a-815f-b65519baabfc
+Black Basta Ransomware::40,attack_flow,Black Basta Ransomware,1,"[""T1112""]","[""T1112""]",T1083,T1083,Black Basta Ransomware,d09fa5d5-e991-4085-a8be-46d62ee28a7f,fb48d182-4241-483c-b97d-bdb1440ab5e5
+Black Basta Ransomware::41,attack_flow,Black Basta Ransomware,1,"[""T1489""]","[""T1489""]",T1560,T1560.001,Black Basta Ransomware,d4998f70-63bb-439c-a279-282cfddc53fe,e4784eca-c724-4035-acb4-3fc76cbcb59f
+Black Basta Ransomware::42,attack_flow,Black Basta Ransomware,1,"[""T1136""]","[""T1136""]",T1484,T1484.001,Black Basta Ransomware,d88229be-c790-4963-92e8-ca0bf0080ad0,1ab99f8c-71a2-4518-a034-9100998b949c
+Black Basta Ransomware::43,attack_flow,Black Basta Ransomware,1,"[""T1560""]","[""T1560.001""]",T1573,T1573,Black Basta Ransomware,e4784eca-c724-4035-acb4-3fc76cbcb59f,28045127-d6be-4d1a-b45b-d52e9185fbf8
+Black Basta Ransomware::44,attack_flow,Black Basta Ransomware,1,"[""T1204""]","[""T1204.002""]",T1059,T1059.005,Black Basta Ransomware,e5715d9b-4fd2-4ad3-85f8-75d958bddb5d,b681891b-bd67-4d54-8cd0-ceb3cce9767c
+Black Basta Ransomware::45,attack_flow,Black Basta Ransomware,1,"[""T1059""]","[""T1059.001""]",T1574,T1574.001,Black Basta Ransomware,ec4f8e09-7106-478a-886b-82d0732cf97a,c94bdb43-30a0-47ec-8bd9-b4487fdde268
+Black Basta Ransomware::46,attack_flow,Black Basta Ransomware,1,"[""T1083""]","[""T1083""]",T1486,T1486,Black Basta Ransomware,fb48d182-4241-483c-b97d-bdb1440ab5e5,fea70dfe-cdbe-405c-a1ab-9d4632f423cb
+Black Basta Ransomware::47,attack_flow,Black Basta Ransomware,1,"[""T1486""]","[""T1486""]",T1491,T1491.001,Black Basta Ransomware,fea70dfe-cdbe-405c-a1ab-9d4632f423cb,1b746e0c-0285-4a7a-9619-1e76b2f5e92d
+CISA AA22-138B VMWare Workspace (Alt)::0,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1070""]","[""T1070""]",T1560,T1560.001,CISA AA22-138B VMWare Workspace (Alt),24692f77-c123-4107-923e-937e7cc9349e,7fa1a34d-5d0c-4655-8e23-ef9d23771bba
+CISA AA22-138B VMWare Workspace (Alt)::1,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1059""]","[""T1059""]",T1070,T1070,CISA AA22-138B VMWare Workspace (Alt),3c019d2c-c56f-47e4-8977-e86a4a359069,24692f77-c123-4107-923e-937e7cc9349e
+CISA AA22-138B VMWare Workspace (Alt)::2,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1105""]","[""T1105""]",T1083,T1083,CISA AA22-138B VMWare Workspace (Alt),3c3fea04-7678-4ae6-a8dd-0b0c28eafe97,747d2282-1bf8-4848-89f0-0ee82ca3b6a5
+CISA AA22-138B VMWare Workspace (Alt)::3,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1068""]","[""T1068""]",T1059,T1059,CISA AA22-138B VMWare Workspace (Alt),401fbfb9-930a-43b9-a43e-6cbc7f9e3802,3c019d2c-c56f-47e4-8977-e86a4a359069
+CISA AA22-138B VMWare Workspace (Alt)::4,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1105""]","[""T1105""]",T1070,T1070,CISA AA22-138B VMWare Workspace (Alt),6dbde84b-f026-46b8-bde6-f963be602a4c,298530ff-51b1-43f6-8c1f-59f432625094
+CISA AA22-138B VMWare Workspace (Alt)::5,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1083""]","[""T1083""]",T1105,T1105,CISA AA22-138B VMWare Workspace (Alt),747d2282-1bf8-4848-89f0-0ee82ca3b6a5,6dbde84b-f026-46b8-bde6-f963be602a4c
+CISA AA22-138B VMWare Workspace (Alt)::6,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1560""]","[""T1560.001""]",T1105,T1105,CISA AA22-138B VMWare Workspace (Alt),7fa1a34d-5d0c-4655-8e23-ef9d23771bba,3c3fea04-7678-4ae6-a8dd-0b0c28eafe97
+CISA AA22-138B VMWare Workspace (Alt)::7,attack_flow,CISA AA22-138B VMWare Workspace (Alt),1,"[""T1203""]","[""T1203""]",T1068,T1068,CISA AA22-138B VMWare Workspace (Alt),84454574-3ed2-43eb-979f-66c3d343a71a,401fbfb9-930a-43b9-a43e-6cbc7f9e3802
+CISA AA22-138B VMWare Workspace (TA1)::0,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1105""]","[""T1105""]",T1068,T1068,CISA AA22-138B VMWare Workspace (TA1),427f3a5b-4890-4305-951b-b76da8b9651b,847def26-4d0a-4562-865d-d9c23e3820cf
+CISA AA22-138B VMWare Workspace (TA1)::1,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1119""]","[""T1119""]",T1560,T1560.001,CISA AA22-138B VMWare Workspace (TA1),4c353a44-3987-401a-b578-d4a1e9280bbd,af956aab-7dd4-440d-8af4-adb9ae32a63b
+CISA AA22-138B VMWare Workspace (TA1)::2,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1071""]","[""T1071.001""]",T1041,T1041,CISA AA22-138B VMWare Workspace (TA1),4edb3b2d-7bc8-4fe2-85d7-66c04ceba3c7,49b28f56-71c6-4a42-9a01-9e95c2974454
+CISA AA22-138B VMWare Workspace (TA1)::3,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1203""]","[""T1203""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA1),780d1e10-6642-41d2-b1a7-de801a6b972a,427f3a5b-4890-4305-951b-b76da8b9651b
+CISA AA22-138B VMWare Workspace (TA1)::4,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1203""]","[""T1203""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA1),780d1e10-6642-41d2-b1a7-de801a6b972a,7d09b87c-e2c6-4760-9050-92f36a24e9ff
+CISA AA22-138B VMWare Workspace (TA1)::5,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1105""]","[""T1105""]",T1068,T1068,CISA AA22-138B VMWare Workspace (TA1),7d09b87c-e2c6-4760-9050-92f36a24e9ff,847def26-4d0a-4562-865d-d9c23e3820cf
+CISA AA22-138B VMWare Workspace (TA1)::6,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1068""]","[""T1068""]",T1119,T1119,CISA AA22-138B VMWare Workspace (TA1),847def26-4d0a-4562-865d-d9c23e3820cf,4c353a44-3987-401a-b578-d4a1e9280bbd
+CISA AA22-138B VMWare Workspace (TA1)::7,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1071""]","[""T1071.001""]",T1203,T1203,CISA AA22-138B VMWare Workspace (TA1),87cf2efa-5784-4ccd-a75e-ec4d964d58a5,780d1e10-6642-41d2-b1a7-de801a6b972a
+CISA AA22-138B VMWare Workspace (TA1)::8,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1070""]","[""T1070""]",T1071,T1071.001,CISA AA22-138B VMWare Workspace (TA1),a9ddb932-cc96-49fc-acd8-f5675b7368ea,4edb3b2d-7bc8-4fe2-85d7-66c04ceba3c7
+CISA AA22-138B VMWare Workspace (TA1)::9,attack_flow,CISA AA22-138B VMWare Workspace (TA1),1,"[""T1560""]","[""T1560.001""]",T1070,T1070,CISA AA22-138B VMWare Workspace (TA1),af956aab-7dd4-440d-8af4-adb9ae32a63b,a9ddb932-cc96-49fc-acd8-f5675b7368ea
+CISA AA22-138B VMWare Workspace (TA2)::0,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1105""]","[""T1105""]",T1090,T1090,CISA AA22-138B VMWare Workspace (TA2),049af2f2-8d04-4d37-9c3a-9c4232119a5e,abb24ca4-0847-4eb8-9a2f-3330415f3006
+CISA AA22-138B VMWare Workspace (TA2)::1,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1071""]","[""T1071.001""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA2),1249135e-bfdd-48fa-b128-b86236337d73,4b5c1c23-d2c7-464d-813d-439a36f837aa
+CISA AA22-138B VMWare Workspace (TA2)::2,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1105""]","[""T1105""]",T1573,T1573.001,CISA AA22-138B VMWare Workspace (TA2),3a2d7968-b69a-47cc-9fdd-30a7d27bf19d,96854c51-e17a-4747-b08b-51dbe773dc00
+CISA AA22-138B VMWare Workspace (TA2)::3,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1105""]","[""T1105""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA2),4b5c1c23-d2c7-464d-813d-439a36f837aa,d32524ea-375d-4c91-8100-c77e2c9f904c
+CISA AA22-138B VMWare Workspace (TA2)::4,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1573""]","[""T1573.001""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA2),96854c51-e17a-4747-b08b-51dbe773dc00,049af2f2-8d04-4d37-9c3a-9c4232119a5e
+CISA AA22-138B VMWare Workspace (TA2)::5,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1003""]","[""T1003.008""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA2),a0767d23-cc44-43bd-bd57-807e5e571721,3a2d7968-b69a-47cc-9fdd-30a7d27bf19d
+CISA AA22-138B VMWare Workspace (TA2)::6,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1059""]","[""T1059.004""]",T1003,T1003.008,CISA AA22-138B VMWare Workspace (TA2),a2b22b62-4ab7-483b-8d26-9d8306abc03c,a0767d23-cc44-43bd-bd57-807e5e571721
+CISA AA22-138B VMWare Workspace (TA2)::7,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1090""]","[""T1090""]",T1222,T1222.002,CISA AA22-138B VMWare Workspace (TA2),abb24ca4-0847-4eb8-9a2f-3330415f3006,af19a045-d1cd-4854-87b7-047e55033d5c
+CISA AA22-138B VMWare Workspace (TA2)::8,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1222""]","[""T1222.002""]",T1105,T1105,CISA AA22-138B VMWare Workspace (TA2),af19a045-d1cd-4854-87b7-047e55033d5c,22bae6a7-0937-447d-9a5b-8f0327a1c5bf
+CISA AA22-138B VMWare Workspace (TA2)::9,attack_flow,CISA AA22-138B VMWare Workspace (TA2),1,"[""T1105""]","[""T1105""]",T1059,T1059.004,CISA AA22-138B VMWare Workspace (TA2),d32524ea-375d-4c91-8100-c77e2c9f904c,a2b22b62-4ab7-483b-8d26-9d8306abc03c
+CISA Iranian APT::0,attack_flow,CISA Iranian APT,1,"[""T1105""]","[""T1105""]",T1136,T1136.002,CISA Iranian APT,0606c44c-4fcf-4d24-837c-e78341f77183,d8ba9c2f-c6a6-4950-8cb3-d2d84c97859f
+CISA Iranian APT::1,attack_flow,CISA Iranian APT,1,"[""T1059""]","[""T1059.001""]",T1562,T1562.001,CISA Iranian APT,0d573bcd-ee5d-4231-ab43-188ef7e809e9,56ca6034-001b-4c5d-99b4-4f9bd3db56ba
+CISA Iranian APT::2,attack_flow,CISA Iranian APT,1,"[""T1562""]","[""T1562.001""]",T1570,T1570,CISA Iranian APT,1d283005-09ce-49d3-8610-625a75635755,ee829570-2ca7-4948-a3de-a667f81fa2f5
+CISA Iranian APT::3,attack_flow,CISA Iranian APT,1,"[""T1059""]","[""T1059.001""]",T1018,T1018,CISA Iranian APT,2f9114f6-e715-448a-b0b7-3ccce0f95f7a,45e8b0a1-83a5-41dc-8186-7d6d4c8a7c0a
+CISA Iranian APT::4,attack_flow,CISA Iranian APT,1,"[""T1105""]","[""T1105""]",T1070,T1070.004,CISA Iranian APT,3fbadab6-0484-4754-85af-fe99f575677e,9c30cd6b-b97c-4336-8f91-777437b3824c
+CISA Iranian APT::5,attack_flow,CISA Iranian APT,1,"[""T1018""]","[""T1018""]",T1098,T1098,CISA Iranian APT,45e8b0a1-83a5-41dc-8186-7d6d4c8a7c0a,792aaa39-bd97-4206-b088-2c29e5119da6
+CISA Iranian APT::6,attack_flow,CISA Iranian APT,1,"[""T1090""]","[""T1090""]",T1021,T1021.001,CISA Iranian APT,4beb5555-7460-4636-a2e4-096a01b54186,7e2175b8-63f8-4934-82cf-394390accd82
+CISA Iranian APT::7,attack_flow,CISA Iranian APT,1,"[""T1021""]","[""T1021.001""]",T1562,T1562.001,CISA Iranian APT,52069465-600c-487a-8185-e809ed74588b,1d283005-09ce-49d3-8610-625a75635755
+CISA Iranian APT::8,attack_flow,CISA Iranian APT,1,"[""T1562""]","[""T1562.001""]",T1105,T1105,CISA Iranian APT,56ca6034-001b-4c5d-99b4-4f9bd3db56ba,cfae690b-64c4-405f-84f1-5e8b65da3f83
+CISA Iranian APT::9,attack_flow,CISA Iranian APT,1,"[""T1078""]","[""T1078.001""]",T1105,T1105,CISA Iranian APT,57e36a89-fa92-470c-9d78-a90d8bd938a7,0606c44c-4fcf-4d24-837c-e78341f77183
+CISA Iranian APT::10,attack_flow,CISA Iranian APT,1,"[""T1016""]","[""T1016.001""]",T1053,T1053.005,CISA Iranian APT,69978025-0b45-44ae-8a3e-1730d7d93d07,de68b787-80bb-424d-8d70-32b0cec8c94f
+CISA Iranian APT::11,attack_flow,CISA Iranian APT,1,"[""T1098""]","[""T1098""]",T1003,T1003.001,CISA Iranian APT,792aaa39-bd97-4206-b088-2c29e5119da6,99406b0d-2c64-4f78-a80b-f50898876197
+CISA Iranian APT::12,attack_flow,CISA Iranian APT,1,"[""T1021""]","[""T1021.001""]",T1059,T1059.001,CISA Iranian APT,7e2175b8-63f8-4934-82cf-394390accd82,2f9114f6-e715-448a-b0b7-3ccce0f95f7a
+CISA Iranian APT::13,attack_flow,CISA Iranian APT,1,"[""T1136""]","[""T1136.001""]",T1016,T1016.001,CISA Iranian APT,857eaaa1-d168-417a-8446-fe6e80095490,69978025-0b45-44ae-8a3e-1730d7d93d07
+CISA Iranian APT::14,attack_flow,CISA Iranian APT,1,"[""T1070""]","[""T1070.004""]",T1136,T1136.001,CISA Iranian APT,9c30cd6b-b97c-4336-8f91-777437b3824c,857eaaa1-d168-417a-8446-fe6e80095490
+CISA Iranian APT::15,attack_flow,CISA Iranian APT,1,"[""T1190""]","[""T1190""]",T1059,T1059.001,CISA Iranian APT,b6143619-dac3-4f9c-ae0a-605961bef9c7,0d573bcd-ee5d-4231-ab43-188ef7e809e9
+CISA Iranian APT::16,attack_flow,CISA Iranian APT,1,"[""T1105""]","[""T1105""]",T1105,T1105,CISA Iranian APT,cfae690b-64c4-405f-84f1-5e8b65da3f83,3fbadab6-0484-4754-85af-fe99f575677e
+CISA Iranian APT::17,attack_flow,CISA Iranian APT,1,"[""T1136""]","[""T1136.002""]",T1021,T1021.001,CISA Iranian APT,d8ba9c2f-c6a6-4950-8cb3-d2d84c97859f,52069465-600c-487a-8185-e809ed74588b
+CISA Iranian APT::18,attack_flow,CISA Iranian APT,1,"[""T1053""]","[""T1053.005""]",T1021,T1021.001,CISA Iranian APT,de68b787-80bb-424d-8d70-32b0cec8c94f,f8daeaa9-22f9-4601-96f9-ef3426c4630b
+CISA Iranian APT::19,attack_flow,CISA Iranian APT,1,"[""T1570""]","[""T1570""]",T1090,T1090,CISA Iranian APT,ee829570-2ca7-4948-a3de-a667f81fa2f5,4beb5555-7460-4636-a2e4-096a01b54186
+CISA Iranian APT::20,attack_flow,CISA Iranian APT,1,"[""T1021""]","[""T1021.001""]",T1078,T1078.001,CISA Iranian APT,f8daeaa9-22f9-4601-96f9-ef3426c4630b,57e36a89-fa92-470c-9d78-a90d8bd938a7
+Cobalt Kitty Campaign::0,attack_flow,Cobalt Kitty Campaign,1,"[""T1071""]","[""T1071.003""]",T1018,T1018,Cobalt Kitty Campaign,2129fd6d-9887-4a29-b550-3a598b50f641,436a56c4-7998-45f2-8f4e-3e4709e3e80c
+Cobalt Kitty Campaign::1,attack_flow,Cobalt Kitty Campaign,1,"[""T1071""]","[""T1071.003""]",T1046,T1046,Cobalt Kitty Campaign,2129fd6d-9887-4a29-b550-3a598b50f641,47a28c6a-51bc-4144-afd3-8117e2ce6828
+Cobalt Kitty Campaign::2,attack_flow,Cobalt Kitty Campaign,1,"[""T1071""]","[""T1071.003""]",T1082,T1082,Cobalt Kitty Campaign,2129fd6d-9887-4a29-b550-3a598b50f641,e70b0b83-e9b0-4188-a1c1-c049cec1c48e
+Cobalt Kitty Campaign::3,attack_flow,Cobalt Kitty Campaign,1,"[""T1053""]","[""T1053.005""]",T1140,T1140,Cobalt Kitty Campaign,217d8b41-0faf-415e-be60-1489e39d3ee5,398ab58e-b755-4251-9dc5-293817d349ea
+Cobalt Kitty Campaign::4,attack_flow,Cobalt Kitty Campaign,1,"[""T1547""]","[""T1547.001""]",T1574,T1574.002,Cobalt Kitty Campaign,3488c178-ef07-4ba9-9007-6ca8aaff51c9,53f217bc-c353-4ada-b782-7391aaee5685
+Cobalt Kitty Campaign::5,attack_flow,Cobalt Kitty Campaign,1,"[""T1140""]","[""T1140""]",T1059,T1059.005,Cobalt Kitty Campaign,398ab58e-b755-4251-9dc5-293817d349ea,788fab85-7ed0-42d7-aed2-cec8ac099f32
+Cobalt Kitty Campaign::6,attack_flow,Cobalt Kitty Campaign,1,"[""T1140""]","[""T1140""]",T1059,T1059.001,Cobalt Kitty Campaign,398ab58e-b755-4251-9dc5-293817d349ea,96bb23ee-9fa2-4442-b49c-4b2dcc49d043
+Cobalt Kitty Campaign::7,attack_flow,Cobalt Kitty Campaign,1,"[""T1018""]","[""T1018""]",T1016,T1016,Cobalt Kitty Campaign,436a56c4-7998-45f2-8f4e-3e4709e3e80c,90c24039-8903-407d-a9a8-9960faf084e2
+Cobalt Kitty Campaign::8,attack_flow,Cobalt Kitty Campaign,1,"[""T1018""]","[""T1018""]",T1049,T1049,Cobalt Kitty Campaign,436a56c4-7998-45f2-8f4e-3e4709e3e80c,fa7a634c-2450-499a-9bf3-a09d8e34e937
+Cobalt Kitty Campaign::9,attack_flow,Cobalt Kitty Campaign,1,"[""T1046""]","[""T1046""]",T1016,T1016,Cobalt Kitty Campaign,47a28c6a-51bc-4144-afd3-8117e2ce6828,90c24039-8903-407d-a9a8-9960faf084e2
+Cobalt Kitty Campaign::10,attack_flow,Cobalt Kitty Campaign,1,"[""T1046""]","[""T1046""]",T1049,T1049,Cobalt Kitty Campaign,47a28c6a-51bc-4144-afd3-8117e2ce6828,fa7a634c-2450-499a-9bf3-a09d8e34e937
+Cobalt Kitty Campaign::11,attack_flow,Cobalt Kitty Campaign,1,"[""T1218""]","[""T1218.010""]",T1071,T1071.003,Cobalt Kitty Campaign,4c1cd5fd-27ee-4600-901a-5897e05d1b58,2129fd6d-9887-4a29-b550-3a598b50f641
+Cobalt Kitty Campaign::12,attack_flow,Cobalt Kitty Campaign,1,"[""T1218""]","[""T1218.010""]",T1001,T1001.003,Cobalt Kitty Campaign,4c1cd5fd-27ee-4600-901a-5897e05d1b58,a19b78e2-9d90-46a7-bb55-7dc533edee63
+Cobalt Kitty Campaign::13,attack_flow,Cobalt Kitty Campaign,1,"[""T1218""]","[""T1218.010""]",T1071,T1071.004,Cobalt Kitty Campaign,4c1cd5fd-27ee-4600-901a-5897e05d1b58,bad6fe95-996c-432e-9362-e187a87ba485
+Cobalt Kitty Campaign::14,attack_flow,Cobalt Kitty Campaign,1,"[""T1566""]","[""T1566.001""]",T1053,T1053.005,Cobalt Kitty Campaign,508bc600-bbf4-4e31-a789-8971f51dc581,217d8b41-0faf-415e-be60-1489e39d3ee5
+Cobalt Kitty Campaign::15,attack_flow,Cobalt Kitty Campaign,1,"[""T1574""]","[""T1574.002""]",T1218,T1218.010,Cobalt Kitty Campaign,53f217bc-c353-4ada-b782-7391aaee5685,4c1cd5fd-27ee-4600-901a-5897e05d1b58
+Cobalt Kitty Campaign::16,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.005""]",T1547,T1547.001,Cobalt Kitty Campaign,788fab85-7ed0-42d7-aed2-cec8ac099f32,3488c178-ef07-4ba9-9007-6ca8aaff51c9
+Cobalt Kitty Campaign::17,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.005""]",T1564,T1564.004,Cobalt Kitty Campaign,788fab85-7ed0-42d7-aed2-cec8ac099f32,8589d97f-43fd-4d11-83a0-41e5902cfe9f
+Cobalt Kitty Campaign::18,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.005""]",T1053,T1053.005,Cobalt Kitty Campaign,788fab85-7ed0-42d7-aed2-cec8ac099f32,a19ca663-f6ef-4925-bef4-94248349f2e6
+Cobalt Kitty Campaign::19,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.005""]",T1137,T1137,Cobalt Kitty Campaign,788fab85-7ed0-42d7-aed2-cec8ac099f32,a229d676-e14f-46ee-9bc4-22e769c9abad
+Cobalt Kitty Campaign::20,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.005""]",T1543,T1543.003,Cobalt Kitty Campaign,788fab85-7ed0-42d7-aed2-cec8ac099f32,ac381463-471d-4ccb-9177-ebd834ed5706
+Cobalt Kitty Campaign::21,attack_flow,Cobalt Kitty Campaign,1,"[""T1566""]","[""T1566.002""]",T1059,T1059.001,Cobalt Kitty Campaign,7e43c3eb-f609-4a53-beb3-40829afb89aa,d3d7d621-23f1-4536-8777-aa37cfa4789f
+Cobalt Kitty Campaign::22,attack_flow,Cobalt Kitty Campaign,1,"[""T1003""]","[""T1003.004""]",T1021,T1021.002,Cobalt Kitty Campaign,7ec57638-9eba-4456-af50-1a0e4804510d,03fd7c2f-1eab-4468-8d67-7a331b75c261
+Cobalt Kitty Campaign::23,attack_flow,Cobalt Kitty Campaign,1,"[""T1003""]","[""T1003.004""]",T1550,T1550.002,Cobalt Kitty Campaign,7ec57638-9eba-4456-af50-1a0e4804510d,2a0d98d7-92cc-4087-93ad-ff1db995bec6
+Cobalt Kitty Campaign::24,attack_flow,Cobalt Kitty Campaign,1,"[""T1003""]","[""T1003.004""]",T1550,T1550.003,Cobalt Kitty Campaign,7ec57638-9eba-4456-af50-1a0e4804510d,6c5276a7-4e5c-4807-957b-d1673f27aec5
+Cobalt Kitty Campaign::25,attack_flow,Cobalt Kitty Campaign,1,"[""T1003""]","[""T1003.004""]",T1047,T1047,Cobalt Kitty Campaign,7ec57638-9eba-4456-af50-1a0e4804510d,c7ef4391-eb20-443b-91c2-cceaf0b06458
+Cobalt Kitty Campaign::26,attack_flow,Cobalt Kitty Campaign,1,"[""T1564""]","[""T1564.004""]",T1574,T1574.002,Cobalt Kitty Campaign,8589d97f-43fd-4d11-83a0-41e5902cfe9f,53f217bc-c353-4ada-b782-7391aaee5685
+Cobalt Kitty Campaign::27,attack_flow,Cobalt Kitty Campaign,1,"[""T1016""]","[""T1016""]",T1003,T1003.004,Cobalt Kitty Campaign,90c24039-8903-407d-a9a8-9960faf084e2,7ec57638-9eba-4456-af50-1a0e4804510d
+Cobalt Kitty Campaign::28,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.001""]",T1547,T1547.001,Cobalt Kitty Campaign,96bb23ee-9fa2-4442-b49c-4b2dcc49d043,3488c178-ef07-4ba9-9007-6ca8aaff51c9
+Cobalt Kitty Campaign::29,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.001""]",T1564,T1564.004,Cobalt Kitty Campaign,96bb23ee-9fa2-4442-b49c-4b2dcc49d043,8589d97f-43fd-4d11-83a0-41e5902cfe9f
+Cobalt Kitty Campaign::30,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.001""]",T1053,T1053.005,Cobalt Kitty Campaign,96bb23ee-9fa2-4442-b49c-4b2dcc49d043,a19ca663-f6ef-4925-bef4-94248349f2e6
+Cobalt Kitty Campaign::31,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.001""]",T1137,T1137,Cobalt Kitty Campaign,96bb23ee-9fa2-4442-b49c-4b2dcc49d043,a229d676-e14f-46ee-9bc4-22e769c9abad
+Cobalt Kitty Campaign::32,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.001""]",T1543,T1543.003,Cobalt Kitty Campaign,96bb23ee-9fa2-4442-b49c-4b2dcc49d043,ac381463-471d-4ccb-9177-ebd834ed5706
+Cobalt Kitty Campaign::33,attack_flow,Cobalt Kitty Campaign,1,"[""T1001""]","[""T1001.003""]",T1018,T1018,Cobalt Kitty Campaign,a19b78e2-9d90-46a7-bb55-7dc533edee63,436a56c4-7998-45f2-8f4e-3e4709e3e80c
+Cobalt Kitty Campaign::34,attack_flow,Cobalt Kitty Campaign,1,"[""T1001""]","[""T1001.003""]",T1046,T1046,Cobalt Kitty Campaign,a19b78e2-9d90-46a7-bb55-7dc533edee63,47a28c6a-51bc-4144-afd3-8117e2ce6828
+Cobalt Kitty Campaign::35,attack_flow,Cobalt Kitty Campaign,1,"[""T1001""]","[""T1001.003""]",T1082,T1082,Cobalt Kitty Campaign,a19b78e2-9d90-46a7-bb55-7dc533edee63,e70b0b83-e9b0-4188-a1c1-c049cec1c48e
+Cobalt Kitty Campaign::36,attack_flow,Cobalt Kitty Campaign,1,"[""T1053""]","[""T1053.005""]",T1574,T1574.002,Cobalt Kitty Campaign,a19ca663-f6ef-4925-bef4-94248349f2e6,53f217bc-c353-4ada-b782-7391aaee5685
+Cobalt Kitty Campaign::37,attack_flow,Cobalt Kitty Campaign,1,"[""T1137""]","[""T1137""]",T1574,T1574.002,Cobalt Kitty Campaign,a229d676-e14f-46ee-9bc4-22e769c9abad,53f217bc-c353-4ada-b782-7391aaee5685
+Cobalt Kitty Campaign::38,attack_flow,Cobalt Kitty Campaign,1,"[""T1543""]","[""T1543.003""]",T1574,T1574.002,Cobalt Kitty Campaign,ac381463-471d-4ccb-9177-ebd834ed5706,53f217bc-c353-4ada-b782-7391aaee5685
+Cobalt Kitty Campaign::39,attack_flow,Cobalt Kitty Campaign,1,"[""T1071""]","[""T1071.004""]",T1018,T1018,Cobalt Kitty Campaign,bad6fe95-996c-432e-9362-e187a87ba485,436a56c4-7998-45f2-8f4e-3e4709e3e80c
+Cobalt Kitty Campaign::40,attack_flow,Cobalt Kitty Campaign,1,"[""T1071""]","[""T1071.004""]",T1046,T1046,Cobalt Kitty Campaign,bad6fe95-996c-432e-9362-e187a87ba485,47a28c6a-51bc-4144-afd3-8117e2ce6828
+Cobalt Kitty Campaign::41,attack_flow,Cobalt Kitty Campaign,1,"[""T1071""]","[""T1071.004""]",T1082,T1082,Cobalt Kitty Campaign,bad6fe95-996c-432e-9362-e187a87ba485,e70b0b83-e9b0-4188-a1c1-c049cec1c48e
+Cobalt Kitty Campaign::42,attack_flow,Cobalt Kitty Campaign,1,"[""T1059""]","[""T1059.001""]",T1140,T1140,Cobalt Kitty Campaign,d3d7d621-23f1-4536-8777-aa37cfa4789f,398ab58e-b755-4251-9dc5-293817d349ea
+Cobalt Kitty Campaign::43,attack_flow,Cobalt Kitty Campaign,1,"[""T1082""]","[""T1082""]",T1016,T1016,Cobalt Kitty Campaign,e70b0b83-e9b0-4188-a1c1-c049cec1c48e,90c24039-8903-407d-a9a8-9960faf084e2
+Cobalt Kitty Campaign::44,attack_flow,Cobalt Kitty Campaign,1,"[""T1082""]","[""T1082""]",T1049,T1049,Cobalt Kitty Campaign,e70b0b83-e9b0-4188-a1c1-c049cec1c48e,fa7a634c-2450-499a-9bf3-a09d8e34e937
+Cobalt Kitty Campaign::45,attack_flow,Cobalt Kitty Campaign,1,"[""T1049""]","[""T1049""]",T1003,T1003.004,Cobalt Kitty Campaign,fa7a634c-2450-499a-9bf3-a09d8e34e937,7ec57638-9eba-4456-af50-1a0e4804510d
+Conti CISA Alert::0,attack_flow,Conti CISA Alert,1,"[""T1558""]","[""T1558.003""]",T1110,T1110,Conti CISA Alert,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70,51d84486-8f49-40aa-a3ef-65ab544dff0f
+Conti CISA Alert::1,attack_flow,Conti CISA Alert,1,"[""T1598""]","[""T1598.004""]",T1204,T1204.002,Conti CISA Alert,0cf0c85b-c2e5-4dfd-9a92-547357784bd1,803b8f27-1c9b-4d83-b155-b443b69672f8
+Conti CISA Alert::2,attack_flow,Conti CISA Alert,1,"[""T1598""]","[""T1598.004""]",T1078,T1078,Conti CISA Alert,0cf0c85b-c2e5-4dfd-9a92-547357784bd1,8c673d05-35b9-4563-a19c-612225ba58f2
+Conti CISA Alert::3,attack_flow,Conti CISA Alert,1,"[""T1057""]","[""T1057""]",T1203,T1203,Conti CISA Alert,11575ef5-332b-4719-9283-ad0988becfef,21b2ccee-d3ed-4866-b931-87c37f98dc93
+Conti CISA Alert::4,attack_flow,Conti CISA Alert,1,"[""T1057""]","[""T1057""]",T1486,T1486,Conti CISA Alert,11575ef5-332b-4719-9283-ad0988becfef,fda03654-388a-45e1-b3c5-36a0593aec6d
+Conti CISA Alert::5,attack_flow,Conti CISA Alert,1,"[""T1203""]","[""T1203""]",T1486,T1486,Conti CISA Alert,21b2ccee-d3ed-4866-b931-87c37f98dc93,fda03654-388a-45e1-b3c5-36a0593aec6d
+Conti CISA Alert::6,attack_flow,Conti CISA Alert,1,"[""T1566""]","[""T1566.001""]",T1204,T1204.002,Conti CISA Alert,2a8b2d9c-c1cb-44e8-9c18-e146fdb28c3b,803b8f27-1c9b-4d83-b155-b443b69672f8
+Conti CISA Alert::7,attack_flow,Conti CISA Alert,1,"[""T1566""]","[""T1566.001""]",T1078,T1078,Conti CISA Alert,2a8b2d9c-c1cb-44e8-9c18-e146fdb28c3b,8c673d05-35b9-4563-a19c-612225ba58f2
+Conti CISA Alert::8,attack_flow,Conti CISA Alert,1,"[""T1110""]","[""T1110""]",T1203,T1203,Conti CISA Alert,51d84486-8f49-40aa-a3ef-65ab544dff0f,21b2ccee-d3ed-4866-b931-87c37f98dc93
+Conti CISA Alert::9,attack_flow,Conti CISA Alert,1,"[""T1110""]","[""T1110""]",T1486,T1486,Conti CISA Alert,51d84486-8f49-40aa-a3ef-65ab544dff0f,fda03654-388a-45e1-b3c5-36a0593aec6d
+Conti CISA Alert::10,attack_flow,Conti CISA Alert,1,"[""T1608""]","[""T1608.006""]",T1204,T1204.002,Conti CISA Alert,57dca417-5fce-4cb6-9392-c23d24ba8c83,803b8f27-1c9b-4d83-b155-b443b69672f8
+Conti CISA Alert::11,attack_flow,Conti CISA Alert,1,"[""T1608""]","[""T1608.006""]",T1078,T1078,Conti CISA Alert,57dca417-5fce-4cb6-9392-c23d24ba8c83,8c673d05-35b9-4563-a19c-612225ba58f2
+Conti CISA Alert::12,attack_flow,Conti CISA Alert,1,"[""T1076""]","[""T1076""]",T1558,T1558.003,Conti CISA Alert,7a4205e1-043e-4c6d-8a9f-89f9a3a8ec83,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70
+Conti CISA Alert::13,attack_flow,Conti CISA Alert,1,"[""T1076""]","[""T1076""]",T1057,T1057,Conti CISA Alert,7a4205e1-043e-4c6d-8a9f-89f9a3a8ec83,11575ef5-332b-4719-9283-ad0988becfef
+Conti CISA Alert::14,attack_flow,Conti CISA Alert,1,"[""T1076""]","[""T1076""]",T1110,T1110,Conti CISA Alert,7a4205e1-043e-4c6d-8a9f-89f9a3a8ec83,e972b38b-5e0c-43f6-a578-f904dab23a64
+Conti CISA Alert::15,attack_flow,Conti CISA Alert,1,"[""T1204""]","[""T1204.002""]",T1558,T1558.003,Conti CISA Alert,803b8f27-1c9b-4d83-b155-b443b69672f8,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70
+Conti CISA Alert::16,attack_flow,Conti CISA Alert,1,"[""T1204""]","[""T1204.002""]",T1057,T1057,Conti CISA Alert,803b8f27-1c9b-4d83-b155-b443b69672f8,11575ef5-332b-4719-9283-ad0988becfef
+Conti CISA Alert::17,attack_flow,Conti CISA Alert,1,"[""T1204""]","[""T1204.002""]",T1110,T1110,Conti CISA Alert,803b8f27-1c9b-4d83-b155-b443b69672f8,e972b38b-5e0c-43f6-a578-f904dab23a64
+Conti CISA Alert::18,attack_flow,Conti CISA Alert,1,"[""T1078""]","[""T1078""]",T1558,T1558.003,Conti CISA Alert,8c673d05-35b9-4563-a19c-612225ba58f2,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70
+Conti CISA Alert::19,attack_flow,Conti CISA Alert,1,"[""T1078""]","[""T1078""]",T1057,T1057,Conti CISA Alert,8c673d05-35b9-4563-a19c-612225ba58f2,11575ef5-332b-4719-9283-ad0988becfef
+Conti CISA Alert::20,attack_flow,Conti CISA Alert,1,"[""T1078""]","[""T1078""]",T1110,T1110,Conti CISA Alert,8c673d05-35b9-4563-a19c-612225ba58f2,e972b38b-5e0c-43f6-a578-f904dab23a64
+Conti CISA Alert::21,attack_flow,Conti CISA Alert,1,"[""T1566""]","[""T1566.002""]",T1204,T1204.002,Conti CISA Alert,e51a777f-14ba-4aac-8e6d-d95b93389173,803b8f27-1c9b-4d83-b155-b443b69672f8
+Conti CISA Alert::22,attack_flow,Conti CISA Alert,1,"[""T1566""]","[""T1566.002""]",T1078,T1078,Conti CISA Alert,e51a777f-14ba-4aac-8e6d-d95b93389173,8c673d05-35b9-4563-a19c-612225ba58f2
+Conti CISA Alert::23,attack_flow,Conti CISA Alert,1,"[""T1110""]","[""T1110""]",T1203,T1203,Conti CISA Alert,e972b38b-5e0c-43f6-a578-f904dab23a64,21b2ccee-d3ed-4866-b931-87c37f98dc93
+Conti CISA Alert::24,attack_flow,Conti CISA Alert,1,"[""T1110""]","[""T1110""]",T1486,T1486,Conti CISA Alert,e972b38b-5e0c-43f6-a578-f904dab23a64,fda03654-388a-45e1-b3c5-36a0593aec6d
+Conti PWC::0,attack_flow,Conti PWC,1,"[""T1586""]","[""T1586""]",T1083,T1083,Conti PWC,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70,823c7ef5-0569-4678-a773-4f465690998c
+Conti PWC::1,attack_flow,Conti PWC,1,"[""T1586""]","[""T1586""]",T1486,T1486,Conti PWC,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70,fda03654-388a-45e1-b3c5-36a0593aec6d
+Conti PWC::2,attack_flow,Conti PWC,1,"[""T1566""]","[""T1566.001""]",T1204,T1204,Conti PWC,2a8b2d9c-c1cb-44e8-9c18-e146fdb28c3b,803b8f27-1c9b-4d83-b155-b443b69672f8
+Conti PWC::3,attack_flow,Conti PWC,1,"[""T1204""]","[""T1204""]",T1586,T1586,Conti PWC,803b8f27-1c9b-4d83-b155-b443b69672f8,08dfcf4a-96c4-487e-8531-3ddd7fbb6e70
+Conti Ransomware::0,attack_flow,Conti Ransomware,1,"[""T1218""]","[""T1218.011""]",T1105,T1105,Conti Ransomware,0cd8c60f-e89b-4cbf-ac17-2699a2c7f3b3,fd17c242-ee9e-46e7-ae64-034a61b80260
+Conti Ransomware::1,attack_flow,Conti Ransomware,1,"[""T1087""]","[""T1087.002""]",T1484,T1484.001,Conti Ransomware,3dde05e7-c85d-491c-9477-8f8c8f09c3a4,fc2f373d-3ee7-4d28-b3c7-939273123d88
+Conti Ransomware::2,attack_flow,Conti Ransomware,1,"[""T1018""]","[""T1018""]",T1134,T1134,Conti Ransomware,5a4db315-756f-465a-b6f1-edcd1c507fd8,eb41545a-feb2-4709-a184-3b76b4f11724
+Conti Ransomware::3,attack_flow,Conti Ransomware,1,"[""T1566""]","[""T1566.001""]",T1059,T1059.007,Conti Ransomware,63b4d51e-84a0-4dee-b22a-0ffaea346e33,7a811b31-03be-481a-8344-1310218b0fd3
+Conti Ransomware::4,attack_flow,Conti Ransomware,1,"[""T1059""]","[""T1059.007""]",T1105,T1105,Conti Ransomware,7a811b31-03be-481a-8344-1310218b0fd3,8fbbfd31-5bde-4c5e-bfbd-4cd34a382694
+Conti Ransomware::5,attack_flow,Conti Ransomware,1,"[""T1021""]","[""T1021.001""]",T1021,T1021.002,Conti Ransomware,809a956f-52ae-4d56-af4c-0504543dacd7,94ac64c0-2ced-4a0a-b756-d0e27aa5c1dd
+Conti Ransomware::6,attack_flow,Conti Ransomware,1,"[""T1021""]","[""T1021.001""]",T1087,T1087.002,Conti Ransomware,834638ac-9ed6-4b87-bc7f-a9bb36124e2f,3dde05e7-c85d-491c-9477-8f8c8f09c3a4
+Conti Ransomware::7,attack_flow,Conti Ransomware,1,"[""T1105""]","[""T1105""]",T1218,T1218.011,Conti Ransomware,8fbbfd31-5bde-4c5e-bfbd-4cd34a382694,0cd8c60f-e89b-4cbf-ac17-2699a2c7f3b3
+Conti Ransomware::8,attack_flow,Conti Ransomware,1,"[""T1021""]","[""T1021.002""]",T1021,T1021.001,Conti Ransomware,94ac64c0-2ced-4a0a-b756-d0e27aa5c1dd,834638ac-9ed6-4b87-bc7f-a9bb36124e2f
+Conti Ransomware::9,attack_flow,Conti Ransomware,1,"[""T1046""]","[""T1046""]",T1021,T1021.001,Conti Ransomware,97fc06cc-cc3d-43a0-8b57-f7964c10bff3,809a956f-52ae-4d56-af4c-0504543dacd7
+Conti Ransomware::10,attack_flow,Conti Ransomware,1,"[""T1562""]","[""T1562.001""]",T1486,T1486,Conti Ransomware,b1ed079a-a69f-42c4-8c6b-75b00164a775,99d68cdd-73de-4809-8055-3f0a85076a5e
+Conti Ransomware::11,attack_flow,Conti Ransomware,1,"[""T1033""]","[""T1033""]",T1134,T1134,Conti Ransomware,c1c2e798-adba-4c7b-95ab-3afb8dd69c73,eb41545a-feb2-4709-a184-3b76b4f11724
+Conti Ransomware::12,attack_flow,Conti Ransomware,1,"[""T1069""]","[""T1069""]",T1134,T1134,Conti Ransomware,e54e0ab2-7ce5-4313-946e-52250aead3a9,eb41545a-feb2-4709-a184-3b76b4f11724
+Conti Ransomware::13,attack_flow,Conti Ransomware,1,"[""T1134""]","[""T1134""]",T1021,T1021.002,Conti Ransomware,eb41545a-feb2-4709-a184-3b76b4f11724,f8a23107-18ea-4ae8-a224-392fbd8ae25d
+Conti Ransomware::14,attack_flow,Conti Ransomware,1,"[""T1021""]","[""T1021.002""]",T1046,T1046,Conti Ransomware,f8a23107-18ea-4ae8-a224-392fbd8ae25d,97fc06cc-cc3d-43a0-8b57-f7964c10bff3
+Conti Ransomware::15,attack_flow,Conti Ransomware,1,"[""T1484""]","[""T1484.001""]",T1562,T1562.001,Conti Ransomware,fc2f373d-3ee7-4d28-b3c7-939273123d88,b1ed079a-a69f-42c4-8c6b-75b00164a775
+Conti Ransomware::16,attack_flow,Conti Ransomware,1,"[""T1105""]","[""T1105""]",T1018,T1018,Conti Ransomware,fd17c242-ee9e-46e7-ae64-034a61b80260,5a4db315-756f-465a-b6f1-edcd1c507fd8
+Conti Ransomware::17,attack_flow,Conti Ransomware,1,"[""T1105""]","[""T1105""]",T1033,T1033,Conti Ransomware,fd17c242-ee9e-46e7-ae64-034a61b80260,c1c2e798-adba-4c7b-95ab-3afb8dd69c73
+Conti Ransomware::18,attack_flow,Conti Ransomware,1,"[""T1105""]","[""T1105""]",T1069,T1069,Conti Ransomware,fd17c242-ee9e-46e7-ae64-034a61b80260,e54e0ab2-7ce5-4313-946e-52250aead3a9
+DFIR - BumbleBee Round 2::0,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1105""]","[""T1105""]",T1218,T1218.011,DFIR - BumbleBee Round 2,1d4f33a8-1ae5-498a-a169-ff39bdced02f,3d2e236c-8c72-4882-acca-ada71a3836e6
+DFIR - BumbleBee Round 2::1,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1135""]","[""T1135""]",T1071,T1071,DFIR - BumbleBee Round 2,1da9c661-90f5-4bca-b5f1-2798deb4acbe,a69439a7-6d16-421a-9ff7-776302391be0
+DFIR - BumbleBee Round 2::2,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1219""]","[""T1219""]",T1021,T1021.001,DFIR - BumbleBee Round 2,26ba213f-b338-42a5-a791-c666668db1e3,e40758a2-cd01-4706-9edb-849dc3664091
+DFIR - BumbleBee Round 2::3,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1219""]","[""T1219""]",T1136,T1136.002,DFIR - BumbleBee Round 2,3cd623e4-d522-4a49-9274-80daab9d548d,f988de9b-8b10-45bc-9f97-151ff552a196
+DFIR - BumbleBee Round 2::4,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1218""]","[""T1218.011""]",T1047,T1047,DFIR - BumbleBee Round 2,3d2e236c-8c72-4882-acca-ada71a3836e6,a4a665d0-8a5e-4135-8d9b-e57c996cd4a2
+DFIR - BumbleBee Round 2::5,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1003""]","[""T1003.001""]",T1021,T1021.001,DFIR - BumbleBee Round 2,40029c58-c769-4dbd-a901-87ce0857e074,dc4fb9cd-da86-48d8-b062-7a78f4fcccad
+DFIR - BumbleBee Round 2::6,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1087""]","[""T1087.002""]",T1071,T1071,DFIR - BumbleBee Round 2,4f144a9a-bf93-4119-b55b-4d21ef5a10cd,a69439a7-6d16-421a-9ff7-776302391be0
+DFIR - BumbleBee Round 2::7,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1059""]","[""T1059""]",T1135,T1135,DFIR - BumbleBee Round 2,52551dbb-9709-4a90-b7e2-ad92c735d5cc,1da9c661-90f5-4bca-b5f1-2798deb4acbe
+DFIR - BumbleBee Round 2::8,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1059""]","[""T1059""]",T1087,T1087.002,DFIR - BumbleBee Round 2,52551dbb-9709-4a90-b7e2-ad92c735d5cc,4f144a9a-bf93-4119-b55b-4d21ef5a10cd
+DFIR - BumbleBee Round 2::9,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1059""]","[""T1059""]",T1482,T1482,DFIR - BumbleBee Round 2,52551dbb-9709-4a90-b7e2-ad92c735d5cc,f636129f-0281-487f-b497-d235e2dab480
+DFIR - BumbleBee Round 2::10,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1547""]","[""T1547.009""]",T1105,T1105,DFIR - BumbleBee Round 2,5bde19de-dfc9-4a67-b7f0-58d63b146fee,1d4f33a8-1ae5-498a-a169-ff39bdced02f
+DFIR - BumbleBee Round 2::11,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1547""]","[""T1547.009""]",T1059,T1059,DFIR - BumbleBee Round 2,5bde19de-dfc9-4a67-b7f0-58d63b146fee,52551dbb-9709-4a90-b7e2-ad92c735d5cc
+DFIR - BumbleBee Round 2::12,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1016""]","[""T1016""]",T1219,T1219,DFIR - BumbleBee Round 2,a39cb9ff-6740-4503-8a22-7549753a892c,26ba213f-b338-42a5-a791-c666668db1e3
+DFIR - BumbleBee Round 2::13,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1047""]","[""T1047""]",T1055,T1055,DFIR - BumbleBee Round 2,a4a665d0-8a5e-4135-8d9b-e57c996cd4a2,055084d8-e6ee-440a-a3d5-895ba5fdecdf
+DFIR - BumbleBee Round 2::14,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1071""]","[""T1071""]",T1087,T1087,DFIR - BumbleBee Round 2,a69439a7-6d16-421a-9ff7-776302391be0,d31e9ed3-3eb9-44d1-9a53-2e2e4c3dcac2
+DFIR - BumbleBee Round 2::15,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1087""]","[""T1087""]",T1003,T1003.001,DFIR - BumbleBee Round 2,d31e9ed3-3eb9-44d1-9a53-2e2e4c3dcac2,40029c58-c769-4dbd-a901-87ce0857e074
+DFIR - BumbleBee Round 2::16,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1021""]","[""T1021.001""]",T1219,T1219,DFIR - BumbleBee Round 2,dc4fb9cd-da86-48d8-b062-7a78f4fcccad,3cd623e4-d522-4a49-9274-80daab9d548d
+DFIR - BumbleBee Round 2::17,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1021""]","[""T1021.001""]",T1059,T1059.003,DFIR - BumbleBee Round 2,e40758a2-cd01-4706-9edb-849dc3664091,f3466114-62e4-472e-9204-1523cf78352a
+DFIR - BumbleBee Round 2::18,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1482""]","[""T1482""]",T1071,T1071,DFIR - BumbleBee Round 2,f636129f-0281-487f-b497-d235e2dab480,a69439a7-6d16-421a-9ff7-776302391be0
+DFIR - BumbleBee Round 2::19,attack_flow,DFIR - BumbleBee Round 2,1,"[""T1136""]","[""T1136.002""]",T1016,T1016,DFIR - BumbleBee Round 2,f988de9b-8b10-45bc-9f97-151ff552a196,a39cb9ff-6740-4503-8a22-7549753a892c
+Equifax Breach::0,attack_flow,Equifax Breach,1,"[""T1140""]","[""T1140""]",T1048,T1048.002,Equifax Breach,20aa5b9f-3477-4e0a-a5d0-93b6c199be69,23fade7d-fc7b-42d6-b962-fd13f8d67e88
+Equifax Breach::1,attack_flow,Equifax Breach,1,"[""T1505""]","[""T1505.003""]",T1590,T1590,Equifax Breach,21be9f13-3c4b-4c97-b532-326568e19550,98563102-bd12-43d2-829c-e6591931f1fb
+Equifax Breach::2,attack_flow,Equifax Breach,1,"[""T1505""]","[""T1505.003""]",T1589,T1589.001,Equifax Breach,21be9f13-3c4b-4c97-b532-326568e19550,d9d6e1e2-dc1e-404f-a4fd-a1fac90c0a86
+Equifax Breach::3,attack_flow,Equifax Breach,1,"[""T1048""]","[""T1048.002""]",T1090,T1090.003,Equifax Breach,23fade7d-fc7b-42d6-b962-fd13f8d67e88,e0206671-984d-49d1-bd1a-12e10966395f
+Equifax Breach::4,attack_flow,Equifax Breach,1,"[""T1573""]","[""T1573""]",T1140,T1140,Equifax Breach,6641e2c7-8ea1-443f-a29d-89e544be5eb9,20aa5b9f-3477-4e0a-a5d0-93b6c199be69
+Equifax Breach::5,attack_flow,Equifax Breach,1,"[""T1573""]","[""T1573""]",T1560,T1560,Equifax Breach,6641e2c7-8ea1-443f-a29d-89e544be5eb9,bd230072-e0f0-4478-a209-7d7aded898f2
+Equifax Breach::6,attack_flow,Equifax Breach,1,"[""T1595""]","[""T1595.002""]",T1190,T1190,Equifax Breach,6f347c34-9d8a-48f1-889e-23752c87197b,ed1d3b65-7d96-4fb0-88c4-c2cd30623b03
+Equifax Breach::7,attack_flow,Equifax Breach,1,"[""T1590""]","[""T1590""]",T1573,T1573,Equifax Breach,98563102-bd12-43d2-829c-e6591931f1fb,6641e2c7-8ea1-443f-a29d-89e544be5eb9
+Equifax Breach::8,attack_flow,Equifax Breach,1,"[""T1560""]","[""T1560""]",T1048,T1048.002,Equifax Breach,bd230072-e0f0-4478-a209-7d7aded898f2,23fade7d-fc7b-42d6-b962-fd13f8d67e88
+Equifax Breach::9,attack_flow,Equifax Breach,1,"[""T1589""]","[""T1589.001""]",T1573,T1573,Equifax Breach,d9d6e1e2-dc1e-404f-a4fd-a1fac90c0a86,6641e2c7-8ea1-443f-a29d-89e544be5eb9
+Equifax Breach::10,attack_flow,Equifax Breach,1,"[""T1090""]","[""T1090.003""]",T1070,T1070.001,Equifax Breach,e0206671-984d-49d1-bd1a-12e10966395f,61cfb4a1-6468-4095-bd42-c9e0476a9e00
+Equifax Breach::11,attack_flow,Equifax Breach,1,"[""T1090""]","[""T1090.003""]",T1070,T1070.004,Equifax Breach,e0206671-984d-49d1-bd1a-12e10966395f,f4e8ee77-2e14-450d-92d4-d7a1b6595c16
+Equifax Breach::12,attack_flow,Equifax Breach,1,"[""T1190""]","[""T1190""]",T1505,T1505.003,Equifax Breach,ed1d3b65-7d96-4fb0-88c4-c2cd30623b03,21be9f13-3c4b-4c97-b532-326568e19550
+FIN13 Case 1::0,attack_flow,FIN13 Case 1,1,"[""T1558""]","[""T1558.003""]",T1078,T1078,FIN13 Case 1,01813f00-c84d-4bd2-8276-736722e0e3f8,ae89eafb-e337-431f-af43-50f8d6897d0c
+FIN13 Case 1::1,attack_flow,FIN13 Case 1,1,"[""T1595""]","[""T1595""]",T1190,T1190,FIN13 Case 1,05411f8d-39a0-45a2-824f-230d9c9b2fd5,1f6da219-83ad-4f6a-ba67-5b5e873abb9f
+FIN13 Case 1::2,attack_flow,FIN13 Case 1,1,"[""T1570""]","[""T1570""]",T1595,T1595.001,FIN13 Case 1,0574f20a-0604-4681-9245-a53fc4491e52,ea65ce07-b01f-448c-ad0f-1e75f48fe802
+FIN13 Case 1::3,attack_flow,FIN13 Case 1,1,"[""T1595""]","[""T1595.002""]",T1595,T1595,FIN13 Case 1,06617ed8-35b6-42e2-9f14-99e97f57b78f,05411f8d-39a0-45a2-824f-230d9c9b2fd5
+FIN13 Case 1::4,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1046,T1046,FIN13 Case 1,0b518f13-5622-4f1f-8f5c-a8a7ddb069aa,338654f7-6429-4f19-9cab-23970b2db208
+FIN13 Case 1::5,attack_flow,FIN13 Case 1,1,"[""T1059""]","[""T1059.001""]",T1505,T1505.003,FIN13 Case 1,0fa237a6-3703-4c7c-a03d-eb9ba25c3ca0,feef2c34-c57b-481c-9f1b-358c5cfb3ccf
+FIN13 Case 1::6,attack_flow,FIN13 Case 1,1,"[""T1021""]","[""T1021.004""]",T1005,T1005,FIN13 Case 1,144109da-1040-4cba-ae66-ff8a2832dd75,445159ff-e8fc-42e6-9c4f-6972b015da70
+FIN13 Case 1::7,attack_flow,FIN13 Case 1,1,"[""T1533""]","[""T1533""]",T1021,T1021.001,FIN13 Case 1,14f1573e-dea1-49ff-94a0-65c662c0a9ac,d3cb375e-3c91-48aa-b3ec-1af4e3af0ec3
+FIN13 Case 1::8,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1595,T1595.001,FIN13 Case 1,1972489e-527b-42d1-946b-1712ca9d88d7,8ae9cc92-e769-44d4-a4c0-00081223f860
+FIN13 Case 1::9,attack_flow,FIN13 Case 1,1,"[""T1190""]","[""T1190""]",T1505,T1505.003,FIN13 Case 1,1f6da219-83ad-4f6a-ba67-5b5e873abb9f,0b518f13-5622-4f1f-8f5c-a8a7ddb069aa
+FIN13 Case 1::10,attack_flow,FIN13 Case 1,1,"[""T1570""]","[""T1570""]",T1570,T1570,FIN13 Case 1,273407ed-343c-4dce-849e-68a96326f8fb,e1ce720a-a99e-4714-ae35-b9f259c515a4
+FIN13 Case 1::11,attack_flow,FIN13 Case 1,1,"[""T1555""]","[""T1555""]",T1595,T1595.001,FIN13 Case 1,2d834b49-b19d-447b-bd77-03a5d0cd76ba,8ae9cc92-e769-44d4-a4c0-00081223f860
+FIN13 Case 1::12,attack_flow,FIN13 Case 1,1,"[""T1033""]","[""T1033""]",T1595,T1595.001,FIN13 Case 1,2f73644e-77f1-41af-9f14-0a501043c05c,8ae9cc92-e769-44d4-a4c0-00081223f860
+FIN13 Case 1::13,attack_flow,FIN13 Case 1,1,"[""T1046""]","[""T1046""]",T1105,T1105,FIN13 Case 1,338654f7-6429-4f19-9cab-23970b2db208,aac1df04-b869-4d4c-8a6a-4c8c46bf46dd
+FIN13 Case 1::14,attack_flow,FIN13 Case 1,1,"[""T1070""]","[""T1070""]",T1570,T1570,FIN13 Case 1,3aa3633a-0dce-4f87-8b81-a1c810797686,3c484f24-0328-4750-8a71-758e69718297
+FIN13 Case 1::15,attack_flow,FIN13 Case 1,1,"[""T1570""]","[""T1570""]",T1558,T1558.003,FIN13 Case 1,3c484f24-0328-4750-8a71-758e69718297,01813f00-c84d-4bd2-8276-736722e0e3f8
+FIN13 Case 1::16,attack_flow,FIN13 Case 1,1,"[""T1222""]","[""T1222""]",T1595,T1595.001,FIN13 Case 1,42cb83aa-7377-443a-b387-49ce9c6ef2da,8ae9cc92-e769-44d4-a4c0-00081223f860
+FIN13 Case 1::17,attack_flow,FIN13 Case 1,1,"[""T1005""]","[""T1005""]",T1040,T1040,FIN13 Case 1,445159ff-e8fc-42e6-9c4f-6972b015da70,94b2422d-0950-424f-9350-a12d3d732922
+FIN13 Case 1::18,attack_flow,FIN13 Case 1,1,"[""T1003""]","[""T1003""]",T1021,T1021.004,FIN13 Case 1,516a162a-e8c3-437e-bcf8-f5045840a9c9,144109da-1040-4cba-ae66-ff8a2832dd75
+FIN13 Case 1::20,attack_flow,FIN13 Case 1,1,"[""T1595""]","[""T1595""]",T1570,T1570,FIN13 Case 1,6e420205-86d5-457c-9952-0eb1d4d0c29b,5f223e58-a5d8-406e-8ad9-72a80b0abc38
+FIN13 Case 1::21,attack_flow,FIN13 Case 1,1,"[""T1595""]","[""T1595.001""]",T1570,T1570,FIN13 Case 1,8ae9cc92-e769-44d4-a4c0-00081223f860,273407ed-343c-4dce-849e-68a96326f8fb
+FIN13 Case 1::22,attack_flow,FIN13 Case 1,1,"[""T1070""]","[""T1070.002""]",T1595,T1595.001,FIN13 Case 1,93abb92f-ecd8-4308-9f4e-84d84f7002c7,8ae9cc92-e769-44d4-a4c0-00081223f860
+FIN13 Case 1::23,attack_flow,FIN13 Case 1,1,"[""T1040""]","[""T1040""]",T1070,T1070,FIN13 Case 1,94b2422d-0950-424f-9350-a12d3d732922,3aa3633a-0dce-4f87-8b81-a1c810797686
+FIN13 Case 1::24,attack_flow,FIN13 Case 1,1,"[""T1110""]","[""T1110""]",T1590,T1590,FIN13 Case 1,9657b790-d5a8-4253-9932-b358f8d6c992,e5b25470-9b73-4a90-abad-efaf56a241a7
+FIN13 Case 1::25,attack_flow,FIN13 Case 1,1,"[""T1105""]","[""T1105""]",T1505,T1505.003,FIN13 Case 1,aac1df04-b869-4d4c-8a6a-4c8c46bf46dd,f57144a5-23e3-4141-a14f-0054f1f3baa2
+FIN13 Case 1::26,attack_flow,FIN13 Case 1,1,"[""T1078""]","[""T1078""]",T1059,T1059.001,FIN13 Case 1,ae89eafb-e337-431f-af43-50f8d6897d0c,0fa237a6-3703-4c7c-a03d-eb9ba25c3ca0
+FIN13 Case 1::27,attack_flow,FIN13 Case 1,1,"[""T1210""]","[""T1210""]",T1003,T1003,FIN13 Case 1,bcd31619-522d-40c4-a0f0-ecff1fc40188,516a162a-e8c3-437e-bcf8-f5045840a9c9
+FIN13 Case 1::28,attack_flow,FIN13 Case 1,1,"[""T1021""]","[""T1021.001""]",T1111,T1111,FIN13 Case 1,d3cb375e-3c91-48aa-b3ec-1af4e3af0ec3,d8c00dfb-334f-44b5-9363-6c378ac48ce5
+FIN13 Case 1::29,attack_flow,FIN13 Case 1,1,"[""T1111""]","[""T1111""]",T1078,T1078,FIN13 Case 1,d8c00dfb-334f-44b5-9363-6c378ac48ce5,97790d66-c67b-416c-8072-a3942d5c0b44
+FIN13 Case 1::30,attack_flow,FIN13 Case 1,1,"[""T1570""]","[""T1570""]",T1210,T1210,FIN13 Case 1,e1ce720a-a99e-4714-ae35-b9f259c515a4,bcd31619-522d-40c4-a0f0-ecff1fc40188
+FIN13 Case 1::31,attack_flow,FIN13 Case 1,1,"[""T1590""]","[""T1590""]",T1595,T1595,FIN13 Case 1,e5b25470-9b73-4a90-abad-efaf56a241a7,6e420205-86d5-457c-9952-0eb1d4d0c29b
+FIN13 Case 1::32,attack_flow,FIN13 Case 1,1,"[""T1595""]","[""T1595.001""]",T1110,T1110,FIN13 Case 1,ea65ce07-b01f-448c-ad0f-1e75f48fe802,9657b790-d5a8-4253-9932-b358f8d6c992
+FIN13 Case 1::33,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1505,T1505.003,FIN13 Case 1,f57144a5-23e3-4141-a14f-0054f1f3baa2,1972489e-527b-42d1-946b-1712ca9d88d7
+FIN13 Case 1::34,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1555,T1555,FIN13 Case 1,f57144a5-23e3-4141-a14f-0054f1f3baa2,2d834b49-b19d-447b-bd77-03a5d0cd76ba
+FIN13 Case 1::35,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1033,T1033,FIN13 Case 1,f57144a5-23e3-4141-a14f-0054f1f3baa2,2f73644e-77f1-41af-9f14-0a501043c05c
+FIN13 Case 1::36,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1222,T1222,FIN13 Case 1,f57144a5-23e3-4141-a14f-0054f1f3baa2,42cb83aa-7377-443a-b387-49ce9c6ef2da
+FIN13 Case 1::37,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1070,T1070.002,FIN13 Case 1,f57144a5-23e3-4141-a14f-0054f1f3baa2,93abb92f-ecd8-4308-9f4e-84d84f7002c7
+FIN13 Case 1::38,attack_flow,FIN13 Case 1,1,"[""T1505""]","[""T1505.003""]",T1570,T1570,FIN13 Case 1,feef2c34-c57b-481c-9f1b-358c5cfb3ccf,0574f20a-0604-4681-9245-a53fc4491e52
+FIN13 Case 2::0,attack_flow,FIN13 Case 2,1,"[""T1595""]","[""T1595""]",T1003,T1003.001,FIN13 Case 2,47fdc13f-2f34-4b53-8cf5-82646d3f12c7,f5ca2849-e569-49ac-917c-5b33e1c077d7
+FIN13 Case 2::1,attack_flow,FIN13 Case 2,1,"[""T1003""]","[""T1003.001""]",T1595,T1595,FIN13 Case 2,482cf545-fe5c-4a0b-b56d-bcf5aa522006,47fdc13f-2f34-4b53-8cf5-82646d3f12c7
+FIN13 Case 2::2,attack_flow,FIN13 Case 2,1,"[""T1078""]","[""T1078""]",T1111,T1111,FIN13 Case 2,4d2a4ed1-fb36-4bfc-8163-0a92e8f64fb9,dc98744f-0b1b-46ab-9be5-68de533ee32c
+FIN13 Case 2::3,attack_flow,FIN13 Case 2,1,"[""T1505""]","[""T1505.003""]",T1078,T1078,FIN13 Case 2,5f327121-40b8-4cee-b35c-4ef4d1115919,4d2a4ed1-fb36-4bfc-8163-0a92e8f64fb9
+FIN13 Case 2::4,attack_flow,FIN13 Case 2,1,"[""T1105""]","[""T1105""]",T1505,T1505.003,FIN13 Case 2,6a89f34f-6ad9-492f-801a-d67148b37c18,fcd49b6d-5dde-4cdd-b73a-a3b5031a6942
+FIN13 Case 2::5,attack_flow,FIN13 Case 2,1,"[""T1203""]","[""T1203""]",T1003,T1003.001,FIN13 Case 2,6c480520-1fa3-436d-832f-fecd8de08f62,482cf545-fe5c-4a0b-b56d-bcf5aa522006
+FIN13 Case 2::6,attack_flow,FIN13 Case 2,1,"[""T1083""]","[""T1083""]",T1595,T1595.002,FIN13 Case 2,727d3aed-67d6-4886-a45b-e78b924778bc,b595110b-25ff-4a38-b17f-e23a033c044c
+FIN13 Case 2::7,attack_flow,FIN13 Case 2,1,"[""T1190""]","[""T1190""]",T1105,T1105,FIN13 Case 2,81e5c5eb-d20d-46e2-8755-d196dce3cf55,6a89f34f-6ad9-492f-801a-d67148b37c18
+FIN13 Case 2::8,attack_flow,FIN13 Case 2,1,"[""T1078""]","[""T1078""]",T1005,T1005,FIN13 Case 2,a6fcee5f-d0e7-4669-8513-e0c4e3ecc058,b36be7d2-2b70-44eb-abbe-9b2dd668bdad
+FIN13 Case 2::9,attack_flow,FIN13 Case 2,1,"[""T1005""]","[""T1005""]",T1083,T1083,FIN13 Case 2,b36be7d2-2b70-44eb-abbe-9b2dd668bdad,727d3aed-67d6-4886-a45b-e78b924778bc
+FIN13 Case 2::10,attack_flow,FIN13 Case 2,1,"[""T1005""]","[""T1005""]",T1021,T1021,FIN13 Case 2,b36be7d2-2b70-44eb-abbe-9b2dd668bdad,f23801cb-d434-4e33-a02b-aeccbe51329f
+FIN13 Case 2::11,attack_flow,FIN13 Case 2,1,"[""T1595""]","[""T1595.002""]",T1505,T1505.003,FIN13 Case 2,b595110b-25ff-4a38-b17f-e23a033c044c,5f327121-40b8-4cee-b35c-4ef4d1115919
+FIN13 Case 2::12,attack_flow,FIN13 Case 2,1,"[""T1111""]","[""T1111""]",T1041,T1041,FIN13 Case 2,dc98744f-0b1b-46ab-9be5-68de533ee32c,08bd0251-2db7-4ea0-854d-7a320c98ae6a
+FIN13 Case 2::13,attack_flow,FIN13 Case 2,1,"[""T1021""]","[""T1021""]",T1595,T1595.002,FIN13 Case 2,f23801cb-d434-4e33-a02b-aeccbe51329f,b595110b-25ff-4a38-b17f-e23a033c044c
+FIN13 Case 2::14,attack_flow,FIN13 Case 2,1,"[""T1003""]","[""T1003.001""]",T1078,T1078,FIN13 Case 2,f5ca2849-e569-49ac-917c-5b33e1c077d7,a6fcee5f-d0e7-4669-8513-e0c4e3ecc058
+FIN13 Case 2::15,attack_flow,FIN13 Case 2,1,"[""T1505""]","[""T1505.003""]",T1203,T1203,FIN13 Case 2,fcd49b6d-5dde-4cdd-b73a-a3b5031a6942,6c480520-1fa3-436d-832f-fecd8de08f62
+Gootloader::0,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1555,T1555,Gootloader,11de041a-0431-46dd-be9c-94b7bbc80f49,3766b6f9-bfd9-4553-8dc8-af1235b4a375
+Gootloader::1,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1562,T1562.001,Gootloader,11de041a-0431-46dd-be9c-94b7bbc80f49,b6ad86e3-05a1-429c-9bef-b586f4661752
+Gootloader::2,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1059,T1059.001,Gootloader,11de041a-0431-46dd-be9c-94b7bbc80f49,bb12a865-13bc-49b6-b377-c05be7f5d3dd
+Gootloader::3,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.006""]",T1021,T1021.001,Gootloader,18dc9f3a-7634-42ac-9bdc-9663d4b00727,5142db39-7197-481b-8815-732e39006d77
+Gootloader::4,attack_flow,Gootloader,1,"[""T1112""]","[""T1112""]",T1059,T1059.001,Gootloader,1aa73c1d-cb93-4a7b-9da9-e4eb45d7b8e8,dc97c560-1be2-4a23-96e1-86ae94342358
+Gootloader::5,attack_flow,Gootloader,1,"[""T1204""]","[""T1204.002""]",T1059,T1059.007,Gootloader,1cfc90fc-4363-48e3-ae47-c2cb9ea6fb60,89b4e412-c715-4a2f-b04f-1024d7c3b9c6
+Gootloader::6,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.001""]",T1562,T1562.001,Gootloader,219e8a53-054f-49d7-ba94-b0c63083d21e,dda7f652-9e4c-4785-b0e0-25ac92cf7e0a
+Gootloader::7,attack_flow,Gootloader,1,"[""T1047""]","[""T1047""]",T1518,T1518.001,Gootloader,27af526a-99d9-4803-9b2e-f586ac27dcfb,87d5b719-5732-4b5a-9472-26fc6c8730ab
+Gootloader::8,attack_flow,Gootloader,1,"[""T1053""]","[""T1053.005""]",T1218,T1218.011,Gootloader,29237ebb-4255-4531-8a2a-91c9418a9ac6,e8bf52fd-c737-4489-9c7b-018472ed744e
+Gootloader::9,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.006""]",T1039,T1039,Gootloader,2e0949bc-505a-47f2-94b4-2b98bc1756a8,fb419879-57a9-4e9a-bb0f-ae375b316a05
+Gootloader::10,attack_flow,Gootloader,1,"[""T1482""]","[""T1482""]",T1059,T1059.001,Gootloader,2f8ce138-c255-4a43-aad4-eff29ef7968e,219e8a53-054f-49d7-ba94-b0c63083d21e
+Gootloader::11,attack_flow,Gootloader,1,"[""T1584""]","[""T1584""]",T1189,T1189,Gootloader,35f13ec8-9c18-40b4-b76a-0c313a99f525,b8cd023a-4f26-43cc-ac71-38f90533cf2d
+Gootloader::12,attack_flow,Gootloader,1,"[""T1555""]","[""T1555""]",T1021,T1021.001,Gootloader,3766b6f9-bfd9-4553-8dc8-af1235b4a375,a795f05e-bf22-4af4-ab28-b0ad647d9bfb
+Gootloader::13,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1562,T1562.001,Gootloader,5142db39-7197-481b-8815-732e39006d77,d28510ff-ed32-4ff2-be70-133133094f0f
+Gootloader::14,attack_flow,Gootloader,1,"[""T1615""]","[""T1615""]",T1059,T1059.001,Gootloader,5241139e-43c4-4d7c-9dbc-354e9fabf988,219e8a53-054f-49d7-ba94-b0c63083d21e
+Gootloader::15,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.001""]",T1039,T1039,Gootloader,5bced297-0612-40f0-8a91-7d05bd05c283,fb419879-57a9-4e9a-bb0f-ae375b316a05
+Gootloader::16,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.006""]",T1021,T1021.001,Gootloader,64563afb-79af-405b-a335-7d296ea271b7,11de041a-0431-46dd-be9c-94b7bbc80f49
+Gootloader::17,attack_flow,Gootloader,1,"[""T1039""]","[""T1039""]",T1021,T1021.001,Gootloader,7326e71a-4664-4842-9800-f0088335b16e,22c3d3a1-894f-4785-8658-a66987ecb789
+Gootloader::18,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.002""]",T1021,T1021.006,Gootloader,82d244af-b5a4-44dc-93a1-704f401e0a3d,64563afb-79af-405b-a335-7d296ea271b7
+Gootloader::19,attack_flow,Gootloader,1,"[""T1087""]","[""T1087""]",T1059,T1059.001,Gootloader,8702e9e7-8f4d-40b2-9898-29c92efed749,219e8a53-054f-49d7-ba94-b0c63083d21e
+Gootloader::20,attack_flow,Gootloader,1,"[""T1518""]","[""T1518.001""]",T1059,T1059.001,Gootloader,87d5b719-5732-4b5a-9472-26fc6c8730ab,da40e44b-a8d5-42e2-aa73-4be50cbc33a5
+Gootloader::21,attack_flow,Gootloader,1,"[""T1059""]","[""T1059""]",T1047,T1047,Gootloader,87e0d495-959e-47dc-bb2d-3e7e02d281d6,27af526a-99d9-4803-9b2e-f586ac27dcfb
+Gootloader::22,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.007""]",T1112,T1112,Gootloader,89b4e412-c715-4a2f-b04f-1024d7c3b9c6,1aa73c1d-cb93-4a7b-9da9-e4eb45d7b8e8
+Gootloader::23,attack_flow,Gootloader,1,"[""T1046""]","[""T1046""]",T1039,T1039,Gootloader,a5f7f950-d331-4574-9762-7789b4869bd3,7326e71a-4664-4842-9800-f0088335b16e
+Gootloader::24,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1021,T1021.006,Gootloader,a795f05e-bf22-4af4-ab28-b0ad647d9bfb,2e0949bc-505a-47f2-94b4-2b98bc1756a8
+Gootloader::25,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1059,T1059.001,Gootloader,a795f05e-bf22-4af4-ab28-b0ad647d9bfb,5bced297-0612-40f0-8a91-7d05bd05c283
+Gootloader::26,attack_flow,Gootloader,1,"[""T1021""]","[""T1021.001""]",T1562,T1562.001,Gootloader,a795f05e-bf22-4af4-ab28-b0ad647d9bfb,b8382f9f-a15d-411c-b62d-b2f4b4db2dc4
+Gootloader::27,attack_flow,Gootloader,1,"[""T1562""]","[""T1562.001""]",T1021,T1021.001,Gootloader,b6ad86e3-05a1-429c-9bef-b586f4661752,a795f05e-bf22-4af4-ab28-b0ad647d9bfb
+Gootloader::28,attack_flow,Gootloader,1,"[""T1562""]","[""T1562.001""]",T1039,T1039,Gootloader,b8382f9f-a15d-411c-b62d-b2f4b4db2dc4,fb419879-57a9-4e9a-bb0f-ae375b316a05
+Gootloader::29,attack_flow,Gootloader,1,"[""T1189""]","[""T1189""]",T1204,T1204.002,Gootloader,b8cd023a-4f26-43cc-ac71-38f90533cf2d,1cfc90fc-4363-48e3-ae47-c2cb9ea6fb60
+Gootloader::30,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.001""]",T1021,T1021.001,Gootloader,bb12a865-13bc-49b6-b377-c05be7f5d3dd,a795f05e-bf22-4af4-ab28-b0ad647d9bfb
+Gootloader::31,attack_flow,Gootloader,1,"[""T1562""]","[""T1562.001""]",T1021,T1021.002,Gootloader,d28510ff-ed32-4ff2-be70-133133094f0f,82d244af-b5a4-44dc-93a1-704f401e0a3d
+Gootloader::32,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.001""]",T1555,T1555,Gootloader,d3720beb-e659-4c5a-919d-f413794bfd40,fa506eae-7768-45fb-ad44-6a937b8a7064
+Gootloader::33,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.001""]",T1059,T1059.001,Gootloader,da40e44b-a8d5-42e2-aa73-4be50cbc33a5,d3720beb-e659-4c5a-919d-f413794bfd40
+Gootloader::34,attack_flow,Gootloader,1,"[""T1059""]","[""T1059.001""]",T1053,T1053.005,Gootloader,dc97c560-1be2-4a23-96e1-86ae94342358,29237ebb-4255-4531-8a2a-91c9418a9ac6
+Gootloader::35,attack_flow,Gootloader,1,"[""T1562""]","[""T1562.001""]",T1059,T1059,Gootloader,dda7f652-9e4c-4785-b0e0-25ac92cf7e0a,87e0d495-959e-47dc-bb2d-3e7e02d281d6
+Gootloader::36,attack_flow,Gootloader,1,"[""T1218""]","[""T1218.011""]",T1482,T1482,Gootloader,e8bf52fd-c737-4489-9c7b-018472ed744e,2f8ce138-c255-4a43-aad4-eff29ef7968e
+Gootloader::37,attack_flow,Gootloader,1,"[""T1218""]","[""T1218.011""]",T1615,T1615,Gootloader,e8bf52fd-c737-4489-9c7b-018472ed744e,5241139e-43c4-4d7c-9dbc-354e9fabf988
+Gootloader::38,attack_flow,Gootloader,1,"[""T1218""]","[""T1218.011""]",T1087,T1087,Gootloader,e8bf52fd-c737-4489-9c7b-018472ed744e,8702e9e7-8f4d-40b2-9898-29c92efed749
+Gootloader::39,attack_flow,Gootloader,1,"[""T1555""]","[""T1555""]",T1021,T1021.006,Gootloader,fa506eae-7768-45fb-ad44-6a937b8a7064,18dc9f3a-7634-42ac-9bdc-9663d4b00727
+Gootloader::40,attack_flow,Gootloader,1,"[""T1039""]","[""T1039""]",T1046,T1046,Gootloader,fb419879-57a9-4e9a-bb0f-ae375b316a05,a5f7f950-d331-4574-9762-7789b4869bd3
+Hancitor DLL::0,attack_flow,Hancitor DLL,1,"[""T1566""]","[""T1566.002""]",T1204,T1204.002,Hancitor DLL,0fc122a5-7f3b-4a0d-81b4-f841e1d01e1c,1d851bc1-c568-463d-8e5e-270e997a65bd
+Hancitor DLL::1,attack_flow,Hancitor DLL,1,"[""T1027""]","[""T1027.004""]",T1105,T1105,Hancitor DLL,15d89326-a900-4881-9811-5881bd05fb1d,ba5d97f4-f1d8-4a42-8634-a43483c57389
+Hancitor DLL::2,attack_flow,Hancitor DLL,1,"[""T1016""]","[""T1016.001""]",T1105,T1105,Hancitor DLL,1720c263-4ec3-4c13-b637-10336d59fcea,d53ce876-ead2-4d68-a864-e340bdc1aa31
+Hancitor DLL::3,attack_flow,Hancitor DLL,1,"[""T1204""]","[""T1204.002""]",T1059,T1059.005,Hancitor DLL,1d851bc1-c568-463d-8e5e-270e997a65bd,7f226db5-d7a2-4af5-aa98-b2bc3bac699a
+Hancitor DLL::4,attack_flow,Hancitor DLL,1,"[""T1055""]","[""T1055""]",T1016,T1016.001,Hancitor DLL,264c553e-266e-4143-983b-35bee0e23a63,1720c263-4ec3-4c13-b637-10336d59fcea
+Hancitor DLL::5,attack_flow,Hancitor DLL,1,"[""T1055""]","[""T1055""]",T1046,T1046,Hancitor DLL,264c553e-266e-4143-983b-35bee0e23a63,625c956c-e084-488f-a592-fdee309b883a
+Hancitor DLL::6,attack_flow,Hancitor DLL,1,"[""T1055""]","[""T1055""]",T1087,T1087.001,Hancitor DLL,264c553e-266e-4143-983b-35bee0e23a63,f6ff7411-18b2-412f-ae4b-c72f8b6def69
+Hancitor DLL::7,attack_flow,Hancitor DLL,1,"[""T1550""]","[""T1550.002""]",T1105,T1105,Hancitor DLL,42530d17-73ed-4f57-86f4-de1b3f85eae1,75aac24f-ecf5-4981-9349-2e1d9c9eb38a
+Hancitor DLL::8,attack_flow,Hancitor DLL,1,"[""T1212""]","[""T1212""]",T1550,T1550.002,Hancitor DLL,5c8d3aac-79ac-4ef8-81dd-7046b5355e9c,42530d17-73ed-4f57-86f4-de1b3f85eae1
+Hancitor DLL::9,attack_flow,Hancitor DLL,1,"[""T1105""]","[""T1105""]",T1055,T1055,Hancitor DLL,5d55cc3d-c059-4937-a4c6-c1b5a48c3fc1,264c553e-266e-4143-983b-35bee0e23a63
+Hancitor DLL::10,attack_flow,Hancitor DLL,1,"[""T1497""]","[""T1497""]",T1218,T1218.011,Hancitor DLL,615f4282-5407-44e4-b0e1-b68198baadd3,6c4ed453-8eec-4b2b-9ff0-5b45edb1a804
+Hancitor DLL::11,attack_flow,Hancitor DLL,1,"[""T1046""]","[""T1046""]",T1105,T1105,Hancitor DLL,625c956c-e084-488f-a592-fdee309b883a,d53ce876-ead2-4d68-a864-e340bdc1aa31
+Hancitor DLL::12,attack_flow,Hancitor DLL,1,"[""T1218""]","[""T1218.011""]",T1027,T1027,Hancitor DLL,6c4ed453-8eec-4b2b-9ff0-5b45edb1a804,8c95b74c-07b8-4277-989f-ff499ff32ae4
+Hancitor DLL::13,attack_flow,Hancitor DLL,1,"[""T1105""]","[""T1105""]",T1027,T1027.004,Hancitor DLL,75818fd9-2ca6-43b1-9dd7-08be16fec19c,15d89326-a900-4881-9811-5881bd05fb1d
+Hancitor DLL::14,attack_flow,Hancitor DLL,1,"[""T1105""]","[""T1105""]",T1059,T1059.001,Hancitor DLL,75aac24f-ecf5-4981-9349-2e1d9c9eb38a,858fd8b8-6914-4c92-9a7d-66277e7224e4
+Hancitor DLL::15,attack_flow,Hancitor DLL,1,"[""T1059""]","[""T1059.005""]",T1218,T1218.011,Hancitor DLL,7f226db5-d7a2-4af5-aa98-b2bc3bac699a,8ec450fa-b704-40d2-8560-94d5a8fd677a
+Hancitor DLL::16,attack_flow,Hancitor DLL,1,"[""T1059""]","[""T1059.001""]",T1595,T1595.001,Hancitor DLL,858fd8b8-6914-4c92-9a7d-66277e7224e4,c0a8d30d-8908-49ea-be12-61e7dc39c9a8
+Hancitor DLL::17,attack_flow,Hancitor DLL,1,"[""T1027""]","[""T1027""]",T1059,T1059.001,Hancitor DLL,8c95b74c-07b8-4277-989f-ff499ff32ae4,9c595315-eb12-4643-85be-33986d8c031b
+Hancitor DLL::18,attack_flow,Hancitor DLL,1,"[""T1218""]","[""T1218.011""]",T1105,T1105,Hancitor DLL,8ec450fa-b704-40d2-8560-94d5a8fd677a,5d55cc3d-c059-4937-a4c6-c1b5a48c3fc1
+Hancitor DLL::19,attack_flow,Hancitor DLL,1,"[""T1059""]","[""T1059.001""]",T1105,T1105,Hancitor DLL,9c595315-eb12-4643-85be-33986d8c031b,75818fd9-2ca6-43b1-9dd7-08be16fec19c
+Hancitor DLL::20,attack_flow,Hancitor DLL,1,"[""T1105""]","[""T1105""]",T1212,T1212,Hancitor DLL,ba5d97f4-f1d8-4a42-8634-a43483c57389,5c8d3aac-79ac-4ef8-81dd-7046b5355e9c
+Hancitor DLL::21,attack_flow,Hancitor DLL,1,"[""T1105""]","[""T1105""]",T1497,T1497,Hancitor DLL,d53ce876-ead2-4d68-a864-e340bdc1aa31,615f4282-5407-44e4-b0e1-b68198baadd3
+Hancitor DLL::22,attack_flow,Hancitor DLL,1,"[""T1087""]","[""T1087.001""]",T1105,T1105,Hancitor DLL,f6ff7411-18b2-412f-ae4b-c72f8b6def69,d53ce876-ead2-4d68-a864-e340bdc1aa31
+Ivanti Vulnerabilities::0,attack_flow,Ivanti Vulnerabilities,1,"[""T1021""]","[""T1021.004""]",T1505,T1505.003,Ivanti Vulnerabilities,0eb2e6b7-88a8-4462-a3d9-9c814bbc1ade,58ea1fef-ef2d-445c-b21f-19d62f745044
+Ivanti Vulnerabilities::1,attack_flow,Ivanti Vulnerabilities,1,"[""T1021""]","[""T1021.001""]",T1552,T1552.002,Ivanti Vulnerabilities,12d166be-c90d-4228-8b93-70ba5426da87,088f16ed-66d0-4b4f-8702-bae94670f96f
+Ivanti Vulnerabilities::2,attack_flow,Ivanti Vulnerabilities,1,"[""T1021""]","[""T1021.001""]",T1003,T1003.003,Ivanti Vulnerabilities,12d166be-c90d-4228-8b93-70ba5426da87,55140b59-4167-4410-9269-12be8042d591
+Ivanti Vulnerabilities::3,attack_flow,Ivanti Vulnerabilities,1,"[""T1021""]","[""T1021.001""]",T1003,T1003.001,Ivanti Vulnerabilities,12d166be-c90d-4228-8b93-70ba5426da87,896b159a-25f0-42a2-acd9-bd1df86da91b
+Ivanti Vulnerabilities::4,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1554,T1554,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,06fe9325-edc8-4170-9456-dc8e764d0ba0
+Ivanti Vulnerabilities::5,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1614,T1614,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,3b7d1c0f-debf-4f2e-80dd-63967fe9d88f
+Ivanti Vulnerabilities::6,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1554,T1554,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,74055752-a732-4004-a24c-ce2f8c5660dd
+Ivanti Vulnerabilities::7,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1592,T1592.004,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,7dd03660-da9b-4ca1-9215-c0b62e19b5ba
+Ivanti Vulnerabilities::8,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1554,T1554,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,9215e2af-7d43-44d2-92dc-bffe18cd376d
+Ivanti Vulnerabilities::9,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1562,T1562,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,aed98895-3781-4198-a103-93cebf5cb013
+Ivanti Vulnerabilities::10,attack_flow,Ivanti Vulnerabilities,1,"[""T1190""]","[""T1190""]",T1070,T1070.002,Ivanti Vulnerabilities,31a53687-0695-4e56-84a2-926c1d2d1027,f3ecd4a2-a40b-41ee-bb3d-8a47724a10e4
+Ivanti Vulnerabilities::11,attack_flow,Ivanti Vulnerabilities,1,"[""T1056""]","[""T1056.003""]",T1021,T1021.004,Ivanti Vulnerabilities,33d36b98-79ec-4e83-9fb6-ff6f57ccef7e,0eb2e6b7-88a8-4462-a3d9-9c814bbc1ade
+Ivanti Vulnerabilities::12,attack_flow,Ivanti Vulnerabilities,1,"[""T1056""]","[""T1056.003""]",T1021,T1021.001,Ivanti Vulnerabilities,33d36b98-79ec-4e83-9fb6-ff6f57ccef7e,12d166be-c90d-4228-8b93-70ba5426da87
+Ivanti Vulnerabilities::13,attack_flow,Ivanti Vulnerabilities,1,"[""T1056""]","[""T1056.003""]",T1021,T1021.002,Ivanti Vulnerabilities,33d36b98-79ec-4e83-9fb6-ff6f57ccef7e,7e2ad047-22c2-4462-9988-dc10e83bebf0
+Ivanti Vulnerabilities::14,attack_flow,Ivanti Vulnerabilities,1,"[""T1056""]","[""T1056.003""]",T1090,T1090.001,Ivanti Vulnerabilities,33d36b98-79ec-4e83-9fb6-ff6f57ccef7e,a5077335-57c2-4bf4-9226-205782a6cb7e
+Ivanti Vulnerabilities::15,attack_flow,Ivanti Vulnerabilities,1,"[""T1003""]","[""T1003.003""]",T1560,T1560.001,Ivanti Vulnerabilities,55140b59-4167-4410-9269-12be8042d591,9bd0a0d1-d4fe-47b5-931b-3158c7878bff
+Ivanti Vulnerabilities::16,attack_flow,Ivanti Vulnerabilities,1,"[""T1003""]","[""T1003.001""]",T1021,T1021.001,Ivanti Vulnerabilities,896b159a-25f0-42a2-acd9-bd1df86da91b,12d166be-c90d-4228-8b93-70ba5426da87
+Ivanti Vulnerabilities::17,attack_flow,Ivanti Vulnerabilities,1,"[""T1554""]","[""T1554""]",T1056,T1056.003,Ivanti Vulnerabilities,9215e2af-7d43-44d2-92dc-bffe18cd376d,33d36b98-79ec-4e83-9fb6-ff6f57ccef7e
+JP Morgan Breach::0,attack_flow,JP Morgan Breach,1,"[""T1090""]","[""T1090.003""]",T1090,T1090.002,JP Morgan Breach,15f080d7-77c0-4583-ba2c-a866de1f2d9a,4219a30c-6b2c-48a0-98f6-d864448210b9
+JP Morgan Breach::1,attack_flow,JP Morgan Breach,1,"[""T1056""]","[""T1056""]",T1030,T1030,JP Morgan Breach,22366a07-5595-46c6-a246-8713fca3724e,72910b74-d081-4b61-a66b-b0affd2d783d
+JP Morgan Breach::2,attack_flow,JP Morgan Breach,1,"[""T1090""]","[""T1090.002""]",T1070,T1070,JP Morgan Breach,4219a30c-6b2c-48a0-98f6-d864448210b9,7a4cae41-8364-43cf-adb1-5a8f2376c833
+JP Morgan Breach::3,attack_flow,JP Morgan Breach,1,"[""T1587""]","[""T1587.001""]",T1056,T1056,JP Morgan Breach,436b5d27-34fc-45af-a0c4-6c5ac071dbf4,22366a07-5595-46c6-a246-8713fca3724e
+JP Morgan Breach::4,attack_flow,JP Morgan Breach,1,"[""T1030""]","[""T1030""]",T1090,T1090.003,JP Morgan Breach,72910b74-d081-4b61-a66b-b0affd2d783d,15f080d7-77c0-4583-ba2c-a866de1f2d9a
+JP Morgan Breach::5,attack_flow,JP Morgan Breach,1,"[""T1070""]","[""T1070""]",T1190,T1190,JP Morgan Breach,7a4cae41-8364-43cf-adb1-5a8f2376c833,7d4a94af-cd71-42fd-8aa1-c27322d79997
+JP Morgan Breach::6,attack_flow,JP Morgan Breach,1,"[""T1056""]","[""T1056""]",T1190,T1190,JP Morgan Breach,b47629f7-445c-4605-a0a3-126bfad7d133,f6428576-e9f7-4702-9914-a4fa4c9793d7
+JP Morgan Breach::7,attack_flow,JP Morgan Breach,1,"[""T1566""]","[""T1566""]",T1056,T1056,JP Morgan Breach,c4b5213a-588e-4f70-bb81-731b875ae7d8,b47629f7-445c-4605-a0a3-126bfad7d133
+JP Morgan Breach::8,attack_flow,JP Morgan Breach,1,"[""T1068""]","[""T1068""]",T1056,T1056,JP Morgan Breach,ec2cc0ea-2b44-40ef-bc5a-53ccc45ec8b1,22366a07-5595-46c6-a246-8713fca3724e
+JP Morgan Breach::9,attack_flow,JP Morgan Breach,1,"[""T1190""]","[""T1190""]",T1587,T1587.001,JP Morgan Breach,f6428576-e9f7-4702-9914-a4fa4c9793d7,436b5d27-34fc-45af-a0c4-6c5ac071dbf4
+JP Morgan Breach::10,attack_flow,JP Morgan Breach,1,"[""T1190""]","[""T1190""]",T1068,T1068,JP Morgan Breach,f6428576-e9f7-4702-9914-a4fa4c9793d7,ec2cc0ea-2b44-40ef-bc5a-53ccc45ec8b1
+Maastricht University Ransomware::0,attack_flow,Maastricht University Ransomware,1,"[""T1562""]","[""T1562.001""]",T1562,T1562.001,Maastricht University Ransomware,1ef2bbee-79c3-4b92-b0c8-acc139984154,75bcb6d2-a7b0-4985-81f2-8f1335f8aa12
+Maastricht University Ransomware::1,attack_flow,Maastricht University Ransomware,1,"[""T1204""]","[""T1204.002""]",T1095,T1095,Maastricht University Ransomware,47ffc519-7b5c-419d-8b4d-d738abb1ef1f,337ea15a-8eff-4e01-91e9-13b4aa809986
+Maastricht University Ransomware::2,attack_flow,Maastricht University Ransomware,1,"[""T1204""]","[""T1204.002""]",T1059,T1059.004,Maastricht University Ransomware,47ffc519-7b5c-419d-8b4d-d738abb1ef1f,8b19cc76-f722-4b26-8100-5f96c5437ee8
+Maastricht University Ransomware::3,attack_flow,Maastricht University Ransomware,1,"[""T1204""]","[""T1204.002""]",T1547,T1547.001,Maastricht University Ransomware,47ffc519-7b5c-419d-8b4d-d738abb1ef1f,b2f0f8a2-7563-46ea-90fe-924b943e5374
+Maastricht University Ransomware::4,attack_flow,Maastricht University Ransomware,1,"[""T1105""]","[""T1105""]",T1562,T1562.001,Maastricht University Ransomware,5d119bee-b5dc-4ace-b7d9-6b69d7bd1b76,1ef2bbee-79c3-4b92-b0c8-acc139984154
+Maastricht University Ransomware::5,attack_flow,Maastricht University Ransomware,1,"[""T1105""]","[""T1105""]",T1562,T1562.001,Maastricht University Ransomware,5d119bee-b5dc-4ace-b7d9-6b69d7bd1b76,75bcb6d2-a7b0-4985-81f2-8f1335f8aa12
+Maastricht University Ransomware::6,attack_flow,Maastricht University Ransomware,1,"[""T1059""]","[""T1059""]",T1018,T1018,Maastricht University Ransomware,694536a5-19cc-4b18-b8f4-17da494e9b3d,72b25a1c-bd74-4d2b-acce-774967a3d6d3
+Maastricht University Ransomware::7,attack_flow,Maastricht University Ransomware,1,"[""T1059""]","[""T1059""]",T1046,T1046,Maastricht University Ransomware,694536a5-19cc-4b18-b8f4-17da494e9b3d,de70e8df-2907-4885-b3c2-c13dbe144030
+Maastricht University Ransomware::8,attack_flow,Maastricht University Ransomware,1,"[""T1059""]","[""T1059""]",T1057,T1057,Maastricht University Ransomware,694536a5-19cc-4b18-b8f4-17da494e9b3d,e67187bf-184c-4c98-9aff-9c53cd08506b
+Maastricht University Ransomware::9,attack_flow,Maastricht University Ransomware,1,"[""T1018""]","[""T1018""]",T1105,T1105,Maastricht University Ransomware,72b25a1c-bd74-4d2b-acce-774967a3d6d3,5d119bee-b5dc-4ace-b7d9-6b69d7bd1b76
+Maastricht University Ransomware::10,attack_flow,Maastricht University Ransomware,1,"[""T1562""]","[""T1562.001""]",T1486,T1486,Maastricht University Ransomware,75bcb6d2-a7b0-4985-81f2-8f1335f8aa12,24aad6b2-b3ed-4a91-912c-aecc31d43dab
+Maastricht University Ransomware::11,attack_flow,Maastricht University Ransomware,1,"[""T1059""]","[""T1059.004""]",T1018,T1018,Maastricht University Ransomware,8b19cc76-f722-4b26-8100-5f96c5437ee8,0db59e5b-1282-4709-ab0f-ae39ad624351
+Maastricht University Ransomware::12,attack_flow,Maastricht University Ransomware,1,"[""T1059""]","[""T1059.004""]",T1595,T1595.002,Maastricht University Ransomware,8b19cc76-f722-4b26-8100-5f96c5437ee8,58f2e28f-0e34-49dc-af49-ca0906474990
+Maastricht University Ransomware::13,attack_flow,Maastricht University Ransomware,1,"[""T1059""]","[""T1059.004""]",T1210,T1210,Maastricht University Ransomware,8b19cc76-f722-4b26-8100-5f96c5437ee8,986b710d-19da-4022-86fb-27df6ee27515
+Maastricht University Ransomware::14,attack_flow,Maastricht University Ransomware,1,"[""T1210""]","[""T1210""]",T1068,T1068,Maastricht University Ransomware,986b710d-19da-4022-86fb-27df6ee27515,f5e02545-48d0-48ed-8452-558605dc32be
+Maastricht University Ransomware::15,attack_flow,Maastricht University Ransomware,1,"[""T1003""]","[""T1003.001""]",T1059,T1059,Maastricht University Ransomware,b2302d5c-7e98-4bf2-857b-609b68bc30a7,694536a5-19cc-4b18-b8f4-17da494e9b3d
+Maastricht University Ransomware::16,attack_flow,Maastricht University Ransomware,1,"[""T1046""]","[""T1046""]",T1105,T1105,Maastricht University Ransomware,de70e8df-2907-4885-b3c2-c13dbe144030,5d119bee-b5dc-4ace-b7d9-6b69d7bd1b76
+Maastricht University Ransomware::17,attack_flow,Maastricht University Ransomware,1,"[""T1057""]","[""T1057""]",T1105,T1105,Maastricht University Ransomware,e67187bf-184c-4c98-9aff-9c53cd08506b,5d119bee-b5dc-4ace-b7d9-6b69d7bd1b76
+Maastricht University Ransomware::18,attack_flow,Maastricht University Ransomware,1,"[""T1566""]","[""T1566.001""]",T1204,T1204.002,Maastricht University Ransomware,e846ce14-d8d4-4d87-aa1c-4581a52e0642,47ffc519-7b5c-419d-8b4d-d738abb1ef1f
+Maastricht University Ransomware::19,attack_flow,Maastricht University Ransomware,1,"[""T1068""]","[""T1068""]",T1059,T1059.004,Maastricht University Ransomware,f5e02545-48d0-48ed-8452-558605dc32be,8b19cc76-f722-4b26-8100-5f96c5437ee8
+Maastricht University Ransomware::20,attack_flow,Maastricht University Ransomware,1,"[""T1068""]","[""T1068""]",T1003,T1003.001,Maastricht University Ransomware,f5e02545-48d0-48ed-8452-558605dc32be,b2302d5c-7e98-4bf2-857b-609b68bc30a7
+Mac Malware Steals Crypto::0,attack_flow,Mac Malware Steals Crypto,1,"[""T1105""]","[""T1105""]",T1059,T1059.006,Mac Malware Steals Crypto,5be1aafd-dc2a-4a68-aab0-745bd70b7427,f07bd6fe-b4cb-4d42-89f2-8235297b880a
+Mac Malware Steals Crypto::1,attack_flow,Mac Malware Steals Crypto,1,"[""T1211""]","[""T1211""]",T1105,T1105,Mac Malware Steals Crypto,77409eed-e668-4a19-bd85-9c55b48bc59d,5be1aafd-dc2a-4a68-aab0-745bd70b7427
+Mac Malware Steals Crypto::2,attack_flow,Mac Malware Steals Crypto,1,"[""T1059""]","[""T1059.004""]",T1105,T1105,Mac Malware Steals Crypto,85e081c4-ab67-472b-b3a2-ff359bc464e2,5be1aafd-dc2a-4a68-aab0-745bd70b7427
+Mac Malware Steals Crypto::3,attack_flow,Mac Malware Steals Crypto,1,"[""T1059""]","[""T1059.006""]",T1211,T1211,Mac Malware Steals Crypto,9e267c9d-ab5c-446f-b1e1-b57fe510ce86,77409eed-e668-4a19-bd85-9c55b48bc59d
+Mac Malware Steals Crypto::4,attack_flow,Mac Malware Steals Crypto,1,"[""T1059""]","[""T1059.006""]",T1518,T1518.001,Mac Malware Steals Crypto,f07bd6fe-b4cb-4d42-89f2-8235297b880a,afbd6c13-5d78-4812-aeb5-523ae08c3053
+Marriott Breach::0,attack_flow,Marriott Breach,1,"[""T1566""]","[""T1566""]",T1219,T1219,Marriott Breach,2bf2f95c-5d35-4c50-850a-f81c31470ca9,9f740818-914e-44cc-8914-5c3cefc0e1d7
+Marriott Breach::1,attack_flow,Marriott Breach,1,"[""T1566""]","[""T1566""]",T1555,T1555,Marriott Breach,2bf2f95c-5d35-4c50-850a-f81c31470ca9,ccc7e534-0ab7-4301-b666-9f86f8985863
+Marriott Breach::2,attack_flow,Marriott Breach,1,"[""T1001""]","[""T1001""]",T1070,T1070.004,Marriott Breach,65436923-b069-45f9-af06-9e67998aab8b,0ed7f887-8cc8-4339-b91b-f7ace1f67ad7
+Marriott Breach::3,attack_flow,Marriott Breach,1,"[""T1590""]","[""T1590.004""]",T1001,T1001,Marriott Breach,704d2b3a-4d25-41bd-9461-260e960840dc,65436923-b069-45f9-af06-9e67998aab8b
+Marriott Breach::4,attack_flow,Marriott Breach,1,"[""T1590""]","[""T1590.004""]",T1560,T1560,Marriott Breach,704d2b3a-4d25-41bd-9461-260e960840dc,cb29bb1b-eee2-4457-80b7-aee3c3182517
+Marriott Breach::5,attack_flow,Marriott Breach,1,"[""T1219""]","[""T1219""]",T1590,T1590.004,Marriott Breach,9f740818-914e-44cc-8914-5c3cefc0e1d7,704d2b3a-4d25-41bd-9461-260e960840dc
+Marriott Breach::6,attack_flow,Marriott Breach,1,"[""T1560""]","[""T1560""]",T1070,T1070.004,Marriott Breach,cb29bb1b-eee2-4457-80b7-aee3c3182517,0ed7f887-8cc8-4339-b91b-f7ace1f67ad7
+Marriott Breach::7,attack_flow,Marriott Breach,1,"[""T1555""]","[""T1555""]",T1590,T1590.004,Marriott Breach,ccc7e534-0ab7-4301-b666-9f86f8985863,704d2b3a-4d25-41bd-9461-260e960840dc
+MITRE NERVE::0,attack_flow,MITRE NERVE,1,"[""T1563""]","[""T1563.002""]",T1078,T1078,MITRE NERVE,04724f7f-de70-46e0-860c-fb1165ab5b36,926e83ad-ed25-4e6b-a674-69c057928e7f
+MITRE NERVE::1,attack_flow,MITRE NERVE,1,"[""T1037""]","[""T1037""]",T1071,T1071.001,MITRE NERVE,07a77101-d209-45b2-8ba5-fbabe7ab8b78,b7bdd24d-16d7-4c3f-8ac9-08e76a985a85
+MITRE NERVE::2,attack_flow,MITRE NERVE,1,"[""T1190""]","[""T1190""]",T1505,T1505.003,MITRE NERVE,3211abb9-dbfa-46db-8d42-58273efd5359,77d4f01d-2333-4147-a841-45754ddf39da
+MITRE NERVE::3,attack_flow,MITRE NERVE,1,"[""T1037""]","[""T1037.004""]",T1071,T1071.001,MITRE NERVE,38e9b5ff-0473-4c7a-aee9-745e9c887638,b7bdd24d-16d7-4c3f-8ac9-08e76a985a85
+MITRE NERVE::4,attack_flow,MITRE NERVE,1,"[""T1083""]","[""T1083""]",T1005,T1005,MITRE NERVE,3b80bacf-acb4-4660-9483-0094e9e14243,ddee5de8-707d-4298-be81-3280d2000ce8
+MITRE NERVE::5,attack_flow,MITRE NERVE,1,"[""T1074""]","[""T1074""]",T1048,T1048,MITRE NERVE,645367bc-8631-4e8f-bb58-76b415410f35,9022b397-4b68-4a55-a74e-6dbd1a95a9ee
+MITRE NERVE::6,attack_flow,MITRE NERVE,1,"[""T1505""]","[""T1505.003""]",T1563,T1563.002,MITRE NERVE,77d4f01d-2333-4147-a841-45754ddf39da,04724f7f-de70-46e0-860c-fb1165ab5b36
+MITRE NERVE::7,attack_flow,MITRE NERVE,1,"[""T1505""]","[""T1505.003""]",T1083,T1083,MITRE NERVE,77d4f01d-2333-4147-a841-45754ddf39da,3b80bacf-acb4-4660-9483-0094e9e14243
+MITRE NERVE::8,attack_flow,MITRE NERVE,1,"[""T1505""]","[""T1505.003""]",T1573,T1573.001,MITRE NERVE,77d4f01d-2333-4147-a841-45754ddf39da,64f75253-3615-435f-b081-d31726aa5717
+MITRE NERVE::9,attack_flow,MITRE NERVE,1,"[""T1505""]","[""T1505.003""]",T1036,T1036.008,MITRE NERVE,77d4f01d-2333-4147-a841-45754ddf39da,a5f63fa5-9562-4d1e-888e-59839a82c01e
+MITRE NERVE::10,attack_flow,MITRE NERVE,1,"[""T1505""]","[""T1505.003""]",T1074,T1074,MITRE NERVE,77d4f01d-2333-4147-a841-45754ddf39da,a89d0430-e111-4717-aec8-5a15d0430f6c
+MITRE NERVE::11,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1037,T1037,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,07a77101-d209-45b2-8ba5-fbabe7ab8b78
+MITRE NERVE::12,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1037,T1037.004,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,38e9b5ff-0473-4c7a-aee9-745e9c887638
+MITRE NERVE::13,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1564,T1564.006,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,3bb64c8b-9466-4777-ad14-e30a2317e0cf
+MITRE NERVE::14,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1021,T1021.001,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,6c756d93-2f80-4a98-95a6-fb6efe5fe564
+MITRE NERVE::15,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1083,T1083,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,853f83d4-e8d1-4967-bc6c-f6b6f22237a7
+MITRE NERVE::16,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1059,T1059.006,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,d6b7833a-ffd5-404a-b756-5861202ee8c3
+MITRE NERVE::17,attack_flow,MITRE NERVE,1,"[""T1078""]","[""T1078""]",T1021,T1021.001,MITRE NERVE,926e83ad-ed25-4e6b-a674-69c057928e7f,f5d7cebf-6d82-497b-9961-a508d0c2b7b4
+MITRE NERVE::18,attack_flow,MITRE NERVE,1,"[""T1005""]","[""T1005""]",T1041,T1041,MITRE NERVE,ca65fb33-f9cc-4f6e-80bb-25f85a545934,418c0c2f-f15f-4d3d-8cd9-4db7728b50c5
+MITRE NERVE::19,attack_flow,MITRE NERVE,1,"[""T1005""]","[""T1005""]",T1074,T1074,MITRE NERVE,ddee5de8-707d-4298-be81-3280d2000ce8,645367bc-8631-4e8f-bb58-76b415410f35
+MITRE NERVE::20,attack_flow,MITRE NERVE,1,"[""T1119""]","[""T1119""]",T1005,T1005,MITRE NERVE,f0f30a1f-984d-498c-aaba-98798077a478,ca65fb33-f9cc-4f6e-80bb-25f85a545934
+MITRE NERVE::21,attack_flow,MITRE NERVE,1,"[""T1021""]","[""T1021.001""]",T1217,T1217,MITRE NERVE,f5d7cebf-6d82-497b-9961-a508d0c2b7b4,4a9e529b-e7f9-4c0f-a7a0-9e932fb05869
+MITRE NERVE::22,attack_flow,MITRE NERVE,1,"[""T1021""]","[""T1021.001""]",T1135,T1135,MITRE NERVE,f5d7cebf-6d82-497b-9961-a508d0c2b7b4,b3ffb250-20b7-41e5-aa37-15e8118f2d92
+MITRE NERVE::23,attack_flow,MITRE NERVE,1,"[""T1021""]","[""T1021.001""]",T1119,T1119,MITRE NERVE,f5d7cebf-6d82-497b-9961-a508d0c2b7b4,f0f30a1f-984d-498c-aaba-98798077a478
+Muddy Water::0,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1059,T1059.001,Muddy Water,096fea1d-4466-4468-970f-81a7e660ba87,c1c8d659-2a90-415a-a671-5ee7a3e1510e
+Muddy Water::1,attack_flow,Muddy Water,1,"[""T1204""]","[""T1204.001""]",T1105,T1105,Muddy Water,0d651a67-cc50-45b3-a023-a6ad0b4486d5,68b96b87-8744-49dd-9028-437cea0aa4ef
+Muddy Water::2,attack_flow,Muddy Water,1,"[""T1204""]","[""T1204.002""]",T1059,T1059.005,Muddy Water,1695cced-1223-43ce-87b5-4c0ed7b1a4ad,f7334146-26ec-456d-98aa-26d3cd1e2721
+Muddy Water::3,attack_flow,Muddy Water,1,"[""T1140""]","[""T1140""]",T1105,T1105,Muddy Water,1b447a8a-5fb1-4636-a84e-958b7bb1d801,a3b163ef-2b16-4865-a400-044b5c659bfc
+Muddy Water::4,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1547,T1547.001,Muddy Water,28dfeb21-682b-455f-8306-c9f955ef0be4,95d7e5a1-11fe-4f77-8839-87edb7454ff1
+Muddy Water::5,attack_flow,Muddy Water,1,"[""T1547""]","[""T1547.001""]",T1218,T1218,Muddy Water,2bf75e39-3cc3-4ee9-aa3f-35700a2da4ba,bbbecdfe-0462-4dbe-b07a-d0c60d4a651e
+Muddy Water::6,attack_flow,Muddy Water,1,"[""T1547""]","[""T1547.001""]",T1059,T1059.005,Muddy Water,2bf75e39-3cc3-4ee9-aa3f-35700a2da4ba,f867b082-394a-4951-8fcb-70d8e082d42f
+Muddy Water::7,attack_flow,Muddy Water,1,"[""T1566""]","[""T1566.001""]",T1204,T1204.001,Muddy Water,2cdde459-21d7-424b-8cfe-676dee071b83,4e3f6133-4b02-47af-a50b-483944466072
+Muddy Water::8,attack_flow,Muddy Water,1,"[""T1204""]","[""T1204.001""]",T1204,T1204.002,Muddy Water,4e3f6133-4b02-47af-a50b-483944466072,1695cced-1223-43ce-87b5-4c0ed7b1a4ad
+Muddy Water::9,attack_flow,Muddy Water,1,"[""T1036""]","[""T1036""]",T1105,T1105,Muddy Water,6006c648-faa9-4e95-b8ec-1f70ccac597a,28dfeb21-682b-455f-8306-c9f955ef0be4
+Muddy Water::10,attack_flow,Muddy Water,1,"[""T1036""]","[""T1036""]",T1105,T1105,Muddy Water,6006c648-faa9-4e95-b8ec-1f70ccac597a,9f5f5085-1c3c-474a-a23c-85c51b8b547c
+Muddy Water::11,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1036,T1036,Muddy Water,68b96b87-8744-49dd-9028-437cea0aa4ef,6006c648-faa9-4e95-b8ec-1f70ccac597a
+Muddy Water::12,attack_flow,Muddy Water,1,"[""T1059""]","[""T1059.001""]",T1105,T1105,Muddy Water,80364c38-1930-40ab-a6aa-7d01bc8a11ae,096fea1d-4466-4468-970f-81a7e660ba87
+Muddy Water::13,attack_flow,Muddy Water,1,"[""T1547""]","[""T1547.001""]",T1140,T1140,Muddy Water,95d7e5a1-11fe-4f77-8839-87edb7454ff1,1b447a8a-5fb1-4636-a84e-958b7bb1d801
+Muddy Water::14,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1547,T1547.001,Muddy Water,9f5f5085-1c3c-474a-a23c-85c51b8b547c,95d7e5a1-11fe-4f77-8839-87edb7454ff1
+Muddy Water::15,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1059,T1059.001,Muddy Water,a3b163ef-2b16-4865-a400-044b5c659bfc,b7205f44-3021-4755-961b-0fd7ae6604c5
+Muddy Water::16,attack_flow,Muddy Water,1,"[""T1059""]","[""T1059.001""]",T1486,T1486,Muddy Water,c1c8d659-2a90-415a-a671-5ee7a3e1510e,4e9f73e2-7198-490a-87c9-2b45cb305f48
+Muddy Water::17,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1059,T1059.001,Muddy Water,e057f8fb-042b-48cb-a44e-c8993c64186b,80364c38-1930-40ab-a6aa-7d01bc8a11ae
+Muddy Water::18,attack_flow,Muddy Water,1,"[""T1105""]","[""T1105""]",T1059,T1059.005,Muddy Water,e057f8fb-042b-48cb-a44e-c8993c64186b,f867b082-394a-4951-8fcb-70d8e082d42f
+Muddy Water::19,attack_flow,Muddy Water,1,"[""T1566""]","[""T1566.001""]",T1204,T1204.001,Muddy Water,eba614a5-5809-4986-b216-1aa171df0dec,0d651a67-cc50-45b3-a023-a6ad0b4486d5
+Muddy Water::20,attack_flow,Muddy Water,1,"[""T1059""]","[""T1059.005""]",T1547,T1547.001,Muddy Water,f7334146-26ec-456d-98aa-26d3cd1e2721,2bf75e39-3cc3-4ee9-aa3f-35700a2da4ba
+Muddy Water::21,attack_flow,Muddy Water,1,"[""T1059""]","[""T1059.005""]",T1105,T1105,Muddy Water,f7334146-26ec-456d-98aa-26d3cd1e2721,e057f8fb-042b-48cb-a44e-c8993c64186b
+Muddy Water::22,attack_flow,Muddy Water,1,"[""T1059""]","[""T1059.005""]",T1059,T1059.001,Muddy Water,f867b082-394a-4951-8fcb-70d8e082d42f,80364c38-1930-40ab-a6aa-7d01bc8a11ae
+NotPetya::0,attack_flow,NotPetya,1,"[""T1195""]","[""T1195""]",T1036,T1036,NotPetya,0cfbada8-ad55-4b75-a4c6-acd5e34a00d0,698fd2b3-f021-4f74-8141-d48ba11ce09c
+NotPetya::1,attack_flow,NotPetya,1,"[""T1218""]","[""T1218.011""]",T1561,T1561.002,NotPetya,146b0928-071a-43e8-b115-5ab2c8934fe0,088db13a-256f-46ab-9024-a83859f0065b
+NotPetya::2,attack_flow,NotPetya,1,"[""T1218""]","[""T1218.011""]",T1542,T1542.003,NotPetya,146b0928-071a-43e8-b115-5ab2c8934fe0,be8a7164-7483-4c1a-8e07-ae64b5cb2be7
+NotPetya::3,attack_flow,NotPetya,1,"[""T1003""]","[""T1003.001""]",T1016,T1016,NotPetya,2010cb6c-cca8-45a4-99ca-ed2a2ace8d45,e72f07e9-2191-4805-9f97-bdd7624b3827
+NotPetya::5,attack_flow,NotPetya,1,"[""T1003""]","[""T1003.001""]",T1021,T1021.002,NotPetya,2010cb6c-cca8-45a4-99ca-ed2a2ace8d45,f75c6409-b123-4c09-85fb-9c3a337c9fdb
+NotPetya::6,attack_flow,NotPetya,1,"[""T1529""]","[""T1529""]",T1485,T1485,NotPetya,351a47ca-c39f-43e5-8493-3bafe24a6338,2b64c735-0355-408c-b3a9-755772cc257c
+NotPetya::7,attack_flow,NotPetya,1,"[""T1518""]","[""T1518.001""]",T1561,T1561.002,NotPetya,371fe05f-e6b1-41ea-84ef-2c76f8186089,088db13a-256f-46ab-9024-a83859f0065b
+NotPetya::8,attack_flow,NotPetya,1,"[""T1518""]","[""T1518.001""]",T1542,T1542.003,NotPetya,371fe05f-e6b1-41ea-84ef-2c76f8186089,be8a7164-7483-4c1a-8e07-ae64b5cb2be7
+NotPetya::10,attack_flow,NotPetya,1,"[""T1057""]","[""T1057""]",T1003,T1003.001,NotPetya,3d221636-c915-4e2a-903a-e10047a1f34a,2010cb6c-cca8-45a4-99ca-ed2a2ace8d45
+NotPetya::11,attack_flow,NotPetya,1,"[""T1057""]","[""T1057""]",T1134,T1134.001,NotPetya,3d221636-c915-4e2a-903a-e10047a1f34a,8b0ac8bf-9642-4c25-811c-781942284dac
+NotPetya::12,attack_flow,NotPetya,1,"[""T1195""]","[""T1195.002""]",T1195,T1195,NotPetya,460b67ee-7fbe-4930-a019-fe07ae742c34,0cfbada8-ad55-4b75-a4c6-acd5e34a00d0
+NotPetya::13,attack_flow,NotPetya,1,"[""T1593""]","[""T1593""]",T1195,T1195.002,NotPetya,605180eb-64d7-4f54-ae85-a1036cf2dbd3,9ac3cd71-b8e4-4902-a134-5bbf2c3dc9b9
+NotPetya::14,attack_flow,NotPetya,1,"[""T1036""]","[""T1036""]",T1518,T1518.001,NotPetya,698fd2b3-f021-4f74-8141-d48ba11ce09c,371fe05f-e6b1-41ea-84ef-2c76f8186089
+NotPetya::15,attack_flow,NotPetya,1,"[""T1036""]","[""T1036""]",T1057,T1057,NotPetya,698fd2b3-f021-4f74-8141-d48ba11ce09c,3d221636-c915-4e2a-903a-e10047a1f34a
+NotPetya::16,attack_flow,NotPetya,1,"[""T1134""]","[""T1134.001""]",T1016,T1016,NotPetya,8b0ac8bf-9642-4c25-811c-781942284dac,e72f07e9-2191-4805-9f97-bdd7624b3827
+NotPetya::18,attack_flow,NotPetya,1,"[""T1134""]","[""T1134.001""]",T1021,T1021.002,NotPetya,8b0ac8bf-9642-4c25-811c-781942284dac,f75c6409-b123-4c09-85fb-9c3a337c9fdb
+NotPetya::19,attack_flow,NotPetya,1,"[""T1195""]","[""T1195.002""]",T1195,T1195.002,NotPetya,9ac3cd71-b8e4-4902-a134-5bbf2c3dc9b9,460b67ee-7fbe-4930-a019-fe07ae742c34
+NotPetya::20,attack_flow,NotPetya,1,"[""T1070""]","[""T1070.001""]",T1529,T1529,NotPetya,9f0ada89-d028-4c87-a1a4-4563705a70b3,351a47ca-c39f-43e5-8493-3bafe24a6338
+NotPetya::21,attack_flow,NotPetya,1,"[""T1542""]","[""T1542.003""]",T1053,T1053.005,NotPetya,be8a7164-7483-4c1a-8e07-ae64b5cb2be7,cd21649c-7134-4d4b-ad33-40daaf36e9c1
+NotPetya::22,attack_flow,NotPetya,1,"[""T1529""]","[""T1529""]",T1486,T1486,NotPetya,c41e27f8-e094-489b-8fee-62698f187dce,fab926e5-88d8-48b4-9bf2-23aa996076d1
+NotPetya::23,attack_flow,NotPetya,1,"[""T1053""]","[""T1053.005""]",T1529,T1529,NotPetya,cd21649c-7134-4d4b-ad33-40daaf36e9c1,c41e27f8-e094-489b-8fee-62698f187dce
+NotPetya::24,attack_flow,NotPetya,1,"[""T1016""]","[""T1016""]",T1561,T1561.002,NotPetya,e72f07e9-2191-4805-9f97-bdd7624b3827,088db13a-256f-46ab-9024-a83859f0065b
+NotPetya::25,attack_flow,NotPetya,1,"[""T1016""]","[""T1016""]",T1542,T1542.003,NotPetya,e72f07e9-2191-4805-9f97-bdd7624b3827,be8a7164-7483-4c1a-8e07-ae64b5cb2be7
+NotPetya::26,attack_flow,NotPetya,1,"[""T0866""]","[""T0866""]",T1055,T1055.001,NotPetya,efe3d7fe-9a22-4b05-a5af-1eb0f42aa41f,f519deb9-ffbf-4568-9c18-26313af17849
+NotPetya::27,attack_flow,NotPetya,1,"[""T1055""]","[""T1055.001""]",T1218,T1218.011,NotPetya,f519deb9-ffbf-4568-9c18-26313af17849,146b0928-071a-43e8-b115-5ab2c8934fe0
+NotPetya::28,attack_flow,NotPetya,1,"[""T1021""]","[""T1021.002""]",T1218,T1218.011,NotPetya,f75c6409-b123-4c09-85fb-9c3a337c9fdb,fb2b6b4f-edd2-4b53-8894-a95ddcbb5cb7
+NotPetya::29,attack_flow,NotPetya,1,"[""T1486""]","[""T1486""]",T1070,T1070.001,NotPetya,fab926e5-88d8-48b4-9bf2-23aa996076d1,9f0ada89-d028-4c87-a1a4-4563705a70b3
+NotPetya::30,attack_flow,NotPetya,1,"[""T1218""]","[""T1218.011""]",T1561,T1561.002,NotPetya,fb2b6b4f-edd2-4b53-8894-a95ddcbb5cb7,088db13a-256f-46ab-9024-a83859f0065b
+NotPetya::31,attack_flow,NotPetya,1,"[""T1218""]","[""T1218.011""]",T1542,T1542.003,NotPetya,fb2b6b4f-edd2-4b53-8894-a95ddcbb5cb7,be8a7164-7483-4c1a-8e07-ae64b5cb2be7
+OceanLotus::0,attack_flow,OceanLotus,1,"[""T1564""]","[""T1564.001""]",T1083,T1083,OceanLotus,0232d3f7-1627-4645-86dd-f121aa9309b9,a939030b-f74f-45b7-bb62-123fde280a5b
+OceanLotus::1,attack_flow,OceanLotus,1,"[""T1566""]","[""T1566.001""]",T1204,T1204.002,OceanLotus,2ea61897-a90d-4cae-b835-facc2885cf12,91aa2f3d-f804-484b-9aee-14fec5c90baf
+OceanLotus::2,attack_flow,OceanLotus,1,"[""T1027""]","[""T1027.009""]",T1543,T1543.001,OceanLotus,32ecc8a5-bed1-40ca-a33f-9e0be0efa4fb,fd60cf7d-cf9a-45f8-8335-62ddf1eac56d
+OceanLotus::3,attack_flow,OceanLotus,1,"[""T1119""]","[""T1119""]",T1564,T1564.001,OceanLotus,3a38eb18-4404-4df0-b4a2-242431de8966,0232d3f7-1627-4645-86dd-f121aa9309b9
+OceanLotus::4,attack_flow,OceanLotus,1,"[""T1119""]","[""T1119""]",T1560,T1560.001,OceanLotus,3a38eb18-4404-4df0-b4a2-242431de8966,c43aadb1-b567-4884-a05e-eec887f314a4
+OceanLotus::5,attack_flow,OceanLotus,1,"[""T1059""]","[""T1059.004""]",T1135,T1135,OceanLotus,427e660b-489c-4b2f-9a26-53bb1bc1d552,777acef5-9f4d-4ff6-b50d-5eeafd21f2ab
+OceanLotus::6,attack_flow,OceanLotus,1,"[""T1059""]","[""T1059.004""]",T1082,T1082,OceanLotus,427e660b-489c-4b2f-9a26-53bb1bc1d552,9facbe22-eb51-4968-a775-93d5c71a0141
+OceanLotus::7,attack_flow,OceanLotus,1,"[""T1070""]","[""T1070""]",T1082,T1082,OceanLotus,4a2525ee-6951-4faa-9091-f88387c18b3e,88d99557-c2f4-4cbf-9ecc-7aa81d51c40d
+OceanLotus::8,attack_flow,OceanLotus,1,"[""T1036""]","[""T1036""]",T1027,T1027.009,OceanLotus,4a759635-9f2d-480a-a855-45f05024266b,32ecc8a5-bed1-40ca-a33f-9e0be0efa4fb
+OceanLotus::9,attack_flow,OceanLotus,1,"[""T1041""]","[""T1041""]",T1119,T1119,OceanLotus,5e7dfe2e-ff0d-4a0f-80c3-3420647ae6ff,3a38eb18-4404-4df0-b4a2-242431de8966
+OceanLotus::10,attack_flow,OceanLotus,1,"[""T1105""]","[""T1105""]",T1021,T1021,OceanLotus,61c13fc8-0842-4d89-9954-3be92a917cd5,84b5c4df-ac03-48da-a3f8-e2202d3dbe36
+OceanLotus::11,attack_flow,OceanLotus,1,"[""T1135""]","[""T1135""]",T1041,T1041,OceanLotus,777acef5-9f4d-4ff6-b50d-5eeafd21f2ab,5e7dfe2e-ff0d-4a0f-80c3-3420647ae6ff
+OceanLotus::12,attack_flow,OceanLotus,1,"[""T1566""]","[""T1566.001""]",T1566,T1566.001,OceanLotus,8196f7e1-3d8b-42ed-bede-b81bfd38f864,2ea61897-a90d-4cae-b835-facc2885cf12
+OceanLotus::13,attack_flow,OceanLotus,1,"[""T1021""]","[""T1021""]",T1021,T1021.004,OceanLotus,84b5c4df-ac03-48da-a3f8-e2202d3dbe36,8765d47d-ce2d-4a0a-92de-a646eb8e7ab5
+OceanLotus::14,attack_flow,OceanLotus,1,"[""T1021""]","[""T1021.004""]",T1059,T1059.004,OceanLotus,8765d47d-ce2d-4a0a-92de-a646eb8e7ab5,427e660b-489c-4b2f-9a26-53bb1bc1d552
+OceanLotus::15,attack_flow,OceanLotus,1,"[""T1082""]","[""T1082""]",T1041,T1041,OceanLotus,88d99557-c2f4-4cbf-9ecc-7aa81d51c40d,96631858-d587-44a0-8a6d-fb28b5fc59fa
+OceanLotus::16,attack_flow,OceanLotus,1,"[""T1204""]","[""T1204.002""]",T1036,T1036,OceanLotus,91aa2f3d-f804-484b-9aee-14fec5c90baf,4a759635-9f2d-480a-a855-45f05024266b
+OceanLotus::17,attack_flow,OceanLotus,1,"[""T1041""]","[""T1041""]",T1018,T1018,OceanLotus,96631858-d587-44a0-8a6d-fb28b5fc59fa,f4069dc6-a40c-4e38-8134-e70b960d2edd
+OceanLotus::18,attack_flow,OceanLotus,1,"[""T1082""]","[""T1082""]",T1041,T1041,OceanLotus,9facbe22-eb51-4968-a775-93d5c71a0141,5e7dfe2e-ff0d-4a0f-80c3-3420647ae6ff
+OceanLotus::19,attack_flow,OceanLotus,1,"[""T1083""]","[""T1083""]",T1074,T1074.001,OceanLotus,a939030b-f74f-45b7-bb62-123fde280a5b,e04845fa-6f37-42bf-8479-2e9cc4a4923b
+OceanLotus::20,attack_flow,OceanLotus,1,"[""T1560""]","[""T1560.001""]",T1041,T1041,OceanLotus,c43aadb1-b567-4884-a05e-eec887f314a4,7fef99a8-a29a-4e34-8b46-013392f28ab8
+OceanLotus::21,attack_flow,OceanLotus,1,"[""T1074""]","[""T1074.001""]",T1041,T1041,OceanLotus,e04845fa-6f37-42bf-8479-2e9cc4a4923b,7fef99a8-a29a-4e34-8b46-013392f28ab8
+OceanLotus::22,attack_flow,OceanLotus,1,"[""T1018""]","[""T1018""]",T1105,T1105,OceanLotus,f4069dc6-a40c-4e38-8134-e70b960d2edd,61c13fc8-0842-4d89-9954-3be92a917cd5
+OceanLotus::23,attack_flow,OceanLotus,1,"[""T1543""]","[""T1543.001""]",T1070,T1070,OceanLotus,fd60cf7d-cf9a-45f8-8335-62ddf1eac56d,4a2525ee-6951-4faa-9091-f88387c18b3e
+Ragnar Locker::0,attack_flow,Ragnar Locker,1,"[""T1120""]","[""T1120""]",T1567,T1567,Ragnar Locker,065964e1-07c5-468b-ba47-7b59dd3784a2,c4d26264-450d-4fd0-8ae2-64708b5c267c
+Ragnar Locker::1,attack_flow,Ragnar Locker,1,"[""T1105""]","[""T1105""]",T1490,T1490,Ragnar Locker,258682c6-fad0-4daf-964b-41b1e6cb6fdd,3fc6b75b-3de3-4879-a5dd-a4c211e3cd3e
+Ragnar Locker::2,attack_flow,Ragnar Locker,1,"[""T1105""]","[""T1105""]",T1489,T1489,Ragnar Locker,258682c6-fad0-4daf-964b-41b1e6cb6fdd,80af5404-8374-4dc8-a254-8503c30b7bcd
+Ragnar Locker::3,attack_flow,Ragnar Locker,1,"[""T1105""]","[""T1105""]",T1614,T1614.001,Ragnar Locker,258682c6-fad0-4daf-964b-41b1e6cb6fdd,a8c21650-07b5-4afd-b75a-7ab04eb40029
+Ragnar Locker::4,attack_flow,Ragnar Locker,1,"[""T1110""]","[""T1110""]",T1546,T1546.015,Ragnar Locker,3e22a477-71cd-4aef-94da-33cdde6da4d8,5342b2fd-c6dd-42ec-a6e0-3ed811f73850
+Ragnar Locker::5,attack_flow,Ragnar Locker,1,"[""T1490""]","[""T1490""]",T1614,T1614.001,Ragnar Locker,3fc6b75b-3de3-4879-a5dd-a4c211e3cd3e,a8c21650-07b5-4afd-b75a-7ab04eb40029
+Ragnar Locker::6,attack_flow,Ragnar Locker,1,"[""T1564""]","[""T1564.006""]",T1120,T1120,Ragnar Locker,47d7d677-d9ca-41fc-a6c4-f9911e056b35,065964e1-07c5-468b-ba47-7b59dd3784a2
+Ragnar Locker::7,attack_flow,Ragnar Locker,1,"[""T1484""]","[""T1484.001""]",T1218,T1218.007,Ragnar Locker,4c86708e-d142-4521-909d-3e3ce918042f,e0c4c51e-004b-4b3f-91a0-0c6d45683f38
+Ragnar Locker::8,attack_flow,Ragnar Locker,1,"[""T1546""]","[""T1546.015""]",T1484,T1484.001,Ragnar Locker,5342b2fd-c6dd-42ec-a6e0-3ed811f73850,4c86708e-d142-4521-909d-3e3ce918042f
+Ragnar Locker::9,attack_flow,Ragnar Locker,1,"[""T1546""]","[""T1546.015""]",T1059,T1059.001,Ragnar Locker,5342b2fd-c6dd-42ec-a6e0-3ed811f73850,7f17b0e9-c97d-4d47-a0e1-7764a470c166
+Ragnar Locker::10,attack_flow,Ragnar Locker,1,"[""T1059""]","[""T1059.001""]",T1218,T1218.007,Ragnar Locker,7f17b0e9-c97d-4d47-a0e1-7764a470c166,e0c4c51e-004b-4b3f-91a0-0c6d45683f38
+Ragnar Locker::11,attack_flow,Ragnar Locker,1,"[""T1489""]","[""T1489""]",T1614,T1614.001,Ragnar Locker,80af5404-8374-4dc8-a254-8503c30b7bcd,a8c21650-07b5-4afd-b75a-7ab04eb40029
+Ragnar Locker::12,attack_flow,Ragnar Locker,1,"[""T1105""]","[""T1105""]",T1105,T1105,Ragnar Locker,a157005f-50a2-45e4-9e7b-ea713e9bbcc8,258682c6-fad0-4daf-964b-41b1e6cb6fdd
+Ragnar Locker::13,attack_flow,Ragnar Locker,1,"[""T1614""]","[""T1614.001""]",T1564,T1564.006,Ragnar Locker,a8c21650-07b5-4afd-b75a-7ab04eb40029,47d7d677-d9ca-41fc-a6c4-f9911e056b35
+Ragnar Locker::14,attack_flow,Ragnar Locker,1,"[""T1567""]","[""T1567""]",T1027,T1027,Ragnar Locker,c4d26264-450d-4fd0-8ae2-64708b5c267c,cdcf257c-acd6-4a62-9b9a-f10aca957af5
+Ragnar Locker::15,attack_flow,Ragnar Locker,1,"[""T1027""]","[""T1027""]",T1486,T1486,Ragnar Locker,cdcf257c-acd6-4a62-9b9a-f10aca957af5,33285dd9-ae14-4bfd-9fdc-7e235da39487
+Ragnar Locker::16,attack_flow,Ragnar Locker,1,"[""T1078""]","[""T1078""]",T1546,T1546.015,Ragnar Locker,dac00d37-82b6-4474-b753-88c12a3b9486,5342b2fd-c6dd-42ec-a6e0-3ed811f73850
+Ragnar Locker::17,attack_flow,Ragnar Locker,1,"[""T1218""]","[""T1218.007""]",T1105,T1105,Ragnar Locker,e0c4c51e-004b-4b3f-91a0-0c6d45683f38,a157005f-50a2-45e4-9e7b-ea713e9bbcc8
+REvil::0,attack_flow,REvil,1,"[""T1204""]","[""T1204.002""]",T1140,T1140,REvil,0941f1e9-24bd-43ab-b54b-ae01df08b989,1ec51403-5eeb-4d38-97b8-cf3b426303f9
+REvil::1,attack_flow,REvil,1,"[""T1140""]","[""T1140""]",T1134,T1134.002,REvil,1ec51403-5eeb-4d38-97b8-cf3b426303f9,a8243150-f0db-47dd-b715-3fe09d331981
+REvil::2,attack_flow,REvil,1,"[""T1082""]","[""T1082""]",T1027,T1027,REvil,30e17d35-9f5e-4e65-b2c1-6ea8ac7c3f54,b1025067-bb3b-446f-aa45-d97591c24ef0
+REvil::3,attack_flow,REvil,1,"[""T1033""]","[""T1033""]",T1027,T1027,REvil,37cc493d-eefc-4a85-a78d-8160d4007a5d,b1025067-bb3b-446f-aa45-d97591c24ef0
+REvil::4,attack_flow,REvil,1,"[""T1071""]","[""T1071.001""]",T1041,T1041,REvil,3cf7cc87-39df-481b-b31a-c253d405502f,611913ef-15ce-44cb-a885-2dda47cf134b
+REvil::5,attack_flow,REvil,1,"[""T1135""]","[""T1135""]",T1486,T1486,REvil,446454d9-1612-41b5-8f6a-d282e06b52af,72266354-eb09-4f29-9704-2a6117285354
+REvil::6,attack_flow,REvil,1,"[""T1083""]","[""T1083""]",T1135,T1135,REvil,523ac20c-e73d-4899-a233-cd2c3fde4d08,446454d9-1612-41b5-8f6a-d282e06b52af
+REvil::7,attack_flow,REvil,1,"[""T1083""]","[""T1083""]",T1486,T1486,REvil,523ac20c-e73d-4899-a233-cd2c3fde4d08,72266354-eb09-4f29-9704-2a6117285354
+REvil::8,attack_flow,REvil,1,"[""T1069""]","[""T1069.002""]",T1027,T1027,REvil,57f02194-5e28-4c95-a7d8-716317f2b081,b1025067-bb3b-446f-aa45-d97591c24ef0
+REvil::9,attack_flow,REvil,1,"[""T1486""]","[""T1486""]",T1491,T1491.001,REvil,72266354-eb09-4f29-9704-2a6117285354,9bdfeccc-64f3-4338-b58d-62b528437dac
+REvil::10,attack_flow,REvil,1,"[""T1059""]","[""T1059.003""]",T1490,T1490,REvil,813a31a7-9924-4088-86d8-526f14fffc05,d65fcb15-abb0-4bc5-a97e-0ee5a1e7548c
+REvil::11,attack_flow,REvil,1,"[""T1068""]","[""T1068""]",T1140,T1140,REvil,817870ea-bc9d-4734-a36d-8e3d966b2bc7,1ec51403-5eeb-4d38-97b8-cf3b426303f9
+REvil::12,attack_flow,REvil,1,"[""T1189""]","[""T1189""]",T1068,T1068,REvil,94742c71-532b-4aa9-b437-41a9bb8f38d7,817870ea-bc9d-4734-a36d-8e3d966b2bc7
+REvil::13,attack_flow,REvil,1,"[""T1491""]","[""T1491.001""]",T1012,T1012,REvil,9bdfeccc-64f3-4338-b58d-62b528437dac,c922e4f2-57ae-4e23-9d09-8c70edf725ae
+REvil::14,attack_flow,REvil,1,"[""T1485""]","[""T1485""]",T1083,T1083,REvil,9e2b0afb-d172-4686-b453-64ad4ffec914,523ac20c-e73d-4899-a233-cd2c3fde4d08
+REvil::15,attack_flow,REvil,1,"[""T1134""]","[""T1134.002""]",T1012,T1012,REvil,a8243150-f0db-47dd-b715-3fe09d331981,cbc2c498-0f40-4fba-bfd0-dbfeae60d993
+REvil::16,attack_flow,REvil,1,"[""T1112""]","[""T1112""]",T1489,T1489,REvil,a85199ff-3207-4c2c-828e-c7f56244e5ef,b7bb4f4c-a1ce-4968-8887-0eb6516ec60e
+REvil::17,attack_flow,REvil,1,"[""T1027""]","[""T1027""]",T1112,T1112,REvil,b1025067-bb3b-446f-aa45-d97591c24ef0,a85199ff-3207-4c2c-828e-c7f56244e5ef
+REvil::18,attack_flow,REvil,1,"[""T1489""]","[""T1489""]",T1059,T1059.003,REvil,b7bb4f4c-a1ce-4968-8887-0eb6516ec60e,813a31a7-9924-4088-86d8-526f14fffc05
+REvil::19,attack_flow,REvil,1,"[""T1489""]","[""T1489""]",T1059,T1059.001,REvil,b7bb4f4c-a1ce-4968-8887-0eb6516ec60e,b8777ca1-4cf7-449c-8cd5-545d5e98693a
+REvil::20,attack_flow,REvil,1,"[""T1059""]","[""T1059.001""]",T1490,T1490,REvil,b8777ca1-4cf7-449c-8cd5-545d5e98693a,d65fcb15-abb0-4bc5-a97e-0ee5a1e7548c
+REvil::21,attack_flow,REvil,1,"[""T1012""]","[""T1012""]",T1071,T1071.001,REvil,c922e4f2-57ae-4e23-9d09-8c70edf725ae,3cf7cc87-39df-481b-b31a-c253d405502f
+REvil::22,attack_flow,REvil,1,"[""T1012""]","[""T1012""]",T1573,T1573.002,REvil,c922e4f2-57ae-4e23-9d09-8c70edf725ae,f5f61076-5c5d-43f8-ac93-bd72e76fc4bc
+REvil::23,attack_flow,REvil,1,"[""T1012""]","[""T1012""]",T1082,T1082,REvil,cbc2c498-0f40-4fba-bfd0-dbfeae60d993,30e17d35-9f5e-4e65-b2c1-6ea8ac7c3f54
+REvil::24,attack_flow,REvil,1,"[""T1012""]","[""T1012""]",T1033,T1033,REvil,cbc2c498-0f40-4fba-bfd0-dbfeae60d993,37cc493d-eefc-4a85-a78d-8160d4007a5d
+REvil::25,attack_flow,REvil,1,"[""T1012""]","[""T1012""]",T1069,T1069.002,REvil,cbc2c498-0f40-4fba-bfd0-dbfeae60d993,57f02194-5e28-4c95-a7d8-716317f2b081
+REvil::26,attack_flow,REvil,1,"[""T1490""]","[""T1490""]",T1485,T1485,REvil,d65fcb15-abb0-4bc5-a97e-0ee5a1e7548c,9e2b0afb-d172-4686-b453-64ad4ffec914
+REvil::27,attack_flow,REvil,1,"[""T1566""]","[""T1566.001""]",T1140,T1140,REvil,f0cc9e44-bcff-4902-94ee-1579a13d8d88,1ec51403-5eeb-4d38-97b8-cf3b426303f9
+REvil::28,attack_flow,REvil,1,"[""T1573""]","[""T1573.002""]",T1041,T1041,REvil,f5f61076-5c5d-43f8-ac93-bd72e76fc4bc,611913ef-15ce-44cb-a885-2dda47cf134b
+SearchAwesome Adware::0,attack_flow,SearchAwesome Adware,1,"[""T1185""]","[""T1185""]",T1070,T1070.004,SearchAwesome Adware,3ab0e565-c92d-40c0-a0d8-5795cd1fd6a2,9701d9a7-0c9b-4f07-b565-b01ffd871a36
+SearchAwesome Adware::1,attack_flow,SearchAwesome Adware,1,"[""T1059""]","[""T1059""]",T1185,T1185,SearchAwesome Adware,5fb732fb-80d7-4815-ba89-44d18484ed94,3ab0e565-c92d-40c0-a0d8-5795cd1fd6a2
+SearchAwesome Adware::2,attack_flow,SearchAwesome Adware,1,"[""T1553""]","[""T1553.004""]",T1557,T1557,SearchAwesome Adware,638fbd7e-e680-4360-86d5-29454f354071,912ab340-e636-4742-8333-f692368ef2ee
+SearchAwesome Adware::3,attack_flow,SearchAwesome Adware,1,"[""T1557""]","[""T1557""]",T1553,T1553,SearchAwesome Adware,912ab340-e636-4742-8333-f692368ef2ee,f6677d9d-1c87-43bf-9b55-88099a820d4d
+SearchAwesome Adware::4,attack_flow,SearchAwesome Adware,1,"[""T1105""]","[""T1105""]",T1553,T1553.004,SearchAwesome Adware,91742a64-73d0-4302-9b43-5ae374a7516a,638fbd7e-e680-4360-86d5-29454f354071
+SearchAwesome Adware::5,attack_flow,SearchAwesome Adware,1,"[""T1204""]","[""T1204.002""]",T1105,T1105,SearchAwesome Adware,cb85f8b2-a64d-49a3-beca-c307558fe4cb,91742a64-73d0-4302-9b43-5ae374a7516a
+SearchAwesome Adware::6,attack_flow,SearchAwesome Adware,1,"[""T1583""]","[""T1583.008""]",T1059,T1059,SearchAwesome Adware,d545cf7c-c227-49e8-b3ef-6836f9431513,5fb732fb-80d7-4815-ba89-44d18484ed94
+SearchAwesome Adware::7,attack_flow,SearchAwesome Adware,1,"[""T1105""]","[""T1105""]",T1090,T1090,SearchAwesome Adware,ef2455bc-724f-4abf-9b1d-6883128ae328,f829939a-e8cf-4d78-891c-35135405e046
+SearchAwesome Adware::8,attack_flow,SearchAwesome Adware,1,"[""T1553""]","[""T1553""]",T1105,T1105,SearchAwesome Adware,f6677d9d-1c87-43bf-9b55-88099a820d4d,ef2455bc-724f-4abf-9b1d-6883128ae328
+SearchAwesome Adware::9,attack_flow,SearchAwesome Adware,1,"[""T1090""]","[""T1090""]",T1583,T1583.008,SearchAwesome Adware,f829939a-e8cf-4d78-891c-35135405e046,d545cf7c-c227-49e8-b3ef-6836f9431513
+Shamoon::0,attack_flow,Shamoon,1,"[""T1007""]","[""T1007""]",T1140,T1140,Shamoon,0ab1c6fd-eb0a-4601-a629-3694f5ed5222,536348d5-cd08-4031-82e0-612d13187348
+Shamoon::1,attack_flow,Shamoon,1,"[""T1112""]","[""T1112""]",T1135,T1135,Shamoon,0c56e942-1cb5-4335-ac0b-fe11442bcb4a,7573f4c7-5cef-4aaf-853b-391dc145dd81
+Shamoon::2,attack_flow,Shamoon,1,"[""T1070""]","[""T1070.006""]",T1134,T1134.001,Shamoon,11e47c90-b34b-4265-b4dc-010d857a5752,81b765cf-ba71-4818-8b1f-276aee316264
+Shamoon::3,attack_flow,Shamoon,1,"[""T1027""]","[""T1027.009""]",T1140,T1140,Shamoon,128547af-e0f2-4185-afae-9b40736a5c56,697e8511-7e7e-48b3-aff7-0bf6b15bc868
+Shamoon::4,attack_flow,Shamoon,1,"[""T1569""]","[""T1569""]",T1112,T1112,Shamoon,1514add9-71b2-41ab-9be9-2382620367ef,0c56e942-1cb5-4335-ac0b-fe11442bcb4a
+Shamoon::5,attack_flow,Shamoon,1,"[""T1140""]","[""T1140""]",T1082,T1082,Shamoon,18ac2f5f-282e-4d62-aa93-bc7567467f76,1fe37889-9591-40d8-b20b-a3578e05f1c0
+Shamoon::6,attack_flow,Shamoon,1,"[""T1082""]","[""T1082""]",T1140,T1140,Shamoon,1fe37889-9591-40d8-b20b-a3578e05f1c0,bcd6b440-aa42-43c0-90a7-af7a6d29ea61
+Shamoon::7,attack_flow,Shamoon,1,"[""T1082""]","[""T1082""]",T1105,T1105,Shamoon,1fe37889-9591-40d8-b20b-a3578e05f1c0,f468a33c-d9e2-4938-9412-658e256acedf
+Shamoon::8,attack_flow,Shamoon,1,"[""T1018""]","[""T1018""]",T1570,T1570,Shamoon,2d0ca7f5-25c6-4f85-aab7-9694e1cb4214,dfbfce2d-4710-4333-b591-62ef89bbb868
+Shamoon::9,attack_flow,Shamoon,1,"[""T1561""]","[""T1561""]",T1529,T1529,Shamoon,2f8b5bc0-849b-44c2-adbd-4846bfbcf382,3a6645fc-5ec3-426b-be28-b2faaa221b1f
+Shamoon::10,attack_flow,Shamoon,1,"[""T1105""]","[""T1105""]",T1027,T1027.009,Shamoon,45238a64-cca7-4b73-b70e-f2bb9d57f5c6,5042c11d-5d35-4bf0-a8c8-e8913e2505ce
+Shamoon::11,attack_flow,Shamoon,1,"[""T1027""]","[""T1027.009""]",T1140,T1140,Shamoon,5042c11d-5d35-4bf0-a8c8-e8913e2505ce,18ac2f5f-282e-4d62-aa93-bc7567467f76
+Shamoon::12,attack_flow,Shamoon,1,"[""T1140""]","[""T1140""]",T1070,T1070.006,Shamoon,536348d5-cd08-4031-82e0-612d13187348,11e47c90-b34b-4265-b4dc-010d857a5752
+Shamoon::13,attack_flow,Shamoon,1,"[""T1543""]","[""T1543.003""]",T1105,T1105,Shamoon,6934aee5-fb1d-456c-a0f8-020991900f6b,b18d81cf-9c59-413d-b148-45a2067adbbd
+Shamoon::14,attack_flow,Shamoon,1,"[""T1543""]","[""T1543.003""]",T1105,T1105,Shamoon,6934aee5-fb1d-456c-a0f8-020991900f6b,ef1f8cce-2e33-4444-bf37-e5c1d4bc20c2
+Shamoon::15,attack_flow,Shamoon,1,"[""T1140""]","[""T1140""]",T1543,T1543.003,Shamoon,697e8511-7e7e-48b3-aff7-0bf6b15bc868,ce6c04c1-c6ab-4aab-a194-ac50e51640d7
+Shamoon::16,attack_flow,Shamoon,1,"[""T1135""]","[""T1135""]",T1007,T1007,Shamoon,7573f4c7-5cef-4aaf-853b-391dc145dd81,0ab1c6fd-eb0a-4601-a629-3694f5ed5222
+Shamoon::17,attack_flow,Shamoon,1,"[""T1134""]","[""T1134.001""]",T1543,T1543.003,Shamoon,81b765cf-ba71-4818-8b1f-276aee316264,6934aee5-fb1d-456c-a0f8-020991900f6b
+Shamoon::18,attack_flow,Shamoon,1,"[""T1105""]","[""T1105""]",T1027,T1027.009,Shamoon,b18d81cf-9c59-413d-b148-45a2067adbbd,128547af-e0f2-4185-afae-9b40736a5c56
+Shamoon::19,attack_flow,Shamoon,1,"[""T1140""]","[""T1140""]",T1569,T1569,Shamoon,bcd6b440-aa42-43c0-90a7-af7a6d29ea61,1514add9-71b2-41ab-9be9-2382620367ef
+Shamoon::20,attack_flow,Shamoon,1,"[""T1543""]","[""T1543.003""]",T1561,T1561,Shamoon,ce6c04c1-c6ab-4aab-a194-ac50e51640d7,2f8b5bc0-849b-44c2-adbd-4846bfbcf382
+Shamoon::21,attack_flow,Shamoon,1,"[""T1105""]","[""T1105""]",T1018,T1018,Shamoon,ef1f8cce-2e33-4444-bf37-e5c1d4bc20c2,2d0ca7f5-25c6-4f85-aab7-9694e1cb4214
+Shamoon::22,attack_flow,Shamoon,1,"[""T1105""]","[""T1105""]",T1569,T1569,Shamoon,f468a33c-d9e2-4938-9412-658e256acedf,1514add9-71b2-41ab-9be9-2382620367ef
+SolarWinds::0,attack_flow,SolarWinds,1,"[""T1195""]","[""T1195.002""]",T1569,T1569.002,SolarWinds,0c739735-a984-4897-bc2f-a8737deff66f,b9ac316b-c623-4fe3-8ab2-eb8673081edc
+SolarWinds::1,attack_flow,SolarWinds,1,"[""T1005""]","[""T1005""]",T1567,T1567.002,SolarWinds,0ce96a7f-cab8-4842-b19d-83db4586deca,337844f6-ac0f-4d25-a565-c7af73ea6dcd
+SolarWinds::2,attack_flow,SolarWinds,1,"[""T1558""]","[""T1558.003""]",T1562,T1562.001,SolarWinds,1850d451-cbfd-4557-869b-386321a39a44,fbccf7e7-4d2b-4f19-9ebb-6acab1322eb2
+SolarWinds::3,attack_flow,SolarWinds,1,"[""T1078""]","[""T1078""]",T1036,T1036,SolarWinds,1ccc8112-936d-4237-9211-ebf6155d42f1,4737ef94-c67f-461d-a616-8d04d949a790
+SolarWinds::4,attack_flow,SolarWinds,1,"[""T1063""]","[""T1063""]",T1057,T1057,SolarWinds,231bdc8e-30ab-4d7c-8e85-2d8ce9b1278e,b04df257-4f67-487d-a60a-077518519cab
+SolarWinds::5,attack_flow,SolarWinds,1,"[""T1063""]","[""T1063""]",T1012,T1012,SolarWinds,231bdc8e-30ab-4d7c-8e85-2d8ce9b1278e,dc540c5c-a840-4cd1-afd3-f887297f9593
+SolarWinds::6,attack_flow,SolarWinds,1,"[""T1587""]","[""T1587.001""]",T1195,T1195.002,SolarWinds,384373d8-dbe0-425e-aeaf-ad8c70fc11be,0c739735-a984-4897-bc2f-a8737deff66f
+SolarWinds::7,attack_flow,SolarWinds,1,"[""T1555""]","[""T1555""]",T1562,T1562.001,SolarWinds,42e110be-0852-4c33-bb32-a6bde8fc95e8,fbccf7e7-4d2b-4f19-9ebb-6acab1322eb2
+SolarWinds::8,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036""]",T1047,T1047,SolarWinds,4737ef94-c67f-461d-a616-8d04d949a790,f69ad6fa-05c5-48b9-bfea-7201321c6909
+SolarWinds::9,attack_flow,SolarWinds,1,"[""T1132""]","[""T1132""]",T1057,T1057,SolarWinds,4d69ebea-7c78-41b1-87bb-e75d84d5f319,57bb50a9-f2eb-4b6f-8754-efcbf4619d4b
+SolarWinds::10,attack_flow,SolarWinds,1,"[""T1132""]","[""T1132""]",T1036,T1036.003,SolarWinds,4d69ebea-7c78-41b1-87bb-e75d84d5f319,60ff27b6-55dc-40b5-8eb7-50d340913c43
+SolarWinds::11,attack_flow,SolarWinds,1,"[""T1132""]","[""T1132""]",T1562,T1562.004,SolarWinds,4d69ebea-7c78-41b1-87bb-e75d84d5f319,b0bc5a83-a0bb-4bf9-93b9-e63638820963
+SolarWinds::12,attack_flow,SolarWinds,1,"[""T1132""]","[""T1132""]",T1482,T1482,SolarWinds,4d69ebea-7c78-41b1-87bb-e75d84d5f319,d5ed6bf4-dddc-435a-bd3c-114320a8e730
+SolarWinds::13,attack_flow,SolarWinds,1,"[""T1057""]","[""T1057""]",T1558,T1558.003,SolarWinds,57bb50a9-f2eb-4b6f-8754-efcbf4619d4b,1850d451-cbfd-4557-869b-386321a39a44
+SolarWinds::14,attack_flow,SolarWinds,1,"[""T1057""]","[""T1057""]",T1555,T1555,SolarWinds,57bb50a9-f2eb-4b6f-8754-efcbf4619d4b,42e110be-0852-4c33-bb32-a6bde8fc95e8
+SolarWinds::15,attack_flow,SolarWinds,1,"[""T1057""]","[""T1057""]",T1003,T1003.006,SolarWinds,57bb50a9-f2eb-4b6f-8754-efcbf4619d4b,796fb2bb-4bf5-4139-907b-56411e8d7080
+SolarWinds::16,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.003""]",T1558,T1558.003,SolarWinds,60ff27b6-55dc-40b5-8eb7-50d340913c43,1850d451-cbfd-4557-869b-386321a39a44
+SolarWinds::17,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.003""]",T1555,T1555,SolarWinds,60ff27b6-55dc-40b5-8eb7-50d340913c43,42e110be-0852-4c33-bb32-a6bde8fc95e8
+SolarWinds::18,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.003""]",T1003,T1003.006,SolarWinds,60ff27b6-55dc-40b5-8eb7-50d340913c43,796fb2bb-4bf5-4139-907b-56411e8d7080
+SolarWinds::19,attack_flow,SolarWinds,1,"[""T1497""]","[""T1497.003""]",T1057,T1057,SolarWinds,68866dd4-7e92-4e0a-a8dc-aff4df1d46df,b04df257-4f67-487d-a60a-077518519cab
+SolarWinds::20,attack_flow,SolarWinds,1,"[""T1497""]","[""T1497.003""]",T1012,T1012,SolarWinds,68866dd4-7e92-4e0a-a8dc-aff4df1d46df,dc540c5c-a840-4cd1-afd3-f887297f9593
+SolarWinds::21,attack_flow,SolarWinds,1,"[""T1003""]","[""T1003.006""]",T1562,T1562.001,SolarWinds,796fb2bb-4bf5-4139-907b-56411e8d7080,fbccf7e7-4d2b-4f19-9ebb-6acab1322eb2
+SolarWinds::22,attack_flow,SolarWinds,1,"[""T1543""]","[""T1543.003""]",T1112,T1112,SolarWinds,8d74fbce-5685-4392-a134-36d67f082742,ec689feb-2e71-45bd-808a-2f7a8cd78a7b
+SolarWinds::24,attack_flow,SolarWinds,1,"[""T1057""]","[""T1057""]",T1568,T1568.002,SolarWinds,b04df257-4f67-487d-a60a-077518519cab,bf2e8e32-d299-4094-a3ae-103a2488c931
+SolarWinds::25,attack_flow,SolarWinds,1,"[""T1562""]","[""T1562.004""]",T1558,T1558.003,SolarWinds,b0bc5a83-a0bb-4bf9-93b9-e63638820963,1850d451-cbfd-4557-869b-386321a39a44
+SolarWinds::26,attack_flow,SolarWinds,1,"[""T1562""]","[""T1562.004""]",T1555,T1555,SolarWinds,b0bc5a83-a0bb-4bf9-93b9-e63638820963,42e110be-0852-4c33-bb32-a6bde8fc95e8
+SolarWinds::27,attack_flow,SolarWinds,1,"[""T1562""]","[""T1562.004""]",T1003,T1003.006,SolarWinds,b0bc5a83-a0bb-4bf9-93b9-e63638820963,796fb2bb-4bf5-4139-907b-56411e8d7080
+SolarWinds::29,attack_flow,SolarWinds,1,"[""T1569""]","[""T1569.002""]",T1497,T1497.003,SolarWinds,b9ac316b-c623-4fe3-8ab2-eb8673081edc,68866dd4-7e92-4e0a-a8dc-aff4df1d46df
+SolarWinds::30,attack_flow,SolarWinds,1,"[""T1568""]","[""T1568.002""]",T1132,T1132,SolarWinds,bf2e8e32-d299-4094-a3ae-103a2488c931,4d69ebea-7c78-41b1-87bb-e75d84d5f319
+SolarWinds::31,attack_flow,SolarWinds,1,"[""T1568""]","[""T1568.002""]",T1036,T1036.005,SolarWinds,bf2e8e32-d299-4094-a3ae-103a2488c931,a5c0b555-c306-4629-a9ba-e4a8fc67105e
+SolarWinds::32,attack_flow,SolarWinds,1,"[""T1568""]","[""T1568.002""]",T1036,T1036.005,SolarWinds,bf2e8e32-d299-4094-a3ae-103a2488c931,e738e657-299f-4290-b9f8-a6dbec1e8c51
+SolarWinds::33,attack_flow,SolarWinds,1,"[""T1482""]","[""T1482""]",T1558,T1558.003,SolarWinds,d5ed6bf4-dddc-435a-bd3c-114320a8e730,1850d451-cbfd-4557-869b-386321a39a44
+SolarWinds::34,attack_flow,SolarWinds,1,"[""T1482""]","[""T1482""]",T1555,T1555,SolarWinds,d5ed6bf4-dddc-435a-bd3c-114320a8e730,42e110be-0852-4c33-bb32-a6bde8fc95e8
+SolarWinds::35,attack_flow,SolarWinds,1,"[""T1482""]","[""T1482""]",T1003,T1003.006,SolarWinds,d5ed6bf4-dddc-435a-bd3c-114320a8e730,796fb2bb-4bf5-4139-907b-56411e8d7080
+SolarWinds::36,attack_flow,SolarWinds,1,"[""T1012""]","[""T1012""]",T1568,T1568.002,SolarWinds,dc540c5c-a840-4cd1-afd3-f887297f9593,bf2e8e32-d299-4094-a3ae-103a2488c931
+SolarWinds::37,attack_flow,SolarWinds,1,"[""T1562""]","[""T1562.002""]",T1082,T1082,SolarWinds,e08ff657-a12d-4ed7-bbe5-be90b963a153,e4055553-f146-4d1e-99d7-6910b1e2a224
+SolarWinds::38,attack_flow,SolarWinds,1,"[""T1082""]","[""T1082""]",T1005,T1005,SolarWinds,e4055553-f146-4d1e-99d7-6910b1e2a224,0ce96a7f-cab8-4842-b19d-83db4586deca
+SolarWinds::39,attack_flow,SolarWinds,1,"[""T1082""]","[""T1082""]",T1560,T1560.001,SolarWinds,e4055553-f146-4d1e-99d7-6910b1e2a224,fcdef663-b82f-4509-b30d-c7222101fe8a
+SolarWinds::40,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.005""]",T1057,T1057,SolarWinds,e738e657-299f-4290-b9f8-a6dbec1e8c51,57bb50a9-f2eb-4b6f-8754-efcbf4619d4b
+SolarWinds::41,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.005""]",T1036,T1036.003,SolarWinds,e738e657-299f-4290-b9f8-a6dbec1e8c51,60ff27b6-55dc-40b5-8eb7-50d340913c43
+SolarWinds::42,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.005""]",T1562,T1562.004,SolarWinds,e738e657-299f-4290-b9f8-a6dbec1e8c51,b0bc5a83-a0bb-4bf9-93b9-e63638820963
+SolarWinds::43,attack_flow,SolarWinds,1,"[""T1036""]","[""T1036.005""]",T1482,T1482,SolarWinds,e738e657-299f-4290-b9f8-a6dbec1e8c51,d5ed6bf4-dddc-435a-bd3c-114320a8e730
+SolarWinds::44,attack_flow,SolarWinds,1,"[""T1112""]","[""T1112""]",T1036,T1036,SolarWinds,ec689feb-2e71-45bd-808a-2f7a8cd78a7b,4737ef94-c67f-461d-a616-8d04d949a790
+SolarWinds::45,attack_flow,SolarWinds,1,"[""T1053""]","[""T1053.005""]",T1036,T1036,SolarWinds,f55a3f10-2a62-47f2-98b3-78d4983a2b87,4737ef94-c67f-461d-a616-8d04d949a790
+SolarWinds::46,attack_flow,SolarWinds,1,"[""T1047""]","[""T1047""]",T1070,T1070,SolarWinds,f69ad6fa-05c5-48b9-bfea-7201321c6909,fbc07276-1257-44e8-a855-3b1fa3d95290
+SolarWinds::47,attack_flow,SolarWinds,1,"[""T1070""]","[""T1070""]",T1562,T1562.002,SolarWinds,fbc07276-1257-44e8-a855-3b1fa3d95290,e08ff657-a12d-4ed7-bbe5-be90b963a153
+SolarWinds::48,attack_flow,SolarWinds,1,"[""T1562""]","[""T1562.001""]",T1078,T1078,SolarWinds,fbccf7e7-4d2b-4f19-9ebb-6acab1322eb2,1ccc8112-936d-4237-9211-ebf6155d42f1
+SolarWinds::49,attack_flow,SolarWinds,1,"[""T1562""]","[""T1562.001""]",T1053,T1053.005,SolarWinds,fbccf7e7-4d2b-4f19-9ebb-6acab1322eb2,f55a3f10-2a62-47f2-98b3-78d4983a2b87
+SolarWinds::50,attack_flow,SolarWinds,1,"[""T1560""]","[""T1560.001""]",T1567,T1567.002,SolarWinds,fcdef663-b82f-4509-b30d-c7222101fe8a,337844f6-ac0f-4d25-a565-c7af73ea6dcd
+SolarWinds::51,attack_flow,SolarWinds,1,"[""T1553""]","[""T1553.002""]",T1195,T1195.002,SolarWinds,fce268a4-4a5d-46a0-a180-eea719995110,0c739735-a984-4897-bc2f-a8737deff66f
+SolarWinds::52,attack_flow,SolarWinds,1,"[""T1183""]","[""T1183""]",T1543,T1543.003,SolarWinds,ff70d616-d686-4bfd-a290-0f52985f7846,8d74fbce-5685-4392-a134-36d67f082742
+Sony Malware::0,attack_flow,Sony Malware,1,"[""T1485""]","[""T1485""]",T1132,T1132,Sony Malware,275e1018-3696-463d-a716-e8869c780f96,eeb763dd-bd44-4b43-a596-a376bc6cbe42
+Sony Malware::1,attack_flow,Sony Malware,1,"[""T1105""]","[""T1105""]",T1080,T1080,Sony Malware,28f1aff8-235d-4f40-8ea2-284b93d3d295,a9727af2-a940-4904-bbd0-eb4a5fe842b6
+Sony Malware::2,attack_flow,Sony Malware,1,"[""T1561""]","[""T1561.001""]",T1529,T1529,Sony Malware,40704e16-74cc-400c-90a1-d7a2ad846ff7,b72654fd-379d-414c-a956-4eaec2163dfd
+Sony Malware::3,attack_flow,Sony Malware,1,"[""T1505""]","[""T1505.004""]",T1105,T1105,Sony Malware,6f02e06f-b1d5-4d7b-89c1-078177a8841a,28f1aff8-235d-4f40-8ea2-284b93d3d295
+Sony Malware::4,attack_flow,Sony Malware,1,"[""T1497""]","[""T1497.003""]",T1059,T1059.003,Sony Malware,7a6223a9-9b69-451e-86cc-bbb5e33bb7df,e2bc6f78-67de-45f1-a9b5-75528f46b983
+Sony Malware::5,attack_flow,Sony Malware,1,"[""T1489""]","[""T1489""]",T1132,T1132,Sony Malware,7c5dec3b-9e26-480c-839b-674df94a44d6,eeb763dd-bd44-4b43-a596-a376bc6cbe42
+Sony Malware::6,attack_flow,Sony Malware,1,"[""T1105""]","[""T1105""]",T1574,T1574.007,Sony Malware,7db3befa-8e5e-46c3-86af-ee1b84812499,9daff210-f031-4171-8b2a-2a7be3b5e1f3
+Sony Malware::7,attack_flow,Sony Malware,1,"[""T1574""]","[""T1574.007""]",T1047,T1047,Sony Malware,9daff210-f031-4171-8b2a-2a7be3b5e1f3,d1a40010-d151-4afb-b3f1-318fa53e5f69
+Sony Malware::8,attack_flow,Sony Malware,1,"[""T1080""]","[""T1080""]",T1497,T1497.003,Sony Malware,a9727af2-a940-4904-bbd0-eb4a5fe842b6,7a6223a9-9b69-451e-86cc-bbb5e33bb7df
+Sony Malware::9,attack_flow,Sony Malware,1,"[""T1529""]","[""T1529""]",T1491,T1491.001,Sony Malware,b72654fd-379d-414c-a956-4eaec2163dfd,d976d733-9035-494f-8c2c-a36e5857a00a
+Sony Malware::10,attack_flow,Sony Malware,1,"[""T1047""]","[""T1047""]",T1505,T1505.004,Sony Malware,d1a40010-d151-4afb-b3f1-318fa53e5f69,6f02e06f-b1d5-4d7b-89c1-078177a8841a
+Sony Malware::11,attack_flow,Sony Malware,1,"[""T1059""]","[""T1059.003""]",T1485,T1485,Sony Malware,e2bc6f78-67de-45f1-a9b5-75528f46b983,275e1018-3696-463d-a716-e8869c780f96
+Sony Malware::12,attack_flow,Sony Malware,1,"[""T1059""]","[""T1059.003""]",T1489,T1489,Sony Malware,e2bc6f78-67de-45f1-a9b5-75528f46b983,7c5dec3b-9e26-480c-839b-674df94a44d6
+Sony Malware::13,attack_flow,Sony Malware,1,"[""T1059""]","[""T1059.003""]",T1132,T1132,Sony Malware,e2bc6f78-67de-45f1-a9b5-75528f46b983,eeb763dd-bd44-4b43-a596-a376bc6cbe42
+Sony Malware::14,attack_flow,Sony Malware,1,"[""T1132""]","[""T1132""]",T1561,T1561.001,Sony Malware,eeb763dd-bd44-4b43-a596-a376bc6cbe42,40704e16-74cc-400c-90a1-d7a2ad846ff7
+SWIFT Heist::0,attack_flow,SWIFT Heist,1,"[""T1070""]","[""T1070.004""]",T1562,T1562.001,SWIFT Heist,61348e67-38c5-4042-8195-5717b1aa2d2b,90cbb515-964d-4e76-906e-10d25be6c73a
+SWIFT Heist::1,attack_flow,SWIFT Heist,1,"[""T1078""]","[""T1078""]",T1105,T1105,SWIFT Heist,8d1cbde9-c24f-4d33-b9a6-a8b48edcf7bb,dd27481f-2aee-41f3-b7f9-19dcc8212c16
+SWIFT Heist::2,attack_flow,SWIFT Heist,1,"[""T1190""]","[""T1190""]",T1078,T1078,SWIFT Heist,d6d5a619-e4ca-4e52-ac42-7b27c389d27d,8d1cbde9-c24f-4d33-b9a6-a8b48edcf7bb
+SWIFT Heist::3,attack_flow,SWIFT Heist,1,"[""T1566""]","[""T1566.001""]",T1078,T1078,SWIFT Heist,d958677e-8790-4ad2-8b04-8d71489f7ac2,8d1cbde9-c24f-4d33-b9a6-a8b48edcf7bb
+SWIFT Heist::4,attack_flow,SWIFT Heist,1,"[""T1105""]","[""T1105""]",T1070,T1070.004,SWIFT Heist,dd27481f-2aee-41f3-b7f9-19dcc8212c16,61348e67-38c5-4042-8195-5717b1aa2d2b
+Target Breach::0,attack_flow,Target Breach,1,"[""T1203""]","[""T1203""]",T1505,T1505,Target Breach,00173e68-78d0-448d-a71c-5de90b70ed70,3d2dfd9d-c7a5-40e9-aa7c-5b987d732c86
+Target Breach::1,attack_flow,Target Breach,1,"[""T1078""]","[""T1078.002""]",T1203,T1203,Target Breach,2010cb6c-cca8-45a4-99ca-ed2a2ace8d45,00173e68-78d0-448d-a71c-5de90b70ed70
+Target Breach::2,attack_flow,Target Breach,1,"[""T1078""]","[""T1078.002""]",T1078,T1078.001,Target Breach,2010cb6c-cca8-45a4-99ca-ed2a2ace8d45,8b0ac8bf-9642-4c25-811c-781942284dac
+Target Breach::3,attack_flow,Target Breach,1,"[""T1557""]","[""T1557.001""]",T1074,T1074.002,Target Breach,3473c9f8-ad1c-4984-ad44-fef099578405,ccd71d3f-2243-4cc0-8e82-382f649073ab
+Target Breach::4,attack_flow,Target Breach,1,"[""T1566""]","[""T1566""]",T1078,T1078.002,Target Breach,371fe05f-e6b1-41ea-84ef-2c76f8186089,2010cb6c-cca8-45a4-99ca-ed2a2ace8d45
+Target Breach::5,attack_flow,Target Breach,1,"[""T1505""]","[""T1505""]",T1105,T1105,Target Breach,3d2dfd9d-c7a5-40e9-aa7c-5b987d732c86,b8a0b6a3-554c-4cdc-87c0-03c916e52765
+Target Breach::6,attack_flow,Target Breach,1,"[""T1570""]","[""T1570""]",T1557,T1557.001,Target Breach,4ee6c3a1-4cbc-437d-80da-c78dd57d063a,3473c9f8-ad1c-4984-ad44-fef099578405
+Target Breach::7,attack_flow,Target Breach,1,"[""T1199""]","[""T1199""]",T1566,T1566,Target Breach,698fd2b3-f021-4f74-8141-d48ba11ce09c,371fe05f-e6b1-41ea-84ef-2c76f8186089
+Target Breach::8,attack_flow,Target Breach,1,"[""T1078""]","[""T1078.001""]",T1505,T1505,Target Breach,8b0ac8bf-9642-4c25-811c-781942284dac,3d2dfd9d-c7a5-40e9-aa7c-5b987d732c86
+Target Breach::9,attack_flow,Target Breach,1,"[""T1592""]","[""T1592.004""]",T1199,T1199,Target Breach,9ac3cd71-b8e4-4902-a134-5bbf2c3dc9b9,698fd2b3-f021-4f74-8141-d48ba11ce09c
+Target Breach::11,attack_flow,Target Breach,1,"[""T1105""]","[""T1105""]",T1105,T1105,Target Breach,b8a0b6a3-554c-4cdc-87c0-03c916e52765,d87c651b-5316-414c-acd2-ef1ba840a890
+Target Breach::12,attack_flow,Target Breach,1,"[""T1029""]","[""T1029""]",T1570,T1570,Target Breach,c4c51349-fb4e-49af-9466-9a926f84f874,4ee6c3a1-4cbc-437d-80da-c78dd57d063a
+Target Breach::13,attack_flow,Target Breach,1,"[""T1074""]","[""T1074.002""]",T1570,T1570,Target Breach,ccd71d3f-2243-4cc0-8e82-382f649073ab,4ee6c3a1-4cbc-437d-80da-c78dd57d063a
+Target Breach::14,attack_flow,Target Breach,1,"[""T1074""]","[""T1074.002""]",T1095,T1095,Target Breach,ccd71d3f-2243-4cc0-8e82-382f649073ab,5bc375fd-6c57-48c2-8506-4c74515137b6
+Target Breach::15,attack_flow,Target Breach,1,"[""T1593""]","[""T1593.002""]",T1199,T1199,Target Breach,d2a45c19-9a32-40ce-bcc7-a4cd4682e2e4,698fd2b3-f021-4f74-8141-d48ba11ce09c
+Tesla Kubernetes Breach::0,attack_flow,Tesla Kubernetes Breach,1,"[""T1552""]","[""T1552""]",T1078,T1078.004,Tesla Kubernetes Breach,307e4dc4-e109-4ef1-b0f5-7eaa7816ca25,3475ec81-5b70-4f9a-a9a9-9a089216ab44
+Tesla Kubernetes Breach::1,attack_flow,Tesla Kubernetes Breach,1,"[""T1078""]","[""T1078.004""]",T1530,T1530,Tesla Kubernetes Breach,3475ec81-5b70-4f9a-a9a9-9a089216ab44,5d19b518-7bcd-48d7-9d61-5e6001b130b1
+Tesla Kubernetes Breach::2,attack_flow,Tesla Kubernetes Breach,1,"[""T1133""]","[""T1133""]",T1552,T1552,Tesla Kubernetes Breach,7edcb647-8d0c-4ba4-86e8-b2a423d9b43a,307e4dc4-e109-4ef1-b0f5-7eaa7816ca25
+Tesla Kubernetes Breach::3,attack_flow,Tesla Kubernetes Breach,1,"[""T1133""]","[""T1133""]",T1610,T1610,Tesla Kubernetes Breach,7edcb647-8d0c-4ba4-86e8-b2a423d9b43a,fe5fea66-d2a1-4b41-a9eb-7f8eccf9704a
+Tesla Kubernetes Breach::4,attack_flow,Tesla Kubernetes Breach,1,"[""T1090""]","[""T1090""]",T1496,T1496,Tesla Kubernetes Breach,837bede5-db2f-40ac-b4df-9798548de067,c640ab9c-44db-4eb9-a73d-8cfcafb0d844
+Tesla Kubernetes Breach::5,attack_flow,Tesla Kubernetes Breach,1,"[""T1571""]","[""T1571""]",T1496,T1496,Tesla Kubernetes Breach,d1ea11b4-4701-4f2a-9612-6a1de05710e9,c640ab9c-44db-4eb9-a73d-8cfcafb0d844
+Tesla Kubernetes Breach::6,attack_flow,Tesla Kubernetes Breach,1,"[""T1583""]","[""T1583.004""]",T1090,T1090,Tesla Kubernetes Breach,ec83e8c9-a209-47cb-aa05-52fae33182bb,837bede5-db2f-40ac-b4df-9798548de067
+Tesla Kubernetes Breach::7,attack_flow,Tesla Kubernetes Breach,1,"[""T1583""]","[""T1583.004""]",T1571,T1571,Tesla Kubernetes Breach,ec83e8c9-a209-47cb-aa05-52fae33182bb,d1ea11b4-4701-4f2a-9612-6a1de05710e9
+Tesla Kubernetes Breach::8,attack_flow,Tesla Kubernetes Breach,1,"[""T1610""]","[""T1610""]",T1496,T1496,Tesla Kubernetes Breach,fe5fea66-d2a1-4b41-a9eb-7f8eccf9704a,c640ab9c-44db-4eb9-a73d-8cfcafb0d844
+Uber Breach::0,attack_flow,Uber Breach,1,"[""T1552""]","[""T1552.001""]",T1078,T1078,Uber Breach,06a47d7f-05a1-4c5d-969e-eeae50417206,d1b3bb69-a9e5-4f7e-9926-66eb7bd951db
+Uber Breach::1,attack_flow,Uber Breach,1,"[""T1621""]","[""T1621""]",T1135,T1135,Uber Breach,4b16b17d-0648-49d2-84b7-8ce4aa0dfd24,6177c027-6e9b-4fa5-9f4a-78390af7767d
+Uber Breach::2,attack_flow,Uber Breach,1,"[""T1135""]","[""T1135""]",T1552,T1552.001,Uber Breach,6177c027-6e9b-4fa5-9f4a-78390af7767d,06a47d7f-05a1-4c5d-969e-eeae50417206
+Uber Breach::3,attack_flow,Uber Breach,1,"[""T1078""]","[""T1078""]",T1621,T1621,Uber Breach,95926e82-a770-4752-b6ff-cfcd3451a92f,4b16b17d-0648-49d2-84b7-8ce4aa0dfd24
+Uber Breach::4,attack_flow,Uber Breach,1,"[""T1586""]","[""T1586""]",T1078,T1078,Uber Breach,b1b20bb1-bdb3-437f-89c7-3cce30687643,95926e82-a770-4752-b6ff-cfcd3451a92f
+Uber Breach::5,attack_flow,Uber Breach,1,"[""T1078""]","[""T1078""]",T1555,T1555,Uber Breach,d1b3bb69-a9e5-4f7e-9926-66eb7bd951db,322cb48c-ec57-4311-94b2-489b06f18451
+WhisperGate::0,attack_flow,WhisperGate,1,"[""T1105""]","[""T1105""]",T1027,T1027.003,WhisperGate,0a685dd5-0838-4883-8c08-52ae92e1bb27,e37c269c-2993-49b2-847f-b2b2a2ae973d
+WhisperGate::1,attack_flow,WhisperGate,1,"[""T1562""]","[""T1562.001""]",T1140,T1140,WhisperGate,14e8a54a-8f87-4e65-b227-3df091053118,aa432949-7c30-48da-8028-38687985a8eb
+WhisperGate::2,attack_flow,WhisperGate,1,"[""T1059""]","[""T1059.005""]",T1562,T1562.001,WhisperGate,217e84c6-e343-4d62-8c4e-f55dace6c913,14e8a54a-8f87-4e65-b227-3df091053118
+WhisperGate::3,attack_flow,WhisperGate,1,"[""T1218""]","[""T1218.004""]",T1049,T1049,WhisperGate,256a646b-d1f6-4f11-86a7-86fbff6fba36,2a5161c3-d3a5-454a-beac-0ad43eacc7a1
+WhisperGate::4,attack_flow,WhisperGate,1,"[""T1218""]","[""T1218.004""]",T1082,T1082,WhisperGate,256a646b-d1f6-4f11-86a7-86fbff6fba36,b1d2c424-5d2e-4693-a3cc-de5047e8819f
+WhisperGate::5,attack_flow,WhisperGate,1,"[""T1049""]","[""T1049""]",T1485,T1485,WhisperGate,2a5161c3-d3a5-454a-beac-0ad43eacc7a1,2d74bde7-a217-4a95-88c8-5c57a42c0bd8
+WhisperGate::6,attack_flow,WhisperGate,1,"[""T1485""]","[""T1485""]",T1070,T1070.004,WhisperGate,2d74bde7-a217-4a95-88c8-5c57a42c0bd8,4e521454-aecf-4dd1-8180-a4b0947dbb8f
+WhisperGate::7,attack_flow,WhisperGate,1,"[""T1542""]","[""T1542.003""]",T1059,T1059.001,WhisperGate,3fb61bf8-98d3-474f-9ffb-db073ac92b5e,bafd6a81-968b-4436-890a-a08b3ba0e825
+WhisperGate::8,attack_flow,WhisperGate,1,"[""T1059""]","[""T1059.001""]",T1055,T1055.001,WhisperGate,490d6448-7f30-42f8-8269-8070af8c8923,694efa68-7cff-4b29-ac5b-2500dd3a7fa9
+WhisperGate::9,attack_flow,WhisperGate,1,"[""T1070""]","[""T1070.004""]",T1529,T1529,WhisperGate,4e521454-aecf-4dd1-8180-a4b0947dbb8f,6fde518b-a422-4e01-bd91-17b9ce07e884
+WhisperGate::10,attack_flow,WhisperGate,1,"[""T1055""]","[""T1055.001""]",T1218,T1218.004,WhisperGate,694efa68-7cff-4b29-ac5b-2500dd3a7fa9,256a646b-d1f6-4f11-86a7-86fbff6fba36
+WhisperGate::11,attack_flow,WhisperGate,1,"[""T1027""]","[""T1027.009""]",T1059,T1059.001,WhisperGate,832777c4-7164-4da2-a8c6-4f0c8afab9ce,490d6448-7f30-42f8-8269-8070af8c8923
+WhisperGate::12,attack_flow,WhisperGate,1,"[""T1140""]","[""T1140""]",T1027,T1027.009,WhisperGate,aa432949-7c30-48da-8028-38687985a8eb,832777c4-7164-4da2-a8c6-4f0c8afab9ce
+WhisperGate::13,attack_flow,WhisperGate,1,"[""T1082""]","[""T1082""]",T1485,T1485,WhisperGate,b1d2c424-5d2e-4693-a3cc-de5047e8819f,2d74bde7-a217-4a95-88c8-5c57a42c0bd8
+WhisperGate::14,attack_flow,WhisperGate,1,"[""T1078""]","[""T1078""]",T1105,T1105,WhisperGate,b28935d3-2248-4304-93c7-f3c73afd7351,c89289c0-e397-4de8-bc10-9bb36817433a
+WhisperGate::15,attack_flow,WhisperGate,1,"[""T1059""]","[""T1059.001""]",T1105,T1105,WhisperGate,bafd6a81-968b-4436-890a-a08b3ba0e825,0a685dd5-0838-4883-8c08-52ae92e1bb27
+WhisperGate::16,attack_flow,WhisperGate,1,"[""T1105""]","[""T1105""]",T1542,T1542.003,WhisperGate,c89289c0-e397-4de8-bc10-9bb36817433a,3fb61bf8-98d3-474f-9ffb-db073ac92b5e
+WhisperGate::17,attack_flow,WhisperGate,1,"[""T1027""]","[""T1027""]",T1059,T1059.005,WhisperGate,daa0a62b-cc76-4709-b9c4-3f7454d02c5f,217e84c6-e343-4d62-8c4e-f55dace6c913
+WhisperGate::18,attack_flow,WhisperGate,1,"[""T1027""]","[""T1027.003""]",T1027,T1027,WhisperGate,e37c269c-2993-49b2-847f-b2b2a2ae973d,daa0a62b-cc76-4709-b9c4-3f7454d02c5f

