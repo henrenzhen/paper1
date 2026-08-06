@@ -1,0 +1,3 @@
+transformers==4.55.4
+# BAAI/bge-base-zh-v1.5 revision:
+# f03589ceff5aac7111bd60cfc7d497ca17ecac65

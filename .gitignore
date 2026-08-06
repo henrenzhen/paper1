@@ -24,6 +24,7 @@ venv/
 # Logs and temporary files
 *.log
 tmp/
+work/
 ~$*
 
 # Model weights and serialized training state

@@ -1,0 +1,186 @@
+{
+  "blind_seed_sha256": "c58d467aff225cea957888fd50f31a526e8f565433da563c4d50cd0f8bbba0d3",
+  "mapping": {
+    "R01": {
+      "campaign_id": "JP Morgan Breach",
+      "prefix_len": 7,
+      "source": "attack_flow",
+      "true_label": "T1090"
+    },
+    "R02": {
+      "campaign_id": "78e7504d-968f-477d-8806-4d6c04b94431",
+      "prefix_len": 9,
+      "source": "stockpile",
+      "true_label": "T1570"
+    },
+    "R03": {
+      "campaign_id": "d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e",
+      "prefix_len": 3,
+      "source": "stockpile",
+      "true_label": "T1518"
+    },
+    "R04": {
+      "campaign_id": "Mac Malware Steals Crypto",
+      "prefix_len": 3,
+      "source": "attack_flow",
+      "true_label": "T1059"
+    },
+    "R05": {
+      "campaign_id": "oilrig::unknown",
+      "prefix_len": 34,
+      "source": "ctid",
+      "true_label": "T1083"
+    },
+    "R06": {
+      "campaign_id": "fin6::unknown",
+      "prefix_len": 11,
+      "source": "ctid",
+      "true_label": "T1547"
+    },
+    "R07": {
+      "campaign_id": "WhisperGate",
+      "prefix_len": 12,
+      "source": "attack_flow",
+      "true_label": "T1055"
+    },
+    "R08": {
+      "campaign_id": "turla_snake::unknown",
+      "prefix_len": 12,
+      "source": "ctid",
+      "true_label": "T1069"
+    },
+    "R09": {
+      "campaign_id": "wizard_spider::unknown",
+      "prefix_len": 18,
+      "source": "ctid",
+      "true_label": "T1069"
+    },
+    "R10": {
+      "campaign_id": "carbanak::unknown",
+      "prefix_len": 7,
+      "source": "ctid",
+      "true_label": "T1057"
+    },
+    "R11": {
+      "campaign_id": "sandworm::unknown",
+      "prefix_len": 10,
+      "source": "ctid",
+      "true_label": "T1003"
+    },
+    "R12": {
+      "campaign_id": "turla_carbon::unknown",
+      "prefix_len": 26,
+      "source": "ctid",
+      "true_label": "T1189"
+    },
+    "R13": {
+      "campaign_id": "menu_pass::unknown",
+      "prefix_len": 11,
+      "source": "ctid",
+      "true_label": "T1553"
+    },
+    "R14": {
+      "campaign_id": "fin7::unknown",
+      "prefix_len": 5,
+      "source": "ctid",
+      "true_label": "T1574"
+    },
+    "R15": {
+      "campaign_id": "Maastricht University Ransomware",
+      "prefix_len": 2,
+      "source": "attack_flow",
+      "true_label": "T1059"
+    },
+    "R16": {
+      "campaign_id": "FIN13 Case 2",
+      "prefix_len": 6,
+      "source": "attack_flow",
+      "true_label": "T1003"
+    },
+    "R17": {
+      "campaign_id": "e4324b88-8836-4803-b6b7-09b3c6cd4e94",
+      "prefix_len": 1,
+      "source": "stockpile",
+      "true_label": "T1083"
+    },
+    "R18": {
+      "campaign_id": "c220a8e6-609c-4d5b-9e1c-068ca01c2eec",
+      "prefix_len": 1,
+      "source": "stockpile",
+      "true_label": "T1018"
+    },
+    "R19": {
+      "campaign_id": "ddbd1850-5fd7-41d5-a7a1-1b15dac49090",
+      "prefix_len": 4,
+      "source": "stockpile",
+      "true_label": "T1021"
+    },
+    "R20": {
+      "campaign_id": "Conti Ransomware",
+      "prefix_len": 13,
+      "source": "attack_flow",
+      "true_label": "T1484"
+    },
+    "R21": {
+      "campaign_id": "SolarWinds",
+      "prefix_len": 17,
+      "source": "attack_flow",
+      "true_label": "T1567"
+    },
+    "R22": {
+      "campaign_id": "apt29::unknown",
+      "prefix_len": 61,
+      "source": "ctid",
+      "true_label": "T1546"
+    },
+    "R23": {
+      "campaign_id": "de07f52d-9928-4071-9142-cb1d3bd851e8",
+      "prefix_len": 2,
+      "source": "stockpile",
+      "true_label": "T1087"
+    },
+    "R24": {
+      "campaign_id": "Gootloader",
+      "prefix_len": 4,
+      "source": "attack_flow",
+      "true_label": "T1112"
+    },
+    "R25": {
+      "campaign_id": "50855e29-3b4e-4562-aa55-b3d7f93c26b8",
+      "prefix_len": 8,
+      "source": "stockpile",
+      "true_label": "T1047"
+    },
+    "R26": {
+      "campaign_id": "Muddy Water",
+      "prefix_len": 7,
+      "source": "attack_flow",
+      "true_label": "T1105"
+    },
+    "R27": {
+      "campaign_id": "564ae20d-778d-4965-93dc-b523be2e2ab4",
+      "prefix_len": 12,
+      "source": "stockpile",
+      "true_label": "T1016"
+    },
+    "R28": {
+      "campaign_id": "Hancitor DLL",
+      "prefix_len": 9,
+      "source": "attack_flow",
+      "true_label": "T1218"
+    },
+    "R29": {
+      "campaign_id": "0b73bf34-fc5b-48f7-9194-dce993b915b1",
+      "prefix_len": 4,
+      "source": "stockpile",
+      "true_label": "T1016"
+    },
+    "R30": {
+      "campaign_id": "c724545d-a4cc-492e-8075-2ab9a699c847",
+      "prefix_len": 3,
+      "source": "stockpile",
+      "true_label": "T1548"
+    }
+  },
+  "warning": "Do not provide this file to the blinded reviewer."
+}

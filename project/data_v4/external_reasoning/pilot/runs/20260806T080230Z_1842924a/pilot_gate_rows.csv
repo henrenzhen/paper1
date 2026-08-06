@@ -1,0 +1,31 @@
+source,campaign_id,prefix_len,generation_status,attempt,json_success,reasoning_content_len,finish_reason,three_sections_present,valid_top5,sections_nonempty,reasoning_chars,bge_tokens_with_special_tokens,bge_would_truncate_at_512
+ctid,carbanak::unknown,7,ok,1,True,0,stop,True,True,True,313,269,False
+ctid,sandworm::unknown,10,ok,1,True,0,stop,True,True,True,458,391,False
+ctid,fin7::unknown,5,ok,1,True,0,stop,True,True,True,567,481,False
+ctid,menu_pass::unknown,11,ok,1,True,0,stop,True,True,True,576,486,False
+ctid,turla_snake::unknown,12,ok,1,True,0,stop,True,True,True,654,570,True
+ctid,fin6::unknown,11,ok,1,True,0,stop,True,True,True,793,681,True
+ctid,wizard_spider::unknown,18,ok,1,True,0,stop,True,True,True,544,492,False
+ctid,turla_carbon::unknown,26,ok,1,True,0,stop,True,True,True,462,408,False
+ctid,oilrig::unknown,34,ok,1,True,0,stop,True,True,True,517,382,False
+ctid,apt29::unknown,61,ok,1,True,0,stop,True,True,True,491,392,False
+attack_flow,Gootloader,4,ok,1,True,0,stop,True,True,True,370,333,False
+attack_flow,Maastricht University Ransomware,2,ok,1,True,0,stop,True,True,True,316,293,False
+attack_flow,Mac Malware Steals Crypto,3,ok,1,True,0,stop,True,True,True,514,391,False
+attack_flow,Hancitor DLL,9,ok,2,True,0,stop,True,True,True,639,491,False
+attack_flow,JP Morgan Breach,7,ok,1,True,0,stop,True,True,True,532,472,False
+attack_flow,FIN13 Case 2,6,ok,1,True,0,stop,True,True,True,639,545,True
+attack_flow,Muddy Water,7,ok,1,True,0,stop,True,True,True,425,386,False
+attack_flow,WhisperGate,12,ok,1,True,0,stop,True,True,True,468,408,False
+attack_flow,Conti Ransomware,13,ok,1,True,0,stop,True,True,True,789,677,True
+attack_flow,SolarWinds,17,ok,2,True,0,stop,True,True,True,422,367,False
+stockpile,de07f52d-9928-4071-9142-cb1d3bd851e8,2,json_parse_failed,4,False,0,stop,False,False,False,,,
+stockpile,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,1,ok,1,True,0,stop,True,True,True,332,309,False
+stockpile,e4324b88-8836-4803-b6b7-09b3c6cd4e94,1,ok,1,True,0,stop,True,True,True,352,316,False
+stockpile,0b73bf34-fc5b-48f7-9194-dce993b915b1,4,ok,1,True,0,stop,True,True,True,544,459,False
+stockpile,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,3,ok,1,True,0,stop,True,True,True,540,492,False
+stockpile,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,4,ok,1,True,0,stop,True,True,True,434,374,False
+stockpile,c724545d-a4cc-492e-8075-2ab9a699c847,3,ok,1,True,0,stop,True,True,True,330,307,False
+stockpile,564ae20d-778d-4965-93dc-b523be2e2ab4,12,ok,3,True,0,stop,True,True,True,366,329,False
+stockpile,50855e29-3b4e-4562-aa55-b3d7f93c26b8,8,ok,1,True,0,stop,True,True,True,511,397,False
+stockpile,78e7504d-968f-477d-8806-4d6c04b94431,9,ok,1,True,0,stop,True,True,True,709,621,True
