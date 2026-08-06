@@ -1,0 +1,15 @@
+{
+  "run_id": "20260806T075243Z_e2125a63",
+  "failure_stage": "models",
+  "error_type": "sandbox_dns_blocked",
+  "error_message": "api.deepseek.com could not be resolved inside the restricted sandbox",
+  "completion_requests_sent": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost_usd": 0.0,
+  "runner_script_sha256": "10261c2679b11c850e113983c051b731ea321552958ed7303774370ea7cadec6",
+  "outputs": {
+    "raw_attempts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "ec3f8e0f5878272fd510bc39f790b86945700601ad4f75f594ec642101a53900"
+  }
+}

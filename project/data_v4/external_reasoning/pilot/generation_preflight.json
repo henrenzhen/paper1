@@ -63,7 +63,7 @@
     "data_v4/external_reasoning/pilot/pilot_sample_manifest.json": "1779926b5daffa60f4b6646eee3f7afa790a8dfa3f0390a0441892e17200fea5",
     "data_v4/protocols/LLM_semantic_external_validation_v4.2.md": "bf00b8a5cbf1fe3532ea6215178f3c9bf8ddb2974f1c9b78ecac523c713400dd"
   },
-  "script_sha256": "10261c2679b11c850e113983c051b731ea321552958ed7303774370ea7cadec6",
+  "script_sha256": "6892e87b6904361558ea5df48501462d28a755d12e545ce3ccf6cb3ad3293160",
   "unique_keys": 30,
-  "validated_at": "2026-08-06T07:46:46.016327+00:00"
+  "validated_at": "2026-08-06T07:55:22.558703+00:00"
 }

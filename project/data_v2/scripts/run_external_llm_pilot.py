@@ -300,6 +300,37 @@ def token_cost(usage: dict[str, Any]) -> float:
     ) / 1_000_000
 
 
+def attempt_usage_totals(path: Path) -> dict[str, int | float]:
+    totals: dict[str, int | float] = {
+        "attempts": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_cost_usd": 0.0,
+    }
+    if not path.exists():
+        return totals
+    with path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            totals["attempts"] = int(totals["attempts"]) + 1
+            record = json.loads(line)
+            response_json = record.get("response_json")
+            response_json = response_json if isinstance(response_json, dict) else {}
+            usage = response_json.get("usage")
+            usage = usage if isinstance(usage, dict) else {}
+            totals["input_tokens"] = int(totals["input_tokens"]) + int(
+                usage.get("prompt_tokens") or 0
+            )
+            totals["output_tokens"] = int(totals["output_tokens"]) + int(
+                usage.get("completion_tokens") or 0
+            )
+            totals["estimated_cost_usd"] = float(
+                totals["estimated_cost_usd"]
+            ) + token_cost(usage)
+    return totals
+
+
 def run_one(
     row_index: int,
     row: dict[str, str],
@@ -531,17 +562,12 @@ def get_models(api_key: str) -> tuple[requests.Response, dict[str, Any]]:
         headers={"Authorization": f"Bearer {api_key}"},
         timeout=60,
     )
-    response.raise_for_status()
-    payload = response.json()
-    if not isinstance(payload, dict):
-        raise ValueError("/models response is not an object")
-    model_ids = {
-        str(item.get("id"))
-        for item in payload.get("data", [])
-        if isinstance(item, dict)
-    }
-    if MODEL not in model_ids:
-        raise ValueError(f"required model {MODEL!r} absent from /models: {sorted(model_ids)}")
+    try:
+        parsed = response.json()
+    except ValueError:
+        payload = {"non_json_response": response.text}
+    else:
+        payload = parsed if isinstance(parsed, dict) else {"response": parsed}
     return response, payload
 
 
@@ -656,6 +682,7 @@ def main() -> None:
     log_path = run_dir / "stdout.log"
     audit = AuditWriter(attempts_path, log_path)
     started_at = utc_now()
+    failure_stage = "models"
     audit.log(f"run_id={run_id} input_rows={len(rows)} concurrency={CONCURRENCY}")
 
     try:
@@ -671,7 +698,21 @@ def main() -> None:
             json.dumps(models_record, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+        if models_response.status_code != 200:
+            raise RuntimeError(
+                f"/models returned HTTP {models_response.status_code}; no completions sent"
+            )
+        model_ids = {
+            str(item.get("id"))
+            for item in models_payload.get("data", [])
+            if isinstance(item, dict)
+        }
+        if MODEL not in model_ids:
+            raise RuntimeError(
+                f"required model {MODEL!r} absent from /models: {sorted(model_ids)}"
+            )
         audit.log(f"/models confirmed model={MODEL}")
+        failure_stage = "generation"
 
         results: list[dict[str, Any] | None] = [None] * len(rows)
         with ThreadPoolExecutor(max_workers=CONCURRENCY) as executor:
@@ -723,6 +764,40 @@ def main() -> None:
             json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+    except Exception as exc:
+        audit.log(
+            f"run_failed error_type={type(exc).__name__} message={str(exc)}"
+        )
+        existing_outputs = {
+            path.name: sha256_file(path)
+            for path in sorted(run_dir.iterdir())
+            if path.is_file() and path.name != "failure_manifest.json"
+        }
+        failure_usage = attempt_usage_totals(attempts_path)
+        (run_dir / "failure_manifest.json").write_text(
+            json.dumps(
+                {
+                    **offline,
+                    "run_id": run_id,
+                    "started_at": started_at,
+                    "failed_at": utc_now(),
+                    "failure_stage": failure_stage,
+                    "error_type": type(exc).__name__,
+                    "error_message": str(exc),
+                    "completion_requests_sent": failure_usage["attempts"],
+                    "input_tokens": failure_usage["input_tokens"],
+                    "output_tokens": failure_usage["output_tokens"],
+                    "estimated_cost_usd": failure_usage["estimated_cost_usd"],
+                    "existing_outputs": existing_outputs,
+                },
+                ensure_ascii=False,
+                indent=2,
+                sort_keys=True,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        raise
     finally:
         audit.close()
 

@@ -1,0 +1,15 @@
+{
+  "run_id": "20260806T075305Z_2c0c3ad8",
+  "failure_stage": "models",
+  "error_type": "http_401",
+  "error_message": "DeepSeek /models rejected the environment credential; no completion requests were sent",
+  "completion_requests_sent": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost_usd": 0.0,
+  "runner_script_sha256": "10261c2679b11c850e113983c051b731ea321552958ed7303774370ea7cadec6",
+  "outputs": {
+    "raw_attempts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "c85f42e961f11b2f35b838170153593cf9c770520889d83dc5f314b9ccf5ef24"
+  }
+}
