@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-08-06T09:51:21.676894+00:00",
+  "exploratory_unblinded": true,
+  "protocol": "project/data_v4/protocols/LLM_semantic_pilot_feasibility_screen_v1.md",
+  "vocab_size": 184,
+  "alpha_s_total_mass": 0.1,
+  "lambda_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "rank_weights": [
+    0.6364086465588308,
+    0.23412165725273662,
+    0.0861285444362687,
+    0.03168492079612427,
+    0.011656230956039605
+  ],
+  "input_sha256": {
+    "data_v4/external_reasoning/pilot/pilot_sample_30.csv": "3d0e1dbd5f27e3bd17ddf951508787760f338bfbd6a068ba9bdf07de36ad40c0",
+    "data_v4/external_reasoning/pilot/runs/20260806T081038Z_da72df77/pilot_raw_results.csv": "33b35f86fec7e2a1753c1e0fde95548d8237f7f635aae536d7467c39a5a2d686",
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v2/repro_external/closed_set/ctid_in184.csv": "f87c7028ed33b4d4edaf4852020825a59e576e77975793fa6f9aeb1115e1f2c8",
+    "data_v2/repro_external/closed_set/attack_flow_cumulative_in184.csv": "12749164d9ab107a2854adcdde1f8617f54ecf278e82dd0c4e946d597ca83c5b",
+    "data_v2/repro_external/closed_set/stockpile_cumulative_in184.csv": "825649a496f3382bea633d37598f435c84b43d1d976a8561154e778ac4e57b55"
+  },
+  "script_sha256": "ea59029def6a85b7f0819bb0243b9ba0d13bc799fd8c0fc6814c28ed1070b78f",
+  "row_count": 30,
+  "source_counts": {
+    "ctid": 10,
+    "attack_flow": 10,
+    "stockpile": 10
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "warning": "EXPLORATORY UNBLINDED SCREEN. Do not provide this directory to the groundedness reviewer. These 30 rows are development/screening data.",
+  "methods": [
+    "A0",
+    "A",
+    "B0",
+    "B2"
+  ],
+  "lambda_by_outer_source": {
+    "ctid": 0.6,
+    "attack_flow": 0.45,
+    "stockpile": 0.6
+  },
+  "by_source": {
+    "ctid": {
+      "A0": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 0,
+          "hit5": 0.0,
+          "mrr": 0.03378521082263533
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.0,
+          "mrr": 0.03378521082263533
+        },
+        "mrr_scope": "full_184"
+      },
+      "A": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 0,
+          "hit5": 0.0,
+          "mrr": 0.030573811422495635
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.0,
+          "mrr": 0.030573811422495635
+        },
+        "mrr_scope": "full_184"
+      },
+      "B0": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 1,
+          "hit5": 0.1,
+          "mrr": 0.02
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.1,
+          "mrr": 0.02
+        },
+        "mrr_scope": "top5_only"
+      },
+      "B2": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 1,
+          "hit5": 0.1,
+          "mrr": 0.03873234514023988
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.1,
+          "mrr": 0.03873234514023988
+        },
+        "mrr_scope": "full_184"
+      }
+    },
+    "attack_flow": {
+      "A0": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 1,
+          "top1": 0.1,
+          "hit5_count": 2,
+          "hit5": 0.2,
+          "mrr": 0.14473903844809632
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.1,
+          "hit5": 0.2,
+          "mrr": 0.14473903844809632
+        },
+        "mrr_scope": "full_184"
+      },
+      "A": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 1,
+          "hit5": 0.1,
+          "mrr": 0.05329888694963516
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.1,
+          "mrr": 0.05329888694963516
+        },
+        "mrr_scope": "full_184"
+      },
+      "B0": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 2,
+          "top1": 0.2,
+          "hit5_count": 4,
+          "hit5": 0.4,
+          "mrr": 0.25333333333333335
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.2,
+          "hit5": 0.4,
+          "mrr": 0.25333333333333335
+        },
+        "mrr_scope": "top5_only"
+      },
+      "B2": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 1,
+          "top1": 0.1,
+          "hit5_count": 4,
+          "hit5": 0.4,
+          "mrr": 0.23746977176437484
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.1,
+          "hit5": 0.4,
+          "mrr": 0.23746977176437484
+        },
+        "mrr_scope": "full_184"
+      }
+    },
+    "stockpile": {
+      "A0": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 1,
+          "hit5": 0.1,
+          "mrr": 0.08538976423902894
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.1,
+          "mrr": 0.08538976423902894
+        },
+        "mrr_scope": "full_184"
+      },
+      "A": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 0,
+          "top1": 0.0,
+          "hit5_count": 1,
+          "hit5": 0.1,
+          "mrr": 0.09196317900652266
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.0,
+          "hit5": 0.1,
+          "mrr": 0.09196317900652266
+        },
+        "mrr_scope": "full_184"
+      },
+      "B0": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 1,
+          "top1": 0.1,
+          "hit5_count": 2,
+          "hit5": 0.2,
+          "mrr": 0.13333333333333333
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.1,
+          "hit5": 0.2,
+          "mrr": 0.13333333333333333
+        },
+        "mrr_scope": "top5_only"
+      },
+      "B2": {
+        "row_micro": {
+          "n": 10,
+          "top1_count": 1,
+          "top1": 0.1,
+          "hit5_count": 2,
+          "hit5": 0.2,
+          "mrr": 0.18337932520488304
+        },
+        "campaign_macro": {
+          "campaigns": 10,
+          "top1": 0.1,
+          "hit5": 0.2,
+          "mrr": 0.18337932520488304
+        },
+        "mrr_scope": "full_184"
+      }
+    }
+  },
+  "pooled_30": {
+    "A0": {
+      "row_micro": {
+        "n": 30,
+        "top1_count": 1,
+        "top1": 0.03333333333333333,
+        "hit5_count": 3,
+        "hit5": 0.1,
+        "mrr": 0.08797133783658688
+      },
+      "campaign_macro": {
+        "campaigns": 30,
+        "top1": 0.03333333333333333,
+        "hit5": 0.1,
+        "mrr": 0.08797133783658688
+      },
+      "mrr_scope": "full_184"
+    },
+    "A": {
+      "row_micro": {
+        "n": 30,
+        "top1_count": 0,
+        "top1": 0.0,
+        "hit5_count": 2,
+        "hit5": 0.06666666666666667,
+        "mrr": 0.05861195912621782
+      },
+      "campaign_macro": {
+        "campaigns": 30,
+        "top1": 0.0,
+        "hit5": 0.06666666666666667,
+        "mrr": 0.05861195912621782
+      },
+      "mrr_scope": "full_184"
+    },
+    "B0": {
+      "row_micro": {
+        "n": 30,
+        "top1_count": 3,
+        "top1": 0.1,
+        "hit5_count": 7,
+        "hit5": 0.23333333333333334,
+        "mrr": 0.13555555555555557
+      },
+      "campaign_macro": {
+        "campaigns": 30,
+        "top1": 0.1,
+        "hit5": 0.23333333333333334,
+        "mrr": 0.13555555555555557
+      },
+      "mrr_scope": "top5_only"
+    },
+    "B2": {
+      "row_micro": {
+        "n": 30,
+        "top1_count": 2,
+        "top1": 0.06666666666666667,
+        "hit5_count": 7,
+        "hit5": 0.23333333333333334,
+        "mrr": 0.15319381403649918
+      },
+      "campaign_macro": {
+        "campaigns": 30,
+        "top1": 0.06666666666666667,
+        "hit5": 0.23333333333333334,
+        "mrr": 0.15319381403649918
+      },
+      "mrr_scope": "full_184"
+    }
+  },
+  "invalid_top5_rows": [
+    {
+      "source": "stockpile",
+      "campaign_id": "564ae20d-778d-4965-93dc-b523be2e2ab4",
+      "prefix_len": 12,
+      "generation_status": "json_parse_failed"
+    }
+  ]
+}
