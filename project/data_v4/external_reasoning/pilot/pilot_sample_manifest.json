@@ -1,0 +1,224 @@
+{
+  "algorithm": {
+    "allocation_per_source": {
+      "long": 3,
+      "medium": 4,
+      "short": 3
+    },
+    "campaign_constraint": "10 distinct campaigns per source",
+    "label_usage": "true_label is carried to output but never used for selection",
+    "quantiles": "within-source nearest-rank q1=x_(ceil(N/3)), q2=x_(ceil(2N/3))",
+    "ranking": "SHA256(seed, source, stratum-slot, campaign/key); deterministic backtracking returns the first feasible assignment",
+    "strata": "short<=q1; q1<medium<=q2; long>q2"
+  },
+  "generated_at": "2026-08-06T07:42:07.472050+00:00",
+  "inputs": {
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v2/repro_external/kg_context/external_prefixes_with_kg_in184.csv": "aed9d6c3dfd6d679ac8c12f66f8260b325d53cf62029fba7d7775b7c5cd3774c",
+    "data_v4/protocols/LLM_semantic_external_validation_v4.2.md": "bf00b8a5cbf1fe3532ea6215178f3c9bf8ddb2974f1c9b78ecac523c713400dd"
+  },
+  "output": {
+    "path": "data_v4/external_reasoning/pilot/pilot_sample_30.csv",
+    "rows": 30,
+    "sha256": "3d0e1dbd5f27e3bd17ddf951508787760f338bfbd6a068ba9bdf07de36ad40c0"
+  },
+  "script_sha256": "b27310b8fdf3e0b59dabcc46b96b88a068bf253d84fe837691e81fdcb7463e6b",
+  "seed": 20260806,
+  "sources": {
+    "attack_flow": {
+      "allocation": {
+        "long": 3,
+        "medium": 4,
+        "short": 3
+      },
+      "campaigns": 35,
+      "input_rows": 428,
+      "q1": 5,
+      "q2": 10,
+      "selected_campaigns": 10,
+      "selected_keys": [
+        [
+          "attack_flow",
+          "Gootloader",
+          4
+        ],
+        [
+          "attack_flow",
+          "Maastricht University Ransomware",
+          2
+        ],
+        [
+          "attack_flow",
+          "Mac Malware Steals Crypto",
+          3
+        ],
+        [
+          "attack_flow",
+          "Hancitor DLL",
+          9
+        ],
+        [
+          "attack_flow",
+          "JP Morgan Breach",
+          7
+        ],
+        [
+          "attack_flow",
+          "FIN13 Case 2",
+          6
+        ],
+        [
+          "attack_flow",
+          "Muddy Water",
+          7
+        ],
+        [
+          "attack_flow",
+          "WhisperGate",
+          12
+        ],
+        [
+          "attack_flow",
+          "Conti Ransomware",
+          13
+        ],
+        [
+          "attack_flow",
+          "SolarWinds",
+          17
+        ]
+      ],
+      "selected_rows": 10
+    },
+    "ctid": {
+      "allocation": {
+        "long": 3,
+        "medium": 4,
+        "short": 3
+      },
+      "campaigns": 10,
+      "input_rows": 281,
+      "q1": 10,
+      "q2": 22,
+      "selected_campaigns": 10,
+      "selected_keys": [
+        [
+          "ctid",
+          "carbanak::unknown",
+          7
+        ],
+        [
+          "ctid",
+          "sandworm::unknown",
+          10
+        ],
+        [
+          "ctid",
+          "fin7::unknown",
+          5
+        ],
+        [
+          "ctid",
+          "menu_pass::unknown",
+          11
+        ],
+        [
+          "ctid",
+          "turla_snake::unknown",
+          12
+        ],
+        [
+          "ctid",
+          "fin6::unknown",
+          11
+        ],
+        [
+          "ctid",
+          "wizard_spider::unknown",
+          18
+        ],
+        [
+          "ctid",
+          "turla_carbon::unknown",
+          26
+        ],
+        [
+          "ctid",
+          "oilrig::unknown",
+          34
+        ],
+        [
+          "ctid",
+          "apt29::unknown",
+          61
+        ]
+      ],
+      "selected_rows": 10
+    },
+    "stockpile": {
+      "allocation": {
+        "long": 3,
+        "medium": 4,
+        "short": 3
+      },
+      "campaigns": 27,
+      "input_rows": 121,
+      "q1": 2,
+      "q2": 5,
+      "selected_campaigns": 10,
+      "selected_keys": [
+        [
+          "stockpile",
+          "de07f52d-9928-4071-9142-cb1d3bd851e8",
+          2
+        ],
+        [
+          "stockpile",
+          "c220a8e6-609c-4d5b-9e1c-068ca01c2eec",
+          1
+        ],
+        [
+          "stockpile",
+          "e4324b88-8836-4803-b6b7-09b3c6cd4e94",
+          1
+        ],
+        [
+          "stockpile",
+          "0b73bf34-fc5b-48f7-9194-dce993b915b1",
+          4
+        ],
+        [
+          "stockpile",
+          "d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e",
+          3
+        ],
+        [
+          "stockpile",
+          "ddbd1850-5fd7-41d5-a7a1-1b15dac49090",
+          4
+        ],
+        [
+          "stockpile",
+          "c724545d-a4cc-492e-8075-2ab9a699c847",
+          3
+        ],
+        [
+          "stockpile",
+          "564ae20d-778d-4965-93dc-b523be2e2ab4",
+          12
+        ],
+        [
+          "stockpile",
+          "50855e29-3b4e-4562-aa55-b3d7f93c26b8",
+          8
+        ],
+        [
+          "stockpile",
+          "78e7504d-968f-477d-8806-4d6c04b94431",
+          9
+        ]
+      ],
+      "selected_rows": 10
+    }
+  }
+}

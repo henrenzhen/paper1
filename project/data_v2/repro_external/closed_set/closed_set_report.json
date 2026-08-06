@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-08-06T07:38:14.308093+00:00",
+  "kg_closed_set": {
+    "closed_path": "data_v2/repro_external/kg_context/external_prefixes_with_kg_in184.csv",
+    "closed_rows": 830,
+    "closed_sha256": "aed9d6c3dfd6d679ac8c12f66f8260b325d53cf62029fba7d7775b7c5cd3774c",
+    "raw_path": "data_v2/repro_external/kg_context/external_prefixes_with_kg.csv",
+    "raw_rows": 834,
+    "raw_sha256": "2682e913fb1e13365bb778b318085a67a1261859da6c0226b8550e38ca9979d7"
+  },
+  "policy": {
+    "campaign_macro": "J is the number of campaigns remaining in each source; no campaign is removed; within-campaign n_j uses the selected analysis view",
+    "primary": "filter rows only when true_label is outside the frozen 184-class vocabulary; preserve all prefix tokens",
+    "sensitivity": "use all 834 raw rows; assign every out-of-vocabulary target Top-1/Hit@5 failure and MRR=0 for every system; do not train OOV targets"
+  },
+  "script_sha256": "7d99d2375c7d0a4602b15d9463245770982732785162bfd1353f98aed477cd5f",
+  "sources": {
+    "attack_flow": {
+      "campaign_macro_J": 35,
+      "campaigns_after": 35,
+      "campaigns_before": 35,
+      "campaigns_removed": [],
+      "closed_path": "data_v2/repro_external/closed_set/attack_flow_cumulative_in184.csv",
+      "closed_rows": 428,
+      "closed_sha256": "12749164d9ab107a2854adcdde1f8617f54ecf278e82dd0c4e946d597ca83c5b",
+      "dropped_rows": [
+        {
+          "campaign_id": "FIN13 Case 1",
+          "campaign_rows_after": 30,
+          "campaign_rows_before": 31,
+          "prefix_len": 28,
+          "source": "attack_flow",
+          "true_label": "T1533"
+        },
+        {
+          "campaign_id": "NotPetya",
+          "campaign_rows_after": 15,
+          "campaign_rows_before": 16,
+          "prefix_len": 7,
+          "source": "attack_flow",
+          "true_label": "T0866"
+        },
+        {
+          "campaign_id": "Target Breach",
+          "campaign_rows_after": 10,
+          "campaign_rows_before": 11,
+          "prefix_len": 7,
+          "source": "attack_flow",
+          "true_label": "T1029"
+        }
+      ],
+      "raw_path": "data_v2/repro_external/cumulative/attack_flow_cumulative.csv",
+      "raw_rows": 431,
+      "raw_sha256": "308d52a0e63e79bbfbcb37b89442fc0f960c9ba5d6ecebe27cd9cf23a65a5e9f",
+      "rows_dropped": 3
+    },
+    "ctid": {
+      "campaign_macro_J": 10,
+      "campaigns_after": 10,
+      "campaigns_before": 10,
+      "campaigns_removed": [],
+      "closed_path": "data_v2/repro_external/closed_set/ctid_in184.csv",
+      "closed_rows": 281,
+      "closed_sha256": "f87c7028ed33b4d4edaf4852020825a59e576e77975793fa6f9aeb1115e1f2c8",
+      "dropped_rows": [],
+      "raw_path": "data_v2/repro_external/loader_snapshots/ctid_current_loader.csv",
+      "raw_rows": 281,
+      "raw_sha256": "f87c7028ed33b4d4edaf4852020825a59e576e77975793fa6f9aeb1115e1f2c8",
+      "rows_dropped": 0
+    },
+    "stockpile": {
+      "campaign_macro_J": 27,
+      "campaigns_after": 27,
+      "campaigns_before": 27,
+      "campaigns_removed": [],
+      "closed_path": "data_v2/repro_external/closed_set/stockpile_cumulative_in184.csv",
+      "closed_rows": 121,
+      "closed_sha256": "825649a496f3382bea633d37598f435c84b43d1d976a8561154e778ac4e57b55",
+      "dropped_rows": [
+        {
+          "campaign_id": "0b73bf34-fc5b-48f7-9194-dce993b915b1",
+          "campaign_rows_after": 4,
+          "campaign_rows_before": 5,
+          "prefix_len": 5,
+          "source": "stockpile",
+          "true_label": "T1499"
+        }
+      ],
+      "raw_path": "data_v2/repro_external/cumulative/stockpile_cumulative.csv",
+      "raw_rows": 122,
+      "raw_sha256": "ae7f79f1c031b276f322851a5d9578784183a593fd46981a2f9b3bef0938a326",
+      "rows_dropped": 1
+    }
+  },
+  "totals": {
+    "closed_rows": 830,
+    "raw_rows": 834,
+    "rows_dropped": 4
+  },
+  "vocabulary": {
+    "labels": 184,
+    "path": "data_v2/core/rl_label_vocab.csv",
+    "sha256": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738"
+  }
+}

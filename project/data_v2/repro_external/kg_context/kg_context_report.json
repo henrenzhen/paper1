@@ -1,0 +1,63 @@
+{
+  "constants": {
+    "max_chars_per_snippet": 260,
+    "max_context_chars": 700,
+    "max_context_chars_before_llm_truncation": 1400,
+    "recent_k": 3,
+    "tie_break": "descending legacy score, then ascending KG source-row index",
+    "top_k": 8,
+    "truncation": "hard maximum includes the ellipsis suffix"
+  },
+  "generated_at": "2026-08-06T07:38:13.665403+00:00",
+  "inputs": {
+    "data/attack_kg_snippets.csv": {
+      "rows": 21909,
+      "sha256": "d01a0fcf94a46706c025271c1a1b05053f8e3fce5b161e4099f466c7237a4f56"
+    },
+    "data_v2/repro_external/cumulative/attack_flow_cumulative.csv": {
+      "rows": 431,
+      "sha256": "308d52a0e63e79bbfbcb37b89442fc0f960c9ba5d6ecebe27cd9cf23a65a5e9f"
+    },
+    "data_v2/repro_external/cumulative/stockpile_cumulative.csv": {
+      "rows": 122,
+      "sha256": "ae7f79f1c031b276f322851a5d9578784183a593fd46981a2f9b3bef0938a326"
+    },
+    "data_v2/repro_external/loader_snapshots/ctid_current_loader.csv": {
+      "rows": 281,
+      "sha256": "f87c7028ed33b4d4edaf4852020825a59e576e77975793fa6f9aeb1115e1f2c8"
+    }
+  },
+  "leakage_guard": "retrieve() receives prefix only; true_label and future rows are never arguments",
+  "output": {
+    "path": "data_v2/repro_external/kg_context/external_prefixes_with_kg.csv",
+    "rows": 834,
+    "sha256": "2682e913fb1e13365bb778b318085a67a1261859da6c0226b8550e38ca9979d7"
+  },
+  "script_sha256": "8807d7eaea1e1067558a3fd2272ffbfc62ad7e3e5ddd67dbc25a29ad28132388",
+  "sources": {
+    "attack_flow": {
+      "empty_kg_ratio": 0.0,
+      "empty_kg_rows": 0,
+      "kg_chars_after_max": 699,
+      "kg_chars_after_mean": 691.9419953596288,
+      "kg_chars_before_mean": 1287.1020881670534,
+      "rows": 431
+    },
+    "ctid": {
+      "empty_kg_ratio": 0.0,
+      "empty_kg_rows": 0,
+      "kg_chars_after_max": 699,
+      "kg_chars_after_mean": 692.55871886121,
+      "kg_chars_before_mean": 1303.5195729537365,
+      "rows": 281
+    },
+    "stockpile": {
+      "empty_kg_ratio": 0.0,
+      "empty_kg_rows": 0,
+      "kg_chars_after_max": 699,
+      "kg_chars_after_mean": 695.4590163934427,
+      "kg_chars_before_mean": 1295.1311475409836,
+      "rows": 122
+    }
+  }
+}
