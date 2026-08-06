@@ -1,0 +1,154 @@
+{
+  "automatic_blocking_gates_passed": true,
+  "automatic_gates": [
+    {
+      "blocking": true,
+      "denominator": 30,
+      "gate": 1,
+      "name": "JSON parse success after retries",
+      "numerator": 29,
+      "observed": 0.9666666666666667,
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.95
+    },
+    {
+      "blocking": true,
+      "denominator": 30,
+      "gate": 2,
+      "name": "internal reasoning_content absent or length zero",
+      "numerator": 30,
+      "observed": 1.0,
+      "operator": ">=",
+      "passed": true,
+      "threshold": 1.0
+    },
+    {
+      "blocking": true,
+      "denominator": 30,
+      "gate": 3,
+      "name": "finish_reason=length",
+      "numerator": 0,
+      "observed": 0.0,
+      "operator": "<=",
+      "passed": true,
+      "threshold": 0.02
+    },
+    {
+      "blocking": true,
+      "denominator": 30,
+      "gate": 4,
+      "name": "three required section titles",
+      "numerator": 29,
+      "observed": 0.9666666666666667,
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.95
+    },
+    {
+      "blocking": true,
+      "denominator": 30,
+      "gate": 5,
+      "name": "valid fixed-vocabulary Top-5",
+      "numerator": 29,
+      "observed": 0.9666666666666667,
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.9
+    },
+    {
+      "blocking": true,
+      "denominator": 30,
+      "gate": 6,
+      "name": "all three sections nonempty",
+      "numerator": 29,
+      "observed": 0.9666666666666667,
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.95
+    },
+    {
+      "blocking": true,
+      "denominator": 29,
+      "gate": 7,
+      "name": "BGE token loss after mandatory non-overlap chunking",
+      "numerator": 0,
+      "observed": 0.0,
+      "operator": "<=",
+      "passed": true,
+      "threshold": 0.05
+    },
+    {
+      "blocking": false,
+      "denominator": 29,
+      "gate": 8,
+      "name": "mean reasoning characters among valid reasoning",
+      "numerator": 14535,
+      "observed": 501.2068965517241,
+      "operator": "range",
+      "passed": false,
+      "threshold": [
+        600.0,
+        1100.0
+      ]
+    }
+  ],
+  "bge": {
+    "chunking_required": true,
+    "chunking_resolution_passed": true,
+    "content_limit_if_chunking": 510,
+    "encoding_mode": "chunked",
+    "model_id": "BAAI/bge-base-zh-v1.5",
+    "model_max_length": 512,
+    "python_executable": "/Users/bytedance/Documents/Codex/2026-08-06/https-github-com-henrenzhen-paper1-https/work/paper1/work/pilot_tokenizer_env/bin/python",
+    "python_version": "3.9.6",
+    "raw_would_truncate_rate": 0.1724137931034483,
+    "raw_would_truncate_rows": 5,
+    "revision": "f03589ceff5aac7111bd60cfc7d497ca17ecac65",
+    "rows_with_token_loss_after_chunking": 0,
+    "special_tokens_to_add": 2,
+    "tokenizer_class": "BertTokenizerFast",
+    "tokenizers_version": "0.21.4",
+    "transformers_version": "4.55.4"
+  },
+  "bge_token_distribution_valid_rows": {
+    "max": 625,
+    "mean": 429.51724137931035,
+    "median": 414,
+    "min": 282,
+    "n": 29
+  },
+  "generated_at": "2026-08-06T08:12:04.671466+00:00",
+  "groundedness": {
+    "private_key_file": "blind_review_key.json",
+    "private_key_file_sha256": "a29f1625014d8d61622846a9f4162fe146af49ec3137fd2683ce6bbce6d86205",
+    "required_rows": 30,
+    "review_sheet": "blind_review_sheet.csv",
+    "review_sheet_sha256": "7295d5cd950ad3d5568e04856ac477ee4374167f84b1f8086bbf50eee2762c13",
+    "status": "pending_human_blind_review"
+  },
+  "outputs": {
+    "blind_review_key.json": "a29f1625014d8d61622846a9f4162fe146af49ec3137fd2683ce6bbce6d86205",
+    "blind_review_sheet.csv": "7295d5cd950ad3d5568e04856ac477ee4374167f84b1f8086bbf50eee2762c13",
+    "pilot_gate_rows.csv": "278dc87ea5abe120a2670b92d99241bcd95f79538b174bdf19f07a29b6de53cf"
+  },
+  "raw_inputs": {
+    "data_v4/external_reasoning/pilot/pilot_sample_30.csv": "3d0e1dbd5f27e3bd17ddf951508787760f338bfbd6a068ba9bdf07de36ad40c0",
+    "generation_manifest.json": "7c9e5ea3e047c5fc82a85d191a5461f9d13b0f643096e389e002cf76818eb7a7",
+    "pilot_raw_results.csv": "33b35f86fec7e2a1753c1e0fde95548d8237f7f635aae536d7467c39a5a2d686",
+    "raw_attempts.jsonl": "be41249284e3c1c73695ab5c66164dfa2ee6eefecd33d16dc9b4182951f006f3"
+  },
+  "reasoning_character_distribution_valid_rows": {
+    "max": 734,
+    "mean": 501.2068965517241,
+    "median": 494,
+    "min": 330,
+    "n": 29
+  },
+  "run_dir": "data_v4/external_reasoning/pilot/runs/20260806T081038Z_da72df77",
+  "script_sha256": "5c052e6ce254b1775206e99c39f579f4a2f29038184431c59d463034b4b1f878",
+  "status_counts": {
+    "json_parse_failed": 1,
+    "ok": 29
+  }
+}

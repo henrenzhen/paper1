@@ -27,6 +27,8 @@ import tokenizers
 import transformers
 from transformers import AutoTokenizer
 
+transformers.logging.set_verbosity_error()
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_RUN_DIR = (
@@ -117,6 +119,12 @@ def gate(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN_DIR)
+    parser.add_argument(
+        "--encoding-mode",
+        choices=("standard", "chunked"),
+        default="standard",
+        help="BGE encoding mode frozen for this pilot round",
+    )
     return parser.parse_args()
 
 
@@ -150,22 +158,40 @@ def main() -> None:
     valid_reasoning_lengths: list[int] = []
     valid_token_lengths: list[int] = []
     tokenizer_truncated = 0
+    rows_with_token_loss_after_chunking = 0
+    content_limit = MAX_LENGTH - special_tokens
     for row in rows:
         valid_reasoning = as_bool(row["valid_reasoning"])
         reasoning = row["llm_thinking_process"]
         token_length: int | None = None
         would_truncate: bool | None = None
+        chunk_count: int | None = None
+        chunk_max_with_special: int | None = None
+        chunk_token_loss: int | None = None
         if valid_reasoning:
-            input_ids = tokenizer.encode(
+            content_ids = tokenizer.encode(
                 reasoning,
-                add_special_tokens=True,
+                add_special_tokens=False,
                 truncation=False,
             )
-            token_length = len(input_ids)
+            token_length = len(content_ids) + special_tokens
             would_truncate = token_length > MAX_LENGTH
+            chunks = [
+                content_ids[index : index + content_limit]
+                for index in range(0, len(content_ids), content_limit)
+            ]
+            reconstructed = [token for chunk in chunks for token in chunk]
+            if reconstructed != content_ids:
+                raise AssertionError("non-overlap chunking did not preserve token IDs")
+            chunk_count = len(chunks)
+            chunk_max_with_special = max(len(chunk) + special_tokens for chunk in chunks)
+            chunk_token_loss = len(content_ids) - len(reconstructed)
+            if chunk_max_with_special > MAX_LENGTH:
+                raise AssertionError("chunk exceeds BGE model_max_length")
             valid_reasoning_lengths.append(len(reasoning))
             valid_token_lengths.append(token_length)
             tokenizer_truncated += int(would_truncate)
+            rows_with_token_loss_after_chunking += int(chunk_token_loss != 0)
         row_audits.append(
             {
                 "source": row["source"],
@@ -186,6 +212,15 @@ def main() -> None:
                 "bge_would_truncate_at_512": (
                     would_truncate if would_truncate is not None else ""
                 ),
+                "bge_chunk_count": chunk_count if chunk_count is not None else "",
+                "bge_max_chunk_tokens_with_special": (
+                    chunk_max_with_special
+                    if chunk_max_with_special is not None
+                    else ""
+                ),
+                "bge_chunk_token_loss": (
+                    chunk_token_loss if chunk_token_loss is not None else ""
+                ),
             }
         )
 
@@ -199,6 +234,14 @@ def main() -> None:
     valid_reasoning_count = len(valid_reasoning_lengths)
     mean_reasoning_chars = statistics.mean(valid_reasoning_lengths)
     truncation_rate = rate(tokenizer_truncated, valid_reasoning_count)
+    if args.encoding_mode == "standard":
+        gate7_numerator = tokenizer_truncated
+        gate7_rate = truncation_rate
+        gate7_name = "BGE tokenizer truncation among valid reasoning"
+    else:
+        gate7_numerator = rows_with_token_loss_after_chunking
+        gate7_rate = rate(rows_with_token_loss_after_chunking, valid_reasoning_count)
+        gate7_name = "BGE token loss after mandatory non-overlap chunking"
 
     gates = [
         gate(1, "JSON parse success after retries", ok_count, total, rate(ok_count, total), ">=", 0.95, True),
@@ -207,7 +250,7 @@ def main() -> None:
         gate(4, "three required section titles", three_sections, total, rate(three_sections, total), ">=", 0.95, True),
         gate(5, "valid fixed-vocabulary Top-5", valid_top5, total, rate(valid_top5, total), ">=", 0.90, True),
         gate(6, "all three sections nonempty", nonempty_sections, total, rate(nonempty_sections, total), ">=", 0.95, True),
-        gate(7, "BGE tokenizer truncation among valid reasoning", tokenizer_truncated, valid_reasoning_count, truncation_rate, "<=", 0.05, True),
+        gate(7, gate7_name, gate7_numerator, valid_reasoning_count, gate7_rate, "<=", 0.05, True),
         gate(8, "mean reasoning characters among valid reasoning", sum(valid_reasoning_lengths), valid_reasoning_count, mean_reasoning_chars, "range", (600.0, 1100.0), False),
     ]
     automatic_blocking_passed = all(
@@ -334,7 +377,15 @@ def main() -> None:
             "model_max_length": tokenizer.model_max_length,
             "special_tokens_to_add": special_tokens,
             "content_limit_if_chunking": MAX_LENGTH - special_tokens,
+            "encoding_mode": args.encoding_mode,
+            "raw_would_truncate_rows": tokenizer_truncated,
+            "raw_would_truncate_rate": truncation_rate,
+            "rows_with_token_loss_after_chunking": rows_with_token_loss_after_chunking,
             "chunking_required": truncation_rate > 0.05,
+            "chunking_resolution_passed": (
+                args.encoding_mode == "chunked"
+                and rows_with_token_loss_after_chunking == 0
+            ),
             "transformers_version": transformers.__version__,
             "tokenizers_version": tokenizers.__version__,
             "python_version": platform.python_version(),
