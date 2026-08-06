@@ -59,6 +59,43 @@ CONCURRENCY = 50
 MAX_RETRIES = 3
 REQUEST_TIMEOUT_SECONDS = 300
 
+BGE_CONFIG = {
+    "model_id": "BAAI/bge-base-zh-v1.5",
+    "revision": "f03589ceff5aac7111bd60cfc7d497ca17ecac65",
+    "tokenizer_class": "BertTokenizerFast",
+    "model_max_length": 512,
+    "special_tokens_to_add": 2,
+    "encoding_mode": "continuous_nonoverlap_chunking",
+    "content_limit": 510,
+    "chunk_embedding": "CLS then L2 normalize each chunk",
+    "aggregation": "arithmetic mean of normalized chunks then final L2 normalize",
+    "trigger": {
+        "run_id": "20260806T080230Z_1842924a",
+        "valid_reasoning_rows": 29,
+        "would_truncate_rows": 5,
+        "would_truncate_rate": 0.1724137931034483,
+        "protocol_action": "v4.2 section 5.7 gate 7 automatic switch",
+    },
+}
+
+DOWNSTREAM_TRAINING_CONFIG = {
+    "optimizer": "Adam",
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "batch_size": 256,
+    "max_epochs": 150,
+    "checkpoint_interval": 5,
+    "probe": "768 -> 256 -> 184",
+    "encoder_frozen": True,
+    "train_seeds": [42, 43, 44, 45, 46],
+    "inner_lodo": "two training sources alternate as inner validation source",
+    "selection_metric": "source-equal campaign-macro Top-1",
+    "tie_break": "highest metric, then smallest lambda, then earliest epoch",
+    "campaign_bootstrap_replicates": 2000,
+    "seed_aggregation": "metric per seed, then arithmetic mean",
+}
+
 SYSTEM_PROMPT = """你是一个高级 APT 威胁狩猎专家与 ATT&CK 攻击图分析师。
 你的任务是：基于攻击者已执行的 ATT&CK 技术序列（Prefix）以及相关的知识图谱上下文（KG Context），推断攻击者当前的【阶段性操作状态】，并直接预测下一步最可能执行的 5 个 ATT&CK Parent Technique（父技术）。
 输入是真实攻击活动的技术序列。你必须遵守以下严格限制：
@@ -627,6 +664,9 @@ def config_snapshot() -> dict[str, Any]:
             "urllib3": urllib3.__version__,
             "executable": sys.executable,
         },
+        "pilot_round": "post_gate7_chunking_full_rerun",
+        "bge_config": BGE_CONFIG,
+        "downstream_training_config": DOWNSTREAM_TRAINING_CONFIG,
     }
 
 
