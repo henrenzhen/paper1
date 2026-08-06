@@ -1,0 +1,38 @@
+2026-08-06T08:10:38.713066+00:00 run_id=20260806T081038Z_da72df77 input_rows=30 concurrency=50
+2026-08-06T08:10:38.868662+00:00 /models confirmed model=deepseek-v4-flash
+2026-08-06T08:10:41.690459+00:00 retry key=stockpile|564ae20d-778d-4965-93dc-b523be2e2ab4|12 after_status=json_parse_failed delay=1.956s
+2026-08-06T08:10:41.795292+00:00 retry key=stockpile|de07f52d-9928-4071-9142-cb1d3bd851e8|2 after_status=json_parse_failed delay=1.814s
+2026-08-06T08:10:41.830580+00:00 retry key=ctid|turla_carbon::unknown|26 after_status=json_parse_failed delay=1.827s
+2026-08-06T08:10:41.848122+00:00 completed 22/30 key=stockpile|c220a8e6-609c-4d5b-9e1c-068ca01c2eec|1 status=ok attempts=1
+2026-08-06T08:10:41.927155+00:00 completed 27/30 key=stockpile|c724545d-a4cc-492e-8075-2ab9a699c847|3 status=ok attempts=1
+2026-08-06T08:10:41.938685+00:00 completed 18/30 key=attack_flow|WhisperGate|12 status=ok attempts=1
+2026-08-06T08:10:42.023087+00:00 completed 1/30 key=ctid|carbanak::unknown|7 status=ok attempts=1
+2026-08-06T08:10:42.074154+00:00 completed 11/30 key=attack_flow|Gootloader|4 status=ok attempts=1
+2026-08-06T08:10:42.199004+00:00 completed 17/30 key=attack_flow|Muddy Water|7 status=ok attempts=1
+2026-08-06T08:10:42.256782+00:00 completed 2/30 key=ctid|sandworm::unknown|10 status=ok attempts=1
+2026-08-06T08:10:42.307038+00:00 completed 29/30 key=stockpile|50855e29-3b4e-4562-aa55-b3d7f93c26b8|8 status=ok attempts=1
+2026-08-06T08:10:42.327296+00:00 completed 20/30 key=attack_flow|SolarWinds|17 status=ok attempts=1
+2026-08-06T08:10:42.545818+00:00 completed 14/30 key=attack_flow|Hancitor DLL|9 status=ok attempts=1
+2026-08-06T08:10:42.587486+00:00 completed 26/30 key=stockpile|ddbd1850-5fd7-41d5-a7a1-1b15dac49090|4 status=ok attempts=1
+2026-08-06T08:10:42.620486+00:00 completed 12/30 key=attack_flow|Maastricht University Ransomware|2 status=ok attempts=1
+2026-08-06T08:10:42.682467+00:00 completed 10/30 key=ctid|apt29::unknown|61 status=ok attempts=1
+2026-08-06T08:10:42.711867+00:00 completed 4/30 key=ctid|menu_pass::unknown|11 status=ok attempts=1
+2026-08-06T08:10:42.768895+00:00 completed 15/30 key=attack_flow|JP Morgan Breach|7 status=ok attempts=1
+2026-08-06T08:10:42.887914+00:00 completed 13/30 key=attack_flow|Mac Malware Steals Crypto|3 status=ok attempts=1
+2026-08-06T08:10:42.907755+00:00 completed 24/30 key=stockpile|0b73bf34-fc5b-48f7-9194-dce993b915b1|4 status=ok attempts=1
+2026-08-06T08:10:42.923010+00:00 completed 6/30 key=ctid|fin6::unknown|11 status=ok attempts=1
+2026-08-06T08:10:43.024632+00:00 completed 30/30 key=stockpile|78e7504d-968f-477d-8806-4d6c04b94431|9 status=ok attempts=1
+2026-08-06T08:10:43.239798+00:00 completed 23/30 key=stockpile|e4324b88-8836-4803-b6b7-09b3c6cd4e94|1 status=ok attempts=1
+2026-08-06T08:10:43.249422+00:00 completed 7/30 key=ctid|wizard_spider::unknown|18 status=ok attempts=1
+2026-08-06T08:10:43.353033+00:00 completed 3/30 key=ctid|fin7::unknown|5 status=ok attempts=1
+2026-08-06T08:10:43.412227+00:00 completed 9/30 key=ctid|oilrig::unknown|34 status=ok attempts=1
+2026-08-06T08:10:43.412390+00:00 completed 5/30 key=ctid|turla_snake::unknown|12 status=ok attempts=1
+2026-08-06T08:10:43.419923+00:00 completed 16/30 key=attack_flow|FIN13 Case 2|6 status=ok attempts=1
+2026-08-06T08:10:43.454415+00:00 completed 19/30 key=attack_flow|Conti Ransomware|13 status=ok attempts=1
+2026-08-06T08:10:44.386242+00:00 completed 25/30 key=stockpile|d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e|3 status=ok attempts=1
+2026-08-06T08:10:46.760653+00:00 completed 21/30 key=stockpile|de07f52d-9928-4071-9142-cb1d3bd851e8|2 status=ok attempts=2
+2026-08-06T08:10:46.837648+00:00 retry key=stockpile|564ae20d-778d-4965-93dc-b523be2e2ab4|12 after_status=json_parse_failed delay=2.435s
+2026-08-06T08:10:47.008469+00:00 completed 8/30 key=ctid|turla_carbon::unknown|26 status=ok attempts=2
+2026-08-06T08:10:52.659680+00:00 retry key=stockpile|564ae20d-778d-4965-93dc-b523be2e2ab4|12 after_status=json_parse_failed delay=4.885s
+2026-08-06T08:11:00.795746+00:00 completed 28/30 key=stockpile|564ae20d-778d-4965-93dc-b523be2e2ab4|12 status=json_parse_failed attempts=4
+2026-08-06T08:11:00.805319+00:00 finished statuses={'ok': 29, 'json_parse_failed': 1} input_tokens=22558 output_tokens=10866 estimated_cost_usd=0.00349611

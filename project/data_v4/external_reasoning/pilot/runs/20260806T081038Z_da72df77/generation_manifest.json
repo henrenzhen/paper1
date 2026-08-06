@@ -1,0 +1,133 @@
+{
+  "config": {
+    "base_url": "https://api.deepseek.com",
+    "bge_config": {
+      "aggregation": "arithmetic mean of normalized chunks then final L2 normalize",
+      "chunk_embedding": "CLS then L2 normalize each chunk",
+      "content_limit": 510,
+      "encoding_mode": "continuous_nonoverlap_chunking",
+      "model_id": "BAAI/bge-base-zh-v1.5",
+      "model_max_length": 512,
+      "revision": "f03589ceff5aac7111bd60cfc7d497ca17ecac65",
+      "special_tokens_to_add": 2,
+      "tokenizer_class": "BertTokenizerFast",
+      "trigger": {
+        "protocol_action": "v4.2 section 5.7 gate 7 automatic switch",
+        "run_id": "20260806T080230Z_1842924a",
+        "valid_reasoning_rows": 29,
+        "would_truncate_rate": 0.1724137931034483,
+        "would_truncate_rows": 5
+      }
+    },
+    "concurrency": 50,
+    "dependencies": {
+      "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "python": "3.9.6",
+      "python_implementation": "CPython",
+      "requests": "2.32.5",
+      "ssl": "LibreSSL 2.8.3",
+      "urllib3": "2.6.3"
+    },
+    "downstream_training_config": {
+      "batch_size": 256,
+      "campaign_bootstrap_replicates": 2000,
+      "checkpoint_interval": 5,
+      "dropout": 0.3,
+      "encoder_frozen": true,
+      "inner_lodo": "two training sources alternate as inner validation source",
+      "learning_rate": 0.003,
+      "max_epochs": 150,
+      "optimizer": "Adam",
+      "probe": "768 -> 256 -> 184",
+      "seed_aggregation": "metric per seed, then arithmetic mean",
+      "selection_metric": "source-equal campaign-macro Top-1",
+      "tie_break": "highest metric, then smallest lambda, then earliest epoch",
+      "train_seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "weight_decay": 0.0001
+    },
+    "json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": true,
+      "properties": {
+        "_thinking_process": {
+          "type": "string"
+        },
+        "predicted_next_ttps": {
+          "items": {
+            "pattern": "^T\\d{4}$",
+            "type": "string"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "_thinking_process",
+        "predicted_next_ttps"
+      ],
+      "type": "object"
+    },
+    "json_schema_sha256": "0dad54e62b286128b5bb552da32aeaa3e88082eab741d1c6124aab8bfbcedb34",
+    "max_retries_after_initial_attempt": 3,
+    "max_tokens": 4096,
+    "model_requested": "deepseek-v4-flash",
+    "pilot_round": "post_gate7_chunking_full_rerun",
+    "price_source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "price_usd_per_million_tokens": {
+      "completion": 0.28,
+      "prompt_cache_hit": 0.0028,
+      "prompt_cache_miss": 0.14
+    },
+    "request_timeout_seconds": 300,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "system_prompt_sha256": "e805863392dccdead93d01a83c7b8556cb72c9147de2bb58667815b16d5b0791",
+    "temperature": 0.0,
+    "thinking": {
+      "type": "disabled"
+    },
+    "user_prompt_template_sha256": "e7a004749b9d95181f6a5b79e7abb91f566bf1f347ba20c5d6c16cea99324ab5"
+  },
+  "ended_at": "2026-08-06T08:11:00.805151+00:00",
+  "estimated_cost_usd": 0.0034961136000000005,
+  "input_rows": 30,
+  "inputs": {
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v4/external_reasoning/pilot/pilot_sample_30.csv": "3d0e1dbd5f27e3bd17ddf951508787760f338bfbd6a068ba9bdf07de36ad40c0",
+    "data_v4/external_reasoning/pilot/pilot_sample_manifest.json": "1779926b5daffa60f4b6646eee3f7afa790a8dfa3f0390a0441892e17200fea5",
+    "data_v4/protocols/LLM_semantic_external_validation_v4.2.md": "bf00b8a5cbf1fe3532ea6215178f3c9bf8ddb2974f1c9b78ecac523c713400dd"
+  },
+  "model_ids_returned": [
+    "deepseek-v4-flash",
+    "deepseek-v4-pro"
+  ],
+  "models_response_sha256": "2258825f12db1fbe975d977f6636099e2d93cbcc409689aff80966239ff48b5e",
+  "outputs": {
+    "pilot_raw_results.csv": "33b35f86fec7e2a1753c1e0fde95548d8237f7f635aae536d7467c39a5a2d686",
+    "raw_attempts.jsonl": "be41249284e3c1c73695ab5c66164dfa2ee6eefecd33d16dc9b4182951f006f3",
+    "stdout.log": "f2c7be45f5ff020e3959c6008469c47c58f01342bb81e9b7d85d188eda1d306f"
+  },
+  "run_id": "20260806T081038Z_da72df77",
+  "script_sha256": "97f404bbcb6f44cd969310d015e2ffd06811d23e5dee350c0b861f7ac843a7e5",
+  "started_at": "2026-08-06T08:10:38.713061+00:00",
+  "status_counts": {
+    "json_parse_failed": 1,
+    "ok": 29
+  },
+  "tokens": {
+    "input": 22558,
+    "output": 10866
+  },
+  "unique_keys": 30,
+  "validated_at": "2026-08-06T08:10:38.709540+00:00"
+}
