@@ -1,0 +1,22 @@
+{
+  "all_gates_passed": true,
+  "metrics": {
+    "finish_reason_length_rate": 0.0,
+    "json_success_rate": 1.0,
+    "leakage_assertions_rate": 1.0,
+    "reasoning_content_empty_rate": 1.0,
+    "summary_attack_id_rate": 0.0,
+    "valid_summary_rate": 1.0,
+    "valid_top5_rate": 1.0
+  },
+  "passed_by_gate": {
+    "finish_reason_length_rate": true,
+    "json_success_rate": true,
+    "leakage_assertions_rate": true,
+    "reasoning_content_empty_rate": true,
+    "summary_attack_id_rate": true,
+    "valid_summary_rate": true,
+    "valid_top5_rate": true
+  },
+  "rows": 784
+}
