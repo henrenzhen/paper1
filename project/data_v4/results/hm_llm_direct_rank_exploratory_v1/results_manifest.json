@@ -1,0 +1,51 @@
+{
+  "analysis_status": "post-result exploratory; prospective confirmation required",
+  "generated_at": "2026-08-07T08:19:24.505660+00:00",
+  "inputs": {
+    "b0_rankings_sha256": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216",
+    "hm_cache_manifest_sha256": "6c294e87962e3f6b06030d628f400800b9d2cdc5f3115b5f1c5514ef3403b5ed",
+    "summary_results_manifest_sha256": "32bd80506dd8c7c21abbedbe55defa3e86c86b4a45220b8eb95bce326545fb73"
+  },
+  "lambda0_hm_reproduction": "PASS all 3920 outer seed-sample rows",
+  "lambda1_b0_reproduction": "PASS all 3920 outer seed-sample rows",
+  "method_card_sha256": "4b92e387355984c6e8ad611d1f3edad2826b6607b2143060ca53e13079bbd6d7",
+  "outputs_sha256": {
+    "campaign_results.csv": "cd3c4c1f90509ca9a9a63b1274af790625e81267a0a4a72cd5bfd129cf93324b",
+    "fold_results.csv": "6bb6034a77ff1ef9a2522c073d254cbb11087285e6773ce96b635463cd59eadb",
+    "inner_selection.csv": "4a577ca87a27045cf22e47b064c3d795b951baaab106d96ff544a264ad089ad3",
+    "mean_sample_metrics.csv": "5d022c02fb0dcad16d8d7ff783276855fb7c1bd7f1403b9fac19995c0d932cd6",
+    "paired_bootstrap_differences.csv": "2122d42b37a0924c3b878c79b2538bfbfa41a6e66830141699765bb4b0dd43c8",
+    "predictions_by_seed.csv": "58fe45d330b7a52db6249c7f462e3e7cef1ce3857bca55f3e9a980f10c1ecfbb",
+    "report.md": "3f3f40e63f28988205d8b92272d194308c3b35d9729c160b230d7210f39742b3",
+    "selected_lambdas.csv": "1bfd9b64e959cc8326d5fbf72954c968ef63381033fd76df80465e1f9963920d",
+    "stratified_results.csv": "64c5d2b19003d4ba9bff8dd907d13bb1ea3547c857fc72fb3ac9e7c72779337a"
+  },
+  "parameters": {
+    "b0_score": "1/rank for returned ranks 1..5; zero otherwise",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "selected": {
+      "attack_flow": 0.6,
+      "ctid": 0.9,
+      "stockpile": 0.4
+    },
+    "tie_break": "smallest lambda"
+  },
+  "script": {
+    "path": "data_v4/scripts/run_hm_llm_direct_rank_exploratory.py",
+    "sha256": "0f609f55d45fb9f5062922ffda153eabfa727253668fc9e0dac35550f51aea02"
+  }
+}
