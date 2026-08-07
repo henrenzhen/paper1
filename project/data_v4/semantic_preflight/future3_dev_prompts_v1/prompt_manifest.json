@@ -1,0 +1,80 @@
+{
+  "api_authorization_for_future3": false,
+  "counts": {
+    "development_requests_prepared_not_sent": 30,
+    "development_source_counts": {
+      "attack_flow": 10,
+      "ctid": 10,
+      "stockpile": 10
+    },
+    "history_event_instances_with_unknown_tactic": 16,
+    "raw_semantic_inputs": 814
+  },
+  "development_prompt_chars": {
+    "max": 3660,
+    "median": 950,
+    "min": 144
+  },
+  "generated_at": "2026-08-07T04:09:50.544634+00:00",
+  "inputs": {
+    "alignment_sha256": "b5d735dc8cf915bedfe1371323aa3e72982d418c4701d0b570166108a8aca956",
+    "samples_sha256": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "tactics_sha256": "dfe0aa810207eac80a91a8f37452c475445e3f8a323139e090f7a343fd85e0b4"
+  },
+  "leakage_gates": {
+    "descriptions_attack_id_free": 814,
+    "event_count_matches_prefix_len": 814,
+    "observed_target_step_disjoint": 814,
+    "passed": true,
+    "request_payload_contains_campaign_field": 0,
+    "request_payload_contains_file_path_field": 0,
+    "request_payload_contains_source_field": 0,
+    "request_payload_contains_target_step_field": 0,
+    "rows_checked": 814
+  },
+  "network_requests_performed": 0,
+  "prompt": {
+    "json_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "likely_next_intents": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "observed_capabilities": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "predicted_next_ttps": {
+          "items": {
+            "pattern": "^T\\d{4}$",
+            "type": "string"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "stage_assessment": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "stage_assessment",
+        "observed_capabilities",
+        "likely_next_intents",
+        "predicted_next_ttps"
+      ],
+      "type": "object"
+    },
+    "json_schema_sha256": "080aca3c6605fe960a0ad3ce9051df69d719f2b1ea71c17de90e3907ec0c3352",
+    "system_sha256": "3762a03d370eecae726732d0b29e9218a5ed2a419d4818ee7d1a57eb77d2f18f",
+    "user_template_sha256": "7224da897a5e529b482fef91b0333d3fffe3789d0dfa1b48f3cf9eaa4a5b66ba"
+  },
+  "protocol_addendum_sha256": "6abacb6e062f635bfd8a435cd496b01afdd8e0bc6ca37421c580903a45212657",
+  "script": {
+    "path": "data_v4/scripts/build_future3_prompt_preflight.py",
+    "sha256": "e568354bf32a4117112640310e225461fd2eb72e11317c3648e02b46ff7d2ab8"
+  }
+}

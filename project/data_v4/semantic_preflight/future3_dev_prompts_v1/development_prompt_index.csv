@@ -1,0 +1,31 @@
+development_slot,sample_id,events,serialized_events_chars,user_prompt_chars,request_payload_sha256,network_status
+attack_flow:long:1,attack_flow::WhisperGate::0012,12,1573,1649,e7e860bfcd88156c2a1713f11b3bc42d2f3a8ce397b3186b5c16aa15a1e67e5d,NOT_SENT
+attack_flow:long:2,attack_flow::Conti Ransomware::0013,13,2096,2172,31f959295026579e90265a55a510ac94490a67a2ef60433d00a8a27175f462ce,NOT_SENT
+attack_flow:long:3,attack_flow::SolarWinds::0017,17,3219,3295,540923c6b80708c03c712f9fd97b40b6ca989f67ecd49f896519730c21d481df,NOT_SENT
+attack_flow:medium:1,attack_flow::Hancitor DLL::0009,9,967,1043,102c4ac7aa8d5f5da9ee54a690cff5f790ec612385f65f3c3804fd72f827e6bf,NOT_SENT
+attack_flow:medium:2,attack_flow::JP Morgan Breach::0007,7,1033,1109,52030dc4c67bf99457c546a8ac38525513352c7decdc1ab88b538ca035ec342b,NOT_SENT
+attack_flow:medium:3,attack_flow::FIN13 Case 2::0006,6,667,743,f4b731412653a970ca58232562e296ac429e83fb1cd1010c63a2482120302e4d,NOT_SENT
+attack_flow:medium:4,attack_flow::Muddy Water::0007,7,1284,1360,65551ec8ac02dfc25c3714bab156d8b7da4b5c3de713fca8de906b41f8f88857,NOT_SENT
+attack_flow:short:1,attack_flow::Gootloader::0004,4,528,604,f5beed6c45d8dbdffb0edfd40b04cb1f64a0c746ce83307fd03ee920b8b42357,NOT_SENT
+attack_flow:short:2,attack_flow::Maastricht University Ransomware::0002,2,226,302,e973c57f94ef648d31ad4807ac9368acbe79dba263d389a3d5ac137cecf86d00,NOT_SENT
+attack_flow:short:3,attack_flow::Mac Malware Steals Crypto::0003,3,445,521,ee7cbee4a31b1cba6c4b7e83797807d7ff986bb210a900b339cd4be76d5af6bf,NOT_SENT
+ctid:long:1,ctid::apt29::unknown::0027,27,3467,3543,f86042d9d5b98017f8327823859283b0f53e04f848b0a82ddc9b9e4e80087c09,NOT_SENT
+ctid:long:2,ctid::oilrig::unknown::0034,34,3453,3529,d8573668f8504398dfefcd8fe51983f0e03bcc415ec3021ab48731c59c8d67c5,NOT_SENT
+ctid:long:3,ctid::turla_carbon::unknown::0024,24,3102,3178,000a555efed5dba272ad5fc3f7876458cdff1053244def723f893102ab79c9de,NOT_SENT
+ctid:medium:1,ctid::menu_pass::unknown::0011,11,951,1027,19f7bcf322757e2e4894ed1f8044e98dd5e58f3f1f4c729c0b1fe25b48c40c36,NOT_SENT
+ctid:medium:2,ctid::turla_snake::unknown::0012,12,1638,1714,762220de297e72970bf2b7900e0b172e1186d4f28894dd19f2f8636464c9848c,NOT_SENT
+ctid:medium:3,ctid::fin6::unknown::0011,11,1476,1552,3bd622a23cde65c802fe82163dc3681276be99fb507c8321a65df65a9da0671c,NOT_SENT
+ctid:medium:4,ctid::wizard_spider::unknown::0018,18,3442,3518,1a87ad0b1e5ff532c6aa387a320ed295973cf7f42b3bfda6880812a2cdf8a3e7,NOT_SENT
+ctid:short:1,ctid::carbanak::unknown::0007,7,874,950,29c3406d406372d9d205bc56064d450802119e9b1656aa008f14bb8075236577,NOT_SENT
+ctid:short:2,ctid::sandworm::unknown::0010,10,3584,3660,53e96f8bf166dd2327a32d9189e8f94c95665794df5707fb09c3d973834b50d8,NOT_SENT
+ctid:short:3,ctid::fin7::unknown::0005,5,391,467,89c66fcc2deadef124e869f6ab2180b8d518be197fb740c4a68ab82e14049726,NOT_SENT
+stockpile:long:1,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012,12,856,932,44d05a9c2ae8b0b8c1978fee98d841fc59143450897ebd63e0389868d3eab91a,NOT_SENT
+stockpile:long:2,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008,8,707,783,229dfb7177291d922939b34f49cad4d06c432e999f293c162d4773c5aae43f6e,NOT_SENT
+stockpile:long:3,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009,9,711,787,3dab87646a66e70e4e98d7304164b3572dfa9931fc3614f9200ee9b44f916cfc,NOT_SENT
+stockpile:medium:1,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003,3,237,313,f52da6a95dcb32f039753c6e45e4793afa0d3a4ba5eaab3cd6c2c0883abb714f,NOT_SENT
+stockpile:medium:2,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003,3,277,353,bc663c36fea45a891606a4cf15645a66e181103783a5e60e51fdf37c05d6b950,NOT_SENT
+stockpile:medium:3,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004,4,294,370,4b953a212bdf8da4838dcf97ef3e5d60457a07dde2fb0f4ae3119935c9e6fd1b,NOT_SENT
+stockpile:medium:4,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003,3,341,417,430377a2633ae803aad983cc4e371337ea89992c859ece5e8ac1b17a86f0f60e,NOT_SENT
+stockpile:short:1,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002,2,127,203,d4510771437c4475d886a615c70247910b2c87a909baa44b6f7164c33c96cab1,NOT_SENT
+stockpile:short:2,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001,1,87,163,1c4f3c7a4746f081e883f7b0065a68d9b289e62385222a898f7d9a76e6091c24,NOT_SENT
+stockpile:short:3,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001,1,68,144,3bc54aed952855c7319445cdd06bd835326576ad43963f28c446faa89679c911,NOT_SENT

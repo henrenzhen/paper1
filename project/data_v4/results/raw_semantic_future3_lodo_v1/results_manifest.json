@@ -1,0 +1,84 @@
+{
+  "a_ranking_reproduction_gate": "PASS: all 784 outer rows Top-20 identical",
+  "elapsed_seconds": 93.22139616700588,
+  "generated_at": "2026-08-07T04:34:13.013108+00:00",
+  "inputs": {
+    "baseline_predictions_sha256": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "embedding_index_sha256": "da9c91edb374212eddb97a2d810e1e11b89f30f6072a80eb53510c9353dd328b",
+    "embedding_manifest_sha256": "74cbde6b0c0692ce4f285bc2a9204dfbba6bb9f959a28dc67fbd7abeb1fc48b1",
+    "embedding_sha256": "9eab1777a4b24d85c9cb5fc0703bbf794f4f83201e81bac28ee2461284fe931e",
+    "rows": 784
+  },
+  "method_card": {
+    "path": "data_v4/protocols/raw_semantic_probe_future3_v1.md",
+    "sha256": "da89bb88a272db19afdf13c83393be54702f7e7b13a3b5c03542ba5d101abfbb"
+  },
+  "outputs_sha256": {
+    "campaign_results_five_seed_mean.csv": "7f3ae53b2c586c00dcef92f2fc074c4983f2c061d58a79cf945317b3eb0184d6",
+    "fold_results_by_seed.csv": "eaa5b93856bf115a91900343f9bef6d3783f7dd6046f21e245579bfe82c10a7e",
+    "fold_results_five_seed_mean.csv": "59f9b694d97cfca83e97cbe963144f9d054fed4d93c178fe37d0b163dff084d5",
+    "inner_selection.csv": "d1ea136f833bc3291d56719000bb3bc890e99c737661b0bed06a3a5dc46edfed",
+    "mean_sample_metrics.csv": "499eb56337ed1f2e321735a033fe9b8671c1e0130ba2b2e3e4e7c1af4f25487e",
+    "paired_bootstrap_differences.csv": "f69d23d127d99ace40bd0237ee453f12457704b620be59ed3fc043b0021f1452",
+    "predictions_by_seed.csv": "6725ccf414e2557ae4ca0cd48df92606b73262fcb4202b42819dfc02df80be8e",
+    "report.md": "7440658e523cea59042611d144c93030bd1ebbc4e90a90952a1bbf9a12e346e4",
+    "selected_hyperparameters.csv": "91871b026f450f563bf7686bd68c09d8f3b0539d20147e7be03b0d985a56e4e7",
+    "stdout.log": "5ae280482500d4d498fa9255b829c6e3240fd6031a9f57cf156aa05b9b25eff4",
+    "stratified_results.csv": "2bb0a0a00704ce9760451c41c10588dd0942597d1a88bfdeaac1d2261266e7c1"
+  },
+  "parameters": {
+    "architecture": "1024-256-GELU-dropout0.3-184",
+    "batch_size": 32,
+    "deterministic_algorithms": true,
+    "epoch_grid": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "learning_rate": 0.001,
+    "loss": "BCEWithLogitsLoss",
+    "num_threads": 8,
+    "optimizer": "AdamW",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "selected": {
+      "attack_flow": {
+        "epoch": 20,
+        "lambda": 0.0
+      },
+      "ctid": {
+        "epoch": 40,
+        "lambda": 0.1
+      },
+      "stockpile": {
+        "epoch": 20,
+        "lambda": 1.0
+      }
+    },
+    "weight_decay": 0.0001
+  },
+  "script": {
+    "path": "data_v4/scripts/run_raw_semantic_future3_lodo.py",
+    "sha256": "c17455dd269c9f35a42ffb48fd300d5ce1f9c0d6b3d884f32fb5671804be981a"
+  }
+}
