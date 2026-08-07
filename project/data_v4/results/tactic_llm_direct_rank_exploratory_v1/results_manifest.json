@@ -1,0 +1,76 @@
+{
+  "analysis_status": "post-result exploratory; prospective confirmation required",
+  "b0_reproduction": "PASS all 784 outer rows",
+  "frozen_t_reproduction": "PASS all 784 outer rows",
+  "generated_at": "2026-08-07T08:56:02.554537+00:00",
+  "inputs": {
+    "b0_rankings_sha256": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216",
+    "hm_b0_manifest_sha256": "d1249c9183c31ced0a9642d971a636618e67ce97283ced1ab4e915f617b21214",
+    "nonsemantic_manifest_sha256": "43a21ef83fdc34abccd0ac9f0073142c82331cd083a6f4b10caf33879ef55ca1"
+  },
+  "method_card": {
+    "path": "data_v4/protocols/tactic_llm_direct_rank_exploratory_future3_v1.md",
+    "sha256": "ab86e3f2dd2c0b9cee8143ff1fee2a9cfff2d9708b206e9372e4db33d124288a"
+  },
+  "outputs_sha256": {
+    "campaign_results.csv": "6cf236da191dd93e3b5ea8780efe43ec4e1f9af7447e7b544b615e1069e00599",
+    "fold_results.csv": "7026c157095923ea74833570d9d5b244d62a51f0644d5d25c3c5cd38ea78cd41",
+    "inner_selection.csv": "21b0cd7cccc2ce63b56f61348573f5d2e2c86b1005934cc1f364961b6c2f3b26",
+    "paired_bootstrap_differences.csv": "aee1df180577dcbb1586dfe8e86f57e8f6a71643b66f46de9bc76ea655cc3cef",
+    "predictions.csv": "df722b867d655fee01c1c1ba810ec1758b22dd006e76c400fe9f98e85c42bd38",
+    "report.md": "f6336db320fdc32b12f7767fca1967e3b678924ddfef92b25bcb6a01a7a9d69e",
+    "selected_weights.csv": "8130600f575e27237f608f6f4f33b565e7fd06dadcc87dfce88a293dfd147cdf",
+    "stdout.log": "44557951687e16449d5be07bf5eee7089ce15205bb9cbe926d612c68a830b048",
+    "stratified_results.csv": "ca9f17ffcc22439ea9d2337cd2679edb47a1701dc8ad337eb4cd0563fa7d283c"
+  },
+  "parameters": {
+    "b0_lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "b0_score": "1/rank for returned ranks 1..5; zero otherwise",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "joint_tactic_lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "selected": {
+      "attack_flow": {
+        "b0_lambda": 0.9,
+        "tactic_lambda": 0.0
+      },
+      "ctid": {
+        "b0_lambda": 0.8,
+        "tactic_lambda": 0.1
+      },
+      "stockpile": {
+        "b0_lambda": 0.4,
+        "tactic_lambda": 0.0
+      }
+    },
+    "tie_break": "smaller B0 lambda, then smaller tactic lambda"
+  },
+  "script": {
+    "path": "data_v4/scripts/run_tactic_llm_direct_rank_exploratory.py",
+    "sha256": "3300afd7dc3e625aeecde58a2087f7ef03df7c275327ff63702feb1b982b4e31"
+  }
+}
