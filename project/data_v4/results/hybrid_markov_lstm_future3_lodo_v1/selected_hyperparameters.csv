@@ -1,0 +1,4 @@
+held_out_source,selected_learning_rate,selected_epoch,selected_beta
+ctid,0.001,40,0.1
+attack_flow,0.001,100,0.2
+stockpile,0.0003,40,0.9

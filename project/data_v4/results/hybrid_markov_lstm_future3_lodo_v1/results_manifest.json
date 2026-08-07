@@ -1,0 +1,79 @@
+{
+  "elapsed_seconds": 1214.7159080829879,
+  "generated_at": "2026-08-07T06:48:11.894727+00:00",
+  "inputs": {
+    "baseline_predictions_sha256": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "main_rows": 784,
+    "mb_manifest_sha256": "416c8fa8ccba1ab56a721f25e0526434c9e1af3e0be54e4acedf70acb8ce7aa9",
+    "neural_manifest_sha256": "643333bc3fd2d45b7588d69516671dbf77e585f578b9a8a6a6abf827b691ffee"
+  },
+  "method_card": {
+    "path": "data_v4/protocols/hybrid_markov_lstm_future3_v1.md",
+    "sha256": "087b99372296bba5c4b91152d0836c4d780c6fcd1b43f0f02e08a12ca30e228f"
+  },
+  "outputs_sha256": {
+    "campaign_results_five_seed_mean.csv": "3a2457196a778b42b4dbf0640631f49bc63e728519227f4c6abf1c578a996e49",
+    "fold_results_five_seed_mean.csv": "d89947855e41094569d83d778e3cf84404dcb7a574125907c76a466e8134ae41",
+    "inner_beta_selection.csv": "436e3aad45042dfb27179de134e57b11252f90af19adbfbc127e9a6422782428",
+    "mean_sample_metrics.csv": "7af268de9c7bb5b38b98c0344c37db0cdb03eb788205c78849ff361925799b45",
+    "paired_bootstrap_differences.csv": "cddc34d7e3914ef83c4b8c8de06d4f633d7935351200f951b88683004d6faee2",
+    "predictions_by_seed.csv": "6cfe2efc27c05eae093fa1700d77579432d011b5c1dc93ada4ff7a38734345b3",
+    "report.md": "ccadcb735023d85302ce4db9471737afb5027139ad0da7d2b531164d442ce600",
+    "selected_hyperparameters.csv": "9dc7a5141b005e561942b17529ab40a6dcdbb6ee2cf7945e98bcacfb6d32d127",
+    "stdout.log": "c0f37919ce869fa9ccdb5c56eac428700d78c4cf29c76b632972db7bd637481d"
+  },
+  "parameters": {
+    "betas": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "deterministic_algorithms": true,
+    "generated_unseen_input_representation": "embedding index 0 (zero vector), counted as valid packed step",
+    "inference_batch": 256,
+    "num_threads": 8,
+    "row_chunk": 32,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "selected": {
+      "attack_flow": {
+        "beta": 0.2,
+        "epoch": 100,
+        "learning_rate": 0.001
+      },
+      "ctid": {
+        "beta": 0.1,
+        "epoch": 40,
+        "learning_rate": 0.001
+      },
+      "stockpile": {
+        "beta": 0.9,
+        "epoch": 40,
+        "learning_rate": 0.0003
+      }
+    }
+  },
+  "reproduction_gates": {
+    "beta0_mb_top20": "PASS all 3920 outer seed-sample rows",
+    "direct_lstm_top20": "PASS all 3920 outer seed-sample rows"
+  },
+  "script": {
+    "path": "data_v4/scripts/run_hybrid_markov_lstm_future3_lodo.py",
+    "sha256": "3eb767f99beb317a8794fcdaf3d8afa98d69a6dcda843b459a0ad98b065bd33c"
+  }
+}

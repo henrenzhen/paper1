@@ -1,0 +1,7 @@
+architecture,held_out_source,selected_learning_rate,selected_epoch
+LSTM,ctid,0.001,40
+LSTM,attack_flow,0.001,100
+LSTM,stockpile,0.0003,40
+TR,ctid,0.001,100
+TR,attack_flow,0.0003,80
+TR,stockpile,0.0003,20

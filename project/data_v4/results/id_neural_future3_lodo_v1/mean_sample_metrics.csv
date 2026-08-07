@@ -1,0 +1,1569 @@
+held_out_source,method,sample_id,campaign_id,target_size,transition_visibility,target_label_visibility,text_length_group,ndcg5,hit5,precision5,recall5
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0001,Black Basta Ransomware,3,mixed,all_seen,ge40,0.12777081120249467,0.4,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0002,Black Basta Ransomware,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0003,Black Basta Ransomware,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0004,Black Basta Ransomware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0005,Black Basta Ransomware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0006,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0007,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0008,Black Basta Ransomware,3,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0009,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0010,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0011,Black Basta Ransomware,3,all_unseen,all_seen,ge40,0.6463707023370538,1.0,0.36,0.6
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0012,Black Basta Ransomware,3,all_seen,all_seen,ge40,0.18120508710693645,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0013,Black Basta Ransomware,3,all_unseen,all_seen,lt40,0.18120508710693645,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0014,Black Basta Ransomware,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0015,Black Basta Ransomware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0016,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0017,Black Basta Ransomware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0018,Black Basta Ransomware,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0019,Black Basta Ransomware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0020,Black Basta Ransomware,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0021,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0022,Black Basta Ransomware,3,mixed,mixed,ge40,0.2960819109658652,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0023,Black Basta Ransomware,2,all_unseen,mixed,ge40,0.38685280723454163,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::Black Basta Ransomware::0024,Black Basta Ransomware,1,all_unseen,all_seen,ge40,0.6309297535714575,1.0,0.2,1.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0001,CISA AA22-138B VMWare Workspace (Alt),3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0002,CISA AA22-138B VMWare Workspace (Alt),3,all_unseen,all_seen,lt40,0.09552474070064358,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0003,CISA AA22-138B VMWare Workspace (Alt),3,mixed,all_seen,ge40,0.13016410371202183,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0004,CISA AA22-138B VMWare Workspace (Alt),3,mixed,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0005,CISA AA22-138B VMWare Workspace (Alt),2,all_unseen,all_seen,ge40,0.18394415782963752,0.4,0.08,0.2
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0006,CISA AA22-138B VMWare Workspace (Alt),3,all_seen,all_seen,ge40,0.15307212739772433,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0007,CISA AA22-138B VMWare Workspace (Alt),2,all_seen,all_seen,ge40,0.24525887710618335,0.4,0.08,0.2
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0008,CISA AA22-138B VMWare Workspace (Alt),1,all_seen,all_seen,ge40,0.0861353116146786,0.2,0.04,0.2
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0001,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0002,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0003,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0004,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0005,CISA AA22-138B VMWare Workspace (TA1),3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0006,CISA AA22-138B VMWare Workspace (TA1),3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0007,CISA AA22-138B VMWare Workspace (TA1),2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0008,CISA AA22-138B VMWare Workspace (TA1),1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0001,CISA AA22-138B VMWare Workspace (TA2),2,all_unseen,all_seen,ge40,0.052813624514518175,0.2,0.04,0.1
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0002,CISA AA22-138B VMWare Workspace (TA2),3,all_seen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0003,CISA AA22-138B VMWare Workspace (TA2),3,all_seen,all_seen,lt40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0004,CISA AA22-138B VMWare Workspace (TA2),3,mixed,mixed,lt40,0.3640791697099652,0.8,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0005,CISA AA22-138B VMWare Workspace (TA2),2,mixed,mixed,ge40,0.38394415782963753,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0006,CISA AA22-138B VMWare Workspace (TA2),3,mixed,mixed,ge40,0.37542298081820513,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0007,CISA AA22-138B VMWare Workspace (TA2),3,all_unseen,mixed,ge40,0.37542298081820513,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0008,CISA AA22-138B VMWare Workspace (TA2),3,mixed,mixed,ge40,0.41584445011831467,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0009,CISA AA22-138B VMWare Workspace (TA2),2,all_unseen,mixed,lt40,0.5518324734889125,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0010,CISA AA22-138B VMWare Workspace (TA2),1,all_unseen,all_seen,ge40,0.9,1.0,0.2,1.0
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0001,CISA Iranian APT,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0002,CISA Iranian APT,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0003,CISA Iranian APT,2,mixed,all_seen,ge40,0.42070194017379325,0.6,0.16,0.4
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0004,CISA Iranian APT,3,mixed,all_seen,lt40,0.4938557452045512,1.0,0.28,0.4666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0005,CISA Iranian APT,3,mixed,all_seen,lt40,0.15307212739772433,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0006,CISA Iranian APT,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0007,CISA Iranian APT,3,all_unseen,all_seen,ge40,0.20578210628873123,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0008,CISA Iranian APT,3,mixed,all_seen,ge40,0.20578210628873123,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0009,CISA Iranian APT,3,mixed,all_seen,ge40,0.6815672356136538,1.0,0.36,0.6
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0010,CISA Iranian APT,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0011,CISA Iranian APT,3,all_unseen,all_seen,ge40,0.6815672356136538,1.0,0.36,0.6
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0012,CISA Iranian APT,3,mixed,all_seen,ge40,0.19999999999999998,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0013,CISA Iranian APT,3,mixed,all_seen,ge40,0.19999999999999998,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0014,CISA Iranian APT,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0015,CISA Iranian APT,3,all_unseen,mixed,ge40,0.18771149040910257,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0016,CISA Iranian APT,3,mixed,mixed,ge40,0.18771149040910257,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0017,CISA Iranian APT,3,all_unseen,all_seen,lt40,0.2240198489165731,0.8,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0018,CISA Iranian APT,3,all_unseen,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0019,CISA Iranian APT,3,mixed,mixed,ge40,0.23018948342274018,1.0,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0020,CISA Iranian APT,2,mixed,mixed,ge40,0.2586940406119319,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::CISA Iranian APT::0021,CISA Iranian APT,1,all_unseen,all_seen,ge40,0.4219118079056228,1.0,0.2,1.0
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0001,Cobalt Kitty Campaign,2,mixed,all_seen,ge40,0.11412834379106403,0.4,0.08,0.2
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0002,Cobalt Kitty Campaign,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0003,Cobalt Kitty Campaign,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0004,Cobalt Kitty Campaign,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0005,Cobalt Kitty Campaign,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0006,Cobalt Kitty Campaign,3,all_unseen,mixed,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0007,Cobalt Kitty Campaign,3,all_unseen,mixed,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0008,Cobalt Kitty Campaign,3,all_unseen,all_seen,ge40,0.2678301319958868,1.0,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0009,Cobalt Kitty Campaign,3,all_seen,all_seen,ge40,0.4285204879266479,1.0,0.36,0.6
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0010,Cobalt Kitty Campaign,2,all_seen,all_seen,ge40,0.5598935550340023,1.0,0.36,0.9
+attack_flow,LSTM,attack_flow::Cobalt Kitty Campaign::0011,Cobalt Kitty Campaign,1,all_seen,all_seen,ge40,0.5861353116146786,1.0,0.2,1.0
+attack_flow,LSTM,attack_flow::Conti CISA Alert::0001,Conti CISA Alert,3,mixed,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Conti CISA Alert::0002,Conti CISA Alert,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti CISA Alert::0003,Conti CISA Alert,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti CISA Alert::0004,Conti CISA Alert,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti CISA Alert::0005,Conti CISA Alert,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti PWC::0001,Conti PWC,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Conti PWC::0002,Conti PWC,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti PWC::0003,Conti PWC,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti Ransomware::0001,Conti Ransomware,3,mixed,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Conti Ransomware::0002,Conti Ransomware,2,mixed,all_seen,ge40,0.12262943855309168,0.2,0.04,0.1
+attack_flow,LSTM,attack_flow::Conti Ransomware::0003,Conti Ransomware,3,mixed,all_seen,ge40,0.18771149040910257,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Conti Ransomware::0004,Conti Ransomware,3,all_unseen,all_seen,ge40,0.3284951082159295,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Conti Ransomware::0005,Conti Ransomware,3,mixed,all_seen,ge40,0.09385574520455128,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Conti Ransomware::0006,Conti Ransomware,3,mixed,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Conti Ransomware::0007,Conti Ransomware,2,all_unseen,all_seen,ge40,0.17762372851528574,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Conti Ransomware::0008,Conti Ransomware,2,mixed,all_seen,ge40,0.2948790851077185,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::Conti Ransomware::0009,Conti Ransomware,1,all_unseen,all_seen,ge40,0.4809270736081082,0.8,0.16,0.8
+attack_flow,LSTM,attack_flow::Conti Ransomware::0010,Conti Ransomware,2,all_seen,all_seen,ge40,0.24525887710618335,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Conti Ransomware::0011,Conti Ransomware,3,mixed,mixed,ge40,0.18771149040910257,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Conti Ransomware::0012,Conti Ransomware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti Ransomware::0014,Conti Ransomware,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Conti Ransomware::0015,Conti Ransomware,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0001,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.08084293860021903,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0002,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0003,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0004,DFIR - BumbleBee Round 2,3,all_unseen,all_seen,ge40,0.29013016262934804,0.8,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0005,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.23391506599794337,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0006,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.12126440790032852,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0007,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.09552474070064358,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0008,DFIR - BumbleBee Round 2,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0009,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.3877114904091026,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0010,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.42235085342048084,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0011,DFIR - BumbleBee Round 2,2,all_unseen,all_seen,lt40,0.5518324734889125,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::DFIR - BumbleBee Round 2::0012,DFIR - BumbleBee Round 2,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Equifax Breach::0001,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Equifax Breach::0002,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Equifax Breach::0003,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Equifax Breach::0004,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Equifax Breach::0005,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Equifax Breach::0006,Equifax Breach,3,mixed,mixed,ge40,0.19349359669783386,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Equifax Breach::0007,Equifax Breach,2,mixed,mixed,ge40,0.2934264036172708,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::Equifax Breach::0008,Equifax Breach,1,all_unseen,all_seen,ge40,0.5908791144718446,1.0,0.2,1.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0001,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0002,FIN13 Case 1,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0003,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.09963785149328255,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0004,FIN13 Case 1,3,all_unseen,all_seen,lt40,0.23463936301137825,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0005,FIN13 Case 1,2,all_unseen,all_seen,ge40,0.3226294385530917,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0006,FIN13 Case 1,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0007,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0008,FIN13 Case 1,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0009,FIN13 Case 1,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0010,FIN13 Case 1,3,all_unseen,mixed,ge40,0.2045006390100747,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0011,FIN13 Case 1,3,mixed,mixed,ge40,0.5371088580186433,1.0,0.4,0.6666666666666666
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0012,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.508975898309431,1.0,0.4,0.6666666666666666
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0013,FIN13 Case 1,3,mixed,all_seen,ge40,0.259216382193173,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0014,FIN13 Case 1,3,mixed,all_seen,ge40,0.27150489178407045,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0015,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.27150489178407045,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0016,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.27150489178407045,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0017,FIN13 Case 1,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0018,FIN13 Case 1,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0019,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0020,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0021,FIN13 Case 1,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0022,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0023,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0024,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0025,FIN13 Case 1,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0029,FIN13 Case 1,3,all_unseen,mixed,ge40,0.2240198489165731,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0030,FIN13 Case 1,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 1::0031,FIN13 Case 1,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0001,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0002,FIN13 Case 2,3,mixed,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0003,FIN13 Case 2,3,all_unseen,mixed,lt40,0.13183309920811412,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0004,FIN13 Case 2,2,all_unseen,mixed,ge40,0.21968918910848606,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0005,FIN13 Case 2,3,mixed,mixed,ge40,0.1763676793008626,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0007,FIN13 Case 2,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0008,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0009,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0010,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0011,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0012,FIN13 Case 2,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0013,FIN13 Case 2,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::FIN13 Case 2::0014,FIN13 Case 2,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0001,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0002,Gootloader,3,mixed,all_seen,ge40,0.08734934190238516,0.2,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Gootloader::0003,Gootloader,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0005,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0006,Gootloader,3,all_unseen,all_seen,ge40,0.07261671701494107,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Gootloader::0007,Gootloader,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Gootloader::0008,Gootloader,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Gootloader::0009,Gootloader,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0010,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0011,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0012,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0013,Gootloader,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0014,Gootloader,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0015,Gootloader,3,all_unseen,all_seen,ge40,0.14078361780682694,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Gootloader::0016,Gootloader,2,all_unseen,all_seen,ge40,0.18394415782963752,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Gootloader::0017,Gootloader,2,all_unseen,all_seen,ge40,0.18394415782963752,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Gootloader::0018,Gootloader,2,mixed,all_seen,ge40,0.18394415782963752,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Gootloader::0019,Gootloader,2,mixed,all_seen,ge40,0.18394415782963752,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Gootloader::0020,Gootloader,1,all_unseen,all_seen,ge40,0.3,0.6,0.12000000000000002,0.6
+attack_flow,LSTM,attack_flow::Gootloader::0021,Gootloader,2,mixed,all_seen,ge40,0.23138370038349673,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::Gootloader::0022,Gootloader,2,mixed,all_seen,ge40,0.2367577823441557,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::Gootloader::0023,Gootloader,2,mixed,all_seen,ge40,0.2367577823441557,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::Gootloader::0024,Gootloader,3,all_unseen,mixed,ge40,0.18771149040910257,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Gootloader::0025,Gootloader,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0026,Gootloader,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Gootloader::0027,Gootloader,3,all_unseen,mixed,ge40,0.18771149040910257,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Gootloader::0028,Gootloader,2,all_unseen,mixed,ge40,0.24525887710618335,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::Gootloader::0029,Gootloader,1,all_unseen,all_seen,ge40,0.4,0.8,0.16,0.8
+attack_flow,LSTM,attack_flow::Hancitor DLL::0001,Hancitor DLL,3,mixed,all_seen,ge40,0.12777081120249467,0.4,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Hancitor DLL::0002,Hancitor DLL,3,mixed,all_seen,lt40,0.43463936301137823,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0003,Hancitor DLL,3,mixed,all_seen,lt40,0.43463936301137823,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0004,Hancitor DLL,3,all_unseen,all_seen,lt40,0.5055870845302269,1.0,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::Hancitor DLL::0005,Hancitor DLL,3,mixed,all_seen,ge40,0.5055870845302269,1.0,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::Hancitor DLL::0006,Hancitor DLL,3,all_unseen,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0007,Hancitor DLL,3,mixed,mixed,lt40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0008,Hancitor DLL,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Hancitor DLL::0010,Hancitor DLL,3,all_unseen,all_seen,lt40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0011,Hancitor DLL,3,all_unseen,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0012,Hancitor DLL,2,mixed,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::Hancitor DLL::0013,Hancitor DLL,3,mixed,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0014,Hancitor DLL,3,all_unseen,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0015,Hancitor DLL,3,mixed,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0016,Hancitor DLL,3,all_unseen,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0017,Hancitor DLL,3,mixed,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Hancitor DLL::0018,Hancitor DLL,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Hancitor DLL::0019,Hancitor DLL,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ivanti Vulnerabilities::0001,Ivanti Vulnerabilities,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ivanti Vulnerabilities::0002,Ivanti Vulnerabilities,3,all_unseen,all_seen,ge40,0.24080899751754528,0.8,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::Ivanti Vulnerabilities::0003,Ivanti Vulnerabilities,3,mixed,all_seen,ge40,0.3934935966978338,0.8,0.28,0.4666666666666666
+attack_flow,LSTM,attack_flow::Ivanti Vulnerabilities::0004,Ivanti Vulnerabilities,2,all_unseen,all_seen,ge40,0.22825668758212805,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Ivanti Vulnerabilities::0005,Ivanti Vulnerabilities,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0001,JP Morgan Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0002,JP Morgan Breach,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0003,JP Morgan Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0004,JP Morgan Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0005,JP Morgan Breach,2,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0006,JP Morgan Breach,2,all_unseen,mixed,ge40,0.20218066544767588,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0008,JP Morgan Breach,2,all_unseen,mixed,ge40,0.28492530885524314,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::JP Morgan Breach::0009,JP Morgan Breach,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::MITRE NERVE::0001,MITRE NERVE,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::MITRE NERVE::0002,MITRE NERVE,3,all_unseen,mixed,ge40,0.19999999999999998,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::MITRE NERVE::0003,MITRE NERVE,3,all_unseen,all_seen,ge40,0.2527099788910069,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::MITRE NERVE::0004,MITRE NERVE,3,all_unseen,all_seen,ge40,0.2485968680983679,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::MITRE NERVE::0005,MITRE NERVE,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::MITRE NERVE::0006,MITRE NERVE,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::MITRE NERVE::0007,MITRE NERVE,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0001,Maastricht University Ransomware,3,mixed,mixed,ge40,0.12777081120249467,0.4,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0003,Maastricht University Ransomware,3,mixed,mixed,ge40,0.16168587720043806,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0004,Maastricht University Ransomware,3,all_unseen,mixed,ge40,0.1681922805026042,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0005,Maastricht University Ransomware,3,all_unseen,all_seen,ge40,0.2045006390100747,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0006,Maastricht University Ransomware,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0007,Maastricht University Ransomware,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0008,Maastricht University Ransomware,2,mixed,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0009,Maastricht University Ransomware,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0010,Maastricht University Ransomware,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Maastricht University Ransomware::0011,Maastricht University Ransomware,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Mac Malware Steals Crypto::0001,Mac Malware Steals Crypto,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Mac Malware Steals Crypto::0002,Mac Malware Steals Crypto,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Mac Malware Steals Crypto::0004,Mac Malware Steals Crypto,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Marriott Breach::0001,Marriott Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Marriott Breach::0002,Marriott Breach,3,mixed,mixed,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Marriott Breach::0003,Marriott Breach,2,all_unseen,mixed,ge40,0.13868528072345415,0.4,0.08,0.2
+attack_flow,LSTM,attack_flow::Marriott Breach::0004,Marriott Breach,1,all_unseen,all_seen,ge40,0.32974246287549136,0.6,0.12000000000000002,0.6
+attack_flow,LSTM,attack_flow::Muddy Water::0001,Muddy Water,2,all_seen,all_seen,ge40,0.16694196830558222,0.4,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::Muddy Water::0002,Muddy Water,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Muddy Water::0003,Muddy Water,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Muddy Water::0004,Muddy Water,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Muddy Water::0005,Muddy Water,2,mixed,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::Muddy Water::0006,Muddy Water,2,mixed,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::Muddy Water::0008,Muddy Water,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Muddy Water::0009,Muddy Water,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0001,NotPetya,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0002,NotPetya,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0003,NotPetya,3,all_unseen,mixed,ge40,0.13594621000075308,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::NotPetya::0004,NotPetya,3,all_unseen,all_seen,ge40,0.3000253797107183,1.0,0.28,0.4666666666666666
+attack_flow,LSTM,attack_flow::NotPetya::0008,NotPetya,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0009,NotPetya,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0010,NotPetya,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0011,NotPetya,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0012,NotPetya,3,all_unseen,all_seen,ge40,0.15474112289381664,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::NotPetya::0013,NotPetya,3,mixed,all_seen,lt40,0.16536063698862175,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::NotPetya::0014,NotPetya,3,all_unseen,mixed,ge40,0.16536063698862175,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::NotPetya::0015,NotPetya,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::NotPetya::0016,NotPetya,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0001,OceanLotus,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::OceanLotus::0002,OceanLotus,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0003,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0004,OceanLotus,3,mixed,all_seen,ge40,0.15474112289381664,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::OceanLotus::0005,OceanLotus,3,all_unseen,all_seen,ge40,0.39855140597313027,1.0,0.32,0.5333333333333333
+attack_flow,LSTM,attack_flow::OceanLotus::0006,OceanLotus,3,all_unseen,all_seen,ge40,0.3903251843878523,1.0,0.32,0.5333333333333333
+attack_flow,LSTM,attack_flow::OceanLotus::0007,OceanLotus,3,all_seen,all_seen,ge40,0.18287408260302873,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::OceanLotus::0008,OceanLotus,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::OceanLotus::0009,OceanLotus,3,mixed,all_seen,ge40,0.645646405323619,1.0,0.36,0.6
+attack_flow,LSTM,attack_flow::OceanLotus::0010,OceanLotus,2,all_seen,all_seen,ge40,0.85208564055729,1.0,0.36,0.9
+attack_flow,LSTM,attack_flow::OceanLotus::0011,OceanLotus,2,all_seen,all_seen,ge40,0.22288260562146908,0.8,0.16,0.4
+attack_flow,LSTM,attack_flow::OceanLotus::0012,OceanLotus,3,mixed,all_seen,ge40,0.29424327342198703,1.0,0.28,0.4666666666666666
+attack_flow,LSTM,attack_flow::OceanLotus::0013,OceanLotus,3,mixed,all_seen,ge40,0.1195445896172167,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::OceanLotus::0014,OceanLotus,3,mixed,all_seen,ge40,0.1195445896172167,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::OceanLotus::0015,OceanLotus,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0016,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0017,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0018,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0019,OceanLotus,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::OceanLotus::0020,OceanLotus,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0001,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0002,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0003,REvil,3,all_unseen,all_seen,ge40,0.1089250755224116,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::REvil::0004,REvil,3,all_unseen,all_seen,ge40,0.07261671701494107,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::REvil::0005,REvil,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::REvil::0006,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0007,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0008,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0009,REvil,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0010,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0011,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0012,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0013,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0014,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0015,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0016,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::REvil::0017,REvil,2,all_unseen,mixed,ge40,0.09487908510771849,0.4,0.08,0.2
+attack_flow,LSTM,attack_flow::REvil::0018,REvil,1,all_unseen,all_seen,ge40,0.07737056144690832,0.2,0.04,0.2
+attack_flow,LSTM,attack_flow::Ragnar Locker::0001,Ragnar Locker,3,all_unseen,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Ragnar Locker::0002,Ragnar Locker,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0003,Ragnar Locker,2,all_unseen,all_seen,lt40,0.047439542553859244,0.2,0.04,0.1
+attack_flow,LSTM,attack_flow::Ragnar Locker::0004,Ragnar Locker,2,all_unseen,all_seen,ge40,0.17006898110695093,0.4,0.08,0.2
+attack_flow,LSTM,attack_flow::Ragnar Locker::0005,Ragnar Locker,3,mixed,mixed,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Ragnar Locker::0006,Ragnar Locker,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0007,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0008,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0009,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0010,Ragnar Locker,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0011,Ragnar Locker,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Ragnar Locker::0012,Ragnar Locker,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SWIFT Heist::0001,SWIFT Heist,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SWIFT Heist::0002,SWIFT Heist,3,all_unseen,all_seen,ge40,0.3877114904091026,0.8,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SWIFT Heist::0003,SWIFT Heist,2,mixed,all_seen,lt40,0.18299781047594468,0.6,0.12000000000000002,0.3
+attack_flow,LSTM,attack_flow::SWIFT Heist::0004,SWIFT Heist,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0001,SearchAwesome Adware,3,mixed,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0002,SearchAwesome Adware,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0003,SearchAwesome Adware,3,all_unseen,mixed,lt40,0.39999999999999997,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0004,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0005,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0006,SearchAwesome Adware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0007,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0008,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.27150489178407045,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0009,SearchAwesome Adware,2,mixed,mixed,ge40,0.35474112289381665,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::SearchAwesome Adware::0010,SearchAwesome Adware,1,all_unseen,all_seen,ge40,0.5785578521428745,1.0,0.2,1.0
+attack_flow,LSTM,attack_flow::Shamoon::0001,Shamoon,3,mixed,all_seen,ge40,0.16536063698862175,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Shamoon::0002,Shamoon,3,all_unseen,all_seen,ge40,0.259216382193173,0.6,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Shamoon::0003,Shamoon,3,mixed,all_seen,ge40,0.535946210000753,1.0,0.32,0.5333333333333333
+attack_flow,LSTM,attack_flow::Shamoon::0004,Shamoon,3,mixed,all_seen,ge40,0.30614425479544866,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Shamoon::0005,Shamoon,3,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0006,Shamoon,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0007,Shamoon,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0008,Shamoon,3,all_unseen,all_seen,ge40,0.17225456850822363,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Shamoon::0009,Shamoon,3,all_unseen,all_seen,ge40,0.1992757029865651,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Shamoon::0010,Shamoon,3,all_unseen,all_seen,ge40,0.23969717228667461,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Shamoon::0011,Shamoon,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Shamoon::0012,Shamoon,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Shamoon::0013,Shamoon,3,all_unseen,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Shamoon::0014,Shamoon,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0015,Shamoon,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0016,Shamoon,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0017,Shamoon,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Shamoon::0018,Shamoon,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0001,SolarWinds,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0002,SolarWinds,3,all_unseen,mixed,ge40,0.15474112289381664,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::SolarWinds::0003,SolarWinds,3,all_unseen,mixed,ge40,0.10614425479544869,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::SolarWinds::0004,SolarWinds,3,all_unseen,mixed,ge40,0.13016410371202183,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::SolarWinds::0005,SolarWinds,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0006,SolarWinds,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0007,SolarWinds,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0008,SolarWinds,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0009,SolarWinds,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0010,SolarWinds,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::SolarWinds::0011,SolarWinds,3,mixed,all_seen,ge40,0.2960819109658652,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SolarWinds::0012,SolarWinds,3,mixed,all_seen,ge40,0.28379340137496784,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::SolarWinds::0013,SolarWinds,3,all_unseen,all_seen,ge40,0.3430097835681408,1.0,0.24000000000000005,0.4
+attack_flow,LSTM,attack_flow::SolarWinds::0014,SolarWinds,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::SolarWinds::0015,SolarWinds,3,all_unseen,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::SolarWinds::0016,SolarWinds,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0001,Sony Malware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0002,Sony Malware,3,mixed,all_seen,ge40,0.19999999999999998,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Sony Malware::0003,Sony Malware,3,all_unseen,mixed,ge40,0.18771149040910257,0.4,0.08,0.13333333333333333
+attack_flow,LSTM,attack_flow::Sony Malware::0004,Sony Malware,3,all_unseen,mixed,ge40,0.3877114904091026,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::Sony Malware::0005,Sony Malware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0006,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0007,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0008,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0009,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0010,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0011,Sony Malware,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Sony Malware::0012,Sony Malware,1,all_unseen,all_unseen,lt40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0001,Target Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0002,Target Breach,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0003,Target Breach,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0004,Target Breach,3,all_unseen,all_seen,lt40,0.2815672356136539,0.6,0.12000000000000002,0.2
+attack_flow,LSTM,attack_flow::Target Breach::0008,Target Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0009,Target Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0010,Target Breach,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Target Breach::0011,Target Breach,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Tesla Kubernetes Breach::0001,Tesla Kubernetes Breach,3,all_unseen,mixed,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,LSTM,attack_flow::Tesla Kubernetes Breach::0002,Tesla Kubernetes Breach,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Tesla Kubernetes Breach::0003,Tesla Kubernetes Breach,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Uber Breach::0001,Uber Breach,3,all_unseen,mixed,ge40,0.18120508710693645,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::Uber Breach::0002,Uber Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Uber Breach::0003,Uber Breach,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Uber Breach::0004,Uber Breach,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Uber Breach::0005,Uber Breach,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::Uber Breach::0006,Uber Breach,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0001,WhisperGate,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0002,WhisperGate,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0003,WhisperGate,3,all_unseen,all_seen,ge40,0.37542298081820513,0.8,0.16,0.26666666666666666
+attack_flow,LSTM,attack_flow::WhisperGate::0004,WhisperGate,2,mixed,all_seen,ge40,0.567888315659275,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::WhisperGate::0005,WhisperGate,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0006,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0007,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0008,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0009,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0010,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0011,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,LSTM,attack_flow::WhisperGate::0013,WhisperGate,3,all_unseen,mixed,ge40,0.259216382193173,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::WhisperGate::0014,WhisperGate,3,all_unseen,mixed,ge40,0.5307212739772434,1.0,0.4,0.6666666666666666
+attack_flow,LSTM,attack_flow::WhisperGate::0015,WhisperGate,3,all_unseen,mixed,ge40,0.28379340137496784,1.0,0.2,0.3333333333333333
+attack_flow,LSTM,attack_flow::WhisperGate::0016,WhisperGate,2,all_unseen,all_seen,ge40,0.37079696506417914,1.0,0.2,0.5
+attack_flow,LSTM,attack_flow::WhisperGate::0017,WhisperGate,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0001,apt29::unknown,3,all_unseen,all_seen,lt40,0.15307212739772433,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::apt29::unknown::0002,apt29::unknown,3,mixed,all_seen,lt40,0.07261671701494107,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::apt29::unknown::0003,apt29::unknown,3,mixed,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0004,apt29::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0005,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0006,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0007,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0008,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0009,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0010,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0011,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0012,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0013,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0014,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0015,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0016,apt29::unknown,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0017,apt29::unknown,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0018,apt29::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0019,apt29::unknown,3,mixed,all_seen,ge40,0.19799423570790858,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0020,apt29::unknown,3,mixed,all_seen,ge40,0.19799423570790858,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0021,apt29::unknown,3,all_unseen,mixed,ge40,0.2045006390100747,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0022,apt29::unknown,3,mixed,mixed,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0023,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0024,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0025,apt29::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0026,apt29::unknown,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0028,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0029,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0030,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0031,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0032,apt29::unknown,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0033,apt29::unknown,3,all_unseen,all_seen,lt40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0034,apt29::unknown,3,all_unseen,all_seen,ge40,0.3201017598824384,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::apt29::unknown::0035,apt29::unknown,2,all_unseen,all_seen,ge40,0.37079696506417914,1.0,0.2,0.5
+ctid,LSTM,ctid::apt29::unknown::0036,apt29::unknown,3,mixed,all_seen,ge40,0.5078132502915409,1.0,0.36,0.6
+ctid,LSTM,ctid::apt29::unknown::0037,apt29::unknown,3,mixed,mixed,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::apt29::unknown::0038,apt29::unknown,3,mixed,mixed,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::apt29::unknown::0039,apt29::unknown,3,mixed,mixed,lt40,0.28379340137496784,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0040,apt29::unknown,3,all_unseen,all_seen,ge40,0.3201017598824384,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::apt29::unknown::0041,apt29::unknown,3,mixed,all_seen,ge40,0.518095995590347,1.0,0.44000000000000006,0.7333333333333333
+ctid,LSTM,ctid::apt29::unknown::0042,apt29::unknown,3,mixed,all_seen,ge40,0.23430259421537913,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::apt29::unknown::0043,apt29::unknown,2,all_unseen,all_seen,ge40,0.2640681225725909,1.0,0.2,0.5
+ctid,LSTM,ctid::apt29::unknown::0044,apt29::unknown,3,mixed,mixed,lt40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0045,apt29::unknown,3,mixed,mixed,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0046,apt29::unknown,3,mixed,mixed,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0047,apt29::unknown,3,all_unseen,all_seen,ge40,0.2086137498027137,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0048,apt29::unknown,3,all_unseen,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0049,apt29::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0050,apt29::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0051,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0052,apt29::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0053,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0054,apt29::unknown,3,all_unseen,all_seen,lt40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0055,apt29::unknown,3,mixed,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::apt29::unknown::0056,apt29::unknown,3,mixed,all_seen,lt40,0.26032820742404367,0.8,0.2,0.3333333333333333
+ctid,LSTM,ctid::apt29::unknown::0057,apt29::unknown,3,mixed,mixed,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::apt29::unknown::0058,apt29::unknown,3,all_unseen,mixed,lt40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::apt29::unknown::0059,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0060,apt29::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0061,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0062,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0063,apt29::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::apt29::unknown::0064,apt29::unknown,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::carbanak::unknown::0001,carbanak::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::carbanak::unknown::0002,carbanak::unknown,3,mixed,all_seen,ge40,0.4586592119279514,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::carbanak::unknown::0003,carbanak::unknown,3,mixed,all_seen,ge40,0.4586592119279514,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::carbanak::unknown::0004,carbanak::unknown,3,mixed,all_seen,ge40,0.7162065986250321,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::carbanak::unknown::0005,carbanak::unknown,3,mixed,all_seen,ge40,0.39999999999999997,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::carbanak::unknown::0006,carbanak::unknown,3,mixed,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::carbanak::unknown::0008,carbanak::unknown,3,mixed,all_seen,lt40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::carbanak::unknown::0009,carbanak::unknown,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::carbanak::unknown::0010,carbanak::unknown,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::carbanak::unknown::0011,carbanak::unknown,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::carbanak::unknown::0012,carbanak::unknown,3,all_unseen,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::carbanak::unknown::0013,carbanak::unknown,3,all_unseen,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::carbanak::unknown::0014,carbanak::unknown,3,mixed,mixed,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::carbanak::unknown::0015,carbanak::unknown,3,all_unseen,all_seen,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::carbanak::unknown::0016,carbanak::unknown,3,all_unseen,all_seen,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::carbanak::unknown::0017,carbanak::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::carbanak::unknown::0018,carbanak::unknown,3,all_unseen,all_seen,ge40,0.1938811249152696,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::carbanak::unknown::0019,carbanak::unknown,2,all_unseen,all_seen,ge40,0.2671951353739596,1.0,0.2,0.5
+ctid,LSTM,ctid::carbanak::unknown::0020,carbanak::unknown,1,all_seen,all_seen,ge40,0.4219118079056228,1.0,0.2,1.0
+ctid,LSTM,ctid::fin6::unknown::0001,fin6::unknown,3,mixed,mixed,ge40,0.08084293860021903,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::fin6::unknown::0002,fin6::unknown,3,mixed,mixed,ge40,0.08084293860021903,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::fin6::unknown::0003,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0004,fin6::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0005,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0006,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0007,fin6::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0008,fin6::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0009,fin6::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0010,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0012,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0013,fin6::unknown,3,mixed,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::fin6::unknown::0014,fin6::unknown,2,all_unseen,all_seen,ge40,0.567888315659275,1.0,0.2,0.5
+ctid,LSTM,ctid::fin6::unknown::0015,fin6::unknown,3,mixed,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::fin6::unknown::0016,fin6::unknown,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin6::unknown::0017,fin6::unknown,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin7::unknown::0001,fin7::unknown,3,all_unseen,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::fin7::unknown::0002,fin7::unknown,3,mixed,all_seen,lt40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::fin7::unknown::0003,fin7::unknown,3,all_unseen,all_seen,lt40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::fin7::unknown::0004,fin7::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin7::unknown::0006,fin7::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin7::unknown::0007,fin7::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin7::unknown::0008,fin7::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::fin7::unknown::0009,fin7::unknown,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0001,menu_pass::unknown,3,mixed,all_seen,lt40,0.08084293860021903,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::menu_pass::unknown::0002,menu_pass::unknown,3,mixed,all_seen,lt40,0.08323623110974618,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::menu_pass::unknown::0003,menu_pass::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0004,menu_pass::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0005,menu_pass::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0006,menu_pass::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0007,menu_pass::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0008,menu_pass::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0009,menu_pass::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::menu_pass::unknown::0010,menu_pass::unknown,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0001,oilrig::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::oilrig::unknown::0002,oilrig::unknown,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::oilrig::unknown::0003,oilrig::unknown,3,all_unseen,all_seen,lt40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::oilrig::unknown::0004,oilrig::unknown,3,mixed,all_seen,ge40,0.21340033482176798,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0005,oilrig::unknown,3,mixed,all_seen,ge40,0.2256888444126654,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0006,oilrig::unknown,3,mixed,all_seen,ge40,0.27261671701494106,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0007,oilrig::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0008,oilrig::unknown,3,mixed,mixed,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0009,oilrig::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0010,oilrig::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0011,oilrig::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0012,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0013,oilrig::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0014,oilrig::unknown,3,all_unseen,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0015,oilrig::unknown,3,all_unseen,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0016,oilrig::unknown,3,mixed,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0017,oilrig::unknown,3,mixed,all_seen,lt40,0.26032820742404367,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0018,oilrig::unknown,3,all_unseen,all_seen,ge40,0.26032820742404367,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0019,oilrig::unknown,3,mixed,all_seen,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::oilrig::unknown::0020,oilrig::unknown,3,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0021,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0022,oilrig::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0023,oilrig::unknown,3,mixed,mixed,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::oilrig::unknown::0024,oilrig::unknown,3,mixed,mixed,ge40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::oilrig::unknown::0025,oilrig::unknown,3,all_unseen,all_seen,ge40,0.2644413182166826,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::oilrig::unknown::0026,oilrig::unknown,3,mixed,all_seen,lt40,0.24492210831018424,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::oilrig::unknown::0027,oilrig::unknown,3,mixed,all_seen,lt40,0.46894195722675736,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::oilrig::unknown::0028,oilrig::unknown,3,mixed,mixed,ge40,0.4285204879266479,1.0,0.36,0.6
+ctid,LSTM,ctid::oilrig::unknown::0029,oilrig::unknown,3,mixed,mixed,ge40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::oilrig::unknown::0030,oilrig::unknown,3,mixed,mixed,ge40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::oilrig::unknown::0031,oilrig::unknown,3,all_unseen,all_seen,lt40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::oilrig::unknown::0032,oilrig::unknown,3,mixed,all_seen,lt40,0.2240198489165731,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::oilrig::unknown::0033,oilrig::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::oilrig::unknown::0035,oilrig::unknown,2,mixed,all_seen,ge40,0.2671951353739596,1.0,0.2,0.5
+ctid,LSTM,ctid::oilrig::unknown::0036,oilrig::unknown,1,all_seen,all_seen,ge40,0.4445412464587145,1.0,0.2,1.0
+ctid,LSTM,ctid::sandworm::unknown::0001,sandworm::unknown,3,all_seen,all_seen,ge40,0.11303818631505058,0.6,0.12000000000000002,0.2
+ctid,LSTM,ctid::sandworm::unknown::0002,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0003,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0004,sandworm::unknown,3,mixed,all_seen,ge40,0.3530721273977243,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0005,sandworm::unknown,3,mixed,all_seen,ge40,0.3113691908189583,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0006,sandworm::unknown,3,mixed,all_seen,ge40,0.2750608323114877,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::sandworm::unknown::0007,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0008,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0009,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0011,sandworm::unknown,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0012,sandworm::unknown,3,all_unseen,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0013,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0014,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0015,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0016,sandworm::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::sandworm::unknown::0017,sandworm::unknown,3,mixed,mixed,ge40,0.19349359669783386,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::sandworm::unknown::0018,sandworm::unknown,3,mixed,mixed,ge40,0.19349359669783386,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::sandworm::unknown::0019,sandworm::unknown,2,all_unseen,all_seen,ge40,0.24743954255385922,0.8,0.16,0.4
+ctid,LSTM,ctid::sandworm::unknown::0020,sandworm::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::sandworm::unknown::0021,sandworm::unknown,3,all_unseen,all_seen,ge40,0.2256888444126654,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0022,sandworm::unknown,2,all_unseen,all_seen,lt40,0.047439542553859244,0.2,0.04,0.1
+ctid,LSTM,ctid::sandworm::unknown::0023,sandworm::unknown,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::sandworm::unknown::0024,sandworm::unknown,3,mixed,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0025,sandworm::unknown,3,mixed,all_seen,ge40,0.6713860725233041,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::sandworm::unknown::0026,sandworm::unknown,3,mixed,all_seen,ge40,0.8607665584284989,1.0,0.5599999999999999,0.9333333333333333
+ctid,LSTM,ctid::sandworm::unknown::0027,sandworm::unknown,2,mixed,all_seen,ge40,0.8605867353193176,1.0,0.36,0.9
+ctid,LSTM,ctid::sandworm::unknown::0028,sandworm::unknown,2,all_seen,all_seen,ge40,0.8605867353193176,1.0,0.36,0.9
+ctid,LSTM,ctid::sandworm::unknown::0029,sandworm::unknown,3,all_seen,all_seen,lt40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::sandworm::unknown::0030,sandworm::unknown,3,mixed,all_seen,ge40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::sandworm::unknown::0031,sandworm::unknown,2,all_seen,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+ctid,LSTM,ctid::sandworm::unknown::0032,sandworm::unknown,1,all_unseen,all_seen,ge40,1.0,1.0,0.2,1.0
+ctid,LSTM,ctid::turla_carbon::unknown::0001,turla_carbon::unknown,3,mixed,all_seen,ge40,0.6281329597092121,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_carbon::unknown::0002,turla_carbon::unknown,3,mixed,all_seen,lt40,0.2960819109658652,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0003,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.7653606369886217,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_carbon::unknown::0004,turla_carbon::unknown,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0005,turla_carbon::unknown,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0006,turla_carbon::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::turla_carbon::unknown::0007,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0008,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0009,turla_carbon::unknown,3,mixed,all_seen,ge40,0.19799423570790858,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0010,turla_carbon::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::turla_carbon::unknown::0011,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::turla_carbon::unknown::0012,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,LSTM,ctid::turla_carbon::unknown::0013,turla_carbon::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::turla_carbon::unknown::0014,turla_carbon::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::turla_carbon::unknown::0015,turla_carbon::unknown,3,mixed,all_seen,ge40,0.3914878324057424,1.0,0.36,0.6
+ctid,LSTM,ctid::turla_carbon::unknown::0016,turla_carbon::unknown,3,all_seen,all_seen,ge40,0.3914878324057424,1.0,0.36,0.6
+ctid,LSTM,ctid::turla_carbon::unknown::0017,turla_carbon::unknown,3,mixed,all_seen,ge40,0.8607665584284989,1.0,0.5599999999999999,0.9333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0018,turla_carbon::unknown,2,mixed,all_seen,ge40,0.8605867353193176,1.0,0.36,0.9
+ctid,LSTM,ctid::turla_carbon::unknown::0019,turla_carbon::unknown,2,all_seen,all_seen,ge40,0.8605867353193176,1.0,0.36,0.9
+ctid,LSTM,ctid::turla_carbon::unknown::0020,turla_carbon::unknown,3,all_seen,all_seen,ge40,0.8607665584284989,1.0,0.5599999999999999,0.9333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0021,turla_carbon::unknown,3,mixed,mixed,lt40,0.6713860725233041,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_carbon::unknown::0022,turla_carbon::unknown,3,mixed,mixed,lt40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_carbon::unknown::0023,turla_carbon::unknown,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::turla_snake::unknown::0001,turla_snake::unknown,3,mixed,all_seen,ge40,0.5999999999999999,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0002,turla_snake::unknown,3,mixed,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0003,turla_snake::unknown,3,mixed,mixed,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0004,turla_snake::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::turla_snake::unknown::0005,turla_snake::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::turla_snake::unknown::0006,turla_snake::unknown,3,all_unseen,mixed,ge40,0.42235085342048084,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0007,turla_snake::unknown,3,mixed,mixed,ge40,0.42235085342048084,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0008,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.5428909643073745,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0009,turla_snake::unknown,3,all_seen,all_seen,lt40,0.49407614667377386,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0010,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.4817876370828764,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0011,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.28379340137496784,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0013,turla_snake::unknown,3,mixed,all_seen,ge40,0.27261671701494106,0.8,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0014,turla_snake::unknown,3,mixed,all_seen,lt40,0.27261671701494106,0.8,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0015,turla_snake::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0016,turla_snake::unknown,3,all_seen,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0017,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0018,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.20210734650054757,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0019,turla_snake::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0020,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.19349359669783386,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0021,turla_snake::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0022,turla_snake::unknown,3,mixed,all_seen,lt40,0.28379340137496784,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::turla_snake::unknown::0023,turla_snake::unknown,3,mixed,all_seen,ge40,0.48590074787551546,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0024,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.48590074787551546,1.0,0.4,0.6666666666666666
+ctid,LSTM,ctid::turla_snake::unknown::0025,turla_snake::unknown,3,mixed,all_seen,ge40,0.2384157050080181,1.0,0.24000000000000005,0.4
+ctid,LSTM,ctid::turla_snake::unknown::0026,turla_snake::unknown,2,all_seen,all_seen,ge40,0.047439542553859244,0.2,0.04,0.1
+ctid,LSTM,ctid::turla_snake::unknown::0027,turla_snake::unknown,1,all_unseen,all_seen,ge40,0.07737056144690832,0.2,0.04,0.2
+ctid,LSTM,ctid::wizard_spider::unknown::0001,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.17709197631429746,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0002,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0003,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0004,wizard_spider::unknown,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::wizard_spider::unknown::0005,wizard_spider::unknown,3,mixed,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::wizard_spider::unknown::0006,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.368916577516039,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::wizard_spider::unknown::0007,wizard_spider::unknown,3,mixed,mixed,ge40,0.3284951082159295,1.0,0.2,0.3333333333333333
+ctid,LSTM,ctid::wizard_spider::unknown::0008,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.656990216431859,1.0,0.36,0.6
+ctid,LSTM,ctid::wizard_spider::unknown::0009,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.6627723227205904,1.0,0.36,0.6
+ctid,LSTM,ctid::wizard_spider::unknown::0010,wizard_spider::unknown,3,mixed,all_seen,ge40,0.2404214693001095,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0011,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0012,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0013,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0014,wizard_spider::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0015,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0016,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0017,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0019,wizard_spider::unknown,3,mixed,all_seen,ge40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::wizard_spider::unknown::0020,wizard_spider::unknown,2,all_unseen,all_seen,ge40,0.8605867353193176,1.0,0.36,0.9
+ctid,LSTM,ctid::wizard_spider::unknown::0021,wizard_spider::unknown,2,all_seen,all_seen,ge40,0.8605867353193176,1.0,0.36,0.9
+ctid,LSTM,ctid::wizard_spider::unknown::0022,wizard_spider::unknown,3,mixed,all_seen,ge40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::wizard_spider::unknown::0023,wizard_spider::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0024,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,LSTM,ctid::wizard_spider::unknown::0025,wizard_spider::unknown,3,mixed,all_seen,ge40,0.19349359669783386,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0026,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0027,wizard_spider::unknown,2,mixed,all_seen,ge40,0.24743954255385922,0.8,0.16,0.4
+ctid,LSTM,ctid::wizard_spider::unknown::0028,wizard_spider::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0029,wizard_spider::unknown,2,mixed,all_seen,ge40,0.24743954255385922,0.8,0.16,0.4
+ctid,LSTM,ctid::wizard_spider::unknown::0030,wizard_spider::unknown,3,mixed,all_seen,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,LSTM,ctid::wizard_spider::unknown::0031,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.6586592119279513,1.0,0.36,0.6
+ctid,LSTM,ctid::wizard_spider::unknown::0032,wizard_spider::unknown,2,all_seen,all_seen,lt40,0.6131471927654584,1.0,0.2,0.5
+ctid,LSTM,ctid::wizard_spider::unknown::0033,wizard_spider::unknown,1,all_unseen,all_seen,ge40,1.0,1.0,0.2,1.0
+stockpile,LSTM,stockpile::01c96671-afd3-47d4-8d31-8c116cc0221a::0001,01c96671-afd3-47d4-8d31-8c116cc0221a,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01c96671-afd3-47d4-8d31-8c116cc0221a::0002,01c96671-afd3-47d4-8d31-8c116cc0221a,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0001,01d77744-2515-401a-a497-d9f7241aac3c,2,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0002,01d77744-2515-401a-a497-d9f7241aac3c,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0003,01d77744-2515-401a-a497-d9f7241aac3c,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0004,01d77744-2515-401a-a497-d9f7241aac3c,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0005,01d77744-2515-401a-a497-d9f7241aac3c,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0006,01d77744-2515-401a-a497-d9f7241aac3c,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::09ad625e-6cba-490f-afe3-5417e7edb9c6::0001,09ad625e-6cba-490f-afe3-5417e7edb9c6,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::09ad625e-6cba-490f-afe3-5417e7edb9c6::0002,09ad625e-6cba-490f-afe3-5417e7edb9c6,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0001,0b5636cf-f019-4ec9-aa7c-6e4f55505374,3,mixed,all_seen,lt40,0.20038752821743575,0.8,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0002,0b5636cf-f019-4ec9-aa7c-6e4f55505374,3,mixed,all_seen,lt40,0.2151201531048798,1.0,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0003,0b5636cf-f019-4ec9-aa7c-6e4f55505374,2,all_unseen,all_seen,lt40,0.29712615426700867,1.0,0.2,0.5
+stockpile,LSTM,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0004,0b5636cf-f019-4ec9-aa7c-6e4f55505374,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0001,0b73bf34-fc5b-48f7-9194-dce993b915b1,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0002,0b73bf34-fc5b-48f7-9194-dce993b915b1,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0001,0f4c3c67-845e-49a0-927e-90ed33c044e0,2,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0002,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0003,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0004,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0005,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0006,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0007,0f4c3c67-845e-49a0-927e-90ed33c044e0,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0008,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0009,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0010,0f4c3c67-845e-49a0-927e-90ed33c044e0,2,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0011,0f4c3c67-845e-49a0-927e-90ed33c044e0,1,all_unseen,all_unseen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0001,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0002,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0003,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0004,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::1bac97ca-77fc-4c9a-835e-4de1b1b7f639::0001,1bac97ca-77fc-4c9a-835e-4de1b1b7f639,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::1bac97ca-77fc-4c9a-835e-4de1b1b7f639::0002,1bac97ca-77fc-4c9a-835e-4de1b1b7f639,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::4c28c132-d7d7-4a04-8908-d643b7cb1d58::0001,4c28c132-d7d7-4a04-8908-d643b7cb1d58,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0001,50855e29-3b4e-4562-aa55-b3d7f93c26b8,3,all_seen,all_seen,ge40,0.11715129710768957,0.6,0.12000000000000002,0.2
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0002,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0003,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0004,50855e29-3b4e-4562-aa55-b3d7f93c26b8,3,mixed,all_seen,ge40,0.2404214693001095,1.0,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0005,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,mixed,all_seen,ge40,0.3301841859614265,1.0,0.2,0.5
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0006,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,mixed,all_seen,ge40,0.3301841859614265,1.0,0.2,0.5
+stockpile,LSTM,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0007,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,all_seen,all_seen,lt40,0.3301841859614265,1.0,0.2,0.5
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0001,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0002,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0003,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0004,564ae20d-778d-4965-93dc-b523be2e2ab4,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0005,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0006,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0007,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0008,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0009,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0010,564ae20d-778d-4965-93dc-b523be2e2ab4,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0011,564ae20d-778d-4965-93dc-b523be2e2ab4,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0013,564ae20d-778d-4965-93dc-b523be2e2ab4,2,mixed,all_seen,ge40,0.32168309119939886,1.0,0.2,0.5
+stockpile,LSTM,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0014,564ae20d-778d-4965-93dc-b523be2e2ab4,1,all_unseen,all_seen,lt40,0.5246425246579403,1.0,0.2,1.0
+stockpile,LSTM,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0001,5d3e170e-f1b8-49f9-9ee1-c51605552a08,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0002,5d3e170e-f1b8-49f9-9ee1-c51605552a08,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::725226e0-45b8-4432-84ee-144d3f37ff8d::0001,725226e0-45b8-4432-84ee-144d3f37ff8d,3,mixed,all_seen,lt40,0.20038752821743575,0.8,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::725226e0-45b8-4432-84ee-144d3f37ff8d::0002,725226e0-45b8-4432-84ee-144d3f37ff8d,2,mixed,all_seen,lt40,0.2810703120966462,1.0,0.2,0.5
+stockpile,LSTM,stockpile::725226e0-45b8-4432-84ee-144d3f37ff8d::0003,725226e0-45b8-4432-84ee-144d3f37ff8d,1,all_seen,all_seen,ge40,0.4845918855583274,1.0,0.2,1.0
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0001,78e7504d-968f-477d-8806-4d6c04b94431,3,mixed,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0002,78e7504d-968f-477d-8806-4d6c04b94431,3,all_unseen,all_seen,lt40,0.11303818631505058,0.6,0.12000000000000002,0.2
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0003,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,lt40,0.20050633413675484,0.8,0.16,0.4
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0004,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,lt40,0.18975817021543698,0.8,0.16,0.4
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0005,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,ge40,0.29712615426700867,1.0,0.2,0.5
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0006,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,lt40,0.3056272490290364,1.0,0.2,0.5
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0007,78e7504d-968f-477d-8806-4d6c04b94431,2,mixed,all_seen,lt40,0.32168309119939886,1.0,0.2,0.5
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0008,78e7504d-968f-477d-8806-4d6c04b94431,3,all_seen,all_seen,lt40,0.2527099788910069,1.0,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0010,78e7504d-968f-477d-8806-4d6c04b94431,2,mixed,all_seen,ge40,0.3301841859614265,1.0,0.2,0.5
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0011,78e7504d-968f-477d-8806-4d6c04b94431,1,all_seen,all_seen,ge40,0.5385072130432615,1.0,0.2,1.0
+stockpile,LSTM,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0012,78e7504d-968f-477d-8806-4d6c04b94431,1,all_seen,all_seen,lt40,0.5385072130432615,1.0,0.2,1.0
+stockpile,LSTM,stockpile::bcdbf6b9-14c5-495c-be84-37bce32c312b::0001,bcdbf6b9-14c5-495c-be84-37bce32c312b,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::bcdbf6b9-14c5-495c-be84-37bce32c312b::0002,bcdbf6b9-14c5-495c-be84-37bce32c312b,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0002,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0001,c724545d-a4cc-492e-8075-2ab9a699c847,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0002,c724545d-a4cc-492e-8075-2ab9a699c847,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0001,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0002,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0004,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0002,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0001,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,3,mixed,all_seen,lt40,0.20038752821743575,0.8,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0002,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,2,mixed,all_seen,lt40,0.2810703120966462,1.0,0.2,0.5
+stockpile,LSTM,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0003,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,1,all_unseen,all_seen,lt40,0.4845918855583274,1.0,0.2,1.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0001,de07f52d-9928-4071-9142-cb1d3bd851e8,2,all_unseen,all_seen,lt40,0.047439542553859244,0.2,0.04,0.1
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0003,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0004,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0005,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0006,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0007,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0008,de07f52d-9928-4071-9142-cb1d3bd851e8,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0009,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0010,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0011,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0012,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0013,de07f52d-9928-4071-9142-cb1d3bd851e8,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0014,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0015,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0016,de07f52d-9928-4071-9142-cb1d3bd851e8,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0017,de07f52d-9928-4071-9142-cb1d3bd851e8,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::e4324b88-8836-4803-b6b7-09b3c6cd4e94::0001,e4324b88-8836-4803-b6b7-09b3c6cd4e94,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::e89a10d3-004f-4c15-b0eb-d1ba76a4b67f::0001,e89a10d3-004f-4c15-b0eb-d1ba76a4b67f,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::e89a10d3-004f-4c15-b0eb-d1ba76a4b67f::0002,e89a10d3-004f-4c15-b0eb-d1ba76a4b67f,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::eddc8f03-f930-41e7-95ba-33fb87bfed74::0001,eddc8f03-f930-41e7-95ba-33fb87bfed74,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::eddc8f03-f930-41e7-95ba-33fb87bfed74::0002,eddc8f03-f930-41e7-95ba-33fb87bfed74,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::ef4d997c-a0d1-4067-9efa-87c58682db71::0001,ef4d997c-a0d1-4067-9efa-87c58682db71,3,mixed,all_seen,lt40,0.21100704231224085,1.0,0.2,0.3333333333333333
+stockpile,LSTM,stockpile::ef4d997c-a0d1-4067-9efa-87c58682db71::0002,ef4d997c-a0d1-4067-9efa-87c58682db71,2,all_seen,all_seen,lt40,0.2895714068586739,1.0,0.2,0.5
+stockpile,LSTM,stockpile::ef4d997c-a0d1-4067-9efa-87c58682db71::0003,ef4d997c-a0d1-4067-9efa-87c58682db71,1,all_seen,all_seen,ge40,0.49845657394364873,1.0,0.2,1.0
+stockpile,LSTM,stockpile::f98193a0-8b5b-4b5e-a5aa-e8c3adfcd4e6::0001,f98193a0-8b5b-4b5e-a5aa-e8c3adfcd4e6,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::fbc41624-1052-490c-b5ec-4fd718e2501d::0001,fbc41624-1052-490c-b5ec-4fd718e2501d,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,LSTM,stockpile::fbc41624-1052-490c-b5ec-4fd718e2501d::0002,fbc41624-1052-490c-b5ec-4fd718e2501d,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0001,Black Basta Ransomware,3,mixed,all_seen,ge40,0.6439774098275268,1.0,0.36,0.6
+attack_flow,TR,attack_flow::Black Basta Ransomware::0002,Black Basta Ransomware,2,all_unseen,all_seen,ge40,0.29269841966004256,0.8,0.16,0.4
+attack_flow,TR,attack_flow::Black Basta Ransomware::0003,Black Basta Ransomware,2,all_seen,all_seen,ge40,0.5087542618304051,1.0,0.24000000000000005,0.6
+attack_flow,TR,attack_flow::Black Basta Ransomware::0004,Black Basta Ransomware,3,mixed,all_seen,ge40,0.15996605891732624,0.6,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Black Basta Ransomware::0005,Black Basta Ransomware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0006,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0007,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0008,Black Basta Ransomware,3,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0009,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0010,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0011,Black Basta Ransomware,3,all_unseen,all_seen,ge40,0.17058557301213134,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Black Basta Ransomware::0012,Black Basta Ransomware,3,all_seen,all_seen,ge40,0.19349359669783386,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Black Basta Ransomware::0013,Black Basta Ransomware,3,all_unseen,all_seen,lt40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Black Basta Ransomware::0014,Black Basta Ransomware,3,mixed,all_seen,lt40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Black Basta Ransomware::0015,Black Basta Ransomware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0016,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0017,Black Basta Ransomware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0018,Black Basta Ransomware,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0019,Black Basta Ransomware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0020,Black Basta Ransomware,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0021,Black Basta Ransomware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Black Basta Ransomware::0022,Black Basta Ransomware,3,mixed,mixed,ge40,0.39999999999999997,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Black Basta Ransomware::0023,Black Basta Ransomware,2,all_unseen,mixed,ge40,0.2367577823441557,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::Black Basta Ransomware::0024,Black Basta Ransomware,1,all_unseen,all_seen,ge40,0.6,0.8,0.16,0.8
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0001,CISA AA22-138B VMWare Workspace (Alt),3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0002,CISA AA22-138B VMWare Workspace (Alt),3,all_unseen,all_seen,lt40,0.18120508710693645,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0003,CISA AA22-138B VMWare Workspace (Alt),3,mixed,all_seen,ge40,0.13016410371202183,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0004,CISA AA22-138B VMWare Workspace (Alt),3,mixed,all_seen,ge40,0.15474112289381664,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0005,CISA AA22-138B VMWare Workspace (Alt),2,all_unseen,all_seen,ge40,0.18394415782963752,0.4,0.08,0.2
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0006,CISA AA22-138B VMWare Workspace (Alt),3,all_seen,all_seen,ge40,0.2363083585074705,0.6,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0007,CISA AA22-138B VMWare Workspace (Alt),2,all_seen,all_seen,ge40,0.3754430630676099,0.6,0.16,0.4
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (Alt)::0008,CISA AA22-138B VMWare Workspace (Alt),1,all_seen,all_seen,ge40,0.7123212623289701,1.0,0.2,1.0
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0001,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,mixed,ge40,0.09552474070064358,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0002,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,mixed,ge40,0.11843276438634609,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0003,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0004,CISA AA22-138B VMWare Workspace (TA1),3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0005,CISA AA22-138B VMWare Workspace (TA1),3,mixed,mixed,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0006,CISA AA22-138B VMWare Workspace (TA1),3,mixed,mixed,ge40,0.3530721273977243,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0007,CISA AA22-138B VMWare Workspace (TA1),2,mixed,mixed,ge40,0.06131471927654584,0.2,0.04,0.1
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA1)::0008,CISA AA22-138B VMWare Workspace (TA1),1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0001,CISA AA22-138B VMWare Workspace (TA2),2,all_unseen,all_seen,ge40,0.17224964655462682,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0002,CISA AA22-138B VMWare Workspace (TA2),3,all_seen,all_seen,ge40,0.2661103137127749,0.6,0.24,0.4
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0003,CISA AA22-138B VMWare Workspace (TA2),3,all_seen,all_seen,lt40,0.42740866269577726,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0004,CISA AA22-138B VMWare Workspace (TA2),3,mixed,mixed,lt40,0.6339150659979433,1.0,0.36,0.6
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0005,CISA AA22-138B VMWare Workspace (TA2),2,mixed,mixed,ge40,0.44525887710618334,0.8,0.16,0.4
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0006,CISA AA22-138B VMWare Workspace (TA2),3,mixed,mixed,ge40,0.21395750508698966,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0007,CISA AA22-138B VMWare Workspace (TA2),3,all_unseen,mixed,ge40,0.10614425479544869,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0008,CISA AA22-138B VMWare Workspace (TA2),3,mixed,mixed,ge40,0.19349359669783386,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0009,CISA AA22-138B VMWare Workspace (TA2),2,all_unseen,mixed,lt40,0.24525887710618335,0.4,0.08,0.2
+attack_flow,TR,attack_flow::CISA AA22-138B VMWare Workspace (TA2)::0010,CISA AA22-138B VMWare Workspace (TA2),1,all_unseen,all_seen,ge40,0.1,0.2,0.04,0.2
+attack_flow,TR,attack_flow::CISA Iranian APT::0001,CISA Iranian APT,3,all_unseen,all_seen,lt40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::CISA Iranian APT::0002,CISA Iranian APT,2,mixed,all_seen,ge40,0.052813624514518175,0.2,0.04,0.1
+attack_flow,TR,attack_flow::CISA Iranian APT::0003,CISA Iranian APT,2,mixed,all_seen,ge40,0.2613147192765458,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::CISA Iranian APT::0004,CISA Iranian APT,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0005,CISA Iranian APT,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0006,CISA Iranian APT,3,all_seen,all_seen,lt40,0.08734934190238516,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA Iranian APT::0007,CISA Iranian APT,3,all_unseen,all_seen,ge40,0.17058557301213134,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::CISA Iranian APT::0008,CISA Iranian APT,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::CISA Iranian APT::0009,CISA Iranian APT,3,mixed,all_seen,ge40,0.21340033482176798,0.4,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::CISA Iranian APT::0010,CISA Iranian APT,3,mixed,all_seen,ge40,0.18771149040910257,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA Iranian APT::0011,CISA Iranian APT,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0012,CISA Iranian APT,3,mixed,all_seen,ge40,0.18938048590519488,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::CISA Iranian APT::0013,CISA Iranian APT,3,mixed,all_seen,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA Iranian APT::0014,CISA Iranian APT,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0015,CISA Iranian APT,3,all_unseen,mixed,ge40,0.08323623110974618,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::CISA Iranian APT::0016,CISA Iranian APT,3,mixed,mixed,ge40,0.2298019552053044,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::CISA Iranian APT::0017,CISA Iranian APT,3,all_unseen,all_seen,lt40,0.18120508710693645,0.6,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::CISA Iranian APT::0018,CISA Iranian APT,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0019,CISA Iranian APT,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0020,CISA Iranian APT,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::CISA Iranian APT::0021,CISA Iranian APT,1,all_unseen,all_seen,ge40,0.07737056144690832,0.2,0.04,0.2
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0001,Cobalt Kitty Campaign,2,mixed,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0002,Cobalt Kitty Campaign,3,all_unseen,all_seen,ge40,0.217513445614407,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0003,Cobalt Kitty Campaign,3,all_unseen,all_seen,ge40,0.11303818631505058,0.4,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0004,Cobalt Kitty Campaign,3,mixed,all_seen,ge40,0.08323623110974618,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0005,Cobalt Kitty Campaign,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0006,Cobalt Kitty Campaign,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0007,Cobalt Kitty Campaign,3,all_unseen,mixed,ge40,0.07261671701494107,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0008,Cobalt Kitty Campaign,3,all_unseen,all_seen,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0009,Cobalt Kitty Campaign,3,all_seen,all_seen,ge40,0.325326695905948,1.0,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0010,Cobalt Kitty Campaign,2,all_seen,all_seen,ge40,0.12262943855309168,0.2,0.04,0.1
+attack_flow,TR,attack_flow::Cobalt Kitty Campaign::0011,Cobalt Kitty Campaign,1,all_seen,all_seen,ge40,0.48969182377587844,0.8,0.16,0.8
+attack_flow,TR,attack_flow::Conti CISA Alert::0001,Conti CISA Alert,3,mixed,all_seen,ge40,0.17469868380477033,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Conti CISA Alert::0002,Conti CISA Alert,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti CISA Alert::0003,Conti CISA Alert,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti CISA Alert::0004,Conti CISA Alert,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti CISA Alert::0005,Conti CISA Alert,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti PWC::0001,Conti PWC,3,mixed,mixed,ge40,0.17469868380477033,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Conti PWC::0002,Conti PWC,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti PWC::0003,Conti PWC,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0001,Conti Ransomware,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Conti Ransomware::0002,Conti Ransomware,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0003,Conti Ransomware,3,mixed,all_seen,ge40,0.307813250291541,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Conti Ransomware::0004,Conti Ransomware,3,all_unseen,all_seen,ge40,0.43630835850747046,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::Conti Ransomware::0005,Conti Ransomware,3,mixed,all_seen,ge40,0.21918244111049928,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Conti Ransomware::0006,Conti Ransomware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0007,Conti Ransomware,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0008,Conti Ransomware,2,mixed,all_seen,ge40,0.2613147192765458,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::Conti Ransomware::0009,Conti Ransomware,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0010,Conti Ransomware,2,all_seen,all_seen,ge40,0.052813624514518175,0.2,0.04,0.1
+attack_flow,TR,attack_flow::Conti Ransomware::0011,Conti Ransomware,3,mixed,mixed,ge40,0.1897680141226306,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Conti Ransomware::0012,Conti Ransomware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0014,Conti Ransomware,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Conti Ransomware::0015,Conti Ransomware,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0001,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0002,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.13183309920811412,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0003,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.21228850959089737,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0004,DFIR - BumbleBee Round 2,3,all_unseen,all_seen,ge40,0.45382180412187745,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0005,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.2783988233036723,1.0,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0006,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0007,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0008,DFIR - BumbleBee Round 2,3,all_unseen,mixed,lt40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0009,DFIR - BumbleBee Round 2,3,all_unseen,mixed,ge40,0.12365770040985571,0.4,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0010,DFIR - BumbleBee Round 2,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0011,DFIR - BumbleBee Round 2,2,all_unseen,all_seen,lt40,0.2,0.4,0.08,0.2
+attack_flow,TR,attack_flow::DFIR - BumbleBee Round 2::0012,DFIR - BumbleBee Round 2,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Equifax Breach::0001,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Equifax Breach::0002,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Equifax Breach::0003,Equifax Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Equifax Breach::0004,Equifax Breach,3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Equifax Breach::0005,Equifax Breach,3,all_unseen,mixed,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Equifax Breach::0006,Equifax Breach,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Equifax Breach::0007,Equifax Breach,2,mixed,mixed,ge40,0.07737056144690832,0.2,0.04,0.1
+attack_flow,TR,attack_flow::Equifax Breach::0008,Equifax Breach,1,all_unseen,all_seen,ge40,0.3,0.4,0.08,0.4
+attack_flow,TR,attack_flow::FIN13 Case 1::0001,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0002,FIN13 Case 1,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0003,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::FIN13 Case 1::0004,FIN13 Case 1,3,all_unseen,all_seen,lt40,0.08084293860021903,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::FIN13 Case 1::0005,FIN13 Case 1,2,all_unseen,all_seen,ge40,0.07737056144690832,0.2,0.04,0.1
+attack_flow,TR,attack_flow::FIN13 Case 1::0006,FIN13 Case 1,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0007,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0008,FIN13 Case 1,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0009,FIN13 Case 1,2,all_unseen,mixed,ge40,0.047439542553859244,0.2,0.04,0.1
+attack_flow,TR,attack_flow::FIN13 Case 1::0010,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0011,FIN13 Case 1,3,mixed,mixed,ge40,0.19999999999999998,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::FIN13 Case 1::0012,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.3277708112024947,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::FIN13 Case 1::0013,FIN13 Case 1,3,mixed,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::FIN13 Case 1::0014,FIN13 Case 1,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0015,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0016,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.28323623110974616,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::FIN13 Case 1::0017,FIN13 Case 1,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0018,FIN13 Case 1,3,mixed,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::FIN13 Case 1::0019,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0020,FIN13 Case 1,3,all_unseen,all_seen,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::FIN13 Case 1::0021,FIN13 Case 1,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0022,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0023,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0024,FIN13 Case 1,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0025,FIN13 Case 1,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0029,FIN13 Case 1,3,all_unseen,mixed,ge40,0.3530721273977243,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::FIN13 Case 1::0030,FIN13 Case 1,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 1::0031,FIN13 Case 1,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0001,FIN13 Case 2,3,all_unseen,mixed,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::FIN13 Case 2::0002,FIN13 Case 2,3,mixed,mixed,ge40,0.14078361780682694,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::FIN13 Case 2::0003,FIN13 Case 2,3,all_unseen,mixed,lt40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::FIN13 Case 2::0004,FIN13 Case 2,2,all_unseen,mixed,ge40,0.3056272490290364,0.8,0.16,0.4
+attack_flow,TR,attack_flow::FIN13 Case 2::0005,FIN13 Case 2,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::FIN13 Case 2::0007,FIN13 Case 2,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0008,FIN13 Case 2,3,all_unseen,mixed,ge40,0.16647246221949236,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::FIN13 Case 2::0009,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0010,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0011,FIN13 Case 2,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0012,FIN13 Case 2,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0013,FIN13 Case 2,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::FIN13 Case 2::0014,FIN13 Case 2,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0001,Gootloader,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Gootloader::0002,Gootloader,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0003,Gootloader,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0005,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0006,Gootloader,3,all_unseen,all_seen,ge40,0.12365770040985569,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Gootloader::0007,Gootloader,3,all_unseen,all_seen,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Gootloader::0008,Gootloader,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Gootloader::0009,Gootloader,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0010,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0011,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0012,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0013,Gootloader,2,mixed,all_seen,ge40,0.047439542553859244,0.2,0.04,0.1
+attack_flow,TR,attack_flow::Gootloader::0014,Gootloader,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0015,Gootloader,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0016,Gootloader,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0017,Gootloader,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0018,Gootloader,2,mixed,all_seen,ge40,0.16156788634492325,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::Gootloader::0019,Gootloader,2,mixed,all_seen,ge40,0.23893844779183157,0.8,0.16,0.4
+attack_flow,TR,attack_flow::Gootloader::0020,Gootloader,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0021,Gootloader,2,mixed,all_seen,ge40,0.35474112289381665,1.0,0.2,0.5
+attack_flow,TR,attack_flow::Gootloader::0022,Gootloader,2,mixed,all_seen,ge40,0.12262943855309168,0.4,0.08,0.2
+attack_flow,TR,attack_flow::Gootloader::0023,Gootloader,2,mixed,all_seen,ge40,0.10875426183040508,0.4,0.08,0.2
+attack_flow,TR,attack_flow::Gootloader::0024,Gootloader,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0025,Gootloader,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0026,Gootloader,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Gootloader::0027,Gootloader,3,all_unseen,mixed,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Gootloader::0028,Gootloader,2,all_unseen,mixed,ge40,0.12481010400076757,0.4,0.08,0.2
+attack_flow,TR,attack_flow::Gootloader::0029,Gootloader,1,all_unseen,all_seen,ge40,0.46469316375755315,0.8,0.16,0.8
+attack_flow,TR,attack_flow::Hancitor DLL::0001,Hancitor DLL,3,mixed,all_seen,ge40,0.6439774098275268,1.0,0.36,0.6
+attack_flow,TR,attack_flow::Hancitor DLL::0002,Hancitor DLL,3,mixed,all_seen,lt40,0.5418954430376975,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::Hancitor DLL::0003,Hancitor DLL,3,mixed,all_seen,lt40,0.368916577516039,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Hancitor DLL::0004,Hancitor DLL,3,all_unseen,all_seen,lt40,0.41584445011831467,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Hancitor DLL::0005,Hancitor DLL,3,mixed,all_seen,ge40,0.23391506599794337,0.6,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Hancitor DLL::0006,Hancitor DLL,3,all_unseen,mixed,ge40,0.28901833739847743,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Hancitor DLL::0007,Hancitor DLL,3,mixed,mixed,lt40,0.28323623110974616,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Hancitor DLL::0008,Hancitor DLL,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Hancitor DLL::0010,Hancitor DLL,3,all_unseen,all_seen,lt40,0.2702234245054139,1.0,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::Hancitor DLL::0011,Hancitor DLL,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Hancitor DLL::0012,Hancitor DLL,2,mixed,all_seen,ge40,0.2,0.4,0.08,0.2
+attack_flow,TR,attack_flow::Hancitor DLL::0013,Hancitor DLL,3,mixed,mixed,ge40,0.18938048590519488,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Hancitor DLL::0014,Hancitor DLL,3,all_unseen,mixed,ge40,0.17469868380477033,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Hancitor DLL::0015,Hancitor DLL,3,mixed,mixed,ge40,0.48156723561365383,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::Hancitor DLL::0016,Hancitor DLL,3,all_unseen,all_seen,ge40,0.417513445614407,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::Hancitor DLL::0017,Hancitor DLL,3,mixed,mixed,ge40,0.30614425479544866,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Hancitor DLL::0018,Hancitor DLL,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Hancitor DLL::0019,Hancitor DLL,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ivanti Vulnerabilities::0001,Ivanti Vulnerabilities,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ivanti Vulnerabilities::0002,Ivanti Vulnerabilities,3,all_unseen,all_seen,ge40,0.09385574520455128,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Ivanti Vulnerabilities::0003,Ivanti Vulnerabilities,3,mixed,all_seen,ge40,0.2420904647962018,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Ivanti Vulnerabilities::0004,Ivanti Vulnerabilities,2,all_unseen,all_seen,ge40,0.10875426183040508,0.4,0.08,0.2
+attack_flow,TR,attack_flow::Ivanti Vulnerabilities::0005,Ivanti Vulnerabilities,1,all_seen,all_seen,ge40,0.375827135390557,0.8,0.16,0.8
+attack_flow,TR,attack_flow::JP Morgan Breach::0001,JP Morgan Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::JP Morgan Breach::0002,JP Morgan Breach,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::JP Morgan Breach::0003,JP Morgan Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::JP Morgan Breach::0004,JP Morgan Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::JP Morgan Breach::0005,JP Morgan Breach,2,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::JP Morgan Breach::0006,JP Morgan Breach,2,all_unseen,mixed,ge40,0.052813624514518175,0.2,0.04,0.1
+attack_flow,TR,attack_flow::JP Morgan Breach::0008,JP Morgan Breach,2,all_unseen,mixed,ge40,0.3754430630676099,0.8,0.16,0.4
+attack_flow,TR,attack_flow::JP Morgan Breach::0009,JP Morgan Breach,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::MITRE NERVE::0001,MITRE NERVE,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::MITRE NERVE::0002,MITRE NERVE,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::MITRE NERVE::0003,MITRE NERVE,3,all_unseen,all_seen,ge40,0.08323623110974618,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::MITRE NERVE::0004,MITRE NERVE,3,all_unseen,all_seen,ge40,0.09963785149328255,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::MITRE NERVE::0005,MITRE NERVE,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::MITRE NERVE::0006,MITRE NERVE,2,mixed,all_seen,ge40,0.10025316706837742,0.4,0.08,0.2
+attack_flow,TR,attack_flow::MITRE NERVE::0007,MITRE NERVE,1,all_seen,all_seen,ge40,0.5158777744901699,1.0,0.2,1.0
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0001,Maastricht University Ransomware,3,mixed,mixed,ge40,0.6439774098275268,1.0,0.36,0.6
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0003,Maastricht University Ransomware,3,mixed,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0004,Maastricht University Ransomware,3,all_unseen,mixed,ge40,0.2469278726022756,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0005,Maastricht University Ransomware,3,all_unseen,all_seen,ge40,0.23391506599794337,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0006,Maastricht University Ransomware,3,mixed,all_seen,ge40,0.4938557452045512,1.0,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0007,Maastricht University Ransomware,3,mixed,all_seen,ge40,0.27094772151884877,0.6,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0008,Maastricht University Ransomware,2,mixed,all_seen,ge40,0.3226294385530917,0.8,0.16,0.4
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0009,Maastricht University Ransomware,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0010,Maastricht University Ransomware,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Maastricht University Ransomware::0011,Maastricht University Ransomware,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Mac Malware Steals Crypto::0001,Mac Malware Steals Crypto,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Mac Malware Steals Crypto::0002,Mac Malware Steals Crypto,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Mac Malware Steals Crypto::0004,Mac Malware Steals Crypto,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Marriott Breach::0001,Marriott Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Marriott Breach::0002,Marriott Breach,3,mixed,mixed,ge40,0.09385574520455128,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Marriott Breach::0003,Marriott Breach,2,all_unseen,mixed,ge40,0.17224964655462682,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::Marriott Breach::0004,Marriott Breach,1,all_unseen,all_seen,ge40,0.17737056144690833,0.4,0.08,0.4
+attack_flow,TR,attack_flow::Muddy Water::0001,Muddy Water,2,all_seen,all_seen,ge40,0.8414038803475865,1.0,0.36,0.9
+attack_flow,TR,attack_flow::Muddy Water::0002,Muddy Water,3,mixed,all_seen,ge40,0.5097001953228659,1.0,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::Muddy Water::0003,Muddy Water,2,all_seen,all_seen,ge40,0.4773705614469083,1.0,0.2,0.5
+attack_flow,TR,attack_flow::Muddy Water::0004,Muddy Water,2,all_unseen,all_seen,ge40,0.047439542553859244,0.2,0.04,0.1
+attack_flow,TR,attack_flow::Muddy Water::0005,Muddy Water,2,mixed,all_seen,ge40,0.6068267634511066,1.0,0.28,0.7
+attack_flow,TR,attack_flow::Muddy Water::0006,Muddy Water,2,mixed,all_seen,ge40,0.6659608172799766,1.0,0.24000000000000005,0.6
+attack_flow,TR,attack_flow::Muddy Water::0008,Muddy Water,2,all_seen,all_seen,ge40,0.12481010400076757,0.4,0.08,0.2
+attack_flow,TR,attack_flow::Muddy Water::0009,Muddy Water,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0001,NotPetya,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0002,NotPetya,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0003,NotPetya,3,all_unseen,mixed,ge40,0.19999999999999998,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::NotPetya::0004,NotPetya,3,all_unseen,all_seen,ge40,0.4938557452045512,0.8,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::NotPetya::0008,NotPetya,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0009,NotPetya,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0010,NotPetya,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0011,NotPetya,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0012,NotPetya,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0013,NotPetya,3,mixed,all_seen,lt40,0.15307212739772433,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::NotPetya::0014,NotPetya,3,all_unseen,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::NotPetya::0015,NotPetya,2,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::NotPetya::0016,NotPetya,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::OceanLotus::0001,OceanLotus,3,mixed,mixed,ge40,0.17469868380477033,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::OceanLotus::0002,OceanLotus,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::OceanLotus::0003,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::OceanLotus::0004,OceanLotus,3,mixed,all_seen,ge40,0.11303818631505058,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::OceanLotus::0005,OceanLotus,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::OceanLotus::0006,OceanLotus,3,all_unseen,all_seen,ge40,0.27506083231148776,0.6,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::OceanLotus::0007,OceanLotus,3,all_seen,all_seen,ge40,0.14078361780682694,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::OceanLotus::0008,OceanLotus,3,mixed,all_seen,ge40,0.10614425479544869,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::OceanLotus::0009,OceanLotus,3,mixed,all_seen,ge40,0.09963785149328255,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::OceanLotus::0010,OceanLotus,2,all_seen,all_seen,ge40,0.18612482327731342,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::OceanLotus::0011,OceanLotus,2,all_seen,all_seen,ge40,0.5301841859614266,0.8,0.24000000000000005,0.6
+attack_flow,TR,attack_flow::OceanLotus::0012,OceanLotus,3,mixed,all_seen,ge40,0.3530721273977243,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::OceanLotus::0013,OceanLotus,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::OceanLotus::0014,OceanLotus,3,mixed,all_seen,ge40,0.09552474070064358,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::OceanLotus::0015,OceanLotus,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::OceanLotus::0016,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::OceanLotus::0017,OceanLotus,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::OceanLotus::0018,OceanLotus,3,all_unseen,all_seen,ge40,0.14934654482252113,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::OceanLotus::0019,OceanLotus,2,mixed,all_seen,ge40,0.052813624514518175,0.2,0.04,0.1
+attack_flow,TR,attack_flow::OceanLotus::0020,OceanLotus,1,all_seen,all_seen,lt40,0.26350587306158696,0.6,0.12000000000000002,0.6
+attack_flow,TR,attack_flow::REvil::0001,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0002,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0003,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0004,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0005,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0006,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0007,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0008,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0009,REvil,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0010,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0011,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0012,REvil,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0013,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0014,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0015,REvil,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::REvil::0016,REvil,3,all_unseen,mixed,ge40,0.33427721450466075,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::REvil::0017,REvil,2,all_unseen,mixed,ge40,0.20900742889878252,0.8,0.16,0.4
+attack_flow,TR,attack_flow::REvil::0018,REvil,1,all_unseen,all_seen,ge40,0.27227062322935724,0.6,0.12000000000000002,0.6
+attack_flow,TR,attack_flow::Ragnar Locker::0001,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0002,Ragnar Locker,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0003,Ragnar Locker,2,all_unseen,all_seen,lt40,0.29269841966004256,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::Ragnar Locker::0004,Ragnar Locker,2,all_unseen,all_seen,ge40,0.33868528072345416,0.8,0.16,0.4
+attack_flow,TR,attack_flow::Ragnar Locker::0005,Ragnar Locker,3,mixed,mixed,ge40,0.14245261330291922,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Ragnar Locker::0006,Ragnar Locker,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0007,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0008,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0009,Ragnar Locker,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0010,Ragnar Locker,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0011,Ragnar Locker,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Ragnar Locker::0012,Ragnar Locker,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SWIFT Heist::0001,SWIFT Heist,3,all_unseen,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::SWIFT Heist::0002,SWIFT Heist,3,all_unseen,all_seen,ge40,0.15307212739772433,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::SWIFT Heist::0003,SWIFT Heist,2,mixed,all_seen,lt40,0.17762372851528574,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::SWIFT Heist::0004,SWIFT Heist,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SearchAwesome Adware::0001,SearchAwesome Adware,3,mixed,mixed,ge40,0.2240198489165731,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::SearchAwesome Adware::0002,SearchAwesome Adware,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SearchAwesome Adware::0003,SearchAwesome Adware,3,all_unseen,mixed,lt40,0.3465657240955582,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::SearchAwesome Adware::0004,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::SearchAwesome Adware::0005,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.27672982780758004,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::SearchAwesome Adware::0006,SearchAwesome Adware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SearchAwesome Adware::0007,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SearchAwesome Adware::0008,SearchAwesome Adware,3,all_unseen,mixed,ge40,0.16536063698862175,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::SearchAwesome Adware::0009,SearchAwesome Adware,2,mixed,mixed,ge40,0.3065735963827292,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::SearchAwesome Adware::0010,SearchAwesome Adware,1,all_unseen,all_seen,ge40,0.452371901428583,0.6,0.12000000000000002,0.6
+attack_flow,TR,attack_flow::Shamoon::0001,Shamoon,3,mixed,all_seen,ge40,0.3465657240955582,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Shamoon::0002,Shamoon,3,all_unseen,all_seen,ge40,0.3184327643863461,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Shamoon::0003,Shamoon,3,mixed,all_seen,ge40,0.42162655640704594,1.0,0.28,0.4666666666666666
+attack_flow,TR,attack_flow::Shamoon::0004,Shamoon,3,mixed,all_seen,ge40,0.3877114904091026,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::Shamoon::0005,Shamoon,3,all_seen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Shamoon::0006,Shamoon,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0007,Shamoon,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0008,Shamoon,3,all_unseen,all_seen,ge40,0.12365770040985569,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Shamoon::0009,Shamoon,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0010,Shamoon,3,all_unseen,all_seen,ge40,0.13427721450466082,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Shamoon::0011,Shamoon,3,mixed,all_seen,ge40,0.09552474070064358,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Shamoon::0012,Shamoon,3,mixed,all_seen,ge40,0.17709197631429746,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::Shamoon::0013,Shamoon,3,all_unseen,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Shamoon::0014,Shamoon,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0015,Shamoon,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0016,Shamoon,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0017,Shamoon,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Shamoon::0018,Shamoon,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0001,SolarWinds,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0002,SolarWinds,3,all_unseen,mixed,ge40,0.26611031371277494,0.8,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::SolarWinds::0003,SolarWinds,3,all_unseen,mixed,ge40,0.26855442900932164,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::SolarWinds::0004,SolarWinds,3,all_unseen,mixed,ge40,0.28734934190238515,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::SolarWinds::0005,SolarWinds,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0006,SolarWinds,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0007,SolarWinds,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0008,SolarWinds,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0009,SolarWinds,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::SolarWinds::0010,SolarWinds,3,mixed,all_seen,ge40,0.23669588672490627,0.8,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::SolarWinds::0011,SolarWinds,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::SolarWinds::0012,SolarWinds,3,mixed,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::SolarWinds::0013,SolarWinds,3,all_unseen,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::SolarWinds::0014,SolarWinds,3,mixed,all_seen,ge40,0.3407836178068269,1.0,0.2,0.3333333333333333
+attack_flow,TR,attack_flow::SolarWinds::0015,SolarWinds,3,all_unseen,all_seen,ge40,0.15307212739772433,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::SolarWinds::0016,SolarWinds,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0001,Sony Malware,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0002,Sony Malware,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Sony Malware::0003,Sony Malware,3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Sony Malware::0004,Sony Malware,3,all_unseen,mixed,ge40,0.14934654482252113,0.8,0.16,0.26666666666666666
+attack_flow,TR,attack_flow::Sony Malware::0005,Sony Malware,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0006,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0007,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0008,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0009,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0010,Sony Malware,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0011,Sony Malware,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Sony Malware::0012,Sony Malware,1,all_unseen,all_unseen,lt40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Target Breach::0001,Target Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Target Breach::0002,Target Breach,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Target Breach::0003,Target Breach,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Target Breach::0004,Target Breach,3,all_unseen,all_seen,lt40,0.18771149040910257,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::Target Breach::0008,Target Breach,3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::Target Breach::0009,Target Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Target Breach::0010,Target Breach,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Target Breach::0011,Target Breach,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Tesla Kubernetes Breach::0001,Tesla Kubernetes Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Tesla Kubernetes Breach::0002,Tesla Kubernetes Breach,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Tesla Kubernetes Breach::0003,Tesla Kubernetes Breach,1,all_unseen,all_unseen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Uber Breach::0001,Uber Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Uber Breach::0002,Uber Breach,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Uber Breach::0003,Uber Breach,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Uber Breach::0004,Uber Breach,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Uber Breach::0005,Uber Breach,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::Uber Breach::0006,Uber Breach,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::WhisperGate::0001,WhisperGate,3,all_unseen,mixed,ge40,0.07261671701494107,0.4,0.08,0.13333333333333333
+attack_flow,TR,attack_flow::WhisperGate::0002,WhisperGate,3,mixed,mixed,ge40,0.17058557301213134,0.4,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::WhisperGate::0003,WhisperGate,3,all_unseen,all_seen,ge40,0.16536063698862175,0.6,0.12000000000000002,0.2
+attack_flow,TR,attack_flow::WhisperGate::0004,WhisperGate,2,mixed,all_seen,ge40,0.5433313787268849,1.0,0.2,0.5
+attack_flow,TR,attack_flow::WhisperGate::0005,WhisperGate,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::WhisperGate::0006,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::WhisperGate::0007,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::WhisperGate::0008,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::WhisperGate::0009,WhisperGate,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::WhisperGate::0010,WhisperGate,3,all_unseen,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::WhisperGate::0011,WhisperGate,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+attack_flow,TR,attack_flow::WhisperGate::0013,WhisperGate,3,all_unseen,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::WhisperGate::0014,WhisperGate,3,all_unseen,mixed,ge40,0.31787559412112437,1.0,0.24000000000000005,0.4
+attack_flow,TR,attack_flow::WhisperGate::0015,WhisperGate,3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+attack_flow,TR,attack_flow::WhisperGate::0016,WhisperGate,2,all_unseen,all_seen,ge40,0.3065735963827292,0.6,0.12000000000000002,0.3
+attack_flow,TR,attack_flow::WhisperGate::0017,WhisperGate,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0001,apt29::unknown,3,all_unseen,all_seen,lt40,0.12777081120249467,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::apt29::unknown::0002,apt29::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0003,apt29::unknown,3,mixed,all_seen,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0004,apt29::unknown,3,mixed,all_seen,ge40,0.3013068469893748,1.0,0.24000000000000005,0.4
+ctid,TR,ctid::apt29::unknown::0005,apt29::unknown,3,all_unseen,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0006,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0007,apt29::unknown,3,all_unseen,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0008,apt29::unknown,3,all_unseen,all_seen,ge40,0.13016410371202183,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0009,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0010,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0011,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0012,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0013,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0014,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0015,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0016,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0017,apt29::unknown,3,all_unseen,all_seen,ge40,0.07261671701494107,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0018,apt29::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0019,apt29::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0020,apt29::unknown,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0021,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0022,apt29::unknown,3,mixed,mixed,lt40,0.13427721450466082,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0023,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0024,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0025,apt29::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0026,apt29::unknown,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0028,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0029,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0030,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0031,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0032,apt29::unknown,3,mixed,all_seen,ge40,0.09385574520455128,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0033,apt29::unknown,3,all_unseen,all_seen,lt40,0.07261671701494107,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0034,apt29::unknown,3,all_unseen,all_seen,ge40,0.29963785149328254,0.8,0.2,0.3333333333333333
+ctid,TR,ctid::apt29::unknown::0035,apt29::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0036,apt29::unknown,3,mixed,all_seen,ge40,0.13016410371202183,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::apt29::unknown::0037,apt29::unknown,3,mixed,mixed,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0038,apt29::unknown,3,mixed,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0039,apt29::unknown,3,mixed,mixed,lt40,0.2527099788910069,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::apt29::unknown::0040,apt29::unknown,3,all_unseen,all_seen,ge40,0.09963785149328255,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0041,apt29::unknown,3,mixed,all_seen,ge40,0.27150489178407045,0.8,0.2,0.3333333333333333
+ctid,TR,ctid::apt29::unknown::0042,apt29::unknown,3,mixed,all_seen,ge40,0.27094772151884877,0.6,0.16,0.26666666666666666
+ctid,TR,ctid::apt29::unknown::0043,apt29::unknown,2,all_unseen,all_seen,ge40,0.047439542553859244,0.2,0.04,0.1
+ctid,TR,ctid::apt29::unknown::0044,apt29::unknown,3,mixed,mixed,lt40,0.07672982780758004,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0045,apt29::unknown,3,mixed,mixed,ge40,0.15307212739772433,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0046,apt29::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0047,apt29::unknown,3,all_unseen,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0048,apt29::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0049,apt29::unknown,3,mixed,all_seen,lt40,0.14245261330291922,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::apt29::unknown::0050,apt29::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0051,apt29::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0052,apt29::unknown,3,mixed,all_seen,lt40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0053,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0054,apt29::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0055,apt29::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0056,apt29::unknown,3,mixed,all_seen,lt40,0.1640791697099652,0.6,0.16,0.26666666666666666
+ctid,TR,ctid::apt29::unknown::0057,apt29::unknown,3,mixed,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0058,apt29::unknown,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0059,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0060,apt29::unknown,3,mixed,mixed,ge40,0.15307212739772433,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::apt29::unknown::0061,apt29::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::apt29::unknown::0062,apt29::unknown,3,all_unseen,all_seen,lt40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::apt29::unknown::0063,apt29::unknown,2,all_unseen,all_seen,ge40,0.06131471927654584,0.2,0.04,0.1
+ctid,TR,ctid::apt29::unknown::0064,apt29::unknown,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0001,carbanak::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0002,carbanak::unknown,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::carbanak::unknown::0003,carbanak::unknown,3,mixed,all_seen,ge40,0.09963785149328255,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::carbanak::unknown::0004,carbanak::unknown,3,mixed,all_seen,ge40,0.09963785149328255,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::carbanak::unknown::0005,carbanak::unknown,3,mixed,all_seen,ge40,0.10614425479544869,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::carbanak::unknown::0006,carbanak::unknown,3,mixed,all_seen,ge40,0.18771149040910257,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::carbanak::unknown::0008,carbanak::unknown,3,mixed,all_seen,lt40,0.14245261330291922,0.4,0.12000000000000002,0.2
+ctid,TR,ctid::carbanak::unknown::0009,carbanak::unknown,3,all_unseen,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::carbanak::unknown::0010,carbanak::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0011,carbanak::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0012,carbanak::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0013,carbanak::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0014,carbanak::unknown,3,mixed,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::carbanak::unknown::0015,carbanak::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0016,carbanak::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0017,carbanak::unknown,3,mixed,all_seen,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::carbanak::unknown::0018,carbanak::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0019,carbanak::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::carbanak::unknown::0020,carbanak::unknown,1,all_seen,all_seen,ge40,0.17737056144690833,0.4,0.08,0.4
+ctid,TR,ctid::fin6::unknown::0001,fin6::unknown,3,mixed,mixed,ge40,0.3359462100007531,0.8,0.28,0.4666666666666666
+ctid,TR,ctid::fin6::unknown::0002,fin6::unknown,3,mixed,mixed,ge40,0.17225456850822363,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::fin6::unknown::0003,fin6::unknown,3,all_unseen,all_seen,ge40,0.14245261330291922,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::fin6::unknown::0004,fin6::unknown,3,mixed,all_seen,ge40,0.22607637263010116,1.0,0.24000000000000005,0.4
+ctid,TR,ctid::fin6::unknown::0005,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin6::unknown::0006,fin6::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin6::unknown::0007,fin6::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin6::unknown::0008,fin6::unknown,3,mixed,all_seen,ge40,0.18287408260302876,0.6,0.16,0.26666666666666666
+ctid,TR,ctid::fin6::unknown::0009,fin6::unknown,3,mixed,all_seen,ge40,0.2644413182166826,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::fin6::unknown::0010,fin6::unknown,3,all_unseen,all_seen,ge40,0.2281329597092121,0.4,0.12000000000000002,0.2
+ctid,TR,ctid::fin6::unknown::0012,fin6::unknown,3,all_unseen,all_seen,ge40,0.2404214693001095,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::fin6::unknown::0013,fin6::unknown,3,mixed,all_seen,ge40,0.21340033482176798,0.6,0.16,0.26666666666666666
+ctid,TR,ctid::fin6::unknown::0014,fin6::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin6::unknown::0015,fin6::unknown,3,mixed,all_seen,ge40,0.29385574520455127,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::fin6::unknown::0016,fin6::unknown,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin6::unknown::0017,fin6::unknown,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0001,fin7::unknown,3,all_unseen,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::fin7::unknown::0002,fin7::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0003,fin7::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0004,fin7::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0006,fin7::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0007,fin7::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0008,fin7::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::fin7::unknown::0009,fin7::unknown,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::menu_pass::unknown::0001,menu_pass::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::menu_pass::unknown::0002,menu_pass::unknown,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::menu_pass::unknown::0003,menu_pass::unknown,3,mixed,all_seen,lt40,0.18938048590519488,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::menu_pass::unknown::0004,menu_pass::unknown,3,all_unseen,all_seen,ge40,0.17469868380477033,0.6,0.16,0.26666666666666666
+ctid,TR,ctid::menu_pass::unknown::0005,menu_pass::unknown,3,mixed,all_seen,ge40,0.18287408260302873,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::menu_pass::unknown::0006,menu_pass::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::menu_pass::unknown::0007,menu_pass::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::menu_pass::unknown::0008,menu_pass::unknown,3,mixed,mixed,ge40,0.17709197631429746,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::menu_pass::unknown::0009,menu_pass::unknown,3,all_unseen,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::menu_pass::unknown::0010,menu_pass::unknown,2,all_unseen,all_seen,lt40,0.4926984196600426,1.0,0.2,0.5
+ctid,TR,ctid::oilrig::unknown::0001,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0002,oilrig::unknown,3,mixed,all_seen,ge40,0.29552474070064355,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::oilrig::unknown::0003,oilrig::unknown,3,all_unseen,all_seen,lt40,0.15307212739772433,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::oilrig::unknown::0004,oilrig::unknown,3,mixed,all_seen,ge40,0.11303818631505058,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::oilrig::unknown::0005,oilrig::unknown,3,mixed,all_seen,ge40,0.24731540081971137,1.0,0.24000000000000005,0.4
+ctid,TR,ctid::oilrig::unknown::0006,oilrig::unknown,3,mixed,all_seen,ge40,0.298356384214626,1.0,0.28,0.4666666666666666
+ctid,TR,ctid::oilrig::unknown::0007,oilrig::unknown,3,mixed,mixed,ge40,0.08084293860021903,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::oilrig::unknown::0008,oilrig::unknown,3,mixed,mixed,lt40,0.2298019552053044,0.6,0.16,0.26666666666666666
+ctid,TR,ctid::oilrig::unknown::0009,oilrig::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0010,oilrig::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0011,oilrig::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0012,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0013,oilrig::unknown,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0014,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0015,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0016,oilrig::unknown,3,mixed,all_seen,ge40,0.3284951082159295,0.8,0.2,0.3333333333333333
+ctid,TR,ctid::oilrig::unknown::0017,oilrig::unknown,3,mixed,all_seen,lt40,0.09385574520455128,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::oilrig::unknown::0018,oilrig::unknown,3,all_unseen,all_seen,ge40,0.21228850959089737,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::oilrig::unknown::0019,oilrig::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0020,oilrig::unknown,3,all_seen,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::oilrig::unknown::0021,oilrig::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0022,oilrig::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0023,oilrig::unknown,3,mixed,mixed,ge40,0.14656572409555818,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::oilrig::unknown::0024,oilrig::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::oilrig::unknown::0025,oilrig::unknown,3,all_unseen,all_seen,ge40,0.059216382193173045,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::oilrig::unknown::0026,oilrig::unknown,3,mixed,all_seen,lt40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::oilrig::unknown::0027,oilrig::unknown,3,mixed,all_seen,lt40,0.08323623110974618,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::oilrig::unknown::0028,oilrig::unknown,3,mixed,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::oilrig::unknown::0029,oilrig::unknown,3,mixed,mixed,ge40,0.2281329597092121,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::oilrig::unknown::0030,oilrig::unknown,3,mixed,mixed,ge40,0.13016410371202183,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::oilrig::unknown::0031,oilrig::unknown,3,all_unseen,all_seen,lt40,0.2815672356136539,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::oilrig::unknown::0032,oilrig::unknown,3,mixed,all_seen,lt40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::oilrig::unknown::0033,oilrig::unknown,3,mixed,all_seen,ge40,0.12365770040985569,0.4,0.12000000000000002,0.2
+ctid,TR,ctid::oilrig::unknown::0035,oilrig::unknown,2,mixed,all_seen,ge40,0.07737056144690832,0.2,0.04,0.1
+ctid,TR,ctid::oilrig::unknown::0036,oilrig::unknown,1,all_seen,all_seen,ge40,0.7261859507142916,0.8,0.16,0.8
+ctid,TR,ctid::sandworm::unknown::0001,sandworm::unknown,3,all_seen,all_seen,ge40,0.44320229002707234,1.0,0.32,0.5333333333333333
+ctid,TR,ctid::sandworm::unknown::0002,sandworm::unknown,3,all_unseen,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::sandworm::unknown::0003,sandworm::unknown,3,mixed,all_seen,ge40,0.09385574520455128,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::sandworm::unknown::0004,sandworm::unknown,3,mixed,all_seen,ge40,0.28901833739847743,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::sandworm::unknown::0005,sandworm::unknown,3,mixed,all_seen,ge40,0.08323623110974618,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::sandworm::unknown::0006,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0007,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0008,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0009,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0011,sandworm::unknown,3,mixed,all_seen,ge40,0.4692787260227565,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::sandworm::unknown::0012,sandworm::unknown,3,all_unseen,all_seen,ge40,0.28323623110974616,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::sandworm::unknown::0013,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0014,sandworm::unknown,3,all_unseen,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::sandworm::unknown::0015,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0016,sandworm::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0017,sandworm::unknown,3,mixed,mixed,ge40,0.07261671701494107,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::sandworm::unknown::0018,sandworm::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0019,sandworm::unknown,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0020,sandworm::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0021,sandworm::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::sandworm::unknown::0022,sandworm::unknown,2,all_unseen,all_seen,lt40,0.06131471927654584,0.2,0.04,0.1
+ctid,TR,ctid::sandworm::unknown::0023,sandworm::unknown,3,mixed,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::sandworm::unknown::0024,sandworm::unknown,3,mixed,all_seen,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::sandworm::unknown::0025,sandworm::unknown,3,mixed,all_seen,ge40,0.14656572409555818,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::sandworm::unknown::0026,sandworm::unknown,3,mixed,all_seen,ge40,0.19349359669783386,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::sandworm::unknown::0027,sandworm::unknown,2,mixed,all_seen,ge40,0.2613147192765458,0.6,0.12000000000000002,0.3
+ctid,TR,ctid::sandworm::unknown::0028,sandworm::unknown,2,all_seen,all_seen,ge40,0.6131471927654584,1.0,0.2,0.5
+ctid,TR,ctid::sandworm::unknown::0029,sandworm::unknown,3,all_seen,all_seen,lt40,0.5754229808182052,1.0,0.28,0.4666666666666666
+ctid,TR,ctid::sandworm::unknown::0030,sandworm::unknown,3,mixed,all_seen,ge40,0.12365770040985569,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::sandworm::unknown::0031,sandworm::unknown,2,all_seen,all_seen,ge40,0.44525887710618334,0.8,0.2,0.5
+ctid,TR,ctid::sandworm::unknown::0032,sandworm::unknown,1,all_unseen,all_seen,ge40,0.2,0.2,0.04,0.2
+ctid,TR,ctid::turla_carbon::unknown::0001,turla_carbon::unknown,3,mixed,all_seen,ge40,0.7653606369886217,1.0,0.4,0.6666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0002,turla_carbon::unknown,3,mixed,all_seen,lt40,0.3284951082159295,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0003,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.26444131821668265,0.4,0.16,0.26666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0004,turla_carbon::unknown,3,mixed,all_seen,ge40,0.3212644079003285,1.0,0.24000000000000005,0.4
+ctid,TR,ctid::turla_carbon::unknown::0005,turla_carbon::unknown,3,mixed,all_seen,ge40,0.3277708112024946,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::turla_carbon::unknown::0006,turla_carbon::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_carbon::unknown::0007,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_carbon::unknown::0008,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_carbon::unknown::0009,turla_carbon::unknown,3,mixed,all_seen,ge40,0.1681922805026042,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0010,turla_carbon::unknown,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::turla_carbon::unknown::0011,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_carbon::unknown::0012,turla_carbon::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_carbon::unknown::0013,turla_carbon::unknown,3,mixed,all_seen,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::turla_carbon::unknown::0014,turla_carbon::unknown,3,mixed,all_seen,ge40,0.16407916970996522,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0015,turla_carbon::unknown,3,mixed,all_seen,ge40,0.09385574520455128,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::turla_carbon::unknown::0016,turla_carbon::unknown,3,all_seen,all_seen,ge40,0.2298019552053044,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0017,turla_carbon::unknown,3,mixed,all_seen,ge40,0.4530975071084426,1.0,0.4,0.6666666666666666
+ctid,TR,ctid::turla_carbon::unknown::0018,turla_carbon::unknown,2,mixed,all_seen,ge40,0.07737056144690832,0.2,0.04,0.1
+ctid,TR,ctid::turla_carbon::unknown::0019,turla_carbon::unknown,2,all_seen,all_seen,ge40,0.33868528072345416,0.8,0.16,0.4
+ctid,TR,ctid::turla_carbon::unknown::0020,turla_carbon::unknown,3,all_seen,all_seen,ge40,0.39999999999999997,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::turla_carbon::unknown::0021,turla_carbon::unknown,3,mixed,mixed,lt40,0.19349359669783386,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::turla_carbon::unknown::0022,turla_carbon::unknown,3,mixed,mixed,lt40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_carbon::unknown::0023,turla_carbon::unknown,2,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0001,turla_snake::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0002,turla_snake::unknown,3,mixed,mixed,ge40,0.14245261330291922,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::turla_snake::unknown::0003,turla_snake::unknown,3,mixed,mixed,ge40,0.38120508710693646,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::turla_snake::unknown::0004,turla_snake::unknown,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0005,turla_snake::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0006,turla_snake::unknown,3,all_unseen,mixed,ge40,0.04692787260227564,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::turla_snake::unknown::0007,turla_snake::unknown,3,mixed,mixed,ge40,0.2404214693001095,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::turla_snake::unknown::0008,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.17709197631429746,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::turla_snake::unknown::0009,turla_snake::unknown,3,all_seen,all_seen,lt40,0.2644413182166826,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::turla_snake::unknown::0010,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.18771149040910257,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::turla_snake::unknown::0011,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0013,turla_snake::unknown,3,mixed,all_seen,ge40,0.31787559412112437,0.8,0.2,0.3333333333333333
+ctid,TR,ctid::turla_snake::unknown::0014,turla_snake::unknown,3,mixed,all_seen,lt40,0.059216382193173045,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::turla_snake::unknown::0015,turla_snake::unknown,3,mixed,all_seen,ge40,0.29552474070064355,0.8,0.2,0.3333333333333333
+ctid,TR,ctid::turla_snake::unknown::0016,turla_snake::unknown,3,all_seen,all_seen,ge40,0.13594621000075308,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::turla_snake::unknown::0017,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0018,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0019,turla_snake::unknown,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::turla_snake::unknown::0020,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.18120508710693645,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::turla_snake::unknown::0021,turla_snake::unknown,3,mixed,all_seen,ge40,0.3184327643863461,1.0,0.24000000000000005,0.4
+ctid,TR,ctid::turla_snake::unknown::0022,turla_snake::unknown,3,mixed,all_seen,lt40,0.3195445896172167,0.8,0.2,0.3333333333333333
+ctid,TR,ctid::turla_snake::unknown::0023,turla_snake::unknown,3,mixed,all_seen,ge40,0.07672982780758004,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::turla_snake::unknown::0024,turla_snake::unknown,3,all_unseen,all_seen,ge40,0.08734934190238516,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::turla_snake::unknown::0025,turla_snake::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::turla_snake::unknown::0026,turla_snake::unknown,2,all_seen,all_seen,ge40,0.33868528072345416,0.8,0.16,0.4
+ctid,TR,ctid::turla_snake::unknown::0027,turla_snake::unknown,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0001,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0002,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.11303818631505058,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::wizard_spider::unknown::0003,wizard_spider::unknown,3,mixed,all_seen,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::wizard_spider::unknown::0004,wizard_spider::unknown,3,mixed,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::wizard_spider::unknown::0005,wizard_spider::unknown,3,mixed,all_seen,ge40,0.43463936301137823,1.0,0.2,0.3333333333333333
+ctid,TR,ctid::wizard_spider::unknown::0006,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.10614425479544869,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::wizard_spider::unknown::0007,wizard_spider::unknown,3,mixed,mixed,ge40,0.040421469300109515,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::wizard_spider::unknown::0008,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.13594621000075308,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::wizard_spider::unknown::0009,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0010,wizard_spider::unknown,3,mixed,all_seen,ge40,0.2527099788910069,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::wizard_spider::unknown::0011,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0012,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0013,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0014,wizard_spider::unknown,3,mixed,mixed,ge40,0.20578210628873123,0.8,0.16,0.26666666666666666
+ctid,TR,ctid::wizard_spider::unknown::0015,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::wizard_spider::unknown::0016,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0017,wizard_spider::unknown,3,all_unseen,mixed,ge40,0.03630835850747054,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::wizard_spider::unknown::0019,wizard_spider::unknown,3,mixed,all_seen,ge40,0.17058557301213134,0.6,0.12000000000000002,0.2
+ctid,TR,ctid::wizard_spider::unknown::0020,wizard_spider::unknown,2,all_unseen,all_seen,ge40,0.06131471927654584,0.2,0.04,0.1
+ctid,TR,ctid::wizard_spider::unknown::0021,wizard_spider::unknown,2,all_seen,all_seen,ge40,0.35474112289381665,0.8,0.16,0.4
+ctid,TR,ctid::wizard_spider::unknown::0022,wizard_spider::unknown,3,mixed,all_seen,ge40,0.11843276438634609,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::wizard_spider::unknown::0023,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0024,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0025,wizard_spider::unknown,3,mixed,all_seen,ge40,0.09385574520455128,0.2,0.04,0.06666666666666667
+ctid,TR,ctid::wizard_spider::unknown::0026,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0027,wizard_spider::unknown,2,mixed,all_seen,ge40,0.12262943855309168,0.2,0.04,0.1
+ctid,TR,ctid::wizard_spider::unknown::0028,wizard_spider::unknown,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+ctid,TR,ctid::wizard_spider::unknown::0029,wizard_spider::unknown,2,mixed,all_seen,ge40,0.052813624514518175,0.2,0.04,0.1
+ctid,TR,ctid::wizard_spider::unknown::0030,wizard_spider::unknown,3,mixed,all_seen,ge40,0.13016410371202183,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::wizard_spider::unknown::0031,wizard_spider::unknown,3,all_unseen,all_seen,ge40,0.08323623110974618,0.4,0.08,0.13333333333333333
+ctid,TR,ctid::wizard_spider::unknown::0032,wizard_spider::unknown,2,all_seen,all_seen,lt40,0.539191614860209,1.0,0.36,0.9
+ctid,TR,ctid::wizard_spider::unknown::0033,wizard_spider::unknown,1,all_unseen,all_seen,ge40,0.3,0.4,0.08,0.4
+stockpile,TR,stockpile::01c96671-afd3-47d4-8d31-8c116cc0221a::0001,01c96671-afd3-47d4-8d31-8c116cc0221a,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01c96671-afd3-47d4-8d31-8c116cc0221a::0002,01c96671-afd3-47d4-8d31-8c116cc0221a,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0001,01d77744-2515-401a-a497-d9f7241aac3c,2,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0002,01d77744-2515-401a-a497-d9f7241aac3c,3,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0003,01d77744-2515-401a-a497-d9f7241aac3c,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0004,01d77744-2515-401a-a497-d9f7241aac3c,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0005,01d77744-2515-401a-a497-d9f7241aac3c,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::01d77744-2515-401a-a497-d9f7241aac3c::0006,01d77744-2515-401a-a497-d9f7241aac3c,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::09ad625e-6cba-490f-afe3-5417e7edb9c6::0001,09ad625e-6cba-490f-afe3-5417e7edb9c6,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::09ad625e-6cba-490f-afe3-5417e7edb9c6::0002,09ad625e-6cba-490f-afe3-5417e7edb9c6,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0001,0b5636cf-f019-4ec9-aa7c-6e4f55505374,3,mixed,all_seen,lt40,0.2086137498027137,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0002,0b5636cf-f019-4ec9-aa7c-6e4f55505374,3,mixed,all_seen,lt40,0.20210734650054757,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0003,0b5636cf-f019-4ec9-aa7c-6e4f55505374,2,all_unseen,all_seen,lt40,0.27256921733461853,1.0,0.2,0.5
+stockpile,TR,stockpile::0b5636cf-f019-4ec9-aa7c-6e4f55505374::0004,0b5636cf-f019-4ec9-aa7c-6e4f55505374,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0001,0b73bf34-fc5b-48f7-9194-dce993b915b1,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0002,0b73bf34-fc5b-48f7-9194-dce993b915b1,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0001,0f4c3c67-845e-49a0-927e-90ed33c044e0,2,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0002,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0003,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0004,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0005,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0006,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0007,0f4c3c67-845e-49a0-927e-90ed33c044e0,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0008,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0009,0f4c3c67-845e-49a0-927e-90ed33c044e0,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0010,0f4c3c67-845e-49a0-927e-90ed33c044e0,2,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::0f4c3c67-845e-49a0-927e-90ed33c044e0::0011,0f4c3c67-845e-49a0-927e-90ed33c044e0,1,all_unseen,all_unseen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0001,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0002,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0003,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::1a98b8e6-18ce-4617-8cc5-e65a1a9d490e::0004,1a98b8e6-18ce-4617-8cc5-e65a1a9d490e,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::1bac97ca-77fc-4c9a-835e-4de1b1b7f639::0001,1bac97ca-77fc-4c9a-835e-4de1b1b7f639,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::1bac97ca-77fc-4c9a-835e-4de1b1b7f639::0002,1bac97ca-77fc-4c9a-835e-4de1b1b7f639,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::4c28c132-d7d7-4a04-8908-d643b7cb1d58::0001,4c28c132-d7d7-4a04-8908-d643b7cb1d58,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0001,50855e29-3b4e-4562-aa55-b3d7f93c26b8,3,all_seen,all_seen,ge40,0.18154179253735267,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0002,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0003,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0004,50855e29-3b4e-4562-aa55-b3d7f93c26b8,3,mixed,all_seen,ge40,0.22740866269577725,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0005,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,mixed,all_seen,ge40,0.29712615426700867,1.0,0.2,0.5
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0006,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,mixed,all_seen,ge40,0.314128343791064,1.0,0.2,0.5
+stockpile,TR,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0007,50855e29-3b4e-4562-aa55-b3d7f93c26b8,2,all_seen,all_seen,lt40,0.314128343791064,1.0,0.2,0.5
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0001,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0002,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,mixed,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0003,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0004,564ae20d-778d-4965-93dc-b523be2e2ab4,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0005,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0006,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0007,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0008,564ae20d-778d-4965-93dc-b523be2e2ab4,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0009,564ae20d-778d-4965-93dc-b523be2e2ab4,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0010,564ae20d-778d-4965-93dc-b523be2e2ab4,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0011,564ae20d-778d-4965-93dc-b523be2e2ab4,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0013,564ae20d-778d-4965-93dc-b523be2e2ab4,2,mixed,all_seen,ge40,0.35474112289381665,1.0,0.2,0.5
+stockpile,TR,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0014,564ae20d-778d-4965-93dc-b523be2e2ab4,1,all_unseen,all_seen,lt40,0.5908791144718446,1.0,0.2,1.0
+stockpile,TR,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0001,5d3e170e-f1b8-49f9-9ee1-c51605552a08,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0002,5d3e170e-f1b8-49f9-9ee1-c51605552a08,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::725226e0-45b8-4432-84ee-144d3f37ff8d::0001,725226e0-45b8-4432-84ee-144d3f37ff8d,3,mixed,all_seen,lt40,0.2086137498027137,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::725226e0-45b8-4432-84ee-144d3f37ff8d::0002,725226e0-45b8-4432-84ee-144d3f37ff8d,2,mixed,all_seen,lt40,0.2640681225725909,1.0,0.2,0.5
+stockpile,TR,stockpile::725226e0-45b8-4432-84ee-144d3f37ff8d::0003,725226e0-45b8-4432-84ee-144d3f37ff8d,1,all_seen,all_seen,ge40,0.47227062322935726,1.0,0.2,1.0
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0001,78e7504d-968f-477d-8806-4d6c04b94431,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0002,78e7504d-968f-477d-8806-4d6c04b94431,3,all_unseen,all_seen,lt40,0.14523343402988215,0.8,0.16,0.26666666666666666
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0003,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,lt40,0.23719771276929622,1.0,0.2,0.5
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0004,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,lt40,0.23719771276929622,1.0,0.2,0.5
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0005,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,ge40,0.27256921733461853,1.0,0.2,0.5
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0006,78e7504d-968f-477d-8806-4d6c04b94431,2,all_seen,all_seen,lt40,0.288625059504981,1.0,0.2,0.5
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0007,78e7504d-968f-477d-8806-4d6c04b94431,2,mixed,all_seen,lt40,0.3056272490290364,1.0,0.2,0.5
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0008,78e7504d-968f-477d-8806-4d6c04b94431,3,all_seen,all_seen,lt40,0.2404214693001095,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0010,78e7504d-968f-477d-8806-4d6c04b94431,2,mixed,all_seen,ge40,0.2895714068586739,1.0,0.2,0.5
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0011,78e7504d-968f-477d-8806-4d6c04b94431,1,all_seen,all_seen,ge40,0.5523719014285831,1.0,0.2,1.0
+stockpile,TR,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0012,78e7504d-968f-477d-8806-4d6c04b94431,1,all_seen,all_seen,lt40,0.5123212623289701,1.0,0.2,1.0
+stockpile,TR,stockpile::bcdbf6b9-14c5-495c-be84-37bce32c312b::0001,bcdbf6b9-14c5-495c-be84-37bce32c312b,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::bcdbf6b9-14c5-495c-be84-37bce32c312b::0002,bcdbf6b9-14c5-495c-be84-37bce32c312b,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0002,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0001,c724545d-a4cc-492e-8075-2ab9a699c847,1,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0002,c724545d-a4cc-492e-8075-2ab9a699c847,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0001,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0002,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,2,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0004,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0002,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0001,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,3,mixed,all_seen,lt40,0.2086137498027137,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0002,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,2,mixed,all_seen,lt40,0.2640681225725909,1.0,0.2,0.5
+stockpile,TR,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0003,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,1,all_unseen,all_seen,lt40,0.4445412464587145,1.0,0.2,1.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0001,de07f52d-9928-4071-9142-cb1d3bd851e8,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0003,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0004,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0005,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0006,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0007,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0008,de07f52d-9928-4071-9142-cb1d3bd851e8,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0009,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0010,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,mixed,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0011,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0012,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,mixed,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0013,de07f52d-9928-4071-9142-cb1d3bd851e8,2,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0014,de07f52d-9928-4071-9142-cb1d3bd851e8,3,all_unseen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0015,de07f52d-9928-4071-9142-cb1d3bd851e8,3,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0016,de07f52d-9928-4071-9142-cb1d3bd851e8,2,mixed,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0017,de07f52d-9928-4071-9142-cb1d3bd851e8,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::e4324b88-8836-4803-b6b7-09b3c6cd4e94::0001,e4324b88-8836-4803-b6b7-09b3c6cd4e94,1,all_unseen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::e89a10d3-004f-4c15-b0eb-d1ba76a4b67f::0001,e89a10d3-004f-4c15-b0eb-d1ba76a4b67f,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::e89a10d3-004f-4c15-b0eb-d1ba76a4b67f::0002,e89a10d3-004f-4c15-b0eb-d1ba76a4b67f,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::eddc8f03-f930-41e7-95ba-33fb87bfed74::0001,eddc8f03-f930-41e7-95ba-33fb87bfed74,2,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::eddc8f03-f930-41e7-95ba-33fb87bfed74::0002,eddc8f03-f930-41e7-95ba-33fb87bfed74,1,all_seen,all_seen,lt40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::ef4d997c-a0d1-4067-9efa-87c58682db71::0001,ef4d997c-a0d1-4067-9efa-87c58682db71,3,mixed,all_seen,lt40,0.2281329597092121,1.0,0.2,0.3333333333333333
+stockpile,TR,stockpile::ef4d997c-a0d1-4067-9efa-87c58682db71::0002,ef4d997c-a0d1-4067-9efa-87c58682db71,2,all_seen,all_seen,lt40,0.3065735963827292,1.0,0.2,0.5
+stockpile,TR,stockpile::ef4d997c-a0d1-4067-9efa-87c58682db71::0003,ef4d997c-a0d1-4067-9efa-87c58682db71,1,all_seen,all_seen,ge40,0.5,1.0,0.2,1.0
+stockpile,TR,stockpile::f98193a0-8b5b-4b5e-a5aa-e8c3adfcd4e6::0001,f98193a0-8b5b-4b5e-a5aa-e8c3adfcd4e6,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::fbc41624-1052-490c-b5ec-4fd718e2501d::0001,fbc41624-1052-490c-b5ec-4fd718e2501d,2,mixed,all_seen,ge40,0.0,0.0,0.0,0.0
+stockpile,TR,stockpile::fbc41624-1052-490c-b5ec-4fd718e2501d::0002,fbc41624-1052-490c-b5ec-4fd718e2501d,1,all_seen,all_seen,ge40,0.0,0.0,0.0,0.0

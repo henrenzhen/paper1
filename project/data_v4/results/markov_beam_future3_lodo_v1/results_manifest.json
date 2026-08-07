@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-08-07T05:43:45.524091+00:00",
+  "inputs": {
+    "baseline_predictions_sha256": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "main_rows": 784,
+    "samples_sha256": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "vocabulary_sha256": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738"
+  },
+  "method_card": {
+    "path": "data_v4/protocols/markov_beam_future3_baseline_v1.md",
+    "sha256": "a4fe940233664231e1bc82b808fe93fe8e58ce3bf05eefe6577243a4252a11c9"
+  },
+  "outputs_sha256": {
+    "campaign_results.csv": "1436f2037487fcfc599f8fba02c2244a1efc03227eaa53bd5174078899214a4a",
+    "fold_results.csv": "9e33fc0b42fd837c74c2f8cbc27cdc6e007ea54ed10b2a332415a7441d9e8092",
+    "paired_bootstrap_differences.csv": "355492cccd3930bdef542ffa70c2877a8e3cc18542c20ae51de2c45bc5949a3b",
+    "predictions.csv": "c5e255fbe5074d38b15aa8a42496ae75746c5903733e14a886618f58bdae93a1",
+    "report.md": "46c8b2d6bc3c1db0368edbd94267dbd07ca044d85ec5e88be9f57e54513b2b36",
+    "stdout.log": "46c8b2d6bc3c1db0368edbd94267dbd07ca044d85ec5e88be9f57e54513b2b36"
+  },
+  "parameters": {
+    "beam_width": 50,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "branch_cap": 20,
+    "floor": 1e-12,
+    "horizon": 3,
+    "smoothing": 0.1
+  },
+  "script": {
+    "path": "data_v4/scripts/run_markov_beam_future3_lodo.py",
+    "sha256": "7f4ffe11d8e264090a8a0a44cfa6096465cb9851da4a5e6a26ad431c2881ecf1"
+  }
+}

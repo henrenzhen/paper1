@@ -1,0 +1,131 @@
+inner architecture=LSTM train=ctid lr=0.0003 seed=42 elapsed=44.8s
+inner architecture=LSTM train=ctid lr=0.0003 seed=43 elapsed=44.6s
+inner architecture=LSTM train=ctid lr=0.0003 seed=44 elapsed=45.1s
+inner architecture=LSTM train=ctid lr=0.0003 seed=45 elapsed=44.7s
+inner architecture=LSTM train=ctid lr=0.0003 seed=46 elapsed=45.3s
+inner architecture=LSTM train=ctid lr=0.001 seed=42 elapsed=44.8s
+inner architecture=LSTM train=ctid lr=0.001 seed=43 elapsed=44.9s
+inner architecture=LSTM train=ctid lr=0.001 seed=44 elapsed=45.7s
+inner architecture=LSTM train=ctid lr=0.001 seed=45 elapsed=45.9s
+inner architecture=LSTM train=ctid lr=0.001 seed=46 elapsed=45.3s
+inner architecture=LSTM train=attack_flow lr=0.0003 seed=42 elapsed=32.9s
+inner architecture=LSTM train=attack_flow lr=0.0003 seed=43 elapsed=32.5s
+inner architecture=LSTM train=attack_flow lr=0.0003 seed=44 elapsed=33.2s
+inner architecture=LSTM train=attack_flow lr=0.0003 seed=45 elapsed=35.0s
+inner architecture=LSTM train=attack_flow lr=0.0003 seed=46 elapsed=34.7s
+inner architecture=LSTM train=attack_flow lr=0.001 seed=42 elapsed=34.4s
+inner architecture=LSTM train=attack_flow lr=0.001 seed=43 elapsed=34.4s
+inner architecture=LSTM train=attack_flow lr=0.001 seed=44 elapsed=34.8s
+inner architecture=LSTM train=attack_flow lr=0.001 seed=45 elapsed=34.5s
+inner architecture=LSTM train=attack_flow lr=0.001 seed=46 elapsed=34.3s
+inner architecture=LSTM train=stockpile lr=0.0003 seed=42 elapsed=6.9s
+inner architecture=LSTM train=stockpile lr=0.0003 seed=43 elapsed=6.9s
+inner architecture=LSTM train=stockpile lr=0.0003 seed=44 elapsed=6.9s
+inner architecture=LSTM train=stockpile lr=0.0003 seed=45 elapsed=6.9s
+inner architecture=LSTM train=stockpile lr=0.0003 seed=46 elapsed=7.2s
+inner architecture=LSTM train=stockpile lr=0.001 seed=42 elapsed=6.9s
+inner architecture=LSTM train=stockpile lr=0.001 seed=43 elapsed=7.1s
+inner architecture=LSTM train=stockpile lr=0.001 seed=44 elapsed=7.1s
+inner architecture=LSTM train=stockpile lr=0.001 seed=45 elapsed=6.9s
+inner architecture=LSTM train=stockpile lr=0.001 seed=46 elapsed=7.5s
+selected architecture=LSTM held_out=ctid lr=0.001 epoch=40
+outer architecture=LSTM held_out=ctid lr=0.001 epoch=40 seed=42 elapsed=16.7s
+outer architecture=LSTM held_out=ctid lr=0.001 epoch=40 seed=43 elapsed=17.1s
+outer architecture=LSTM held_out=ctid lr=0.001 epoch=40 seed=44 elapsed=17.3s
+outer architecture=LSTM held_out=ctid lr=0.001 epoch=40 seed=45 elapsed=16.4s
+outer architecture=LSTM held_out=ctid lr=0.001 epoch=40 seed=46 elapsed=16.5s
+selected architecture=LSTM held_out=attack_flow lr=0.001 epoch=100
+outer architecture=LSTM held_out=attack_flow lr=0.001 epoch=100 seed=42 elapsed=53.0s
+outer architecture=LSTM held_out=attack_flow lr=0.001 epoch=100 seed=43 elapsed=51.3s
+outer architecture=LSTM held_out=attack_flow lr=0.001 epoch=100 seed=44 elapsed=59.9s
+outer architecture=LSTM held_out=attack_flow lr=0.001 epoch=100 seed=45 elapsed=57.1s
+outer architecture=LSTM held_out=attack_flow lr=0.001 epoch=100 seed=46 elapsed=57.6s
+selected architecture=LSTM held_out=stockpile lr=0.0003 epoch=40
+outer architecture=LSTM held_out=stockpile lr=0.0003 epoch=40 seed=42 elapsed=36.4s
+outer architecture=LSTM held_out=stockpile lr=0.0003 epoch=40 seed=43 elapsed=35.3s
+outer architecture=LSTM held_out=stockpile lr=0.0003 epoch=40 seed=44 elapsed=35.5s
+outer architecture=LSTM held_out=stockpile lr=0.0003 epoch=40 seed=45 elapsed=34.9s
+outer architecture=LSTM held_out=stockpile lr=0.0003 epoch=40 seed=46 elapsed=36.1s
+inner architecture=TR train=ctid lr=0.0003 seed=42 elapsed=30.9s
+inner architecture=TR train=ctid lr=0.0003 seed=43 elapsed=30.6s
+inner architecture=TR train=ctid lr=0.0003 seed=44 elapsed=32.9s
+inner architecture=TR train=ctid lr=0.0003 seed=45 elapsed=32.9s
+inner architecture=TR train=ctid lr=0.0003 seed=46 elapsed=33.4s
+inner architecture=TR train=ctid lr=0.001 seed=42 elapsed=34.6s
+inner architecture=TR train=ctid lr=0.001 seed=43 elapsed=32.1s
+inner architecture=TR train=ctid lr=0.001 seed=44 elapsed=32.5s
+inner architecture=TR train=ctid lr=0.001 seed=45 elapsed=31.9s
+inner architecture=TR train=ctid lr=0.001 seed=46 elapsed=31.9s
+inner architecture=TR train=attack_flow lr=0.0003 seed=42 elapsed=30.4s
+inner architecture=TR train=attack_flow lr=0.0003 seed=43 elapsed=32.4s
+inner architecture=TR train=attack_flow lr=0.0003 seed=44 elapsed=32.5s
+inner architecture=TR train=attack_flow lr=0.0003 seed=45 elapsed=32.5s
+inner architecture=TR train=attack_flow lr=0.0003 seed=46 elapsed=31.7s
+inner architecture=TR train=attack_flow lr=0.001 seed=42 elapsed=32.5s
+inner architecture=TR train=attack_flow lr=0.001 seed=43 elapsed=31.7s
+inner architecture=TR train=attack_flow lr=0.001 seed=44 elapsed=32.0s
+inner architecture=TR train=attack_flow lr=0.001 seed=45 elapsed=30.5s
+inner architecture=TR train=attack_flow lr=0.001 seed=46 elapsed=32.2s
+inner architecture=TR train=stockpile lr=0.0003 seed=42 elapsed=7.0s
+inner architecture=TR train=stockpile lr=0.0003 seed=43 elapsed=7.2s
+inner architecture=TR train=stockpile lr=0.0003 seed=44 elapsed=7.1s
+inner architecture=TR train=stockpile lr=0.0003 seed=45 elapsed=7.9s
+inner architecture=TR train=stockpile lr=0.0003 seed=46 elapsed=7.3s
+inner architecture=TR train=stockpile lr=0.001 seed=42 elapsed=7.3s
+inner architecture=TR train=stockpile lr=0.001 seed=43 elapsed=7.1s
+inner architecture=TR train=stockpile lr=0.001 seed=44 elapsed=7.3s
+inner architecture=TR train=stockpile lr=0.001 seed=45 elapsed=7.1s
+inner architecture=TR train=stockpile lr=0.001 seed=46 elapsed=7.3s
+selected architecture=TR held_out=ctid lr=0.001 epoch=100
+outer architecture=TR held_out=ctid lr=0.001 epoch=100 seed=42 elapsed=40.5s
+outer architecture=TR held_out=ctid lr=0.001 epoch=100 seed=43 elapsed=41.0s
+outer architecture=TR held_out=ctid lr=0.001 epoch=100 seed=44 elapsed=39.8s
+outer architecture=TR held_out=ctid lr=0.001 epoch=100 seed=45 elapsed=39.7s
+outer architecture=TR held_out=ctid lr=0.001 epoch=100 seed=46 elapsed=40.1s
+selected architecture=TR held_out=attack_flow lr=0.0003 epoch=80
+outer architecture=TR held_out=attack_flow lr=0.0003 epoch=80 seed=42 elapsed=36.2s
+outer architecture=TR held_out=attack_flow lr=0.0003 epoch=80 seed=43 elapsed=37.0s
+outer architecture=TR held_out=attack_flow lr=0.0003 epoch=80 seed=44 elapsed=36.6s
+outer architecture=TR held_out=attack_flow lr=0.0003 epoch=80 seed=45 elapsed=36.3s
+outer architecture=TR held_out=attack_flow lr=0.0003 epoch=80 seed=46 elapsed=36.6s
+selected architecture=TR held_out=stockpile lr=0.0003 epoch=20
+outer architecture=TR held_out=stockpile lr=0.0003 epoch=20 seed=42 elapsed=17.0s
+outer architecture=TR held_out=stockpile lr=0.0003 epoch=20 seed=43 elapsed=17.1s
+outer architecture=TR held_out=stockpile lr=0.0003 epoch=20 seed=44 elapsed=16.6s
+outer architecture=TR held_out=stockpile lr=0.0003 epoch=20 seed=45 elapsed=16.2s
+outer architecture=TR held_out=stockpile lr=0.0003 epoch=20 seed=46 elapsed=16.6s
+# ID-only neural future-3 LODO results
+
+No text, tactic feature, LLM, or external API was used.
+
+## Campaign-macro NDCG@5 (five-seed mean)
+
+| Method | CTID | Attack Flow | Stockpile | Source-equal overall |
+|---|---:|---:|---:|---:|
+| LSTM | 0.1991 | 0.1255 | 0.0630 | 0.1292 |
+| TR | 0.1097 | 0.1165 | 0.0622 | 0.0961 |
+
+## Inner-selected hyperparameters
+
+| Method | Held-out | Learning rate | Epoch |
+|---|---|---:|---:|
+| LSTM | ctid | 0.001 | 40 |
+| LSTM | attack_flow | 0.001 | 100 |
+| LSTM | stockpile | 0.0003 | 40 |
+| TR | ctid | 0.001 | 100 |
+| TR | attack_flow | 0.0003 | 80 |
+| TR | stockpile | 0.0003 | 20 |
+
+## Source-equal paired NDCG@5 differences
+
+| Comparison | Delta | 95% campaign-bootstrap CI |
+|---|---:|---:|
+| LSTM-A | -0.0230 | [-0.0499, +0.0013] |
+| TR-A | -0.0561 | [-0.0813, -0.0338] |
+| LSTM-A0 | -0.0140 | [-0.0275, -0.0013] |
+| TR-A0 | -0.0471 | [-0.0708, -0.0221] |
+| TR-LSTM | -0.0331 | [-0.0550, -0.0102] |
+
+Metrics average five neural seeds at sample level before campaign aggregation. The 30 development rows are excluded.
+
+elapsed_seconds=2592.229

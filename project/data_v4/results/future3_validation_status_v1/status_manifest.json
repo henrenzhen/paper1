@@ -1,0 +1,37 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260807,
+  "campaigns": 72,
+  "generated_at": "2026-08-07T06:50:46.515148+00:00",
+  "inputs_sha256": {
+    "data_v4/results/hybrid_markov_lstm_future3_lodo_v1/mean_sample_metrics.csv": "7af268de9c7bb5b38b98c0344c37db0cdb03eb788205c78849ff361925799b45",
+    "data_v4/results/id_neural_future3_lodo_v1/mean_sample_metrics.csv": "a67837b2c92602b7bc36206befc996239b0ba2608db0304f2b51167f032bfe1c",
+    "data_v4/results/markov_beam_future3_lodo_v1/predictions.csv": "c5e255fbe5074d38b15aa8a42496ae75746c5903733e14a886618f58bdae93a1",
+    "data_v4/results/nonsemantic_future3_lodo_v1/predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "data_v4/results/raw_semantic_future3_lodo_v1/mean_sample_metrics.csv": "499eb56337ed1f2e321735a033fe9b8671c1e0130ba2b2e3e4e7c1af4f25487e"
+  },
+  "llm_normalized_s_status": "NOT_RUN",
+  "methods": [
+    "A0",
+    "CO",
+    "A",
+    "K",
+    "T",
+    "R",
+    "LSTM",
+    "TR",
+    "MB",
+    "HM"
+  ],
+  "outputs_sha256": {
+    "main_metrics.csv": "7582c2c48faaef78c3fc66f93fde33eeae0947c1caac5751f2c40ba3769569bd",
+    "paired_stratified_bootstrap.csv": "31086e1988ea6ee9c911bd2a841f5b4ca9660f9cd6605566ea1445bbfcee5965",
+    "report.md": "5ec76cc2dc5e3509bca4375c20c0ae6fbbb32e5862783402cbfb542caba8bc86",
+    "stratified_metrics.csv": "b2fdc761c1c8ad78f54041d7a0a7665639c4b41e8c1c78ac88c11d8913bc2b8e"
+  },
+  "sample_rows_per_method": 784,
+  "script": {
+    "path": "data_v4/scripts/summarize_future3_validation_status.py",
+    "sha256": "c6d3088b3b1ca91e3e29f3e78e3ad895c28e0ad11e4d323eb2cedb55c3a3be4e"
+  }
+}

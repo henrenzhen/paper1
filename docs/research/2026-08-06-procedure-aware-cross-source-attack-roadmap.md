@@ -1,8 +1,8 @@
 # Procedure-Aware Cross-Source ATT&CK Recommendation：研究路线与后续工作
 
 > 记录日期：2026-08-06；最近核验：2026-08-07
-> 状态：研究路线与 v8 已冻结；SECRYPT 零费用划分审计已完成，下一步重建 `P-source` future-3 数据并运行无 LLM 基线。
-> 最近修订：落盘 `P-pair/P-campaign` clean-room 复算；固定 hash seed 后，随机80/20完整 pair 重复率为87.5954%，完整 prefix 字典 Accuracy 为0.7501，campaign-LOCO macro 为0.0456。
+> 状态：`P-source` 数据、A0/CO/A/K/T、R、LSTM/TR/MB/HM 已完成；LLM 归一化状态分支 S 尚未运行，核心方法结论仍未封口。
+> 最近修订：完成严格 LODO 下的 SECRYPT-adapted HM。HM source-equal campaign-macro NDCG@5 为0.1245，低于 A 的0.1522和 K 的0.1777；`HM-A` 的95% campaign-bootstrap CI为[-0.0510,-0.0070]。最近邻混合架构在本协议下不是强基线。
 > 性质：本文档记录论文级路线、决策依据与执行顺序；具体数据哈希、超参数、API 参数和统计实现以冻结实验协议为准。
 
 ## 1. 一句话路线
@@ -87,14 +87,15 @@
 | Attack Flow | 真实报告衍生图上的冻结最长路径 | 最大真实报告衍生来源 |
 | Stockpile | CALDERA adversary profile 的 `atomic_ordering` | 半合成来源，必须单独标注 |
 
-当前 v7 的预期数据形状为：
+当前 v8.1 已冻结并实测的数据形状为：
 
-- 全量：816 个 future-3 样本、72 个 campaign；
+- 对齐步骤：898步（CTID 283、Attack Flow 466、Stockpile 149）；
+- 全量：814 个 future-3 样本、72 个 campaign；
 - 已解盲开发集：30 条；
-- 正式主评估：786 条，保持 10/35/27 个 campaign；
+- 正式主评估：784 条（CTID 263、Attack Flow 412、Stockpile 109），保持10/35/27个campaign；
 - 固定输出词表：184 个父技术。
 
-上述数字必须由数据构建脚本和 manifest 重新验证。任何 campaign 消失、分母变化或路径不一致，都必须先升级协议，不得在实验中临场修补。
+原 v7 预期的816/786因CTID旧解析器把嵌套`technique`字典当步骤、并从任意文本抽取ID而失效。v8.1只读取顶层结构化`technique.attack_id`，排除26个无法映射的非ATT&CK标签，并完成确定性重建；上述814/784是正式分母。任何后续campaign消失、分母变化或路径不一致，仍必须先升级协议，不得在实验中临场修补。
 
 ### 4.2 Unit42 第四来源候选
 
@@ -278,6 +279,34 @@ v8 应增加：
 
 v8 必须在看到外层结果前明确：`HM+S` 是否替代 v7 的 `S` 成为论文主方法。推荐将 `HM+S` 固定为主方法，原 `A/S` 阶梯作为机制消融，因为这能直接回答“语义是否超越最近邻序列架构”。
 
+### 6.5 已完成的 P-source 结果（2026-08-07）
+
+全部方法使用同一784行正式集合、同一三折LODO、campaign-macro聚合和三来源等权总体。神经模型先在两个训练来源之间做inner-LODO，再以五个seed训练；没有方法使用外层测试来源选参。
+
+| 方法 | CTID | Attack Flow | Stockpile | 来源等权 NDCG@5 |
+|---|---:|---:|---:|---:|
+| A0 | 0.1755 | 0.1897 | 0.0644 | 0.1432 |
+| CO | 0.0357 | 0.0486 | 0.0080 | 0.0307 |
+| A | 0.1559 | 0.1765 | 0.1241 | 0.1522 |
+| K | 0.1450 | 0.1637 | 0.2244 | 0.1777 |
+| T | 0.1559 | 0.1765 | 0.1434 | 0.1586 |
+| R（A+原始文本） | 0.1597 | 0.1765 | 0.0634 | 0.1332 |
+| LSTM | 0.1991 | 0.1255 | 0.0630 | 0.1292 |
+| Transformer | 0.1097 | 0.1165 | 0.0622 | 0.0961 |
+| MB | 0.1000 | 0.1191 | 0.1939 | 0.1377 |
+| HM | 0.1202 | 0.1470 | 0.1063 | 0.1245 |
+
+当前结论必须按以下边界表述：
+
+1. 没有一个已运行方法在三个来源上稳定占优；每个来源的最佳方法不同，域差异仍是主导因素。
+2. K 的总体最高值主要来自半合成 Stockpile；它在 CTID 和 Attack Flow 上均低于 A0 与 A，因此不能称为真实跨来源的统一强基线。
+3. LSTM 只在 CTID 上明显较强，但在 Attack Flow 和 Stockpile 上退化；Transformer 总体显著低于 A。增加 ID-only 模型容量没有形成稳定迁移收益。
+4. MB 低于 A，`MB-K` 的95% CI为[-0.0805,-0.0022]；经验转移约束会排除未见但正确的候选。
+5. HM 的inner beta分别为0.1/0.2/0.9，来源间差异很大；总体低于MB、LSTM、A和K，其中`HM-A`与`HM-K`的95% CI均完全小于0。因此SECRYPT-adapted架构在本协议下不是强基线。
+6. R总体相对A为-0.0190，95% CI为[-0.0393,-0.0044]。all-unseen层的来源等权正差主要来自Stockpile；CTID约为0、Attack Flow因inner选择回退A而为0，不能据此声称原始文本在两个真实来源上补足未见转移。
+
+这些负结果排除了“简单加容量”“原始文本直接编码”“Markov beam约束”和“LSTM-Markov混合”四种替代解释，但**尚未检验LLM状态归一化S**。因此它们不能单独证明核心LLM方法无效，也不能作为S有效的旁证。
+
 ## 7. LLM 语义分支
 
 LLM 不直接作为最终标签分类器，而先把已观察历史转换为三个状态字段：
@@ -344,6 +373,8 @@ likely_next_intents
 
 ### 阶段 0：发布并冻结 v8
 
+**状态：已完成。** v8.1 addendum记录了CTID结构化解析修正、正式分母和确定性哈希。
+
 在任何正式外层实验或新 API 调用前：
 
 1. 把 SECRYPT-adapted HM、TIE-local、Kuwano、LSTM、Transformer 加入协议；
@@ -359,17 +390,19 @@ likely_next_intents
 
 ### 阶段 1：完成数据、SECRYPT 与 Unit42 审计
 
-1. 重建并核对三源 future-3 样本；
-2. 验证 816/786 样本和 campaign 分母；
-3. 运行全部泄漏断言；
-4. 固化 SECRYPT 公开仓库 commit，并复核 4,849 chains、132,621 occurrences、127,772 pairs 及论文 128,413 的矛盾；
-5. 完成 `P-pair/P-campaign` 数据 manifest 和重复率审计；
-6. 对 Unit42 原始 playbook 做独立可行性审计；
-7. 审计原始 bundle、DFS 路径与 campaign root 的依赖关系；
-8. 用统一定义重算各源的 technique/tactic coverage；
-9. 在冻结哈希前决定是否升级为四源协议。
+**状态：三源数据与SECRYPT划分审计已完成；Unit42、统一coverage矩阵和四源升级仍待做。**
+
+1. 已重建并核对898步、814个三源future-3样本；
+2. 已验证784行主评估、30行开发集和10/35/27个campaign分母；
+3. 已运行唯一键、时序、闭集、prompt字段和文本ID清洗泄漏断言；
+4. 已固化SECRYPT公开仓库并复核4,849 chains、132,621 occurrences、127,772 pairs及论文128,413的矛盾；
+5. 已完成`P-pair/P-campaign`简单基线、重复率与确定性审计；
+6. 待对Unit42原始playbook做独立可行性、依赖与许可审计；
+7. 待用统一定义重算各源technique/tactic coverage并决定是否升级四源协议。
 
 ### 阶段 2：先跑全部非 LLM 基线
+
+**状态：P-source的A0/CO/A/K/T/R/LSTM/TR/MB/HM已完成；HM+R、TIE-local/KUW原式核验和P-pair/P-campaign神经模型仍待做。**
 
 优先完成：
 
@@ -391,7 +424,7 @@ likely_next_intents
 - 任务困难是否主要来自跨来源还是来源内部稀疏；
 - LLM 需要打赢的真实门槛是多少。
 
-在非 LLM 基线尚未冻结前，不进行全量付费生成。
+当前P-source主干与最近邻架构已经冻结，可以进入HM+R和30条S机械质量试点；在HM+R未完成、30条S未通过质量门和未获得再次确认前，不进行全量付费生成。
 
 ### 阶段 3：运行新的 30 条开发试点
 
