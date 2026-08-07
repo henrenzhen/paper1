@@ -23,10 +23,11 @@ RAW = RESULTS / "raw_semantic_future3_lodo_v1/mean_sample_metrics.csv"
 NEURAL = RESULTS / "id_neural_future3_lodo_v1/mean_sample_metrics.csv"
 MB = RESULTS / "markov_beam_future3_lodo_v1/predictions.csv"
 HM = RESULTS / "hybrid_markov_lstm_future3_lodo_v1/mean_sample_metrics.csv"
-DEFAULT_OUTPUT = RESULTS / "future3_validation_status_v1"
+HMR = RESULTS / "hybrid_raw_semantic_future3_lodo_v1/mean_sample_metrics.csv"
+DEFAULT_OUTPUT = RESULTS / "future3_validation_status_v2"
 
 SOURCES = ("ctid", "attack_flow", "stockpile")
-METHODS = ("A0", "CO", "A", "K", "T", "R", "LSTM", "TR", "MB", "HM")
+METHODS = ("A0", "CO", "A", "K", "T", "R", "LSTM", "TR", "MB", "HM", "HM+R")
 METRICS = ("ndcg5", "hit5", "precision5", "recall5")
 STRATA = (
     ("transition_visibility", "transition_visibility"),
@@ -104,6 +105,7 @@ def load_unified() -> list[dict[str, Any]]:
     rows.extend(normalize(read_csv(NEURAL)))
     rows.extend(normalize(read_csv(MB)))
     rows.extend(normalize(read_csv(HM)))
+    rows.extend(normalize(read_csv(HMR)))
     by_method: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         by_method[row["method"]].append(row)
@@ -288,7 +290,7 @@ def report_markdown(main: Sequence[dict[str, Any]], differences: Sequence[dict[s
         and row["metric"] == "ndcg5"
     }
     lines = [
-        "# Future-3 cross-source validation status v1",
+        "# Future-3 cross-source validation status v2",
         "",
         "All values use the same 784-row main set, campaign-macro aggregation, and source-equal outer summary.",
         "",
@@ -311,12 +313,12 @@ def report_markdown(main: Sequence[dict[str, Any]], differences: Sequence[dict[s
         "| Comparison | Delta | 95% campaign-bootstrap CI |",
         "|---|---:|---:|",
     ])
-    for method in ("T", "R", "LSTM", "TR", "MB", "HM"):
+    for method in ("T", "R", "LSTM", "TR", "MB", "HM", "HM+R"):
         row = unseen[f"{method}-A"]
         lines.append(f"| {method}-A | {row['point_estimate']:+.4f} | [{row['ci95_low']:+.4f}, {row['ci95_high']:+.4f}] |")
     lines.extend([
         "",
-        "Current evidence rejects stable gains from raw-description probing, ID-only neural capacity, Markov beam restriction, and the SECRYPT-adapted hybrid. It does not evaluate the LLM-normalized S branch.",
+        "Current evidence rejects stable gains from raw-description probing on either A or HM, ID-only neural capacity, Markov beam restriction, and the SECRYPT-adapted hybrid. It does not evaluate the LLM-normalized S branch.",
         "",
     ])
     return "\n".join(lines)
@@ -343,7 +345,7 @@ def main() -> None:
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "script": {"path": Path(__file__).relative_to(PROJECT_ROOT).as_posix(), "sha256": sha256(Path(__file__))},
-        "inputs_sha256": {path.relative_to(PROJECT_ROOT).as_posix(): sha256(path) for path in (NONSEMANTIC, RAW, NEURAL, MB, HM)},
+        "inputs_sha256": {path.relative_to(PROJECT_ROOT).as_posix(): sha256(path) for path in (NONSEMANTIC, RAW, NEURAL, MB, HM, HMR)},
         "methods": list(METHODS),
         "sample_rows_per_method": 784,
         "campaigns": 72,

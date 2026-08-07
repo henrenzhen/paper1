@@ -1,8 +1,8 @@
 # Procedure-Aware Cross-Source ATT&CK Recommendation：研究路线与后续工作
 
 > 记录日期：2026-08-06；最近核验：2026-08-07
-> 状态：`P-source` 数据、A0/CO/A/K/T、R、LSTM/TR/MB/HM 已完成；LLM 归一化状态分支 S 尚未运行，核心方法结论仍未封口。
-> 最近修订：完成严格 LODO 下的 SECRYPT-adapted HM。HM source-equal campaign-macro NDCG@5 为0.1245，低于 A 的0.1522和 K 的0.1777；`HM-A` 的95% campaign-bootstrap CI为[-0.0510,-0.0070]。最近邻混合架构在本协议下不是强基线。
+> 状态：`P-source` 数据、A0/CO/A/K/T、R、LSTM/TR/MB/HM/HM+R 已完成；LLM 归一化状态分支 S 尚未运行，核心方法结论仍未封口。
+> 最近修订：HM+R在CTID与Attack Flow均由inner-LODO选择lambda=0，在Stockpile选择lambda=1后退化；总体NDCG@5为0.1102，`HM+R-HM`的95% CI为[-0.0221,-0.0077]。原始文本负结果不是A主干选择造成的假阴性。
 > 性质：本文档记录论文级路线、决策依据与执行顺序；具体数据哈希、超参数、API 参数和统计实现以冻结实验协议为准。
 
 ## 1. 一句话路线
@@ -295,6 +295,7 @@ v8 必须在看到外层结果前明确：`HM+S` 是否替代 v7 的 `S` 成为�
 | Transformer | 0.1097 | 0.1165 | 0.0622 | 0.0961 |
 | MB | 0.1000 | 0.1191 | 0.1939 | 0.1377 |
 | HM | 0.1202 | 0.1470 | 0.1063 | 0.1245 |
+| HM+R | 0.1202 | 0.1470 | 0.0634 | 0.1102 |
 
 当前结论必须按以下边界表述：
 
@@ -304,6 +305,7 @@ v8 必须在看到外层结果前明确：`HM+S` 是否替代 v7 的 `S` 成为�
 4. MB 低于 A，`MB-K` 的95% CI为[-0.0805,-0.0022]；经验转移约束会排除未见但正确的候选。
 5. HM 的inner beta分别为0.1/0.2/0.9，来源间差异很大；总体低于MB、LSTM、A和K，其中`HM-A`与`HM-K`的95% CI均完全小于0。因此SECRYPT-adapted架构在本协议下不是强基线。
 6. R总体相对A为-0.0190，95% CI为[-0.0393,-0.0044]。all-unseen层的来源等权正差主要来自Stockpile；CTID约为0、Attack Flow因inner选择回退A而为0，不能据此声称原始文本在两个真实来源上补足未见转移。
+7. HM+R在两个真实来源都机械回退到HM；Stockpile选择纯原始文本后变差。总体`HM+R-HM=-0.0143`，95% CI为[-0.0221,-0.0077]，排除了“R只因A主干不合适而失败”的解释。
 
 这些负结果排除了“简单加容量”“原始文本直接编码”“Markov beam约束”和“LSTM-Markov混合”四种替代解释，但**尚未检验LLM状态归一化S**。因此它们不能单独证明核心LLM方法无效，也不能作为S有效的旁证。
 
@@ -402,7 +404,7 @@ likely_next_intents
 
 ### 阶段 2：先跑全部非 LLM 基线
 
-**状态：P-source的A0/CO/A/K/T/R/LSTM/TR/MB/HM已完成；HM+R、TIE-local/KUW原式核验和P-pair/P-campaign神经模型仍待做。**
+**状态：P-source的A0/CO/A/K/T/R/LSTM/TR/MB/HM/HM+R已完成；TIE-local/KUW原式核验和P-pair/P-campaign神经模型仍待做。**
 
 优先完成：
 
@@ -424,7 +426,7 @@ likely_next_intents
 - 任务困难是否主要来自跨来源还是来源内部稀疏；
 - LLM 需要打赢的真实门槛是多少。
 
-当前P-source主干与最近邻架构已经冻结，可以进入HM+R和30条S机械质量试点；在HM+R未完成、30条S未通过质量门和未获得再次确认前，不进行全量付费生成。
+当前P-source主干、最近邻架构和原始文本控制已经冻结，可以进入30条S机械质量试点；在30条S未通过质量门和未获得再次确认前，不进行全量付费生成。
 
 ### 阶段 3：运行新的 30 条开发试点
 

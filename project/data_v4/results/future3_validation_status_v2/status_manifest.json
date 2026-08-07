@@ -1,0 +1,39 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260807,
+  "campaigns": 72,
+  "generated_at": "2026-08-07T07:21:35.302013+00:00",
+  "inputs_sha256": {
+    "data_v4/results/hybrid_markov_lstm_future3_lodo_v1/mean_sample_metrics.csv": "7af268de9c7bb5b38b98c0344c37db0cdb03eb788205c78849ff361925799b45",
+    "data_v4/results/hybrid_raw_semantic_future3_lodo_v1/mean_sample_metrics.csv": "7fbcb097218363dc79f58572513b127118c22e29027190be50b6f09daa827a17",
+    "data_v4/results/id_neural_future3_lodo_v1/mean_sample_metrics.csv": "a67837b2c92602b7bc36206befc996239b0ba2608db0304f2b51167f032bfe1c",
+    "data_v4/results/markov_beam_future3_lodo_v1/predictions.csv": "c5e255fbe5074d38b15aa8a42496ae75746c5903733e14a886618f58bdae93a1",
+    "data_v4/results/nonsemantic_future3_lodo_v1/predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "data_v4/results/raw_semantic_future3_lodo_v1/mean_sample_metrics.csv": "499eb56337ed1f2e321735a033fe9b8671c1e0130ba2b2e3e4e7c1af4f25487e"
+  },
+  "llm_normalized_s_status": "NOT_RUN",
+  "methods": [
+    "A0",
+    "CO",
+    "A",
+    "K",
+    "T",
+    "R",
+    "LSTM",
+    "TR",
+    "MB",
+    "HM",
+    "HM+R"
+  ],
+  "outputs_sha256": {
+    "main_metrics.csv": "017013603ffce01e66d56b8789f32ed94229dee2b5f686d27c1ed9e79e395355",
+    "paired_stratified_bootstrap.csv": "3127d740cc133eb947265299637a19d99f091cbbd3ab70fc7d2ebd4a4c33c22c",
+    "report.md": "f4a87a9ad7b12232b5f58d106f70a4e3c8e3afd60569335256402ed98d1fbfbc",
+    "stratified_metrics.csv": "4800181a723218107d96a09fdfe21b6f525215c70ab34e79b96c2b8df8d392f1"
+  },
+  "sample_rows_per_method": 784,
+  "script": {
+    "path": "data_v4/scripts/summarize_future3_validation_status.py",
+    "sha256": "2a5ec5e3344fdb5cadc2e5abed199e7ef287354affce14795f60df9ecee92850"
+  }
+}

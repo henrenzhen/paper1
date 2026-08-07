@@ -1,0 +1,46 @@
+inner held_out=ctid train=stockpile validation=attack_flow seed=42 rows=412 elapsed=5.0s
+inner held_out=ctid train=stockpile validation=attack_flow seed=43 rows=412 elapsed=4.9s
+inner held_out=ctid train=stockpile validation=attack_flow seed=44 rows=412 elapsed=5.1s
+inner held_out=ctid train=stockpile validation=attack_flow seed=45 rows=412 elapsed=4.9s
+inner held_out=ctid train=stockpile validation=attack_flow seed=46 rows=412 elapsed=4.7s
+inner held_out=ctid train=attack_flow validation=stockpile seed=42 rows=109 elapsed=14.5s
+inner held_out=ctid train=attack_flow validation=stockpile seed=43 rows=109 elapsed=14.4s
+inner held_out=ctid train=attack_flow validation=stockpile seed=44 rows=109 elapsed=14.2s
+inner held_out=ctid train=attack_flow validation=stockpile seed=45 rows=109 elapsed=14.3s
+inner held_out=ctid train=attack_flow validation=stockpile seed=46 rows=109 elapsed=14.4s
+outer held_out=ctid seed=42 rows=263 elapsed=19.9s
+outer held_out=ctid seed=43 rows=263 elapsed=19.3s
+outer held_out=ctid seed=44 rows=263 elapsed=20.2s
+outer held_out=ctid seed=45 rows=263 elapsed=19.4s
+outer held_out=ctid seed=46 rows=263 elapsed=19.4s
+inner held_out=attack_flow train=stockpile validation=ctid seed=42 rows=263 elapsed=8.4s
+inner held_out=attack_flow train=stockpile validation=ctid seed=43 rows=263 elapsed=8.2s
+inner held_out=attack_flow train=stockpile validation=ctid seed=44 rows=263 elapsed=8.5s
+inner held_out=attack_flow train=stockpile validation=ctid seed=45 rows=263 elapsed=8.3s
+inner held_out=attack_flow train=stockpile validation=ctid seed=46 rows=263 elapsed=8.2s
+inner held_out=attack_flow train=ctid validation=stockpile seed=42 rows=109 elapsed=50.7s
+inner held_out=attack_flow train=ctid validation=stockpile seed=43 rows=109 elapsed=49.5s
+inner held_out=attack_flow train=ctid validation=stockpile seed=44 rows=109 elapsed=50.0s
+inner held_out=attack_flow train=ctid validation=stockpile seed=45 rows=109 elapsed=42.2s
+inner held_out=attack_flow train=ctid validation=stockpile seed=46 rows=109 elapsed=40.2s
+outer held_out=attack_flow seed=42 rows=412 elapsed=52.2s
+outer held_out=attack_flow seed=43 rows=412 elapsed=59.6s
+outer held_out=attack_flow seed=44 rows=412 elapsed=62.5s
+outer held_out=attack_flow seed=45 rows=412 elapsed=63.3s
+outer held_out=attack_flow seed=46 rows=412 elapsed=58.2s
+inner held_out=stockpile train=attack_flow validation=ctid seed=42 rows=263 elapsed=14.6s
+inner held_out=stockpile train=attack_flow validation=ctid seed=43 rows=263 elapsed=14.0s
+inner held_out=stockpile train=attack_flow validation=ctid seed=44 rows=263 elapsed=14.3s
+inner held_out=stockpile train=attack_flow validation=ctid seed=45 rows=263 elapsed=13.8s
+inner held_out=stockpile train=attack_flow validation=ctid seed=46 rows=263 elapsed=13.5s
+inner held_out=stockpile train=ctid validation=attack_flow seed=42 rows=412 elapsed=18.6s
+inner held_out=stockpile train=ctid validation=attack_flow seed=43 rows=412 elapsed=18.6s
+inner held_out=stockpile train=ctid validation=attack_flow seed=44 rows=412 elapsed=18.6s
+inner held_out=stockpile train=ctid validation=attack_flow seed=45 rows=412 elapsed=18.8s
+inner held_out=stockpile train=ctid validation=attack_flow seed=46 rows=412 elapsed=18.5s
+outer held_out=stockpile seed=42 rows=109 elapsed=34.4s
+outer held_out=stockpile seed=43 rows=109 elapsed=34.6s
+outer held_out=stockpile seed=44 rows=109 elapsed=34.6s
+outer held_out=stockpile seed=45 rows=109 elapsed=34.5s
+outer held_out=stockpile seed=46 rows=109 elapsed=34.9s
+elapsed_seconds=1100.995
