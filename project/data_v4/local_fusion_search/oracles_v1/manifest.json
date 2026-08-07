@@ -1,0 +1,25 @@
+{
+  "analysis_status": "target-aware oracle screening only",
+  "api_cost": 0,
+  "generated_at": "2026-08-07T10:14:37.242175+00:00",
+  "inputs": {
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v4/results/nonsemantic_future3_lodo_v1/predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_summaries/deepseek_v4_flash_future3_v1/b0_rankings.csv": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216"
+  },
+  "network_calls": 0,
+  "outputs": {
+    "oracle_actions.csv": "c5afb33ffb590914a387bc4e4ad58d5fd1885e8a9db31802c0b96f3fa0412910",
+    "oracle_summary.csv": "05b1d11b403a484cd201566b525ea6336b75936582c52189fb3dc8ef0d763384",
+    "report.md": "3e81009644d1e642abf9ddf2e8527f3899a03b64958670d7b9fd979bcf171649"
+  },
+  "protocol": {
+    "path": "data_v4/protocols/local_fusion_mechanism_search_v1.md",
+    "sha256": "4b5b391d14b13f91eee4a0a4a0d3bf2ad5b61220c4eb346577864ab65d7d8425"
+  },
+  "script": {
+    "path": "data_v4/scripts/compute_local_fusion_oracles.py",
+    "sha256": "46e0fde168ba631f8647ed74438771eba157658c51e95b1f9571c6c4df3d0a0e"
+  }
+}
