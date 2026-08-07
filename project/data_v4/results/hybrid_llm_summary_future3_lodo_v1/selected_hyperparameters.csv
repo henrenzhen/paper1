@@ -1,0 +1,7 @@
+method,held_out_source,selected_epoch,selected_lambda
+HM+S,ctid,20,0.0
+HM+S,attack_flow,20,0.0
+HM+S,stockpile,20,1.0
+HM+P,ctid,20,0.0
+HM+P,attack_flow,20,0.0
+HM+P,stockpile,20,1.0

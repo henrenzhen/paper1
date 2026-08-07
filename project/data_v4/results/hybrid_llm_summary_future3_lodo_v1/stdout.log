@@ -1,0 +1,133 @@
+inner method=HM+S held_out=ctid validation=attack_flow seed=42 elapsed=0.6s
+inner method=HM+S held_out=ctid validation=attack_flow seed=43 elapsed=0.5s
+inner method=HM+S held_out=ctid validation=attack_flow seed=44 elapsed=0.5s
+inner method=HM+S held_out=ctid validation=attack_flow seed=45 elapsed=0.5s
+inner method=HM+S held_out=ctid validation=attack_flow seed=46 elapsed=0.6s
+inner method=HM+S held_out=ctid validation=stockpile seed=42 elapsed=1.5s
+inner method=HM+S held_out=ctid validation=stockpile seed=43 elapsed=1.8s
+inner method=HM+S held_out=ctid validation=stockpile seed=44 elapsed=1.6s
+inner method=HM+S held_out=ctid validation=stockpile seed=45 elapsed=1.7s
+inner method=HM+S held_out=ctid validation=stockpile seed=46 elapsed=1.7s
+selected method=HM+S held_out=ctid epoch=20 lambda=0.0
+outer method=HM+S held_out=ctid seed=42 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+S held_out=ctid seed=43 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+S held_out=ctid seed=44 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+S held_out=ctid seed=45 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+S held_out=ctid seed=46 epoch=20 lambda=0.0 elapsed=0.5s
+inner method=HM+S held_out=attack_flow validation=ctid seed=42 elapsed=0.5s
+inner method=HM+S held_out=attack_flow validation=ctid seed=43 elapsed=0.5s
+inner method=HM+S held_out=attack_flow validation=ctid seed=44 elapsed=0.5s
+inner method=HM+S held_out=attack_flow validation=ctid seed=45 elapsed=0.5s
+inner method=HM+S held_out=attack_flow validation=ctid seed=46 elapsed=0.5s
+inner method=HM+S held_out=attack_flow validation=stockpile seed=42 elapsed=1.1s
+inner method=HM+S held_out=attack_flow validation=stockpile seed=43 elapsed=1.5s
+inner method=HM+S held_out=attack_flow validation=stockpile seed=44 elapsed=1.1s
+inner method=HM+S held_out=attack_flow validation=stockpile seed=45 elapsed=1.1s
+inner method=HM+S held_out=attack_flow validation=stockpile seed=46 elapsed=1.1s
+selected method=HM+S held_out=attack_flow epoch=20 lambda=0.0
+outer method=HM+S held_out=attack_flow seed=42 epoch=20 lambda=0.0 elapsed=0.4s
+outer method=HM+S held_out=attack_flow seed=43 epoch=20 lambda=0.0 elapsed=0.4s
+outer method=HM+S held_out=attack_flow seed=44 epoch=20 lambda=0.0 elapsed=0.4s
+outer method=HM+S held_out=attack_flow seed=45 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+S held_out=attack_flow seed=46 epoch=20 lambda=0.0 elapsed=0.4s
+inner method=HM+S held_out=stockpile validation=ctid seed=42 elapsed=1.7s
+inner method=HM+S held_out=stockpile validation=ctid seed=43 elapsed=1.6s
+inner method=HM+S held_out=stockpile validation=ctid seed=44 elapsed=1.6s
+inner method=HM+S held_out=stockpile validation=ctid seed=45 elapsed=1.7s
+inner method=HM+S held_out=stockpile validation=ctid seed=46 elapsed=1.6s
+inner method=HM+S held_out=stockpile validation=attack_flow seed=42 elapsed=1.1s
+inner method=HM+S held_out=stockpile validation=attack_flow seed=43 elapsed=1.1s
+inner method=HM+S held_out=stockpile validation=attack_flow seed=44 elapsed=1.1s
+inner method=HM+S held_out=stockpile validation=attack_flow seed=45 elapsed=1.1s
+inner method=HM+S held_out=stockpile validation=attack_flow seed=46 elapsed=1.1s
+selected method=HM+S held_out=stockpile epoch=20 lambda=1.0
+outer method=HM+S held_out=stockpile seed=42 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+S held_out=stockpile seed=43 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+S held_out=stockpile seed=44 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+S held_out=stockpile seed=45 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+S held_out=stockpile seed=46 epoch=20 lambda=1.0 elapsed=0.6s
+inner method=HM+P held_out=ctid validation=attack_flow seed=42 elapsed=0.5s
+inner method=HM+P held_out=ctid validation=attack_flow seed=43 elapsed=0.5s
+inner method=HM+P held_out=ctid validation=attack_flow seed=44 elapsed=0.5s
+inner method=HM+P held_out=ctid validation=attack_flow seed=45 elapsed=0.5s
+inner method=HM+P held_out=ctid validation=attack_flow seed=46 elapsed=0.5s
+inner method=HM+P held_out=ctid validation=stockpile seed=42 elapsed=1.6s
+inner method=HM+P held_out=ctid validation=stockpile seed=43 elapsed=1.7s
+inner method=HM+P held_out=ctid validation=stockpile seed=44 elapsed=1.6s
+inner method=HM+P held_out=ctid validation=stockpile seed=45 elapsed=1.7s
+inner method=HM+P held_out=ctid validation=stockpile seed=46 elapsed=1.6s
+selected method=HM+P held_out=ctid epoch=20 lambda=0.0
+outer method=HM+P held_out=ctid seed=42 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+P held_out=ctid seed=43 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+P held_out=ctid seed=44 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+P held_out=ctid seed=45 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+P held_out=ctid seed=46 epoch=20 lambda=0.0 elapsed=0.5s
+inner method=HM+P held_out=attack_flow validation=ctid seed=42 elapsed=0.5s
+inner method=HM+P held_out=attack_flow validation=ctid seed=43 elapsed=0.5s
+inner method=HM+P held_out=attack_flow validation=ctid seed=44 elapsed=0.5s
+inner method=HM+P held_out=attack_flow validation=ctid seed=45 elapsed=0.5s
+inner method=HM+P held_out=attack_flow validation=ctid seed=46 elapsed=0.5s
+inner method=HM+P held_out=attack_flow validation=stockpile seed=42 elapsed=1.1s
+inner method=HM+P held_out=attack_flow validation=stockpile seed=43 elapsed=1.1s
+inner method=HM+P held_out=attack_flow validation=stockpile seed=44 elapsed=1.1s
+inner method=HM+P held_out=attack_flow validation=stockpile seed=45 elapsed=1.1s
+inner method=HM+P held_out=attack_flow validation=stockpile seed=46 elapsed=1.1s
+selected method=HM+P held_out=attack_flow epoch=20 lambda=0.0
+outer method=HM+P held_out=attack_flow seed=42 epoch=20 lambda=0.0 elapsed=0.4s
+outer method=HM+P held_out=attack_flow seed=43 epoch=20 lambda=0.0 elapsed=0.4s
+outer method=HM+P held_out=attack_flow seed=44 epoch=20 lambda=0.0 elapsed=0.5s
+outer method=HM+P held_out=attack_flow seed=45 epoch=20 lambda=0.0 elapsed=0.4s
+outer method=HM+P held_out=attack_flow seed=46 epoch=20 lambda=0.0 elapsed=0.4s
+inner method=HM+P held_out=stockpile validation=ctid seed=42 elapsed=1.7s
+inner method=HM+P held_out=stockpile validation=ctid seed=43 elapsed=1.7s
+inner method=HM+P held_out=stockpile validation=ctid seed=44 elapsed=1.6s
+inner method=HM+P held_out=stockpile validation=ctid seed=45 elapsed=1.7s
+inner method=HM+P held_out=stockpile validation=ctid seed=46 elapsed=1.6s
+inner method=HM+P held_out=stockpile validation=attack_flow seed=42 elapsed=1.1s
+inner method=HM+P held_out=stockpile validation=attack_flow seed=43 elapsed=1.1s
+inner method=HM+P held_out=stockpile validation=attack_flow seed=44 elapsed=1.2s
+inner method=HM+P held_out=stockpile validation=attack_flow seed=45 elapsed=1.1s
+inner method=HM+P held_out=stockpile validation=attack_flow seed=46 elapsed=1.2s
+selected method=HM+P held_out=stockpile epoch=20 lambda=1.0
+outer method=HM+P held_out=stockpile seed=42 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+P held_out=stockpile seed=43 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+P held_out=stockpile seed=44 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+P held_out=stockpile seed=45 epoch=20 lambda=1.0 elapsed=0.6s
+outer method=HM+P held_out=stockpile seed=46 epoch=20 lambda=1.0 elapsed=0.6s
+# HM + LLM summary future-3 LODO results
+
+## Campaign-macro metrics (five-seed mean for probe methods)
+
+| Method | CTID | Attack Flow | Stockpile | Source-equal NDCG@5 |
+|---|---:|---:|---:|---:|
+| HM | 0.1202 | 0.1470 | 0.1063 | **0.1245** |
+| HM+R | 0.1202 | 0.1470 | 0.0634 | **0.1102** |
+| HM+S | 0.1202 | 0.1470 | 0.0645 | **0.1106** |
+| HM+P | 0.1202 | 0.1470 | 0.0632 | **0.1101** |
+| B0 | 0.1943 | 0.2401 | 0.1741 | **0.2028** |
+
+## Selected S/P hyperparameters
+
+| Method | Held out | Epoch | Lambda |
+|---|---|---:|---:|
+| HM+S | ctid | 20 | 0.0 |
+| HM+S | attack_flow | 20 | 0.0 |
+| HM+S | stockpile | 20 | 1.0 |
+| HM+P | ctid | 20 | 0.0 |
+| HM+P | attack_flow | 20 | 0.0 |
+| HM+P | stockpile | 20 | 1.0 |
+
+## Source-equal paired NDCG@5 differences
+
+| Comparison | Delta | 95% campaign-bootstrap CI |
+|---|---:|---:|
+| HM+S-HM | -0.0139 | [-0.0214, -0.0073] |
+| HM+S-HM+P | +0.0005 | [-0.0000, +0.0012] |
+| HM+S-HM+R | +0.0004 | [-0.0000, +0.0009] |
+| HM+P-HM | -0.0144 | [-0.0219, -0.0080] |
+
+All lambda=0 outer rankings reproduced the frozen HM Top-20 rows.
+All P training mappings were derangements within source and prefix-length tercile; validation and test summaries were never permuted.
+The 30 development rows were excluded throughout.
+
+elapsed_seconds=202.417

@@ -1,0 +1,112 @@
+{
+  "development_rows_used": 0,
+  "elapsed_seconds": 202.4167725419975,
+  "generated_at": "2026-08-07T08:13:44.270730+00:00",
+  "inputs": {
+    "b0_rankings_sha256": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216",
+    "baseline_predictions_sha256": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "embedding_manifest_sha256": "dc48fee727a41e3fc6eeb63935d5bcc41f32d6b99509ea9e9a6847b908daf091",
+    "hm_cache_manifest_sha256": "6c294e87962e3f6b06030d628f400800b9d2cdc5f3115b5f1c5514ef3403b5ed",
+    "hm_results_manifest_sha256": "6cfb7aaab0582bb85548d5c58708c304fe384f641843e449d69b50b9c623bac5",
+    "hmr_results_manifest_sha256": "7345220f4b5b4ade1b437e2325c120a4753617d965bb11014b6ab4640a5ed51c",
+    "rows": 784,
+    "summary_manifest_sha256": "fc1534ce452491a88724dc16896183b4d81049bb4b3eca7b1a803d24f0372795"
+  },
+  "lambda0_hm_reproduction_gate": "PASS all 7840 S/P outer seed-sample rows",
+  "method_card": {
+    "path": "data_v4/protocols/llm_summary_semantic_future3_v1.md",
+    "sha256": "53f2126a2cdf30ae8cc885fc246d18191ef44f8caac7fa389d86a7a8e176df42"
+  },
+  "outputs_sha256": {
+    "b0_sample_metrics.csv": "6143c3a84fe4a62e9781671478efc93ae9581f832efec44e6fd8fb29173cee38",
+    "campaign_results_five_seed_mean.csv": "c65c35fd59a6096175a9a3e1a4b68a8147e39f5a2f14b47f00b4237ae8fd03ac",
+    "fold_results_five_seed_mean.csv": "4ece4eb945b2a22ee92971214d4b2bf527b212e55f2782867d860b627dc5273b",
+    "inner_selection.csv": "3d20526f44db132d1a84d226672cb6599519d975397f0254c6b5a6a160e338b9",
+    "mean_sample_metrics.csv": "b462e57055d8d0289dbd0a9142550673911e1de2675761d8bb6fffa670667f1c",
+    "paired_bootstrap_differences.csv": "e1e97247adca629ad6f7583d0fe2b5a6e06319e3e527c46d3bb212aac87e2468",
+    "permutation_mappings.csv": "cf9d2fbd9cb5aa2470ba46e710f167e1d389feadeade5b9b5d1a1d2def36b23f",
+    "predictions_by_seed.csv": "991c304491f63d8af82a70b0604bec42eb47517352adedb2cbadbde5bb251668",
+    "report.md": "9165ed65f90a036531fdb2ed1f6562f806d57bb6960d86555bb018bccfd98d5a",
+    "selected_hyperparameters.csv": "905c74bf34b234c4bdfc95a3428ac4b7194189f4948300769c96ac0f422da920",
+    "stdout.log": "4a6366e6753a7fcac167c449152599510f2f1126505786fb8dff67b9004c150f",
+    "stratified_results.csv": "0fe24d4c1cbd9e0c561a660dadc2f167772a8120982b89c9a885e7669421e74f"
+  },
+  "parameters": {
+    "architecture": "1024-256-GELU-dropout0.3-184",
+    "batch_size": 32,
+    "deterministic_algorithms": true,
+    "epoch_grid": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "learning_rate": 0.001,
+    "loss": "BCEWithLogitsLoss",
+    "num_threads": 8,
+    "optimizer": "AdamW",
+    "permutation": {
+      "fixed_points": 0,
+      "mapping": "shuffle sorted IDs once per run/group, circular next-donor",
+      "mapping_rows": 15680,
+      "seed": "9000 + train_seed",
+      "strata": "training source x deterministic equal-count prefix-length tercile"
+    },
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "selected": {
+      "HM+P": {
+        "attack_flow": {
+          "epoch": 20,
+          "lambda": 0.0
+        },
+        "ctid": {
+          "epoch": 20,
+          "lambda": 0.0
+        },
+        "stockpile": {
+          "epoch": 20,
+          "lambda": 1.0
+        }
+      },
+      "HM+S": {
+        "attack_flow": {
+          "epoch": 20,
+          "lambda": 0.0
+        },
+        "ctid": {
+          "epoch": 20,
+          "lambda": 0.0
+        },
+        "stockpile": {
+          "epoch": 20,
+          "lambda": 1.0
+        }
+      }
+    },
+    "weight_decay": 0.0001
+  },
+  "script": {
+    "path": "data_v4/scripts/run_hybrid_llm_summary_future3_lodo.py",
+    "sha256": "fece8ebe3194715737b3d6a5e2a465dc6ebfe16af75ed0443745dbfab8d7fdaf"
+  }
+}
