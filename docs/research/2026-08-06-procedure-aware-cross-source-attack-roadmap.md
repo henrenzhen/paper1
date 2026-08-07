@@ -1,8 +1,8 @@
 # Procedure-Aware Cross-Source ATT&CK Recommendation：研究路线与后续工作
 
 > 记录日期：2026-08-06；最近核验：2026-08-07
-> 状态：研究路线已确定，正式实验协议待从 v7 升级为 v8。
-> 最近修订：补全 SECRYPT 2026 正式出版元数据与 19% Full Paper 录用率；加入公开代码的 pair 重复审计和三协议泛化对照。
+> 状态：研究路线与 v8 已冻结；SECRYPT 零费用划分审计已完成，下一步重建 `P-source` future-3 数据并运行无 LLM 基线。
+> 最近修订：落盘 `P-pair/P-campaign` clean-room 复算；固定 hash seed 后，随机80/20完整 pair 重复率为87.5954%，完整 prefix 字典 Accuracy 为0.7501，campaign-LOCO macro 为0.0456。
 > 性质：本文档记录论文级路线、决策依据与执行顺序；具体数据哈希、超参数、API 参数和统计实现以冻结实验协议为准。
 
 ## 1. 一句话路线
@@ -168,6 +168,17 @@ Unit42 只有全部通过以下审计后才可加入：
 9. 公开论文与仓库均未报告 campaign-holdout 下的 `5.9%`。若后续独立实验得到该数字，必须标成“本研究对 Raj et al. 公开方法/数据的重新评估”，不得写成原论文结果；
 10. 42.3% 是仓库定义下的 **tactic-level alignment/coverage**，而本研究现有 13.3% 是跨来源 **technique-level bigram coverage**，二者粒度、分母和划分不同，禁止并列作高低结论；
 11. 26,051 条 beam forecast 是模型生成路径，不是新增真实观测。
+
+冻结运行 `20260807_split_audit_v1` 进一步得到以下独立复算结果：
+
+| 方法 | 随机 pair 80/20 Accuracy | campaign-LOCO macro Accuracy | campaign-LOCO pooled Accuracy |
+|---|---:|---:|---:|
+| 全局频率 | 0.0282 | 0.0404 | 0.0291 |
+| 完整 prefix 字典 | 0.7501 | 0.0456 | 0.0323 |
+| 一阶 Markov 众数 | 0.3773 | 0.1006 | 0.1123 |
+| 二阶 Markov 后退 | 0.6915 | 0.1015 | 0.1128 |
+
+该运行固定 `PYTHONHASHSEED=0`，released-order 得到21,722个唯一 `(prefix,target)`，canonical-order 敏感性分析得到21,716个。两次独立运行的 `summary.csv`、`split_diagnostics.csv` 和 `campaign_loco.csv` 逐字一致。这些数值均是本研究复算，不得归因给 Raj et al.。
 
 因此，SECRYPT 对本研究的主要价值是提供一个待严格验证的候选生成与重排架构，以及提示 Unit42 这一潜在新来源；它报告的 86% 只进入相关工作和协议差异讨论，不进入主结果数值比较。
 

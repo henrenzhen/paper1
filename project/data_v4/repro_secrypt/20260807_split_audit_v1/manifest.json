@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "run_type": "secrypt_split_clean_room_audit",
+  "external_commit": "e188cc6ec96df0288470380dbafccda1591e2c95",
+  "paper_doi": "10.5220/0015075400004103",
+  "started_at": "2026-08-07T03:30:02.962084+00:00",
+  "finished_at": "2026-08-07T03:30:20.920404+00:00",
+  "inputs": {
+    "attack_workbook": {
+      "path": "/private/tmp/secrypt-audit.JTI6ho/converted/enterprise-attack-v16.0.xlsx",
+      "sha256": "c2f9d6fa21ec808e3e34d65d219539baa07856afc4c23807e6c21b092330cfcc"
+    },
+    "original_workbook": {
+      "path": "/private/tmp/secrypt-audit.JTI6ho/repo/Enterprise attack csvs/enterprise-attack-v16.0.xls",
+      "sha256": "d8784efcf9d264e9a526574235d23e52d727d1d87b5f86208b51409d60afd80a"
+    }
+  },
+  "script": {
+    "path": "/Users/bytedance/Documents/Codex/2026-08-06/https-github-com-henrenzhen-paper1-https/work/paper1/project/data_v4/scripts/audit_secrypt_split_protocols.py",
+    "sha256": "cbc56e59971575ea4349c05691ee6a885cf4c95c82a98b497be509cddb63fb46"
+  },
+  "environment": {
+    "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "python_hash_seed": "0"
+  },
+  "config": {
+    "seed": 42,
+    "min_chain_length": 3,
+    "max_bucket_permutations": 25,
+    "max_chains_per_campaign": 200,
+    "tactic_order": [
+      "reconnaissance",
+      "resource development",
+      "initial access",
+      "execution",
+      "persistence",
+      "privilege escalation",
+      "defense evasion",
+      "credential access",
+      "discovery",
+      "lateral movement",
+      "collection",
+      "command and control",
+      "exfiltration",
+      "impact"
+    ],
+    "modes": [
+      "released",
+      "canonical"
+    ],
+    "tie_break": "count desc, global target frequency desc, label Unicode asc",
+    "fallback": "training target global-frequency winner",
+    "pair80_rng_call": 4,
+    "campaign_protocol": "leave-one-campaign-out"
+  },
+  "construction": {
+    "released": {
+      "mode": "released",
+      "campaign_rows": 34,
+      "campaigns_used": 33,
+      "chains": 4849,
+      "occurrences": 132621,
+      "pairs": 127772,
+      "unique_content_pairs": 21722,
+      "unique_prefixes": 16901,
+      "vocab_size": 239,
+      "chain_length_min": 4,
+      "chain_length_max": 71,
+      "chain_length_mean": 27.350175293875026,
+      "campaign_chain_count_min": 2,
+      "campaign_chain_count_max": 200
+    },
+    "canonical": {
+      "mode": "canonical",
+      "campaign_rows": 34,
+      "campaigns_used": 33,
+      "chains": 4849,
+      "occurrences": 132621,
+      "pairs": 127772,
+      "unique_content_pairs": 21716,
+      "unique_prefixes": 16893,
+      "vocab_size": 239,
+      "chain_length_min": 4,
+      "chain_length_max": 71,
+      "chain_length_mean": 27.350175293875026,
+      "campaign_chain_count_min": 2,
+      "campaign_chain_count_max": 200
+    }
+  },
+  "paper_count_note": {
+    "paper_occurrences": 132621,
+    "paper_pairs": 128413,
+    "reconstructed_pair_formula": "sum(chain_length - 1)"
+  }
+}

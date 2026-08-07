@@ -1,0 +1,5 @@
+2026-08-07 03:30:02,964Z | INFO | Starting clean-room split audit
+2026-08-07 03:30:05,008Z | INFO | Loaded ATT&CK workbook sheets
+2026-08-07 03:30:05,236Z | INFO | released: campaigns=33 chains=4849 occurrences=132621 pairs=127772 unique=21722 vocab=239
+2026-08-07 03:30:13,202Z | INFO | canonical: campaigns=33 chains=4849 occurrences=132621 pairs=127772 unique=21716 vocab=239
+2026-08-07 03:30:20,951Z | INFO | Completed audit; outputs written to project/data_v4/repro_secrypt/20260807_split_audit_v1

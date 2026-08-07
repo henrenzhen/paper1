@@ -1,0 +1,5 @@
+construction_mode,protocol,n_train,n_test,exact_content_overlap,prefix_coverage,campaign_overlap,train_campaigns,test_campaigns
+released,pair90_diagnostic,114994,12778,0.8881671623102206,0.9246360932853341,1.0,33,32
+released,pair80_primary,102217,25555,0.875953825083154,0.9141850909802387,1.0,33,33
+canonical,pair90_diagnostic,114994,12778,0.8883236813272812,0.924870871810925,1.0,33,32
+canonical,pair80_primary,102217,25555,0.8759146937976913,0.9142242222657014,1.0,33,33
