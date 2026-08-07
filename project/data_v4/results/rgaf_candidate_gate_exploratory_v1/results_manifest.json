@@ -1,0 +1,63 @@
+{
+  "analysis_status": "post-result exploratory method development",
+  "generated_at": "2026-08-07T09:45:54.623248+00:00",
+  "inputs": {
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v4/results/nonsemantic_future3_lodo_v1/predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_summaries/deepseek_v4_flash_future3_v1/b0_rankings.csv": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216"
+  },
+  "leakage_gate": "PASS: feature/scoring path does not read targets or target-conditioned visibility; targets enter only gate fitting and post-ranking metrics",
+  "outputs_sha256": {
+    "campaign_results.csv": "1a1fce28faa9aa6d7b6c17bee1b67bec320b9b6b96643aad35cb788198ef8a25",
+    "fold_results.csv": "bfa08fba45f8dd1320732696354c273293c64f8aed05aca85323b260b4caba1d",
+    "gate_parameters.csv": "085a4eb213f4f7b785850de25aa76fde6bf2dffe967f03172985ffe6920be520",
+    "inner_selection.csv": "c52b798cf032ba492be9ab65405a9b3e0c31077c86391cf2967b6cc91b5e9b62",
+    "paired_bootstrap_differences.csv": "abbc2287c772dfd857ad9fffb47776554d2ab3d0cd9b80f6e341fd1d9a48b304",
+    "predictions.csv": "be6924ab6a36d0fa1333d8903e6c38320a893d803172d8fad764583ccacb8859",
+    "report.md": "ae41f4dd0501671eaa8f28e06b5968b1c4e9669032e2af6b3eab7e7d806151d0",
+    "stdout.log": "ae41f4dd0501671eaa8f28e06b5968b1c4e9669032e2af6b3eab7e7d806151d0"
+  },
+  "parameters": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "epochs": 60,
+    "features": [
+      "log_context1_support",
+      "log_context2_support",
+      "log_pair1_support",
+      "log_pair2_support",
+      "pair1_source_fraction",
+      "pair2_source_fraction",
+      "one_minus_normalized_entropy",
+      "b0_reciprocal_rank",
+      "absolute_transition_evidence",
+      "a_rank_percentile",
+      "log_prefix_len"
+    ],
+    "l2_grid": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "learning_rate": 0.05,
+    "selected_l2": {
+      "attack_flow": 0.1,
+      "ctid": 0.1,
+      "stockpile": 0.001
+    },
+    "shuffle_shift": 37
+  },
+  "protocol": {
+    "path": "data_v4/protocols/rgaf_candidate_gate_learnability_v1.md",
+    "sha256": "5b5f900529682cd03ca8cb83072adc2458e41a2016655ff645b17ff746e5f25b"
+  },
+  "reproduction_gates": {
+    "A_top20": "PASS 784/784",
+    "B0_top5": "PASS 784/784"
+  },
+  "script": {
+    "path": "data_v4/scripts/run_rgaf_candidate_gate_exploratory.py",
+    "sha256": "7c15c813859132359e6040a65fda63643a9eb24108b6424d263af387f9ffa9c8"
+  }
+}
