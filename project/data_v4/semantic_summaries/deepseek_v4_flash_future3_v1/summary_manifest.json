@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "invalid_b0_rows": 0,
+    "invalid_summary_rows": 0,
+    "rows": 784,
+    "source_rows_audit_only": {
+      "attack_flow": 412,
+      "ctid": 263,
+      "stockpile": 109
+    },
+    "summary_attack_id_rows": 0,
+    "summary_source_or_campaign_literal_rows": 0
+  },
+  "generated_at": "2026-08-07T08:03:25.814007+00:00",
+  "inputs": {
+    "full_raw_results_sha256": "e49d0408a843b51498ea079e836a727bed9bd57e56182364ba8d1bac269f7c99",
+    "future3_samples_sha256": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "generation_manifest_sha256": "b2fb1205b8bd376134cb9c33fd449276e0cfac47f499a2dc13608cf5ad688c9b",
+    "vocabulary_sha256": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738"
+  },
+  "method_card_sha256": "53f2126a2cdf30ae8cc885fc246d18191ef44f8caac7fa389d86a7a8e176df42",
+  "outputs": {
+    "b0_rankings.csv": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216",
+    "summary_index.csv": "f8063d193541a26c3a64ca39c4684f18856b9992a0425223ae591f1c115a73dc",
+    "summary_inputs.jsonl": "45c16143307871439d6161c2191d6b7be1610cce7218d97463c4da2862a235d5"
+  },
+  "predicted_next_ttps_in_summary_input": false,
+  "script": {
+    "path": "data_v4/scripts/build_future3_llm_summary_inputs.py",
+    "sha256": "0c3b23b93929bc7ce9c012197a97c9c6344f57c98fa4683d8b4b7b7dcbe11d7e"
+  },
+  "serialization": "[阶段评估]\\n{stage_assessment}\\n\\n[已观察能力]\\n{observed_capabilities}\\n\\n[可能后续意图]\\n{likely_next_intents}",
+  "summary_characters": {
+    "max": 450,
+    "mean": 199.62244897959184,
+    "min": 92
+  }
+}
