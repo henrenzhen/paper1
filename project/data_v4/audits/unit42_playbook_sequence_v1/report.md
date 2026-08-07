@@ -1,0 +1,33 @@
+# Unit42 Playbook Viewer sequence-sufficiency audit
+
+## Inventory
+
+- `playbooks.json` rows / unique files: 83 / 83
+- JSON bundles: 85
+- Unindexed bundles: ["2024-02-08-Pikabot.json","IcedID_Unit42_Intel.json"]
+- Invalid bundles: 0
+- Campaign objects: 153
+- Campaigns with at least two linked ATT&CK techniques: 151
+
+## Order carriers
+
+- Campaigns with `first_seen`: 152
+- Campaigns with `last_seen`: 150
+- Campaigns whose campaign→technique `uses` edges have multiple `created` values: 114
+- Campaigns with any attack-pattern→attack-pattern edge: 0
+- Campaigns with a qualifying temporal attack-pattern edge: 0
+- Sequence-eligible campaigns: **0**
+
+Selected relationship counts:
+
+| Relationship | Source | Target | Count | Temporal meaning |
+|---|---|---|---:|---|
+| uses | campaign | attack-pattern | 2641 | membership only |
+| uses | intrusion-set | attack-pattern | 0 | membership only |
+| uses | malware | attack-pattern | 0 | membership only |
+
+## Decision
+
+**REJECT as a direct sequential source: no campaign contains an explicit qualifying order carrier.**
+
+Campaign interval timestamps, STIX object lifecycle timestamps, `object_refs` position, kill-chain phase, and membership edges were not treated as technique execution order under the frozen protocol.

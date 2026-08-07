@@ -1,0 +1,12 @@
+relationship_type,source_object_type,target_object_type,count
+attributed-to,campaign,intrusion-set,93
+attributed-to,report,intrusion-set,46
+indicates,<missing>,attack-pattern,3
+indicates,<missing>,campaign,3
+indicates,indicator,attack-pattern,3543
+indicates,indicator,campaign,10753
+indicates,indicator,malware,2314
+mitigates,course-of-action,attack-pattern,11399
+targets,campaign,identity,157
+uses,campaign,attack-pattern,2641
+uses,indicator,attack-pattern,6172
