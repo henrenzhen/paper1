@@ -1,0 +1,43 @@
+{
+  "addendum": {
+    "path": "data_v4/protocols/local_fusion_implementation_addendum_v1.md",
+    "sha256": "b9206833b32edf9d31e59e0a530762679948867644f5a279f0a133131a26b045"
+  },
+  "analysis_status": "post-result discovery search",
+  "api_cost": 0,
+  "common_script_sha256": "8a27c6649be23f9a94ac00595f39aef46535fc56214095bbadf11f29400b84ed",
+  "generated_at": "2026-08-07T10:26:45.644833+00:00",
+  "inputs": {
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v4/local_fusion_search/oracles_v1/oracle_summary.csv": "05b1d11b403a484cd201566b525ea6336b75936582c52189fb3dc8ef0d763384",
+    "data_v4/results/nonsemantic_future3_lodo_v1/predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_summaries/deepseek_v4_flash_future3_v1/b0_rankings.csv": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216"
+  },
+  "mechanisms_explored": 5,
+  "mechanisms_implemented": 4,
+  "network_calls": 0,
+  "oracle_dropped": [
+    "F5"
+  ],
+  "outputs": {
+    "bootstrap_differences.csv": "a4fd1788852cd41bcd1240167913c4267f9d6f99e3a013d45552f7b046254f37",
+    "campaign_results.csv": "cf91f59892b1c9de2d70d505622e97cd42e139c3f8f680139a5c2109e80f1047",
+    "ctid_influence.csv": "31ec55bc65d268080ceb1df862519df54b97052c103f5dfdab68c8c86fa43435",
+    "decisions.csv": "1276343e5b66327978b9e159a1bbe330d6ec04f8c603f2ec7ae3c6a748566121",
+    "fold_results.csv": "3d495dbe56bac7eb13b7b5352a0c68bb44948c7e2ef7954cd334dcb2c1bd8064",
+    "inner_selection.csv": "e97efcaa430966f1a851b83ed6c7aa89d09d43bd2b4a84610a36e143a6982225",
+    "parameters.csv": "2a91ede86ad107978f25b94334c2ab0fb808c98a69c108b4ffb201c46baa2c24",
+    "predictions.csv": "d9423a7ed411e42518877fe51f8e16fe869aba3abfbd60230e98dad770a0bf13",
+    "report.md": "39649435b3a6cf594319dddad41e198037d6065c6b79c8945bf7967adf120326",
+    "stdout.log": "39649435b3a6cf594319dddad41e198037d6065c6b79c8945bf7967adf120326"
+  },
+  "protocol": {
+    "path": "data_v4/protocols/local_fusion_mechanism_search_v1.md",
+    "sha256": "4b5b391d14b13f91eee4a0a4a0d3bf2ad5b61220c4eb346577864ab65d7d8425"
+  },
+  "script": {
+    "path": "data_v4/scripts/run_local_fusion_mechanisms.py",
+    "sha256": "254b873b39bee3336253dd249443a2b9056aa5f27070ba5663a0d3073bbb0340"
+  }
+}

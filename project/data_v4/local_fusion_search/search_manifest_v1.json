@@ -1,0 +1,22 @@
+{
+  "api_cost": 0,
+  "external_samples_sent": 0,
+  "mechanisms_discovery_positive": 0,
+  "mechanisms_explored": 5,
+  "mechanisms_failed_after_implementation": 4,
+  "mechanisms_oracle_abandoned": 1,
+  "network_calls": 0,
+  "sha256": {
+    "all_methods_summary.csv": "c4f7300883760e9d1150eeb32f267499945784d4a00eda0581af050584e0c9a0",
+    "api_authorization_candidates.md": "1d265af52de642e0690468932720a4ceb10b44397de5ace51a523668a5d06e74",
+    "compute_local_fusion_oracles.py": "46e0fde168ba631f8647ed74438771eba157658c51e95b1f9571c6c4df3d0a0e",
+    "local_fusion_common.py": "8a27c6649be23f9a94ac00595f39aef46535fc56214095bbadf11f29400b84ed",
+    "local_fusion_implementation_addendum_v1.md": "b9206833b32edf9d31e59e0a530762679948867644f5a279f0a133131a26b045",
+    "local_fusion_mechanism_search_v1.md": "4b5b391d14b13f91eee4a0a4a0d3bf2ad5b61220c4eb346577864ab65d7d8425",
+    "mechanisms_v1/manifest.json": "a977c6bb4bbd7903a6140117d7220f3a7acba1315bead980ef2c4a3d22300a36",
+    "oracles_v1/manifest.json": "ae1b9caa3d17e352b65660e41622ab1ebbf27e629ce1036e0ceb762f90be9594",
+    "run_local_fusion_mechanisms.py": "254b873b39bee3336253dd249443a2b9056aa5f27070ba5663a0d3073bbb0340",
+    "trial_log_v1.md": "0c9bbec12c63ec11adb8736cc6e925dac0ff54c37b899dcce9d085813bc63b29"
+  },
+  "status": "complete_zero_cost_discovery_search_no_positive_mechanism"
+}
