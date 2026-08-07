@@ -1,0 +1,72 @@
+{
+  "api_authorization_for_full_generation": false,
+  "authorization_required_before_network": {
+    "billing": "token-billed DeepSeek requests",
+    "excluded": [
+      "source",
+      "campaign",
+      "audit/sample identifiers",
+      "future labels",
+      "future descriptions"
+    ],
+    "fields": [
+      "observed parent techniques",
+      "possible tactics",
+      "cleaned historical descriptions",
+      "frozen prompt instructions"
+    ],
+    "model": "actual available deepseek-v4-flash",
+    "rows": 784
+  },
+  "cost_estimate": {
+    "assumes_cache_miss": true,
+    "estimated_completion_tokens": 127740,
+    "estimated_cost_usd_no_retry": 0.12631808000000003,
+    "estimated_prompt_tokens": 646792,
+    "mechanical_four_attempt_ceiling_usd": 0.5052723200000001,
+    "method": "input tokens scaled by total canonical request characters from the successful 30-row pilot; output tokens scaled by row count",
+    "warning": "estimate only; actual billing follows API usage fields"
+  },
+  "counts": {
+    "campaign_literal_redactions": 521,
+    "requests_prepared_not_sent": 784,
+    "source_campaigns_audit_only": {
+      "attack_flow": 35,
+      "ctid": 10,
+      "stockpile": 27
+    },
+    "source_literal_redactions": 0,
+    "source_rows_audit_only": {
+      "attack_flow": 412,
+      "ctid": 263,
+      "stockpile": 109
+    }
+  },
+  "generated_at": "2026-08-07T07:49:30.772610+00:00",
+  "inputs": {
+    "data_v4/external_reasoning/future3/pilot/runs/20260807T073425Z_1ec8fb8d/generation_manifest.json": "93dfc018a591e806939c2cef497c5fa07b98d6aa02615288b9bd84be13921ebd",
+    "data_v4/external_reasoning/future3/pilot/runs/20260807T073425Z_1ec8fb8d/raw_attempts.jsonl": "3f8cdc1625dd4e73c375857368f0b7737517f7caa09f352b8f746d5553fd276e",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_preflight/future3_dev_prompts_v1/raw_semantic_inputs.jsonl": "00820b1d401ac61be04a72658e904d8c3f67911a4f663ad1807ecf341e00d876"
+  },
+  "leakage_gates": {
+    "observed_target_step_disjoint": 784,
+    "passed": true,
+    "request_payload_contains_campaign_literal": 0,
+    "request_payload_contains_forbidden_key": 0,
+    "request_payload_contains_source_literal": 0,
+    "request_payload_contains_target_step_id": 0,
+    "rows_checked": 784
+  },
+  "network_requests_performed": 0,
+  "pilot_basis": {
+    "completion_tokens": 4888,
+    "estimated_cost_usd": 0.004458439999999999,
+    "prompt_tokens": 22070,
+    "request_characters": 70495
+  },
+  "script": {
+    "path": "data_v4/scripts/build_future3_full_prompt_preflight.py",
+    "sha256": "225168aa938eca1979d87d89cbb4be5d0d6d2feb9f0158501b15d2622dddd766"
+  }
+}
