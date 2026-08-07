@@ -1,0 +1,33 @@
+2026-08-07T07:34:25.329700+00:00 run_id=20260807T073425Z_1ec8fb8d rows=30 concurrency=30
+2026-08-07T07:34:25.609146+00:00 /models selected model=deepseek-v4-flash rule=exact_match
+2026-08-07T07:34:27.425057+00:00 completed 30/30 slot=stockpile:short:3 status=ok attempts=1
+2026-08-07T07:34:27.554532+00:00 completed 25/30 slot=stockpile:medium:2 status=ok attempts=1
+2026-08-07T07:34:27.639687+00:00 completed 24/30 slot=stockpile:medium:1 status=ok attempts=1
+2026-08-07T07:34:27.703333+00:00 completed 8/30 slot=attack_flow:short:1 status=ok attempts=1
+2026-08-07T07:34:27.735344+00:00 completed 27/30 slot=stockpile:medium:4 status=ok attempts=1
+2026-08-07T07:34:27.825164+00:00 completed 9/30 slot=attack_flow:short:2 status=ok attempts=1
+2026-08-07T07:34:27.863601+00:00 completed 29/30 slot=stockpile:short:2 status=ok attempts=1
+2026-08-07T07:34:27.906074+00:00 completed 26/30 slot=stockpile:medium:3 status=ok attempts=1
+2026-08-07T07:34:27.916177+00:00 completed 20/30 slot=ctid:short:3 status=ok attempts=1
+2026-08-07T07:34:27.929338+00:00 completed 28/30 slot=stockpile:short:1 status=ok attempts=1
+2026-08-07T07:34:28.104227+00:00 completed 18/30 slot=ctid:short:1 status=ok attempts=1
+2026-08-07T07:34:28.104406+00:00 completed 22/30 slot=stockpile:long:2 status=ok attempts=1
+2026-08-07T07:34:28.124394+00:00 completed 1/30 slot=attack_flow:long:1 status=ok attempts=1
+2026-08-07T07:34:28.156420+00:00 completed 14/30 slot=ctid:medium:1 status=ok attempts=1
+2026-08-07T07:34:28.163302+00:00 completed 4/30 slot=attack_flow:medium:1 status=ok attempts=1
+2026-08-07T07:34:28.166544+00:00 completed 15/30 slot=ctid:medium:2 status=ok attempts=1
+2026-08-07T07:34:28.188047+00:00 completed 2/30 slot=attack_flow:long:2 status=ok attempts=1
+2026-08-07T07:34:28.225745+00:00 completed 6/30 slot=attack_flow:medium:3 status=ok attempts=1
+2026-08-07T07:34:28.265372+00:00 completed 21/30 slot=stockpile:long:1 status=ok attempts=1
+2026-08-07T07:34:28.267664+00:00 completed 7/30 slot=attack_flow:medium:4 status=ok attempts=1
+2026-08-07T07:34:28.292008+00:00 completed 23/30 slot=stockpile:long:3 status=ok attempts=1
+2026-08-07T07:34:28.408123+00:00 completed 11/30 slot=ctid:long:1 status=ok attempts=1
+2026-08-07T07:34:28.419156+00:00 completed 16/30 slot=ctid:medium:3 status=ok attempts=1
+2026-08-07T07:34:28.497762+00:00 completed 17/30 slot=ctid:medium:4 status=ok attempts=1
+2026-08-07T07:34:28.519160+00:00 completed 10/30 slot=attack_flow:short:3 status=ok attempts=1
+2026-08-07T07:34:28.570149+00:00 completed 5/30 slot=attack_flow:medium:2 status=ok attempts=1
+2026-08-07T07:34:28.722348+00:00 completed 12/30 slot=ctid:long:2 status=ok attempts=1
+2026-08-07T07:34:28.743512+00:00 completed 13/30 slot=ctid:long:3 status=ok attempts=1
+2026-08-07T07:34:28.905952+00:00 completed 19/30 slot=ctid:short:2 status=ok attempts=1
+2026-08-07T07:34:29.429877+00:00 completed 3/30 slot=attack_flow:long:3 status=ok attempts=1
+2026-08-07T07:34:29.446341+00:00 finished statuses={'ok': 30} attempts=30 cost_usd=0.00445844 all_gates_passed=True
