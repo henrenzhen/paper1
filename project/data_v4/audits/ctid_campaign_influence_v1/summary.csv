@@ -1,0 +1,25 @@
+comparison,metric,campaigns,full_effect,loco_min,loco_min_omitted,loco_max,loco_max_omitted,campaign_positive,campaign_zero,campaign_negative,stability
+B0-A0,ndcg5,10,0.01881472187728279,-0.0017269420256792332,fin6::unknown,0.037137781321081725,turla_snake::unknown,6,0,4,single-campaign fragile
+B0-A0,hit5,10,-0.009208379401411077,-0.051898199334901196,fin6::unknown,0.04105051861381675,turla_snake::unknown,3,1,6,full effect non-positive
+B0-A0,precision5,10,0.006628963758697276,-0.0051344847125585815,fin6::unknown,0.019331327253253386,turla_snake::unknown,4,1,5,single-campaign fragile
+B0-A0,recall5,10,0.0006711999502838802,-0.020087555610795685,fin6::unknown,0.020688797665557587,turla_snake::unknown,4,0,6,single-campaign fragile
+B0-K,ndcg5,10,0.04924465648001321,0.03467546762750065,fin6::unknown,0.056627314164824645,sandworm::unknown,8,0,2,single-campaign sign-stable
+B0-K,hit5,10,0.08434815512051247,0.05899795013390274,fin6::unknown,0.10088863113748697,sandworm::unknown,6,1,3,single-campaign sign-stable
+B0-K,precision5,10,0.03902945585454628,0.030032728727273646,oilrig::unknown,0.04408290793874318,sandworm::unknown,8,1,1,single-campaign sign-stable
+B0-K,recall5,10,0.06896593507314515,0.054406594525716834,oilrig::unknown,0.07662881674793905,apt29::unknown,9,1,0,single-campaign sign-stable
+B0-T,ndcg5,10,0.0383467812269547,0.02712183691629637,fin6::unknown,0.04237270429232471,carbanak::unknown,10,0,0,single-campaign sign-stable
+B0-T,hit5,10,0.031783453355941724,0.01626732912564953,oilrig::unknown,0.04386195672027713,turla_snake::unknown,5,3,2,single-campaign sign-stable
+B0-T,precision5,10,0.028043134997922037,0.01909554682308798,oilrig::unknown,0.0320137397412809,turla_snake::unknown,8,1,1,single-campaign sign-stable
+B0-T,recall5,10,0.04378475525138532,0.03118941059677733,oilrig::unknown,0.05059904579588622,carbanak::unknown,7,1,2,single-campaign sign-stable
+B0-HM,ndcg5,10,0.07407367777437007,0.06647632425866926,wizard_spider::unknown,0.08583874021254803,apt29::unknown,9,0,1,single-campaign sign-stable
+B0-HM,hit5,10,0.08512256081414382,0.06473935328555662,oilrig::unknown,0.10569173423793757,turla_snake::unknown,6,1,3,single-campaign sign-stable
+B0-HM,precision5,10,0.04118253944594648,0.032425043828829415,oilrig::unknown,0.047592592329711254,apt29::unknown,8,0,2,single-campaign sign-stable
+B0-HM,recall5,10,0.06773689901531858,0.05568650155141218,oilrig::unknown,0.07802630166899008,apt29::unknown,8,0,2,single-campaign sign-stable
+B0-HM+S,ndcg5,10,0.07407367777437007,0.06647632425866926,wizard_spider::unknown,0.08583874021254803,apt29::unknown,9,0,1,single-campaign sign-stable
+B0-HM+S,hit5,10,0.08512256081414382,0.06473935328555662,oilrig::unknown,0.10569173423793757,turla_snake::unknown,6,1,3,single-campaign sign-stable
+B0-HM+S,precision5,10,0.04118253944594648,0.032425043828829415,oilrig::unknown,0.047592592329711254,apt29::unknown,8,0,2,single-campaign sign-stable
+B0-HM+S,recall5,10,0.06773689901531858,0.05568650155141218,oilrig::unknown,0.07802630166899008,apt29::unknown,8,0,2,single-campaign sign-stable
+T+B0-B0,ndcg5,10,0.00011249040737231763,-7.371166295051646e-05,turla_carbon::unknown,0.00019870100447531383,sandworm::unknown,1,8,1,single-campaign fragile
+T+B0-B0,hit5,10,0.0,0.0,apt29::unknown,0.0,apt29::unknown,0,10,0,full effect zero
+T+B0-B0,precision5,10,0.0,0.0,apt29::unknown,0.0,apt29::unknown,0,10,0,full effect zero
+T+B0-B0,recall5,10,0.0,0.0,apt29::unknown,0.0,apt29::unknown,0,10,0,full effect zero

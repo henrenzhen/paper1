@@ -1,0 +1,34 @@
+{
+  "analysis_status": "post-result sensitivity audit",
+  "campaign_count": 10,
+  "comparisons": [
+    "B0-A0",
+    "B0-K",
+    "B0-T",
+    "B0-HM",
+    "B0-HM+S",
+    "T+B0-B0"
+  ],
+  "generated_at": "2026-08-07T09:07:37.141314+00:00",
+  "inputs": {
+    "data_v4/results/hybrid_tactic_llm_summary_future3_lodo_v1/campaign_results.csv": "5cd50851d53da36530181f2784a0b3a45e8a705ef8f52dce65ab9bb232230b6f",
+    "data_v4/results/tactic_llm_direct_rank_exploratory_v1/campaign_results.csv": "6cf236da191dd93e3b5ea8780efe43ec4e1f9af7447e7b544b615e1069e00599"
+  },
+  "outputs_sha256": {
+    "campaign_differences.csv": "92730d4c50bbee6b9bd57524aa5a5b68b94ff8c372da1b89cd36efbf0f75203c",
+    "leave_one_campaign_out.csv": "92858aac26580fd5106d53d6955ef9567b27a29b5877ad55b520a3f7d6796fc4",
+    "report.md": "e37625b9fc063d70f72054002424cb9b27bf8239254653ba087bab446c810d2a",
+    "stdout.log": "e37625b9fc063d70f72054002424cb9b27bf8239254653ba087bab446c810d2a",
+    "summary.csv": "759929bf4d97ecda70cc06f397fedc53c3d48fd049c0c6aef644e98a8a5297d8"
+  },
+  "primary_metric": "ndcg5",
+  "protocol": {
+    "path": "data_v4/protocols/ctid_campaign_influence_v1.md",
+    "sha256": "4ed80e0a313d5d945c2b06e2d2107c36b61e8db50cd9fd187f00d0c4d730a96b"
+  },
+  "scope": "CTID; 10 campaigns; campaign-macro leave-one-campaign-out",
+  "script": {
+    "path": "data_v4/scripts/audit_ctid_campaign_influence.py",
+    "sha256": "6269de11b9cb100777e04e79436bb5bd84609921116def60076233f1b8aaade5"
+  }
+}
