@@ -1,0 +1,86 @@
+{
+  "elapsed_seconds": 74.59920454100939,
+  "generated_at": "2026-08-07T08:27:46.595796+00:00",
+  "hm_plus_s_reproduction": "PASS all 3920 outer seed-sample rows",
+  "hm_reproduction": "PASS all 3920 outer seed-sample rows",
+  "inputs": {
+    "hm_cache_manifest_sha256": "6c294e87962e3f6b06030d628f400800b9d2cdc5f3115b5f1c5514ef3403b5ed",
+    "hm_results_manifest_sha256": "6cfb7aaab0582bb85548d5c58708c304fe384f641843e449d69b50b9c623bac5",
+    "summary_results_manifest_sha256": "32bd80506dd8c7c21abbedbe55defa3e86c86b4a45220b8eb95bce326545fb73"
+  },
+  "method_card": {
+    "path": "data_v4/protocols/hybrid_tactic_llm_summary_future3_v1.md",
+    "sha256": "e8d217319fd18ebce5b0914394b930a80da50ad79a64790efde581e401635d2a"
+  },
+  "outputs_sha256": {
+    "campaign_results.csv": "5cd50851d53da36530181f2784a0b3a45e8a705ef8f52dce65ab9bb232230b6f",
+    "fold_results.csv": "7e4cf9c8f543ddf17592b657e0aba44e6272b300f1778bd84c11222df36cb0cf",
+    "inner_selection.csv": "93115a0e18c7e94c224de512a89c319e0aa600c0ec265434d41f8d7a4e3a1de0",
+    "mean_sample_metrics.csv": "caf324d916684677e96d63ed936b235c947613e03de0b08617159c285b97a3cd",
+    "paired_bootstrap_differences.csv": "bc308eaf0ea54fbb8b4b5bca531ab8eb095d07fa463da710f095370c7fdc524e",
+    "predictions_by_seed.csv": "341db7191bdd7b2d98a474fed366b7a7de1df4fd766a685ed34d393c56313afa",
+    "report.md": "cae1b53c490a57af734a9e20a8288c62d8a69936a35e80ed393676cd4a49040c",
+    "selected_hyperparameters.csv": "f2c55531e0d8df0e33160d50acf6e0dd2e8e2e590ad69d0d9b4002e59aa7b87f",
+    "stdout.log": "012ca4a6d80b2e9f0dbf8f20805e5e3527cab8fbc50bb2cb13e1ee63752d5511",
+    "stratified_results.csv": "94a55eb28b46712ada7a4066695bcbdf125bdd9f4ce65a4d383dbf41a11dd73a"
+  },
+  "parameters": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "epochs": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "selection": {
+      "attack_flow": {
+        "hm_t_w_t": 0.0,
+        "st_epoch": 20,
+        "st_w_h": 1.0,
+        "st_w_s": 0.0,
+        "st_w_t": 0.0
+      },
+      "ctid": {
+        "hm_t_w_t": 0.0,
+        "st_epoch": 60,
+        "st_w_h": 0.7,
+        "st_w_s": 0.2,
+        "st_w_t": 0.1
+      },
+      "stockpile": {
+        "hm_t_w_t": 0.0,
+        "st_epoch": 20,
+        "st_w_h": 0.0,
+        "st_w_s": 1.0,
+        "st_w_t": 0.0
+      }
+    },
+    "simplex_points": 66
+  },
+  "script": {
+    "path": "data_v4/scripts/run_hybrid_tactic_llm_summary_future3_lodo.py",
+    "sha256": "5a6eb0ce576882e92f4dbefd37fc01e309cd49b5b4cbcdccbde15ba2a11cd8b1"
+  }
+}

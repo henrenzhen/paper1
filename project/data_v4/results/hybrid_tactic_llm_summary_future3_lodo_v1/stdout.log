@@ -1,0 +1,84 @@
+inner held_out=ctid validation=attack_flow seed=42 elapsed=1.0s
+inner held_out=ctid validation=attack_flow seed=43 elapsed=0.5s
+inner held_out=ctid validation=attack_flow seed=44 elapsed=0.5s
+inner held_out=ctid validation=attack_flow seed=45 elapsed=0.5s
+inner held_out=ctid validation=attack_flow seed=46 elapsed=0.5s
+inner held_out=ctid validation=stockpile seed=42 elapsed=1.6s
+inner held_out=ctid validation=stockpile seed=43 elapsed=1.7s
+inner held_out=ctid validation=stockpile seed=44 elapsed=1.7s
+inner held_out=ctid validation=stockpile seed=45 elapsed=1.7s
+inner held_out=ctid validation=stockpile seed=46 elapsed=1.6s
+selected held_out=ctid hm_t_w_t=0.0 st=(60,0.7,0.2,0.1)
+outer held_out=ctid seed=42 st_epoch=60 elapsed=1.4s
+outer held_out=ctid seed=43 st_epoch=60 elapsed=1.3s
+outer held_out=ctid seed=44 st_epoch=60 elapsed=1.4s
+outer held_out=ctid seed=45 st_epoch=60 elapsed=1.3s
+outer held_out=ctid seed=46 st_epoch=60 elapsed=1.4s
+inner held_out=attack_flow validation=ctid seed=42 elapsed=0.5s
+inner held_out=attack_flow validation=ctid seed=43 elapsed=0.5s
+inner held_out=attack_flow validation=ctid seed=44 elapsed=0.5s
+inner held_out=attack_flow validation=ctid seed=45 elapsed=0.5s
+inner held_out=attack_flow validation=ctid seed=46 elapsed=0.5s
+inner held_out=attack_flow validation=stockpile seed=42 elapsed=1.1s
+inner held_out=attack_flow validation=stockpile seed=43 elapsed=1.1s
+inner held_out=attack_flow validation=stockpile seed=44 elapsed=1.2s
+inner held_out=attack_flow validation=stockpile seed=45 elapsed=1.1s
+inner held_out=attack_flow validation=stockpile seed=46 elapsed=1.1s
+selected held_out=attack_flow hm_t_w_t=0.0 st=(20,1.0,0.0,0.0)
+outer held_out=attack_flow seed=42 st_epoch=20 elapsed=0.4s
+outer held_out=attack_flow seed=43 st_epoch=20 elapsed=0.4s
+outer held_out=attack_flow seed=44 st_epoch=20 elapsed=0.4s
+outer held_out=attack_flow seed=45 st_epoch=20 elapsed=0.4s
+outer held_out=attack_flow seed=46 st_epoch=20 elapsed=0.4s
+inner held_out=stockpile validation=ctid seed=42 elapsed=1.6s
+inner held_out=stockpile validation=ctid seed=43 elapsed=1.6s
+inner held_out=stockpile validation=ctid seed=44 elapsed=1.7s
+inner held_out=stockpile validation=ctid seed=45 elapsed=1.7s
+inner held_out=stockpile validation=ctid seed=46 elapsed=1.7s
+inner held_out=stockpile validation=attack_flow seed=42 elapsed=1.1s
+inner held_out=stockpile validation=attack_flow seed=43 elapsed=1.1s
+inner held_out=stockpile validation=attack_flow seed=44 elapsed=1.2s
+inner held_out=stockpile validation=attack_flow seed=45 elapsed=1.1s
+inner held_out=stockpile validation=attack_flow seed=46 elapsed=1.1s
+selected held_out=stockpile hm_t_w_t=0.0 st=(20,0.0,1.0,0.0)
+outer held_out=stockpile seed=42 st_epoch=20 elapsed=0.6s
+outer held_out=stockpile seed=43 st_epoch=20 elapsed=0.6s
+outer held_out=stockpile seed=44 st_epoch=20 elapsed=0.6s
+outer held_out=stockpile seed=45 st_epoch=20 elapsed=0.6s
+outer held_out=stockpile seed=46 st_epoch=20 elapsed=0.6s
+# HM + tactic + LLM-summary future-3 LODO results
+
+| Method | CTID | Attack Flow | Stockpile | Source-equal NDCG@5 |
+|---|---:|---:|---:|---:|
+| HM | 0.1202 | 0.1470 | 0.1063 | **0.1245** |
+| HM+S | 0.1202 | 0.1470 | 0.0645 | **0.1106** |
+| HM+T | 0.1202 | 0.1470 | 0.1063 | **0.1245** |
+| HM+ST | 0.1414 | 0.1470 | 0.0645 | **0.1176** |
+
+## Selected hyperparameters
+
+| Held out | HM+T w_T | HM+ST epoch | w_H | w_S | w_T |
+|---|---:|---:|---:|---:|---:|
+| ctid | 0.0 | 60 | 0.7 | 0.2 | 0.1 |
+| attack_flow | 0.0 | 20 | 1.0 | 0.0 | 0.0 |
+| stockpile | 0.0 | 20 | 0.0 | 1.0 | 0.0 |
+
+## Source-equal paired NDCG@5 differences
+
+| Comparison | Delta | 95% campaign-bootstrap CI |
+|---|---:|---:|
+| HM+T-HM | +0.0000 | [+0.0000, +0.0000] |
+| HM+ST-HM | -0.0068 | [-0.0156, +0.0014] |
+| HM+ST-HM+S | +0.0071 | [+0.0027, +0.0117] |
+| HM+ST-HM+T | -0.0068 | [-0.0156, +0.0014] |
+
+## Frozen complementarity rule
+
+- HM+ST > HM+S sources: 1/3
+- HM+ST > HM+T sources: 1/3
+- Overall exceeds both: False
+- Complementarity claim: NOT SUPPORTED
+
+HM and HM+S Top-20 reproduction gates passed for all 3,920 outer seed/sample rows.
+The negative preregistered HM+S primary result remains unchanged.
+
