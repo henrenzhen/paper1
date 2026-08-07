@@ -59,6 +59,10 @@
     "rows_checked": 784
   },
   "network_requests_performed": 0,
+  "outputs": {
+    "full_prompt_index.csv": "b0a4a5a78e4e383fd6e36d50a5749d760ee72e68be226fe045f952a84cbfa475",
+    "full_request_preflight.jsonl": "738c5ac9d93c70602c776315ee3d1dd8f4f4b36571bcf1139f4c35d642f37866"
+  },
   "pilot_basis": {
     "completion_tokens": 4888,
     "estimated_cost_usd": 0.004458439999999999,
@@ -67,6 +71,6 @@
   },
   "script": {
     "path": "data_v4/scripts/build_future3_full_prompt_preflight.py",
-    "sha256": "225168aa938eca1979d87d89cbb4be5d0d6d2feb9f0158501b15d2622dddd766"
+    "sha256": "2b3d81bd0aba55f4650ce54ebda9bba777271b2b83d04e515a7969582481c2a9"
   }
 }

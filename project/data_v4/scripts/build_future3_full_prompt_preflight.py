@@ -313,6 +313,12 @@ def main() -> None:
                 PILOT_MANIFEST,
             )
         },
+        "outputs": {
+            "full_request_preflight.jsonl": sha256_file(
+                output / "full_request_preflight.jsonl"
+            ),
+            "full_prompt_index.csv": sha256_file(output / "full_prompt_index.csv"),
+        },
         "counts": {
             "requests_prepared_not_sent": len(requests),
             "source_rows_audit_only": dict(sorted(source_counts.items())),
