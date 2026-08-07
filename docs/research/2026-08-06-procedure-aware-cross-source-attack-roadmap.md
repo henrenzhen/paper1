@@ -2,7 +2,7 @@
 
 > 记录日期：2026-08-06；最近核验：2026-08-07
 > 状态：三源 `P-source` 主实验、30条开发试点、784条正式DeepSeek生成、HM+S/HM+P/HM+T/HM+ST和全部预注册统计均已完成；核心融合主张已按预注册规则判定为缺乏证据。
-> 最近修订：DeepSeek直接Top-5 `B0` 的来源等权NDCG@5为0.2028，但预注册`HM+S`仅0.1106，低于HM的0.1245（差值-0.0139，95% CI [-0.0214,-0.0073]）；事后探索`HM+B0`也未超过B0。当前证据支持“LLM直接排序含跨来源信号”，不支持“LLM摘要probe与转移主干互补”。
+> 最近修订：DeepSeek直接Top-5 `B0` 的来源等权NDCG@5为0.2028；事后探索`T+B0`为0.2053，相对B0仅+0.0025且95% CI [-0.0007,+0.0078]。Unit42官方85个bundle中的153个campaign已完成审计，0个具有合格的技术执行顺序，不能直接升级为第四折。当前证据支持“LLM直接排序含跨来源信号”，不支持现有摘要probe或统计主干提供稳定互补增益。
 > 性质：本文档记录论文级路线、决策依据与执行顺序；具体数据哈希、超参数、API 参数和统计实现以冻结实验协议为准。
 
 ## 1. 一句话路线
@@ -97,7 +97,7 @@
 
 原 v7 预期的816/786因CTID旧解析器把嵌套`technique`字典当步骤、并从任意文本抽取ID而失效。v8.1只读取顶层结构化`technique.attack_id`，排除26个无法映射的非ATT&CK标签，并完成确定性重建；上述814/784是正式分母。任何后续campaign消失、分母变化或路径不一致，仍必须先升级协议，不得在实验中临场修补。
 
-### 4.2 Unit42 第四来源候选
+### 4.2 Unit42 第四来源审计结论
 
 SECRYPT 的公开仓库表明其 Markov 数据使用 Unit42 Playbook Viewer 与 MITRE Attack Flow。真正值得评估的是 **Unit42 原始 playbook**，而不是论文生成的全部路径或预训练转移矩阵。
 
@@ -115,7 +115,17 @@ Unit42 只有全部通过以下审计后才可加入：
 
 所有来自同一 bundle/报告的路径必须绑定同一个 group id，并在划分、bootstrap 和敏感性分析中作为同一独立单元处理。不得用 DFS 路径数充当 campaign 数、样本独立性或统计功效。
 
-若通过，Unit42 可形成第四折 LODO，显著加强跨来源证据；若不通过，只作为外部诊断或数据构建讨论。
+冻结审计 `unit42_playbook_sequence_v1` 已在官方归档 commit `4cdeeb3378c7f2da1b7f2d93d8bc1d6582ef1100` 上完成：
+
+- `playbooks.json` 83个索引项，`playbook_json/` 85个有效bundle；
+- 153个campaign，其中151个关联至少两个ATT&CK技术；
+- 2,641条campaign→attack-pattern `uses`边，全部是成员关系；
+- 0条attack-pattern→attack-pattern边；
+- 0个显式step/order/sequence/next/precedes/follows/execution-time字段；
+- 152/150个campaign有`first_seen/last_seen`，但只界定campaign整体区间；
+- **合格有序campaign：0/153。**
+
+因此Unit42被排除为可直接加入的第四序列来源。不得按`object_refs`位置、relationship `created`、战术阶段或membership star上的DFS构造顺序。若以后回到Unit42，只能从其对应原始叙事报告重新抽取明确事件顺序；这将是一套新数据，必须另写冻结协议，不能称为现有bundle的直接解析。
 
 ### 4.3 不进入主实验的数据
 
@@ -301,6 +311,7 @@ v8 必须在看到外层结果前明确：`HM+S` 是否替代 v7 的 `S` 成为�
 | HM+T | 0.1202 | 0.1470 | 0.1063 | 0.1245 |
 | HM+ST | 0.1414 | 0.1470 | 0.0645 | 0.1176 |
 | B0（DeepSeek直接Top-5诊断） | 0.1943 | 0.2401 | 0.1741 | 0.2028 |
+| T+B0（事后探索） | 0.1944 | 0.2401 | 0.1815 | 0.2053 |
 
 当前结论必须按以下边界表述：
 
@@ -317,7 +328,8 @@ v8 必须在看到外层结果前明确：`HM+S` 是否替代 v7 的 `S` 成为�
 10. `HM+S`只比置换控制`HM+P`高0.0005，CI跨0；比`HM+R`高0.0004，CI跨0。当前summary→BGE-M3→MLP probe链路没有得到可归因的内容增益。
 11. HM+T三个外层折均由inner-LODO选择战术权重0，精确退化为HM。HM+ST只在CTID高于HM/HM+S，另外两源分别退化为纯HM和纯S；只满足1/3来源，预注册互补性条件不成立。
 12. B0在三个来源均高于HM，来源等权NDCG@5为0.2028；相对A0为+0.0596，95% CI [0.0157,0.1077]。这说明DeepSeek的直接候选排序存在跨来源信号，但它是诊断结果，不等于融合主张成立。
-13. 事后冻结的探索性rank fusion得到`HM+B0=0.1965`，低于B0；`HM+B0-B0=-0.0064`，95% CI [-0.0216,0.0066]。因此现有HM转移分支未显示对直接LLM排序的互补价值，该结果必须在新来源上前瞻确认后才能形成方法主张。
+13. 事后冻结的探索性rank fusion得到`HM+B0=0.1965`，低于B0；`HM+B0-B0=-0.0064`，95% CI [-0.0216,0.0066]。准确结论是“当前HM融合未检出增量，也不能排除小幅增益或损害”，不得写成所有转移信息确定无互补价值。
+14. 使用更合适的软战术主干后，`T+B0=0.2053`，相对B0为+0.0025，95% CI [-0.0007,+0.0078]；相对T为+0.0467，95% CI [+0.0094,+0.0891]。这封闭了“HM太弱导致融合假阴性”的漏洞，但仍未达到可声称互补的统计证据。
 
 至此，已经排除了“简单加容量”“原始文本直接编码”“摘要embedding probe”“战术软先验”“Markov beam约束”和“LSTM-Markov混合”六类替代方案。核心融合方法在当前三源任务设定下缺乏证据；但B0表明问题不等于“LLM完全无信号”，更可能是监督probe压缩和转移融合路径丢失了零样本LLM的排序能力。
 
@@ -404,15 +416,15 @@ likely_next_intents
 
 ### 阶段 1：完成数据、SECRYPT 与 Unit42 审计
 
-**状态：三源数据与SECRYPT划分审计已完成；Unit42、统一coverage矩阵和四源升级仍待做。**
+**状态：三源数据、SECRYPT划分和Unit42顺序审计已完成；Unit42不具备第四折所需顺序，统一coverage矩阵仍待做。**
 
 1. 已重建并核对898步、814个三源future-3样本；
 2. 已验证784行主评估、30行开发集和10/35/27个campaign分母；
 3. 已运行唯一键、时序、闭集、prompt字段和文本ID清洗泄漏断言；
 4. 已固化SECRYPT公开仓库并复核4,849 chains、132,621 occurrences、127,772 pairs及论文128,413的矛盾；
 5. 已完成`P-pair/P-campaign`简单基线、重复率与确定性审计；
-6. 待对Unit42原始playbook做独立可行性、依赖与许可审计；
-7. 待用统一定义重算各源technique/tactic coverage并决定是否升级四源协议。
+6. 已完成Unit42官方playbook审计：许可清楚，但0/153 campaign具有可接受的技术顺序，直接四源升级终止；
+7. 待用统一定义重算各源technique/tactic coverage；如需新来源，必须另行搜索显式有序数据或从原始报告重建。
 
 ### 阶段 2：先跑全部非 LLM 基线
 
@@ -469,7 +481,7 @@ likely_next_intents
 
 ### 阶段 5：统计、机制与决策
 
-**状态：核心判定已完成。** campaign bootstrap、seen/unseen、文本长度和目标基数分层均已落盘；HM+S判死与HM+ST互补性不成立已经封口。CTID leave-one-campaign influence与第四来源前瞻确认仍待完成。
+**状态：核心判定已完成。** campaign bootstrap、seen/unseen、文本长度和目标基数分层均已落盘；HM+S判死与HM+ST互补性不成立已经封口。T+B0事后探索没有检出相对B0的可靠增量；CTID leave-one-campaign influence与其他新来源上的前瞻确认仍待完成。
 
 1. 计算 campaign-macro 指标和 cluster bootstrap CI；
 2. 完成 seen/unseen、文本长度和目标基数分层；
@@ -585,13 +597,14 @@ likely_next_intents
 
 后续按证据价值排序：
 
-1. 审计Unit42原始playbook的独立campaign、文本、许可和与现有来源的重合；在查看结果前冻结第四折。
-2. 在新来源上前瞻验证B0与一个**事先定义**的直接LLM reranker/校准器；不得复用三源结果调权后再称预注册。
-3. 完成CTID leave-one-campaign influence，确认B0与各基线差值是否被少数campaign主导。
-4. 完成TIE-local/KUW原式核验和`P-pair/P-campaign`神经模型，补齐相关工作公平对比。
-5. 生成统一technique/tactic coverage矩阵，量化粒度与划分协议的可解性变化。
-6. 依据Unit42结果二选一：若B0前瞻复现且可校准，形成“跨来源LLM直接候选排序”新方法；若不能复现，转向benchmark/现实检验论文。
-7. 最后再改论文方法、实验与讨论章节；当前不得继续润色原“HM+S有效”叙事。
+1. 完成CTID leave-one-campaign influence，确认B0与各基线差值是否被少数campaign主导。
+2. 搜索其他具有显式事件顺序和procedure文本的新来源；Unit42 bundle已判定不合格，不再把它当作既定第四折。
+3. 若选择从Unit42对应叙事报告重新抽取顺序，先冻结报告选择、事件抽取、分支线性化和独立group规则，再构建全新数据。
+4. 在真正未参与本轮选择的新来源上前瞻验证B0与一个**事先定义**的直接LLM reranker/校准器；不得复用三源T+B0权重后再称预注册。
+5. 完成TIE-local/KUW原式核验和`P-pair/P-campaign`神经模型，补齐相关工作公平对比。
+6. 生成统一technique/tactic coverage矩阵，量化粒度与划分协议的可解性变化。
+7. 若B0前瞻复现且可校准，形成“跨来源LLM直接候选排序”新方法；若不能复现，转向benchmark/现实检验论文。
+8. 最后再改论文方法、实验与讨论章节；当前不得继续润色原“HM+S有效”叙事。
 
 ## 15. 关键参考
 
