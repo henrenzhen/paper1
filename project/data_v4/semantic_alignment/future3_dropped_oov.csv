@@ -1,0 +1,13 @@
+source,campaign_id,prefix_len,prefix_endpoint_step_id,target_parent_ids,oov_target_parent_ids
+attack_flow,FIN13 Case 1,26,attack_flow::FIN13 Case 1::e5b25470-9b73-4a90-abad-efaf56a241a7,"[""T1595"",""T1570"",""T1533""]","[""T1533""]"
+attack_flow,FIN13 Case 1,27,attack_flow::FIN13 Case 1::6e420205-86d5-457c-9952-0eb1d4d0c29b,"[""T1570"",""T1533"",""T1021""]","[""T1533""]"
+attack_flow,FIN13 Case 1,28,attack_flow::FIN13 Case 1::5f223e58-a5d8-406e-8ad9-72a80b0abc38,"[""T1533"",""T1021"",""T1111""]","[""T1533""]"
+attack_flow,NotPetya,5,attack_flow::NotPetya::698fd2b3-f021-4f74-8141-d48ba11ce09c,"[""T1057"",""T1003"",""T0866""]","[""T0866""]"
+attack_flow,NotPetya,6,attack_flow::NotPetya::3d221636-c915-4e2a-903a-e10047a1f34a,"[""T1003"",""T0866"",""T1055""]","[""T0866""]"
+attack_flow,NotPetya,7,attack_flow::NotPetya::2010cb6c-cca8-45a4-99ca-ed2a2ace8d45,"[""T0866"",""T1055"",""T1218""]","[""T0866""]"
+attack_flow,Target Breach,5,attack_flow::Target Breach::8b0ac8bf-9642-4c25-811c-781942284dac,"[""T1505"",""T1105"",""T1029""]","[""T1029""]"
+attack_flow,Target Breach,6,attack_flow::Target Breach::3d2dfd9d-c7a5-40e9-aa7c-5b987d732c86,"[""T1105"",""T1029"",""T1570""]","[""T1029""]"
+attack_flow,Target Breach,7,attack_flow::Target Breach::b8a0b6a3-554c-4cdc-87c0-03c916e52765,"[""T1029"",""T1570"",""T1557""]","[""T1029""]"
+stockpile,0b73bf34-fc5b-48f7-9194-dce993b915b1,3,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0002::85341c8c-4ecb-4579-8f53-43e3e91d7617,"[""T1016"",""T1499""]","[""T1499""]"
+stockpile,0b73bf34-fc5b-48f7-9194-dce993b915b1,4,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0004::9a30740d-3aa8-4c23-8efa-d51215e8a5b9,"[""T1016"",""T1499""]","[""T1499""]"
+stockpile,0b73bf34-fc5b-48f7-9194-dce993b915b1,5,stockpile::0b73bf34-fc5b-48f7-9194-dce993b915b1::0005::a0676fe1-cd52-482e-8dde-349b73f9aa69,"[""T1499""]","[""T1499""]"

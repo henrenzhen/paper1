@@ -1,0 +1,1311 @@
+{
+  "attack_flow_audit": {
+    "cumulative_sha256": "308d52a0e63e79bbfbcb37b89442fc0f960c9ba5d6ecebe27cd9cf23a65a5e9f",
+    "per_campaign": {
+      "Black Basta Ransomware": {
+        "authoritative_audit": {
+          "actions": 38,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 73,
+          "graph_nodes": 1065,
+          "longest_graph_path_nodes": 29,
+          "longest_path_actions": 25,
+          "rows": 24,
+          "unresolved_lines": 0
+        },
+        "steps": 25
+      },
+      "CISA AA22-138B VMWare Workspace (Alt)": {
+        "authoritative_audit": {
+          "actions": 9,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 21,
+          "graph_nodes": 350,
+          "longest_graph_path_nodes": 11,
+          "longest_path_actions": 9,
+          "rows": 8,
+          "unresolved_lines": 0
+        },
+        "steps": 9
+      },
+      "CISA AA22-138B VMWare Workspace (TA1)": {
+        "authoritative_audit": {
+          "actions": 10,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 22,
+          "graph_nodes": 353,
+          "longest_graph_path_nodes": 10,
+          "longest_path_actions": 9,
+          "rows": 8,
+          "unresolved_lines": 0
+        },
+        "steps": 9
+      },
+      "CISA AA22-138B VMWare Workspace (TA2)": {
+        "authoritative_audit": {
+          "actions": 11,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 30,
+          "graph_nodes": 493,
+          "longest_graph_path_nodes": 14,
+          "longest_path_actions": 11,
+          "rows": 10,
+          "unresolved_lines": 0
+        },
+        "steps": 11
+      },
+      "CISA Iranian APT": {
+        "authoritative_audit": {
+          "actions": 22,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 51,
+          "graph_nodes": 830,
+          "longest_graph_path_nodes": 23,
+          "longest_path_actions": 22,
+          "rows": 21,
+          "unresolved_lines": 0
+        },
+        "steps": 22
+      },
+      "Cobalt Kitty Campaign": {
+        "authoritative_audit": {
+          "actions": 27,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 61,
+          "graph_nodes": 821,
+          "longest_graph_path_nodes": 19,
+          "longest_path_actions": 12,
+          "rows": 11,
+          "unresolved_lines": 0
+        },
+        "steps": 12
+      },
+      "Conti CISA Alert": {
+        "authoritative_audit": {
+          "actions": 13,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 41,
+          "graph_nodes": 572,
+          "longest_graph_path_nodes": 17,
+          "longest_path_actions": 6,
+          "rows": 5,
+          "unresolved_lines": 0
+        },
+        "steps": 6
+      },
+      "Conti PWC": {
+        "authoritative_audit": {
+          "actions": 5,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 16,
+          "graph_nodes": 254,
+          "longest_graph_path_nodes": 9,
+          "longest_path_actions": 4,
+          "rows": 3,
+          "unresolved_lines": 0
+        },
+        "steps": 4
+      },
+      "Conti Ransomware": {
+        "authoritative_audit": {
+          "actions": 18,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 38,
+          "graph_nodes": 593,
+          "longest_graph_path_nodes": 21,
+          "longest_path_actions": 16,
+          "rows": 15,
+          "unresolved_lines": 0
+        },
+        "steps": 16
+      },
+      "DFIR - BumbleBee Round 2": {
+        "authoritative_audit": {
+          "actions": 19,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 41,
+          "graph_nodes": 449,
+          "longest_graph_path_nodes": 15,
+          "longest_path_actions": 13,
+          "rows": 12,
+          "unresolved_lines": 0
+        },
+        "steps": 13
+      },
+      "Equifax Breach": {
+        "authoritative_audit": {
+          "actions": 12,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 24,
+          "graph_nodes": 408,
+          "longest_graph_path_nodes": 14,
+          "longest_path_actions": 9,
+          "rows": 8,
+          "unresolved_lines": 0
+        },
+        "steps": 9
+      },
+      "FIN13 Case 1": {
+        "authoritative_audit": {
+          "actions": 36,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 111,
+          "graph_nodes": 1725,
+          "longest_graph_path_nodes": 50,
+          "longest_path_actions": 32,
+          "rows": 31,
+          "unresolved_lines": 0
+        },
+        "steps": 32
+      },
+      "FIN13 Case 2": {
+        "authoritative_audit": {
+          "actions": 16,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 55,
+          "graph_nodes": 888,
+          "longest_graph_path_nodes": 25,
+          "longest_path_actions": 15,
+          "rows": 14,
+          "unresolved_lines": 0
+        },
+        "steps": 15
+      },
+      "Gootloader": {
+        "authoritative_audit": {
+          "actions": 36,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 90,
+          "graph_nodes": 1315,
+          "longest_graph_path_nodes": 42,
+          "longest_path_actions": 30,
+          "rows": 29,
+          "unresolved_lines": 0
+        },
+        "steps": 30
+      },
+      "Hancitor DLL": {
+        "authoritative_audit": {
+          "actions": 22,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 56,
+          "graph_nodes": 882,
+          "longest_graph_path_nodes": 23,
+          "longest_path_actions": 20,
+          "rows": 19,
+          "unresolved_lines": 0
+        },
+        "steps": 20
+      },
+      "Ivanti Vulnerabilities": {
+        "authoritative_audit": {
+          "actions": 18,
+          "back_edges_removed": [
+            {
+              "source_action_technique": "T1003.001",
+              "source_instance": "896b159a-25f0-42a2-acd9-bd1df86da91b",
+              "source_node_type": "action",
+              "target_action_technique": "T1021.001",
+              "target_instance": "12d166be-c90d-4228-8b93-70ba5426da87",
+              "target_node_type": "action"
+            },
+            {
+              "source_action_technique": "",
+              "source_instance": "e972a0d3-e05d-46cc-bb86-7feb6e6e5128",
+              "source_node_type": "asset",
+              "target_action_technique": "T1021.001",
+              "target_instance": "12d166be-c90d-4228-8b93-70ba5426da87",
+              "target_node_type": "action"
+            }
+          ],
+          "cycle_edges_skipped": 2,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 1,
+          "cyclic_sccs": [
+            {
+              "action_techniques": [
+                "T1021.001",
+                "T1003.001"
+              ],
+              "selected_path_action_techniques": [
+                "T1021.001"
+              ],
+              "selected_path_nodes": 1,
+              "size": 3
+            }
+          ],
+          "dynamic_lines": 45,
+          "graph_nodes": 708,
+          "longest_graph_path_nodes": 9,
+          "longest_path_actions": 6,
+          "rows": 5,
+          "unresolved_lines": 0
+        },
+        "steps": 6
+      },
+      "JP Morgan Breach": {
+        "authoritative_audit": {
+          "actions": 11,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 29,
+          "graph_nodes": 462,
+          "longest_graph_path_nodes": 15,
+          "longest_path_actions": 10,
+          "rows": 9,
+          "unresolved_lines": 0
+        },
+        "steps": 10
+      },
+      "MITRE NERVE": {
+        "authoritative_audit": {
+          "actions": 24,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 65,
+          "graph_nodes": 1002,
+          "longest_graph_path_nodes": 11,
+          "longest_path_actions": 8,
+          "rows": 7,
+          "unresolved_lines": 0
+        },
+        "steps": 8
+      },
+      "Maastricht University Ransomware": {
+        "authoritative_audit": {
+          "actions": 18,
+          "back_edges_removed": [
+            {
+              "source_action_technique": "",
+              "source_instance": "59f1a81d-5930-41d7-87fd-25297217ad6f",
+              "source_node_type": "condition",
+              "target_action_technique": "T1059.004",
+              "target_instance": "8b19cc76-f722-4b26-8100-5f96c5437ee8",
+              "target_node_type": "action"
+            }
+          ],
+          "cycle_edges_skipped": 1,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 1,
+          "cyclic_sccs": [
+            {
+              "action_techniques": [
+                "T1059.004",
+                "T1210",
+                "T1068"
+              ],
+              "selected_path_action_techniques": [
+                "T1059.004",
+                "T1210",
+                "T1068"
+              ],
+              "selected_path_nodes": 4,
+              "size": 4
+            }
+          ],
+          "dynamic_lines": 63,
+          "graph_nodes": 901,
+          "longest_graph_path_nodes": 19,
+          "longest_path_actions": 12,
+          "rows": 11,
+          "unresolved_lines": 0
+        },
+        "steps": 12
+      },
+      "Mac Malware Steals Crypto": {
+        "authoritative_audit": {
+          "actions": 6,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 23,
+          "graph_nodes": 369,
+          "longest_graph_path_nodes": 9,
+          "longest_path_actions": 5,
+          "rows": 4,
+          "unresolved_lines": 0
+        },
+        "steps": 5
+      },
+      "Marriott Breach": {
+        "authoritative_audit": {
+          "actions": 7,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 18,
+          "graph_nodes": 287,
+          "longest_graph_path_nodes": 11,
+          "longest_path_actions": 5,
+          "rows": 4,
+          "unresolved_lines": 0
+        },
+        "steps": 5
+      },
+      "Muddy Water": {
+        "authoritative_audit": {
+          "actions": 22,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 50,
+          "graph_nodes": 796,
+          "longest_graph_path_nodes": 12,
+          "longest_path_actions": 10,
+          "rows": 9,
+          "unresolved_lines": 0
+        },
+        "steps": 10
+      },
+      "NotPetya": {
+        "authoritative_audit": {
+          "actions": 23,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 58,
+          "graph_nodes": 883,
+          "longest_graph_path_nodes": 25,
+          "longest_path_actions": 17,
+          "rows": 16,
+          "unresolved_lines": 0
+        },
+        "steps": 17
+      },
+      "OceanLotus": {
+        "authoritative_audit": {
+          "actions": 23,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 43,
+          "graph_nodes": 583,
+          "longest_graph_path_nodes": 24,
+          "longest_path_actions": 21,
+          "rows": 20,
+          "unresolved_lines": 0
+        },
+        "steps": 21
+      },
+      "REvil": {
+        "authoritative_audit": {
+          "actions": 25,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 47,
+          "graph_nodes": 658,
+          "longest_graph_path_nodes": 26,
+          "longest_path_actions": 19,
+          "rows": 18,
+          "unresolved_lines": 0
+        },
+        "steps": 19
+      },
+      "Ragnar Locker": {
+        "authoritative_audit": {
+          "actions": 16,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 41,
+          "graph_nodes": 613,
+          "longest_graph_path_nodes": 21,
+          "longest_path_actions": 13,
+          "rows": 12,
+          "unresolved_lines": 0
+        },
+        "steps": 13
+      },
+      "SWIFT Heist": {
+        "authoritative_audit": {
+          "actions": 6,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 17,
+          "graph_nodes": 309,
+          "longest_graph_path_nodes": 13,
+          "longest_path_actions": 5,
+          "rows": 4,
+          "unresolved_lines": 0
+        },
+        "steps": 5
+      },
+      "SearchAwesome Adware": {
+        "authoritative_audit": {
+          "actions": 11,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 10,
+          "graph_nodes": 174,
+          "longest_graph_path_nodes": 11,
+          "longest_path_actions": 11,
+          "rows": 10,
+          "unresolved_lines": 0
+        },
+        "steps": 11
+      },
+      "Shamoon": {
+        "authoritative_audit": {
+          "actions": 23,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 58,
+          "graph_nodes": 925,
+          "longest_graph_path_nodes": 23,
+          "longest_path_actions": 19,
+          "rows": 18,
+          "unresolved_lines": 0
+        },
+        "steps": 19
+      },
+      "SolarWinds": {
+        "authoritative_audit": {
+          "actions": 33,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 66,
+          "graph_nodes": 922,
+          "longest_graph_path_nodes": 30,
+          "longest_path_actions": 18,
+          "rows": 17,
+          "unresolved_lines": 0
+        },
+        "steps": 18
+      },
+      "Sony Malware": {
+        "authoritative_audit": {
+          "actions": 14,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 45,
+          "graph_nodes": 704,
+          "longest_graph_path_nodes": 22,
+          "longest_path_actions": 13,
+          "rows": 12,
+          "unresolved_lines": 0
+        },
+        "steps": 13
+      },
+      "Target Breach": {
+        "authoritative_audit": {
+          "actions": 15,
+          "back_edges_removed": [
+            {
+              "source_action_technique": "",
+              "source_instance": "08397107-cda4-4f2b-acc9-db91bf4b4e48",
+              "source_node_type": "action",
+              "target_action_technique": "",
+              "target_instance": "ec656f5c-4fe9-404f-8d9c-571cf3ebfa0b",
+              "target_node_type": "condition"
+            }
+          ],
+          "cycle_edges_skipped": 1,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 1,
+          "cyclic_sccs": [
+            {
+              "action_techniques": [
+                "T1570",
+                "T1557.001",
+                "T1074.002"
+              ],
+              "selected_path_action_techniques": [
+                "T1570",
+                "T1557.001",
+                "T1074.002"
+              ],
+              "selected_path_nodes": 4,
+              "size": 5
+            }
+          ],
+          "dynamic_lines": 34,
+          "graph_nodes": 527,
+          "longest_graph_path_nodes": 20,
+          "longest_path_actions": 12,
+          "rows": 11,
+          "unresolved_lines": 0
+        },
+        "steps": 12
+      },
+      "Tesla Kubernetes Breach": {
+        "authoritative_audit": {
+          "actions": 9,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 14,
+          "graph_nodes": 211,
+          "longest_graph_path_nodes": 5,
+          "longest_path_actions": 4,
+          "rows": 3,
+          "unresolved_lines": 0
+        },
+        "steps": 4
+      },
+      "Uber Breach": {
+        "authoritative_audit": {
+          "actions": 7,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 24,
+          "graph_nodes": 407,
+          "longest_graph_path_nodes": 12,
+          "longest_path_actions": 7,
+          "rows": 6,
+          "unresolved_lines": 0
+        },
+        "steps": 7
+      },
+      "WhisperGate": {
+        "authoritative_audit": {
+          "actions": 19,
+          "back_edges_removed": [],
+          "cycle_edges_skipped": 0,
+          "cycle_policy": "source-order DFS; remove edges pointing to gray ancestors; then solve longest path on the resulting DAG",
+          "cyclic_scc_count": 0,
+          "cyclic_sccs": [],
+          "dynamic_lines": 42,
+          "graph_nodes": 681,
+          "longest_graph_path_nodes": 25,
+          "longest_path_actions": 18,
+          "rows": 17,
+          "unresolved_lines": 0
+        },
+        "steps": 18
+      }
+    }
+  },
+  "ctid_audit": {
+    "ignored_top_level_records_without_valid_structured_attack_id": [
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "9a49d734-c69a-4a6b-b726-5a2a86edf418",
+        "top_level_item_index": "1"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "c4e2f189-ef8d-4073-abfb-1d3449af464b",
+        "top_level_item_index": "4"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "771a00b3-2b39-436d-b003-b58cacffa774",
+        "top_level_item_index": "5"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "3e20bbc1-b60a-4129-88b5-627b7b4ac17d",
+        "top_level_item_index": "6"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "349d3879-c849-493a-989e-6d7f40015f54",
+        "top_level_item_index": "10"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "b7190a39-c5f1-4955-8923-44807d8069e7",
+        "top_level_item_index": "11"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "02772b8f-4f3b-42c6-9705-1d05b33ad19a",
+        "top_level_item_index": "15"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "9b50feb8-41a2-489a-a863-75240743734c",
+        "top_level_item_index": "26"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "f6690cfd-073d-49c4-bd1b-1194aeb26780",
+        "top_level_item_index": "27"
+      },
+      {
+        "attack_id": "7.A.5",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "e7c827d6-57f8-40d0-b3a9-e03b2e4d0484",
+        "top_level_item_index": "31"
+      },
+      {
+        "attack_id": "8.A.2",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "1a9e352f-4edb-480d-b29c-66acb6c4df19",
+        "top_level_item_index": "32"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "4cedd0ef-c802-431d-a4a1-eaf1163543f3",
+        "top_level_item_index": "33"
+      },
+      {
+        "attack_id": "8.A.2",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "cefe85b8-d1e5-4077-afac-81a6622f4c66",
+        "top_level_item_index": "34"
+      },
+      {
+        "attack_id": "8.A.2",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "438939c8-e95a-4fbd-b659-06f0b0b72e47",
+        "top_level_item_index": "35"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_carbon::unknown",
+        "item_id": "00a08c4d-d023-4b2a-8244-651f37d23e2c",
+        "top_level_item_index": "43"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "cc9d5006-80d1-4dc5-863b-c38522ad5270",
+        "top_level_item_index": "1"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "e1d2f62e-0abf-4220-898b-4243d287466a",
+        "top_level_item_index": "4"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "49f05abe-1637-46c4-84ba-bd2fc0d6278f",
+        "top_level_item_index": "5"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "8d5799fe-c9b2-42a4-bb1d-a0603d9d88ea",
+        "top_level_item_index": "6"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "cb7d5320-981f-496e-bdb0-b6535025e59e",
+        "top_level_item_index": "10"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "d042e47d-0519-41e7-a0f1-3190f3fcf43d",
+        "top_level_item_index": "11"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "2386792f-7bc9-445d-b868-64a0031ea40d",
+        "top_level_item_index": "18"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "a2e76ec5-6417-4da6-8a16-62ad85b49fa8",
+        "top_level_item_index": "19"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "42859ec4-b714-48ca-be74-9438bbbaaf7b",
+        "top_level_item_index": "32"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "eddd5776-886a-4cde-97b7-46bf095ea049",
+        "top_level_item_index": "33"
+      },
+      {
+        "attack_id": "x",
+        "campaign_id": "turla_snake::unknown",
+        "item_id": "fdcbcf07-0487-4757-8b09-6c1ce93220b9",
+        "top_level_item_index": "52"
+      }
+    ],
+    "legacy_false_multitech_details": [
+      {
+        "legacy_parent_ids": [
+          "T1081",
+          "T1552"
+        ],
+        "legacy_step_id": "apt29::77",
+        "step_title": "Credentials In Files (T1081) - Private Keys Extraction"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1115",
+          "T1119"
+        ],
+        "legacy_step_id": "apt29::83",
+        "step_title": "Automated Collection (T1119) - Clipboard (T1115)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1056",
+          "T1119",
+          "T1417"
+        ],
+        "legacy_step_id": "apt29::85",
+        "step_title": "Automated Collection (T1119) - Input Capture (T1417)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1041",
+          "T1074"
+        ],
+        "legacy_step_id": "apt29::87",
+        "step_title": "Data from staged file (T1074) and Exfiltration over C2 Channel (T1041)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1105",
+          "T1134"
+        ],
+        "legacy_step_id": "apt29::89",
+        "step_title": "Remote File Copy (T1105)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1053",
+          "T1134"
+        ],
+        "legacy_step_id": "apt29::91",
+        "step_title": "Scheduled Tasks (T1053)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1018",
+          "T1059"
+        ],
+        "legacy_step_id": "apt29::93",
+        "step_title": "Remote System Discovery (T1018)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1083",
+          "T1134"
+        ],
+        "legacy_step_id": "apt29::97",
+        "step_title": "File and Directory Discovery (T1083)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1059",
+          "T1119"
+        ],
+        "legacy_step_id": "apt29::105",
+        "step_title": "Automated document collection (T1119)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1041",
+          "T1074"
+        ],
+        "legacy_step_id": "apt29::107",
+        "step_title": "Data from staged file (T1074) and Exfiltration over C2 Channel (T1041)"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1028",
+          "T1105"
+        ],
+        "legacy_step_id": "apt29::145",
+        "step_title": "Remote Connection (T1028) & Remote File Copy (T1105) & Credential Dumping"
+      },
+      {
+        "legacy_parent_ids": [
+          "T1222",
+          "T1489"
+        ],
+        "legacy_step_id": "wizard_spider::65",
+        "step_title": "Wizard Spider Runs kill.bat"
+      }
+    ],
+    "legacy_false_multitech_rows": 12,
+    "legacy_recursive_rows": 702,
+    "parser": "top-level YAML records; label only technique.attack_id",
+    "per_campaign": {
+      "apt29::unknown": {
+        "steps_after_consecutive_parent_dedup": 65,
+        "top_level_objects": 79,
+        "valid_structured_technique_steps": 79
+      },
+      "carbanak::unknown": {
+        "steps_after_consecutive_parent_dedup": 21,
+        "top_level_objects": 24,
+        "valid_structured_technique_steps": 24
+      },
+      "fin6::unknown": {
+        "steps_after_consecutive_parent_dedup": 18,
+        "top_level_objects": 27,
+        "valid_structured_technique_steps": 27
+      },
+      "fin7::unknown": {
+        "steps_after_consecutive_parent_dedup": 10,
+        "top_level_objects": 10,
+        "valid_structured_technique_steps": 10
+      },
+      "menu_pass::unknown": {
+        "steps_after_consecutive_parent_dedup": 12,
+        "top_level_objects": 15,
+        "valid_structured_technique_steps": 15
+      },
+      "oilrig::unknown": {
+        "steps_after_consecutive_parent_dedup": 37,
+        "top_level_objects": 44,
+        "valid_structured_technique_steps": 44
+      },
+      "sandworm::unknown": {
+        "steps_after_consecutive_parent_dedup": 33,
+        "top_level_objects": 40,
+        "valid_structured_technique_steps": 40
+      },
+      "turla_carbon::unknown": {
+        "steps_after_consecutive_parent_dedup": 25,
+        "top_level_objects": 45,
+        "valid_structured_technique_steps": 30
+      },
+      "turla_snake::unknown": {
+        "steps_after_consecutive_parent_dedup": 28,
+        "top_level_objects": 53,
+        "valid_structured_technique_steps": 42
+      },
+      "wizard_spider::unknown": {
+        "steps_after_consecutive_parent_dedup": 34,
+        "top_level_objects": 38,
+        "valid_structured_technique_steps": 38
+      }
+    }
+  },
+  "description_summary": {
+    "attack_flow": {
+      "ge40": 426,
+      "has_description": 464,
+      "lt40": 40,
+      "median_clean_chars": 76.5,
+      "missing_description": 2,
+      "raw_description_had_attack_id": 0,
+      "steps": 466,
+      "truncated": 0
+    },
+    "ctid": {
+      "ge40": 238,
+      "has_description": 282,
+      "lt40": 45,
+      "median_clean_chars": 69,
+      "missing_description": 1,
+      "raw_description_had_attack_id": 3,
+      "steps": 283,
+      "truncated": 0
+    },
+    "stockpile": {
+      "ge40": 64,
+      "has_description": 149,
+      "lt40": 85,
+      "median_clean_chars": 38,
+      "missing_description": 0,
+      "raw_description_had_attack_id": 0,
+      "steps": 149,
+      "truncated": 0
+    }
+  },
+  "development_mapping_status_counts": {
+    "deterministic_stratum_replacement": 4,
+    "direct_prefix_match": 26
+  },
+  "dropped_oov_future3_rows": 12,
+  "future3_target_size_counts": {
+    "1": 81,
+    "2": 153,
+    "3": 580
+  },
+  "gates": {
+    "clean_description_attack_id_matches": 0,
+    "development_counts": {
+      "attack_flow": 10,
+      "ctid": 10,
+      "stockpile": 10
+    },
+    "future3_counts": {
+      "attack_flow": 422,
+      "ctid": 273,
+      "stockpile": 119
+    },
+    "main_campaign_counts": {
+      "attack_flow": 35,
+      "ctid": 10,
+      "stockpile": 27
+    },
+    "main_counts": {
+      "attack_flow": 412,
+      "ctid": 263,
+      "stockpile": 109
+    },
+    "passed": true,
+    "step_counts": {
+      "attack_flow": 466,
+      "ctid": 283,
+      "stockpile": 149
+    },
+    "unique_sample_ids": 814,
+    "unique_step_keys": 898
+  },
+  "generated_at": "2026-08-07T04:06:10.196362+00:00",
+  "inputs": {
+    "attack_flow_files": {
+      "data_v2/repro_external/attack_flow/corpus/Black Basta Ransomware.afb": "7a899ca862eaa48b85da60e8e079095fba9e9cd3a54b273d1db82884c8b552aa",
+      "data_v2/repro_external/attack_flow/corpus/CISA AA22-138B VMWare Workspace (Alt).afb": "bd9a4110db6c3d3e5f4692b23d9246bfe76b35f3aed6b322656a5ddefe74f5fa",
+      "data_v2/repro_external/attack_flow/corpus/CISA AA22-138B VMWare Workspace (TA1).afb": "11b9db66e55c792742e1d9863030e7dcaddbe83472dce5f2778b1f44742e22b7",
+      "data_v2/repro_external/attack_flow/corpus/CISA AA22-138B VMWare Workspace (TA2).afb": "b82f840b8e5f36376a40c1c0ce09904c60994746e72ae15c6979fb6b8dce65e0",
+      "data_v2/repro_external/attack_flow/corpus/CISA Iranian APT.afb": "6a25d526e4c33a70b70d733d70ca4d759caa18f939c7c06703159ec3f5cb4702",
+      "data_v2/repro_external/attack_flow/corpus/Cobalt Kitty Campaign.afb": "0fa8f27fdcf7e822de2927b4c8f7aec030c12c99b6e93d97deff9bdc6338814b",
+      "data_v2/repro_external/attack_flow/corpus/Conti CISA Alert.afb": "8fd37257a93caaf0da2e395404165adc0bfce0b41c67df21ec37e7a84b53cb6c",
+      "data_v2/repro_external/attack_flow/corpus/Conti PWC.afb": "358080c1fccfd660b178e1b83b7a71e9e9f25157a9099332d658cd9da41f6107",
+      "data_v2/repro_external/attack_flow/corpus/Conti Ransomware.afb": "f728b852a7cf15d2b43305f97344e89534853cf59252ff7317b36c38f24a71ae",
+      "data_v2/repro_external/attack_flow/corpus/DFIR - BumbleBee Round 2.afb": "4aed30c8f617bcc77e4375ff09d9a9701173fb5a79db09afa6c0019ce25784d0",
+      "data_v2/repro_external/attack_flow/corpus/Equifax Breach.afb": "ab88baa8960094edf74e1a2b481ed0dd5e342d9eb8599e7670a070b539fc8340",
+      "data_v2/repro_external/attack_flow/corpus/Example Attack Tree.afb": "013fcd76f6c104a420d860be9c88d9549f5f0508ba030a684ede139e05612b1f",
+      "data_v2/repro_external/attack_flow/corpus/FIN13 Case 1.afb": "3d0c8ea7c4cc19b964f3510fe6c77d793dc7dbd701877dd955389014186513b5",
+      "data_v2/repro_external/attack_flow/corpus/FIN13 Case 2.afb": "af34b6d95652ef08cfa6526fb5146bbc91324d01931e7e11b69aa20c69f7f4cf",
+      "data_v2/repro_external/attack_flow/corpus/Gootloader.afb": "6216133af80d3bfb991c67ea212d79227c4f5bbfb3bf306ee0cb650dca6abcf9",
+      "data_v2/repro_external/attack_flow/corpus/Hancitor DLL.afb": "9ae90e1553e633b286b5a06f5ae50df064e595ac2e5f6db2797bf1a323304b34",
+      "data_v2/repro_external/attack_flow/corpus/Ivanti Vulnerabilities.afb": "181c20ae4fafa0f5b4e3a634642789d08a02f37bcf0a2fc2fa9fc59c68c220a6",
+      "data_v2/repro_external/attack_flow/corpus/JP Morgan Breach.afb": "7cff8997a716207373efb6bb042a4f9f3ae1da63bf57a294fe994d9e56a6e324",
+      "data_v2/repro_external/attack_flow/corpus/MITRE NERVE.afb": "9faaae34063541b2d9f8a846e23e94dfdf3f07f1667cedb5e5c50a60963584f0",
+      "data_v2/repro_external/attack_flow/corpus/Maastricht University Ransomware.afb": "aa23ff06425680e136a09a7fb8fded043520362f5c599d02032c657606b0c442",
+      "data_v2/repro_external/attack_flow/corpus/Mac Malware Steals Crypto.afb": "dce4a3bcb8774e55276875346895db63e010564091a90866ce60829b810f8fa4",
+      "data_v2/repro_external/attack_flow/corpus/Marriott Breach.afb": "1323fe0d1bd6f0e3c37c51e874723c1a232ce4209218603d925eacf58968490b",
+      "data_v2/repro_external/attack_flow/corpus/Muddy Water.afb": "1a60358bcb7fdb1816bfb5123dbff7ee1c2461a36ff006c4d8f888c3598c1907",
+      "data_v2/repro_external/attack_flow/corpus/NotPetya.afb": "e1a794ad90e6e67c0fbab1e921e3e726ee9aacfce3b2312f287a275ccd13554d",
+      "data_v2/repro_external/attack_flow/corpus/OceanLotus.afb": "6f61e61efcd006e62a069b97e5527ecce00ae50e9006025ee0de82fd8a645f65",
+      "data_v2/repro_external/attack_flow/corpus/OpenClaw.afb": "3fd640e139fc27443db636fe67448fc59d7739370ca43ff70921c6a693766caa",
+      "data_v2/repro_external/attack_flow/corpus/REvil.afb": "9e7a30966b2d01c72e8e71fa7defa0065bee68b2b9b0b8b16d4215e051ce2f4b",
+      "data_v2/repro_external/attack_flow/corpus/Ragnar Locker.afb": "739e3d76a90f1d2b037ceea752bd83bdff1db9b4e6e131409db966df5f1136a2",
+      "data_v2/repro_external/attack_flow/corpus/SWIFT Heist.afb": "fd386f13b617812f9dbd75828346464f4a28df63687cb3d69298e99344087c89",
+      "data_v2/repro_external/attack_flow/corpus/SearchAwesome Adware.afb": "4018bc2a0a37d48fe5a27ad0fd878a177270e8b58edd6848ba5a24974e86a353",
+      "data_v2/repro_external/attack_flow/corpus/Shamoon.afb": "1aeafedf6d033af3844bd9acf13b57b8cc989aa9e36b7da108f774c587b19d73",
+      "data_v2/repro_external/attack_flow/corpus/SolarWinds.afb": "61c63e6fed9dff97071785b6e0d684f5d8c9e0e04945510f514ff19920afbb9b",
+      "data_v2/repro_external/attack_flow/corpus/Sony Malware.afb": "5a368baed9a124c9337602ca9c3a5ba20930aca2617568fdcfe42d41f1ca8971",
+      "data_v2/repro_external/attack_flow/corpus/Target Breach.afb": "4b88ba5d615401888af97998de2719eb022dc2b8fa3a759ad615728e7af0cbae",
+      "data_v2/repro_external/attack_flow/corpus/Tesla Kubernetes Breach.afb": "42baa8f7232c359ecc88e50f3bab423ef68b24ad34e89d293cc1de0b8287d797",
+      "data_v2/repro_external/attack_flow/corpus/ToolShell Vulnerability in Sharepoint.afb": "15cef07ce466634eb5cafdbb6dd4cecc8652054e8a3e7e4cdda3026092387dc6",
+      "data_v2/repro_external/attack_flow/corpus/Uber Breach.afb": "d1d128d7fae64902d30b882855ba30c6575931a1896f9b8584e879cd9b1bf26a",
+      "data_v2/repro_external/attack_flow/corpus/WhisperGate.afb": "313078f80b3fa9b03a57e3b75c5d20f98e35dff26fd1ea775b3f9f6330a17241"
+    },
+    "ctid_raw_yaml": {
+      "data_v2/repro_external/ctid/raw_yaml/apt29.yaml": "644f28185097f545e522ca8ed04b43f19ec8b31ace864d347feb138bc56c1615",
+      "data_v2/repro_external/ctid/raw_yaml/carbanak.yaml": "ea19b5c0bb85ffb98c2fd6072a4d487b43c98b9831daa89fcb10f266039d40db",
+      "data_v2/repro_external/ctid/raw_yaml/fin6.yaml": "72522be3a107824446c55615455f2990df447aeaf463cf4e2ad376b4330ef172",
+      "data_v2/repro_external/ctid/raw_yaml/fin7.yaml": "0cf46d63a8a24b271c2993f4e5b8f07ef0f7f17dfc9af301a85d53cfb5da3f44",
+      "data_v2/repro_external/ctid/raw_yaml/menu_pass.yaml": "2b964302dd76da8744d287d4a6b5192e918310ee1f909b90e38e89dce89413c3",
+      "data_v2/repro_external/ctid/raw_yaml/oilrig.yaml": "52d12e12b81e0340dc5b3a2e0eaafd71676957ed1831b2f6e809c2773df6356b",
+      "data_v2/repro_external/ctid/raw_yaml/sandworm.yaml": "e6d8902a34e83925cb1dee25f501b02026f1a67ea5d6770ec57b7500077e0f85",
+      "data_v2/repro_external/ctid/raw_yaml/turla_carbon.yaml": "48abb930d0fe54f7c9faf1b72519ea7dd67a9e5695e33efed72d0fa772a4fda2",
+      "data_v2/repro_external/ctid/raw_yaml/turla_snake.yaml": "4e0da121dc366ee04855a844ed37ea72d344c6331fbafaa6581a0c0090e22ddb",
+      "data_v2/repro_external/ctid/raw_yaml/wizard_spider.yaml": "10631ae393597bce3d290eb993aabbea622cca9ed5c8a73e1ffd373ec4ca3eca"
+    },
+    "pilot": {
+      "path": "data_v4/external_reasoning/pilot/pilot_sample_30.csv",
+      "sha256": "3d0e1dbd5f27e3bd17ddf951508787760f338bfbd6a068ba9bdf07de36ad40c0"
+    },
+    "stockpile_ability_and_profile_tree_sha256": "d071079cbc71b9aabd9353472fc60bff9d2650ff964033336602eab18aacf463",
+    "tactic_lookup": {
+      "path": "data/attack_lookup_dedup.csv",
+      "sha256": "a8368252e37ba485a8dd7429fd4544935343bd96062ea78d71befb782b5dd1b6"
+    },
+    "vocabulary": {
+      "path": "data_v2/core/rl_label_vocab.csv",
+      "sha256": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738"
+    }
+  },
+  "protocol": {
+    "addendum_path": "data_v4/protocols/LLM_semantic_future3_lodo_validation_v8.1_addendum.md",
+    "addendum_sha256": "6abacb6e062f635bfd8a435cd496b01afdd8e0bc6ca37421c580903a45212657",
+    "path": "data_v4/protocols/LLM_semantic_future3_lodo_validation_v8.md",
+    "pre_result_correction": "v8.1 CTID logical-step correction",
+    "sha256": "26c0b51a74e2295b30c9f6d7dc51addad61c08c62a366834d6fd38e58fb530a1"
+  },
+  "script": {
+    "path": "data_v4/scripts/build_future3_semantic_data.py",
+    "sha256": "df56f7c360faf808b3753c24a53cbe376fc68e5e504e1f2d7ebc37b98979d103"
+  },
+  "stockpile_audit": {
+    "ability_yaml_files": 209,
+    "cumulative_sha256": "ae7f79f1c031b276f322851a5d9578784183a593fd46981a2f9b3bef0938a326",
+    "mapped_ability_ids": 207,
+    "mapped_ability_metadata": 207,
+    "mapping_conflicts": [],
+    "missing_description_metadata_instances": [],
+    "per_campaign": {
+      "01c96671-afd3-47d4-8d31-8c116cc0221a": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/01c96671-afd3-47d4-8d31-8c116cc0221a.yml",
+        "profile_name_audit_only": "Advanced Thief via DropBox",
+        "steps": 3
+      },
+      "01d77744-2515-401a-a497-d9f7241aac3c": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/01d77744-2515-401a-a497-d9f7241aac3c.yml",
+        "profile_name_audit_only": "Check",
+        "steps": 7
+      },
+      "09ad625e-6cba-490f-afe3-5417e7edb9c6": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/09ad625e-6cba-490f-afe3-5417e7edb9c6.yml",
+        "profile_name_audit_only": "Advanced Thief via GitHub Repo",
+        "steps": 3
+      },
+      "0b5636cf-f019-4ec9-aa7c-6e4f55505374": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/0b5636cf-f019-4ec9-aa7c-6e4f55505374.yml",
+        "profile_name_audit_only": "Windows Worm #1",
+        "steps": 5
+      },
+      "0b73bf34-fc5b-48f7-9194-dce993b915b1": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/0b73bf34-fc5b-48f7-9194-dce993b915b1.yml",
+        "profile_name_audit_only": "Nosy Neighbor",
+        "steps": 6
+      },
+      "0f4c3c67-845e-49a0-927e-90ed33c044e0": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/0f4c3c67-845e-49a0-927e-90ed33c044e0.yml",
+        "profile_name_audit_only": "Discovery",
+        "steps": 12
+      },
+      "1a98b8e6-18ce-4617-8cc5-e65a1a9d490e": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/1a98b8e6-18ce-4617-8cc5-e65a1a9d490e.yml",
+        "profile_name_audit_only": "Thief",
+        "steps": 5
+      },
+      "1bac97ca-77fc-4c9a-835e-4de1b1b7f639": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/1bac97ca-77fc-4c9a-835e-4de1b1b7f639.yml",
+        "profile_name_audit_only": "Lateral Movement - Esentutl",
+        "steps": 3
+      },
+      "4c28c132-d7d7-4a04-8908-d643b7cb1d58": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/4c28c132-d7d7-4a04-8908-d643b7cb1d58.yml",
+        "profile_name_audit_only": "Stowaway",
+        "steps": 2
+      },
+      "50855e29-3b4e-4562-aa55-b3d7f93c26b8": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/50855e29-3b4e-4562-aa55-b3d7f93c26b8.yml",
+        "profile_name_audit_only": "Alice 2.0",
+        "steps": 9
+      },
+      "564ae20d-778d-4965-93dc-b523be2e2ab4": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/564ae20d-778d-4965-93dc-b523be2e2ab4.yml",
+        "profile_name_audit_only": "Super Spy",
+        "steps": 15
+      },
+      "5d3e170e-f1b8-49f9-9ee1-c51605552a08": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/5d3e170e-f1b8-49f9-9ee1-c51605552a08.yml",
+        "profile_name_audit_only": "Collection",
+        "steps": 4
+      },
+      "725226e0-45b8-4432-84ee-144d3f37ff8d": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/725226e0-45b8-4432-84ee-144d3f37ff8d.yml",
+        "profile_name_audit_only": "Windows Worm #2",
+        "steps": 4
+      },
+      "78e7504d-968f-477d-8806-4d6c04b94431": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/78e7504d-968f-477d-8806-4d6c04b94431.yml",
+        "profile_name_audit_only": "Worm",
+        "steps": 13
+      },
+      "bcdbf6b9-14c5-495c-be84-37bce32c312b": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/bcdbf6b9-14c5-495c-be84-37bce32c312b.yml",
+        "profile_name_audit_only": "Signed Binary Proxy Execution",
+        "steps": 3
+      },
+      "c220a8e6-609c-4d5b-9e1c-068ca01c2eec": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/c220a8e6-609c-4d5b-9e1c-068ca01c2eec.yml",
+        "profile_name_audit_only": "Lateral Movement - Certutil",
+        "steps": 3
+      },
+      "c724545d-a4cc-492e-8075-2ab9a699c847": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/c724545d-a4cc-492e-8075-2ab9a699c847.yml",
+        "profile_name_audit_only": "You Shall (Not) Bypass",
+        "steps": 4
+      },
+      "d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e.yml",
+        "profile_name_audit_only": "Enumerator",
+        "steps": 5
+      },
+      "dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6.yml",
+        "profile_name_audit_only": "Service Creation Lateral Movement",
+        "steps": 3
+      },
+      "ddbd1850-5fd7-41d5-a7a1-1b15dac49090": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/ddbd1850-5fd7-41d5-a7a1-1b15dac49090.yml",
+        "profile_name_audit_only": "Windows Worm #3",
+        "steps": 5
+      },
+      "de07f52d-9928-4071-9142-cb1d3bd851e8": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/de07f52d-9928-4071-9142-cb1d3bd851e8.yml",
+        "profile_name_audit_only": "Ransack",
+        "steps": 18
+      },
+      "e4324b88-8836-4803-b6b7-09b3c6cd4e94": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/e4324b88-8836-4803-b6b7-09b3c6cd4e94.yml",
+        "profile_name_audit_only": "Printer Queue",
+        "steps": 2
+      },
+      "e89a10d3-004f-4c15-b0eb-d1ba76a4b67f": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/e89a10d3-004f-4c15-b0eb-d1ba76a4b67f.yml",
+        "profile_name_audit_only": "Advanced Thief via GitHub Gist",
+        "steps": 3
+      },
+      "eddc8f03-f930-41e7-95ba-33fb87bfed74": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/eddc8f03-f930-41e7-95ba-33fb87bfed74.yml",
+        "profile_name_audit_only": "Advanced Thief",
+        "steps": 3
+      },
+      "ef4d997c-a0d1-4067-9efa-87c58682db71": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/ef4d997c-a0d1-4067-9efa-87c58682db71.yml",
+        "profile_name_audit_only": "Defense Evasion",
+        "steps": 4
+      },
+      "f98193a0-8b5b-4b5e-a5aa-e8c3adfcd4e6": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/packs/f98193a0-8b5b-4b5e-a5aa-e8c3adfcd4e6.yml",
+        "profile_name_audit_only": "Undercover",
+        "steps": 2
+      },
+      "fbc41624-1052-490c-b5ec-4fd718e2501d": {
+        "profile_file_audit_only": "data_v2/repro_external/stockpile/data/adversaries/fbc41624-1052-490c-b5ec-4fd718e2501d.yml",
+        "profile_name_audit_only": "Advanced Thief via FTP",
+        "steps": 3
+      }
+    }
+  },
+  "tactic_mapping": {
+    "candidate_labels": 184,
+    "missing_candidate_mappings": 0,
+    "provenance": "repository attack_lookup_dedup.csv; layer-source metadata identifies ATT&CK v18",
+    "tactic_order": [
+      "reconnaissance",
+      "resource-development",
+      "initial-access",
+      "execution",
+      "persistence",
+      "privilege-escalation",
+      "defense-evasion",
+      "credential-access",
+      "discovery",
+      "lateral-movement",
+      "collection",
+      "command-and-control",
+      "exfiltration",
+      "impact"
+    ]
+  }
+}

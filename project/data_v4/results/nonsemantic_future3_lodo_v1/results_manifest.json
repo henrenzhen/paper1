@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-08-07T04:05:40.176111+00:00",
+  "inputs": {
+    "main_rows": 784,
+    "samples_sha256": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "source_counts": {
+      "attack_flow": 412,
+      "ctid": 263,
+      "stockpile": 109
+    },
+    "tactic_mapping_sha256": "dfe0aa810207eac80a91a8f37452c475445e3f8a323139e090f7a343fd85e0b4",
+    "vocabulary_sha256": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738"
+  },
+  "method_card": {
+    "path": "data_v4/protocols/nonsemantic_future3_baselines_v1.md",
+    "sha256": "04c77d2ebac5009e695f351d98cd6c642bf02b5708854ce4bdafd21db2b2b34b"
+  },
+  "outputs_sha256": {
+    "aggregate_results.csv": "1aa8dd65f717cfa67b8bf43e91b8ab2fc6e71cc6521408cfb0ca8532635454f5",
+    "bootstrap_differences.csv": "2e7ef8d1f10ec3d8cd9f2d208e2bec1f7459fdc6e65a124885f273adcbff142b",
+    "bootstrap_method_metrics.csv": "46eaefe998aee0ff850ff5aec62f2aa30bba6fc8760be34a69b4acf9a7facfc2",
+    "campaign_results.csv": "a22fb9b0d70de62eac2c156a6de23d3cc3e33c3cb60a6d9b69d3e26423aaff4e",
+    "fold_results.csv": "efa9b71bea3c888fb16d47e0107524b57696ceb7d0a194d73a548787630f447a",
+    "inner_lambda_selection.csv": "917bda078c65e23f904b1f40d771b703349d0cb23d537781eab9c3b053527c8f",
+    "predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "report.md": "0e842af57256a60a93b27c5e6e849ad1c9918177f7f42b97a4e05d0e247a6f06",
+    "stdout.log": "ad0df9c172f5958f056410623c10f01d539773f676cc8e4035de01ff00b79aeb",
+    "stratified_results.csv": "ff8d90d409382d5bb3ac23aa51c2697023a32fa3dbd7d2270e53c0fb72459b88"
+  },
+  "parameters": {
+    "alpha_s": 0.1,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260807,
+    "chosen_lambda_by_held_out_source": {
+      "attack_flow": 0.0,
+      "ctid": 0.0,
+      "stockpile": 0.1
+    },
+    "lambda_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "layer_weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "methods": [
+      "A0",
+      "CO",
+      "A",
+      "K",
+      "T"
+    ]
+  },
+  "script": {
+    "path": "data_v4/scripts/run_nonsemantic_future3_lodo.py",
+    "sha256": "589de9be8bc279d0ede3278ccaf11ab9ae6bdd94ccbbd99fef748df3908a8a9c"
+  },
+  "v8_1_addendum": {
+    "path": "data_v4/protocols/LLM_semantic_future3_lodo_validation_v8.1_addendum.md",
+    "sha256": "6abacb6e062f635bfd8a435cd496b01afdd8e0bc6ca37421c580903a45212657"
+  }
+}
