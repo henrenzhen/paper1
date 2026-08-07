@@ -623,3 +623,4 @@ likely_next_intents
 - DeepOP (2025)：<https://doi.org/10.3390/electronics14020257>
 - Attack Flow 官方说明：<https://center-for-threat-informed-defense.github.io/attack-flow/overview/>
 - 当前 v7 协议：`project/data_v4/protocols/LLM_semantic_future3_lodo_validation_v7.md`
+- 下一方法开发协议：`project/data_v4/protocols/evidence_augmented_llm_reranker_development_v1.md`
