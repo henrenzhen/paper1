@@ -1,0 +1,143 @@
+2026-08-10T03:10:13.987152+00:00 run_id=20260810T031013Z_1338c419 completion_records=120 concurrency=30
+2026-08-10T03:10:14.725089+00:00 /models selected model=deepseek-v4-flash rule=exact_match
+2026-08-10T03:10:15.797651+00:00 completed 26/120 slot=attack_flow:medium:4 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.017332+00:00 completed 30/120 slot=attack_flow:short:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.221952+00:00 completed 10/120 slot=attack_flow:long:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.222277+00:00 completed 28/120 slot=attack_flow:medium:4 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:16.233409+00:00 retry slot=attack_flow:long:1 arm=EDLR status=invalid_top5 delay=1.735s
+2026-08-10T03:10:16.261601+00:00 completed 1/120 slot=attack_flow:long:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.277950+00:00 completed 27/120 slot=attack_flow:medium:4 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:16.285240+00:00 completed 19/120 slot=attack_flow:medium:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:16.297494+00:00 completed 5/120 slot=attack_flow:long:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.300710+00:00 completed 13/120 slot=attack_flow:medium:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.302698+00:00 completed 21/120 slot=attack_flow:medium:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.311121+00:00 completed 17/120 slot=attack_flow:medium:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.320731+00:00 completed 7/120 slot=attack_flow:long:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:16.324899+00:00 completed 25/120 slot=attack_flow:medium:4 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.328204+00:00 completed 2/120 slot=attack_flow:long:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.340338+00:00 completed 22/120 slot=attack_flow:medium:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.384083+00:00 completed 9/120 slot=attack_flow:long:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.412653+00:00 completed 16/120 slot=attack_flow:medium:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:16.418041+00:00 completed 18/120 slot=attack_flow:medium:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.434502+00:00 completed 20/120 slot=attack_flow:medium:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:16.436455+00:00 completed 14/120 slot=attack_flow:medium:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.445499+00:00 completed 6/120 slot=attack_flow:long:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:16.452004+00:00 completed 12/120 slot=attack_flow:long:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:16.452367+00:00 completed 11/120 slot=attack_flow:long:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:16.455628+00:00 completed 23/120 slot=attack_flow:medium:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:16.458021+00:00 completed 15/120 slot=attack_flow:medium:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:16.462944+00:00 completed 8/120 slot=attack_flow:long:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:16.481122+00:00 completed 29/120 slot=attack_flow:short:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:16.493755+00:00 completed 4/120 slot=attack_flow:long:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:16.604928+00:00 completed 24/120 slot=attack_flow:medium:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:17.588810+00:00 completed 31/120 slot=attack_flow:short:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:17.668237+00:00 completed 32/120 slot=attack_flow:short:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:17.986292+00:00 completed 36/120 slot=attack_flow:short:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:18.082315+00:00 completed 53/120 slot=ctid:medium:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:18.084394+00:00 completed 39/120 slot=attack_flow:short:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:18.086334+00:00 completed 37/120 slot=attack_flow:short:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:18.111272+00:00 completed 41/120 slot=ctid:long:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:18.111603+00:00 completed 40/120 slot=attack_flow:short:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:18.112717+00:00 completed 35/120 slot=attack_flow:short:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:18.119807+00:00 completed 45/120 slot=ctid:long:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:18.139183+00:00 completed 55/120 slot=ctid:medium:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:18.140851+00:00 completed 52/120 slot=ctid:long:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:18.284075+00:00 completed 51/120 slot=ctid:long:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:18.308085+00:00 completed 34/120 slot=attack_flow:short:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:18.318311+00:00 retry slot=ctid:medium:2 arm=EA_TOP5 status=invalid_top5 delay=1.133s
+2026-08-10T03:10:18.327851+00:00 completed 50/120 slot=ctid:long:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:18.336194+00:00 completed 44/120 slot=ctid:long:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:18.366633+00:00 completed 58/120 slot=ctid:medium:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:18.367455+00:00 completed 33/120 slot=attack_flow:short:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:18.374543+00:00 completed 47/120 slot=ctid:long:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:18.493767+00:00 retry slot=ctid:long:1 arm=UNION_LLM status=invalid_top5 delay=1.191s
+2026-08-10T03:10:18.509555+00:00 completed 59/120 slot=ctid:medium:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:18.580227+00:00 completed 46/120 slot=ctid:long:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:18.650630+00:00 retry slot=ctid:medium:1 arm=UNION_LLM status=invalid_top5 delay=1.564s
+2026-08-10T03:10:18.656459+00:00 retry slot=ctid:long:1 arm=EDLR status=invalid_summary delay=1.130s
+2026-08-10T03:10:18.889169+00:00 completed 48/120 slot=ctid:long:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:18.904400+00:00 retry slot=ctid:medium:1 arm=EDLR_SHUFFLE status=invalid_top5 delay=1.356s
+2026-08-10T03:10:19.027928+00:00 completed 38/120 slot=attack_flow:short:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:19.173090+00:00 completed 49/120 slot=ctid:long:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:19.216171+00:00 completed 60/120 slot=ctid:medium:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:19.495053+00:00 completed 61/120 slot=ctid:medium:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:19.554054+00:00 retry slot=attack_flow:long:1 arm=EDLR status=invalid_top5 delay=2.136s
+2026-08-10T03:10:19.705436+00:00 retry slot=ctid:medium:4 arm=EDLR_SHUFFLE status=invalid_top5 delay=1.537s
+2026-08-10T03:10:19.740942+00:00 completed 65/120 slot=ctid:medium:4 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:19.810722+00:00 completed 69/120 slot=ctid:short:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:19.828804+00:00 completed 71/120 slot=ctid:short:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:19.864032+00:00 retry slot=ctid:medium:3 arm=EDLR status=invalid_top5 delay=1.583s
+2026-08-10T03:10:19.982749+00:00 retry slot=ctid:medium:3 arm=UNION_LLM status=invalid_top5 delay=1.517s
+2026-08-10T03:10:19.992891+00:00 completed 64/120 slot=ctid:medium:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:20.094683+00:00 completed 67/120 slot=ctid:medium:4 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:20.103345+00:00 completed 74/120 slot=ctid:short:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:20.128959+00:00 completed 72/120 slot=ctid:short:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:20.152764+00:00 completed 76/120 slot=ctid:short:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:20.199384+00:00 completed 77/120 slot=ctid:short:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:20.204290+00:00 completed 73/120 slot=ctid:short:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:20.240259+00:00 completed 78/120 slot=ctid:short:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:20.264585+00:00 completed 66/120 slot=ctid:medium:4 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:20.288887+00:00 completed 70/120 slot=ctid:short:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:20.498625+00:00 completed 80/120 slot=ctid:short:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:20.638259+00:00 completed 79/120 slot=ctid:short:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:20.735495+00:00 retry slot=ctid:medium:2 arm=EA_TOP5 status=invalid_top5 delay=2.170s
+2026-08-10T03:10:20.754494+00:00 completed 75/120 slot=ctid:short:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:20.946068+00:00 completed 82/120 slot=stockpile:long:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:21.059483+00:00 completed 81/120 slot=stockpile:long:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:21.145574+00:00 completed 83/120 slot=stockpile:long:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:21.176168+00:00 completed 84/120 slot=stockpile:long:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:21.200255+00:00 completed 42/120 slot=ctid:long:1 arm=UNION_LLM status=ok attempts=2
+2026-08-10T03:10:21.371105+00:00 completed 87/120 slot=stockpile:long:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:21.380824+00:00 completed 88/120 slot=stockpile:long:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:21.508455+00:00 completed 86/120 slot=stockpile:long:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:21.604682+00:00 completed 85/120 slot=stockpile:long:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:21.636540+00:00 retry slot=ctid:long:1 arm=EDLR status=invalid_summary delay=2.837s
+2026-08-10T03:10:21.712051+00:00 completed 89/120 slot=stockpile:long:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:21.869230+00:00 completed 93/120 slot=stockpile:medium:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:21.884973+00:00 completed 91/120 slot=stockpile:long:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:21.910608+00:00 completed 54/120 slot=ctid:medium:1 arm=UNION_LLM status=ok attempts=2
+2026-08-10T03:10:21.997610+00:00 completed 97/120 slot=stockpile:medium:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:22.015976+00:00 retry slot=ctid:medium:1 arm=EDLR_SHUFFLE status=invalid_top5 delay=2.083s
+2026-08-10T03:10:22.038510+00:00 completed 92/120 slot=stockpile:long:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:22.050794+00:00 completed 90/120 slot=stockpile:long:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:22.084756+00:00 completed 96/120 slot=stockpile:medium:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:22.135773+00:00 completed 94/120 slot=stockpile:medium:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:22.244812+00:00 completed 95/120 slot=stockpile:medium:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:22.259759+00:00 completed 98/120 slot=stockpile:medium:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:22.517164+00:00 completed 99/120 slot=stockpile:medium:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:22.528491+00:00 completed 101/120 slot=stockpile:medium:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:22.681153+00:00 retry slot=ctid:medium:4 arm=EDLR_SHUFFLE status=invalid_top5 delay=2.919s
+2026-08-10T03:10:22.719225+00:00 completed 106/120 slot=stockpile:medium:4 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:22.763579+00:00 completed 102/120 slot=stockpile:medium:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:22.916715+00:00 completed 105/120 slot=stockpile:medium:4 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:23.018278+00:00 retry slot=ctid:medium:3 arm=EDLR status=invalid_top5 delay=2.866s
+2026-08-10T03:10:23.080929+00:00 completed 103/120 slot=stockpile:medium:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:23.084628+00:00 completed 104/120 slot=stockpile:medium:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:23.116757+00:00 completed 107/120 slot=stockpile:medium:4 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:23.140448+00:00 completed 110/120 slot=stockpile:short:1 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:23.227469+00:00 completed 109/120 slot=stockpile:short:1 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:23.272302+00:00 completed 3/120 slot=attack_flow:long:1 arm=EDLR status=ok attempts=3
+2026-08-10T03:10:23.366447+00:00 completed 111/120 slot=stockpile:short:1 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:23.377862+00:00 retry slot=ctid:medium:3 arm=UNION_LLM status=invalid_top5 delay=2.532s
+2026-08-10T03:10:23.412097+00:00 completed 114/120 slot=stockpile:short:2 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:23.571489+00:00 completed 112/120 slot=stockpile:short:1 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:23.602314+00:00 completed 108/120 slot=stockpile:medium:4 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:23.662436+00:00 completed 119/120 slot=stockpile:short:3 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:23.880479+00:00 completed 113/120 slot=stockpile:short:2 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:23.923336+00:00 completed 117/120 slot=stockpile:short:3 arm=EA_TOP5 status=ok attempts=1
+2026-08-10T03:10:24.042291+00:00 completed 116/120 slot=stockpile:short:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:24.074563+00:00 completed 118/120 slot=stockpile:short:3 arm=UNION_LLM status=ok attempts=1
+2026-08-10T03:10:24.188678+00:00 completed 120/120 slot=stockpile:short:3 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:24.213852+00:00 retry slot=ctid:medium:2 arm=EA_TOP5 status=invalid_top5 delay=4.223s
+2026-08-10T03:10:24.241096+00:00 completed 100/120 slot=stockpile:medium:2 arm=EDLR_SHUFFLE status=ok attempts=1
+2026-08-10T03:10:24.425384+00:00 completed 115/120 slot=stockpile:short:2 arm=EDLR status=ok attempts=1
+2026-08-10T03:10:25.354940+00:00 completed 56/120 slot=ctid:medium:1 arm=EDLR_SHUFFLE status=ok attempts=3
+2026-08-10T03:10:26.028263+00:00 retry slot=ctid:long:1 arm=EDLR status=invalid_summary delay=4.717s
+2026-08-10T03:10:27.037984+00:00 completed 68/120 slot=ctid:medium:4 arm=EDLR_SHUFFLE status=ok attempts=3
+2026-08-10T03:10:27.356091+00:00 retry slot=ctid:medium:3 arm=EDLR status=invalid_top5 delay=4.083s
+2026-08-10T03:10:27.504013+00:00 retry slot=ctid:medium:3 arm=UNION_LLM status=invalid_top5 delay=4.166s
+2026-08-10T03:10:29.856944+00:00 completed 57/120 slot=ctid:medium:2 arm=EA_TOP5 status=ok attempts=4
+2026-08-10T03:10:32.871124+00:00 completed 43/120 slot=ctid:long:1 arm=EDLR status=invalid_summary attempts=4
+2026-08-10T03:10:32.985852+00:00 completed 62/120 slot=ctid:medium:3 arm=UNION_LLM status=invalid_top5 attempts=4
+2026-08-10T03:10:33.054600+00:00 completed 63/120 slot=ctid:medium:3 arm=EDLR status=invalid_top5 attempts=4
+2026-08-10T03:10:33.091155+00:00 finished statuses={'ok': 117, 'invalid_summary': 1, 'invalid_top5': 2} attempts=140 estimated_cost_usd=0.02820119 all_gates_passed=False

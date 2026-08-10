@@ -1,0 +1,83 @@
+{
+  "all_mechanical_gates_passed": false,
+  "by_arm": {
+    "EA_TOP5": {
+      "all_passed": true,
+      "metrics": {
+        "changed_from_b0_rate": 0.7666666666666667,
+        "json_object_rate": 1.0,
+        "leakage_assertions_rate": 1.0,
+        "reasoning_content_empty_rate": 1.0,
+        "rows": 30,
+        "valid_summary_rate": 1.0,
+        "valid_top5_in_candidates_rate": 1.0
+      },
+      "passed": {
+        "changed_from_b0_rate": true,
+        "json_object_rate": true,
+        "leakage_assertions_rate": true,
+        "reasoning_content_empty_rate": true,
+        "rows": true,
+        "valid_summary_rate": true,
+        "valid_top5_in_candidates_rate": true
+      }
+    },
+    "EDLR": {
+      "all_passed": false,
+      "metrics": {
+        "json_object_rate": 1.0,
+        "leakage_assertions_rate": 1.0,
+        "reasoning_content_empty_rate": 1.0,
+        "rows": 30,
+        "valid_summary_rate": 0.9666666666666667,
+        "valid_top5_in_candidates_rate": 0.9666666666666667
+      },
+      "passed": {
+        "json_object_rate": true,
+        "leakage_assertions_rate": true,
+        "reasoning_content_empty_rate": true,
+        "rows": true,
+        "valid_summary_rate": false,
+        "valid_top5_in_candidates_rate": true
+      }
+    },
+    "EDLR_SHUFFLE": {
+      "all_passed": true,
+      "metrics": {
+        "json_object_rate": 1.0,
+        "leakage_assertions_rate": 1.0,
+        "reasoning_content_empty_rate": 1.0,
+        "rows": 30,
+        "valid_summary_rate": 1.0,
+        "valid_top5_in_candidates_rate": 1.0
+      },
+      "passed": {
+        "json_object_rate": true,
+        "leakage_assertions_rate": true,
+        "reasoning_content_empty_rate": true,
+        "rows": true,
+        "valid_summary_rate": true,
+        "valid_top5_in_candidates_rate": true
+      }
+    },
+    "UNION_LLM": {
+      "all_passed": true,
+      "metrics": {
+        "json_object_rate": 1.0,
+        "leakage_assertions_rate": 1.0,
+        "reasoning_content_empty_rate": 1.0,
+        "rows": 30,
+        "valid_summary_rate": 1.0,
+        "valid_top5_in_candidates_rate": 0.9666666666666667
+      },
+      "passed": {
+        "json_object_rate": true,
+        "leakage_assertions_rate": true,
+        "reasoning_content_empty_rate": true,
+        "rows": true,
+        "valid_summary_rate": true,
+        "valid_top5_in_candidates_rate": true
+      }
+    }
+  }
+}
