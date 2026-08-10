@@ -1,0 +1,1136 @@
+{
+  "all_leakage_assertions_passed": true,
+  "arm_counts": {
+    "EA_TOP5": 30,
+    "EDLR": 30,
+    "EDLR_SHUFFLE": 30,
+    "UNION_LLM": 30
+  },
+  "authorization_scope": "NOT_YET_GRANTED_FOR_V2_AT_VALIDATION_TIME",
+  "completion_records": 120,
+  "development_rows": 30,
+  "inputs": {
+    "data_v4/protocols/evidence_augmented_llm_reranker_pilot_v2.md": "e36a3c1db7625b80083494edd9f7cf502d491ee0ff2974a647e686bdc76f8d6c",
+    "data_v4/protocols/evidence_augmented_llm_reranker_pilot_v2_implementation.md": "048ccb40efb20e16a39785ef1d5bea979f9ffe663918741ddd155e6b042e1806",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_preflight/edlr_pilot_v2/preflight_manifest.json": "97486f9ef87fc511086c877a7c28a733fc93f97d4afbc189323882ced899f580",
+    "data_v4/semantic_preflight/edlr_pilot_v2/request_index.csv": "4d175d1fa74c286232070425a9d4b58689eaf4a8beee87309ae62d24049ac596",
+    "data_v4/semantic_preflight/edlr_pilot_v2/request_preflight.jsonl": "6893b152a3f62011a9883938a363f135f001fe0a6d3c52bba02d8ac987f1ff2a"
+  },
+  "network_configuration": {
+    "base_url": "https://api.deepseek.com",
+    "concurrency": 30,
+    "initial_plus_retry_ceiling": 4,
+    "max_tokens": 1024,
+    "model_family": "deepseek-v4-flash",
+    "model_id_for_snapshot": "deepseek-v4-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.0,
+    "thinking": {
+      "type": "disabled"
+    },
+    "timeout_seconds": 300
+  },
+  "network_requests_performed": 0,
+  "row_checks": [
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::WhisperGate::0012",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "f74d0f2e2254d125bfb97511d3598ec7402be806b66e384870fd0d1fc67e5505"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::WhisperGate::0012",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "25bea812feb72e8067f6d1272f35e3a02fe7bf7fbbac995d5246e3b98e66260d"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::WhisperGate::0012",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "acd4104d7b2fb356f4768c1a838ce19f621f135c5b940c570d2131e29c6c8188"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::WhisperGate::0012",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "8dc21a3f86909aac6bd0ce75baeaf4cb0c771e42ff85fa6283a29471f9c29356"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Conti Ransomware::0013",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "ecc9d32639591cf0830b3ed7c3478cedfe2af4ded60dee9377765ee9a222e513"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "attack_flow:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Conti Ransomware::0013",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "59d17cbf3007b35f36038dde9829ca2fae52dd06c01d93d676bb6e9459eb6330"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "attack_flow:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Conti Ransomware::0013",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "94f7941487058960480ce52fe38aad5713eb2cc4f251deddf3355a09606a929d"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "attack_flow:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Conti Ransomware::0013",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "7dfd7d59624e67908fcaea9c58d1dec5720db61521f9d8a477d06b43512df4af"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::SolarWinds::0017",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "2b36d656a05d9b6b9c784800870e57572fa232e3be165cc8a97a20c7c35007e8"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::SolarWinds::0017",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "4c183aa9e4be066628c02a6fbf1cfc73781346ebac211d497c651b9255e25dcf"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::SolarWinds::0017",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "b1b197dac23c50d3986746ccbba7c5d5d23f4d575a92a30634a61900621c33e8"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::SolarWinds::0017",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "2c0a365f67f3797a6c0370033ee0c9240e66a129f3f832b1077ec713191b1ba9"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Hancitor DLL::0009",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "8c4c6689721494e8935646e760c5b2c227d9a728dec7f582ae43744bc74eaf3c"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Hancitor DLL::0009",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "e865799ca81cb19bcf6c1d8824ed33f9f9bb104c74931582a56bc2a1c7297527"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Hancitor DLL::0009",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "f37b58f1549d8140a237af3ec59c1aa0bc48d0dc67bcab4dc727c3670f2c2e8e"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Hancitor DLL::0009",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "9572935e5ac63f7ba8271731ab7253320bde2ed389858b8c8cd88514ca1ef312"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::JP Morgan Breach::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "dd32117fdc78c20ab0722972adfd2092edd5741c62c7312adfb2c57b4f15bcf5"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 11,
+      "development_slot_audit_only": "attack_flow:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::JP Morgan Breach::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "61af77e93df22e1dc243171dffd9e3904d97a7c9661e530cb68ab96b8ab127fb"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 11,
+      "development_slot_audit_only": "attack_flow:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::JP Morgan Breach::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "9043e2a77c740061d4197f11d22193912a3b430632aa90c7ecbe6dd3218dfca7"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 11,
+      "development_slot_audit_only": "attack_flow:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::JP Morgan Breach::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "31365fc3ca0edfba962f7fcbc770a4a4c12c51259161f0c3814c05f1835d8e9d"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::FIN13 Case 2::0006",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "ff85e93b204effb9f5d7897ae0468594e014153da96d299d9e77919392381045"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::FIN13 Case 2::0006",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "74318ef56404f7c0ea5f72c2897cc7d2c2f99c7ab95c193414fd194d1f519562"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::FIN13 Case 2::0006",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "87d3473fdfd86cf143e74b412eb29057350098fda7695e1d56d23dca863f1e98"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "attack_flow:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::FIN13 Case 2::0006",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "0a912534e0e63bbc4bead0753c40cabbd056c1cd44c8fa2f4f805c7c479193d1"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Muddy Water::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "e2de29b5c735f1fb5ad7304520eb89e101b515d776492a008e1f802f2632b416"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Muddy Water::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "619b01529f5e048c378b3ddec90f5ad5a79bc294b2c93a558bd862dd539f1a07"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Muddy Water::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "e1eb19b24a3876aaa6c79558cd084e2162aa9709f391922003416bc87fac3c11"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Muddy Water::0007",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "9c0b36901f4f2be653953891c975fbf3089c0228ccba68b22694d3263d5dc762"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Gootloader::0004",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "0d056e446f29c0a5e085e6f0cabaa55f512aff64e25909f1e30f4a1b6c77ecf8"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Gootloader::0004",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "239a0022a89202411f47e3fc1917528ee01b75026824530a20f0f9fda2303541"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Gootloader::0004",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "21fc27656a476af59bb680b246c750ad634b3db0ce9069938bc95f289f0e28ce"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Gootloader::0004",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "370e8fc22d910d215943a56a71265336f905ac652fd29c4a4122b4f12aeeb001"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Maastricht University Ransomware::0002",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "8626e68f958e1944e7db3a20beea660ba1be0c8720946671fa1644e0b5c6790b"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Maastricht University Ransomware::0002",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "b455718258a7670bea70cddca8e296763be5ee236f895e1134c747e2060b8666"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Maastricht University Ransomware::0002",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "d53edfb8aea5ae0b52f18ffd630ec7481d31ab005ea774814386946579624a74"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "attack_flow:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Maastricht University Ransomware::0002",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "a3d6026c4ecbd85a325d980bf370f5aa28371a3a1066ec5ac3b0c82e17effc69"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "attack_flow:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Mac Malware Steals Crypto::0003",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "805c021da33f5072dee3a02d5de87988b282caf4c014cc1a49d48a49b2a087e5"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 11,
+      "development_slot_audit_only": "attack_flow:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Mac Malware Steals Crypto::0003",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "d6133bd2efc389effbf35e2b2de4675fb92ccd367e8ff2c9f576938b92e5a7a1"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 11,
+      "development_slot_audit_only": "attack_flow:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Mac Malware Steals Crypto::0003",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "44b354f57115bd3791bcc4b5cedadc5387b9b1119c456bbce873ffb78cbdf5cf"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 11,
+      "development_slot_audit_only": "attack_flow:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "attack_flow::Mac Malware Steals Crypto::0003",
+      "source_audit_only": "attack_flow",
+      "transmitted_body_sha256_placeholder_model": "1a9615bcb2f170330d89ed9fe84da6da1d1177ebc62f795d8a87934b8f7985c5"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::apt29::unknown::0027",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "226006fe9182dc3b702cc0b05c83ac528f03cb37e28fb6b063b2e53a07859ac5"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::apt29::unknown::0027",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "a04375395ead3370e34a4f2f19b6d8d64612a82e4edda04bc1adc8fefe4e1506"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::apt29::unknown::0027",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "7db695f43d87b7cb95de5d8d3919f6701c57c68f72ddb645e16044ef9730eb22"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::apt29::unknown::0027",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "da930d49d1caab21e3b143aa04ec802dc4300601af0f4777400f83c4fcd7582f"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::oilrig::unknown::0034",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "6097f193664463181a13a0394e71df4efe5eae82d3dd99ea5036c767a403fe9b"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::oilrig::unknown::0034",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "46477189851a26077e50c536098aaad7e74820dbafd9d1ddd0438055a5eb060c"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::oilrig::unknown::0034",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "6d11b82375bfa158e982edc7b4dbd68d20a449bc9e1c3e523b27411a7938851c"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::oilrig::unknown::0034",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "5a15397b154ea9b8b5aedcf6675a55a60baada4527d63b3666d283cbf1bcaca3"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_carbon::unknown::0024",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "0b739b9e5f6e7953a486398728997c3fb3ff77f0237ed0128bbfc3102331749b"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_carbon::unknown::0024",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "0cd89288d38d1f8b39fe56e9c01931617d655e7db556e42d96159ce729c814bb"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_carbon::unknown::0024",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "61e988363d174e66257d73fcb91c32dc29c0f2184c7da871763424b24ad29930"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_carbon::unknown::0024",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "624311fd6bfb404d1dc65ce0f404ea214eba901d2763e82b7e714be86deaee15"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::menu_pass::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "4a414ccbfb6f3f7649a289c038069a334818d75489e67b058e034328380033c5"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::menu_pass::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "5dbede26b1fad4a61236f15760659b6d349fb6bc2977d9f340322f4d5201b605"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::menu_pass::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "6f2e2af5171872f9d7c9d8f9e56d0def060e03c25acdb5c34cf59694777e9ce8"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::menu_pass::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "275f2cbcbaf9662fb0dbdb8da9a4196b8bd9555e6c103e808ac818fa9b5588e3"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_snake::unknown::0012",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "4e3b08ed256651a692b939aff5f1414915cab89bc68871670a28176f51bf2b7f"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "ctid:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_snake::unknown::0012",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "474d2ca729e0d2dd8d345f5c0eab5e5e94fd353110fdea78fe679a8a3c9a2d05"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "ctid:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_snake::unknown::0012",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "ebea95d8ca8e2540c8704c1f852feb8648b5e15da230739291773a0408dd6866"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "ctid:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::turla_snake::unknown::0012",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "7a0bead760655b22766459c566e5c007b8ec302352fb1bda00ba55099a171aad"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "5136dd7e7d7a3c3c5dff9a0442b7d0fb1a6203bcd5150de2f530ed11d0cfd68e"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "8b75b3a8ddc442de72a70892e7e0f2278810cdc858fbc0a5246db83e0fbed69f"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "cfc6f671316e9d650c70c0e0808be61d67b9dee8d267cef6a0bbf7dc87281a2f"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "3ad5171077b261754b50ec79b6815bef5a852f73f99f83339456f29d154c2307"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::wizard_spider::unknown::0018",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "5c1e3c8f2f48bda78c3a7e47ab16d47286565a334843acc2e432ca649547fc8e"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::wizard_spider::unknown::0018",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "1b038e3bb285ba5904b178d5cabcf573808b5c4e9b9c5a863a86b0eed93e4d4e"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::wizard_spider::unknown::0018",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "6d1535af59f82f9c6197627bf36e75811be306c50369332fc7bd19a565d12f96"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::wizard_spider::unknown::0018",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "ebc459f74200d5a8704009ed4860a7c5f44a983978a65d6d4aceb6f88c015b60"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::carbanak::unknown::0007",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "a91bd6a9c4a65241032f4bb167d2ae1c3d3efe6af32139990bdc14ac4c1b67f9"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::carbanak::unknown::0007",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "3ce26885bdc26f7e36ce56d170148685f9ead1516bf2b17e0fcfb1f0cfbe11f2"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::carbanak::unknown::0007",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "614ecd2f44993633d716b1fd3a555f2372495c8a6db3e52c481a6d96285ea72d"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "ctid:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::carbanak::unknown::0007",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "70249bb210d0578f46c788a575eace4d9ef823fb9307aa8c83f1e8f17884bd1a"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::sandworm::unknown::0010",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "a8f614efd04a5df458c80d5c58d9802eb7dfd99376da74c83e93802676307341"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "ctid:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::sandworm::unknown::0010",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "eca031ebc60039e7b9aa3151391d180081bb192448073c96d459a149a5947ad9"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "ctid:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::sandworm::unknown::0010",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "5f0343bdd8ba4f312f9d0240c3d525329cf9fc414e5780b5b6ef1df33f8bf333"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "ctid:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::sandworm::unknown::0010",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "46b5a085df11d0019a7951ec395b9ec909575db865fc8417095cd2c57158a280"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "ctid:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin7::unknown::0005",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "9eed9b6153e6c8057020379d768377863ebe623cd4b8c408ed7d680a902c78d2"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 11,
+      "development_slot_audit_only": "ctid:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin7::unknown::0005",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "db4b12daa76daf055b4528b24c063a5fc359d90d9d0e82282f2eeb4795a1a72e"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 11,
+      "development_slot_audit_only": "ctid:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin7::unknown::0005",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "ef26ab1b117422dc190cacc85c6ef611709cf51bee6395bdbe3070445ddb42ea"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 11,
+      "development_slot_audit_only": "ctid:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin7::unknown::0005",
+      "source_audit_only": "ctid",
+      "transmitted_body_sha256_placeholder_model": "dab995324d5c3897a5d889a96f259b3b9dca82ba7cdb12723e95ee367b9d2ffa"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "27f448f9bacc9bfabcf9a694c728fc3daf1be71083b0764089e3426b3c731f8d"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "eecb60ed8bd2e6316075cb3071e1c221fc50889b89e5754f7296a2de4847bf7c"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "8d28f102a4dbcb3af135a90996cfa311b626a80dda431bfec4a45113316dc352"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "f2ce5825d8a42eb5f70ecb7dcf893e585267d60f41162c60c4e08c9e93f66806"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "be67ca98ece71a5c6fc6bc0fb0f15a86ab2d740ab54c2ffa0512ea6d8df917cb"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "edfc8d97a474a2fa6c072696a0fe56bc350527052d03bad1d65e368e2c85b864"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "a47085116611476e34506f7e1b1a22f45dbc5ca32433e455a2e6dd387cd9f7e8"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:long:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "f5071ead6b39bdcf186e6df5e008fb46a25af8972596479b790cd6954733e5df"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "a60b19e5f2f38cb88ef04c192f6a448cb1b7380ad7b2e7a296dffc15a7c4645e"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "212d586e4079f46732d7d7ea70fdeb004a792b5dd02043a1aad8a13e5a7c5c41"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "caf936fe748ecb0bc8aef3c9077f17dfa331371e87ce3200da9a86be205ace3c"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:long:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "8228a1d6cc1933836293a85dac71f0ed6eda4628ababc08efa670a6ef1d6eb3b"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "bac89ee0c88dd05036765b6f1b5e69ffcf9ca6a3399555b49a2fe2f5b5824186"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 13,
+      "development_slot_audit_only": "stockpile:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "d73c9757f23c9babca836e620cde434e96e729bd59956200bee25cdd6fae11c0"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 13,
+      "development_slot_audit_only": "stockpile:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "798e342361391e009c74d6b752fcc3adfabf66fcad7c4f99b02e33115740abb8"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 13,
+      "development_slot_audit_only": "stockpile:medium:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "873a96e974a3f9dbd9e4538c887bdfd7f68f7d73d6f209830fac0c7116a1cd18"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "76d89a9f9b995f97cd46f2b5e1e8657441333f057ae516de0d0ca0f5562f8f09"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "60e73a4e027f6d196e77c154504fbb36793be196a6bb091fddeaa9170d07af45"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "781e205c7835471c86547be878ced8b3677adf2f53e47a3eae7c9738383e6cf5"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 11,
+      "development_slot_audit_only": "stockpile:medium:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "d0f0fbfa97cad718970b6c24d3dd649e9c02d74f864dfad34afc9f7b0da93837"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "cda6041772459762137ed0f57ea5befd8a8a691de60fd46e3bf09c9c2ede2734"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "9ebb0c202141a3ed6e5d577af307bc00382b3bed5e1081eba2d35a5322a61e59"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "7883fd21485e819f4c9f3be4f78464635c34e0db0e4c530f5c5ac5c14d106368"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "ae45c42118f0660edef8a375d2a90b9b2d5e125e2e513f320d7b5179ae780d4f"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "dadf888df3a25fa10770bcb7d5488942f47bd64c3cf5802a2f61e8f9406094b1"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "3f70c08f2dacac4612f6ecebcfbd8780ac0274ec979450881b28d746db9dce7d"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "7fff0be41a6430e8bba687734ee0296e43d26e2dd81706f00d376803b33916cd"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 10,
+      "development_slot_audit_only": "stockpile:medium:4",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "ce5968958cd9570af0eec85846060c7dbe1c6da23b96a56f65c25fd4ef2628f1"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "b0b0e9e30b800fe6e533ccc5bd4ac78472f4ed681f88fc4c2692ec35cc19a5cd"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "stockpile:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "3a2ddbf8e4f3dc249328c0f4e0e2835c040284d3a58943dfbc25001c5d82d0a2"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "stockpile:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "36dd13d86dea7b1283c1aaf29408230769a5fc02bd23424a98f7792808c5b386"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "stockpile:short:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "6c69851bd4d0cfaf7e43385324ceff340563fc4a692b36824713df9f87607a7c"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "f53a63982129ff7d42d9f7e89d6bc2dfaba24d442b96f77b139faca13bd0146f"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 8,
+      "development_slot_audit_only": "stockpile:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "a51112bf124a06cea87944c847fc0c926da64a82c4b6db6aac1d9294a48a53fb"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "stockpile:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "f74cb352ccfc62ea5dbc791d0a91f8f8704560f1330da53bb20e4a11378a46f5"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 8,
+      "development_slot_audit_only": "stockpile:short:2",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "a50dd44097e5b49454f223489c5bf4e6dac47307cf25c7c182bbb78f7d2af991"
+    },
+    {
+      "arm": "EA_TOP5",
+      "candidate_count": 5,
+      "development_slot_audit_only": "stockpile:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "f3d811c88a434d7a77e96ea31dd39e273146ea480b0b1f308681ea9dc47e3019"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 9,
+      "development_slot_audit_only": "stockpile:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "184bff3b2228cb5c112fb821692424a3012a5741c03b3d4a982e365815cdd0a3"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 9,
+      "development_slot_audit_only": "stockpile:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "bcc3f64052f94631ea50f6f28be2d3cee840bfc0c03ac172be756d1803a66b8c"
+    },
+    {
+      "arm": "EDLR_SHUFFLE",
+      "candidate_count": 9,
+      "development_slot_audit_only": "stockpile:short:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001",
+      "source_audit_only": "stockpile",
+      "transmitted_body_sha256_placeholder_model": "61eb6f596906459e915ac601958d25aa421384690fcb0dd4a4a7f1bc7de5aaa1"
+    }
+  ],
+  "script_sha256": "8eaacbe6e36ef99f5a488e3629de405890e7350724baa367e7c2e921f5ae388b",
+  "source_arm_counts": {
+    "attack_flow:EA_TOP5": 10,
+    "attack_flow:EDLR": 10,
+    "attack_flow:EDLR_SHUFFLE": 10,
+    "attack_flow:UNION_LLM": 10,
+    "ctid:EA_TOP5": 10,
+    "ctid:EDLR": 10,
+    "ctid:EDLR_SHUFFLE": 10,
+    "ctid:UNION_LLM": 10,
+    "stockpile:EA_TOP5": 10,
+    "stockpile:EDLR": 10,
+    "stockpile:EDLR_SHUFFLE": 10,
+    "stockpile:UNION_LLM": 10
+  },
+  "validated_at": "2026-08-10T03:08:42.319536+00:00"
+}

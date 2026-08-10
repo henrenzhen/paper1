@@ -1,0 +1,99 @@
+{
+  "api_cost": 0,
+  "authorization_for_network_stage": false,
+  "completion_requests_prepared": 120,
+  "counts": {
+    "arms": {
+      "EA_TOP5": 30,
+      "EDLR": 30,
+      "EDLR_SHUFFLE": 30,
+      "UNION_LLM": 30
+    },
+    "campaign_literal_redactions": 16,
+    "candidate_union_max": 13,
+    "candidate_union_mean": 9.433333333333334,
+    "candidate_union_min": 7,
+    "development_rows": 30,
+    "source_literal_redactions": 0,
+    "source_rows": {
+      "attack_flow": 10,
+      "ctid": 10,
+      "stockpile": 10
+    }
+  },
+  "gates": {
+    "all_network_status_not_sent": true,
+    "b0_reproduced_rows": 30,
+    "forbidden_literal_occurrences_after_redaction": 0,
+    "frozen_vocab_candidates_only": true,
+    "shuffle_non_identity_all_rows": true,
+    "target_free_development_objects_used_for_scoring": true,
+    "union_identical_across_union_arms": true
+  },
+  "generated_at": "2026-08-10T03:04:49.454066+00:00",
+  "implementation_addendum": {
+    "path": "data_v4/protocols/evidence_augmented_llm_reranker_pilot_v2_implementation.md",
+    "sha256": "048ccb40efb20e16a39785ef1d5bea979f9ffe663918741ddd155e6b042e1806"
+  },
+  "imported_common_script_sha256": "8a27c6649be23f9a94ac00595f39aef46535fc56214095bbadf11f29400b84ed",
+  "inputs": {
+    "data_v2/core/attack_lookup_dedup.csv": "a8368252e37ba485a8dd7429fd4544935343bd96062ea78d71befb782b5dd1b6",
+    "data_v2/core/rl_label_vocab.csv": "9a4f0c09b86969ef33dd4532ec315e6e00d542d2483c6f5b9b0e9709b9b35738",
+    "data_v4/external_reasoning/future3/pilot/runs/20260807T073425Z_1ec8fb8d/pilot_raw_results.csv": "41bb231e1e82c53be5e4799255e444cd15bf645f9d2d61db93fbf0c090408315",
+    "data_v4/results/nonsemantic_future3_lodo_v1/predictions.csv": "75b53e71e166139c1e42d29ab40a2252d8fa6bf80879ec625cc91e1d825d640c",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_alignment/technique_tactic_multihot.csv": "dfe0aa810207eac80a91a8f37452c475445e3f8a323139e090f7a343fd85e0b4",
+    "data_v4/semantic_preflight/future3_dev_prompts_v1/development_prompt_index.csv": "f8b860839d5ad0a43b339b1f1356374c29d6df3d22d341019a44c45bbcdb5dd6",
+    "data_v4/semantic_preflight/future3_dev_prompts_v1/raw_semantic_inputs.jsonl": "00820b1d401ac61be04a72658e904d8c3f67911a4f663ad1807ecf341e00d876",
+    "data_v4/semantic_summaries/deepseek_v4_flash_future3_v1/b0_rankings.csv": "f4b03b95db516a46db231f4fec9e505019c41cbb60b7372b52c984f1077b9216"
+  },
+  "json_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "evidence_summary": {
+        "maxLength": 120,
+        "minLength": 1,
+        "type": "string"
+      },
+      "reranked_next_ttps": {
+        "items": {
+          "pattern": "^T\\d{4}$",
+          "type": "string"
+        },
+        "maxItems": 5,
+        "minItems": 5,
+        "type": "array",
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "evidence_summary",
+      "reranked_next_ttps"
+    ],
+    "type": "object"
+  },
+  "models_request_prepared": 1,
+  "network_calls": 0,
+  "outputs": {
+    "evidence_audit.csv": "d2b0f6365406ac949765a178e3f7a2f9f3580003f52dee044dd63d58c619fd68",
+    "report.md": "ce2f7c7b9ec629498cd8b37e2d771c945a94f77611aa0b322e7bb26495445ce8",
+    "request_index.csv": "4d175d1fa74c286232070425a9d4b58689eaf4a8beee87309ae62d24049ac596",
+    "request_preflight.jsonl": "6893b152a3f62011a9883938a363f135f001fe0a6d3c52bba02d8ac987f1ff2a"
+  },
+  "prompt_hashes": {
+    "ea_system": "2cac6098b30358076abd67acac7f19b83d7faf8917851541d3e4fc1005236a62",
+    "ea_user_template": "47f807afedc2b5f0af8ad1b92eb53046b3b329a573b0b342d58f8671175326b6",
+    "json_schema": "3a24cf2716f67a8ca433030ff78dadfb9c3d832d1b23fee639f87dd2e5bc6d1b",
+    "union_system": "c121564c2bb0021077d05853b777efc9d6698d289a89c3c76070cb3ce19123fc",
+    "union_user_template": "71263f8c1a9eadb5f92c7c7edc09b0b87133421378c920061df3649541564279"
+  },
+  "protocol": {
+    "path": "data_v4/protocols/evidence_augmented_llm_reranker_pilot_v2.md",
+    "sha256": "e36a3c1db7625b80083494edd9f7cf502d491ee0ff2974a647e686bdc76f8d6c"
+  },
+  "script": {
+    "path": "data_v4/scripts/build_edlr_pilot_v2_preflight.py",
+    "sha256": "bb2ab780a53e736ee74f6b774a82e8921bde4920030ee80431f7eb6915be17c8"
+  },
+  "status": "offline_preflight_complete_not_sent"
+}
