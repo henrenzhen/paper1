@@ -1,0 +1,25 @@
+{
+  "http_status": 200,
+  "recorded_at": "2026-08-10T03:17:04.854099+00:00",
+  "request_id": "",
+  "response": {
+    "data": [
+      {
+        "id": "deepseek-v4-flash",
+        "object": "model",
+        "owned_by": "deepseek"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "object": "model",
+        "owned_by": "deepseek"
+      }
+    ],
+    "object": "list"
+  },
+  "response_headers": {
+    "Content-Type": "application/json",
+    "Date": "Mon, 10 Aug 2026 03:17:04 GMT",
+    "Server": "openresty"
+  }
+}

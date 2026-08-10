@@ -1,0 +1,177 @@
+{
+  "all_leakage_assertions_passed": true,
+  "authorization_scope": "explicit user authorization for /models and three billed v2.1 repair completions in the active Codex task",
+  "billed_attempt_totals": {
+    "attempts": 3,
+    "cache_hit_tokens": 4096,
+    "cache_miss_tokens": 1330,
+    "completion_tokens": 224,
+    "estimated_cost_usd": 0.0002603888,
+    "prompt_tokens": 5426
+  },
+  "ended_at": "2026-08-10T03:17:07.297923+00:00",
+  "inputs": {
+    "data_v4/external_reasoning/edlr_pilot_v2/runs/20260810T031013Z_1338c419/pilot_raw_results.csv": "687d3351c7c767d3f03a07458849bd026c801080864bf68b05787a1958d7f630",
+    "data_v4/protocols/evidence_augmented_llm_reranker_pilot_v2.1_repair.md": "aa45c62118f0f3dcb05d86592688bc7ed2d241bbc805e95e4387486d837c870b",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_preflight/edlr_pilot_v2_1_repair/repair_manifest.json": "0fa2cf0393fe66da27b235609720399b25e7f4ec9da194b51b6ab078292d5065",
+    "data_v4/semantic_preflight/edlr_pilot_v2_1_repair/repair_request_preflight.jsonl": "2e3e09773dfd8433c32582aa49f8aebf3407080eb29a5f746cf5bfb98ea52f42"
+  },
+  "merged_mechanical_gates": {
+    "mechanical_gates": {
+      "all_mechanical_gates_passed": true,
+      "by_arm": {
+        "EA_TOP5": {
+          "all_passed": true,
+          "metrics": {
+            "changed_from_b0_rate": 0.7666666666666667,
+            "json_object_rate": 1.0,
+            "leakage_assertions_rate": 1.0,
+            "reasoning_content_empty_rate": 1.0,
+            "rows": 30,
+            "valid_summary_rate": 1.0,
+            "valid_top5_in_candidates_rate": 1.0
+          },
+          "passed": {
+            "changed_from_b0_rate": true,
+            "json_object_rate": true,
+            "leakage_assertions_rate": true,
+            "reasoning_content_empty_rate": true,
+            "rows": true,
+            "valid_summary_rate": true,
+            "valid_top5_in_candidates_rate": true
+          }
+        },
+        "EDLR": {
+          "all_passed": true,
+          "metrics": {
+            "json_object_rate": 1.0,
+            "leakage_assertions_rate": 1.0,
+            "reasoning_content_empty_rate": 1.0,
+            "rows": 30,
+            "valid_summary_rate": 1.0,
+            "valid_top5_in_candidates_rate": 1.0
+          },
+          "passed": {
+            "json_object_rate": true,
+            "leakage_assertions_rate": true,
+            "reasoning_content_empty_rate": true,
+            "rows": true,
+            "valid_summary_rate": true,
+            "valid_top5_in_candidates_rate": true
+          }
+        },
+        "EDLR_SHUFFLE": {
+          "all_passed": true,
+          "metrics": {
+            "json_object_rate": 1.0,
+            "leakage_assertions_rate": 1.0,
+            "reasoning_content_empty_rate": 1.0,
+            "rows": 30,
+            "valid_summary_rate": 1.0,
+            "valid_top5_in_candidates_rate": 1.0
+          },
+          "passed": {
+            "json_object_rate": true,
+            "leakage_assertions_rate": true,
+            "reasoning_content_empty_rate": true,
+            "rows": true,
+            "valid_summary_rate": true,
+            "valid_top5_in_candidates_rate": true
+          }
+        },
+        "UNION_LLM": {
+          "all_passed": true,
+          "metrics": {
+            "json_object_rate": 1.0,
+            "leakage_assertions_rate": 1.0,
+            "reasoning_content_empty_rate": 1.0,
+            "rows": 30,
+            "valid_summary_rate": 1.0,
+            "valid_top5_in_candidates_rate": 1.0
+          },
+          "passed": {
+            "json_object_rate": true,
+            "leakage_assertions_rate": true,
+            "reasoning_content_empty_rate": true,
+            "rows": true,
+            "valid_summary_rate": true,
+            "valid_top5_in_candidates_rate": true
+          }
+        }
+      }
+    },
+    "replacements": [
+      {
+        "arm": "EDLR",
+        "development_slot": "ctid:long:1",
+        "v2_1_status": "ok",
+        "v2_1_transmitted_body_sha256": "f91aab7988af0d6e0efbacdd49a268a39c4f30415a8a74f6b092818060c3b432",
+        "v2_status": "invalid_summary",
+        "v2_transmitted_body_sha256": "7db695f43d87b7cb95de5d8d3919f6701c57c68f72ddb645e16044ef9730eb22"
+      },
+      {
+        "arm": "UNION_LLM",
+        "development_slot": "ctid:medium:3",
+        "v2_1_status": "ok",
+        "v2_1_transmitted_body_sha256": "e7503d150d7fc821d2b7997656db2296721f16b02b1962233a42bdde151ee195",
+        "v2_status": "invalid_top5",
+        "v2_transmitted_body_sha256": "8b75b3a8ddc442de72a70892e7e0f2278810cdc858fbc0a5246db83e0fbed69f"
+      },
+      {
+        "arm": "EDLR",
+        "development_slot": "ctid:medium:3",
+        "v2_1_status": "ok",
+        "v2_1_transmitted_body_sha256": "3801672c7233e4894d0a9a54f206b1c750c330b870136a1759331eeb9cda7f7f",
+        "v2_status": "invalid_top5",
+        "v2_transmitted_body_sha256": "cfc6f671316e9d650c70c0e0808be61d67b9dee8d267cef6a0bbf7dc87281a2f"
+      }
+    ]
+  },
+  "model_id_selected": "deepseek-v4-flash",
+  "model_selection_rule": "exact_match",
+  "network_requests_performed": 4,
+  "outputs": {
+    "merged_mechanical_gate_report.json": "a20b921f2d5ec19d8b6a34b7007f86de04c9c7d62059f72364c23fe64a55b7ef",
+    "merged_pilot_results.csv": "7e7e658cd2a59ad5a8ee0f1def52aa9f1f5b7357ad8a5ab73d802665643cbf84",
+    "models_response.json": "ee8911add3d61faaa5f9d7fe370854b073f0a89b5dcb01adc2a732abe8762a0e",
+    "raw_attempts.jsonl": "f952f3c95342054005d2f3990d312b56b92eea7e08c7c966ef8187b8e992169a",
+    "repair_raw_results.csv": "b2b6d4fe24de5dad50a4229f84de825c40f6acbf935bfe37657ddca8c5de1ab9",
+    "stdout.log": "60d3d3279550707f71f943c4553c3b56b1d615939df5b822286f001403de1371"
+  },
+  "repair_records": 3,
+  "repair_status_counts": {
+    "ok": 3
+  },
+  "row_checks": [
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::apt29::unknown::0027",
+      "transmitted_body_sha256_placeholder_model": "f91aab7988af0d6e0efbacdd49a268a39c4f30415a8a74f6b092818060c3b432"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "transmitted_body_sha256_placeholder_model": "e7503d150d7fc821d2b7997656db2296721f16b02b1962233a42bdde151ee195"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "transmitted_body_sha256_placeholder_model": "3801672c7233e4894d0a9a54f206b1c750c330b870136a1759331eeb9cda7f7f"
+    }
+  ],
+  "run_id": "20260810T031704Z_43864251",
+  "script_sha256": "a5d8ccf5d3154581d155f0c94e01112668908159f8c3e62dc610d83fa1a32e93",
+  "started_at": "2026-08-10T03:17:04.630381+00:00",
+  "targets_opened_for_effectiveness": false,
+  "validated_at": "2026-08-10T03:17:04.885332+00:00"
+}
