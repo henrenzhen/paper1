@@ -1,0 +1,44 @@
+{
+  "api_cost": 0,
+  "authorization_for_network_stage": false,
+  "failure_set": [
+    {
+      "arm": "EDLR",
+      "development_slot": "ctid:long:1",
+      "v2_status": "invalid_summary"
+    },
+    {
+      "arm": "UNION_LLM",
+      "development_slot": "ctid:medium:3",
+      "v2_status": "invalid_top5"
+    },
+    {
+      "arm": "EDLR",
+      "development_slot": "ctid:medium:3",
+      "v2_status": "invalid_top5"
+    }
+  ],
+  "gates": {
+    "all_network_status_not_sent": true,
+    "api_settings_unchanged": true,
+    "fixed_id_example_removed": true,
+    "only_frozen_three_failures": true,
+    "semantic_candidate_evidence_prefix_unchanged": true,
+    "summary_instruction_stricter_not_relaxed": true,
+    "system_prompt_unchanged": true
+  },
+  "generated_at": "2026-08-10T03:13:26.673019+00:00",
+  "inputs": {
+    "data_v4/external_reasoning/edlr_pilot_v2/runs/20260810T031013Z_1338c419/pilot_raw_results.csv": "687d3351c7c767d3f03a07458849bd026c801080864bf68b05787a1958d7f630",
+    "data_v4/semantic_preflight/edlr_pilot_v2/request_preflight.jsonl": "6893b152a3f62011a9883938a363f135f001fe0a6d3c52bba02d8ac987f1ff2a"
+  },
+  "network_calls": 0,
+  "outputs": {
+    "repair_request_preflight.jsonl": "2e3e09773dfd8433c32582aa49f8aebf3407080eb29a5f746cf5bfb98ea52f42",
+    "report.md": "8538074067e028d8e90a0cc38e458a86c64ba8ff122afedc876caf4c6b0b1930"
+  },
+  "protocol_sha256": "aa45c62118f0f3dcb05d86592688bc7ed2d241bbc805e95e4387486d837c870b",
+  "requests": 3,
+  "script_sha256": "d19697b77ced1ec779b23bf2aa2110863919832cd346b7a08bf5276dbe31eeb1",
+  "status": "offline_repair_preflight_complete_not_sent"
+}

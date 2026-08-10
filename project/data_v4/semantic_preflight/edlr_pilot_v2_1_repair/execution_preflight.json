@@ -1,0 +1,41 @@
+{
+  "all_leakage_assertions_passed": true,
+  "authorization_scope": "NOT_YET_GRANTED_FOR_V2_1_AT_VALIDATION_TIME",
+  "inputs": {
+    "data_v4/external_reasoning/edlr_pilot_v2/runs/20260810T031013Z_1338c419/pilot_raw_results.csv": "687d3351c7c767d3f03a07458849bd026c801080864bf68b05787a1958d7f630",
+    "data_v4/protocols/evidence_augmented_llm_reranker_pilot_v2.1_repair.md": "aa45c62118f0f3dcb05d86592688bc7ed2d241bbc805e95e4387486d837c870b",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724",
+    "data_v4/semantic_preflight/edlr_pilot_v2_1_repair/repair_manifest.json": "0fa2cf0393fe66da27b235609720399b25e7f4ec9da194b51b6ab078292d5065",
+    "data_v4/semantic_preflight/edlr_pilot_v2_1_repair/repair_request_preflight.jsonl": "2e3e09773dfd8433c32582aa49f8aebf3407080eb29a5f746cf5bfb98ea52f42"
+  },
+  "network_requests_performed": 0,
+  "repair_records": 3,
+  "row_checks": [
+    {
+      "arm": "EDLR",
+      "candidate_count": 8,
+      "development_slot_audit_only": "ctid:long:1",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::apt29::unknown::0027",
+      "transmitted_body_sha256_placeholder_model": "f91aab7988af0d6e0efbacdd49a268a39c4f30415a8a74f6b092818060c3b432"
+    },
+    {
+      "arm": "UNION_LLM",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "transmitted_body_sha256_placeholder_model": "e7503d150d7fc821d2b7997656db2296721f16b02b1962233a42bdde151ee195"
+    },
+    {
+      "arm": "EDLR",
+      "candidate_count": 7,
+      "development_slot_audit_only": "ctid:medium:3",
+      "leakage_gate_passed": true,
+      "sample_id_audit_only": "ctid::fin6::unknown::0011",
+      "transmitted_body_sha256_placeholder_model": "3801672c7233e4894d0a9a54f206b1c750c330b870136a1759331eeb9cda7f7f"
+    }
+  ],
+  "script_sha256": "a5d8ccf5d3154581d155f0c94e01112668908159f8c3e62dc610d83fa1a32e93",
+  "validated_at": "2026-08-10T03:14:47.504201+00:00"
+}
