@@ -1,0 +1,37 @@
+{
+  "api_cost": 0,
+  "denominators": {
+    "methods": 5,
+    "per_sample_rows": 150,
+    "samples": 30,
+    "source_campaign_counts": {
+      "attack_flow": 10,
+      "ctid": 10,
+      "stockpile": 10
+    },
+    "source_sample_counts": {
+      "attack_flow": 10,
+      "ctid": 10,
+      "stockpile": 10
+    }
+  },
+  "generated_at": "2026-08-10T03:19:56.202512+00:00",
+  "inputs": {
+    "data_v4/external_reasoning/edlr_pilot_v2_1_repair/runs/20260810T031704Z_43864251/merged_mechanical_gate_report.json": "a20b921f2d5ec19d8b6a34b7007f86de04c9c7d62059f72364c23fe64a55b7ef",
+    "data_v4/external_reasoning/edlr_pilot_v2_1_repair/runs/20260810T031704Z_43864251/merged_pilot_results.csv": "7e7e658cd2a59ad5a8ee0f1def52aa9f1f5b7357ad8a5ab73d802665643cbf84",
+    "data_v4/semantic_alignment/future3_samples.csv": "af7d9a6b6358939697730c5de206c51f1b63f7c16954d5dce5a0a4006bbca724"
+  },
+  "network_calls": 0,
+  "outputs": {
+    "campaign_metrics.csv": "5efbdf76baa64f8186433b22af59b79220912fa0b35b9bbf0aa792c4eaa75203",
+    "contrasts.csv": "c79db42b91d7afeb60239914ec19cb4dffd6c29caada1e8965686381d71c049c",
+    "per_sample_metrics.csv": "3f8a78ae48100bf800aa22e802dd1402a0ecfbad1ac62925d35f185b72496a8d",
+    "report.md": "61b3793fb45cd98860d9ac05842411e13d1419560b3c0cbf24ff052f9db937df",
+    "source_equal_summary.csv": "893ee248bae68a0a0c417fdfaa52019ad8d5973f685357302705ad3e439d7ecf",
+    "source_metrics.csv": "d23d2b3729ecdd5d327bdaa7f72b890fb91766d1c96db8fcbef5243dd84f9e93"
+  },
+  "protocol_sha256": "c783c2eed22c20a13affc04c2d91aaa294f1e65671d35714dde0a638df6f7a6c",
+  "script_sha256": "4174a0045e65cf375698af346368a8cfadd29f24f69e09971a1878cd1bf24754",
+  "status": "development_descriptive_only",
+  "targets_first_opened_after_merged_mechanical_gate_passed": true
+}

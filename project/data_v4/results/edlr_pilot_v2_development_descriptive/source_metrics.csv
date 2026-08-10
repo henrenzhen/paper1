@@ -1,0 +1,16 @@
+status,source,method,campaigns,prefix_rows,ndcg5,hit5,precision5,recall5
+development_descriptive_only,ctid,B0,10,10,0.06713860725233041,0.2,0.06000000000000001,0.1
+development_descriptive_only,ctid,EA_TOP5,10,10,0.07328286204777909,0.2,0.06000000000000001,0.1
+development_descriptive_only,ctid,UNION_LLM,10,10,0.06713860725233041,0.2,0.06000000000000001,0.1
+development_descriptive_only,ctid,EDLR,10,10,0.06713860725233041,0.2,0.06000000000000001,0.1
+development_descriptive_only,ctid,EDLR_SHUFFLE,10,10,0.07328286204777909,0.2,0.06000000000000001,0.1
+development_descriptive_only,attack_flow,B0,10,10,0.3108651010152786,0.6,0.16,0.2833333333333333
+development_descriptive_only,attack_flow,EA_TOP5,10,10,0.3284533265288762,0.6,0.16,0.2833333333333333
+development_descriptive_only,attack_flow,UNION_LLM,10,10,0.29354541950958946,0.6,0.16,0.2833333333333333
+development_descriptive_only,attack_flow,EDLR,10,10,0.1847141237338113,0.4,0.1,0.18333333333333332
+development_descriptive_only,attack_flow,EDLR_SHUFFLE,10,10,0.2237095232216113,0.6,0.14,0.25
+development_descriptive_only,stockpile,B0,10,10,0.21252159440987017,0.5,0.1,0.26666666666666666
+development_descriptive_only,stockpile,EA_TOP5,10,10,0.22039180890341345,0.5,0.1,0.26666666666666666
+development_descriptive_only,stockpile,UNION_LLM,10,10,0.1705183924376022,0.5,0.1,0.26666666666666666
+development_descriptive_only,stockpile,EDLR,10,10,0.133740619236351,0.3,0.06000000000000001,0.18333333333333332
+development_descriptive_only,stockpile,EDLR_SHUFFLE,10,10,0.2090770896268676,0.4,0.08,0.21666666666666665

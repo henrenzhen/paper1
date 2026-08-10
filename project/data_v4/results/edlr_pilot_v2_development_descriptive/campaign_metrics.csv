@@ -1,0 +1,151 @@
+status,source,campaign_id,method,rows,ndcg5,hit5,precision5,recall5
+development_descriptive_only,attack_flow,Conti Ransomware,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Conti Ransomware,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Conti Ransomware,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Conti Ransomware,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Conti Ransomware,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,FIN13 Case 2,B0,1,0.6713860725233041,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,FIN13 Case 2,EA_TOP5,1,0.49818925746641285,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,FIN13 Case 2,EDLR,1,0.6713860725233041,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,FIN13 Case 2,EDLR_SHUFFLE,1,0.6713860725233041,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,FIN13 Case 2,UNION_LLM,1,0.49818925746641285,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,Gootloader,B0,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Gootloader,EA_TOP5,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Gootloader,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Gootloader,EDLR_SHUFFLE,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Gootloader,UNION_LLM,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Hancitor DLL,B0,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Hancitor DLL,EA_TOP5,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Hancitor DLL,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Hancitor DLL,EDLR_SHUFFLE,1,0.18154179253735267,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Hancitor DLL,UNION_LLM,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,JP Morgan Breach,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,JP Morgan Breach,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,JP Morgan Breach,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,JP Morgan Breach,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,JP Morgan Breach,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,Maastricht University Ransomware,B0,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Maastricht University Ransomware,EA_TOP5,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Maastricht University Ransomware,EDLR,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Maastricht University Ransomware,EDLR_SHUFFLE,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Maastricht University Ransomware,UNION_LLM,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Mac Malware Steals Crypto,B0,1,0.2640681225725909,1.0,0.2,0.5
+development_descriptive_only,attack_flow,Mac Malware Steals Crypto,EA_TOP5,1,0.6131471927654584,1.0,0.2,0.5
+development_descriptive_only,attack_flow,Mac Malware Steals Crypto,EDLR,1,0.23719771276929622,1.0,0.2,0.5
+development_descriptive_only,attack_flow,Mac Malware Steals Crypto,EDLR_SHUFFLE,1,0.2640681225725909,1.0,0.2,0.5
+development_descriptive_only,attack_flow,Mac Malware Steals Crypto,UNION_LLM,1,0.2640681225725909,1.0,0.2,0.5
+development_descriptive_only,attack_flow,Muddy Water,B0,1,0.7653606369886217,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,Muddy Water,EA_TOP5,1,0.7653606369886217,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,Muddy Water,EDLR,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Muddy Water,EDLR_SHUFFLE,1,0.18154179253735267,1.0,0.2,0.3333333333333333
+development_descriptive_only,attack_flow,Muddy Water,UNION_LLM,1,0.7653606369886217,1.0,0.4,0.6666666666666666
+development_descriptive_only,attack_flow,SolarWinds,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,SolarWinds,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,SolarWinds,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,SolarWinds,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,SolarWinds,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,WhisperGate,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,WhisperGate,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,WhisperGate,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,WhisperGate,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,attack_flow,WhisperGate,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,apt29::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,apt29::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,apt29::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,apt29::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,apt29::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,carbanak::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,carbanak::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,carbanak::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,carbanak::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,carbanak::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin6::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin6::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin6::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin6::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin6::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin7::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin7::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin7::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin7::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,fin7::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,menu_pass::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,menu_pass::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,menu_pass::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,menu_pass::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,menu_pass::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,oilrig::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,oilrig::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,oilrig::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,oilrig::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,oilrig::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,sandworm::unknown,B0,1,0.4367467095119258,1.0,0.4,0.6666666666666666
+development_descriptive_only,ctid,sandworm::unknown,EA_TOP5,1,0.4367467095119258,1.0,0.4,0.6666666666666666
+development_descriptive_only,ctid,sandworm::unknown,EDLR,1,0.4367467095119258,1.0,0.4,0.6666666666666666
+development_descriptive_only,ctid,sandworm::unknown,EDLR_SHUFFLE,1,0.4367467095119258,1.0,0.4,0.6666666666666666
+development_descriptive_only,ctid,sandworm::unknown,UNION_LLM,1,0.4367467095119258,1.0,0.4,0.6666666666666666
+development_descriptive_only,ctid,turla_carbon::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_carbon::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_carbon::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_carbon::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_carbon::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_snake::unknown,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_snake::unknown,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_snake::unknown,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_snake::unknown,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,turla_snake::unknown,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,ctid,wizard_spider::unknown,B0,1,0.23463936301137822,1.0,0.2,0.3333333333333333
+development_descriptive_only,ctid,wizard_spider::unknown,EA_TOP5,1,0.2960819109658652,1.0,0.2,0.3333333333333333
+development_descriptive_only,ctid,wizard_spider::unknown,EDLR,1,0.23463936301137822,1.0,0.2,0.3333333333333333
+development_descriptive_only,ctid,wizard_spider::unknown,EDLR_SHUFFLE,1,0.2960819109658652,1.0,0.2,0.3333333333333333
+development_descriptive_only,ctid,wizard_spider::unknown,UNION_LLM,1,0.23463936301137822,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,50855e29-3b4e-4562-aa55-b3d7f93c26b8,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,50855e29-3b4e-4562-aa55-b3d7f93c26b8,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,50855e29-3b4e-4562-aa55-b3d7f93c26b8,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,50855e29-3b4e-4562-aa55-b3d7f93c26b8,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,50855e29-3b4e-4562-aa55-b3d7f93c26b8,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,564ae20d-778d-4965-93dc-b523be2e2ab4,B0,1,0.18154179253735267,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,564ae20d-778d-4965-93dc-b523be2e2ab4,EA_TOP5,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,564ae20d-778d-4965-93dc-b523be2e2ab4,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,564ae20d-778d-4965-93dc-b523be2e2ab4,EDLR_SHUFFLE,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,564ae20d-778d-4965-93dc-b523be2e2ab4,UNION_LLM,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,5d3e170e-f1b8-49f9-9ee1-c51605552a08,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,5d3e170e-f1b8-49f9-9ee1-c51605552a08,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,5d3e170e-f1b8-49f9-9ee1-c51605552a08,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,5d3e170e-f1b8-49f9-9ee1-c51605552a08,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,5d3e170e-f1b8-49f9-9ee1-c51605552a08,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,78e7504d-968f-477d-8806-4d6c04b94431,B0,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,78e7504d-968f-477d-8806-4d6c04b94431,EA_TOP5,1,0.23463936301137822,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,78e7504d-968f-477d-8806-4d6c04b94431,EDLR,1,0.46927872602275644,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,78e7504d-968f-477d-8806-4d6c04b94431,EDLR_SHUFFLE,1,0.23463936301137822,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,78e7504d-968f-477d-8806-4d6c04b94431,UNION_LLM,1,0.23463936301137822,1.0,0.2,0.3333333333333333
+development_descriptive_only,stockpile,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c220a8e6-609c-4d5b-9e1c-068ca01c2eec,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c724545d-a4cc-492e-8075-2ab9a699c847,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c724545d-a4cc-492e-8075-2ab9a699c847,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c724545d-a4cc-492e-8075-2ab9a699c847,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c724545d-a4cc-492e-8075-2ab9a699c847,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,c724545d-a4cc-492e-8075-2ab9a699c847,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,B0,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,EA_TOP5,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e,UNION_LLM,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,B0,1,0.23719771276929622,1.0,0.2,0.5
+development_descriptive_only,stockpile,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,EA_TOP5,1,0.6131471927654584,1.0,0.2,0.5
+development_descriptive_only,stockpile,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,EDLR,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,EDLR_SHUFFLE,1,0.0,0.0,0.0,0.0
+development_descriptive_only,stockpile,dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6,UNION_LLM,1,0.23719771276929622,1.0,0.2,0.5
+development_descriptive_only,stockpile,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,B0,1,1.0,1.0,0.2,1.0
+development_descriptive_only,stockpile,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,EA_TOP5,1,0.5,1.0,0.2,1.0
+development_descriptive_only,stockpile,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,EDLR,1,0.6309297535714575,1.0,0.2,1.0
+development_descriptive_only,stockpile,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,EDLR_SHUFFLE,1,1.0,1.0,0.2,1.0
+development_descriptive_only,stockpile,ddbd1850-5fd7-41d5-a7a1-1b15dac49090,UNION_LLM,1,0.5,1.0,0.2,1.0
+development_descriptive_only,stockpile,de07f52d-9928-4071-9142-cb1d3bd851e8,B0,1,0.23719771276929622,1.0,0.2,0.5
+development_descriptive_only,stockpile,de07f52d-9928-4071-9142-cb1d3bd851e8,EA_TOP5,1,0.38685280723454163,1.0,0.2,0.5
+development_descriptive_only,stockpile,de07f52d-9928-4071-9142-cb1d3bd851e8,EDLR,1,0.23719771276929622,1.0,0.2,0.5
+development_descriptive_only,stockpile,de07f52d-9928-4071-9142-cb1d3bd851e8,EDLR_SHUFFLE,1,0.38685280723454163,1.0,0.2,0.5
+development_descriptive_only,stockpile,de07f52d-9928-4071-9142-cb1d3bd851e8,UNION_LLM,1,0.2640681225725909,1.0,0.2,0.5
