@@ -1,0 +1,121 @@
+development_slot,sample_id,source_audit_only,arm,candidate_count,b0_reproduced,allowed_training_sources,user_prompt_chars,request_payload_sha256,source_literal_redactions,campaign_literal_redactions,network_status
+attack_flow:long:1,attack_flow::WhisperGate::0012,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",2059,7ba4d598436252cd42c6d11a5139d591d4197f1d85ca9ec25d816eff87d44cb8,0,1,NOT_SENT
+attack_flow:long:1,attack_flow::WhisperGate::0012,attack_flow,UNION_LLM,9,1,"[""ctid"",""stockpile""]",3069,15154c071b6ddb2a55ed7cbbe7a96ed5d79f5a335ee8111d9b5247632ee704b5,0,1,NOT_SENT
+attack_flow:long:1,attack_flow::WhisperGate::0012,attack_flow,EDLR,9,1,"[""ctid"",""stockpile""]",6008,11840c21a6eafdffad5795fad127bb9b50fd716502a7a42d1c39a7ffe88cd33c,0,1,NOT_SENT
+attack_flow:long:1,attack_flow::WhisperGate::0012,attack_flow,EDLR_SHUFFLE,9,1,"[""ctid"",""stockpile""]",6008,56720d1ab47d0dcf430fe56440c1446fe32a69a53e6844cc84f1faab886a602d,0,1,NOT_SENT
+attack_flow:long:2,attack_flow::Conti Ransomware::0013,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",2651,509ee8fbb2ee04cb336acb5d544cfa07fccd0410044c3b1408e299e05f7b011d,0,0,NOT_SENT
+attack_flow:long:2,attack_flow::Conti Ransomware::0013,attack_flow,UNION_LLM,10,1,"[""ctid"",""stockpile""]",3811,4f6f4ff8b52dca5b6b70d709173601ba83d4330fbbcc9d35a2343bf6f790640b,0,0,NOT_SENT
+attack_flow:long:2,attack_flow::Conti Ransomware::0013,attack_flow,EDLR,10,1,"[""ctid"",""stockpile""]",7098,9902d48800e22de22a9f655d760cec67892cdb05576985a9988bf9f9317b997b,0,0,NOT_SENT
+attack_flow:long:2,attack_flow::Conti Ransomware::0013,attack_flow,EDLR_SHUFFLE,10,1,"[""ctid"",""stockpile""]",7098,8d86c62ec15581e91ebe2195c9aab2ce5201d47d2a6f9c26ea8722c3f859e6e7,0,0,NOT_SENT
+attack_flow:long:3,attack_flow::SolarWinds::0017,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",3778,c36fc4df825f9232925f098b1f196cdef8284d236dd3e079fc476ee68db07bff,0,3,NOT_SENT
+attack_flow:long:3,attack_flow::SolarWinds::0017,attack_flow,UNION_LLM,9,1,"[""ctid"",""stockpile""]",4751,f180d70c23993a88ff7d4968268857f3d0f5750cfa1946a366212c437dcb5e38,0,3,NOT_SENT
+attack_flow:long:3,attack_flow::SolarWinds::0017,attack_flow,EDLR,9,1,"[""ctid"",""stockpile""]",7688,0cf414b5bec5f82bd39abaed94daeb611922849dc1d2dcbadb7ea8dd2d30b73c,0,3,NOT_SENT
+attack_flow:long:3,attack_flow::SolarWinds::0017,attack_flow,EDLR_SHUFFLE,9,1,"[""ctid"",""stockpile""]",7688,9871efe7e8c6aa0d7ddda92e12fd737f2c6abca396c61923aa3f6309046482b1,0,3,NOT_SENT
+attack_flow:medium:1,attack_flow::Hancitor DLL::0009,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",1449,46528b969f8eae97ac87071b2a7498af17ed6ece7d8c1b9675c4ac112e605b33,0,0,NOT_SENT
+attack_flow:medium:1,attack_flow::Hancitor DLL::0009,attack_flow,UNION_LLM,8,1,"[""ctid"",""stockpile""]",2283,86afc792cc9e716e10a5f7b662c6a62a4f98471c75a26bee02aeb79dbce3ca3b,0,0,NOT_SENT
+attack_flow:medium:1,attack_flow::Hancitor DLL::0009,attack_flow,EDLR,8,1,"[""ctid"",""stockpile""]",4879,a69beb14608518c0161fa620bca755d7f222911ce65ac1d42af4bf9ed5878bf0,0,0,NOT_SENT
+attack_flow:medium:1,attack_flow::Hancitor DLL::0009,attack_flow,EDLR_SHUFFLE,8,1,"[""ctid"",""stockpile""]",4879,2dd2360f72b83cf7ef8a3bb85e3d47afab4c891f11dd5cd0008b307b3b8ed5ff,0,0,NOT_SENT
+attack_flow:medium:2,attack_flow::JP Morgan Breach::0007,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",1546,dcc20384a3ee8fa5605abe835038d9b9e77fe64d81f1897c95de01a2bd2739c0,0,0,NOT_SENT
+attack_flow:medium:2,attack_flow::JP Morgan Breach::0007,attack_flow,UNION_LLM,11,1,"[""ctid"",""stockpile""]",2858,167bb595e881c398b8f1fba7667350e1c307197530820c42854978ec7ec19424,0,0,NOT_SENT
+attack_flow:medium:2,attack_flow::JP Morgan Breach::0007,attack_flow,EDLR,11,1,"[""ctid"",""stockpile""]",6477,93aef9dc86b8b640bb6bca6188dd9c30a295e22e234f0aafdf4a7cceacea80da,0,0,NOT_SENT
+attack_flow:medium:2,attack_flow::JP Morgan Breach::0007,attack_flow,EDLR_SHUFFLE,11,1,"[""ctid"",""stockpile""]",6477,ff7d53b6cf6e2165164a2feda103369e222044753151e88945b9fe338842c569,0,0,NOT_SENT
+attack_flow:medium:3,attack_flow::FIN13 Case 2::0006,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",1170,00c6ed481bd354902d44b6eef7f8252806a3ef1ee0280e87c1ab083233bfcc64,0,0,NOT_SENT
+attack_flow:medium:3,attack_flow::FIN13 Case 2::0006,attack_flow,UNION_LLM,9,1,"[""ctid"",""stockpile""]",2168,40fb177d2d3c93e767fd0d60873a71ecc8a62be723689860e19b7fd5019424ba,0,0,NOT_SENT
+attack_flow:medium:3,attack_flow::FIN13 Case 2::0006,attack_flow,EDLR,9,1,"[""ctid"",""stockpile""]",5105,4ed6615efd3f08f2db59998b9e0f8da7625b685734fa7e8da5547d4084f9b426,0,0,NOT_SENT
+attack_flow:medium:3,attack_flow::FIN13 Case 2::0006,attack_flow,EDLR_SHUFFLE,9,1,"[""ctid"",""stockpile""]",5105,9698ad0e9aef688364bd11a546a56f247cbd266eaf04ad6418a84247ba91ffd5,0,0,NOT_SENT
+attack_flow:medium:4,attack_flow::Muddy Water::0007,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",1749,cf9cadb5a6c145facc6d6b140c2a920d02733e596596ce319a53d9c655e3d6ba,0,0,NOT_SENT
+attack_flow:medium:4,attack_flow::Muddy Water::0007,attack_flow,UNION_LLM,8,1,"[""ctid"",""stockpile""]",2606,146ece42a25dd14ea6f6f351686aa2c9162f38da094f04878095e5a5afabe9e4,0,0,NOT_SENT
+attack_flow:medium:4,attack_flow::Muddy Water::0007,attack_flow,EDLR,8,1,"[""ctid"",""stockpile""]",5205,f64c4d5d802089838e73b9d7a44b33c15f6b9ae6f3c75aa87e5320ae33b89ca5,0,0,NOT_SENT
+attack_flow:medium:4,attack_flow::Muddy Water::0007,attack_flow,EDLR_SHUFFLE,8,1,"[""ctid"",""stockpile""]",5205,c61d561a1a6c511e18ef2ce5368fd4371335e14d305f8b98e99c6cf3a8cda003,0,0,NOT_SENT
+attack_flow:short:1,attack_flow::Gootloader::0004,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",1033,e5b1963e388c5f1cb824b165707750c7cf5dae0b67e0f0c335f3255bb74accda,0,0,NOT_SENT
+attack_flow:short:1,attack_flow::Gootloader::0004,attack_flow,UNION_LLM,8,1,"[""ctid"",""stockpile""]",1893,f825a694b9a16cd188e8de62f7a6f90794d2d73c9d46f5cb9976852f7e926740,0,0,NOT_SENT
+attack_flow:short:1,attack_flow::Gootloader::0004,attack_flow,EDLR,8,1,"[""ctid"",""stockpile""]",4491,5ea07f4472f655f181472768fc8d9d94dcb559ddd92101384189c5d2f412b644,0,0,NOT_SENT
+attack_flow:short:1,attack_flow::Gootloader::0004,attack_flow,EDLR_SHUFFLE,8,1,"[""ctid"",""stockpile""]",4491,32f61f50db7a712b29b0b42478cc9ddd49c08228d661f12536b52036d223f554,0,0,NOT_SENT
+attack_flow:short:2,attack_flow::Maastricht University Ransomware::0002,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",725,f14be7c5ca4247f7dd98165a62a8b07d34e9f37709ce272ba381e9e89abe0e3d,0,0,NOT_SENT
+attack_flow:short:2,attack_flow::Maastricht University Ransomware::0002,attack_flow,UNION_LLM,8,1,"[""ctid"",""stockpile""]",1610,57847868c68f13fa9b3a61581b3a6e6f68347eaadea177a702d525a179265bf5,0,0,NOT_SENT
+attack_flow:short:2,attack_flow::Maastricht University Ransomware::0002,attack_flow,EDLR,8,1,"[""ctid"",""stockpile""]",4207,ad66733cd43b3670a0cff5bb8cc63d965fbc05ba1cca2a734236f84a82fd09ad,0,0,NOT_SENT
+attack_flow:short:2,attack_flow::Maastricht University Ransomware::0002,attack_flow,EDLR_SHUFFLE,8,1,"[""ctid"",""stockpile""]",4207,7e00c5db6b06f3029b1ea77a814023f665e1dd35b7280d7709eb9f78b66a0d19,0,0,NOT_SENT
+attack_flow:short:3,attack_flow::Mac Malware Steals Crypto::0003,attack_flow,EA_TOP5,5,1,"[""ctid"",""stockpile""]",958,b30e78405560f21c837e497375ed086a4badd4e7137585574442c986f194942c,0,0,NOT_SENT
+attack_flow:short:3,attack_flow::Mac Malware Steals Crypto::0003,attack_flow,UNION_LLM,11,1,"[""ctid"",""stockpile""]",2261,73a29092cd7a9df1ad492b8d8889ae59e2de8352ed5c0e5c5e640485826c5cf6,0,0,NOT_SENT
+attack_flow:short:3,attack_flow::Mac Malware Steals Crypto::0003,attack_flow,EDLR,11,1,"[""ctid"",""stockpile""]",5892,3f24662dd167b73823fe66ecf76a208942fe1b395e1fcae2b39929a6eef69095,0,0,NOT_SENT
+attack_flow:short:3,attack_flow::Mac Malware Steals Crypto::0003,attack_flow,EDLR_SHUFFLE,11,1,"[""ctid"",""stockpile""]",5892,c3f02b7028c2849d33855d1d25952e27285e9a428602a2abd8cf9cb22f245166,0,0,NOT_SENT
+ctid:long:1,ctid::apt29::unknown::0027,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",4007,495e39a0c467e2ddb63db4ada8946676c1ada1685d0b9a4e01804d7c9ea41649,0,0,NOT_SENT
+ctid:long:1,ctid::apt29::unknown::0027,ctid,UNION_LLM,8,1,"[""attack_flow"",""stockpile""]",4895,25b5e27aceb495eebcfe66978f60bb4f8865df8b3389fac4e8941afbd11620a2,0,0,NOT_SENT
+ctid:long:1,ctid::apt29::unknown::0027,ctid,EDLR,8,1,"[""attack_flow"",""stockpile""]",7488,336c596587a8878ba583ccf7f166b39ea4cbd374fb8dd9d294d826435cd8ebbf,0,0,NOT_SENT
+ctid:long:1,ctid::apt29::unknown::0027,ctid,EDLR_SHUFFLE,8,1,"[""attack_flow"",""stockpile""]",7488,fbec7d505717f8939d5974206489498e4a8df884fea06dcb856d542c869c79a3,0,0,NOT_SENT
+ctid:long:2,ctid::oilrig::unknown::0034,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",3966,8a9df97cd6cf1f9e5e787c1b1232cab372a2e4d2c8adecd95d6aa594444c52b2,0,0,NOT_SENT
+ctid:long:2,ctid::oilrig::unknown::0034,ctid,UNION_LLM,10,1,"[""attack_flow"",""stockpile""]",5108,f2547143ab217509cb895c1e84c9bc5627c63d9b7343eff1542b6eb2a4ef77bc,0,0,NOT_SENT
+ctid:long:2,ctid::oilrig::unknown::0034,ctid,EDLR,10,1,"[""attack_flow"",""stockpile""]",8386,86e5f553d6743757ad935a7149245bf3a2f32f525b6f0f4ae2716e7edbbee040,0,0,NOT_SENT
+ctid:long:2,ctid::oilrig::unknown::0034,ctid,EDLR_SHUFFLE,10,1,"[""attack_flow"",""stockpile""]",8386,0938a29752a36977d72f849c8c1ced7d078708806c983691bf1945b859dd7025,0,0,NOT_SENT
+ctid:long:3,ctid::turla_carbon::unknown::0024,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",3615,1916ad5a64c2ec6343c4bbd2816fe54724093a2d0e3bb39363f0e00e50bc9cfa,0,0,NOT_SENT
+ctid:long:3,ctid::turla_carbon::unknown::0024,ctid,UNION_LLM,8,1,"[""attack_flow"",""stockpile""]",4450,1869166ea421a73c869e3e7548f8904b4892465f40e362a6bc23c9477f98fd64,0,0,NOT_SENT
+ctid:long:3,ctid::turla_carbon::unknown::0024,ctid,EDLR,8,1,"[""attack_flow"",""stockpile""]",7039,2e80ebcec788dadc091fcf10c33c48c6b572b9bd354ab0ba01e9394d703e5e4a,0,0,NOT_SENT
+ctid:long:3,ctid::turla_carbon::unknown::0024,ctid,EDLR_SHUFFLE,8,1,"[""attack_flow"",""stockpile""]",7039,4d71c5bbf2d79112741cac2ad7881887eb51944e6ed3a48570848abca302c5d8,0,0,NOT_SENT
+ctid:medium:1,ctid::menu_pass::unknown::0011,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",1437,3a725b7ed5795c23c094aeb75354155097fd146240317417507dfa7c8d4bf842,0,0,NOT_SENT
+ctid:medium:1,ctid::menu_pass::unknown::0011,ctid,UNION_LLM,8,1,"[""attack_flow"",""stockpile""]",2277,d8a35d0b9d5d4795d2fdac154d7913438f1fd83455e70896d2dc244772e7149e,0,0,NOT_SENT
+ctid:medium:1,ctid::menu_pass::unknown::0011,ctid,EDLR,8,1,"[""attack_flow"",""stockpile""]",4873,fd42a8b4031d5289adf1250399a305930826b2c3e1eabdb45a5a8a16a70085f3,0,0,NOT_SENT
+ctid:medium:1,ctid::menu_pass::unknown::0011,ctid,EDLR_SHUFFLE,8,1,"[""attack_flow"",""stockpile""]",4873,15de97d47991637f7e64b979413eb2296d67618a7d9fcbb24f7b7242bdee6452,0,0,NOT_SENT
+ctid:medium:2,ctid::turla_snake::unknown::0012,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",2195,8551d71101d2ca972c97e3e5587e68800316b4417f0f4f9c5e741c089ead80cc,0,0,NOT_SENT
+ctid:medium:2,ctid::turla_snake::unknown::0012,ctid,UNION_LLM,9,1,"[""attack_flow"",""stockpile""]",3210,bdb9568a13e0c3e0b0cae4303eded123fc3f2023f8efc5ed9d8321681d9623b6,0,0,NOT_SENT
+ctid:medium:2,ctid::turla_snake::unknown::0012,ctid,EDLR,9,1,"[""attack_flow"",""stockpile""]",6157,b2b8dd03491e7fcd64ff03e7894f6725045e6327e22b80b07980c02e8a1bd260,0,0,NOT_SENT
+ctid:medium:2,ctid::turla_snake::unknown::0012,ctid,EDLR_SHUFFLE,9,1,"[""attack_flow"",""stockpile""]",6157,d967c50c2f87d22ef8970133176c406980defbba15b29553d3ba9c793af40d05,0,0,NOT_SENT
+ctid:medium:3,ctid::fin6::unknown::0011,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",1983,6ebdffe5af302ab8c1f476a582ed38db2e11ee30d27b9b239c5f47e8ea20f5bb,0,0,NOT_SENT
+ctid:medium:3,ctid::fin6::unknown::0011,ctid,UNION_LLM,7,1,"[""attack_flow"",""stockpile""]",2666,64d125fa5a88f355d59553596a9135ad41c7ee212212c814e48aa0d43d5447c7,0,0,NOT_SENT
+ctid:medium:3,ctid::fin6::unknown::0011,ctid,EDLR,7,1,"[""attack_flow"",""stockpile""]",4921,ac459b5d000cc06061f7f0a8d5329ce6dc0807efc1fe1c1b08a6623fc01bf8e3,0,0,NOT_SENT
+ctid:medium:3,ctid::fin6::unknown::0011,ctid,EDLR_SHUFFLE,7,1,"[""attack_flow"",""stockpile""]",4921,e870e8dac47296c6c28b19c22490cf73f66ad5bf5839660d41199a20f45af1a9,0,0,NOT_SENT
+ctid:medium:4,ctid::wizard_spider::unknown::0018,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",3901,1025c4cca59e338c9fda69751f4624dc8aa3c37975f5507e635ec3b0cf1d43ef,0,0,NOT_SENT
+ctid:medium:4,ctid::wizard_spider::unknown::0018,ctid,UNION_LLM,10,1,"[""attack_flow"",""stockpile""]",5035,2c60cfc49624f4e6dc376270abf779a7e444c54c23107bdcd7aa2922d5c1d7b5,0,0,NOT_SENT
+ctid:medium:4,ctid::wizard_spider::unknown::0018,ctid,EDLR,10,1,"[""attack_flow"",""stockpile""]",8311,0b1187e4f8e3f7d0aaa8b5d4cb808ad2256eac3d6d6354757b48e29e9affdfd2,0,0,NOT_SENT
+ctid:medium:4,ctid::wizard_spider::unknown::0018,ctid,EDLR_SHUFFLE,10,1,"[""attack_flow"",""stockpile""]",8311,0f832315a3d921a1e98d1558737fb2a30e6dd2d700b821b0d16f619cd0613f35,0,0,NOT_SENT
+ctid:short:1,ctid::carbanak::unknown::0007,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",1387,bfaf655d34cf86829fd21d0e18d05305b62a03bcaf7d84724398528271ea2a3d,0,0,NOT_SENT
+ctid:short:1,ctid::carbanak::unknown::0007,ctid,UNION_LLM,10,1,"[""attack_flow"",""stockpile""]",2535,1e25f0bbb357727420b516f42f83f8dcee65302b613734158c45df775a3ee590,0,0,NOT_SENT
+ctid:short:1,ctid::carbanak::unknown::0007,ctid,EDLR,10,1,"[""attack_flow"",""stockpile""]",5823,ec4b6bee1cc2883d353f13b269dc7d328d3889e6a23b53c69f42182feccfe645,0,0,NOT_SENT
+ctid:short:1,ctid::carbanak::unknown::0007,ctid,EDLR_SHUFFLE,10,1,"[""attack_flow"",""stockpile""]",5823,6c7c2e38c613b198b3e9e2360cd2961f0c7b7bc0d69057ec0410b406ae8062c5,0,0,NOT_SENT
+ctid:short:2,ctid::sandworm::unknown::0010,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",4097,85014d51cb04e2f15f28ba4679aa1e6c2c0b5c1ce1cfe4b43d2411f0ddcd4634,0,0,NOT_SENT
+ctid:short:2,ctid::sandworm::unknown::0010,ctid,UNION_LLM,9,1,"[""attack_flow"",""stockpile""]",5125,ac27f72bee03fadb9df4aa8ede26dc3a0f42ddd07a9c8884cbf7878561cd6e0b,0,0,NOT_SENT
+ctid:short:2,ctid::sandworm::unknown::0010,ctid,EDLR,9,1,"[""attack_flow"",""stockpile""]",8057,e1c475bcef06f40fd7f4df662697e04ce9f66b9e1a31ab4d1208cadba50f5d0a,0,0,NOT_SENT
+ctid:short:2,ctid::sandworm::unknown::0010,ctid,EDLR_SHUFFLE,9,1,"[""attack_flow"",""stockpile""]",8057,867d2292ad41dd77e3372bd51c1109f14b90253d90144d2fc7464d5fdef87c19,0,0,NOT_SENT
+ctid:short:3,ctid::fin7::unknown::0005,ctid,EA_TOP5,5,1,"[""attack_flow"",""stockpile""]",918,6d598e09ae8bf7e6c9635b9f093f85a684b83573ac40016ae4a5fa93dab00e7a,0,0,NOT_SENT
+ctid:short:3,ctid::fin7::unknown::0005,ctid,UNION_LLM,11,1,"[""attack_flow"",""stockpile""]",2215,cbecbc2d7f28085ed361121d9c270e12b05051f36d2695fe7926d994eff3f989,0,0,NOT_SENT
+ctid:short:3,ctid::fin7::unknown::0005,ctid,EDLR,11,1,"[""attack_flow"",""stockpile""]",5834,801f0753225547bcfc8a229770a47ac9687825846c5892c245ff6ed010e8ace9,0,0,NOT_SENT
+ctid:short:3,ctid::fin7::unknown::0005,ctid,EDLR_SHUFFLE,11,1,"[""attack_flow"",""stockpile""]",5834,7d749bd914886e68848c601ca249eb53990ee8a9d79b0515cdadc1fbad6d76d9,0,0,NOT_SENT
+stockpile:long:1,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",1305,f324c90d29b2c16108c69df5806b2b85905ab320b85c8d311a110b04213fcc05,0,0,NOT_SENT
+stockpile:long:1,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012,stockpile,UNION_LLM,10,1,"[""ctid"",""attack_flow""]",2445,ff37fa0fd83112f756f8199889cc83b1bf90dc600a3cce51fcb270cd6c5b8021,0,0,NOT_SENT
+stockpile:long:1,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012,stockpile,EDLR,10,1,"[""ctid"",""attack_flow""]",5734,9d74b5ae4c584d38966f210a78d94cf40b865356b486554a613a730d1d726323,0,0,NOT_SENT
+stockpile:long:1,stockpile::564ae20d-778d-4965-93dc-b523be2e2ab4::0012,stockpile,EDLR_SHUFFLE,10,1,"[""ctid"",""attack_flow""]",5734,89a8256838f3e574355dde3db64840e4fa9e1f894fee38bd4afa2bcd16b9ddd8,0,0,NOT_SENT
+stockpile:long:2,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",1220,32ec2c2951328857f47cc546daff7d19a0aa33a258c111051dbb05c5878d39a9,0,0,NOT_SENT
+stockpile:long:2,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008,stockpile,UNION_LLM,11,1,"[""ctid"",""attack_flow""]",2540,6e53f17cf7e8087940ece46763ff86f59c043266ad024fbb625e1ee6474be6e9,0,0,NOT_SENT
+stockpile:long:2,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008,stockpile,EDLR,11,1,"[""ctid"",""attack_flow""]",6170,ab548a66078dead37fbf84edfa5f090e366ea763b28bf4909d506aa0ab8c2ae6,0,0,NOT_SENT
+stockpile:long:2,stockpile::50855e29-3b4e-4562-aa55-b3d7f93c26b8::0008,stockpile,EDLR_SHUFFLE,11,1,"[""ctid"",""attack_flow""]",6170,00263030b978380232b07e5bf06c8c87a0a2af2bb46db960f46dd9913e89964f,0,0,NOT_SENT
+stockpile:long:3,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",1224,ae7d06d9fec53775cea6144bc12b00e5913dcc0da9cccc5006551629f5da5369,0,0,NOT_SENT
+stockpile:long:3,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009,stockpile,UNION_LLM,11,1,"[""ctid"",""attack_flow""]",2544,74498f4c101714d1b8f8f44b11a9327fb497937d212a25dca94c1e3d1e9646a6,0,0,NOT_SENT
+stockpile:long:3,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009,stockpile,EDLR,11,1,"[""ctid"",""attack_flow""]",6174,a71af26869546d7e274488ea9a028c5dcc079698be029cc17b1e58da93b9cbbd,0,0,NOT_SENT
+stockpile:long:3,stockpile::78e7504d-968f-477d-8806-4d6c04b94431::0009,stockpile,EDLR_SHUFFLE,11,1,"[""ctid"",""attack_flow""]",6174,cc08d669439211bd296de837318e59ec5df0b32c6b98807f23bdf8d167353c10,0,0,NOT_SENT
+stockpile:medium:1,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",736,93904d5a248faceeac413d8ff3f1f5727d4550ab67e087cc5c35b2f13252ef3b,0,0,NOT_SENT
+stockpile:medium:1,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003,stockpile,UNION_LLM,13,1,"[""ctid"",""attack_flow""]",2326,f0e6aa8ef78eb6d49115ed97ea6bb081f4e3a29fc940ca03aee2121768de766b,0,0,NOT_SENT
+stockpile:medium:1,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003,stockpile,EDLR,13,1,"[""ctid"",""attack_flow""]",6634,60adb9f69b4f95305adb7d14b050bb78e9325338ca06c8a6f3693e705be3fd97,0,0,NOT_SENT
+stockpile:medium:1,stockpile::5d3e170e-f1b8-49f9-9ee1-c51605552a08::0003,stockpile,EDLR_SHUFFLE,13,1,"[""ctid"",""attack_flow""]",6634,1e287ba98c40d579231e90d2512bce6d11baf8b8147a0557bd03867e8dcae6ea,0,0,NOT_SENT
+stockpile:medium:2,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",762,9c9b37b90880f3cc5d070906ac19401dca6e828c73ecc25e1e8341e57c410114,0,0,NOT_SENT
+stockpile:medium:2,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003,stockpile,UNION_LLM,11,1,"[""ctid"",""attack_flow""]",2076,defd81566708f3ee156e5b5dd3ec0581f41f83607512f103fd1b0a36496c488a,0,0,NOT_SENT
+stockpile:medium:2,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003,stockpile,EDLR,11,1,"[""ctid"",""attack_flow""]",5714,1e52c7952507912d659de54a1e1b66ff37bd7b1c52438859491cd59f6af5c9f9,0,0,NOT_SENT
+stockpile:medium:2,stockpile::d6ea4c1e-7959-4eb1-a292-b6fd2b06c73e::0003,stockpile,EDLR_SHUFFLE,11,1,"[""ctid"",""attack_flow""]",5714,d461316d18f5cb3ad39d60e61b716ac14737c61de21f459b5063d24dbe4f317e,0,0,NOT_SENT
+stockpile:medium:3,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",807,54805c59b3e1948c4ee05bddca2b6872eb16d9660c329f33b7d712634e29b581,0,0,NOT_SENT
+stockpile:medium:3,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004,stockpile,UNION_LLM,10,1,"[""ctid"",""attack_flow""]",1944,57c8f2c01535b727c5f44286add27e75da1ea96c652a9bf01b5d7d04de3d5a5c,0,0,NOT_SENT
+stockpile:medium:3,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004,stockpile,EDLR,10,1,"[""ctid"",""attack_flow""]",5233,aa205601abf8cfed4b32e1774facce0202adfd7e71d98e13971dfc59b66d7329,0,0,NOT_SENT
+stockpile:medium:3,stockpile::ddbd1850-5fd7-41d5-a7a1-1b15dac49090::0004,stockpile,EDLR_SHUFFLE,10,1,"[""ctid"",""attack_flow""]",5233,9b9397548f390171efc6705190751f7c78331a0142c7c46e8ad64d1de0f6a6db,0,0,NOT_SENT
+stockpile:medium:4,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",854,4627c158826b238c29a24e65af17f49d52bb0fc9fe2fc97aa9d42ec872b04fae,0,0,NOT_SENT
+stockpile:medium:4,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003,stockpile,UNION_LLM,10,1,"[""ctid"",""attack_flow""]",2080,8d27319200a1e98af5267cdff18a9feb7a87814530f10573fcde9e1e11b4282f,0,0,NOT_SENT
+stockpile:medium:4,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003,stockpile,EDLR,10,1,"[""ctid"",""attack_flow""]",5361,e5c8b6f86f08cf5327bf898058a7b5b03c048fa14b89a558c4c7532dc9c46aae,0,0,NOT_SENT
+stockpile:medium:4,stockpile::c724545d-a4cc-492e-8075-2ab9a699c847::0003,stockpile,EDLR_SHUFFLE,10,1,"[""ctid"",""attack_flow""]",5361,3f91d487c73f45e60b564273e27b02bd743267e5bf5fdb66b74d7680403718e3,0,0,NOT_SENT
+stockpile:short:1,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",578,9a4e486206ee8475c22f66f9c2e8f097c692902b1275e434802dac0ccdecf72e,0,0,NOT_SENT
+stockpile:short:1,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002,stockpile,UNION_LLM,9,1,"[""ctid"",""attack_flow""]",1581,837404ccab344232c1311fabf052beadc3c164a12ed70aa06bd5e1d8bc6d4962,0,0,NOT_SENT
+stockpile:short:1,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002,stockpile,EDLR,9,1,"[""ctid"",""attack_flow""]",4532,d7b24d1c610f150deb6834e4ae43ab59b2d7013c5ac0f20a533fffe8a4e3ae22,0,0,NOT_SENT
+stockpile:short:1,stockpile::de07f52d-9928-4071-9142-cb1d3bd851e8::0002,stockpile,EDLR_SHUFFLE,9,1,"[""ctid"",""attack_flow""]",4532,f9728e0a6b39bd6f22a3e87385544fa3a2ad1e32e15ffa6cf791a4e5f09b82d0,0,0,NOT_SENT
+stockpile:short:2,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",549,9517d00fc7ade6a2dd7545d09dea5d9115d31b8c9b5e83e19fad8a6dcfdd0533,0,0,NOT_SENT
+stockpile:short:2,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001,stockpile,UNION_LLM,8,1,"[""ctid"",""attack_flow""]",1389,c50e6ac65ba527dead28ec661fcd402ba95f25c2e0ae2783f9f6e915277e5879,0,0,NOT_SENT
+stockpile:short:2,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001,stockpile,EDLR,8,1,"[""ctid"",""attack_flow""]",3343,5695a15cfc57d0a8710a92cbd3a33f0d9adfdbff91d840b113b7531b41feab86,0,0,NOT_SENT
+stockpile:short:2,stockpile::c220a8e6-609c-4d5b-9e1c-068ca01c2eec::0001,stockpile,EDLR_SHUFFLE,8,1,"[""ctid"",""attack_flow""]",3343,465b9471b6facbb8ef0b0f3d5e3e2730bc5e050fd54202e90a5db4add010320b,0,0,NOT_SENT
+stockpile:short:3,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001,stockpile,EA_TOP5,5,1,"[""ctid"",""attack_flow""]",511,05cde3a346d25d7fb4911e18a0cba712c10cad661f2afd7220b3b0a407aefe6e,0,0,NOT_SENT
+stockpile:short:3,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001,stockpile,UNION_LLM,9,1,"[""ctid"",""attack_flow""]",1507,283ae928c69eef425ae8c28d9beecc82e29b50155c967a3cd61cef7473c5dad4,0,0,NOT_SENT
+stockpile:short:3,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001,stockpile,EDLR,9,1,"[""ctid"",""attack_flow""]",3707,902de35ee63266ca5e9f4be398d1ded5b408291b63bbe7dbf759bbcab86aa5cc,0,0,NOT_SENT
+stockpile:short:3,stockpile::dbd49a4a-ba2d-40d0-9348-2db24fc4b0b6::0001,stockpile,EDLR_SHUFFLE,9,1,"[""ctid"",""attack_flow""]",3707,efa2f0712ac1bc0f042065561ed9d553fb1d06cdc7811c78a1ebc2602a58fa9e,0,0,NOT_SENT
